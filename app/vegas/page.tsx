@@ -198,6 +198,9 @@ export default function VegasPage() {
 
       {/* FAQ */}
       <div className="max-w-4xl mx-auto px-4 py-8">
+        <h2 className="font-headline font-bold text-text text-2xl md:text-3xl text-center mb-8">
+          Nevada Spray Foam Insurance FAQs
+        </h2>
         <FAQSection items={faqs} />
       </div>
 

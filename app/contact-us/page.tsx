@@ -4,7 +4,7 @@ import CTABar from '@/components/CTABar';
 import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import FormCard from '@/components/FormCard';
-import { Phone, Clock, CheckCircle } from 'lucide-react';
+import { Clock, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Contact Spray Foam Insurance | 844-967-5247',
@@ -181,6 +181,9 @@ export default function ContactUsPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-16">
+        <h2 className="font-headline font-bold text-text text-2xl md:text-3xl text-center mb-8">
+          Frequently Asked Questions
+        </h2>
         <FAQSection items={faqs} />
       </div>
 
