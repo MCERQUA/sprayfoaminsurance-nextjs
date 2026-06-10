@@ -1,15 +1,7 @@
 import { auth, currentUser } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
-import { LayoutDashboard, FileText, Award, Clock, FolderOpen } from 'lucide-react';
-
-const sidebarLinks = [
-  { label: 'Overview', href: '/dashboard', icon: LayoutDashboard },
-  { label: 'My Policies', href: '/dashboard/policies', icon: FileText },
-  { label: 'Certificates', href: '/dashboard/certificates', icon: Award },
-  { label: 'Quote History', href: '/dashboard/quotes', icon: Clock },
-  { label: 'Documents', href: '/dashboard/documents', icon: FolderOpen },
-];
+import DashboardSidebarNav from '@/components/DashboardSidebarNav';
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { userId } = await auth();
@@ -26,28 +18,25 @@ export default async function DashboardLayout({ children }: { children: React.Re
       <aside className="w-64 bg-surface border-r border-primary/10 flex flex-col fixed top-16 bottom-0 left-0 overflow-y-auto">
         {/* User info */}
         <div className="px-5 py-5 border-b border-primary/10">
-          <p className="text-xs label-text text-muted mb-1">Logged in as</p>
-          <p className="font-semibold text-text text-sm truncate">
-            {user?.firstName} {user?.lastName}
-          </p>
-          <p className="text-xs text-muted truncate">
-            {user?.emailAddresses[0]?.emailAddress}
-          </p>
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center shrink-0">
+              <span className="text-primary text-xs font-headline font-bold uppercase">
+                {user?.firstName?.[0]}{user?.lastName?.[0]}
+              </span>
+            </div>
+            <div className="min-w-0">
+              <p className="font-semibold text-text text-sm truncate">
+                {user?.firstName} {user?.lastName}
+              </p>
+              <p className="text-xs text-muted truncate">
+                {user?.emailAddresses[0]?.emailAddress}
+              </p>
+            </div>
+          </div>
         </div>
 
-        {/* Nav */}
-        <nav className="flex-1 px-3 py-4 space-y-1">
-          {sidebarLinks.map(({ label, href, icon: Icon }) => (
-            <Link
-              key={href}
-              href={href}
-              className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-muted hover:text-primary hover:bg-primary/10 transition-all group text-sm font-medium"
-            >
-              <Icon className="w-4 h-4 group-hover:text-primary transition-colors" />
-              {label}
-            </Link>
-          ))}
-        </nav>
+        {/* Nav — client component handles active state via usePathname */}
+        <DashboardSidebarNav />
 
         {/* Footer */}
         <div className="px-5 py-4 border-t border-primary/10">
