@@ -86,7 +86,7 @@ export default function EnvironmentalLiabilityPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
               <h3 className="font-headline font-bold text-base text-text mb-2">Chemical Off-Gassing</h3>
@@ -95,7 +95,7 @@ export default function EnvironmentalLiabilityPage() {
               </p>
             </GlassCard>
             <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
               <h3 className="font-headline font-bold text-base text-text mb-2">Overspray &amp; Drift Contamination</h3>
@@ -104,7 +104,7 @@ export default function EnvironmentalLiabilityPage() {
               </p>
             </GlassCard>
             <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
               <h3 className="font-headline font-bold text-base text-text mb-2">Improper Disposal</h3>

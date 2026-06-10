@@ -35,9 +35,33 @@ const faqs = [
   },
 ];
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'InsuranceAgency',
+      name: 'Spray Foam Insurance',
+      url: 'https://sprayfoaminsurance.com',
+      telephone: '844-967-5247',
+      description: "Workers' compensation insurance for spray foam contractors",
+      areaServed: 'US',
+      serviceType: "Workers Compensation Insurance",
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+  ],
+};
+
 export default function WorkersCompPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <PageHero
         title="Workers’ Compensation Insurance for Spray Foam Contractors"
         subtitle="Protecting your most valuable asset — your crew. Coverage for injuries, chemical exposure, and occupational illness from SPF operations."
@@ -68,7 +92,7 @@ export default function WorkersCompPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
               <h3 className="font-headline font-bold text-base text-text mb-2">Chemical Exposure</h3>
@@ -77,7 +101,7 @@ export default function WorkersCompPage() {
               </p>
             </GlassCard>
             <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
               <h3 className="font-headline font-bold text-base text-text mb-2">Working at Heights</h3>
@@ -86,7 +110,7 @@ export default function WorkersCompPage() {
               </p>
             </GlassCard>
             <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
               <h3 className="font-headline font-bold text-base text-text mb-2">Heat &amp; Equipment</h3>
@@ -95,7 +119,7 @@ export default function WorkersCompPage() {
               </p>
             </GlassCard>
             <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
               <h3 className="font-headline font-bold text-base text-text mb-2">Repetitive Stress</h3>
