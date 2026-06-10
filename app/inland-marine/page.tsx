@@ -36,7 +36,7 @@ const coverageItems = [
     icon: <Zap className="w-6 h-6" />,
     title: 'Heated Hose Systems',
     description:
-      '200’ and 300’ heated hose sets covered against fire, theft, and accidental damage during transport and on-site use.',
+      "200’ and 300’ heated hose sets covered against fire, theft, and accidental damage during transport and on-site use.",
   },
   {
     icon: <Zap className="w-5 h-5" />,
@@ -97,7 +97,7 @@ const steps = [
   {
     num: '4',
     title: 'Bundle with Your Other Policies',
-    body: 'Inland marine pairs well with GL, workers’ comp, and commercial auto for a complete protection package.',
+    body: "Inland marine pairs well with GL, workers’ comp, and commercial auto for a complete protection package.",
   },
 ];
 
@@ -147,7 +147,7 @@ export default function InlandMarinePage() {
         </h2>
         <p className="text-muted mb-10 max-w-2xl">
           Inland marine insurance travels with your equipment — on the road, at the job site, and
-          in storage. Here’s what’s protected.
+          in storage. Here&apos;s what&apos;s protected.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {coverageItems.map((item) => (

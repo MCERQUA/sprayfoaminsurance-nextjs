@@ -35,7 +35,7 @@ const rigItems = [
     range: '$8K–$20K',
     title: 'Heated Hose Sets',
     description:
-      '200' and 300' heated hose assemblies — damage, theft, and fire covered.',
+      "200' and 300' heated hose assemblies — damage, theft, and fire covered.",
   },
   {
     range: '$5K–$15K',
