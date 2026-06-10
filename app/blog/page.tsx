@@ -105,8 +105,8 @@ export default function BlogIndexPage() {
   return (
     <>
       <PageHero
-        headline="Spray Foam Insurance Blog"
-        subheadline="Expert coverage guides, safety tips, and industry news for spray foam insulation contractors."
+        title="Spray Foam Insurance Blog"
+        subtitle="Expert coverage guides, safety tips, and industry news for spray foam insulation contractors."
       />
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
