@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { SignInButton, UserButton, SignedIn, SignedOut } from '@clerk/nextjs';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const services = [
@@ -85,16 +84,12 @@ export default function Nav() {
             >
               Get a Quote
             </Link>
-            <SignedOut>
-              <SignInButton mode="modal">
-                <button className="secondary-btn px-4 py-2 rounded-full text-sm font-semibold font-label">
-                  Sign In
-                </button>
-              </SignInButton>
-            </SignedOut>
-            <SignedIn>
-              <UserButton afterSignOutUrl="/" />
-            </SignedIn>
+            <Link
+              href="/dashboard"
+              className="secondary-btn px-4 py-2 rounded-full text-sm font-semibold font-label"
+            >
+              Client Login
+            </Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -145,19 +140,13 @@ export default function Nav() {
               >
                 Get a Quote
               </Link>
-              <SignedOut>
-                <SignInButton mode="modal">
-                  <button className="secondary-btn px-4 py-2.5 rounded-full text-sm font-semibold font-label w-full">
-                    Sign In
-                  </button>
-                </SignInButton>
-              </SignedOut>
-              <SignedIn>
-                <div className="flex items-center gap-2 px-2">
-                  <UserButton afterSignOutUrl="/" />
-                  <span className="text-sm text-muted">My Account</span>
-                </div>
-              </SignedIn>
+              <Link
+                href="/dashboard"
+                className="secondary-btn px-4 py-2.5 rounded-full text-sm font-semibold font-label text-center"
+                onClick={() => setMobileOpen(false)}
+              >
+                Client Login
+              </Link>
             </div>
           </div>
         </div>

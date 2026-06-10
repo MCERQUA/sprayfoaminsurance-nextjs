@@ -1,4 +1,3 @@
-import { currentUser } from '@clerk/nextjs/server';
 import Link from 'next/link';
 import { FileText, Award, Clock, FolderOpen, ArrowRight, Phone, CheckCircle } from 'lucide-react';
 
@@ -21,15 +20,12 @@ const recentActivity = [
   { label: 'Quote #SFI-Q-1042 received', time: '3 weeks ago', icon: Clock, color: 'text-highlight' },
 ];
 
-export default async function DashboardPage() {
-  const user = await currentUser();
-  const firstName = user?.firstName || 'there';
-
+export default function DashboardPage() {
   return (
     <div>
       <div className="mb-8">
         <h1 className="text-3xl font-headline font-bold text-text mb-1">
-          Welcome back, <span className="blue-gradient-text">{firstName}</span>
+          Welcome to your <span className="blue-gradient-text">Dashboard</span>
         </h1>
         <p className="text-muted text-sm">
           Manage your spray foam insurance policies, certificates, and documents.
