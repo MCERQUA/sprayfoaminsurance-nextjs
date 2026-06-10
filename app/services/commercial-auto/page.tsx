@@ -87,7 +87,7 @@ export default function CommercialAutoPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="flex flex-col gap-4">
                 <CheckCircle className="w-8 h-8 text-accent" />
                 <h3 className="font-headline font-bold text-text text-lg">Owned Vehicles</h3>
@@ -96,7 +96,7 @@ export default function CommercialAutoPage() {
                 </p>
               </div>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="flex flex-col gap-4">
                 <CheckCircle className="w-8 h-8 text-accent" />
                 <h3 className="font-headline font-bold text-text text-lg">Hired &amp; Non-Owned Auto</h3>
@@ -105,7 +105,7 @@ export default function CommercialAutoPage() {
                 </p>
               </div>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="flex flex-col gap-4">
                 <CheckCircle className="w-8 h-8 text-accent" />
                 <h3 className="font-headline font-bold text-text text-lg">Trailer Coverage</h3>
@@ -114,7 +114,7 @@ export default function CommercialAutoPage() {
                 </p>
               </div>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="flex flex-col gap-4">
                 <CheckCircle className="w-8 h-8 text-accent" />
                 <h3 className="font-headline font-bold text-text text-lg">Loading &amp; Unloading</h3>
@@ -127,7 +127,7 @@ export default function CommercialAutoPage() {
         </div>
       </section>
 
-      <section className="bg-surface border-y border-primary/10 py-16">
+      <section className="blue-gradient-section py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mb-10 text-center">
             Why Spray Foam Contractors Need Commercial Auto Coverage
@@ -152,7 +152,7 @@ export default function CommercialAutoPage() {
                 height={400}
                 className="rounded-xl object-cover w-full"
               />
-              <GlassCard>
+              <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
                 <div className="flex items-start gap-4">
                   <AlertTriangle className="w-6 h-6 text-highlight shrink-0 mt-0.5" />
                   <div>
@@ -163,7 +163,7 @@ export default function CommercialAutoPage() {
                   </div>
                 </div>
               </GlassCard>
-              <GlassCard>
+              <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
                 <div className="flex items-start gap-4">
                   <AlertTriangle className="w-6 h-6 text-highlight shrink-0 mt-0.5" />
                   <div>
@@ -174,7 +174,7 @@ export default function CommercialAutoPage() {
                   </div>
                 </div>
               </GlassCard>
-              <GlassCard>
+              <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
                 <div className="flex items-start gap-4">
                   <AlertTriangle className="w-6 h-6 text-highlight shrink-0 mt-0.5" />
                   <div>

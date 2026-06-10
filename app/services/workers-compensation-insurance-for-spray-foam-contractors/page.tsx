@@ -91,7 +91,7 @@ export default function WorkersCompPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
               <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
@@ -100,7 +100,7 @@ export default function WorkersCompPage() {
                 Isocyanates are a leading cause of occupational asthma and sensitization. Once sensitized, a worker may never be able to work around isocyanates again — ending careers.
               </p>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
               <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
@@ -109,7 +109,7 @@ export default function WorkersCompPage() {
                 Crawlspaces, attics, rooftops, and elevated platforms create fall risk. Falls are the leading cause of construction fatalities.
               </p>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
               <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
@@ -118,7 +118,7 @@ export default function WorkersCompPage() {
                 Proportioners, heated hoses, and hot foam create burn risks. Machinery malfunctions can cause serious injuries.
               </p>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
               <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-highlight" />
               </div>
@@ -131,7 +131,7 @@ export default function WorkersCompPage() {
         </div>
       </section>
 
-      <section className="bg-surface border-y border-primary/10 py-16">
+      <section className="blue-gradient-section py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-text">

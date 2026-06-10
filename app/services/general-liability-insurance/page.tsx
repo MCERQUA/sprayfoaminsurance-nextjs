@@ -81,7 +81,7 @@ export default function GeneralLiabilityPage() {
         badge="GL Insurance"
       />
 
-      <section className="bg-background py-16">
+      <section className="blue-gradient-section py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="label-text">COVERAGE DETAILS</span>
@@ -93,7 +93,7 @@ export default function GeneralLiabilityPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <GlassCard className="p-6">
+            <GlassCard className="p-6 border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -102,7 +102,7 @@ export default function GeneralLiabilityPage() {
                 Covers medical expenses and legal costs if a third party is injured during or because of your operations.
               </p>
             </GlassCard>
-            <GlassCard className="p-6">
+            <GlassCard className="p-6 border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -111,7 +111,7 @@ export default function GeneralLiabilityPage() {
                 Protects you when your work damages a client&apos;s property, including structures, contents, or adjacent properties.
               </p>
             </GlassCard>
-            <GlassCard className="p-6">
+            <GlassCard className="p-6 border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -120,7 +120,7 @@ export default function GeneralLiabilityPage() {
                 SPF-specific coverage for wind-blown or accidental overspray damaging neighboring vehicles, landscaping, or structures.
               </p>
             </GlassCard>
-            <GlassCard className="p-6">
+            <GlassCard className="p-6 border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -129,7 +129,7 @@ export default function GeneralLiabilityPage() {
                 Extends protection after a job is done — covers claims arising from installed foam that fails or causes damage.
               </p>
             </GlassCard>
-            <GlassCard className="p-6">
+            <GlassCard className="p-6 border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -138,7 +138,7 @@ export default function GeneralLiabilityPage() {
                 Covers claims for libel, slander, copyright infringement, and other non-physical harms.
               </p>
             </GlassCard>
-            <GlassCard className="p-6">
+            <GlassCard className="p-6 border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
