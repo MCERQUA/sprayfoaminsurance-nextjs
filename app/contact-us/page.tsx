@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: 'Do you insure new contractors with no prior coverage?',
-    a: 'Yes — we work with contractors at all stages. New contractors may face slightly higher initial premiums but we'll find the best available rate.',
+    a: "Yes — we work with contractors at all stages. New contractors may face slightly higher initial premiums but we'll find the best available rate.",
   },
   {
     q: 'What information do I need to get a quote?',
@@ -181,7 +181,7 @@ export default function ContactUsPage() {
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-16">
-        <FAQSection faqs={faqs} heading="Frequently Asked Questions" />
+        <FAQSection items={faqs} />
       </div>
 
       <CTABar />
