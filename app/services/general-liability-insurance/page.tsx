@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
@@ -173,6 +174,13 @@ export default function GeneralLiabilityPage() {
               </div>
             </div>
             <div className="space-y-4">
+              <Image
+                src="/assets/images/spray-foam-insurance.webp"
+                alt="Spray foam insulation contractor at work — general liability insurance coverage"
+                width={600}
+                height={400}
+                className="rounded-xl object-cover w-full"
+              />
               <GlassCard className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center shrink-0">

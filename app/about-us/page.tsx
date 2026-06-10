@@ -54,11 +54,11 @@ export default function AboutUsPage() {
             </div>
             <div>
               <Image
-                src="/images/Josh_Cotner_Spray_Foam_Insurance.webp"
-                alt="Josh Cotner — Founder, Spray Foam Insurance"
-                width={600}
-                height={450}
-                className="rounded-2xl w-full object-cover shadow-2xl border border-primary/10"
+                src="/assets/images/josh-cotner.webp"
+                alt="Josh Cotner - Spray Foam Insurance Specialist"
+                width={400}
+                height={500}
+                className="rounded-xl object-cover w-full"
               />
             </div>
           </div>

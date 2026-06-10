@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
@@ -144,6 +145,13 @@ export default function CommercialAutoPage() {
               </p>
             </div>
             <div className="flex flex-col gap-5">
+              <Image
+                src="/assets/images/spray-rig.png"
+                alt="Spray foam rig truck — commercial auto insurance for spray foam contractors"
+                width={600}
+                height={400}
+                className="rounded-xl object-cover w-full"
+              />
               <GlassCard>
                 <div className="flex items-start gap-4">
                   <AlertTriangle className="w-6 h-6 text-highlight shrink-0 mt-0.5" />

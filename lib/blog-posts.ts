@@ -4,6 +4,7 @@ export interface BlogPost {
   date: string;
   category: string;
   excerpt: string;
+  image?: string;
 }
 
 export const blogPosts: BlogPost[] = [
