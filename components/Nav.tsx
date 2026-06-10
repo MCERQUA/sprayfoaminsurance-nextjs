@@ -104,15 +104,15 @@ export default function Nav() {
             {/* Logo */}
             <Link href="/" className="shrink-0 flex items-center gap-3">
               <Image
-                src="/assets/icons/logo.webp"
+                src="/assets/icons/logo-transparent.png"
                 alt="Spray Foam Insurance"
-                width={56}
-                height={56}
-                className="h-12 w-auto object-contain"
+                width={52}
+                height={52}
+                className="h-[52px] w-auto object-contain"
               />
-              <div className="hidden sm:block">
-                <div className="text-white font-bold text-base leading-tight">Spray Foam</div>
-                <div className="text-[#2ea3f2] font-bold text-base leading-tight">Insurance.com</div>
+              <div className="hidden sm:block leading-none">
+                <span className="font-headline font-bold text-sm text-gray-100 tracking-wide block">Spray Foam</span>
+                <span className="font-headline font-semibold text-sm text-[#2ea3f2] tracking-wide block">Insurance.com</span>
               </div>
             </Link>
 
