@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-background text-text font-body antialiased">
         <Nav />
-        <main className="pt-16">{children}</main>
+        <main className="pt-[160px]">{children}</main>
         <Footer />
       </body>
     </html>
