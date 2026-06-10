@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="dark text-[16px] antialiased" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Safety &amp; Compliance Support - Spray Foam Insurance Specialists</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Montserrat:wght@700;800&amp;family=Public+Sans:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#080d16',
+                        surface: '#0d1421',
+                        card: '#111827',
+                        primary: '#2ea3f2',
+                        accent: '#29c4a9',
+                        highlight: '#f59e0b',
+                        text: '#f0f4f8',
+                        muted: '#94a3b8'
+                    },
+                    fontFamily: {
+                        headline: ["Montserrat", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "1rem",
+                        xl: "1.5rem",
+                        full: "9999px"
+                    },
+                    letterSpacing: {
+                        tighter: '-0.02em',
+                        widest: '0.1em'
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0; }
+        .material-symbols-fill { font-variation-settings: 'FILL' 1; font-family: 'Material Symbols Outlined'; }
+        
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-card:hover {
+            border-color: rgba(46, 163, 242, 0.6);
+            box-shadow: 0 10px 30px -10px rgba(46, 163, 242, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .gradient-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .section-spacing {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .custom-checkbox input[type="checkbox"] {
+            display: none;
+        }
+        
+        .custom-checkbox label {
+            display: flex;
+            align-items: flex-start;
+            cursor: pointer;
+            gap: 1rem;
+        }
+
+        .custom-checkbox .checkmark {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #29c4a9;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+            transition: all 0.2s;
+            background: rgba(41, 196, 169, 0.1);
+        }
+
+        .custom-checkbox input[type="checkbox"]:checked + label .checkmark {
+            background: #29c4a9;
+        }
+
+        .custom-checkbox input[type="checkbox"]:checked + label .checkmark::after {
+            content: 'check';
+            font-family: 'Material Symbols Outlined';
+            color: #080d16;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-background text-text font-body leading-[1.75] overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-[#080d16] dark:bg-[#080d16] border-b border-[#2ea3f2]/20 backdrop-blur-md shadow-[0_4px_20px_rgba(46,163,242,0.15)] fixed top-0 w-full z-50 flex justify-between items-center px-8 h-20 max-w-full">
+<div class="text-2xl font-headline font-extrabold tracking-tighter text-[#2ea3f2]">
+            SPRAYFOAM SAFE
+        </div>
+<nav class="hidden md:flex items-center gap-8 font-headline text-lg font-bold tracking-tight">
+<a class="text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors" href="#">Policies</a>
+<a class="text-[#29c4a9] border-b-2 border-[#29c4a9] pb-1" href="#">Compliance</a>
+<a class="text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors" href="#">Resources</a>
+<a class="text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors" href="#">Reporting</a>
+</nav>
+<div class="hidden md:flex items-center gap-4">
+<button class="font-headline text-lg font-bold tracking-tight text-[#f0f4f8] hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform px-4 py-2">
+                Client Login
+            </button>
+<button class="font-headline text-lg font-bold tracking-tight text-[#2ea3f2] border border-[#2ea3f2] rounded hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform px-6 py-2">
+                Get Quote
+            </button>
+</div>
+</header>
+<!-- SideNavBar (Hidden on Mobile, Visible on LG as per shell layout) -->
+<aside class="bg-[#0d1421] dark:bg-[#0d1421] docked left-0 h-full w-64 border-r border-[#2ea3f2]/10 shadow-2xl hidden lg:flex flex-col fixed left-0 top-20 h-[calc(100vh-5rem)] z-40">
+<div class="p-6 border-b border-[#2ea3f2]/10 flex flex-col gap-2">
+<img alt="Contractor Profile" class="w-12 h-12 rounded-full object-cover border-2 border-primary" data-alt="A rugged, professional spray foam contractor wearing safety gear, set against a dark industrial background. Cinematic lighting highlights the texture of the protective suit and helmet. High contrast, professional portrait style, maintaining a moody, serious atmosphere. The overall color palette emphasizes deep navy blues with subtle electrical blue highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB1158ximUQx5ZABb97ttpBjLlQxmYhEp8hvWdLZNbIMhOyoMUXy5SmkI6LVcPwyT-Bnuj9GYGnlq-_ZhZvl_1Z56UUIYwL9Rm3LZ-2P8PhunGSRBj3bxKk4QCab5Lq6LORDs6NGdlTSjuF6D_Md0sq_oScvRy4kNZ-s_FnrPIivasBP7CRvgwDdU3tjfbjguUEu2ovxakvj7ObzbotLFpkxwcnaHKTeqwwvNCz9P5Ob1kjfDkw4uKwgAL4oK7fK2iALaR6QzTXku4"/>
+<div>
+<h3 class="text-xl font-headline font-bold text-[#f0f4f8]">SPF Portal</h3>
+<p class="font-body text-sm font-medium text-[#94a3b8]">Safety Management</p>
+</div>
+</div>
+<nav class="flex-1 py-4 font-body text-sm font-medium">
+<a class="flex items-center gap-3 text-[#94a3b8] hover:bg-[#111827] hover:text-[#f0f4f8] px-4 py-3 hover:bg-[#111827] transition-all translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                Dashboard
+            </a>
+<a class="flex items-center gap-3 bg-[#111827] text-[#2ea3f2] border-l-4 border-[#2ea3f2] px-4 py-3 hover:bg-[#111827] transition-all translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+                Compliance Library
+            </a>
+<a class="flex items-center gap-3 text-[#94a3b8] hover:bg-[#111827] hover:text-[#f0f4f8] px-4 py-3 hover:bg-[#111827] transition-all translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">fact_check</span>
+                OSHA Checklist
+            </a>
+<a class="flex items-center gap-3 text-[#94a3b8] hover:bg-[#111827] hover:text-[#f0f4f8] px-4 py-3 hover:bg-[#111827] transition-all translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">school</span>
+                Safety Training
+            </a>
+<a class="flex items-center gap-3 text-[#94a3b8] hover:bg-[#111827] hover:text-[#f0f4f8] px-4 py-3 hover:bg-[#111827] transition-all translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">report_problem</span>
+                Incident Reports
+            </a>
+</nav>
+<div class="p-4 border-t border-[#2ea3f2]/10">
+<button class="w-full bg-highlight text-background font-bold py-2 rounded mb-4 hover:opacity-90 transition-opacity">Submit Safety Log</button>
+<div class="flex flex-col gap-2 font-body text-sm font-medium">
+<a class="flex items-center gap-3 text-[#94a3b8] hover:bg-[#111827] hover:text-[#f0f4f8] px-4 py-2 hover:bg-[#111827] transition-all translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">help</span> Support
+                </a>
+<a class="flex items-center gap-3 text-[#94a3b8] hover:bg-[#111827] hover:text-[#f0f4f8] px-4 py-2 hover:bg-[#111827] transition-all translate-x-1 duration-200" href="#">
+<span class="material-symbols-outlined">settings</span> Settings
+                </a>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas (Offset for TopNav and SideNav on desktop) -->
+<main class="pt-20 lg:ml-64 relative min-h-screen">
+<!-- (1) Hero -->
+<section class="relative min-h-[819px] flex items-center bg-background overflow-hidden px-6 lg:px-12 py-20">
+<div class="gradient-orb bg-accent w-[600px] h-[600px] top-[-200px] right-[-100px]"></div>
+<div class="gradient-orb bg-primary w-[500px] h-[500px] bottom-[-100px] left-[-200px]"></div>
+<div class="relative z-10 max-w-4xl">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-text tracking-tighter mb-6 leading-tight">
+                    SPF Safety &amp; <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Compliance Resources</span>
+</h1>
+<p class="font-body text-xl text-muted mb-10 max-w-2xl">
+                    Authoritative standards for OSHA and SPFA compliance. Master your safety protocols to protect your crew, optimize your Experience Modification Rate, and secure premium coverage rates.
+                </p>
+<button class="bg-gradient-to-r from-primary to-blue-600 text-text font-headline font-bold text-lg px-8 py-4 rounded-lg shadow-[0_0_20px_rgba(46,163,242,0.4)] hover:shadow-[0_0_30px_rgba(46,163,242,0.6)] transition-all transform hover:-translate-y-1">
+                    Download Comprehensive Guide
+                </button>
+</div>
+</section>
+<!-- (2) Insurance Impact -->
+<section class="bg-surface section-spacing px-6 lg:px-12 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline text-3xl md:text-4xl font-bold tracking-tighter mb-6">The Financial Weight of <span class="text-primary">Safety Records</span></h2>
+<p class="text-muted mb-6">
+                        In the spray foam industry, your safety record is directly tethered to your operational overhead. Insurance carriers evaluate risk primarily through your historical claims data.
+                    </p>
+<p class="text-muted mb-8">
+                        A lapse in safety compliance doesn't just invite OSHA penalties; it jeopardizes your eligibility for specialized SPF coverage programs and exponentially increases base premium rates across Workers' Compensation and General Liability lines.
+                    </p>
+<ul class="space-y-4 font-body text-text">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent">verified_user</span>
+                            Maintains preferred tier eligibility
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent">trending_down</span>
+                            Reduces base premium multipliers
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent">gavel</span>
+                            Mitigates risk of coverage cancellation
+                        </li>
+</ul>
+</div>
+<div class="relative">
+<div class="absolute inset-0 bg-highlight/20 blur-[100px] rounded-full"></div>
+<div class="glass-card p-10 border-highlight/30 relative z-10 flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-highlight text-5xl mb-4">analytics</span>
+<h3 class="font-headline text-2xl font-bold mb-2">Experience Modification Rate (EMR)</h3>
+<div class="font-display font-extrabold text-7xl text-highlight my-6">1.0</div>
+<p class="text-muted text-sm uppercase tracking-widest font-label">The Industry Baseline</p>
+<div class="mt-8 p-4 bg-background/50 rounded-lg w-full text-left">
+<div class="flex justify-between items-center mb-2">
+<span class="text-sm text-muted">EMR &gt; 1.0</span>
+<span class="text-sm font-bold text-red-400">Premium Penalty</span>
+</div>
+<div class="w-full bg-surface h-2 rounded-full overflow-hidden">
+<div class="bg-red-400 h-full w-3/4"></div>
+</div>
+<div class="flex justify-between items-center mt-4 mb-2">
+<span class="text-sm text-muted">EMR &lt; 1.0</span>
+<span class="text-sm font-bold text-accent">Premium Credit</span>
+</div>
+<div class="w-full bg-surface h-2 rounded-full overflow-hidden">
+<div class="bg-accent h-full w-1/4"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#080d16] dark:bg-[#080d16] border-t border-[#2ea3f2]/20 pt-12 pb-8 flat w-full px-8 flex flex-col items-center justify-center text-center gap-6 z-10 relative">
+<div class="text-lg font-headline font-bold text-[#f59e0b]">SPRAYFOAM SAFE</div>
+<nav class="flex flex-wrap justify-center gap-6 font-label text-xs uppercase tracking-widest">
+<a class="text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors duration-200 opacity-100 hover:opacity-80 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors duration-200 opacity-100 hover:opacity-80 transition-opacity" href="#">Terms of Service</a>
+<a class="text-[#f59e0b] hover:text-[#2ea3f2] transition-colors duration-200 opacity-100 hover:opacity-80 transition-opacity" href="#">Compliance Standards</a>
+<a class="text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors duration-200 opacity-100 hover:opacity-80 transition-opacity" href="#">Agent Portal</a>
+<a class="text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors duration-200 opacity-100 hover:opacity-80 transition-opacity" href="#">Contact Support</a>
+</nav>
+<p class="font-label text-xs uppercase tracking-widest text-[#94a3b8]">
+                © 2024 Spray Foam Insurance Specialists. All Rights Reserved. A Member of the Global Insurance Network.
+            </p>
+</footer>
+</main>
+</body></html>

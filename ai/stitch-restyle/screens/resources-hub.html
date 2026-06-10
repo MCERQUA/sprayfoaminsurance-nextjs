@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SPF INSURE - Resource Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&amp;family=Inter:wght@400;500&amp;family=Public+Sans:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#080d16',
+                        surface: '#0d1421',
+                        card: '#111827',
+                        primary: '#2ea3f2',
+                        accent: '#29c4a9',
+                        highlight: '#f59e0b',
+                        text: '#f0f4f8',
+                        muted: '#94a3b8'
+                    },
+                    fontFamily: {
+                        headline: ["Montserrat", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    letterSpacing: {
+                        tighter: '-0.04em',
+                        tight: '-0.02em',
+                        normal: '0',
+                        wide: '0.025em',
+                        wider: '0.05em',
+                        widest: '0.1em',
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(46, 163, 242, 0.5);
+            box-shadow: 0 10px 40px rgba(46, 163, 242, 0.15);
+            transform: translateY(-4px);
+        }
+        .orb-glow {
+            background: radial-gradient(circle at center, rgba(46, 163, 242, 0.15) 0%, rgba(8, 13, 22, 0) 70%);
+        }
+        .teal-gradient-text {
+            background: linear-gradient(to right, #2ea3f2, #29c4a9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-text font-body antialiased min-h-screen flex flex-col">
+<!-- Top Navigation Placeholder -->
+    {{DATA:COMPONENTS:COMPONENTS_5}}
+
+    <main class="flex-grow pt-20"> <!-- Offset for fixed nav -->
+<!-- Section 1: Hero -->
+<section class="relative py-32 overflow-hidden bg-background">
+<div class="absolute inset-0 orb-glow pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tight mb-6 leading-tight">
+                    Resources for <span class="teal-gradient-text">Spray Foam</span> Professionals
+                </h1>
+<p class="font-body text-xl text-muted max-w-2xl mx-auto mb-10">
+                    The Industry's Premier Knowledge Hub for SPF Risk Management.
+                </p>
+</div>
+</section>
+<!-- Section 2: Resource Categories -->
+<section class="py-24 bg-surface relative">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="font-headline font-bold text-3xl md:text-4xl mb-12 text-center">Browse Categories</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Cards -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Insurance Guides</h3>
+<p class="text-muted text-sm">Comprehensive guides to understand your coverage options.</p>
+</div>
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Safety Docs</h3>
+<p class="text-muted text-sm">Critical safety protocols and compliance documentation.</p>
+</div>
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">assignment</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Work Record Forms</h3>
+<p class="text-muted text-sm">Standardized forms for accurate job reporting.</p>
+</div>
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">newspaper</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Industry News</h3>
+<p class="text-muted text-sm">Latest updates and trends in the SPF industry.</p>
+</div>
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Training</h3>
+<p class="text-muted text-sm">Educational resources and certification materials.</p>
+</div>
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">calculate</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Calculators</h3>
+<p class="text-muted text-sm">Tools to estimate coverage needs and premiums.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Featured Downloads -->
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-12 border-b border-primary/20 pb-4">
+<h2 class="font-headline font-bold text-3xl md:text-4xl">Featured Downloads</h2>
+<a class="text-accent hover:text-primary transition-colors text-sm font-label uppercase tracking-widest flex items-center gap-1" href="#">View All <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Download Card -->
+<div class="glass-card rounded-lg p-6 flex flex-col h-full">
+<div class="mb-4">
+<span class="material-symbols-outlined text-muted text-4xl">picture_as_pdf</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-2 flex-grow">GL Coverage Guide</h4>
+<button class="mt-4 w-full bg-transparent border border-accent text-accent hover:bg-accent hover:text-background py-2 rounded-md font-label uppercase text-xs tracking-widest transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined text-sm">download</span> Download PDF
+                        </button>
+</div>
+<div class="glass-card rounded-lg p-6 flex flex-col h-full">
+<div class="mb-4">
+<span class="material-symbols-outlined text-muted text-4xl">picture_as_pdf</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-2 flex-grow">SPF Safety Checklist</h4>
+<button class="mt-4 w-full bg-transparent border border-accent text-accent hover:bg-accent hover:text-background py-2 rounded-md font-label uppercase text-xs tracking-widest transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined text-sm">download</span> Download PDF
+                        </button>
+</div>
+<div class="glass-card rounded-lg p-6 flex flex-col h-full">
+<div class="mb-4">
+<span class="material-symbols-outlined text-muted text-4xl">description</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-2 flex-grow">Work Record Form</h4>
+<button class="mt-4 w-full bg-transparent border border-accent text-accent hover:bg-accent hover:text-background py-2 rounded-md font-label uppercase text-xs tracking-widest transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined text-sm">download</span> Download Doc
+                        </button>
+</div>
+<div class="glass-card rounded-lg p-6 flex flex-col h-full">
+<div class="mb-4">
+<span class="material-symbols-outlined text-muted text-4xl">description</span>
+</div>
+<h4 class="font-headline font-bold text-lg mb-2 flex-grow">Certificate Template</h4>
+<button class="mt-4 w-full bg-transparent border border-accent text-accent hover:bg-accent hover:text-background py-2 rounded-md font-label uppercase text-xs tracking-widest transition-colors flex justify-center items-center gap-2">
+<span class="material-symbols-outlined text-sm">download</span> Download Doc
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 10: CTA -->
+<section class="py-24 bg-gradient-to-br from-primary/20 to-accent/20 relative overflow-hidden">
+<div class="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl mb-6 tracking-tight">Ready to Protect Your Business?</h2>
+<p class="text-xl text-muted mb-10">Get a specialized quote tailored for spray foam contractors today.</p>
+<button class="bg-gradient-to-r from-primary to-accent hover:from-accent hover:to-primary text-background font-headline font-bold text-lg px-8 py-4 rounded-full shadow-[0_0_20px_rgba(46,163,242,0.4)] transition-all transform hover:scale-105">
+                    Request a Quote
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer Placeholder -->
+    {{DATA:COMPONENTS:COMPONENTS_5}}
+
+
+</body></html>

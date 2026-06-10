@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Spray Foam Insurance | Protecting SPF Contractors</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Montserrat:wght@700;800&amp;family=Public+Sans:wght@600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration from Design System -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "#080d16",
+              surface: "#0d1421",
+              card: "#111827",
+              primary: "#2ea3f2",
+              accent: "#29c4a9",
+              highlight: "#f59e0b",
+              text: "#f0f4f8",
+              muted: "#94a3b8"
+            },
+            borderRadius: {
+                    "DEFAULT": "0.5rem",
+                    "lg": "1rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            fontFamily: {
+                    "headline": ["Montserrat", "sans-serif"],
+                    "display": ["Montserrat", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Public Sans", "sans-serif"]
+            },
+            letterSpacing: {
+                "tighter": "-0.02em",
+                "widest": "0.1em"
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #080d16;
+            color: #f0f4f8;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -0.02em;
+        }
+        
+        /* Glassmorphism & Cinematic Effects */
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(46, 163, 242, 0.4);
+            box-shadow: 0 8px 32px rgba(46, 163, 242, 0.15);
+            transform: translateY(-4px);
+        }
+        
+        .blue-gradient-text {
+            background: linear-gradient(135deg, #2ea3f2, #29c4a9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .primary-btn {
+            background: linear-gradient(135deg, #2ea3f2, #1a7ebf);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .primary-btn:hover {
+            box-shadow: 0 0 20px rgba(46, 163, 242, 0.4);
+            transform: scale(1.02);
+        }
+        
+        .secondary-btn {
+            border: 1px solid #29c4a9;
+            color: #29c4a9;
+            transition: all 0.3s ease;
+        }
+        .secondary-btn:hover {
+            background: rgba(41, 196, 169, 0.1);
+            box-shadow: 0 0 15px rgba(41, 196, 169, 0.2);
+        }
+        
+        .amber-cta {
+            background-color: #f59e0b;
+            color: #080d16;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        .amber-cta:hover {
+            background-color: #d97706;
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+            transform: scale(1.02);
+        }
+        
+        /* Ambient Orbs */
+        .ambient-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        /* Scroll Animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Accordion */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            padding-bottom: 1.5rem;
+        }
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary/30 selection:text-white">
+<!-- TopNavBar JSON Applied -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 max-w-full bg-[#080d16]/80 backdrop-blur-md shadow-[0_4px_20px_rgba(46,163,242,0.1)] border-b border-[#2ea3f2]/10">
+<div class="text-2xl font-headline font-extrabold tracking-tighter text-[#2ea3f2] hover:text-[#2ea3f2] transition-all duration-300 scale-95 active:scale-90 transition-transform cursor-pointer">
+            SFI
+        </div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex space-x-8 font-headline font-bold tracking-tight">
+<!-- Active state logic: Since it's homepage, Home/Explore would be active, but not in list. Let's make none actively styled except maybe first if needed, but context says homepage. Let's apply inactive to all for now as user is on root. -->
+<li class="text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-all duration-300 cursor-pointer">Protection</li>
+<li class="text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-all duration-300 cursor-pointer">Why SFI</li>
+<li class="text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-all duration-300 cursor-pointer">Process</li>
+<li class="text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-all duration-300 cursor-pointer">Carriers</li>
+<li class="text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-all duration-300 cursor-pointer">Blog</li>
+</ul>
+<button class="primary-btn px-6 py-2 rounded-full font-headline font-bold tracking-tight text-sm scale-95 active:scale-90 transition-transform">
+            Get Quote
+        </button>
+</nav>
+<main>
+<!-- 1. Full-bleed Hero -->
+<section class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
+<!-- Ambient Gradient Orbs -->
+<div class="ambient-orb w-[600px] h-[600px] bg-primary/15 top-[-100px] left-[-200px]"></div>
+<div class="ambient-orb w-[500px] h-[500px] bg-accent/15 bottom-[-100px] right-[-100px]"></div>
+<!-- Optional subtle background image for texture -->
+<div class="absolute inset-0 z-[-1] opacity-20 bg-cover bg-center" data-alt="A cinematic, high-contrast photograph of a professional construction site with dramatic rim lighting. The scene is dominated by deep shadows and industrial textures, echoing a premium, dark-mode aesthetic. A lone figure in safety gear stands slightly silhouetted against a faint electric blue glow emanating from machinery. The overall mood is authoritative, rugged, and highly professional, perfectly suited for a specialized contractor insurance background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQDPA-JNaw5i0cuNMZQXKbRb_SbT7U4mRFKiieY6-gN2i30ntmim6MX-ELeXBK4Aa1vw745vNiKwpeO8kaSnVnBduEujUkeKcoIUsI2au51KjkCsczBmfmQ6nPcRj8KmI0xPWLIME_XyYeRuXmNpPjrru7DemgVQctdxjaErcx9cfxSmJxYNkDvaC4Nfzyr92p7Sv7JmTEwm0zFyr9FlWkuR2qHOQNPI7ZCIWDZ_ovnQd-ivmOwQje_UEfbBqPdRAKBdBvZkgj1MSR');"></div>
+<div class="container mx-auto px-6 lg:px-12 relative z-10">
+<div class="max-w-4xl fade-in-up">
+<span class="font-label text-accent uppercase tracking-widest text-sm font-semibold mb-4 block">Specialized Coverage</span>
+<h1 class="text-5xl md:text-6xl lg:text-[80px] font-headline font-extrabold leading-[1.1] mb-6 text-text">
+                        Protecting Spray Foam Contractors <br class="hidden lg:block"/>
+<span class="blue-gradient-text">Across America</span>
+</h1>
+<p class="text-xl md:text-2xl text-muted font-body mb-10 max-w-2xl leading-relaxed">
+                        Supporting Your Success, Beyond the Policy. Built specifically for the unique risks of SPF professionals.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 mb-16">
+<button class="primary-btn px-8 py-4 rounded-lg font-headline font-bold text-lg flex items-center justify-center gap-2">
+                            Get Instant Quote
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+<button class="secondary-btn px-8 py-4 rounded-lg font-headline font-bold text-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">call</span>
+                            Call 844-967-5247
+                        </button>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center border-t border-primary/10 pt-8 opacity-80">
+<div class="flex items-center gap-2 text-muted text-sm font-label uppercase tracking-widest">
+<span class="material-symbols-outlined text-accent">verified_user</span> A-Rated Carriers
+                        </div>
+<div class="flex items-center gap-2 text-muted text-sm font-label uppercase tracking-widest">
+<span class="material-symbols-outlined text-accent">gavel</span> SPFA Member
+                        </div>
+<div class="flex items-center gap-2 text-muted text-sm font-label uppercase tracking-widest">
+<span class="material-symbols-outlined text-accent">speed</span> Fast Certs
+                        </div>
+<div class="flex items-center gap-2 text-muted text-sm font-label uppercase tracking-widest">
+<span class="material-symbols-outlined text-accent">support_agent</span> Dedicated Team
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Amber-number Stats Bar -->
+<section class="py-12 bg-surface relative z-10 border-y border-primary/10">
+<div class="container mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-primary/10">
+<div class="text-center fade-in-up" style="transition-delay: 0.1s;">
+<div class="text-4xl md:text-5xl font-headline font-extrabold text-highlight mb-2">500+</div>
+<div class="font-label text-sm text-muted uppercase tracking-widest">Contractors</div>
+</div>
+<div class="text-center fade-in-up" style="transition-delay: 0.2s;">
+<div class="text-4xl md:text-5xl font-headline font-extrabold text-highlight mb-2">15+</div>
+<div class="font-label text-sm text-muted uppercase tracking-widest">Years Exp.</div>
+</div>
+<div class="text-center fade-in-up" style="transition-delay: 0.3s;">
+<div class="text-4xl md:text-5xl font-headline font-extrabold text-highlight mb-2">24hr</div>
+<div class="font-label text-sm text-muted uppercase tracking-widest">Quote Turnaround</div>
+</div>
+<div class="text-center fade-in-up" style="transition-delay: 0.4s;">
+<div class="text-4xl md:text-5xl font-headline font-extrabold text-highlight mb-2">$50M+</div>
+<div class="font-label text-sm text-muted uppercase tracking-widest">Claims Paid</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. 'Who We Protect' -->
+<section class="py-24 bg-background relative overflow-hidden">
+<div class="container mx-auto px-6 lg:px-12 relative z-10">
+<div class="text-center mb-16 fade-in-up">
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-headline font-bold mb-4">Who We Protect</h2>
+<p class="text-muted text-lg max-w-2xl mx-auto">Tailored coverage solutions based on your specific operational focus.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center fade-in-up" style="transition-delay: 0.1s;">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 border border-primary/20">
+<span class="material-symbols-outlined text-3xl text-primary">house</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4 text-text">Residential</h3>
+<p class="text-muted text-sm leading-relaxed mb-6 flex-grow">Coverage built for contractors focusing on single-family homes, attics, crawlspaces, and new residential builds.</p>
+<a class="text-accent font-label uppercase tracking-widest text-xs font-semibold flex items-center gap-1 hover:text-primary transition-colors" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center fade-in-up" style="transition-delay: 0.2s;">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 border border-primary/20">
+<span class="material-symbols-outlined text-3xl text-primary">domain</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4 text-text">Commercial</h3>
+<p class="text-muted text-sm leading-relaxed mb-6 flex-grow">High-limit policies for large-scale commercial projects, warehouses, agricultural buildings, and institutional facilities.</p>
+<a class="text-accent font-label uppercase tracking-widest text-xs font-semibold flex items-center gap-1 hover:text-primary transition-colors" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center fade-in-up" style="transition-delay: 0.3s;">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6 border border-primary/20">
+<span class="material-symbols-outlined text-3xl text-primary">roofing</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4 text-text">Roofing + SPF Hybrid</h3>
+<p class="text-muted text-sm leading-relaxed mb-6 flex-grow">Specialized hybrid policies addressing the unique risks of dual roofing and spray foam operations without gaps.</p>
+<a class="text-accent font-label uppercase tracking-widest text-xs font-semibold flex items-center gap-1 hover:text-primary transition-colors" href="#">
+                            Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Core Coverages (Bento Grid Style) -->
+<section class="py-24 bg-surface relative border-y border-primary/10">
+<div class="container mx-auto px-6 lg:px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 fade-in-up">
+<div class="max-w-2xl">
+<span class="font-label text-primary uppercase tracking-widest text-sm font-semibold mb-2 block">Comprehensive Protection</span>
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-headline font-bold text-text">Core Coverages</h2>
+</div>
+<button class="primary-btn mt-6 md:mt-0 px-6 py-3 rounded-lg font-headline font-bold text-sm hidden md:block">
+                        View All Coverages
+                    </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- General Liability -->
+<div class="glass-card p-8 rounded-xl fade-in-up group" style="transition-delay: 0.1s;">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary font-light group-hover:scale-110 transition-transform">shield</span>
+<div class="w-8 h-8 rounded-full bg-surface border border-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold mb-2 text-text">General Liability</h4>
+<p class="text-muted text-sm leading-relaxed">Protection against third-party bodily injury and property damage claims arising from your operations.</p>
+</div>
+<!-- Workers Comp -->
+<div class="glass-card p-8 rounded-xl fade-in-up group" style="transition-delay: 0.2s;">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-accent font-light group-hover:scale-110 transition-transform">personal_injury</span>
+<div class="w-8 h-8 rounded-full bg-surface border border-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold mb-2 text-text">Workers Comp</h4>
+<p class="text-muted text-sm leading-relaxed">Medical expenses and lost wages coverage for your employees injured on the job site.</p>
+</div>
+<!-- Commercial Auto -->
+<div class="glass-card p-8 rounded-xl fade-in-up group" style="transition-delay: 0.3s;">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary font-light group-hover:scale-110 transition-transform">local_shipping</span>
+<div class="w-8 h-8 rounded-full bg-surface border border-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold mb-2 text-text">Commercial Auto</h4>
+<p class="text-muted text-sm leading-relaxed">Coverage for your fleet of spray rigs, box trucks, and company vehicles against accidents and theft.</p>
+</div>
+<!-- Inland Marine/Rig -->
+<div class="glass-card p-8 rounded-xl fade-in-up group" style="transition-delay: 0.4s;">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-accent font-light group-hover:scale-110 transition-transform">rv_hookup</span>
+<div class="w-8 h-8 rounded-full bg-surface border border-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold mb-2 text-text">Inland Marine / Rigs</h4>
+<p class="text-muted text-sm leading-relaxed">Protecting your expensive mobile equipment, proportioners, and generators while in transit or on-site.</p>
+</div>
+<!-- Surety Bonds -->
+<div class="glass-card p-8 rounded-xl fade-in-up group" style="transition-delay: 0.5s;">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary font-light group-hover:scale-110 transition-transform">description</span>
+<div class="w-8 h-8 rounded-full bg-surface border border-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold mb-2 text-text">Surety Bonds</h4>
+<p class="text-muted text-sm leading-relaxed">Performance, payment, and license bonds required to bid on public or large commercial contracts.</p>
+</div>
+<!-- Environmental Liability -->
+<div class="glass-card p-8 rounded-xl fade-in-up group" style="transition-delay: 0.6s;">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-accent font-light group-hover:scale-110 transition-transform">eco</span>
+<div class="w-8 h-8 rounded-full bg-surface border border-primary/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+</div>
+</div>
+<h4 class="text-xl font-headline font-bold mb-2 text-text">Environmental Liability</h4>
+<p class="text-muted text-sm leading-relaxed">Pollution coverage addressing claims related to chemical spills, overspray, or improper ventilation.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Why SFI & 6. How It Works (Combined Layout) -->
+<section class="py-24 bg-background relative overflow-hidden">
+<div class="ambient-orb w-[400px] h-[400px] bg-primary/10 top-[20%] right-[-100px]"></div>
+<div class="container mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<!-- Why SFI -->
+<div>
+<div class="mb-10 fade-in-up">
+<h2 class="text-3xl md:text-4xl font-headline font-bold mb-4">Why Choose SFI?</h2>
+<p class="text-muted">We don't just sell policies; we understand the chemistry, the rigs, and the risks of your trade.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="flex flex-col gap-4 fade-in-up" style="transition-delay: 0.1s;">
+<div class="w-12 h-12 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<div>
+<h5 class="font-headline font-bold text-lg mb-1">Specialist Underwriters</h5>
+<p class="text-muted text-sm">Experts who know A-side from B-side.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 fade-in-up" style="transition-delay: 0.2s;">
+<div class="w-12 h-12 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">stars</span>
+</div>
+<div>
+<h5 class="font-headline font-bold text-lg mb-1">A-Rated Carriers</h5>
+<p class="text-muted text-sm">Financially stable partners only.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 fade-in-up" style="transition-delay: 0.3s;">
+<div class="w-12 h-12 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<div>
+<h5 class="font-headline font-bold text-lg mb-1">Same-Day Certs</h5>
+<p class="text-muted text-sm">Never miss a job waiting for paper.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 fade-in-up" style="transition-delay: 0.4s;">
+<div class="w-12 h-12 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">diversity_3</span>
+</div>
+<div>
+<h5 class="font-headline font-bold text-lg mb-1">Claims Advocacy</h5>
+<p class="text-muted text-sm">We fight for your fair settlement.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- How It Works (Timeline) -->
+<div class="glass-card p-10 rounded-2xl flex flex-col justify-center fade-in-up">
+<h3 class="text-2xl font-headline font-bold mb-8 text-center">The SFI Process</h3>
+<div class="relative flex flex-col gap-8">
+<!-- Connecting Line -->
+<div class="absolute left-[23px] top-4 bottom-4 w-0.5 bg-gradient-to-b from-primary via-accent to-primary opacity-30"></div>
+<!-- Step 1 -->
+<div class="relative z-10 flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-background border-2 border-primary flex items-center justify-center font-headline font-bold shrink-0 shadow-[0_0_15px_rgba(46,163,242,0.4)] text-primary">1</div>
+<div>
+<h5 class="font-headline font-bold text-lg mb-1">Apply Online</h5>
+<p class="text-muted text-sm">Complete our specialized SPF application in 5 minutes.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-background border-2 border-accent flex items-center justify-center font-headline font-bold shrink-0 shadow-[0_0_15px_rgba(41,196,169,0.4)] text-accent">2</div>
+<div>
+<h5 class="font-headline font-bold text-lg mb-1">Review Quote</h5>
+<p class="text-muted text-sm">Receive tailored options from multiple carriers within 24 hours.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold shrink-0 shadow-[0_0_20px_rgba(46,163,242,0.6)]">3</div>
+<div>
+<h5 class="font-headline font-bold text-lg mb-1 text-white">Get Active</h5>
+<p class="text-muted text-sm">Sign digitally, pay online, and receive certificates instantly.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Coverage Accordion & 10. Safety Callout -->
+<section class="py-24 bg-surface relative border-t border-primary/10">
+<div class="container mx-auto px-6 lg:px-12">
+<!-- Safety Callout (Placed above accordion for visual weight) -->
+<div class="glass-card rounded-2xl overflow-hidden mb-20 fade-in-up flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/3 h-64 md:h-auto min-h-full relative">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Close up shot of a worker in full protective gear, including a high-tech respirator mask, operating a spray foam gun in a dimly lit commercial interior. The lighting is cinematic, highlighting the mist and particles in the air with a faint teal and blue glow from work lights. The mood is industrial, serious, and emphasizes safety and precision in a dark-mode environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFn6hscroVO6YfOVcriFyCLSjI8APawulfuI3tVhiF-17MI14dHcTVTJpws6MpP3gt1MQLkWjjZ17YO6keu_aH-kQ26te061QCHX8CYet4TqEDcdgUf4oCC_A1Q4iH5baPOfZbUksUz49-Sh6Js1Vw_c-1nuBqVjwjGHbrIMMKYQC82hStvJR5K3jDurBWoUI3lgALsOpoZYW12TldfSpyegu6_XY99yV7Xdr7aPmLPwMfYwRlJcoFiqusImtUy5hV0jjYSmU6jFB4');"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-transparent to-surface/90 md:to-surface/100"></div>
+</div>
+<div class="w-full md:w-2/3 p-10 md:p-12 relative z-10">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-accent text-3xl">health_and_safety</span>
+<span class="font-label text-accent uppercase tracking-widest text-sm font-semibold">Risk Management</span>
+</div>
+<h3 class="text-2xl md:text-3xl font-headline font-bold mb-4">Is Your Respiratory Protection Program Compliant?</h3>
+<p class="text-muted mb-6 max-w-xl">OSHA violations can devastate a business. SFI policyholders get free access to our comprehensive SPF safety and compliance portal.</p>
+<button class="secondary-btn px-6 py-2 rounded-lg font-headline font-bold text-sm">Access Safety Portal</button>
+</div>
+</div>
+<!-- Accordion -->
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-headline font-bold mb-10 text-center fade-in-up">Deep Dive: Coverage Details</h2>
+<div class="space-y-4 fade-in-up">
+<!-- Item 1 -->
+<div class="accordion-item bg-card border border-primary/10 rounded-lg overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+<div class="p-6 flex justify-between items-center hover:bg-white/5 transition-colors">
+<h4 class="font-headline font-bold text-lg">Overspray Liability</h4>
+<span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 bg-surface/50">
+<p class="text-muted text-sm pb-4">Standard GL policies often exclude wind-borne overspray damage to adjacent vehicles or properties. Our specialized forms ensure you are protected when the wind shifts.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="accordion-item bg-card border border-primary/10 rounded-lg overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+<div class="p-6 flex justify-between items-center hover:bg-white/5 transition-colors">
+<h4 class="font-headline font-bold text-lg">Equipment Breakdown</h4>
+<span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 bg-surface/50">
+<p class="text-muted text-sm pb-4">If your proportioner seizes or generator fails, downtime costs money. This coverage helps cover repair costs and sometimes lost income during the repair period.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="accordion-item bg-card border border-primary/10 rounded-lg overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+<div class="p-6 flex justify-between items-center hover:bg-white/5 transition-colors">
+<h4 class="font-headline font-bold text-lg">Pollution / Environmental</h4>
+<span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+</div>
+<div class="accordion-content px-6 bg-surface/50">
+<p class="text-muted text-sm pb-4">Crucial for handling isocyanates. Covers cleanup costs and third-party claims arising from accidental spills during transit or application.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 12. Final CTA Banner -->
+<section class="py-24 relative overflow-hidden bg-background">
+<!-- Diagonal Gradient Banner -->
+<div class="absolute inset-0 bg-gradient-to-br from-[#080d16] via-primary/20 to-accent/20 z-0"></div>
+<!-- Shader effect overlay if supported, acting as background -->
+<div class="absolute inset-0 z-0 opacity-30 mix-blend-screen pointer-events-none" style="background-image: repeating-linear-gradient(45deg, rgba(46,163,242,0.05) 0px, rgba(46,163,242,0.05) 2px, transparent 2px, transparent 8px);"></div>
+<div class="container mx-auto px-6 lg:px-12 relative z-10 text-center">
+<div class="glass-card max-w-4xl mx-auto rounded-3xl p-12 md:p-20 shadow-[0_20px_50px_rgba(46,163,242,0.15)] fade-in-up border-t border-primary/30">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold mb-6 text-white tracking-tighter">Ready to Secure Your Rig?</h2>
+<p class="text-xl text-muted font-body mb-10 max-w-2xl mx-auto">Get comprehensive coverage tailored for spray foam contractors. Fast, reliable, and built for your trade.</p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+<button class="amber-cta px-10 py-5 rounded-lg text-lg w-full sm:w-auto flex items-center justify-center gap-2">
+                            Get Instant Quote
+                            <span class="material-symbols-outlined" style="font-variation-settings: 'wght' 700;">arrow_forward</span>
+</button>
+<div class="flex flex-col text-left">
+<span class="font-label text-sm text-muted uppercase tracking-widest">Or speak to an expert</span>
+<a class="text-3xl font-headline font-bold text-white hover:text-primary transition-colors" href="tel:8449675247">844-967-5247</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer JSON Applied -->
+<footer class="bg-[#0d1421] text-[#94a3b8] font-body full-width border-t border-[#2ea3f2]/10 w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-xl font-headline font-bold text-[#2ea3f2]">
+            SFI
+        </div>
+<div class="text-sm text-center md:text-left">
+            © 2024 Spray Foam Insurance. All rights reserved. Professional SPF Contractor Coverage.
+        </div>
+<ul class="flex flex-wrap justify-center gap-6 text-sm">
+<li><a class="text-[#94a3b8] hover:text-[#29c4a9] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-[#94a3b8] hover:text-[#29c4a9] transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-[#94a3b8] hover:text-[#29c4a9] transition-colors" href="#">Claims Support</a></li>
+<li><a class="text-[#94a3b8] hover:text-[#29c4a9] transition-colors" href="#">Contact Us</a></li>
+</ul>
+</footer>
+<!-- Simple Scroll Animation Script -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up').forEach((elem) => {
+                observer.observe(elem);
+            });
+        });
+    </script>
+</body></html>

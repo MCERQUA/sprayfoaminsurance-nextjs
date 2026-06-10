@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Spray Foam Work Record Form | SPF Insurance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&amp;family=Inter:wght@400;500&amp;family=Public+Sans:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#080d16',
+                        surface: '#0d1421',
+                        cards: '#111827',
+                        primary: '#2ea3f2',
+                        accent: '#29c4a9',
+                        highlight: '#f59e0b',
+                        text: '#f0f4f8',
+                        muted: '#94a3b8'
+                    },
+                    fontFamily: {
+                        headline: ["Montserrat", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "1rem",
+                        xl: "1.5rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #080d16;
+            color: #f0f4f8;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(46, 163, 242, 0.6);
+            box-shadow: 0 8px 32px rgba(46, 163, 242, 0.15);
+            transform: translateY(-4px);
+        }
+        .glow-bg {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(46,163,242,0.15) 0%, rgba(8,13,22,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .teal-glow {
+            background: radial-gradient(circle, rgba(41,196,169,0.1) 0%, rgba(8,13,22,0) 70%);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #2ea3f2 0%, #1a7bb8 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 4px 15px rgba(46,163,242,0.4);
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            border: 1px solid #29c4a9;
+            color: #29c4a9;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: rgba(41,196,169,0.1);
+            box-shadow: 0 4px 15px rgba(41,196,169,0.2);
+        }
+        .btn-cta {
+            background: #f59e0b;
+            color: #080d16;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        .btn-cta:hover {
+            background: #d97706;
+            box-shadow: 0 4px 15px rgba(245,158,11,0.4);
+        }
+        .input-dark {
+            background: rgba(13, 20, 33, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            color: #f0f4f8;
+        }
+        .input-dark:focus {
+            border-color: #2ea3f2;
+            ring: 1px #2ea3f2;
+            outline: none;
+            box-shadow: 0 0 0 1px #2ea3f2;
+        }
+        /* Reveal Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white">
+<!-- Top Navigation Placeholder (Simulating Shared Component) -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 max-w-full bg-[#080d16] dark:bg-[#080d16] border-b border-[#2ea3f2]/20 backdrop-blur-md shadow-[0_4px_20px_rgba(46,163,242,0.15)]">
+<div class="text-2xl font-headline font-extrabold text-[#f0f4f8] tracking-tighter">SPF INSURANCE</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-[#94a3b8] font-medium font-body hover:text-[#29c4a9] transition-colors duration-300" href="#">Programs</a>
+<a class="text-[#94a3b8] font-medium font-body hover:text-[#29c4a9] transition-colors duration-300" href="#">Claims</a>
+<a class="text-[#2ea3f2] font-bold border-b-2 border-[#2ea3f2] pb-1 font-body hover:text-[#29c4a9] transition-colors duration-300" href="#">Risk Control</a>
+<a class="text-[#94a3b8] font-medium font-body hover:text-[#29c4a9] transition-colors duration-300" href="#">About Us</a>
+</div>
+<div class="hidden md:flex items-center space-x-4">
+<button class="font-label uppercase tracking-widest text-xs text-[#94a3b8] hover:text-[#29c4a9] transition-colors duration-300">Login</button>
+<button class="btn-primary font-label uppercase tracking-widest text-xs px-6 py-2 rounded-DEFAULT">Get Quote</button>
+</div>
+</nav>
+<!-- 1. Hero Section -->
+<section class="relative pt-40 pb-24 px-8 overflow-hidden min-h-[614px] flex items-center">
+<div class="glow-bg top-0 left-0"></div>
+<div class="glow-bg teal-glow bottom-0 right-0"></div>
+<div class="max-w-7xl mx-auto relative z-10 text-center">
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tighter text-text mb-6 reveal active">
+                Spray Foam <br/>
+<span class="text-primary">Work Record Form</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-muted max-w-3xl mx-auto mb-10 leading-relaxed reveal active" style="transition-delay: 0.1s;">
+                Protect Yourself at Claim Time. <br/>
+                The essential documentation tool for professional SPF contractors.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-6 reveal active" style="transition-delay: 0.2s;">
+<a class="btn-primary font-label uppercase tracking-widest text-sm px-8 py-4 rounded-lg flex items-center gap-2 w-full sm:w-auto justify-center" href="#form-section">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">description</span>
+                    Start Digital Form
+                </a>
+<a class="btn-secondary font-label uppercase tracking-widest text-sm px-8 py-4 rounded-lg flex items-center gap-2 w-full sm:w-auto justify-center" href="#downloads-section">
+<span class="material-symbols-outlined">download</span>
+                    Download Templates
+                </a>
+</div>
+</div>
+</section>
+<!-- 2. Why Keep Records -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4 text-text">Why Documentation is Mandatory</h2>
+<p class="font-body text-muted max-w-2xl mx-auto">In the spray foam industry, if it isn't documented, it didn't happen. Proper records are your first line of defense.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-card p-8 rounded-xl reveal">
+<div class="w-16 h-16 rounded-full bg-highlight/10 flex items-center justify-center mb-6 border border-highlight/30">
+<span class="material-symbols-outlined text-highlight text-3xl" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Insurance Claim Defense</h3>
+<p class="font-body text-muted text-sm leading-relaxed">
+                        Detailed environmental and application data proves you followed manufacturer specifications, instantly defeating frivolous defective-application claims.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-8 rounded-xl reveal" style="transition-delay: 0.1s;">
+<div class="w-16 h-16 rounded-full bg-highlight/10 flex items-center justify-center mb-6 border border-highlight/30">
+<span class="material-symbols-outlined text-highlight text-3xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Warranty Documentation</h3>
+<p class="font-body text-muted text-sm leading-relaxed">
+                        Manufacturers require specific lot numbers and installation conditions to honor product warranties. Maintain this data to protect your clients and reputation.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-8 rounded-xl reveal" style="transition-delay: 0.2s;">
+<div class="w-16 h-16 rounded-full bg-highlight/10 flex items-center justify-center mb-6 border border-highlight/30">
+<span class="material-symbols-outlined text-highlight text-3xl" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Regulatory Compliance</h3>
+<p class="font-body text-muted text-sm leading-relaxed">
+                        Meets SPFA and building code requirements for commercial and residential insulation jobs, ensuring you pass final inspections smoothly.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3 & 4. Interactive Form & Options -->
+<section class="py-24 px-8 relative" id="form-section">
+<div class="glow-bg top-20 right-[-200px]"></div>
+<div class="max-w-5xl mx-auto">
+<div class="mb-12 text-center reveal">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4">Digital Daily Work Record</h2>
+<p class="font-body text-muted">Complete this form for every application area. All fields are securely logged.</p>
+</div>
+<div class="glass-card rounded-2xl p-8 md:p-12 reveal relative overflow-hidden">
+<!-- Form Header Decor -->
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-primary"></div>
+<form class="space-y-8">
+<!-- Project Info -->
+<div>
+<h3 class="font-headline font-bold text-lg mb-6 border-b border-white/10 pb-2 text-primary">Project Information</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Job Address / Location</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="123 Builder Way, Site B" type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Date of Application</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" type="date"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Contractor Name &amp; License #</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="Apex SPF Solutions - Lic# 890123" type="text"/>
+</div>
+</div>
+</div>
+<!-- Material Info -->
+<div>
+<h3 class="font-headline font-bold text-lg mb-6 border-b border-white/10 pb-2 text-primary">Material Specifications</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Manufacturer</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="e.g., Huntsman" type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Product Name/Type</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="e.g., Closed Cell 2.0lb" type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Lot Numbers (A/B)</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="A:1234 B:5678" type="text"/>
+</div>
+</div>
+</div>
+<!-- Application Data -->
+<div>
+<h3 class="font-headline font-bold text-lg mb-6 border-b border-white/10 pb-2 text-primary">Application Data</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">R-Value Target</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="R-21" type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Thickness (in)</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="3.0" step="0.5" type="number"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Square Footage</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="1500" type="number"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Substrate</label>
+<select class="w-full input-dark rounded-lg p-3 text-sm appearance-none">
+<option>Wood OSB</option>
+<option>Concrete</option>
+<option>Metal</option>
+<option>Drywall</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Environmental Data -->
+<div>
+<h3 class="font-headline font-bold text-lg mb-6 border-b border-white/10 pb-2 text-primary">Environmental &amp; Equipment</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Ambient Temp (°F)</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="68" type="number"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Relative Humidity (%)</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="45" type="number"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Substrate Temp (°F)</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="65" type="number"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">Rig / Proportioner Serial</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="Reactor E-30 #998877" type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2">QC Inspector</label>
+<input class="w-full input-dark rounded-lg p-3 text-sm" placeholder="John Doe" type="text"/>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row gap-4 items-center justify-between">
+<div class="flex gap-4 w-full sm:w-auto">
+<button class="btn-primary font-label uppercase tracking-widest text-sm px-8 py-4 rounded-lg flex-1 sm:flex-none flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined">send</span>
+                                Submit Record
+                            </button>
+<button class="btn-cta font-label uppercase tracking-widest text-sm px-8 py-4 rounded-lg flex-1 sm:flex-none flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined">print</span>
+                                Print / PDF
+                            </button>
+</div>
+<!-- Quick Actions Card (Section 4 merged cleanly) -->
+<div class="flex gap-3 mt-4 sm:mt-0">
+<button class="w-12 h-12 rounded-full bg-surface border border-white/10 flex items-center justify-center hover:border-primary hover:text-primary transition-colors group" title="Save Draft" type="button">
+<span class="material-symbols-outlined text-muted group-hover:text-primary">save</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-surface border border-white/10 flex items-center justify-center hover:border-accent hover:text-accent transition-colors group" title="Email Copy" type="button">
+<span class="material-symbols-outlined text-muted group-hover:text-accent">mail</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-surface border border-white/10 flex items-center justify-center hover:border-highlight hover:text-highlight transition-colors group" title="Attach Photos" type="button">
+<span class="material-symbols-outlined text-muted group-hover:text-highlight">add_a_photo</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- 5 & 6. Standards & Scenarios -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+<!-- SPFA Standards Explainer -->
+<div class="glass-card p-10 rounded-2xl reveal flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 text-accent mb-4 font-label uppercase tracking-widest text-xs">
+<span class="material-symbols-outlined text-sm">fact_check</span>
+                    Industry Standards
+                </div>
+<h2 class="font-headline font-bold text-3xl mb-6">SPFA Documentation Requirements</h2>
+<p class="font-body text-muted mb-6 leading-relaxed">
+                    The Spray Polyurethane Foam Alliance (SPFA) strongly recommends comprehensive daily job logging. Failure to maintain these records can severely impact your ability to defend against claims or secure warranty support from manufacturers.
+                </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check_circle</span>
+<span class="font-body text-sm text-text">Record ambient and substrate temperatures before application.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check_circle</span>
+<span class="font-body text-sm text-text">Log specific A and B side lot numbers for every drum set used.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary shrink-0">check_circle</span>
+<span class="font-body text-sm text-text">Document processing temperatures and pressures at the proportioner.</span>
+</li>
+</ul>
+</div>
+<!-- Scenario Card -->
+<div class="glass-card p-10 rounded-2xl reveal relative overflow-hidden flex flex-col justify-center" style="transition-delay: 0.2s;">
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-highlight/10 rounded-full blur-2xl"></div>
+<div class="inline-flex items-center gap-2 text-highlight mb-4 font-label uppercase tracking-widest text-xs z-10 relative">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">local_police</span>
+                    Case Study
+                </div>
+<h2 class="font-headline font-bold text-3xl mb-6 z-10 relative">Defense in Action</h2>
+<div class="bg-[#080d16] p-6 rounded-xl border border-white/5 relative z-10">
+<h4 class="font-headline font-bold text-lg mb-2 text-text">The Claim:</h4>
+<p class="font-body text-sm text-muted mb-4">A homeowner claimed off-gassing and odor issues due to "improperly mixed foam," demanding a $80,000 full tear-out.</p>
+<h4 class="font-headline font-bold text-lg mb-2 text-primary">The Defense:</h4>
+<p class="font-body text-sm text-text">The contractor produced their daily work record showing perfect 1:1 ratio maintained, ideal 72°F ambient temps, and specific lot numbers. The manufacturer confirmed the batch was clean.</p>
+<div class="mt-4 pt-4 border-t border-white/10 flex items-center gap-3">
+<span class="material-symbols-outlined text-highlight text-2xl">task_alt</span>
+<span class="font-headline font-bold text-highlight tracking-tight">Claim Denied. Zero Payout.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7 & 8. Storage Options & Downloads -->
+<section class="py-24 px-8 relative overflow-hidden" id="downloads-section">
+<div class="glow-bg left-[-200px] top-1/2 -translate-y-1/2"></div>
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4">Record Management</h2>
+<p class="font-body text-muted max-w-2xl mx-auto">Choose the workflow that best fits your crew. The format doesn't matter; consistency does.</p>
+</div>
+<!-- Storage Options (Bento Grid Style) -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
+<div class="glass-card p-6 rounded-xl reveal flex flex-col h-full">
+<span class="material-symbols-outlined text-3xl text-primary mb-4">cloud_done</span>
+<h4 class="font-headline font-bold text-lg mb-2">Cloud Drive</h4>
+<p class="font-body text-xs text-muted mb-4 flex-grow">Google Drive or Dropbox folders organized by job address.</p>
+<div class="text-[10px] uppercase tracking-wider text-accent font-label">Best for: Small Crews</div>
+</div>
+<div class="glass-card p-6 rounded-xl reveal flex flex-col h-full" style="transition-delay: 0.1s;">
+<span class="material-symbols-outlined text-3xl text-primary mb-4">app_shortcut</span>
+<h4 class="font-headline font-bold text-lg mb-2">Contractor Software</h4>
+<p class="font-body text-xs text-muted mb-4 flex-grow">Jobber, ServiceTitan, or specific SPF apps with custom forms.</p>
+<div class="text-[10px] uppercase tracking-wider text-accent font-label">Best for: Scaling Ops</div>
+</div>
+<div class="glass-card p-6 rounded-xl reveal border-primary/50 relative overflow-hidden flex flex-col h-full" style="transition-delay: 0.2s;">
+<div class="absolute inset-0 bg-primary/5 z-0"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-3xl text-highlight mb-4">admin_panel_settings</span>
+<h4 class="font-headline font-bold text-lg mb-2">SFI Portal</h4>
+<p class="font-body text-xs text-muted mb-4 flex-grow">Direct upload to your SPF Insurance client dashboard for permanent secure storage.</p>
+<div class="text-[10px] uppercase tracking-wider text-highlight font-label">Recommended</div>
+</div>
+</div>
+<div class="glass-card p-6 rounded-xl reveal flex flex-col h-full" style="transition-delay: 0.3s;">
+<span class="material-symbols-outlined text-3xl text-muted mb-4">menu_book</span>
+<h4 class="font-headline font-bold text-lg mb-2">Physical Binder</h4>
+<p class="font-body text-xs text-muted mb-4 flex-grow">Printed forms kept in the rig. Must be backed up digitally weekly.</p>
+<div class="text-[10px] uppercase tracking-wider text-muted font-label">Best for: No-Service Areas</div>
+</div>
+</div>
+<!-- Bulk Downloads -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<div class="bg-surface rounded-2xl p-8 border border-white/5 flex items-center justify-between reveal group hover:border-accent/30 transition-colors">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-red-500/10 rounded-lg flex items-center justify-center border border-red-500/20 text-red-400 group-hover:bg-red-500/20 transition-colors">
+<span class="material-symbols-outlined text-3xl">picture_as_pdf</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-1">Printable Blank Form</h4>
+<p class="font-body text-sm text-muted">Standard PDF to keep in the rig clipboard.</p>
+</div>
+</div>
+<button class="w-12 h-12 rounded-full border border-accent text-accent flex items-center justify-center hover:bg-accent hover:text-background transition-colors">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<div class="bg-surface rounded-2xl p-8 border border-white/5 flex items-center justify-between reveal group hover:border-accent/30 transition-colors" style="transition-delay: 0.1s;">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-green-500/10 rounded-lg flex items-center justify-center border border-green-500/20 text-green-400 group-hover:bg-green-500/20 transition-colors">
+<span class="material-symbols-outlined text-3xl">table_chart</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-1">Excel Tracker Template</h4>
+<p class="font-body text-sm text-muted">Digital spreadsheet for bulk logging.</p>
+</div>
+</div>
+<button class="w-12 h-12 rounded-full border border-accent text-accent flex items-center justify-center hover:bg-accent hover:text-background transition-colors">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Certificate Program Link -->
+<section class="py-12 px-8">
+<div class="max-w-5xl mx-auto">
+<div class="glass-card rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-8 border-accent/30 bg-gradient-to-r from-[#0d1421] to-[#0d1421] relative overflow-hidden reveal">
+<div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-accent/10 to-transparent pointer-events-none"></div>
+<div class="flex items-center gap-6 relative z-10">
+<div class="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-accent text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-2xl mb-2 text-text">Want to lower your premiums?</h3>
+<p class="font-body text-sm text-muted max-w-xl">
+                            Completing rigorous documentation is just one step. Enroll in our Attic Insulation Certificate program to demonstrate top-tier risk management and qualify for exclusive rate discounts.
+                        </p>
+</div>
+</div>
+<a class="btn-secondary font-label uppercase tracking-widest text-sm px-6 py-3 rounded-lg flex items-center gap-2 whitespace-nowrap relative z-10" href="#">
+                    Learn More
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 10. FAQ Section -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-4 reveal">
+<!-- FAQ 1 -->
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline font-bold text-lg">Do I need to keep records for residential jobs?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-5 pt-0 hidden font-body text-muted text-sm leading-relaxed border-t border-white/5 mt-2">
+                        Yes. While commercial jobs often have stricter oversight, residential claims (especially odor/off-gassing) are the most frequent in the SPF industry. Documentation is critical regardless of the job size.
+                    </div>
+</div>
+<!-- FAQ 2 -->
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline font-bold text-lg">How long should I retain these records?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-5 pt-0 hidden font-body text-muted text-sm leading-relaxed border-t border-white/5 mt-2">
+                        Industry standard and legal best practice is to retain job documentation for a minimum of 10 years, matching the statute of repose for construction defects in many states.
+                    </div>
+</div>
+<!-- FAQ 3 -->
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline font-bold text-lg">Does my crew actually have to fill this out every day?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-5 pt-0 hidden font-body text-muted text-sm leading-relaxed border-t border-white/5 mt-2">
+                        Yes, a daily log is required. Environmental conditions change daily (or hourly), and lot numbers change as drums are swapped. A single weekly sheet is insufficient for legal defense.
+                    </div>
+</div>
+<!-- FAQ 4 -->
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline font-bold text-lg">What happens if a claim is filed and I have no records?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-5 pt-0 hidden font-body text-muted text-sm leading-relaxed border-t border-white/5 mt-2">
+                        Without records, it becomes your word against the claimant's expert. The burden of proof falls heavily on the contractor to prove the foam was installed correctly, which is nearly impossible without data. It often results in full settlements.
+                    </div>
+</div>
+<!-- FAQ 5 -->
+<div class="glass-card rounded-xl overflow-hidden">
+<button class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none" onclick="toggleFaq(this)">
+<span class="font-headline font-bold text-lg">Can I use my own form instead of this one?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-5 pt-0 hidden font-body text-muted text-sm leading-relaxed border-t border-white/5 mt-2">
+                        Absolutely. As long as your custom form captures the same critical data points (temps, lot numbers, manufacturer, dates, specific locations), it will serve the necessary legal and warranty purposes.
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Placeholder (Simulating Shared Component) -->
+<footer class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-start gap-8 bg-[#0d1421] dark:bg-[#0d1421] border-t border-[#2ea3f2]/10 flat no shadows">
+<div>
+<div class="text-xl font-headline font-black text-[#f0f4f8] mb-4">SPF INSURANCE</div>
+<p class="font-body text-[#94a3b8] text-sm max-w-sm">© 2024 SPF Insurance Services. All rights reserved. Professional Contractor Coverage.</p>
+</div>
+<div class="flex flex-wrap gap-6">
+<a class="font-label uppercase text-xs text-[#94a3b8] hover:text-[#2ea3f2] transition-all duration-200" href="#">Privacy Policy</a>
+<a class="font-label uppercase text-xs text-[#94a3b8] hover:text-[#2ea3f2] transition-all duration-200" href="#">Terms of Service</a>
+<a class="font-label uppercase text-xs text-[#94a3b8] hover:text-[#2ea3f2] transition-all duration-200" href="#">Claims Support</a>
+<a class="font-label uppercase text-xs text-[#94a3b8] hover:text-[#2ea3f2] transition-all duration-200" href="#">Contact Us</a>
+<a class="font-label uppercase text-xs text-[#f59e0b] hover:text-[#2ea3f2] transition-all duration-200 opacity-80" href="#">Risk Management Resources</a>
+</div>
+</footer>
+<!-- Scripts -->
+<script>
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal(); // Trigger on load
+
+        // Simple FAQ Toggle
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.material-symbols-outlined');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body></html>

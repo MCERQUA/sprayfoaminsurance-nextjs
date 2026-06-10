@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Attic Insulation Certificate | SFI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Montserrat:wght@700;800&amp;family=Public+Sans:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: "#080d16",
+                        surface: "#0d1421",
+                        card: "#111827",
+                        primary: "#2ea3f2",
+                        accent: "#29c4a9",
+                        highlight: "#f59e0b",
+                        text: "#f0f4f8",
+                        muted: "#94a3b8"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Montserrat", "sans-serif"],
+                        "display": ["Montserrat", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    },
+                    letterSpacing: {
+                        tight: "-0.02em",
+                        tighter: "-0.04em",
+                        widest: "0.1em"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.text');
+            font-family: theme('fontFamily.body');
+            line-height: 1.75;
+        }
+        
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-card:hover {
+            border-color: theme('colors.primary');
+            box-shadow: 0 10px 40px rgba(46, 163, 242, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(41, 196, 169, 0.15) 0%, rgba(8, 13, 22, 1) 70%);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, theme('colors.primary'), #1a8ad4);
+            color: white;
+            font-family: theme('fontFamily.label');
+            text-transform: uppercase;
+            letter-spacing: theme('letterSpacing.widest');
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: theme('borderRadius.DEFAULT');
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(46, 163, 242, 0.3);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 6px 20px rgba(46, 163, 242, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: theme('colors.accent');
+            border: 2px solid theme('colors.accent');
+            font-family: theme('fontFamily.label');
+            text-transform: uppercase;
+            letter-spacing: theme('letterSpacing.widest');
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: theme('borderRadius.DEFAULT');
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(41, 196, 169, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .btn-cta {
+            background: theme('colors.highlight');
+            color: #000;
+            font-family: theme('fontFamily.label');
+            text-transform: uppercase;
+            letter-spacing: theme('letterSpacing.widest');
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: theme('borderRadius.DEFAULT');
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-cta:hover {
+            background: #d97706;
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        
+        .section-padding {
+            padding: 120px 0;
+        }
+        
+        .alt-bg {
+            background-color: theme('colors.surface');
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-primary/10 shadow-[0_4px_20px_rgba(46,163,242,0.15)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-headline font-extrabold tracking-tighter text-primary" href="#">SFI</a>
+<div class="hidden md:flex items-center space-x-8 font-headline font-bold tracking-tight">
+<a class="text-muted hover:text-accent transition-colors duration-300" href="#">Coverage</a>
+<a class="text-primary border-b-2 border-primary pb-1 active:scale-95 transition-transform" href="#">Risk Management</a>
+<a class="text-muted hover:text-accent transition-colors duration-300" href="#">Claims</a>
+</div>
+<button class="btn-primary active:scale-95 transition-transform">Get Quote</button>
+</div>
+</nav>
+<!-- 1. Hero Section -->
+<section class="relative pt-40 pb-32 hero-gradient min-h-[80vh] flex items-center border-b border-white/5">
+<div class="max-w-7xl mx-auto px-8 w-full relative z-10">
+<div class="max-w-3xl animate-fade-in-up">
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tight text-text mb-6 leading-tight">
+                    Attic Insulation <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Certificate Program</span>
+</h1>
+<p class="text-xl text-muted mb-10 font-body max-w-2xl">
+                    Standardized, legally compliant documentation for SPF contractors. Streamline inspections, satisfy code requirements, and unlock homeowner rebates.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="btn-cta">Access Certificate Portal</button>
+</div>
+</div>
+</div>
+<!-- Abstract BG Elements -->
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-2/3 bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+</section>
+<!-- 2. What is the certificate -->
+<section class="section-padding alt-bg relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="animate-fade-in-up stagger-1">
+<div class="inline-flex items-center space-x-2 text-accent mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">description</span>
+<span class="font-label uppercase tracking-widest text-sm">Definition</span>
+</div>
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-6">The Gold Standard of Documentation</h2>
+<p class="text-muted mb-6 text-lg">
+                        An Attic Insulation Certificate is a formal, legally recognized document that verifies the installation of insulation materials. It serves as permanent proof of the property's thermal envelope upgrade.
+                    </p>
+<ul class="space-y-4 text-text font-body">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 mt-1">check_circle</span>
+<span>Certifies exact insulation type and final installed R-value.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 mt-1">check_circle</span>
+<span>Identifies the licensed installer and date of completion.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 mt-1">check_circle</span>
+<span>Mandatory for local building code compliance and final inspections.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary mr-3 mt-1">check_circle</span>
+<span>Often required by mortgage lenders for energy-efficient financing.</span>
+</li>
+</ul>
+</div>
+<div class="relative animate-fade-in-up stagger-2">
+<div class="glass-card rounded-xl overflow-hidden aspect-[4/3] relative">
+<img alt="Digital mockup of an attic insulation certificate on a glass panel, displaying contractor details, R-value, and license number in a cinematic dark industrial setting with blue ambient lighting." class="w-full h-full object-cover mix-blend-luminosity opacity-80 hover:opacity-100 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxXxs6FmDWZ85jcSXcjrKeG8UT9yB3s761B6l-twV6T7SJrMzvQmesVpiOjw0TTBJSXEfppLp8VXOnmR4InW4m96GRP-BehuV2Sa3NUfy76JlOYl0GMnAEtH-LUJjLBff2r_b4RFtoq9wEBeYbRRi0I-bPbcfSaCCHbfK2KD6gUEVgVk9pgXmJbRhY5sKxdqOHDsQW4t9diuV9aAF0AoxDTdbJwm_OF5F9TQ1SRsBftbJEOH1pa0AkzctEz9euiKcTtChmz7O24C4l"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<!-- Decorative border accent -->
+<div class="absolute -inset-1 bg-gradient-to-tr from-primary/30 to-accent/30 rounded-xl blur-lg -z-10"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Who needs it -->
+<section class="section-padding relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16 animate-fade-in-up">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4">Who Relies on This Certificate?</h2>
+<p class="text-muted text-lg max-w-2xl mx-auto">Essential documentation serving multiple stakeholders in the property lifecycle.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-card p-8 rounded-xl animate-fade-in-up stagger-1 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl text-primary" style="font-variation-settings: 'FILL' 1;">real_estate_agent</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Homeowners</h3>
+<p class="text-muted">Required to process utility rebates, secure tax credits, and clear local building permits after major renovations.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-8 rounded-xl animate-fade-in-up stagger-2 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl text-accent" style="font-variation-settings: 'FILL' 1;">engineering</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Contractors</h3>
+<p class="text-muted">Protects your business by providing documented proof of compliance with manufacturer specs and code requirements.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-8 rounded-xl animate-fade-in-up stagger-3 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-highlight/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl text-highlight" style="font-variation-settings: 'FILL' 1;">maps_home_work</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-3">Real Estate</h3>
+<p class="text-muted">Crucial during home sales to verify property upgrades and facilitate smooth closings with informed buyers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Certificate data required -->
+<section class="section-padding alt-bg relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 animate-fade-in-up">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4">Required Data Points</h2>
+<p class="text-muted text-lg max-w-2xl">A valid certificate must contain specific, accurate information to meet regulatory standards.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="glass-card p-6 rounded-lg flex items-center space-x-4 animate-fade-in-up stagger-1">
+<span class="material-symbols-outlined text-primary text-2xl">badge</span>
+<span class="font-body font-medium">Contractor Name &amp; License</span>
+</div>
+<div class="glass-card p-6 rounded-lg flex items-center space-x-4 animate-fade-in-up stagger-1">
+<span class="material-symbols-outlined text-primary text-2xl">calendar_month</span>
+<span class="font-body font-medium">Date of Installation</span>
+</div>
+<div class="glass-card p-6 rounded-lg flex items-center space-x-4 animate-fade-in-up stagger-2">
+<span class="material-symbols-outlined text-primary text-2xl">inventory_2</span>
+<span class="font-body font-medium">Specific Product Used</span>
+</div>
+<div class="glass-card p-6 rounded-lg flex items-center space-x-4 animate-fade-in-up stagger-2">
+<span class="material-symbols-outlined text-primary text-2xl">thermostat</span>
+<span class="font-body font-medium">Final R-Value Achieved</span>
+</div>
+<div class="glass-card p-6 rounded-lg flex items-center space-x-4 animate-fade-in-up stagger-3">
+<span class="material-symbols-outlined text-primary text-2xl">square_foot</span>
+<span class="font-body font-medium">Total Square Footage</span>
+</div>
+<div class="glass-card p-6 rounded-lg flex items-center space-x-4 animate-fade-in-up stagger-3">
+<span class="material-symbols-outlined text-primary text-2xl">straighten</span>
+<span class="font-body font-medium">Average Installed Depth</span>
+</div>
+<div class="glass-card p-6 rounded-lg flex items-center space-x-4 animate-fade-in-up stagger-4">
+<span class="material-symbols-outlined text-primary text-2xl">cloud</span>
+<span class="font-body font-medium">Ambient Conditions</span>
+</div>
+<div class="glass-card p-6 rounded-lg flex items-center space-x-4 animate-fade-in-up stagger-4">
+<span class="material-symbols-outlined text-primary text-2xl">draw</span>
+<span class="font-body font-medium">Installer Signature</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. R-value requirements Table -->
+<section class="section-padding relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16 animate-fade-in-up">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4">IECC Minimum R-Value Requirements</h2>
+<p class="text-muted text-lg max-w-2xl mx-auto">Baseline compliance metrics by climate zone for residential structures.</p>
+</div>
+<div class="glass-card rounded-xl overflow-hidden animate-fade-in-up stagger-2">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body">
+<thead class="bg-surface border-b border-primary/20">
+<tr>
+<th class="p-6 font-headline font-bold text-text">Climate Zone</th>
+<th class="p-6 font-headline font-bold text-text">Attic Floor / Ceiling</th>
+<th class="p-6 font-headline font-bold text-text">Wood Frame Wall</th>
+<th class="p-6 font-headline font-bold text-text">Mass Wall</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5">
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium">Zone 1</td>
+<td class="p-6 text-accent">R-30</td>
+<td class="p-6 text-muted">R-13</td>
+<td class="p-6 text-muted">R-3 / 4</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium">Zone 2</td>
+<td class="p-6 text-accent">R-38</td>
+<td class="p-6 text-muted">R-13</td>
+<td class="p-6 text-muted">R-4 / 6</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium">Zone 3</td>
+<td class="p-6 text-accent">R-38</td>
+<td class="p-6 text-muted">R-20 or 13+5</td>
+<td class="p-6 text-muted">R-8 / 13</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium">Zone 4</td>
+<td class="p-6 text-accent">R-49</td>
+<td class="p-6 text-muted">R-20 or 13+5</td>
+<td class="p-6 text-muted">R-8 / 13</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium">Zone 5</td>
+<td class="p-6 text-accent">R-49</td>
+<td class="p-6 text-muted">R-20 or 13+5</td>
+<td class="p-6 text-muted">R-13 / 17</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium">Zone 6</td>
+<td class="p-6 text-accent">R-49</td>
+<td class="p-6 text-muted">R-20+5 or 13+10</td>
+<td class="p-6 text-muted">R-15 / 20</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-6 font-medium">Zone 7</td>
+<td class="p-6 text-accent">R-49</td>
+<td class="p-6 text-muted">R-20+5 or 13+10</td>
+<td class="p-6 text-muted">R-19 / 21</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Energy rebate programs -->
+<section class="section-padding alt-bg relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 animate-fade-in-up">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4">Unlocking Incentives</h2>
+<p class="text-muted text-lg max-w-2xl">Valid certificates are the key to accessing significant financial returns for your clients.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-card p-8 rounded-xl border-t-2 border-t-accent animate-fade-in-up stagger-1">
+<div class="flex items-center space-x-3 mb-6">
+<span class="material-symbols-outlined text-accent text-3xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h3 class="font-headline font-bold text-xl">Utility Rebates</h3>
+</div>
+<p class="text-muted mb-4">Local power companies offer cash back for documented energy envelope improvements.</p>
+<p class="text-sm text-text bg-surface p-3 rounded border border-white/5">Requires: Contractor signature &amp; pre/post R-value comparison.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-8 rounded-xl border-t-2 border-t-accent animate-fade-in-up stagger-2">
+<div class="flex items-center space-x-3 mb-6">
+<span class="material-symbols-outlined text-accent text-3xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+<h3 class="font-headline font-bold text-xl">Federal Tax Credits</h3>
+</div>
+<p class="text-muted mb-4">Section 25C allows homeowners to claim up to 30% of insulation material costs.</p>
+<p class="text-sm text-text bg-surface p-3 rounded border border-white/5">Requires: Date of installation &amp; exact material specifications.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-8 rounded-xl border-t-2 border-t-accent animate-fade-in-up stagger-3">
+<div class="flex items-center space-x-3 mb-6">
+<span class="material-symbols-outlined text-accent text-3xl" style="font-variation-settings: 'FILL' 1;">map</span>
+<h3 class="font-headline font-bold text-xl">State Programs</h3>
+</div>
+<p class="text-muted mb-4">State-specific efficiency initiatives provide additional funding or low-interest loans.</p>
+<p class="text-sm text-text bg-surface p-3 rounded border border-white/5">Requires: Active contractor license number &amp; permit verification.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Contractor workflow -->
+<section class="section-padding relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="text-center mb-16 animate-fade-in-up">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4">Streamlined Workflow</h2>
+<p class="text-muted text-lg">Generate compliance documentation in minutes, not hours.</p>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 animate-fade-in-up stagger-2 relative">
+<!-- Connector Line (Desktop) -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-accent/20 via-accent to-accent/20 -z-10 -translate-y-1/2"></div>
+<!-- Step 1 -->
+<div class="bg-surface p-6 rounded-xl border border-white/5 w-full md:w-1/3 relative text-center">
+<div class="w-12 h-12 bg-background border-2 border-accent rounded-full flex items-center justify-center font-headline font-bold text-accent mx-auto mb-4 relative z-10">1</div>
+<h3 class="font-headline font-bold text-lg mb-2">Job Complete</h3>
+<p class="text-sm text-muted">Finish application and record final ambient/depth metrics onsite.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface p-6 rounded-xl border border-white/5 w-full md:w-1/3 relative text-center">
+<div class="w-12 h-12 bg-background border-2 border-accent rounded-full flex items-center justify-center font-headline font-bold text-accent mx-auto mb-4 relative z-10">2</div>
+<h3 class="font-headline font-bold text-lg mb-2">Generate Certificate</h3>
+<p class="text-sm text-muted">Input data into the SFI portal; system auto-calculates compliance.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface p-6 rounded-xl border border-white/5 w-full md:w-1/3 relative text-center">
+<div class="w-12 h-12 bg-background border-2 border-accent rounded-full flex items-center justify-center font-headline font-bold text-accent mx-auto mb-4 relative z-10">3</div>
+<h3 class="font-headline font-bold text-lg mb-2">Deliver to Client</h3>
+<p class="text-sm text-muted">Instantly email official PDF to homeowner and file to project record.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Digital certificate service -->
+<section class="section-padding alt-bg relative">
+<div class="max-w-5xl mx-auto px-8">
+<div class="glass-card p-10 md:p-16 rounded-2xl border-l-4 border-l-highlight animate-fade-in-up flex flex-col md:flex-row items-center gap-10">
+<div class="flex-1">
+<div class="inline-flex items-center space-x-2 text-highlight mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label uppercase tracking-widest text-sm">Pro Service</span>
+</div>
+<h2 class="font-headline font-bold text-3xl md:text-4xl tracking-tight mb-6">SFI Digital Issuance Tool</h2>
+<p class="text-muted text-lg mb-8">
+                        Ditch the carbon-copy pads. Our portal allows SFI-insured contractors to issue, store, and manage standardized certificates digitally. Features searchable records and instant PDF delivery to clients.
+                    </p>
+<ul class="space-y-3 mb-8 text-text">
+<li class="flex items-center"><span class="material-symbols-outlined text-highlight mr-2 text-sm">done</span> Secure cloud storage for 7 years</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-highlight mr-2 text-sm">done</span> Auto-fill from job estimates</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-highlight mr-2 text-sm">done</span> Mobile-friendly interface for field use</li>
+</ul>
+</div>
+<div class="w-full md:w-1/3 flex justify-center">
+<div class="text-[120px] font-headline font-extrabold text-highlight/20 leading-none tracking-tighter relative">
+<span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-highlight drop-shadow-[0_0_20px_rgba(245,158,11,0.5)]">
+<span class="material-symbols-outlined" style="font-size: 100px; font-variation-settings: 'FILL' 1;">phonelink_ring</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. FAQ accordion -->
+<section class="section-padding relative">
+<div class="max-w-3xl mx-auto px-8">
+<div class="text-center mb-16 animate-fade-in-up">
+<h2 class="font-headline font-bold text-4xl tracking-tight mb-4">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-4 animate-fade-in-up stagger-1">
+<!-- FAQ Item 1 -->
+<details class="glass-card rounded-lg group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-bold text-lg">
+<span>Is this certificate required by law?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-muted border-t border-white/5 mt-2">
+                        Yes, the International Residential Code (IRC) requires an insulation certificate to be posted in a conspicuous location (often near the electrical panel) following new installation or significant upgrades.
+                    </div>
+</details>
+<!-- FAQ Item 2 -->
+<details class="glass-card rounded-lg group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-bold text-lg">
+<span>How long should homeowners keep the certificate?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-muted border-t border-white/5 mt-2">
+                        Homeowners should retain the certificate permanently with their home's vital records. It is often required when selling the property to prove the quality and specs of the thermal envelope.
+                    </div>
+</details>
+<!-- FAQ Item 3 -->
+<details class="glass-card rounded-lg group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-bold text-lg">
+<span>Can I use my own custom form?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-muted border-t border-white/5 mt-2">
+                        While custom forms are allowed if they meet all IRC requirements, using a standardized, industry-recognized form reduces pushback from inspectors and makes the rebate process smoother for clients.
+                    </div>
+</details>
+<!-- FAQ Item 4 -->
+<details class="glass-card rounded-lg group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-bold text-lg">
+<span>Does SFI charge per certificate generated?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-muted border-t border-white/5 mt-2">
+                        No. Unlimited access to the Digital Issuance Tool is included as a complimentary risk-management feature for all active SFI policyholders.
+                    </div>
+</details>
+<!-- FAQ Item 5 -->
+<details class="glass-card rounded-lg group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-bold text-lg">
+<span>How do I calculate the final R-value for SPF?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-muted border-t border-white/5 mt-2">
+                        The final R-value is calculated by multiplying the manufacturer's stated aged R-value per inch by the average measured depth of the installed foam across the application area.
+                    </div>
+</details>
+<!-- FAQ Item 6 -->
+<details class="glass-card rounded-lg group [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-bold text-lg">
+<span>What if a client loses their printed copy?</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-muted border-t border-white/5 mt-2">
+                        If generated through the SFI portal, you can easily search for the past job by address or date and instantly email them a replacement PDF copy.
+                    </div>
+</details>
+</div>
+</div>
+</section>
+<!-- 10. Final CTA -->
+<section class="py-24 relative overflow-hidden bg-surface border-t border-white/5 text-center">
+<!-- Background Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-full bg-primary/10 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="max-w-3xl mx-auto px-8 relative z-10 animate-fade-in-up">
+<h2 class="font-headline font-bold text-4xl md:text-5xl tracking-tight mb-6">Standardize Your Process Today</h2>
+<p class="text-xl text-muted mb-10">Access the portal to start generating professional, compliant certificates for your next job.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="btn-primary shadow-[0_0_30px_rgba(46,163,242,0.3)]">Get Certificate Portal Access</button>
+<button class="btn-secondary">Talk to an Agent</button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-12 bg-[#080d16] border-t border-white/5">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-xl font-headline font-bold text-text">SFI</div>
+<div class="flex space-x-6">
+<a class="font-body text-sm text-muted hover:text-accent transition-colors" href="#">Privacy</a>
+<a class="font-body text-sm text-muted hover:text-accent transition-colors" href="#">Terms</a>
+<a class="font-body text-sm text-muted hover:text-accent transition-colors" href="#">Contact Support</a>
+</div>
+<div class="font-body text-sm text-muted">
+                © 2024 Spray Foam Insurance. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>

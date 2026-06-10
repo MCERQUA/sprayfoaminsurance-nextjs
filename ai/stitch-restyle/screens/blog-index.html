@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SFI Blog Index - Spray Foam Insurance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@400;500;600;700;800;900&amp;family=Public+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: "#080d16",
+                            surface: "#0d1421",
+                            card: "#111827",
+                            primary: "#2ea3f2",
+                            accent: "#29c4a9",
+                            highlight: "#f59e0b",
+                            text: "#f0f4f8",
+                            muted: "#94a3b8"
+                        }
+                    },
+                    fontFamily: {
+                        headline: ["Montserrat", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'hero-glow': 'radial-gradient(circle at 50% 50%, rgba(46, 163, 242, 0.15) 0%, rgba(8, 13, 22, 1) 70%)',
+                        'teal-blue-grad': 'linear-gradient(135deg, rgba(41, 196, 169, 0.9) 0%, rgba(46, 163, 242, 0.9) 100%)',
+                        'amber-grad': 'linear-gradient(135deg, rgba(245, 158, 11, 0.8) 0%, rgba(245, 158, 11, 0.4) 100%)'
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #080d16;
+            color: #f0f4f8;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-card:hover {
+            border-color: rgba(46, 163, 242, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(46, 163, 242, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #2ea3f2, #29c4a9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .scroll-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scroll-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Smooth scroll animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-text min-h-screen flex flex-col antialiased selection:bg-brand-primary selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#080d16]/90 backdrop-blur-md border-b border-[#2ea3f2]/20 shadow-[0_4px_20px_rgba(46,163,242,0.1)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#2ea3f2] uppercase">
+                SFI
+            </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-[#f0f4f8] hover:text-[#29c4a9] transition-colors font-headline font-bold tracking-tight text-sm uppercase" href="#">Insurance Plans</a>
+<a class="text-[#f0f4f8] hover:text-[#29c4a9] transition-colors font-headline font-bold tracking-tight text-sm uppercase" href="#">Claims</a>
+<a class="text-[#f0f4f8] hover:text-[#29c4a9] transition-colors font-headline font-bold tracking-tight text-sm uppercase" href="#">Contractor Resources</a>
+<a class="text-[#2ea3f2] border-b-2 border-[#2ea3f2] pb-1 font-headline font-bold tracking-tight text-sm uppercase" href="#">Blog</a>
+<a class="text-[#f0f4f8] hover:text-[#29c4a9] transition-colors font-headline font-bold tracking-tight text-sm uppercase" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+<button class="bg-gradient-to-r from-brand-primary to-blue-600 text-white font-headline font-bold py-2 px-6 rounded-md hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 uppercase tracking-wide text-sm">
+                    Get a Quote
+                </button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-24">
+<!-- (1) Hero -->
+<section class="relative bg-hero-glow py-24 md:py-32 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto text-center relative z-10 fade-in-up">
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tighter mb-6 text-brand-text">
+                    The SPF Insurance <span class="relative inline-block">Blog<div class="absolute -bottom-2 left-0 w-full h-1.5 bg-brand-accent"></div></span>
+</h1>
+<p class="font-body text-brand-muted text-xl md:text-2xl max-w-2xl mx-auto font-medium">
+                    Insights for spray foam professionals
+                </p>
+</div>
+</section>
+<div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Main Content Area -->
+<div class="lg:col-span-8 space-y-16">
+<!-- (2) Featured Article -->
+<article class="glass-card rounded-xl overflow-hidden fade-in-up delay-100 group cursor-pointer">
+<div class="relative aspect-[21/9] w-full overflow-hidden bg-brand-surface">
+<img alt="Spray foam insulation application process in a commercial building. High-contrast cinematic lighting illuminating the specialized equipment. Industrial setting highlighting safety gear and precise application techniques. Deep shadows with bright focal points on the foam expansion. Professional contractor environment." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Spray foam insulation application process in a commercial building. High-contrast cinematic lighting illuminating the specialized equipment. Industrial setting highlighting safety gear and precise application techniques. Deep shadows with bright focal points on the foam expansion. Professional contractor environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzbm1D3Uh_uwrcZjQXtrVQeIyOGlZJgy8Sh1xsGywVnit1uyIP83SKAWAk0bkndaVyI19I18UIpLxIQtI5dQX_yzpwcwmf6X3VFucVgwvsHg3d0RabndfGgyPoNHedftQoznqIdLNDmCfqXeRl1I5rh6h-lsTt7ITfBZQYQPNeAMmdNXqvrGRkAW5jQTpMRcUpGLaJdedBEFyJ9_91Kjb3CbwVksiA9NpzkPeeCCfWDO1CYlPZ4WrwYcc1R9ndwBxqdMmNpT5xxDAI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-brand-card to-transparent"></div>
+</div>
+<div class="p-8 relative -mt-20 z-10">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-brand-primary/20 text-brand-primary border border-brand-primary/30 px-3 py-1 rounded-full text-xs font-label uppercase tracking-widest font-bold">Coverage Tips</span>
+<span class="text-brand-muted font-body text-sm">Oct 24, 2024</span>
+</div>
+<h2 class="font-headline font-bold text-3xl md:text-4xl text-brand-text mb-4 leading-tight group-hover:text-brand-primary transition-colors">Navigating the New Overspray Standards in 2025</h2>
+<p class="font-body text-brand-muted mb-6 line-clamp-3 text-lg leading-relaxed">
+                            As regulatory bodies tighten restrictions on chemical emissions and overspray drift, SPF contractors face evolving compliance challenges. Understand how these upcoming 2025 standards impact your liability insurance requirements and what proactive measures you can take today to avoid costly premium spikes.
+                        </p>
+<a class="inline-flex items-center justify-center bg-brand-highlight text-brand-bg font-headline font-bold uppercase tracking-wider py-3 px-8 rounded-md hover:bg-yellow-400 transition-colors" href="#">
+                            Read More
+                        </a>
+</div>
+</article>
+<!-- (3) Category Filter Bar -->
+<div class="relative border-b border-brand-muted/20 pb-4 fade-in-up delay-200">
+<div class="flex space-x-4 overflow-x-auto scroll-hide pb-2">
+<button class="whitespace-nowrap px-6 py-2 rounded-full border border-brand-primary bg-brand-primary text-brand-bg font-label font-bold uppercase tracking-wider text-sm transition-all">All</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full border border-brand-muted/30 text-brand-muted hover:border-brand-primary hover:text-brand-primary font-label font-bold uppercase tracking-wider text-sm transition-all">Coverage Tips</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full border border-brand-muted/30 text-brand-muted hover:border-brand-primary hover:text-brand-primary font-label font-bold uppercase tracking-wider text-sm transition-all">Safety</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full border border-brand-muted/30 text-brand-muted hover:border-brand-primary hover:text-brand-primary font-label font-bold uppercase tracking-wider text-sm transition-all">Industry News</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full border border-brand-muted/30 text-brand-muted hover:border-brand-primary hover:text-brand-primary font-label font-bold uppercase tracking-wider text-sm transition-all">Business Growth</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full border border-brand-muted/30 text-brand-muted hover:border-brand-primary hover:text-brand-primary font-label font-bold uppercase tracking-wider text-sm transition-all">Claims</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full border border-brand-muted/30 text-brand-muted hover:border-brand-primary hover:text-brand-primary font-label font-bold uppercase tracking-wider text-sm transition-all">Q&amp;A</button>
+</div>
+</div>
+<!-- (4) Article Grid 1 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in-up delay-300">
+<!-- Card 1 -->
+<article class="glass-card rounded-xl overflow-hidden group cursor-pointer flex flex-col">
+<div class="aspect-[16/9] w-full overflow-hidden bg-brand-surface relative">
+<img alt="Close up of a specialized spray foam applicator gun resting on a textured surface. Deep shadows emphasizing metallic components and industrial nature. High-end equipment photography with dramatic lighting. Focus on technical details of the gear." class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a specialized spray foam applicator gun resting on a textured surface. Deep shadows emphasizing metallic components and industrial nature. High-end equipment photography with dramatic lighting. Focus on technical details of the gear." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFic7T7cr6g3YSUquTRR-GcsM_pMaN2jGZ0kUk2AoTTAFHOZaxrv6pCCq-bMR0_Wu1-_uz4xaIsdDH0PcNUTCP3v9sgzSjHOtqdjjs_BnOAVirTlcFkTmrYJjiA9hsMxItFee_1JQzST1j-Mq6RA2BY_uVH8D60TzEymbNGaacCbu95Bj3redSJEItubg1T00YO6-cpcTo1FDKj-YoostAQ4uvqHjfgzrt9xN3AaJO9g9UmjNEp1RKBglh7jiZg6HvCXY9Zu7Fd_XL"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex items-center justify-between mb-3">
+<span class="text-brand-primary text-xs font-label uppercase tracking-widest font-bold">Safety</span>
+<span class="text-brand-muted font-body text-xs">Oct 18, 2024</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-brand-text mb-3 leading-snug group-hover:text-brand-primary transition-colors">Essential Rig Maintenance for Winter Operations</h3>
+<p class="font-body text-brand-muted text-sm mb-4 line-clamp-2 flex-grow">Protect your equipment and avoid costly winter claims by properly winterizing your proportioners and heated hoses.</p>
+<div class="mt-auto flex items-center text-brand-accent font-label font-bold text-sm uppercase tracking-wide group-hover:translate-x-2 transition-transform">
+                                Read More <span class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Repeat Cards for Grid 1... (Simplified for brevity) -->
+</div>
+</div>
+<!-- (5) Sidebar -->
+<aside class="lg:col-span-4 space-y-10 fade-in-up delay-300">
+<!-- Quick Quote Card -->
+<div class="glass-card rounded-xl p-8 relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-brand-primary/20 rounded-full blur-2xl"></div>
+<h3 class="font-headline font-bold text-2xl text-brand-text mb-2">Need a Quick Quote?</h3>
+<p class="font-body text-brand-muted text-sm mb-6">Get specialized SPF coverage tailored to your exact rig setup and project volume.</p>
+<form class="space-y-4">
+<div>
+<label class="sr-only">Company Name</label>
+<input class="w-full bg-brand-surface border border-brand-muted/30 rounded-md px-4 py-3 text-brand-text placeholder-brand-muted focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-colors" placeholder="Company Name" type="text"/>
+</div>
+<div>
+<label class="sr-only">Email Address</label>
+<input class="w-full bg-brand-surface border border-brand-muted/30 rounded-md px-4 py-3 text-brand-text placeholder-brand-muted focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition-colors" placeholder="Email Address" type="email"/>
+</div>
+<button class="w-full bg-gradient-to-r from-brand-primary to-blue-600 text-white font-headline font-bold uppercase tracking-wide py-3 rounded-md hover:opacity-90 transition-opacity" type="button">
+                            Get Started
+                        </button>
+</form>
+</div>
+</aside>
+</div>
+</main>
+<!-- (10) Footer CTA Strip -->
+<section class="bg-teal-blue-grad py-16 px-6 mt-12 relative overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between relative z-10 text-center md:text-left gap-8">
+<div>
+<h2 class="font-headline font-black text-3xl md:text-4xl text-brand-bg mb-2 uppercase tracking-tight">Protect Your Business Today</h2>
+<p class="font-body text-brand-bg/80 text-lg font-medium">Expert coverage specifically for spray foam professionals.</p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-6">
+<div class="flex items-center text-brand-bg font-headline font-bold text-2xl">
+<span class="material-symbols-outlined mr-2 text-3xl" style="font-variation-settings: 'FILL' 1;">call</span>
+                    844-967-5247
+                </div>
+<button class="bg-brand-bg text-brand-text font-headline font-bold uppercase tracking-wider py-4 px-10 rounded-md hover:bg-brand-surface transition-colors shadow-xl">
+                    Get Quote
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0d1421] w-full py-12 border-t border-[#111827]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 max-w-7xl mx-auto">
+<div>
+<div class="text-xl font-bold text-[#f0f4f8] mb-4">SFI</div>
+<p class="font-body text-[#94a3b8] text-sm">© 2024 Spray Foam Insurance. All Rights Reserved. Protected by SPF Industry Standards.</p>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="font-body text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#f59e0b] transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="font-body text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#f59e0b] transition-colors text-sm" href="#">Terms of Service</a>
+<a class="font-body text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#f59e0b] transition-colors text-sm" href="#">Carrier Partners</a>
+<a class="font-body text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#f59e0b] transition-colors text-sm" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>

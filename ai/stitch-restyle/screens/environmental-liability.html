@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Environmental Liability - SPF PROTECT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Montserrat:wght@700;800&amp;family=Public+Sans:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: "#080d16",
+                        surface: "#0d1421",
+                        card: "#111827",
+                        primary: "#2ea3f2",
+                        accent: "#29c4a9",
+                        highlight: "#f59e0b",
+                        textMain: "#f0f4f8",
+                        muted: "#94a3b8"
+                    },
+                    fontFamily: {
+                        headline: ["Montserrat", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "1rem",
+                        xl: "1.5rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #080d16;
+            color: #f0f4f8;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.1);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(46, 163, 242, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(46, 163, 242, 0.2);
+            transform: translateY(-4px);
+        }
+        .glow-bg {
+            position: absolute;
+            width: 60vw;
+            height: 60vw;
+            background: radial-gradient(circle, rgba(41, 196, 169, 0.1) 0%, rgba(8, 13, 22, 0) 70%);
+            top: -20%;
+            left: 20%;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .text-gradient-primary {
+            background: linear-gradient(to right, #2ea3f2, #29c4a9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-active .accordion-content {
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body class="antialiased bg-background text-textMain flex flex-col min-h-screen">
+<!-- TopNavBar (JSON Mapping) -->
+<header class="fixed top-0 w-full z-50 bg-[#080d16]/80 backdrop-blur-md border-b border-[#2ea3f2]/10 shadow-2xl">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="text-2xl font-headline font-extrabold tracking-tighter text-[#2ea3f2]">SPF PROTECT</div>
+<nav class="hidden md:flex space-x-8">
+<!-- Determining Active: User intent implies "Coverage" or general info. Setting Coverage active. -->
+<a class="font-headline font-bold uppercase tracking-tight text-[#2ea3f2] border-b-2 border-[#2ea3f2] pb-1" href="#">Coverage</a>
+<a class="font-headline font-bold uppercase tracking-tight text-[#94a3b8] hover:text-[#29c4a9] transition-all duration-300" href="#">Risk Management</a>
+<a class="font-headline font-bold uppercase tracking-tight text-[#94a3b8] hover:text-[#29c4a9] transition-all duration-300" href="#">Claims</a>
+<a class="font-headline font-bold uppercase tracking-tight text-[#94a3b8] hover:text-[#29c4a9] transition-all duration-300" href="#">Safety</a>
+<a class="font-headline font-bold uppercase tracking-tight text-[#94a3b8] hover:text-[#29c4a9] transition-all duration-300" href="#">About</a>
+</nav>
+<button class="bg-gradient-to-r from-primary to-accent text-white font-headline font-bold uppercase tracking-wide px-6 py-2 rounded scale-95 active:opacity-80 transition-transform">
+                Get a Quote
+            </button>
+</div>
+</header>
+<main class="flex-grow pt-24">
+<!-- Section 1: Hero -->
+<section class="relative min-h-[819px] flex items-center justify-center py-20 overflow-hidden bg-background">
+<div class="glow-bg"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tighter mb-6 leading-tight">
+                    Environmental Liability for <br/> <span class="text-gradient-primary">Spray Foam Contractors</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-muted max-w-3xl mx-auto mb-10 leading-relaxed">
+                    Protect your business from the unique chemical risks of the SPF industry. Comprehensive coverage for MDI, blowing agents, and job site spills.
+                </p>
+<button class="bg-gradient-to-r from-primary to-blue-600 text-white font-headline font-bold uppercase tracking-widest px-10 py-4 rounded-lg shadow-[0_0_20px_rgba(46,163,242,0.4)] hover:shadow-[0_0_30px_rgba(46,163,242,0.6)] transition-all transform hover:-translate-y-1">
+                    Secure Your Coverage
+                </button>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-surface to-transparent"></div>
+</section>
+<!-- Section 2: The GL Gap -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline font-bold text-4xl mb-6 tracking-tight">The <span class="text-highlight">General Liability</span> Gap</h2>
+<div class="h-1 w-20 bg-highlight mb-8"></div>
+<p class="font-body text-lg text-muted mb-6 leading-relaxed">
+                            Standard General Liability (GL) policies contain an absolute pollution exclusion. They do not cover claims arising from the release, discharge, or escape of pollutants—including the essential chemicals used in spray foam insulation.
+                        </p>
+<p class="font-body text-lg text-textMain font-medium">
+                            If a drum of isocyanate spills on a highway, or a mis-proportioned mix causes severe off-gassing in a client's home, your GL policy leaves you fully exposed.
+                        </p>
+</div>
+<div class="glass-card rounded-xl p-8 border-l-4 border-l-highlight">
+<div class="flex items-center mb-6">
+<span class="material-symbols-outlined text-highlight text-4xl mr-4" style="font-variation-settings: 'FILL' 1;">warning</span>
+<h3 class="font-headline font-bold text-2xl">Uncovered SPF Risks</h3>
+</div>
+<ul class="space-y-4 font-body text-muted">
+<li class="flex items-start"><span class="material-symbols-outlined text-primary mr-3 text-sm mt-1">close</span> Chemical spills during transit</li>
+<li class="flex items-start"><span class="material-symbols-outlined text-primary mr-3 text-sm mt-1">close</span> Toxic off-gassing from improper installation</li>
+<li class="flex items-start"><span class="material-symbols-outlined text-primary mr-3 text-sm mt-1">close</span> Overspray contaminating neighboring property</li>
+<li class="flex items-start"><span class="material-symbols-outlined text-primary mr-3 text-sm mt-1">close</span> Environmental cleanup mandates</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 11: CTA Banner -->
+<section class="py-24 bg-background">
+<div class="max-w-5xl mx-auto px-6">
+<div class="rounded-2xl bg-gradient-to-br from-[#0a192f] to-[#042f2e] border border-[#29c4a9]/30 p-12 text-center relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 right-0 w-64 h-64 bg-[#2ea3f2] opacity-10 blur-[80px] rounded-full"></div>
+<h2 class="font-headline font-bold text-4xl md:text-5xl mb-6 tracking-tight relative z-10">Don't Let a Spill End Your Business</h2>
+<p class="font-body text-xl text-muted mb-10 max-w-2xl mx-auto relative z-10">
+                        Get specialized environmental liability coverage designed exclusively for the realities of spray foam contracting.
+                    </p>
+<button class="relative z-10 bg-white text-[#080d16] font-headline font-bold uppercase tracking-widest px-10 py-4 rounded-lg hover:bg-gray-200 transition-colors">
+                        Request a Specialist Quote
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (JSON Mapping) -->
+<footer class="w-full py-12 px-6 bg-[#0d1421] border-t border-[#111827]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div>
+<div class="font-headline font-bold text-[#f59e0b] mb-4 text-xl">SPF PROTECT</div>
+<p class="font-body text-sm leading-relaxed text-[#94a3b8]">
+                    © 2024 SPF PROTECT INSURANCE SERVICES. SECURING THE SPRAY FOAM INDUSTRY.
+                </p>
+</div>
+<div class="flex flex-col space-y-3 font-body text-sm leading-relaxed">
+<a class="text-[#94a3b8] hover:text-[#f0f4f8] hover:underline decoration-[#29c4a9] underline-offset-4 opacity-100 hover:opacity-80 transition-opacity" href="#">Privacy Policy</a>
+<a class="text-[#94a3b8] hover:text-[#f0f4f8] hover:underline decoration-[#29c4a9] underline-offset-4 opacity-100 hover:opacity-80 transition-opacity" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-3 font-body text-sm leading-relaxed">
+<a class="text-[#94a3b8] hover:text-[#f0f4f8] hover:underline decoration-[#29c4a9] underline-offset-4 opacity-100 hover:opacity-80 transition-opacity" href="#">Carrier Partners</a>
+<a class="text-[#94a3b8] hover:text-[#f0f4f8] hover:underline decoration-[#29c4a9] underline-offset-4 opacity-100 hover:opacity-80 transition-opacity" href="#">Contractor Portal</a>
+</div>
+<div class="flex flex-col space-y-3 font-body text-sm leading-relaxed">
+<a class="text-[#94a3b8] hover:text-[#f0f4f8] hover:underline decoration-[#29c4a9] underline-offset-4 opacity-100 hover:opacity-80 transition-opacity" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>

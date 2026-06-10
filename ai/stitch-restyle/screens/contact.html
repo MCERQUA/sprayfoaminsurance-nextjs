@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - Spray Foam Insurance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&amp;family=Inter:wght@400;500&amp;family=Public+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#080d16',
+                        surface: '#0d1421',
+                        card: '#111827',
+                        primary: '#2ea3f2',
+                        accent: '#29c4a9',
+                        highlight: '#f59e0b',
+                        text: '#f0f4f8',
+                        muted: '#94a3b8'
+                    },
+                    fontFamily: {
+                        headline: ["Montserrat", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    letterSpacing: {
+                        tight: '-0.02em',
+                        widest: '0.1em'
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #080d16;
+            color: #f0f4f8;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080d16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #111827;
+            border-radius: 5px;
+            border: 1px solid #2ea3f240;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2ea3f2;
+        }
+
+        /* Glassmorphism utilities */
+        .glass-card {
+            background: rgba(17, 24, 39, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(46, 163, 242, 0.8);
+            box-shadow: 0 8px 32px rgba(46, 163, 242, 0.15);
+            transform: translateY(-4px);
+        }
+
+        /* Ambient glows */
+        .glow-bg {
+            position: absolute;
+            width: 60vw;
+            height: 60vw;
+            background: radial-gradient(circle, rgba(46,163,242,0.1) 0%, rgba(8,13,22,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .glow-accent {
+            background: radial-gradient(circle, rgba(41,196,169,0.08) 0%, rgba(8,13,22,0) 70%);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+        }
+        
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+
+        /* Form styling */
+        .dark-input {
+            background-color: rgba(13, 20, 33, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            color: #f0f4f8;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .dark-input:focus {
+            border-color: #2ea3f2;
+            box-shadow: 0 0 0 2px rgba(46, 163, 242, 0.2);
+            outline: none;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#080d16]/80 backdrop-blur-md border-b border-[#2ea3f2]/20 shadow-[0_4px_20px_rgba(46,163,242,0.15)] transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<a class="text-2xl font-headline font-extrabold tracking-tighter text-[#2ea3f2] hover:scale-105 active:scale-95 transition-transform flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield</span>
+                Spray Foam Insurance
+            </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-headline font-bold tracking-tight uppercase text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#29c4a9] transition-all duration-300 hover:scale-105 active:scale-95 transition-transform" href="#">Solutions</a>
+<a class="font-headline font-bold tracking-tight uppercase text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#29c4a9] transition-all duration-300 hover:scale-105 active:scale-95 transition-transform" href="#">Contractors</a>
+<a class="font-headline font-bold tracking-tight uppercase text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#29c4a9] transition-all duration-300 hover:scale-105 active:scale-95 transition-transform" href="#">Claims</a>
+<a class="font-headline font-bold tracking-tight uppercase text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#29c4a9] transition-all duration-300 hover:scale-105 active:scale-95 transition-transform" href="#">Safety</a>
+<a class="font-headline font-bold tracking-tight uppercase text-[#2ea3f2] border-b-2 border-[#2ea3f2] pb-1 hover:text-[#29c4a9] transition-all duration-300 hover:scale-105 active:scale-95 transition-transform flex-col" href="#">About</a>
+</div>
+<div class="hidden md:flex items-center space-x-4">
+<button class="font-headline font-bold tracking-tight uppercase text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#29c4a9] transition-all duration-300 hover:scale-105 active:scale-95 transition-transform">Client Login</button>
+<button class="bg-gradient-to-r from-primary to-blue-600 text-white px-6 py-2 rounded-lg font-headline font-bold tracking-tight uppercase hover:scale-105 active:scale-95 transition-transform shadow-[0_0_15px_rgba(46,163,242,0.4)]">Get Insured</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- 1. Hero Section -->
+<section class="relative min-h-[716px] flex flex-col justify-center items-center text-center px-6 py-20 overflow-hidden">
+<div class="glow-bg top-0 left-1/2 -translate-x-1/2"></div>
+<div class="max-w-4xl mx-auto z-10 animate-fade-in-up">
+<p class="font-label text-accent tracking-widest text-sm mb-4 font-bold uppercase">Dedicated Support Team</p>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tight mb-6 leading-tight">
+                    Talk to a <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Spray Foam Specialist</span>
+</h1>
+<p class="font-body text-muted text-xl md:text-2xl mb-12 max-w-2xl mx-auto">Same-Day Response Guaranteed.</p>
+<div class="inline-block p-1 rounded-2xl bg-gradient-to-r from-highlight to-amber-600 animate-fade-in-up stagger-1">
+<a class="block bg-background px-8 py-6 rounded-xl hover:bg-surface transition-colors flex items-center justify-center gap-4" href="tel:8449675247">
+<span class="material-symbols-outlined text-highlight text-4xl md:text-5xl" style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+<span class="font-headline font-extrabold text-4xl md:text-6xl text-highlight tracking-tight">844-967-5247</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 2. Contact Methods Grid -->
+<section class="py-16 px-6 relative z-10">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Phone -->
+<a class="glass-card p-8 rounded-xl flex flex-col items-center text-center animate-fade-in-up stagger-1 group" href="tel:8449675247">
+<div class="w-16 h-16 rounded-full bg-surface border border-primary/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(46,163,242,0.2)]">
+<span class="material-symbols-outlined text-primary text-3xl">call</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-2 tracking-tight">Call Us</h3>
+<p class="font-body text-muted text-sm mb-4">Direct line to a licensed specialist.</p>
+<p class="font-headline font-bold text-lg text-primary mt-auto group-hover:text-highlight transition-colors">844-967-5247</p>
+</a>
+<!-- Email -->
+<a class="glass-card p-8 rounded-xl flex flex-col items-center text-center animate-fade-in-up stagger-2 group" href="mailto:quotes@sprayfoamins.com">
+<div class="w-16 h-16 rounded-full bg-surface border border-primary/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(46,163,242,0.2)]">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-2 tracking-tight">Email</h3>
+<p class="font-body text-muted text-sm mb-4">Send us details for a thorough review.</p>
+<p class="font-headline font-bold text-lg text-primary mt-auto group-hover:text-highlight transition-colors">quotes@sprayfoamins.com</p>
+</a>
+<!-- Form Jump -->
+<a class="glass-card p-8 rounded-xl flex flex-col items-center text-center animate-fade-in-up stagger-3 group" href="#contact-form">
+<div class="w-16 h-16 rounded-full bg-surface border border-accent/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(41,196,169,0.2)]">
+<span class="material-symbols-outlined text-accent text-3xl">description</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-2 tracking-tight">Online Form</h3>
+<p class="font-body text-muted text-sm mb-4">Detailed inquiry for precise quoting.</p>
+<p class="font-headline font-bold text-lg text-accent mt-auto group-hover:text-highlight transition-colors">Fill Out Below ↓</p>
+</a>
+<!-- Live Chat -->
+<button class="glass-card p-8 rounded-xl flex flex-col items-center text-center animate-fade-in-up stagger-4 group">
+<div class="w-16 h-16 rounded-full bg-surface border border-highlight/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+<span class="material-symbols-outlined text-highlight text-3xl">chat</span>
+</div>
+<h3 class="font-headline font-bold text-xl mb-2 tracking-tight">Live Chat</h3>
+<p class="font-body text-muted text-sm mb-4">Quick questions answered instantly.</p>
+<p class="font-headline font-bold text-lg text-highlight mt-auto">Start Chat</p>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0d1421] border-t border-[#111827] w-full py-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-6">
+<div class="flex flex-col items-start gap-4 hover:translate-x-1 transition-transform">
+<span class="font-headline font-bold text-[#f59e0b] text-2xl flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield</span>
+                    SFI
+                </span>
+<p class="font-body text-sm text-[#94a3b8]">© 2024 Spray Foam Insurance. Protected by Electric Blue Security.</p>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-body text-sm text-[#94a3b8] hover:text-[#f59e0b] transition-colors hover:translate-x-1 transition-transform" href="#">Privacy Policy</a>
+<a class="font-body text-sm text-[#94a3b8] hover:text-[#f59e0b] transition-colors hover:translate-x-1 transition-transform" href="#">Terms of Service</a>
+<a class="font-body text-sm text-[#94a3b8] hover:text-[#f59e0b] transition-colors hover:translate-x-1 transition-transform" href="#">Claims Center</a>
+</div>
+<div class="flex flex-col gap-3">
+<a class="font-body text-sm text-[#94a3b8] hover:text-[#f59e0b] transition-colors hover:translate-x-1 transition-transform" href="#">Contractor Portal</a>
+<a class="font-body text-sm text-[#94a3b8] hover:text-[#f59e0b] transition-colors hover:translate-x-1 transition-transform" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-lg', 'bg-[#080d16]/95');
+                nav.classList.remove('bg-[#080d16]/80');
+            } else {
+                nav.classList.remove('shadow-lg', 'bg-[#080d16]/95');
+                nav.classList.add('bg-[#080d16]/80');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-fade-in-up').forEach((el) => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
+</body></html>

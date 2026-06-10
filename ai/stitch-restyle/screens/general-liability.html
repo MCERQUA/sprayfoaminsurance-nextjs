@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>General Liability Insurance - Spray Foam Insurance Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Montserrat:wght@700;800&amp;family=Public+Sans:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#080d16',
+                        surface: '#0d1421',
+                        cards: '#111827',
+                        primary: '#2ea3f2',
+                        accent: '#29c4a9',
+                        highlight: '#f59e0b',
+                        text: '#f0f4f8',
+                        muted: '#94a3b8'
+                    },
+                    fontFamily: {
+                        headline: ["Montserrat", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    letterSpacing: {
+                        'tight-custom': '-0.02em',
+                        'label': '0.1em'
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.text');
+            font-family: theme('fontFamily.body');
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: theme('fontFamily.headline');
+            letter-spacing: theme('letterSpacing.tight-custom');
+        }
+        .label-text {
+            font-family: theme('fontFamily.label');
+            text-transform: uppercase;
+            letter-spacing: theme('letterSpacing.label');
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(46, 163, 242, 0.6);
+            box-shadow: 0 10px 30px -10px rgba(46, 163, 242, 0.15);
+            transform: translateY(-4px);
+        }
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.15;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .orb-blue {
+            background: theme('colors.primary');
+        }
+        .orb-teal {
+            background: theme('colors.accent');
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, theme('colors.primary'), #1a82c9);
+            color: white;
+            font-family: theme('fontFamily.label');
+            text-transform: uppercase;
+            letter-spacing: theme('letterSpacing.label');
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 20px rgba(46, 163, 242, 0.4);
+        }
+        .btn-cta {
+            background: theme('colors.highlight');
+            color: #000;
+            font-family: theme('fontFamily.label');
+            text-transform: uppercase;
+            letter-spacing: theme('letterSpacing.label');
+            font-weight: 800;
+            transition: all 0.3s ease;
+        }
+        .btn-cta:hover {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+            background: #d97706;
+        }
+        .btn-secondary {
+            border: 2px solid theme('colors.accent');
+            color: theme('colors.accent');
+            font-family: theme('fontFamily.label');
+            text-transform: uppercase;
+            letter-spacing: theme('letterSpacing.label');
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background: rgba(41, 196, 169, 0.1);
+        }
+        
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-alt {
+            background-color: theme('colors.surface');
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary/30 selection:text-white">
+<!-- TopNavBar JSON Implementation -->
+<header class="bg-[#080d16]/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-[#2ea3f2]/20 shadow-[0_4px_20px_rgba(46,163,242,0.1)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 py-4">
+<div class="text-2xl font-headline font-extrabold tracking-tighter text-[#2ea3f2]">
+                SPRAYFOAM INSURE
+            </div>
+<nav class="hidden md:flex space-x-8">
+<a class="font-headline font-bold tracking-tighter uppercase text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors" href="#">Programs</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors" href="#">Claims</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors" href="#">Risk Control</a>
+<a class="font-headline font-bold tracking-tighter uppercase text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors" href="#">About Us</a>
+</nav>
+<div class="hidden md:flex items-center space-x-4">
+<button class="font-headline font-bold tracking-tighter uppercase text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors hover:opacity-80 transition-all duration-300 scale-95 active:scale-90 transition-transform">
+                    Agent Login
+                </button>
+<button class="font-headline font-bold tracking-tighter uppercase btn-cta px-6 py-2 rounded scale-95 active:scale-90 transition-transform">
+                    Get GL Quote
+                </button>
+</div>
+<button class="md:hidden text-[#f0f4f8]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-24">
+<!-- 1. Hero Section -->
+<section class="relative min-h-[819px] flex items-center overflow-hidden py-20 px-6">
+<!-- Orbs -->
+<div class="glow-orb orb-blue w-[600px] h-[600px] top-[-200px] left-[-200px]"></div>
+<div class="glow-orb orb-teal w-[500px] h-[500px] bottom-[-100px] right-[-100px]"></div>
+<!-- Background Image -->
+<div class="absolute inset-0 z-[-1] opacity-30 bg-cover bg-center" data-alt="Dark, moody cinematic shot of a professional spray foam contractor at work. The worker is wearing full protective gear, silhouetted against a dark industrial background with bright, dramatic high-contrast lighting highlighting the foam application process. The overall tone is gritty, authoritative, and deeply professional, aligning with the dark navy and electric blue brand aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBAd1GlmpWRxWNYWaPzSnZ9FFLNyCw2h0LqG9R7AHqhco8mFZXA6n3JZ0k5wvzxhlDRtWcAU4YmyYfe9XGT2iG1Emy6x52IasMrI4PXGgy-IQH1excoUJP7miB5WptQVQf9R7KP2Vfi6v6EFgM95FWVqG4mQ9kzKiLIsxmXv8TaZ6T3rwfogX3aC-kRwd9uh4lXMKyHc1hnoQE0byG3Tz_dPW5ExZS3MJHekl3qVm-62kU63jjBkQ5hvx8F4xy3ZIPD8NKvjxuYdl2G');"></div>
+<div class="max-w-7xl mx-auto w-full relative z-10 fade-in-up">
+<nav class="flex items-center space-x-2 text-sm text-muted mb-8 font-label">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Programs</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-primary">General Liability</span>
+</nav>
+<div class="max-w-4xl">
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-white leading-tight mb-6">
+                        General Liability Insurance for <br/>
+<span class="text-primary">Spray Foam Contractors</span>
+</h1>
+<p class="text-xl text-muted font-body leading-relaxed mb-10 max-w-2xl">
+                        Comprehensive protection specifically engineered for the unique risks of SPF application. Defend your business against third-party claims, overspray damage, and completed operations liabilities.
+                    </p>
+<div class="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
+<button class="btn-cta px-8 py-4 rounded-md text-lg shadow-lg">
+                            Get GL Quote
+                        </button>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-accent text-3xl">verified</span>
+<span class="text-sm text-muted">A-Rated Carriers<br/>Specialized Coverage</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. What GL Covers -->
+<section class="py-24 px-6 section-alt relative">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="fade-in-up">
+<h2 class="text-4xl font-headline font-bold text-white mb-6">The Core Foundation of Your <span class="text-primary">Risk Strategy</span></h2>
+<p class="text-lg text-muted leading-relaxed mb-8">
+                            General Liability (GL) is the bedrock of your commercial insurance program. For SPF contractors, standard policies often fall short by excluding pollution or overspray. Our specialized GL is manuscripted to address the exact exposures of chemical application.
+                        </p>
+<a class="text-accent hover:text-white font-label flex items-center transition-colors" href="#quote">
+                            Review Coverage Details <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</a>
+</div>
+<div class="glass-card rounded-xl p-8 fade-in-up" style="transition-delay: 200ms;">
+<ul class="space-y-6">
+<li class="flex items-start">
+<div class="mt-1 bg-primary/20 p-2 rounded-full mr-4 border border-primary/30">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">personal_injury</span>
+</div>
+<div>
+<h4 class="font-bold text-white text-lg">Third-Party Bodily Injury</h4>
+<p class="text-muted text-sm mt-1">Covers medical costs if a non-employee is injured at your job site.</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="mt-1 bg-primary/20 p-2 rounded-full mr-4 border border-primary/30">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">home_work</span>
+</div>
+<div>
+<h4 class="font-bold text-white text-lg">Property Damage</h4>
+<p class="text-muted text-sm mt-1">Protection if you damage a client's property during prep or application.</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="mt-1 bg-primary/20 p-2 rounded-full mr-4 border border-primary/30">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<h4 class="font-bold text-white text-lg">Completed Operations</h4>
+<p class="text-muted text-sm mt-1">Coverage for issues arising after the job is done (e.g., foam separation causing secondary damage).</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="mt-1 bg-primary/20 p-2 rounded-full mr-4 border border-primary/30">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<div>
+<h4 class="font-bold text-white text-lg">Legal Defense</h4>
+<p class="text-muted text-sm mt-1">Covers attorney fees, court costs, and settlements for covered claims.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SPF Unique Risks -->
+<section class="py-24 px-6 relative overflow-hidden">
+<!-- Orb -->
+<div class="glow-orb orb-teal w-[400px] h-[400px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="text-center mb-16 fade-in-up">
+<h2 class="text-4xl font-headline font-bold text-white mb-4">Addressing <span class="text-accent">SPF-Specific</span> Exposures</h2>
+<p class="text-lg text-muted max-w-2xl mx-auto">Standard GL policies exclude these critical areas. Our programs are designed to cover the realities of chemical handling.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="glass-card p-6 rounded-xl fade-in-up">
+<span class="material-symbols-outlined text-4xl text-accent mb-4" style="font-variation-settings: 'FILL' 1;">cloud</span>
+<h3 class="text-xl font-bold text-white mb-2">Overspray Claims</h3>
+<p class="text-muted text-sm">Wind-carried particles damaging nearby vehicles or neighboring property structures.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-6 rounded-xl fade-in-up" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-4xl text-accent mb-4" style="font-variation-settings: 'FILL' 1;">science</span>
+<h3 class="text-xl font-bold text-white mb-2">Foam Cure Failures</h3>
+<p class="text-muted text-sm">Off-ratio mixes resulting in lingering odors, shrinkage, or necessity for removal.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-6 rounded-xl fade-in-up" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-4xl text-accent mb-4" style="font-variation-settings: 'FILL' 1;">house_siding</span>
+<h3 class="text-xl font-bold text-white mb-2">Client Property</h3>
+<p class="text-muted text-sm">Damage to drywall, wiring, or plumbing during the expansion phase of application.</p>
+</div>
+<!-- Card 4 -->
+<div class="glass-card p-6 rounded-xl fade-in-up" style="transition-delay: 300ms;">
+<span class="material-symbols-outlined text-4xl text-accent mb-4" style="font-variation-settings: 'FILL' 1;">masks</span>
+<h3 class="text-xl font-bold text-white mb-2">Chemical Exposure</h3>
+<p class="text-muted text-sm">Third-party claims related to isocyanate exposure during or shortly after installation.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer JSON Implementation -->
+<footer class="bg-[#0d1421] w-full pt-20 pb-10 border-t border-[#111827]">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-headline font-bold text-[#f0f4f8] mb-4">
+                    SPRAYFOAM INSURE
+                </div>
+<p class="font-body text-sm leading-relaxed text-[#94a3b8]">
+                    © 2024 Spray Foam Insurance Solutions. All rights reserved. Professional Liability &amp; GL for SPF Contractors.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-8 justify-start md:justify-end">
+<a class="font-body text-sm leading-relaxed text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors opacity-100 hover:opacity-80" href="#">Privacy Policy</a>
+<a class="font-body text-sm leading-relaxed text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors opacity-100 hover:opacity-80" href="#">Terms of Service</a>
+<a class="font-body text-sm leading-relaxed text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors opacity-100 hover:opacity-80" href="#">Fraud Notice</a>
+<a class="font-body text-sm leading-relaxed text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors opacity-100 hover:opacity-80" href="#">Accessibility</a>
+<a class="font-body text-sm leading-relaxed text-[#94a3b8] hover:text-[#f0f4f8] hover:text-[#2ea3f2] transition-colors opacity-100 hover:opacity-80" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for scroll animations
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up').forEach((elem) => {
+                observer.observe(elem);
+            });
+        });
+    </script>
+</body></html>

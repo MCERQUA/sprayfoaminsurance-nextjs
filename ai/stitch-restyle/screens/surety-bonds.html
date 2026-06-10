@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Surety Bonds | SPF Insurance</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Montserrat:wght@700;800&amp;family=Public+Sans:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#080d16',
+                        surface: '#0d1421',
+                        card: '#111827',
+                        primary: '#2ea3f2',
+                        accent: '#29c4a9',
+                        highlight: '#f59e0b',
+                        text: '#f0f4f8',
+                        muted: '#94a3b8',
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "1rem",
+                        xl: "1.5rem",
+                        full: "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Montserrat", "sans-serif"],
+                        display: ["Montserrat", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    letterSpacing: {
+                        tight: '-0.02em',
+                        widest: '0.1em'
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(46, 163, 242, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .glass-card:hover {
+            box-shadow: 0 8px 32px rgba(46, 163, 242, 0.2);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(46, 163, 242, 0.5);
+        }
+        .bg-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-text font-body antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+<!-- Top Navigation (From JSON) -->
+<nav class="fixed top-0 w-full z-50 bg-[#080d16]/80 backdrop-blur-md border-b border-[#2ea3f2]/20 shadow-[0_4px_20px_rgba(46,163,242,0.15)]">
+<div class="flex justify-between items-center h-20 px-8 max-w-full mx-auto">
+<a class="text-2xl font-headline font-extrabold text-[#2ea3f2] tracking-tighter hover:opacity-80 transition-all duration-300" href="#">SPF INSURANCE</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#f0f4f8] hover:text-[#29c4a9] transition-colors font-headline font-bold tracking-tight text-sm uppercase tracking-widest" href="#">Coverage</a>
+<a class="text-[#f0f4f8] hover:text-[#29c4a9] transition-colors font-headline font-bold tracking-tight text-sm uppercase tracking-widest" href="#">Claims</a>
+<a class="text-[#f0f4f8] hover:text-[#29c4a9] transition-colors font-headline font-bold tracking-tight text-sm uppercase tracking-widest" href="#">Risk Management</a>
+<a class="text-[#f0f4f8] hover:text-[#29c4a9] transition-colors font-headline font-bold tracking-tight text-sm uppercase tracking-widest" href="#">About</a>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="text-[#f0f4f8] hover:text-[#29c4a9] transition-colors font-headline font-bold tracking-tight text-sm border border-transparent px-4 py-2 hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform uppercase tracking-widest">Client Login</button>
+<button class="bg-gradient-to-r from-primary to-blue-600 text-white font-headline font-bold tracking-tight text-sm px-6 py-2 rounded-DEFAULT hover:opacity-80 transition-all duration-300 active:scale-95 transition-transform uppercase tracking-widest shadow-[0_0_15px_rgba(46,163,242,0.4)]">Get Quote</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- 1. Hero Section -->
+<section class="relative min-h-[90vh] flex items-center pt-20 pb-32 overflow-hidden bg-background">
+<div class="bg-orb w-[600px] h-[600px] bg-primary/15 top-[-100px] left-[-100px]"></div>
+<div class="bg-orb w-[500px] h-[500px] bg-accent/10 bottom-[-50px] right-[-50px]"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label text-xs text-primary uppercase tracking-widest">State Licensing &amp; Performance</span>
+</div>
+<h1 class="font-headline font-extrabold text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight text-text glow-text">
+                        Surety Bonds for <span class="text-primary block">Spray Foam Contractors.</span>
+</h1>
+<p class="text-lg md:text-xl text-muted max-w-xl leading-relaxed">
+                        Secure your state contractor license, bid on commercial projects, and guarantee performance with fast, competitive surety bonds designed for the SPF industry.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-highlight hover:bg-highlight/90 text-background font-headline font-bold px-8 py-4 rounded-DEFAULT transition-all active:scale-95 text-lg uppercase tracking-widest shadow-[0_0_20px_rgba(245,158,11,0.3)]">Get Bonded Today</button>
+<button class="border border-accent text-accent hover:bg-accent/10 font-headline font-bold px-8 py-4 rounded-DEFAULT transition-all active:scale-95 text-lg uppercase tracking-widest flex items-center justify-center gap-2">
+                            View Bond Types
+                            <span class="material-symbols-outlined">arrow_downward</span>
+</button>
+</div>
+</div>
+<div class="relative hidden lg:block h-full min-h-[500px]">
+<!-- Abstract representation of strength/bonding for the hero -->
+<img alt="Contractor working" class="absolute inset-0 w-full h-full object-cover rounded-xl border border-primary/20 shadow-[0_0_30px_rgba(46,163,242,0.2)] opacity-80 mix-blend-luminosity" data-alt="A cinematic, wide-angle shot of a commercial construction site at dusk, illuminated by stark, high-contrast cool blue and teal work lights. The scene features heavy industrial equipment and raw steel girders, conveying strength, reliability, and large-scale contractor work. The overall mood is authoritative, industrial, and premium, styled with a deep navy and near-black background aesthetic with bright electric blue accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8B-CvIGcWGRY3ukvH0cHJO1kJcR4hFaGC0k37sTSO4xcy9nt_AdGqMTfh4Tb3oSaGahJM84V6nYV4i0LfWh5N7w6bxbBRNvCd64eVkZfpJR-npdjAx0vjDAJtVHomiW2EOBFODFm861aDDFJeYSEZHlMpDUkJE3igsXFLRzcagMez-Br-b-XVd9t1zWxhv65D8D9_4LjCX5WWoLVPLhodJytPJgLMhwQthABiXrKD1j3cDeDwsI3oDC-DKxJpQ4CTgJNSPmW2HYI7"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- 2. What is a Surety Bond -->
+<section class="py-24 bg-surface relative border-y border-card">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="font-headline font-bold text-3xl md:text-4xl tracking-tight text-text mb-6">What is a Surety Bond?</h2>
+<p class="text-muted text-lg leading-relaxed">
+                        A surety bond is not insurance for your business. It is a three-party financial guarantee that ensures you will fulfill your obligations, whether that's following state licensing laws or completing a contracted project.
+                    </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="glass-card p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<img alt="3-party surety bond diagram showing Principal, Obligee, and Surety relationship" class="w-full h-auto relative z-10 drop-shadow-[0_0_15px_rgba(46,163,242,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBLveHBtXaObzNOTEkXmuU5YvnJ_df5NL7M9jAjDQ-KFsPn25nBREdkUx8xC64qwaLW5MG5Lq9O1AcqikEuYtnK58-NKekWF3tYr-DpIw9Uv4Gf76P8FhL4Y1FtB3F5byKl9icqPTIjw9bKtf6YPrIkg9gahnAJ739SkRFfS4iGn3med7v5-FLW4O-95ylCCfIvuYhgJbeKm6RZVEqBj6lhRs_VBHeXymggJlhWjhvMj2xS9EKFPcJu7QCs44GbfpuLpN1_LaHqqPk"/>
+</div>
+<div class="space-y-8">
+<div class="flex gap-4 items-start">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 border border-primary/30">
+<span class="font-headline font-bold text-primary text-xl">1</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-text mb-2">The Principal (You)</h3>
+<p class="text-muted leading-relaxed">The spray foam contractor who purchases the bond to guarantee their work or compliance with state regulations.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 border border-accent/30">
+<span class="font-headline font-bold text-accent text-xl">2</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-text mb-2">The Obligee (Client/State)</h3>
+<p class="text-muted leading-relaxed">The entity requiring the bond (like a state licensing board or a project owner) who is protected if you fail to perform.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-12 h-12 rounded-full bg-highlight/10 flex items-center justify-center shrink-0 border border-highlight/30">
+<span class="font-headline font-bold text-highlight text-xl">3</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-text mb-2">The Surety (Bond Company)</h3>
+<p class="text-muted leading-relaxed">The financial institution that issues the bond, backing your guarantee to the Obligee.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Types of Bonds -->
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="font-headline font-bold text-3xl md:text-4xl tracking-tight text-text mb-4">Common Bonds for SPF Contractors</h2>
+<p class="text-muted text-lg max-w-2xl">Depending on your state and the types of projects you bid on, you may need one or more of these specialized bonds.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="glass-card p-8 rounded-xl flex flex-col h-full">
+<div class="w-14 h-14 rounded-lg bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center border border-primary/30 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">badge</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-text mb-3">Contractor License Bond</h3>
+<p class="text-muted text-sm flex-grow leading-relaxed">Required by most states and municipalities to obtain or maintain your active contractor license. Guarantees adherence to local building codes.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-8 rounded-xl flex flex-col h-full">
+<div class="w-14 h-14 rounded-lg bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center border border-primary/30 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">construction</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-text mb-3">Performance Bond</h3>
+<p class="text-muted text-sm flex-grow leading-relaxed">Ensures that a specific project will be completed according to the terms of the contract. Often required for commercial or public works.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-8 rounded-xl flex flex-col h-full">
+<div class="w-14 h-14 rounded-lg bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center border border-primary/30 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-text mb-3">Payment Bond</h3>
+<p class="text-muted text-sm flex-grow leading-relaxed">Guarantees that you will pay your subcontractors, laborers, and material suppliers associated with a specific project.</p>
+</div>
+<!-- Card 4 -->
+<div class="glass-card p-8 rounded-xl flex flex-col h-full">
+<div class="w-14 h-14 rounded-lg bg-gradient-to-br from-primary/20 to-transparent flex items-center justify-center border border-primary/30 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">gavel</span>
+</div>
+<h3 class="font-headline font-bold text-xl text-text mb-3">Bid Bond</h3>
+<p class="text-muted text-sm flex-grow leading-relaxed">Submitted with your proposal for a job, guaranteeing that if you win, you will honor the bid price and sign the contract.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. State Licensing Callout -->
+<section class="py-12 bg-surface">
+<div class="max-w-5xl mx-auto px-6">
+<div class="bg-card border border-accent/40 rounded-xl p-8 md:p-12 relative overflow-hidden flex flex-col md:flex-row items-center gap-8 shadow-[0_0_30px_rgba(41,196,169,0.1)]">
+<div class="absolute right-0 top-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+<div class="w-20 h-20 shrink-0 rounded-full bg-accent/20 flex items-center justify-center border border-accent/50 relative z-10">
+<span class="material-symbols-outlined text-accent text-4xl" style="font-variation-settings: 'FILL' 1;">policy</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline font-bold text-2xl text-text mb-2">State Licensing Requirements</h3>
+<p class="text-muted text-lg leading-relaxed">
+                            A Contractor License Bond is not optional in most jurisdictions—it is a legal prerequisite. Without it, your state licensing board will not activate or renew your contractor license, halting your ability to operate legally.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Bond Cost Breakdown -->
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="font-headline font-bold text-3xl md:text-4xl tracking-tight text-text mb-6">How Much Does a Bond Cost?</h2>
+<p class="text-muted text-lg leading-relaxed">
+                        You do not pay the full bond amount. You only pay a small annual premium, which is a percentage of the total bond requirement based primarily on your personal credit score.
+                    </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Rate Range -->
+<div class="glass-card p-10 rounded-xl text-center lg:col-span-1 flex flex-col justify-center">
+<p class="font-label text-sm text-primary uppercase tracking-widest mb-4">Typical Premium Range</p>
+<div class="font-headline font-extrabold text-6xl text-highlight mb-4">1-3<span class="text-4xl">%</span></div>
+<p class="text-muted text-sm">Of the total bond amount per year for contractors with good credit.</p>
+</div>
+<!-- Example Scenario -->
+<div class="glass-card p-10 rounded-xl lg:col-span-2">
+<h3 class="font-headline font-bold text-xl text-text mb-6 border-b border-card pb-4">Example Scenario: $10,000 State License Bond</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<p class="text-muted mb-2 font-medium">If you have <strong class="text-text">Excellent Credit</strong> (&gt;700):</p>
+<div class="flex items-end gap-3 mb-2">
+<span class="font-headline font-bold text-3xl text-accent">$100</span>
+<span class="text-muted text-sm pb-1">/ year (approx. 1%)</span>
+</div>
+</div>
+<div>
+<p class="text-muted mb-2 font-medium">If you have <strong class="text-text">Average Credit</strong> (~650):</p>
+<div class="flex items-end gap-3 mb-2">
+<span class="font-headline font-bold text-3xl text-highlight">$300</span>
+<span class="text-muted text-sm pb-1">/ year (approx. 3%)</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-card">
+<p class="text-sm text-muted flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">info</span>
+                                Bad credit? You can still get bonded. We work with specialized surety markets to secure approvals even with challenged credit histories, though rates may be higher (5-10%).
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Bond vs Insurance -->
+<section class="py-24 bg-surface border-y border-card">
+<div class="max-w-5xl mx-auto px-6">
+<h2 class="font-headline font-bold text-3xl md:text-4xl tracking-tight text-text mb-12 text-center">Bond vs. General Liability Insurance</h2>
+<div class="overflow-x-auto rounded-xl border border-primary/20 shadow-lg">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-card">
+<th class="p-6 font-headline font-bold text-text border-b border-primary/20 w-1/3">Feature</th>
+<th class="p-6 font-headline font-bold text-primary border-b border-primary/20 border-l border-primary/10 w-1/3 bg-primary/5">Surety Bond</th>
+<th class="p-6 font-headline font-bold text-text border-b border-primary/20 border-l border-primary/10 w-1/3">General Liability</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-card bg-background">
+<tr>
+<td class="p-6 text-text font-medium bg-card/50">Who it protects</td>
+<td class="p-6 text-text border-l border-primary/10 bg-primary/5">The Client or State (Obligee)</td>
+<td class="p-6 text-muted border-l border-primary/10">Your Business (The Insured)</td>
+</tr>
+<tr>
+<td class="p-6 text-text font-medium bg-card/50">Purpose</td>
+<td class="p-6 text-text border-l border-primary/10 bg-primary/5">Guarantees compliance and performance</td>
+<td class="p-6 text-muted border-l border-primary/10">Covers 3rd party bodily injury/property damage</td>
+</tr>
+<tr>
+<td class="p-6 text-text font-medium bg-card/50">Claim Responsibility</td>
+<td class="p-6 text-text border-l border-primary/10 bg-primary/5">You must repay the Surety for any claims paid</td>
+<td class="p-6 text-muted border-l border-primary/10">Insurance pays; you don't repay (just deductibles)</td>
+</tr>
+<tr>
+<td class="p-6 text-text font-medium bg-card/50">Premium Structure</td>
+<td class="p-6 text-text border-l border-primary/10 bg-primary/5">1-3% of bond amount (credit-based)</td>
+<td class="p-6 text-muted border-l border-primary/10">Based on payroll/revenue/risk profile</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 7. How to Get Bonded -->
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="font-headline font-bold text-3xl md:text-4xl tracking-tight text-text mb-16 text-center">Fast, Simple Process</h2>
+<div class="relative">
+<!-- Connecting Line -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-[2px] bg-card -translate-y-1/2 z-0"></div>
+<div class="hidden md:block absolute top-1/2 left-0 w-2/3 h-[2px] bg-gradient-to-r from-primary to-accent -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+<!-- Step 1 -->
+<div class="glass-card p-8 rounded-xl text-center relative">
+<div class="w-16 h-16 mx-auto bg-background border-2 border-primary rounded-full flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(46,163,242,0.4)]">
+<span class="font-headline font-bold text-xl text-primary">1</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-text mb-3">Quick Application</h3>
+<p class="text-muted text-sm">Fill out our secure, 2-minute online form with basic business details and the bond amount required.</p>
+</div>
+<!-- Step 2 -->
+<div class="glass-card p-8 rounded-xl text-center relative">
+<div class="w-16 h-16 mx-auto bg-background border-2 border-accent rounded-full flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(41,196,169,0.4)]">
+<span class="font-headline font-bold text-xl text-accent">2</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-text mb-3">Credit Review</h3>
+<p class="text-muted text-sm">We instantly run a soft credit check (no impact to your score) to determine your exact premium rate.</p>
+</div>
+<!-- Step 3 -->
+<div class="glass-card p-8 rounded-xl text-center relative border-primary/50">
+<div class="absolute -top-3 -right-3 bg-highlight text-background text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">Same Day</div>
+<div class="w-16 h-16 mx-auto bg-primary border-2 border-primary rounded-full flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(46,163,242,0.6)]">
+<span class="material-symbols-outlined text-background text-3xl" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-text mb-3">Bond Issued</h3>
+<p class="text-muted text-sm">Pay your premium online and instantly download your official bond documentation to submit to the state.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Bond Amounts by State (Table) -->
+<section class="py-24 bg-surface border-y border-card">
+<div class="max-w-4xl mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="font-headline font-bold text-3xl tracking-tight text-text mb-4">Common State Requirements</h2>
+<p class="text-muted">Typical contractor license bond amounts for SPF insulation professionals.</p>
+</div>
+<div class="glass-card rounded-xl overflow-hidden">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-card/80 border-b border-primary/20">
+<th class="p-5 font-headline font-semibold text-text">State</th>
+<th class="p-5 font-headline font-semibold text-text">Required Bond Amount</th>
+<th class="p-5 font-headline font-semibold text-text text-right">Est. Annual Cost (Good Credit)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-card">
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-5 text-text font-medium flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                                    California (CSLB)
+                                </td>
+<td class="p-5 text-muted">$25,000</td>
+<td class="p-5 text-accent font-medium text-right">$250 - $500</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-5 text-text font-medium flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                                    Texas
+                                </td>
+<td class="p-5 text-muted">Varies by Municipality (often $10k-$20k)</td>
+<td class="p-5 text-accent font-medium text-right">$100 - $200</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-5 text-text font-medium flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                                    Florida (DBPR)
+                                </td>
+<td class="p-5 text-muted">$10,000 - $20,000 (if credit &lt; 660)</td>
+<td class="p-5 text-accent font-medium text-right">$100 - $300</td>
+</tr>
+<tr class="hover:bg-primary/5 transition-colors">
+<td class="p-5 text-text font-medium flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                                    Washington
+                                </td>
+<td class="p-5 text-muted">$12,000 (Specialty Contractor)</td>
+<td class="p-5 text-accent font-medium text-right">$120 - $240</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 9. Renewal Process -->
+<section class="py-24 bg-background">
+<div class="max-w-3xl mx-auto px-6">
+<div class="border-l-4 border-accent bg-card/30 p-8 rounded-r-xl shadow-lg">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-accent text-4xl shrink-0" style="font-variation-settings: 'FILL' 1;">autorenew</span>
+<div>
+<h3 class="font-headline font-bold text-2xl text-text mb-3">The Annual Renewal Process</h3>
+<p class="text-muted leading-relaxed mb-4">
+                                Most license bonds are valid for a 1-year, 2-year, or 3-year term. To ensure continuity of your state license, your bond must be renewed before it expires.
+                            </p>
+<p class="text-muted leading-relaxed">
+                                We proactively send renewal notices 60-90 days prior to expiration. For many contractors, renewal simply requires paying the invoice—no new credit checks needed unless requesting a limit increase.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. FAQ Accordion -->
+<section class="py-24 bg-surface border-y border-card">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="font-headline font-bold text-3xl md:text-4xl tracking-tight text-text mb-12 text-center">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<div class="glass-card rounded-lg overflow-hidden group">
+<button class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+<span class="font-headline font-semibold text-lg text-text">Does a hard inquiry affect my credit score?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-muted hidden">
+<!-- JS would toggle this -->
+                            No. During the initial quoting process, surety companies typically perform a "soft pull" on your credit, which does not impact your credit score.
+                        </div>
+</div>
+<!-- FAQ 2 -->
+<div class="glass-card rounded-lg overflow-hidden group">
+<button class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+<span class="font-headline font-semibold text-lg text-text">Can I get a bond with bad credit?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-muted hidden">
+                            Yes. While standard markets require good credit (650+), we have access to high-risk specialty programs that can bond almost any contractor, though premiums will be higher (typically 5-10% of the bond amount).
+                        </div>
+</div>
+<!-- FAQ 3 -->
+<div class="glass-card rounded-lg overflow-hidden group">
+<button class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+<span class="font-headline font-semibold text-lg text-text">How fast can I get my bond?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-muted hidden">
+                            For standard license bonds under $50,000, we offer instant approval and same-day issuance. Once paid, you can download your bond immediately.
+                        </div>
+</div>
+<!-- FAQ 4 -->
+<div class="glass-card rounded-lg overflow-hidden group">
+<button class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+<span class="font-headline font-semibold text-lg text-text">Do I need a bond if I already have insurance?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-muted hidden">
+                            Yes. General liability insurance protects you from 3rd party lawsuits. A surety bond protects the public and state from your failure to follow regulations. The state requires the bond, not the insurance, for licensing (though you should carry both).
+                        </div>
+</div>
+<!-- FAQ 5 -->
+<div class="glass-card rounded-lg overflow-hidden group">
+<button class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+<span class="font-headline font-semibold text-lg text-text">How do performance bonds work?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-muted hidden">
+                            Performance bonds are project-specific. If you bid on a large commercial job, the owner may require a bond guaranteeing you will complete the work as specified. If you default, the surety steps in to hire another contractor to finish the job.
+                        </div>
+</div>
+<!-- FAQ 6 -->
+<div class="glass-card rounded-lg overflow-hidden group">
+<button class="w-full p-6 text-left flex justify-between items-center focus:outline-none">
+<span class="font-headline font-semibold text-lg text-text">Are bond premiums refundable?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+</button>
+<div class="px-6 pb-6 text-muted hidden">
+                            In most cases, the first year's premium is fully earned upon issuance and is non-refundable. Subsequent years may be prorated if cancelled mid-term, depending on the surety's specific guidelines.
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. Footer CTA (Inline Lead Form) -->
+<section class="py-32 bg-background relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMSIgZmlsbD0icmdiYSg0NiwgMTYzLCAyNDIsIDAuMikiLz48L3N2Zz4=')] opacity-50 z-0"></div>
+<div class="max-w-4xl mx-auto px-6 relative z-10">
+<div class="glass-card p-10 md:p-14 rounded-2xl border-primary/40 shadow-[0_0_50px_rgba(46,163,242,0.15)] text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-highlight/50 bg-highlight/10 mb-8">
+<span class="material-symbols-outlined text-highlight text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label text-xs text-highlight uppercase tracking-widest font-bold">Same-Day Issuance Available</span>
+</div>
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl tracking-tight text-text mb-4">Get Bonded Today.</h2>
+<p class="text-xl text-muted mb-10 max-w-2xl mx-auto">Enter your details below for a fast, free, no-obligation surety bond quote.</p>
+<form class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2 ml-1">Full Name</label>
+<input class="w-full bg-card/80 border border-primary/20 rounded-lg px-4 py-3 text-text placeholder:text-muted/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2 ml-1">State</label>
+<select class="w-full bg-card/80 border border-primary/20 rounded-lg px-4 py-3 text-text focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all appearance-none">
+<option disabled="" selected="" value="">Select State...</option>
+<option value="CA">California</option>
+<option value="TX">Texas</option>
+<option value="FL">Florida</option>
+<option value="OTHER">Other</option>
+</select>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-muted mb-2 ml-1">Bond Amount</label>
+<input class="w-full bg-card/80 border border-primary/20 rounded-lg px-4 py-3 text-text placeholder:text-muted/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="e.g. $25,000" type="text"/>
+</div>
+<div class="md:col-span-3 mt-4">
+<button class="w-full bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90 text-white font-headline font-bold px-8 py-5 rounded-lg transition-all active:scale-95 text-lg uppercase tracking-widest shadow-[0_0_20px_rgba(46,163,242,0.4)]" type="button">Request Instant Quote</button>
+</div>
+</form>
+<p class="text-xs text-muted/60 mt-6 flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                        Your information is secure. No hard credit pull required for quote.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (From JSON) -->
+<footer class="bg-[#0d1421] w-full py-16 border-t border-[#111827]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline font-bold text-[#f0f4f8] text-xl mb-4">SPF INSURANCE</div>
+<p class="font-body text-sm leading-relaxed text-[#94a3b8]">© 2024 SPF Insurance Specialists. All Rights Reserved.</p>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8">
+<a class="font-body text-sm leading-relaxed text-[#94a3b8] hover:text-[#f59e0b] transition-colors duration-200 block" href="#">Privacy Policy</a>
+<a class="font-body text-sm leading-relaxed text-[#94a3b8] hover:text-[#f59e0b] transition-colors duration-200 block" href="#">Terms of Service</a>
+<a class="font-body text-sm leading-relaxed text-[#94a3b8] hover:text-[#f59e0b] transition-colors duration-200 block" href="#">Carrier Partners</a>
+<a class="font-body text-sm leading-relaxed text-[#94a3b8] hover:text-[#f59e0b] transition-colors duration-200 block" href="#">Contractor Portal</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple accordion logic for FAQ
+        document.querySelectorAll('.group button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('span:last-child');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('rotate-180');
+                }
+            });
+        });
+    </script>
+</body></html>
