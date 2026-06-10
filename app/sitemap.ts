@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/attic-insulation-certificate`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/safety-and-compliance-support`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/category/insurance-insights`, lastModified: now, changeFrequency: 'weekly', priority: 0.6 },
     { url: `${base}/2023/09/24/can-i-get-coverage-for-mold-and-mildew-claims`, lastModified: post2023, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${base}/2023/09/24/do-i-need-insurance-if-i-subcontract-work`, lastModified: post2023, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${base}/2023/09/24/do-i-need-special-coverage-for-roofing-projects`, lastModified: post2023, changeFrequency: 'yearly', priority: 0.5 },
