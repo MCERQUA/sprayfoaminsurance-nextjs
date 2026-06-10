@@ -1,7 +1,13 @@
+import type { Metadata } from 'next';
 import { auth, currentUser } from '@clerk/nextjs/server';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import DashboardSidebarNav from '@/components/DashboardSidebarNav';
+
+export const metadata: Metadata = {
+  title: 'Dashboard | Spray Foam Insurance',
+  robots: { index: false, follow: false },
+};
 
 export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { userId } = await auth();

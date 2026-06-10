@@ -7,8 +7,7 @@ import { CheckCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Environmental Liability Insurance for Spray Foam Contractors',
-  description:
-    'Environmental liability insurance for SPF contractors. Covers pollution cleanup, chemical off-gassing claims, overspray contamination, and third-party bodily injury.',
+  description: 'Environmental liability insurance for SPF contractors. Covers pollution cleanup, off-gassing claims, overspray contamination, and third-party bodily injury.',
 };
 
 const faqs = [

@@ -7,8 +7,7 @@ import { CheckCircle, Award, Users, Shield, Zap } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Us | Spray Foam Insurance',
-  description:
-    'Learn about Spray Foam Insurance — specialists in SPF contractor coverage since 2009. We serve spray foam contractors across all 50 states with specialized insurance programs.',
+  description: 'Spray Foam Insurance — SPF contractor coverage specialists since 2009. Serving contractors in all 50 states with tailored GL, workers comp, and specialty programs.',
 };
 
 export default function AboutUsPage() {

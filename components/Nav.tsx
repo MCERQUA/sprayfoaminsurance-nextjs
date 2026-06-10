@@ -6,12 +6,12 @@ import { SignInButton, UserButton, SignedIn, SignedOut } from '@clerk/nextjs';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const services = [
-  { label: 'General Liability', href: '/services/general-liability' },
-  { label: "Workers' Comp", href: '/services/workers-comp' },
+  { label: 'General Liability', href: '/services/general-liability-insurance' },
+  { label: "Workers' Comp", href: '/services/workers-compensation-insurance-for-spray-foam-contractors' },
   { label: 'Commercial Auto', href: '/services/commercial-auto' },
   { label: 'Surety Bonds', href: '/services/surety-bonds' },
   { label: 'Environmental Liability', href: '/services/environmental-liability' },
-  { label: 'Rig & Equipment', href: '/services/rig-and-equipment' },
+  { label: 'Rig & Equipment', href: '/inland-marine' },
 ];
 
 const navLinks = [

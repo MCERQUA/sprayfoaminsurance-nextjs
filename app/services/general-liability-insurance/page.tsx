@@ -8,7 +8,7 @@ import { CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'General Liability Insurance for Spray Foam Contractors',
-  description: 'Specialized general liability insurance for spray foam contractors. Covers overspray, property damage, bodily injury, and completed operations. Get a free quote.',
+  description: 'Specialized GL insurance for spray foam contractors. Covers overspray, property damage, bodily injury, and completed operations. Get a free quote.',
 };
 
 const faqs = [

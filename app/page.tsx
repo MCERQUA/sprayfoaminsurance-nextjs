@@ -9,12 +9,32 @@ import GlassCard from '@/components/GlassCard';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Insurance | Specialized SPF Contractor Coverage',
-  description: 'Specialized insurance for spray foam contractors. General liability, workers comp, commercial auto, environmental liability & surety bonds. Get a free quote today.',
+  description: 'Specialized insurance for spray foam contractors. General liability, workers comp, commercial auto, environmental & surety bonds. Free quotes available.',
+};
+
+const orgJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'InsuranceAgency',
+  name: 'Spray Foam Insurance',
+  url: 'https://sprayfoaminsurance.com',
+  telephone: '844-967-5247',
+  description: 'Specialized insurance for spray foam contractors across the United States.',
+  areaServed: 'US',
+  sameAs: ['https://sprayfoaminsurance.com'],
+  knowsAbout: [
+    'General Liability Insurance',
+    "Workers' Compensation Insurance",
+    'Commercial Auto Insurance',
+    'Surety Bonds',
+    'Environmental Liability Insurance',
+    'Inland Marine Insurance',
+  ],
 };
 
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
       <section className="relative min-h-screen flex items-center overflow-hidden bg-background dot-grid">
         <div className="ambient-orb w-[600px] h-[600px] bg-primary/15 top-[-100px] left-[-200px]" />
         <div className="ambient-orb w-[500px] h-[500px] bg-accent/15 bottom-[-100px] right-[-100px]" />
