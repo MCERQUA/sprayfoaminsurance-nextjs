@@ -192,3 +192,70 @@
 .hero-video {
   animation: videoScale 8s ease-out forwards;
 }
+
+/* Particle network section background */
+.particle-bg {
+  position: relative;
+  background: #030b18;
+  overflow: hidden;
+}
+
+.particle-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(46,163,242,0.18) 1px, transparent 1px),
+    radial-gradient(circle, rgba(41,196,169,0.10) 1px, transparent 1px);
+  background-size: 48px 48px, 96px 96px;
+  background-position: 0 0, 24px 24px;
+  animation: particleDrift 20s linear infinite;
+  z-index: 0;
+}
+
+.particle-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(46,163,242,0.08) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.particle-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes particleDrift {
+  from { background-position: 0 0, 24px 24px; }
+  to   { background-position: 48px 48px, 72px 72px; }
+}
+
+/* Photo background section */
+.photo-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-section-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(8,13,22,0.82) 0%, rgba(8,13,22,0.60) 100%);
+  z-index: 1;
+}
+
+.photo-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Blue gradient section */
+.blue-gradient-section {
+  background: linear-gradient(160deg, #0a1628 0%, #0e2040 50%, #0a1628 100%);
+}
+
+/* Subtle separator */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(46,163,242,0.3), transparent);
+}
