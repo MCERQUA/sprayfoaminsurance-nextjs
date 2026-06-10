@@ -201,7 +201,7 @@ export default function CommercialAutoPage() {
             </p>
           </div>
           <div className="max-w-2xl mx-auto">
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <ul className="flex flex-col gap-4">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />

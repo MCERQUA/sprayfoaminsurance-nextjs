@@ -139,7 +139,7 @@ export default function WorkersCompPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -148,7 +148,7 @@ export default function WorkersCompPage() {
                 All reasonable medical costs for work-related injuries or illnesses, including emergency care, surgery, hospitalization, and follow-up treatment.
               </p>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -157,7 +157,7 @@ export default function WorkersCompPage() {
                 Replaces a portion of income (typically 66–75%) when an employee can&apos;t work due to a covered injury or illness.
               </p>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -166,7 +166,7 @@ export default function WorkersCompPage() {
                 Physical therapy, occupational therapy, and vocational rehabilitation to help injured workers return to the job.
               </p>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -175,7 +175,7 @@ export default function WorkersCompPage() {
                 Compensation for workers who suffer permanent impairment from a work-related injury or illness.
               </p>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -184,7 +184,7 @@ export default function WorkersCompPage() {
                 Pays benefits to dependents of workers killed in work-related accidents or from occupational diseases.
               </p>
             </GlassCard>
-            <GlassCard>
+            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
               <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
                 <CheckCircle className="w-5 h-5 text-accent" />
               </div>
@@ -199,7 +199,7 @@ export default function WorkersCompPage() {
 
       <section className="bg-background py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <GlassCard>
+          <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                 <CheckCircle className="w-5 h-5 text-primary" />

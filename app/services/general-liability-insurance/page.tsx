@@ -181,7 +181,7 @@ export default function GeneralLiabilityPage() {
                 height={400}
                 className="rounded-xl object-cover w-full"
               />
-              <GlassCard className="p-6">
+              <GlassCard className="p-6 border-l-4 border-primary">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center shrink-0">
                     <AlertTriangle className="w-5 h-5 text-yellow-400" />
@@ -194,7 +194,7 @@ export default function GeneralLiabilityPage() {
                   </div>
                 </div>
               </GlassCard>
-              <GlassCard className="p-6">
+              <GlassCard className="p-6 border-l-4 border-primary">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center shrink-0">
                     <AlertTriangle className="w-5 h-5 text-yellow-400" />
@@ -207,7 +207,7 @@ export default function GeneralLiabilityPage() {
                   </div>
                 </div>
               </GlassCard>
-              <GlassCard className="p-6">
+              <GlassCard className="p-6 border-l-4 border-primary">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center shrink-0">
                     <AlertTriangle className="w-5 h-5 text-yellow-400" />
