@@ -151,3 +151,44 @@
     background-size: 32px 32px;
   }
 }
+
+/* Hero animations */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes videoScale {
+  from { transform: scale(1.06); }
+  to   { transform: scale(1); }
+}
+
+.hero-badge {
+  animation: heroFadeUp 0.6s ease-out 0.1s both;
+}
+.hero-headline {
+  animation: heroFadeUp 0.7s ease-out 0.25s both;
+}
+.hero-sub {
+  animation: heroFadeUp 0.7s ease-out 0.45s both;
+}
+.hero-ctas {
+  animation: heroFadeUp 0.7s ease-out 0.6s both;
+}
+.hero-stats {
+  animation: heroFadeUp 0.7s ease-out 0.8s both;
+}
+.hero-video {
+  animation: videoScale 8s ease-out forwards;
+}

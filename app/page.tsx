@@ -35,53 +35,86 @@ export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-background dot-grid">
-        <div className="ambient-orb w-[600px] h-[600px] bg-primary/15 top-[-100px] left-[-200px]" />
-        <div className="ambient-orb w-[500px] h-[500px] bg-accent/15 bottom-[-100px] right-[-100px]" />
+      {/* VIDEO HERO */}
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        {/* Video background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/assets/images/hero-bg.webp"
+          className="hero-video absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/assets/videos/hero.webm" type="video/webm" />
+          <source src="/assets/videos/hero.mp4" type="video/mp4" />
+        </video>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 w-full">
+        {/* Dark gradient overlay */}
+        <div
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(135deg, rgba(8,13,22,0.88) 0%, rgba(8,13,22,0.65) 50%, rgba(8,13,22,0.78) 100%)' }}
+        />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 border border-primary/30 rounded-full px-4 py-1.5 mb-8">
-              <span className="label-text text-accent font-label text-sm">SPF Insurance Specialists</span>
+            {/* Badge */}
+            <div className="hero-badge inline-flex items-center gap-2 border border-primary/40 bg-primary/10 rounded-full px-4 py-1.5 mb-7">
+              <span className="label-text text-primary font-label text-xs tracking-widest">
+                SPECIALIZED INSURANCE FOR SPRAY FOAM CONTRACTORS
+              </span>
             </div>
 
-            <h1 className="font-headline font-bold leading-tight mb-6">
-              <span className="block text-5xl sm:text-6xl lg:text-7xl blue-gradient-text">Spray Foam Insurance</span>
-              <span className="block text-5xl sm:text-6xl lg:text-7xl blue-gradient-text">Specialized Coverage</span>
+            {/* Headline */}
+            <h1 className="hero-headline font-headline font-bold leading-tight mb-6">
+              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white">
+                Protecting Your Business,
+              </span>
+              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl blue-gradient-text">
+                One Spray at a Time
+              </span>
             </h1>
 
-            <p className="text-muted font-body text-lg sm:text-xl mb-10 max-w-2xl">
-              Supporting your success, beyond the policy. Built specifically for the unique risks of SPF professionals.
+            {/* Subtext */}
+            <p className="hero-sub text-gray-300 font-body text-lg sm:text-xl mb-10 max-w-2xl leading-relaxed">
+              Professional insurance coverage tailored specifically for spray foam insulation contractors.
+              From general liability to rig &amp; equipment — we have you covered in all 50 states.
             </p>
 
-            <div className="flex flex-wrap gap-4 mb-16">
-              <Link href="/quote" className="primary-btn flex items-center gap-2">
-                Get Instant Quote
-                <ArrowRight className="w-4 h-4" />
+            {/* CTAs */}
+            <div className="hero-ctas flex flex-wrap gap-4 mb-14">
+              <Link
+                href="/quote/"
+                className="inline-flex items-center gap-2 bg-[#2ea3f2] hover:bg-[#1a8fd4] text-white font-headline font-bold px-8 py-3.5 rounded text-base transition-all hover:shadow-[0_0_24px_rgba(46,163,242,0.45)] hover:scale-[1.02]"
+              >
+                Get a Free Quote
+                <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link href="tel:8449675247" className="secondary-btn flex items-center gap-2">
-                <Phone className="w-4 h-4" />
+              <a
+                href="tel:844-967-5247"
+                className="inline-flex items-center gap-2 border-2 border-white/40 hover:border-white text-white font-headline font-bold px-8 py-3.5 rounded text-base transition-all hover:bg-white/10"
+              >
+                <Phone className="w-5 h-5" />
                 Call 844-967-5247
-              </Link>
+              </a>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-primary/10 pt-8">
-              <div className="flex items-center gap-2 text-muted text-sm font-label label-text">
-                <Shield className="w-4 h-4 text-accent flex-shrink-0" />
-                <span>A-Rated Carriers</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted text-sm font-label label-text">
-                <Award className="w-4 h-4 text-accent flex-shrink-0" />
-                <span>SPFA Member</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted text-sm font-label label-text">
-                <Zap className="w-4 h-4 text-accent flex-shrink-0" />
-                <span>Fast Certs</span>
-              </div>
-              <div className="flex items-center gap-2 text-muted text-sm font-label label-text">
-                <Users className="w-4 h-4 text-accent flex-shrink-0" />
-                <span>Dedicated Team</span>
-              </div>
+            {/* Stats bar */}
+            <div className="hero-stats grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-white/10 pt-8">
+              {[
+                { value: '15+', label: 'Years Experience' },
+                { value: '500+', label: 'Contractors Insured' },
+                { value: '50', label: 'States Covered' },
+                { value: 'A-Rated', label: 'Carrier Partners' },
+              ].map(({ value, label }) => (
+                <div key={label} className="text-center sm:text-left">
+                  <div className="text-2xl sm:text-3xl font-headline font-bold blue-gradient-text leading-none mb-1">
+                    {value}
+                  </div>
+                  <div className="text-gray-400 text-xs font-label label-text">{label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
