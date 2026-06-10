@@ -1,0 +1,34 @@
+{
+    "version": "0.1.20260525",
+    "status_code": 20000,
+    "status_message": "Ok.",
+    "time": "0.0895 sec.",
+    "cost": 0.00625,
+    "tasks_count": 1,
+    "tasks_error": 0,
+    "tasks": [
+        {
+            "id": "06100632-1574-0216-0000-73e8ce9a0d16",
+            "status_code": 20100,
+            "status_message": "Task Created.",
+            "time": "0.0037 sec.",
+            "cost": 0.00625,
+            "result_count": 0,
+            "path": [
+                "v3",
+                "on_page",
+                "task_post"
+            ],
+            "data": {
+                "api": "on_page",
+                "function": "task_post",
+                "target": "sprayfoaminsurance.com",
+                "max_crawl_pages": 50,
+                "load_resources": false,
+                "enable_javascript": false,
+                "check_spell": false
+            },
+            "result": null
+        }
+    ]
+}
