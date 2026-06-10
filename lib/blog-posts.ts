@@ -15,6 +15,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Coverage',
     excerpt:
       'Mold and mildew pose real risks for spray foam contractors. Learn how specialized insurance coverage protects your business from moisture-related liability claims.',
+    image: '/assets/images/post-img.jpg',
   },
   {
     href: '/2023/09/24/do-i-need-insurance-if-i-subcontract-work',
@@ -23,6 +24,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Business',
     excerpt:
       'Subcontracting introduces unique insurance responsibilities for both general contractors and subcontractors. Understand your obligations before your next project.',
+    image: '/assets/images/post-img.jpg',
   },
   {
     href: '/2023/09/24/do-i-need-special-coverage-for-roofing-projects',
@@ -31,6 +33,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Coverage',
     excerpt:
       'When spray foam contractors work alongside roofers, special insurance considerations come into play. Know your coverage before combined operations.',
+    image: '/assets/images/post-img.jpg',
   },
   {
     href: '/2023/09/24/does-insurance-cover-overspray-damage',
@@ -39,6 +42,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Claims',
     excerpt:
       'Overspray is an inherent risk in spray foam applications. Discover how liability and specialized policies protect you from unintended foam dispersion claims.',
+    image: '/assets/images/post-img.jpg',
   },
   {
     href: '/2023/09/24/how-does-insurance-protect-my-clients',
@@ -47,6 +51,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Business',
     excerpt:
       'Your insurance coverage does more than protect your business — it gives clients peace of mind and financial protection throughout every project.',
+    image: '/assets/images/post-img.jpg',
   },
   {
     href: '/2023/09/24/is-my-equipment-covered',
@@ -55,6 +60,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Equipment',
     excerpt:
       'Your proportioner, hoses, and rig represent a massive investment. Find out which policies actually cover your equipment and how to avoid coverage gaps.',
+    image: '/assets/images/post-img.jpg',
   },
   {
     href: '/2023/09/24/is-retrofitting-insurance-available-for-spray-foam-contractors',
@@ -63,6 +69,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Coverage',
     excerpt:
       'As energy efficiency demands grow, spray foam contractors are doing more retrofit work. Learn how your insurance can adapt to protect these projects.',
+    image: '/assets/images/post-img.jpg',
   },
   {
     href: '/2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects',
@@ -71,6 +78,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Commercial',
     excerpt:
       'Commercial spray foam projects come with elevated insurance requirements. This guide covers the policies needed to win bids and stay compliant.',
+    image: '/assets/images/post-img.jpg',
   },
   {
     href: '/2023/09/24/what-factors-affect-insurance-premiums',
@@ -79,6 +87,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Pricing',
     excerpt:
       'From claims history to crew size and revenue, many factors shape your spray foam insurance premiums. Understand what drives costs to manage them.',
+    image: '/assets/images/post-img.jpg',
   },
   {
     href: '/2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships',
@@ -87,6 +96,7 @@ export const blogPosts: BlogPost[] = [
     category: 'Business',
     excerpt:
       'Spray foam rigs cost $40k–$150k+. Building strong banking relationships is key to financing your equipment and scaling your business.',
+    image: '/assets/images/post-img.jpg',
   },
 ];
 

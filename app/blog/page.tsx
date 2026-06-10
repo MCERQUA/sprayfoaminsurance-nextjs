@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import PageHero from '@/components/PageHero';
@@ -50,17 +51,30 @@ export default function BlogIndexPage() {
         {/* Article grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article) => (
-            <GlassCard key={article.href} className="flex flex-col h-full p-6">
-              <span className="text-xs label-text text-accent mb-3 block">{article.category}</span>
-              <h3 className="font-headline font-bold text-text text-lg mb-2">{article.title}</h3>
-              <p className="text-xs text-muted mb-3">{article.date}</p>
-              <p className="text-muted text-sm leading-relaxed flex-1 mb-4">{article.excerpt}</p>
-              <Link
-                href={article.href}
-                className="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:text-accent transition-colors mt-auto"
-              >
-                Read Article <ArrowRight className="w-4 h-4" />
-              </Link>
+            <GlassCard key={article.href} className="flex flex-col h-full overflow-hidden p-0">
+              {article.image && (
+                <div className="relative w-full h-48 shrink-0">
+                  <Image
+                    src={article.image}
+                    alt={`Featured image for ${article.title}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+              )}
+              <div className="flex flex-col flex-1 p-6">
+                <span className="text-xs label-text text-accent mb-3 block">{article.category}</span>
+                <h3 className="font-headline font-bold text-text text-lg mb-2">{article.title}</h3>
+                <p className="text-xs text-muted mb-3">{article.date}</p>
+                <p className="text-muted text-sm leading-relaxed flex-1 mb-4">{article.excerpt}</p>
+                <Link
+                  href={article.href}
+                  className="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:text-accent transition-colors mt-auto"
+                >
+                  Read Article <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
             </GlassCard>
           ))}
         </div>
