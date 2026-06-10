@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get a Quote — Spray Foam Insurance</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8fafc; color: #1e293b; }
+.header { background: #1e3a5f; color: white; padding: 24px; text-align: center; }
+.header h1 { font-size: 24px; margin-bottom: 4px; }
+.header p { font-size: 14px; opacity: .8; }
+.form-wrap { max-width: 720px; margin: 32px auto; padding: 0 16px 48px; }
+.section { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 24px; margin-bottom: 20px; }
+.section h2 { font-size: 16px; font-weight: 600; color: #1e3a5f; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.full { grid-column: 1/-1; }
+label { display: block; font-size: 12px; font-weight: 600; color: #475569; margin-bottom: 4px; text-transform: uppercase; letter-spacing: .4px; }
+input, select, textarea { width: 100%; border: 1px solid #cbd5e1; border-radius: 6px; padding: 10px 12px; font-size: 14px; color: #1e293b; background: #f8fafc; outline: none; }
+input:focus, select:focus, textarea:focus { border-color: #2563eb; background: white; }
+textarea { min-height: 80px; resize: vertical; }
+.radio-group, .check-group { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 4px; }
+.radio-group label, .check-group label { font-size: 14px; font-weight: normal; text-transform: none; letter-spacing: 0; display: flex; align-items: center; gap: 6px; cursor: pointer; color: #1e293b; }
+button[type=submit] { background: #2563eb; color: white; border: none; border-radius: 8px; padding: 14px 40px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; max-width: 360px; }
+button[type=submit]:hover { background: #1d4ed8; }
+.submit-wrap { text-align: center; margin-top: 28px; }
+.note { font-size: 12px; color: #64748b; text-align: center; margin-top: 12px; }
+@media(max-width:600px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Spray Foam Insurance — Get a Quote</h1>
+  <p>Specialized insurance for spray foam professionals</p>
+</div>
+<div class="form-wrap">
+  <form name="quote" netlify netlify-honeypot="bot-field" action="/quote-success.html" method="POST">
+    <input type="hidden" name="form-name" value="quote">
+    <p style="display:none"><input name="bot-field"></p>
+
+    <div class="section">
+      <h2>A — Business Information</h2>
+      <div class="grid">
+        <div class="full"><label>Business Name</label><input type="text" name="business_name" required></div>
+        <div><label>Contact Name</label><input type="text" name="contact_name" required></div>
+        <div><label>Phone</label><input type="tel" name="phone" required></div>
+        <div><label>Cell</label><input type="tel" name="cell"></div>
+        <div><label>Email</label><input type="email" name="email" required></div>
+        <div class="full"><label>Address</label><input type="text" name="address"></div>
+        <div><label>City</label><input type="text" name="city"></div>
+        <div><label>State</label>
+          <select name="state"><option value="">Select State</option><option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option>CA</option><option>CO</option><option>CT</option><option>DE</option><option>FL</option><option>GA</option><option>HI</option><option>ID</option><option>IL</option><option>IN</option><option>IA</option><option>KS</option><option>KY</option><option>LA</option><option>ME</option><option>MD</option><option>MA</option><option>MI</option><option>MN</option><option>MS</option><option>MO</option><option>MT</option><option>NE</option><option>NV</option><option>NH</option><option>NJ</option><option>NM</option><option>NY</option><option>NC</option><option>ND</option><option>OH</option><option>OK</option><option>OR</option><option>PA</option><option>RI</option><option>SC</option><option>SD</option><option>TN</option><option>TX</option><option>UT</option><option>VT</option><option>VA</option><option>WA</option><option>WV</option><option>WI</option><option>WY</option></select>
+        </div>
+        <div><label>Zip</label><input type="text" name="zip"></div>
+        <div class="full"><label>States Where Work Is Performed</label><input type="text" name="states_work_performed"></div>
+        <div class="full">
+          <label>Entity Type</label>
+          <div class="radio-group">
+            <label><input type="radio" name="entity_type" value="Sole Prop"> Sole Prop</label>
+            <label><input type="radio" name="entity_type" value="LLC"> LLC</label>
+            <label><input type="radio" name="entity_type" value="Corp"> Corp</label>
+            <label><input type="radio" name="entity_type" value="Partnership"> Partnership</label>
+          </div>
+        </div>
+        <div><label>Years in Business</label>
+          <select name="years_in_business"><option value="">Select</option><option>&lt;1</option><option>1-3</option><option>3-5</option><option>5-10</option><option>10+</option></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>B — Operations</h2>
+      <div class="grid">
+        <div><label>Annual Revenue Last 12 Months ($)</label><input type="text" name="annual_revenue"></div>
+        <div><label>Projected Revenue ($)</label><input type="text" name="projected_revenue"></div>
+        <div><label>Number of Employees</label><input type="number" name="num_employees" min="0"></div>
+        <div><label>Annual Payroll ($)</label><input type="text" name="annual_payroll"></div>
+        <div class="full">
+          <label>Use Subcontractors?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="use_subcontractors" value="Yes"> Yes</label>
+            <label><input type="radio" name="use_subcontractors" value="No"> No</label>
+          </div>
+        </div>
+        <div><label>Annual Subcontractor Costs ($)</label><input type="text" name="annual_sub_costs"></div>
+        <div><label>Largest Single Job ($)</label><input type="text" name="largest_job"></div>
+        <div class="full"><label>Largest Job Description</label><textarea name="largest_job_desc"></textarea></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>C — Coverage</h2>
+      <div class="grid">
+        <div class="full">
+          <label>Coverage Needed</label>
+          <div class="check-group">
+            <label><input type="checkbox" name="coverage[]" value="General Liability"> General Liability</label>
+            <label><input type="checkbox" name="coverage[]" value="Workers Comp"> Workers Comp</label>
+            <label><input type="checkbox" name="coverage[]" value="Commercial Auto"> Commercial Auto</label>
+            <label><input type="checkbox" name="coverage[]" value="Tools &amp; Equipment"> Tools &amp; Equipment</label>
+            <label><input type="checkbox" name="coverage[]" value="Umbrella"> Umbrella</label>
+            <label><input type="checkbox" name="coverage[]" value="Other"> Other</label>
+          </div>
+        </div>
+        <div><label>Desired Start Date</label><input type="date" name="start_date"></div>
+        <div><label>Current Carrier</label><input type="text" name="current_carrier"></div>
+        <div><label>Current Policy Expiration</label><input type="date" name="expiration_date"></div>
+        <div class="full">
+          <label>Claims in Last 3 Years?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="claims" value="Yes"> Yes</label>
+            <label><input type="radio" name="claims" value="No"> No</label>
+          </div>
+        </div>
+        <div class="full"><label>Claim Description (if applicable)</label><textarea name="claim_description"></textarea></div>
+        <div class="full">
+          <label>Preferred Contact Method</label>
+          <div class="radio-group">
+            <label><input type="radio" name="preferred_contact" value="Phone"> Phone</label>
+            <label><input type="radio" name="preferred_contact" value="Email"> Email</label>
+            <label><input type="radio" name="preferred_contact" value="Text"> Text</label>
+          </div>
+        </div>
+        <div><label>Preferred Contact Time</label><input type="text" name="preferred_time" placeholder="e.g. Mornings, Afternoons"></div>
+        <div class="full"><label>Additional Notes</label><textarea name="additional_notes"></textarea></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>D — Spray Foam Details</h2>
+      <div class="grid">
+        <div class="full">
+          <label>Business Role</label>
+          <div class="radio-group">
+            <label><input type="radio" name="business_role" value="Owner-Operator"> Owner-Operator</label>
+            <label><input type="radio" name="business_role" value="Employee Applicator"> Employee Applicator</label>
+            <label><input type="radio" name="business_role" value="Subcontractor"> Subcontractor</label>
+            <label><input type="radio" name="business_role" value="Distributor"> Distributor</label>
+          </div>
+        </div>
+        <div class="full">
+          <label>Spray Foam Type</label>
+          <div class="radio-group">
+            <label><input type="radio" name="foam_type" value="Open Cell"> Open Cell</label>
+            <label><input type="radio" name="foam_type" value="Closed Cell"> Closed Cell</label>
+            <label><input type="radio" name="foam_type" value="Both"> Both</label>
+          </div>
+        </div>
+        <div><label>Annual Square Footage Installed</label><input type="number" name="annual_sqft" min="0"></div>
+        <div><label>Equipment / Spray Rig Value ($)</label><input type="text" name="equipment_value"></div>
+        <div><label>Number of Spray Rigs Owned</label><input type="number" name="num_rigs" min="0"></div>
+        <div class="full">
+          <label>Do You Rent Out Rigs?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="rent_rigs" value="Yes"> Yes</label>
+            <label><input type="radio" name="rent_rigs" value="No"> No</label>
+          </div>
+        </div>
+        <div><label>Residential vs Commercial %</label>
+          <select name="res_vs_comm"><option value="">Select</option><option>100% Residential</option><option>75% Res / 25% Comm</option><option>50% / 50%</option><option>25% Res / 75% Comm</option><option>100% Commercial</option></select>
+        </div>
+        <div><label>Highest Application Height</label>
+          <select name="max_height"><option value="">Select</option><option>Ground Level</option><option>Under 10ft</option><option>10-20ft</option><option>20-40ft</option><option>40ft+</option></select>
+        </div>
+        <div class="full">
+          <label>Do You Apply Roofing Coatings?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="roofing_coatings" value="Yes"> Yes</label>
+            <label><input type="radio" name="roofing_coatings" value="No"> No</label>
+          </div>
+        </div>
+        <div class="full"><label>States Where You Apply Foam</label><textarea name="states_apply_foam"></textarea></div>
+      </div>
+    </div>
+
+    <div class="submit-wrap">
+      <button type="submit">Submit Quote Request</button>
+      <p class="note">No obligation · Responds within 1 business day · Your info is secure</p>
+    </div>
+  </form>
+</div>
+</body>
+</html>
