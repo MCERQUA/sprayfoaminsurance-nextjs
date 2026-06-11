@@ -104,7 +104,7 @@ export default function Nav() {
             {/* Logo */}
             <Link href="/" className="shrink-0 flex items-center gap-3">
               <Image
-                src="/assets/icons/logo-transparent.png"
+                src="/assets/icons/logo.webp"
                 alt="Spray Foam Insurance"
                 width={52}
                 height={52}
