@@ -78,28 +78,6 @@ const chemicalCards = [
   },
 ];
 
-const faqItems = [
-  {
-    q: 'What respirator does OSHA require for spray foam application?',
-    a: 'OSHA requires at minimum a supplied-air respirator (SAR) type CE with full-face piece during spray application. Standard N95 masks are NOT sufficient for isocyanate exposure. After the resin cures (typically 24 hours), workers may re-enter with appropriate half-mask respirators with organic vapor/P100 cartridges.',
-  },
-  {
-    q: 'Do I need OSHA training certificates for my crew?',
-    a: 'OSHA HazCom training is required for all workers handling isocyanate chemicals. Manufacturer application certification is typically required for product warranties. Document all training for every crew member.',
-  },
-  {
-    q: 'Is spray foam considered hazardous by OSHA?',
-    a: 'The isocyanate component (B-side) is regulated as a hazardous chemical under OSHA HazCom. It can cause occupational asthma with repeated exposure. Proper PPE, ventilation, and training are non-negotiable.',
-  },
-  {
-    q: 'What insurance covers OSHA fines?',
-    a: 'Standard liability insurance does not cover OSHA fines, which are civil penalties. However, proper safety protocols reduce accident risk, keeping your Workers\' Compensation and GL premiums lower and helping avoid claims.',
-  },
-  {
-    q: 'How does safety compliance affect my premiums?',
-    a: 'Insurers review your safety record, OSHA violation history, and training documentation when pricing policies. Contractors with documented safety programs and clean records typically receive better rates.',
-  },
-];
 
 const downloadResources = [
   {
@@ -213,7 +191,7 @@ export default function SafetyAndCompliancePage() {
         <h2 className="font-headline font-bold text-3xl text-text mb-8">
           Safety & Compliance FAQs
         </h2>
-        <FAQSection items={faqItems} />
+        <FAQSection items={safetyComplianceFaqs} />
       </section>
 
       {/* Download Resources */}

@@ -4,12 +4,16 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import GlassCard from '@/components/GlassCard';
+import FAQSection from '@/components/FAQSection';
+import CTABar from '@/components/CTABar';
 import { blogPosts as articles, blogCategories as filterPills } from '@/lib/blog-posts';
+import { blogFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Insurance Blog | Industry Insights',
   description:
     'Expert coverage guides, safety tips, and industry news for spray foam insulation contractors. Free resources from SPF insurance specialists.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/blog' },
   keywords: ['spray foam insurance blog', 'SPF contractor tips', 'spray foam coverage guides'],
   openGraph: {
     title: 'Spray Foam Insurance Blog',
@@ -79,6 +83,17 @@ export default function BlogIndexPage() {
           ))}
         </div>
       </section>
+
+      <section className="bg-background py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
+            Frequently Asked Questions
+          </h2>
+          <FAQSection items={blogFaqs} />
+        </div>
+      </section>
+
+      <CTABar />
     </>
   );
 }
