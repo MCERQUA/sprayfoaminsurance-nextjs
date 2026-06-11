@@ -5,34 +5,13 @@ import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import { CheckCircle, AlertTriangle } from 'lucide-react';
+import { commercialAutoFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Commercial Auto Insurance for Spray Foam Contractors',
   description: 'Commercial auto insurance for spray foam rigs, vans, and trucks. Covers hired/non-owned auto, trailer coverage, and cargo liability. Free quotes available.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/services/commercial-auto' },
 };
-
-const faqItems = [
-  {
-    q: 'Do I need commercial auto if I only use my personal truck?',
-    a: 'Yes, if you use your personal vehicle for business purposes — like hauling equipment or driving between job sites — you need commercial auto coverage. Personal auto policies typically exclude business use, meaning a claim could be denied if you\'re driving for work.',
-  },
-  {
-    q: 'What is hired and non-owned auto coverage?',
-    a: 'Hired auto covers vehicles your business rents or leases. Non-owned auto covers vehicles owned personally by your employees when used for business purposes. Both are important for spray foam contractors who may use rental trucks or have employees running business errands in their personal vehicles.',
-  },
-  {
-    q: 'Does commercial auto cover my spray foam equipment inside the rig?',
-    a: 'The vehicle itself is covered, but the spray equipment inside it — proportioners, generators, hoses — is typically covered under a separate Inland Marine / Rig Insurance policy. We can bundle both coverages together for comprehensive protection.',
-  },
-  {
-    q: 'How are commercial auto rates calculated?',
-    a: 'Rates depend on the number and type of vehicles, drivers\' MVR records, annual mileage, radius of operations, and your claims history. Spray foam rigs are rated differently than regular commercial trucks due to the hazardous materials they carry.',
-  },
-  {
-    q: 'Can I add drivers mid-policy?',
-    a: 'Yes. We can add or remove drivers from your policy as your team changes. New drivers are typically subject to an MVR check. It\'s important to list all regular drivers on the policy — unlisted drivers may not be covered in an accident.',
-  },
-];
 
 const jsonLd = {
   '@context': 'https://schema.org',

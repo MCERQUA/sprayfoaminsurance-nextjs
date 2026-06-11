@@ -6,38 +6,13 @@ import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import StatBar from '@/components/StatBar';
 import { CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react';
+import { generalLiabilityFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'General Liability Insurance for Spray Foam Contractors',
   description: 'Specialized GL insurance for spray foam contractors. Covers overspray, property damage, bodily injury, and completed operations. Get a free quote.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/services/general-liability-insurance' },
 };
-
-const faqs = [
-  {
-    q: 'Does standard GL cover spray foam overspray?',
-    a: 'Most standard GL policies either exclude or severely limit coverage for overspray incidents. Our SPF-specific GL policies include overspray coverage as standard, protecting you when foam drifts to neighboring properties or vehicles.',
-  },
-  {
-    q: 'What GL limits do I need as a spray foam contractor?',
-    a: 'Most general contractors require subcontractors to carry at least $1M per occurrence / $2M aggregate. If you work on large commercial projects, $2M/$4M or higher may be required. We\'ll help you meet whatever certificate requirements your clients demand.',
-  },
-  {
-    q: 'What is Products & Completed Operations coverage?',
-    a: 'This extends your GL coverage after a job is completed. If a client later claims the foam you installed caused property damage or health issues, Products & Completed Ops coverage responds — protecting you from long-tail claims.',
-  },
-  {
-    q: 'Does GL cover damage to my own equipment or property?',
-    a: 'No. General Liability covers third-party claims only. Your own equipment, tools, and materials in transit are covered by Inland Marine / Rig Insurance. Property you\'re working on may be covered under Builder\'s Risk or Installation Floater.',
-  },
-  {
-    q: 'Can I get GL coverage if I\'ve had claims?',
-    a: 'Yes, in most cases. We work with multiple carriers and specialty markets that understand SPF contractors. Prior claims don\'t automatically disqualify you, though they may affect pricing. Share your claims history with us and we\'ll find the best available options.',
-  },
-  {
-    q: 'How quickly can I get a certificate of insurance?',
-    a: 'Once your policy is bound and payment is processed, we can issue certificates the same day — often within a few hours. We know contractors can\'t afford to lose jobs over paperwork delays.',
-  },
-];
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -53,7 +28,7 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
-      mainEntity: faqs.map((item) => ({
+      mainEntity: generalLiabilityFaqs.map((item) => ({
         '@type': 'Question',
         name: item.q,
         acceptedAnswer: {
@@ -311,7 +286,7 @@ export default function GeneralLiabilityPage() {
           <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
             Frequently Asked Questions
           </h2>
-          <FAQSection items={faqs} />
+          <FAQSection items={generalLiabilityFaqs} />
         </div>
       </section>
 

@@ -1,39 +1,18 @@
-import type { Metadata } from 'next';
-import PageHero from '@/components/PageHero';
-import FAQSection from '@/components/FAQSection';
-import CTABar from '@/components/CTABar';
-import GlassCard from '@/components/GlassCard';
-import StatBar from '@/components/StatBar';
-import { CheckCircle, AlertTriangle } from 'lucide-react';
+import type { Metadata } from ‘next’;
+import PageHero from ‘@/components/PageHero’;
+import FAQSection from ‘@/components/FAQSection’;
+import CTABar from ‘@/components/CTABar’;
+import GlassCard from ‘@/components/GlassCard’;
+import StatBar from ‘@/components/StatBar’;
+import { CheckCircle, AlertTriangle } from ‘lucide-react’;
+import { workersCompFaqs } from ‘@/lib/faqs’;
 
 export const metadata: Metadata = {
-  title: "Workers' Compensation Insurance for Spray Foam Contractors",
+  title: "Workers’ Compensation Insurance for Spray Foam Contractors",
   description:
-    "Workers' comp insurance built for the unique risks of spray foam work — chemical exposure, falls, burns, and occupational illness. Get a free quote today.",
+    "Workers’ comp insurance built for the unique risks of spray foam work — chemical exposure, falls, burns, and occupational illness. Get a free quote today.",
+  alternates: { canonical: ‘https://sprayfoaminsurance.com/services/workers-compensation-insurance-for-spray-foam-contractors’ },
 };
-
-const faqs = [
-  {
-    q: 'Is workers’ comp required for spray foam contractors?',
-    a: "In almost every state, yes. Workers' comp is mandatory as soon as you have one employee. The specific requirements — including whether owners must cover themselves — vary by state. Operating without it can result in fines, stop-work orders, and personal liability for injured workers' medical bills.",
-  },
-  {
-    q: 'How are workers’ comp rates calculated for spray foam contractors?',
-    a: "Rates are based on your payroll (per $100 of payroll), the classification codes assigned to your workers (SPF work typically carries higher rates than general construction), your experience modification rate (EMR), and the state you operate in. A lower EMR means lower premiums — and we can help you achieve that with safety programs.",
-  },
-  {
-    q: 'What is an experience modification rate (EMR)?',
-    a: 'Your EMR is a factor that adjusts your workers’ comp premium based on your actual claims history compared to businesses of similar size and industry. An EMR of 1.0 is average. Below 1.0 means lower premiums; above 1.0 means higher premiums. Maintaining good safety practices directly saves you money.',
-  },
-  {
-    q: 'Do I need workers’ comp if I only use subcontractors?',
-    a: "Possibly. If your subcontractors don't have their own workers' comp coverage, many states will hold you responsible as the employer of record. We recommend verifying certificates of insurance from all subs and consulting us about your exposure.",
-  },
-  {
-    q: 'What happens if I have a claim?',
-    a: "Report the injury immediately, provide appropriate medical care, and notify us or your insurer right away. Timely reporting leads to better outcomes — injured workers who get prompt care return to work faster. We'll guide you through the claims process from start to finish.",
-  },
-];
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -49,7 +28,7 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
-      mainEntity: faqs.map((f) => ({
+      mainEntity: workersCompFaqs.map((f) => ({
         '@type': 'Question',
         name: f.q,
         acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -257,7 +236,7 @@ export default function WorkersCompPage() {
           <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
             Workers&apos; Comp FAQ
           </h2>
-          <FAQSection items={faqs} />
+          <FAQSection items={workersCompFaqs} />
         </div>
       </section>
 
