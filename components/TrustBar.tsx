@@ -8,8 +8,10 @@ const signals = [
   { icon: CheckCircle, label: 'Same-Day Certificates',     color: 'text-[#f59e0b]', bg: 'bg-[#f59e0b]/10'  },
 ];
 
-// TODO: replace text chips with real carrier logo images when supplied
-const carriers = ['Travelers', 'The Hartford', 'Liberty Mutual', 'Nationwide', 'Berkley'];
+// Honest, non-specific trust markers (A.M. Best financial-strength rating tiers we place with).
+// TODO: when Josh supplies his real carrier list + logos, swap these for the actual
+// carrier logo images (a real logo wall converts better than rating chips).
+const carriers = ['A++ Superior', 'A+ Superior', 'A Excellent', 'A- Excellent', 'Admitted & Surplus'];
 
 export default function TrustBar() {
   return (
@@ -35,7 +37,7 @@ export default function TrustBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-wrap items-center justify-center gap-3">
           <span className="label-text text-gray-500 text-[10px] tracking-widest mr-2 whitespace-nowrap">
-            Backed by A-rated national carriers
+            Carriers rated by A.M. Best
           </span>
           {carriers.map((name) => (
             <span

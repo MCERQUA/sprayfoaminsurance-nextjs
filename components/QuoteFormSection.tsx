@@ -324,6 +324,13 @@ export default function QuoteFormSection() {
                   {submitting ? 'Sending…' : 'Get My Free Quote'}
                 </button>
 
+                {error && (
+                  <p className="text-center text-xs text-red-400 mt-3">
+                    Something went wrong sending your request. Please call{' '}
+                    <a href="tel:844-967-5247" className="underline">844-967-5247</a> or email{' '}
+                    <a href="mailto:josh@sprayfoaminsurance.com" className="underline">josh@sprayfoaminsurance.com</a>.
+                  </p>
+                )}
                 <p className="text-center text-xs text-gray-600 mt-3">
                   No spam. No obligation. SPF specialists only.
                 </p>
