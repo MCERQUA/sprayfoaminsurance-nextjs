@@ -4,6 +4,10 @@ import Image from 'next/image';
 import { Shield, Users, Truck, Leaf, FileText, Wrench, CheckCircle, Phone, ArrowRight, Star, Clock, Award, Zap, BookOpen, Quote } from 'lucide-react';
 import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
+import TrustBar from '@/components/TrustBar';
+import HowItWorks from '@/components/HowItWorks';
+import SameDayCOI from '@/components/SameDayCOI';
+import QuoteFormSection from '@/components/QuoteFormSection';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Insurance | Specialized SPF Contractor Coverage',
@@ -110,6 +114,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ─── TRUST BAR — credibility strip under hero ─── */}
+      <TrustBar />
 
       {/* ─── SECTION 2: SERVICES — blue gradient background ─── */}
       <section className="blue-gradient-section py-20">
@@ -274,6 +281,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── HOW IT WORKS — 3-step process ─── */}
+      <HowItWorks />
+
       {/* ─── SECTION 4: BEYOND POLICIES — wireframe sprayer background ─── */}
       <section className="particle-bg py-24 relative">
         {/* Signature blue wireframe contractor — the original site's hero image */}
@@ -342,6 +352,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ─── SAME-DAY COI — amber feature band ─── */}
+      <SameDayCOI />
 
       {/* ─── SECTION 5: TESTIMONIALS — WHITE background (contrast break) ─── */}
       <section className="bg-white py-20">
@@ -430,8 +443,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SECTION 7: FAQ — blue gradient background ─── */}
-      <section className="blue-gradient-section py-24">
+      {/* ─── QUOTE FORM — inline lead capture ─── */}
+      <QuoteFormSection />
+
+      {/* ─── SECTION 7: FAQ — dark background ─── */}
+      <section className="py-24" style={{ background: '#080d16' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">Got Questions?</span>
