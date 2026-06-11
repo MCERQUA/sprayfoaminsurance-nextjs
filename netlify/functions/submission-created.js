@@ -1,7 +1,9 @@
 // Netlify auto-triggers this function on every verified form submission.
-// Forwards the lead to the Social Dashboard webhook → Neon DB → Zapier → AgencyZoom → AMS360.
-// Pipeline + canonical field names documented in /workspace/docs/WEBHOOK-DATAPOINTS.md.
-const WEBHOOK_URL = "https://social.jam-bot.com/api/leads/webhook/netlify?tenant=josh&site=sprayfoaminsurance";
+// Forwards the lead to the jam-bot lead-tracker → Neon DB → Zapier → AgencyZoom → AMS360.
+// Canonical webhook pattern: /config/KNOWLEDGE.md + /workspace/business/leads.json
+//   https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=<slug>
+// Field names: /workspace/docs/WEBHOOK-DATAPOINTS.md
+const WEBHOOK_URL = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=sprayfoaminsurance";
 
 export default async (req) => {
   try {
