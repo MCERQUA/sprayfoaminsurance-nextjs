@@ -1,17 +1,17 @@
-import type { Metadata } from ‘next’;
-import PageHero from ‘@/components/PageHero’;
-import FAQSection from ‘@/components/FAQSection’;
-import CTABar from ‘@/components/CTABar’;
-import GlassCard from ‘@/components/GlassCard’;
-import StatBar from ‘@/components/StatBar’;
-import { CheckCircle, AlertTriangle } from ‘lucide-react’;
-import { workersCompFaqs } from ‘@/lib/faqs’;
+import type { Metadata } from 'next';
+import PageHero from '@/components/PageHero';
+import FAQSection from '@/components/FAQSection';
+import CTABar from '@/components/CTABar';
+import GlassCard from '@/components/GlassCard';
+import StatBar from '@/components/StatBar';
+import { CheckCircle, AlertTriangle } from 'lucide-react';
+import { workersCompFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: "Workers’ Compensation Insurance for Spray Foam Contractors",
+  title: "Workers' Compensation Insurance for Spray Foam Contractors",
   description:
-    "Workers’ comp insurance built for the unique risks of spray foam work — chemical exposure, falls, burns, and occupational illness. Get a free quote today.",
-  alternates: { canonical: ‘https://sprayfoaminsurance.com/services/workers-compensation-insurance-for-spray-foam-contractors’ },
+    "Workers' comp insurance built for the unique risks of spray foam work — chemical exposure, falls, burns, and occupational illness. Get a free quote today.",
+  alternates: { canonical: 'https://sprayfoaminsurance.com/services/workers-compensation-insurance-for-spray-foam-contractors' },
 };
 
 const jsonLd = {
@@ -42,11 +42,11 @@ export default function WorkersCompPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <PageHero
-        title="Workers’ Compensation Insurance for Spray Foam Contractors"
+        title="Workers' Compensation Insurance for Spray Foam Contractors"
         subtitle="Protecting your most valuable asset — your crew. Coverage for injuries, chemical exposure, and occupational illness from SPF operations."
         ctaText="Get a Quote"
         ctaHref="/quote"
-        badge="Workers’ Comp"
+        badge="Workers' Comp"
       />
 
       <StatBar
