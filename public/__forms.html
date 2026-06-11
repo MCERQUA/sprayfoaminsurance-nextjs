@@ -1,0 +1,29 @@
+<!--
+  Netlify Forms detection file.
+  Next.js App Router renders dynamically, so Netlify cannot scan rendered output
+  for forms. This static file declares the form + all field names so Netlify's
+  build registers it. The React form (components/QuoteFormSection.tsx) POSTs
+  url-encoded data here with form-name=quote.
+  Leads appear in: Netlify dashboard → Forms → quote (+ email notifications once
+  configured in Netlify UI). To change delivery, set up a notification or
+  outbound webhook in Netlify → Site settings → Forms.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Spray Foam Insurance — Form Registration</title>
+  </head>
+  <body>
+    <form name="quote" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="fullName" />
+      <input type="text" name="businessName" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="state" />
+      <input type="text" name="coverage" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+  </body>
+</html>

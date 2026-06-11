@@ -54,6 +54,7 @@ export default function QuoteFormSection() {
   const [form, setForm] = useState<FormState>(EMPTY_FORM);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
 
   function handleField(e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
@@ -73,13 +74,35 @@ export default function QuoteFormSection() {
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSubmitting(true);
+    setError(false);
 
-    // TODO: wire to CRM/email endpoint
-    // e.g. await fetch('/api/quote', { method: 'POST', body: JSON.stringify(form) });
+    // Delivered via Netlify Forms (form registered in public/__forms.html).
+    // Leads land in Netlify dashboard → Forms → "quote" + email notifications.
+    // To route elsewhere (CRM/webhook), configure it in Netlify → Forms, or
+    // swap this POST for your own /api/quote endpoint.
+    const body = new URLSearchParams();
+    body.append('form-name', 'quote');
+    body.append('fullName', form.fullName);
+    body.append('businessName', form.businessName);
+    body.append('email', form.email);
+    body.append('phone', form.phone);
+    body.append('state', form.state);
+    form.coverage.forEach((c) => body.append('coverage', c));
+    body.append('message', form.message);
 
-    await new Promise((r) => setTimeout(r, 600)); // simulate latency
-    setSubmitting(false);
-    setSubmitted(true);
+    try {
+      const res = await fetch('/__forms.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      });
+      if (!res.ok) throw new Error(`Submit failed: ${res.status}`);
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   const inputBase =
@@ -138,7 +161,21 @@ export default function QuoteFormSection() {
               </div>
             ) : (
               /* ── Form ── */
-              <form onSubmit={handleSubmit} noValidate>
+              <form
+                onSubmit={handleSubmit}
+                name="quote"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                noValidate
+              >
+                {/* Netlify form-name + honeypot (hidden) */}
+                <input type="hidden" name="form-name" value="quote" />
+                <p className="hidden">
+                  <label>
+                    Don&apos;t fill this out: <input name="bot-field" onChange={handleField} />
+                  </label>
+                </p>
+
                 <h3 className="font-headline text-lg font-bold text-white mb-6">
                   Request Your Free Quote
                 </h3>
