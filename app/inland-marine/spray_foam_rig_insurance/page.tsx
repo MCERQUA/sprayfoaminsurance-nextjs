@@ -6,11 +6,13 @@ import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { CheckCircle } from 'lucide-react';
+import { rigInsuranceFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Rig & Equipment Insurance | Inland Marine',
   description:
     'Specialized insurance for spray foam rigs: proportioners, hoses, generators, trailers. Replacement cost coverage. Fast quotes for SPF contractors.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/inland-marine/spray_foam_rig_insurance' },
   keywords: [
     'spray foam rig insurance',
     'proportioner insurance',
@@ -93,28 +95,6 @@ const tiers = [
   },
 ];
 
-const faqs = [
-  {
-    q: 'Do I need to list every piece of equipment separately?',
-    a: 'For high-value items like proportioners (over $10K), we recommend scheduling them individually. Smaller tools can often be covered under a blanket inland marine limit.',
-  },
-  {
-    q: 'What deductible should I choose for my rig?',
-    a: 'Most spray foam contractors choose $1,000–$2,500 deductibles. Higher deductibles reduce your annual premium but mean more out-of-pocket costs if you file a claim.',
-  },
-  {
-    q: 'Does inland marine cover breakdowns from normal wear and tear?',
-    a: 'No — inland marine covers sudden accidental physical loss (theft, fire, collision, vandalism). Mechanical breakdown insurance is a separate product.',
-  },
-  {
-    q: 'Can I add my rig to an existing business policy?',
-    a: 'In some cases inland marine can be added as an endorsement to your commercial package policy. We will review your current coverage and find the most cost-effective structure.',
-  },
-  {
-    q: 'What documentation do I need to insure my rig?',
-    a: 'Serial numbers, purchase receipts or appraisals, photos, and current values. Manufacturer invoices work for newer equipment.',
-  },
-];
 
 export default function SprayFoamRigInsurancePage() {
   return (
@@ -204,7 +184,7 @@ export default function SprayFoamRigInsurancePage() {
         <h2 className="text-3xl font-headline font-bold text-text mb-8">
           Frequently Asked Questions
         </h2>
-        <FAQSection items={faqs} />
+        <FAQSection items={rigInsuranceFaqs} />
       </section>
 
       <CTABar />

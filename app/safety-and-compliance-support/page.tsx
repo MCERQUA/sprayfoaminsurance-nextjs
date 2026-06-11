@@ -5,10 +5,12 @@ import StatBar from '@/components/StatBar';
 import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import { Wind, AlertTriangle, Zap, Shield, Phone, FileText, Download, CheckCircle } from 'lucide-react';
+import { safetyComplianceFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Safety & Compliance Support for Spray Foam Contractors',
   description: 'OSHA requirements, PPE standards, chemical handling guidelines, and compliance checklists for spray foam insulation contractors. Stay safe and legal.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/safety-and-compliance-support' },
   keywords: ['spray foam OSHA', 'SPF safety guidelines', 'spray foam PPE', 'isocyanate safety', 'spray foam compliance'],
   openGraph: {
     title: 'Safety & Compliance Support for Spray Foam Contractors',

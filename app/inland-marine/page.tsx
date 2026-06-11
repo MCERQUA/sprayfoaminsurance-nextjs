@@ -6,11 +6,13 @@ import StatBar from '@/components/StatBar';
 import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import { Wrench, Zap, Truck, ArrowRight, CheckCircle, Settings, Package } from 'lucide-react';
+import { inlandMarineFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Inland Marine Insurance for Spray Foam Contractors',
   description:
     'Protect your spray foam rig and equipment with inland marine insurance. Coverage for proportioners, hoses, generators, and trailers wherever the job takes you.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/inland-marine' },
   keywords: [
     'inland marine insurance spray foam',
     'SPF rig insurance',
@@ -101,24 +103,6 @@ const steps = [
   },
 ];
 
-const faqs = [
-  {
-    q: 'Is my equipment covered while in transit?',
-    a: 'Yes — inland marine insurance covers your equipment on the road, at job sites, in storage, and at your shop. Unlike commercial property insurance limited to a fixed location, inland marine follows your equipment everywhere.',
-  },
-  {
-    q: 'Does my commercial auto policy cover my rig?',
-    a: 'Commercial auto covers the vehicle for collision and liability, but typically does NOT cover the equipment inside the trailer. You need a separate inland marine policy to cover the proportioner, hoses, and tools.',
-  },
-  {
-    q: 'What if my equipment is stolen from a job site?',
-    a: 'Theft is a covered peril under most inland marine policies. File a police report immediately and document serial numbers. Most theft claims are processed within 24–48 hours.',
-  },
-  {
-    q: 'How much does inland marine insurance cost for a spray foam contractor?',
-    a: 'Most spray foam contractors pay between $1,200 and $4,000 annually for a comprehensive inland marine policy, depending on total equipment value, deductible, and claims history.',
-  },
-];
 
 export default function InlandMarinePage() {
   return (
@@ -229,7 +213,7 @@ export default function InlandMarinePage() {
         <h2 className="text-3xl font-headline font-bold text-text mb-8">
           Frequently Asked Questions
         </h2>
-        <FAQSection items={faqs} />
+        <FAQSection items={inlandMarineFaqs} />
       </section>
 
       {/* Link to rig detail page */}

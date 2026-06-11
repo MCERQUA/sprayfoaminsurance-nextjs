@@ -61,24 +61,6 @@ const resources = [
   },
 ];
 
-const faqItems = [
-  {
-    q: 'Are these resources free?',
-    a: 'Yes — all downloadable forms and guides are completely free for spray foam contractors. No sign-up required for most resources.',
-  },
-  {
-    q: 'Do I need the work record form on every job?',
-    a: 'While not legally required in all states, maintaining detailed work records is strongly recommended for warranty documentation, insurance claims, and client trust.',
-  },
-  {
-    q: 'What is an attic insulation certificate?',
-    a: 'An official document recording the type, depth, and R-value of insulation installed in an attic. Many energy rebate programs and home sales require them.',
-  },
-  {
-    q: 'How do I stay OSHA compliant as a spray foam contractor?',
-    a: 'OSHA requires proper PPE including supplied-air respirators during application, ventilation standards, and chemical handling procedures for isocyanate products. Our safety guide covers all key requirements.',
-  },
-];
 
 const stats = [
   { label: 'Resources Available', value: '12+' },
@@ -141,7 +123,7 @@ export default function SPFResourcesPage() {
             Frequently Asked Questions
           </h2>
         </div>
-        <FAQSection items={faqItems} />
+        <FAQSection items={resourcesFaqs} />
       </section>
 
       <CTABar />
