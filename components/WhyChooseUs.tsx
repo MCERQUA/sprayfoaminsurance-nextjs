@@ -103,10 +103,6 @@ export default function WhyChooseUs() {
             <div
               key={title}
               className={`group relative bg-[#0d1421] border ${border} rounded-2xl p-7 hover:bg-[#111827] transition-all hover:-translate-y-1 flex flex-col`}
-              style={{
-                boxShadow: `0 0 0 transparent`,
-              }}
-              onMouseEnter={() => {}}
             >
               {/* Subtle hover glow — CSS-only via box-shadow on hover handled via Tailwind */}
               <div
