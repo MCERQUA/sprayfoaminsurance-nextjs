@@ -274,9 +274,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SECTION 4: BEYOND POLICIES — particle/constellation background ─── */}
-      <section className="particle-bg py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ─── SECTION 4: BEYOND POLICIES — wireframe sprayer background ─── */}
+      <section className="particle-bg py-24 relative">
+        {/* Signature blue wireframe contractor — the original site's hero image */}
+        <Image
+          src="/assets/images/wireframe-sprayer.jpg"
+          alt="Spray foam contractor — wireframe illustration"
+          fill
+          className="object-cover object-right opacity-30 pointer-events-none"
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: 'linear-gradient(90deg, #030b18 0%, rgba(3,11,24,0.85) 45%, rgba(3,11,24,0.55) 100%)' }}
+        />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-14">
             <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">We&apos;re Here For You</span>
             <h2 className="font-headline font-bold text-3xl sm:text-5xl text-white mb-3">
