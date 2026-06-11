@@ -8,6 +8,10 @@ import TrustBar from '@/components/TrustBar';
 import HowItWorks from '@/components/HowItWorks';
 import SameDayCOI from '@/components/SameDayCOI';
 import QuoteFormSection from '@/components/QuoteFormSection';
+import WhyChooseUs from '@/components/WhyChooseUs';
+import WhoWeServe from '@/components/WhoWeServe';
+import CoverageMap from '@/components/CoverageMap';
+import { homepageFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Insurance | Specialized SPF Contractor Coverage',
@@ -202,6 +206,15 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── HOW IT WORKS — 3-step process (right after Services) ─── */}
+      <HowItWorks />
+
+      {/* ─── WHY CHOOSE US — personal touch / expertise / 24-7 ─── */}
+      <WhyChooseUs />
+
+      {/* ─── WHO WE SERVE — applicator/operation types ─── */}
+      <WhoWeServe />
+
       {/* ─── SECTION 3: TRUSTED ALLY — dark with Josh photo ─── */}
       <section
         className="py-24 relative overflow-hidden"
@@ -281,9 +294,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── HOW IT WORKS — 3-step process ─── */}
-      <HowItWorks />
-
       {/* ─── SECTION 4: BEYOND POLICIES — wireframe sprayer background ─── */}
       <section className="particle-bg py-24 relative">
         {/* Signature blue wireframe contractor — the original site's hero image */}
@@ -355,6 +365,9 @@ export default function HomePage() {
 
       {/* ─── SAME-DAY COI — amber feature band ─── */}
       <SameDayCOI />
+
+      {/* ─── COVERAGE MAP — all 50 states ─── */}
+      <CoverageMap />
 
       {/* ─── SECTION 5: TESTIMONIALS — WHITE background (contrast break) ─── */}
       <section className="bg-white py-20">

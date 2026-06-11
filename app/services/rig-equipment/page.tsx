@@ -7,11 +7,13 @@ import GlassCard from '@/components/GlassCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { CheckCircle, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { rigEquipmentFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: 'Spray Foam Rig & Equipment Insurance | Service Coverage',
+  title: 'Rig & Equipment Insurance | Spray Foam Contractors',
   description:
     'Complete rig and equipment insurance for spray foam contractors. Proportioners, trailers, generators, hoses. Replacement cost coverage. Get your quote today.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/services/rig-equipment' },
   keywords: [
     'spray foam rig insurance',
     'spray foam equipment insurance',
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
     'SPF contractor equipment coverage',
   ],
   openGraph: {
-    title: 'Spray Foam Rig & Equipment Insurance',
+    title: 'Rig & Equipment Insurance | Spray Foam Contractors',
     description: 'Purpose-built rig and equipment insurance for spray foam contractors.',
     type: 'website',
   },

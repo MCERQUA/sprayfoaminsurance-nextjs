@@ -5,38 +5,13 @@ import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import { CheckCircle, FileText, MapPin } from 'lucide-react';
+import { suretyBondsFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Surety Bonds for Spray Foam Contractors',
   description: 'Performance bonds, payment bonds, and license bonds for spray foam contractors. Meet contract requirements and state licensing. Fast quotes available.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/services/surety-bonds' },
 };
-
-const faqItems = [
-  {
-    q: 'Is a surety bond the same as insurance?',
-    a: 'No. Insurance protects you from losses. A surety bond protects the project owner or the public — and if a claim is paid, the surety has the right to seek reimbursement from you (the principal). Think of a bond as a credit product that guarantees your performance.',
-  },
-  {
-    q: 'How much does a surety bond cost?',
-    a: 'Bond premiums are typically 1–5% of the bond amount, depending on your credit score, financial history, and the type of bond. A $10,000 license bond might cost $75–$200/year. Performance bonds on large contracts are priced differently based on project risk.',
-  },
-  {
-    q: 'Do I need good credit to get bonded?',
-    a: 'Good credit makes bonding easier and cheaper, but many contractors with less-than-perfect credit can still get bonded through specialty markets. We work with multiple surety companies to find options for all credit profiles.',
-  },
-  {
-    q: 'How long does it take to get a surety bond?',
-    a: 'Small license and permit bonds can often be issued same-day or next-day. Larger contract bonds (performance and payment) may take a few days to a week, depending on the underwriting requirements and bond amount.',
-  },
-  {
-    q: 'What happens if a bond claim is filed against me?',
-    a: 'The surety will investigate the claim. If valid, the surety may pay the obligee and then seek reimbursement from you. This is why it\'s critical to fulfill your contractual obligations — bond claims can be very costly and affect your ability to get bonded in the future.',
-  },
-  {
-    q: 'Do I need a surety bond and general liability insurance?',
-    a: 'Yes — they serve different purposes. GL insurance protects you from accident claims. A surety bond guarantees your contractual performance. Most contractors need both. We can help you get both in a coordinated package.',
-  },
-];
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -50,7 +25,7 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
-      mainEntity: faqItems.map((item) => ({
+      mainEntity: suretyBondsFaqs.map((item) => ({
         '@type': 'Question',
         name: item.q,
         acceptedAnswer: {
@@ -235,7 +210,7 @@ export default function SuretyBondsPage() {
           <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
             Surety Bond FAQ
           </h2>
-          <FAQSection items={faqItems} />
+          <FAQSection items={suretyBondsFaqs} />
         </div>
       </section>
 

@@ -26,7 +26,7 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
-      mainEntity: faqItems.map((item) => ({
+      mainEntity: commercialAutoFaqs.map((item) => ({
         '@type': 'Question',
         name: item.q,
         acceptedAnswer: {
@@ -211,7 +211,7 @@ export default function CommercialAutoPage() {
           <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
             Frequently Asked Questions
           </h2>
-          <FAQSection items={faqItems} />
+          <FAQSection items={commercialAutoFaqs} />
         </div>
       </section>
 

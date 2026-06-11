@@ -4,34 +4,13 @@ import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import { CheckCircle, AlertTriangle } from 'lucide-react';
+import { environmentalFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Environmental Liability Insurance for Spray Foam Contractors',
   description: 'Environmental liability insurance for SPF contractors. Covers pollution cleanup, off-gassing claims, overspray contamination, and third-party bodily injury.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/services/environmental-liability' },
 };
-
-const faqs = [
-  {
-    q: "Doesn't my general liability cover pollution?",
-    a: "Standard GL policies contain a 'pollution exclusion' that can bar coverage for chemical-related claims. Environmental Liability Insurance fills this gap. For spray foam contractors who work with reactive chemicals daily, this exclusion is a significant exposure. We recommend all SPF contractors carry both GL and environmental liability.",
-  },
-  {
-    q: 'What are isocyanates and why do they matter for insurance?',
-    a: "Isocyanates (the A-side of SPF) are among the leading causes of occupational asthma. They're classified as potential carcinogens and are tightly regulated by OSHA and EPA. A single claim from a building occupant or worker alleging isocyanate-related illness can result in six-figure legal costs — exactly what environmental liability insurance is designed to cover.",
-  },
-  {
-    q: 'Does environmental liability cover off-ratio foam?',
-    a: 'Off-ratio foam (where the A and B components aren\'t properly mixed) can off-gas excessively and fail structurally. Environmental liability can cover third-party claims arising from off-ratio installations, including relocation costs, remediation, and property damage.',
-  },
-  {
-    q: 'How much environmental liability coverage do I need?',
-    a: 'Coverage needs vary by project type and location. A minimum of $1M per occurrence is common, with $2M+ for commercial projects or work near sensitive environments. Some project owners and GCs require $5M or more for large commercial work.',
-  },
-  {
-    q: 'Can I bundle environmental liability with my GL policy?',
-    a: "In many cases, yes. Depending on the carrier, we can add pollution liability as an endorsement to your GL policy or as a separate standalone policy. We'll evaluate your operations and recommend the most cost-effective approach.",
-  },
-];
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -45,7 +24,7 @@ const jsonLd = {
     },
     {
       '@type': 'FAQPage',
-      mainEntity: faqs.map((item) => ({
+      mainEntity: environmentalFaqs.map((item) => ({
         '@type': 'Question',
         name: item.q,
         acceptedAnswer: {
@@ -211,7 +190,7 @@ export default function EnvironmentalLiabilityPage() {
           <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
             Frequently Asked Questions
           </h2>
-          <FAQSection items={faqs} />
+          <FAQSection items={environmentalFaqs} />
         </div>
       </section>
 
