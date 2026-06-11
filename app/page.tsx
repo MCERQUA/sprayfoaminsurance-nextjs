@@ -41,7 +41,7 @@ export default function HomePage() {
           muted
           loop
           playsInline
-          poster="/assets/images/hero-bg.webp"
+          poster="/assets/images/hero-poster.webp"
           className="hero-video absolute inset-0 w-full h-full object-cover"
         >
           <source src="/assets/videos/hero.webm" type="video/webm" />
