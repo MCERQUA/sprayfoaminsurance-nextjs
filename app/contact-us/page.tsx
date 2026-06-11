@@ -5,10 +5,12 @@ import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import FormCard from '@/components/FormCard';
 import { Clock, CheckCircle } from 'lucide-react';
+import { contactFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Contact Spray Foam Insurance | 844-967-5247',
   description: 'Contact our spray foam insurance specialists. Call 844-967-5247 or send us a message. GL, workers comp, and equipment coverage quotes available.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/contact-us' },
   keywords: ['contact spray foam insurance', '844-967-5247', 'spray foam insurance agent', 'SPF insurance quote'],
   openGraph: {
     title: 'Contact Spray Foam Insurance | 844-967-5247',
@@ -24,29 +26,6 @@ const coverages = [
   'Inland Marine / Rig Insurance',
   'Environmental Liability',
   'Surety Bonds',
-];
-
-const faqs = [
-  {
-    q: 'How quickly can I get a quote?',
-    a: 'Most spray foam contractors receive a quote within 1 business day. Call 844-967-5247 for same-day quotes on straightforward risks.',
-  },
-  {
-    q: 'Do you work in all 50 states?',
-    a: 'Yes — we provide spray foam insurance across all 50 states. Contact us to confirm availability of specialty coverages in your area.',
-  },
-  {
-    q: 'Can I get a certificate of insurance same day?',
-    a: 'Certificates for existing policies are typically issued within 1–2 hours during business hours. New policy certificates may take 1 business day.',
-  },
-  {
-    q: 'Do you insure new contractors with no prior coverage?',
-    a: "Yes — we work with contractors at all stages. New contractors may face slightly higher initial premiums but we'll find the best available rate.",
-  },
-  {
-    q: 'What information do I need to get a quote?',
-    a: 'Basic info needed: years in business, number of employees, annual revenue, states where you operate, and any prior claims history.',
-  },
 ];
 
 export default function ContactUsPage() {
@@ -184,7 +163,7 @@ export default function ContactUsPage() {
         <h2 className="font-headline font-bold text-text text-2xl md:text-3xl text-center mb-8">
           Frequently Asked Questions
         </h2>
-        <FAQSection items={faqs} />
+        <FAQSection items={contactFaqs} />
       </div>
 
       <CTABar />

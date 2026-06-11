@@ -6,10 +6,12 @@ import GlassCard from '@/components/GlassCard';
 import StatBar from '@/components/StatBar';
 import FAQSection from '@/components/FAQSection';
 import { CheckCircle, Award, Users, Shield, Zap } from 'lucide-react';
+import { aboutFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: 'About Us | Spray Foam Insurance',
+  title: 'About Spray Foam Insurance | SPF Coverage Specialists',
   description: 'Spray Foam Insurance — SPF contractor coverage specialists since 2009. Serving contractors in all 50 states with tailored GL, workers comp, and specialty programs.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/about-us' },
 };
 
 export default function AboutUsPage() {
@@ -176,30 +178,7 @@ export default function AboutUsPage() {
           <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
             Frequently Asked Questions
           </h2>
-          <FAQSection
-            items={[
-              {
-                q: 'What makes Spray Foam Insurance different from a general agent?',
-                a: 'We focus exclusively on spray polyurethane foam contractors. That means we know the specific exclusions that trip up SPF contractors in standard policies, the carriers that price this risk fairly, and the coverage structures that actually protect you — not just check a box.',
-              },
-              {
-                q: 'Are you licensed to write coverage in my state?',
-                a: 'Yes. We place coverage for spray foam contractors in all 50 states. State licensing requirements, workers\' comp rules, and bond requirements vary — we handle that complexity so you don\'t have to.',
-              },
-              {
-                q: 'How quickly can I get a quote?',
-                a: 'Most contractors receive quote options within 24 hours of submitting their application. For straightforward GL or auto policies, same-day quotes are often possible. Complex bundled programs may take an extra day for underwriting.',
-              },
-              {
-                q: 'What carriers do you work with?',
-                a: 'We work with multiple A-rated carriers who specialize in contractor and specialty trade insurance. We shop your risk across several markets to find you the best combination of coverage and price — and we\'re not captive to any single carrier.',
-              },
-              {
-                q: 'What if I already have insurance — can you review my existing coverage?',
-                a: 'Absolutely. We offer free policy reviews for spray foam contractors who want a second opinion. We\'ll identify any coverage gaps, exclusions, or misclassifications in your current program and let you know if we can do better.',
-              },
-            ]}
-          />
+          <FAQSection items={aboutFaqs} />
         </div>
       </section>
 

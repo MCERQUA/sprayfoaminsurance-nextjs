@@ -6,11 +6,13 @@ import StatBar from '@/components/StatBar';
 import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import { FileText, Award, Shield, CheckSquare, ArrowRight } from 'lucide-react';
+import { resourcesFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Contractor Resources | Forms, Guides & Tools',
   description:
     'Download essential resources for spray foam contractors — work record forms, attic certificates, safety guides, OSHA compliance docs. All free.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/spf-resources' },
   keywords: [
     'spray foam contractor resources',
     'work record form',

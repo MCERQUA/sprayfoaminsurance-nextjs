@@ -18,29 +18,11 @@ export const metadata: Metadata = {
   description: 'Specialized insurance for spray foam contractors. General liability, workers comp, commercial auto, environmental & surety bonds. Free quotes available.',
 };
 
-const orgJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'InsuranceAgency',
-  name: 'Spray Foam Insurance',
-  url: 'https://sprayfoaminsurance.com',
-  telephone: '844-967-5247',
-  description: 'Specialized insurance for spray foam contractors across the United States.',
-  areaServed: 'US',
-  sameAs: ['https://sprayfoaminsurance.com'],
-  knowsAbout: [
-    'General Liability Insurance',
-    "Workers' Compensation Insurance",
-    'Commercial Auto Insurance',
-    'Surety Bonds',
-    'Environmental Liability Insurance',
-    'Inland Marine Insurance',
-  ],
-};
-
 export default function HomePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
+      {/* Global Organization/WebSite JSON-LD lives in layout (components/JsonLd.tsx).
+          The homepage FAQ emits its own FAQPage schema via FAQSection. */}
 
       {/* ─── SECTION 1: VIDEO HERO (untouched) ─── */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -466,30 +448,7 @@ export default function HomePage() {
             <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">Got Questions?</span>
             <h2 className="font-headline font-bold text-3xl sm:text-4xl text-white">Frequently Asked Questions</h2>
           </div>
-          <FAQSection
-            items={[
-              {
-                q: 'What types of insurance do spray foam contractors need?',
-                a: "Most spray foam contractors need a combination of General Liability Insurance, Workers' Compensation, Commercial Auto Insurance, and Equipment/Inland Marine coverage. Depending on your projects, you may also need Environmental Liability Insurance and Surety Bonds. We specialize in bundling these coverages to make sure there are no gaps.",
-              },
-              {
-                q: 'How much does spray foam contractor insurance cost?',
-                a: 'Premiums vary based on your annual revenue, number of employees, claims history, states you operate in, and coverage limits. General liability for SPF contractors typically starts around $2,500–$5,000/year. Workers\' comp rates vary significantly by state and payroll. Contact us for a free quote tailored to your operation.',
-              },
-              {
-                q: 'Does standard general liability cover overspray damage?',
-                a: 'Most standard GL policies have exclusions or limitations for overspray incidents, which is one of the most common claims for spray foam contractors. Our specialized SPF-specific policies include overspray coverage as a standard feature, protecting you when wind or application errors cause damage to neighboring properties or vehicles.',
-              },
-              {
-                q: 'Are there specific insurance requirements for spray foam contractors?',
-                a: "Yes. Many general contractors and project owners require SPF subcontractors to carry at least $1M/$2M general liability. Some states require workers' comp for even one employee. Certain projects require environmental liability or surety bonds. We'll help you meet any certificate of insurance (COI) requirements.",
-              },
-              {
-                q: 'How quickly can I get a certificate of insurance?',
-                a: 'Once your policy is bound, we can issue certificates of insurance (COIs) the same day — often within hours. We know contractors often need proof of insurance to start a job, so we make this process as fast as possible.',
-              },
-            ]}
-          />
+          <FAQSection items={homepageFaqs} />
         </div>
       </section>
 

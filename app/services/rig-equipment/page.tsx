@@ -75,28 +75,6 @@ const acvBullets = [
   'Better for fully depreciated rigs',
 ];
 
-const faqs = [
-  {
-    q: 'Does my policy follow my rig to different states?',
-    a: 'Yes — inland marine/rig insurance follows your equipment anywhere in the continental US. If you work in multiple states, your coverage travels with you.',
-  },
-  {
-    q: 'What if my rig is stolen overnight on a job site?',
-    a: 'Theft is a covered peril. File a police report immediately, document serial numbers and photos, and contact us. Most theft claims are processed within 24–48 hours.',
-  },
-  {
-    q: 'Is my rig covered while being transported on a trailer?',
-    a: 'Yes — inland marine insurance covers your equipment during transit, including while loaded on a trailer being towed.',
-  },
-  {
-    q: 'Can I insure a used rig I just purchased?',
-    a: 'Absolutely. Used rigs are insured at current market value or agreed value. We recommend a professional appraisal for rigs over $50K.',
-  },
-  {
-    q: 'How does a claim affect my premium?',
-    a: 'Filing a claim can affect your renewal premium, typically by 5–20% for a single claim. Contractors with 3+ years of claim-free history often qualify for experience credits.',
-  },
-];
 
 export default function RigEquipmentPage() {
   return (
@@ -195,7 +173,7 @@ export default function RigEquipmentPage() {
         <h2 className="font-headline font-bold text-text text-2xl md:text-3xl text-center mb-8">
           Rig &amp; Equipment Insurance FAQs
         </h2>
-        <FAQSection items={faqs} />
+        <FAQSection items={rigEquipmentFaqs} />
       </div>
 
       <CTABar />
