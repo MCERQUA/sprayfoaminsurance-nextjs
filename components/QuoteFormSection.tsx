@@ -31,7 +31,7 @@ const TRUST_BULLETS = [
 ];
 
 interface FormState {
-  fullName: string;
+  name: string;
   businessName: string;
   email: string;
   phone: string;
@@ -41,7 +41,7 @@ interface FormState {
 }
 
 const EMPTY_FORM: FormState = {
-  fullName: '',
+  name: '',
   businessName: '',
   email: '',
   phone: '',
@@ -80,14 +80,17 @@ export default function QuoteFormSection() {
     // Leads land in Netlify dashboard → Forms → "quote" + email notifications.
     // To route elsewhere (CRM/webhook), configure it in Netlify → Forms, or
     // swap this POST for your own /api/quote endpoint.
+    // Canonical pipeline field names (docs/WEBHOOK-DATAPOINTS.md) → AgencyZoom auto-maps.
     const body = new URLSearchParams();
     body.append('form-name', 'quote');
-    body.append('fullName', form.fullName);
+    body.append('name', form.name);
     body.append('businessName', form.businessName);
     body.append('email', form.email);
     body.append('phone', form.phone);
     body.append('state', form.state);
-    form.coverage.forEach((c) => body.append('coverage', c));
+    body.append('service_type', form.coverage.join(', '));
+    body.append('form_type', 'quote-request');
+    body.append('source_site', 'sprayfoaminsurance');
     body.append('message', form.message);
 
     try {
@@ -183,17 +186,17 @@ export default function QuoteFormSection() {
                 <div className="grid sm:grid-cols-2 gap-4 mb-4">
                   {/* Full Name */}
                   <div>
-                    <label htmlFor="qf-fullName" className="block text-xs font-medium text-gray-400 mb-1.5">
+                    <label htmlFor="qf-name" className="block text-xs font-medium text-gray-400 mb-1.5">
                       Full Name <span className="text-[#f59e0b]">*</span>
                     </label>
                     <input
-                      id="qf-fullName"
-                      name="fullName"
+                      id="qf-name"
+                      name="name"
                       type="text"
                       required
                       autoComplete="name"
                       placeholder="Jane Smith"
-                      value={form.fullName}
+                      value={form.name}
                       onChange={handleField}
                       className={inputBase}
                     />
