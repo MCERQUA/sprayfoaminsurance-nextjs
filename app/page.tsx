@@ -254,13 +254,13 @@ export default function HomePage() {
                     transform: 'scale(1.08)',
                   }}
                 />
-                <div className="relative rounded-2xl overflow-hidden border-2 border-[#2ea3f2]/30 shadow-[0_0_40px_rgba(46,163,242,0.2)]">
+                <div className="relative rounded-2xl overflow-hidden border-2 border-[#2ea3f2]/30 shadow-[0_0_40px_rgba(46,163,242,0.2)] bg-gradient-to-b from-[#0d1421] to-[#080d16]">
                   <Image
-                    src="/assets/images/josh-cotner.webp"
+                    src="/assets/images/josh-clean.webp"
                     alt="Josh Cotner — Spray Foam Insurance specialist"
                     width={480}
                     height={560}
-                    className="object-cover w-full max-w-sm lg:max-w-md"
+                    className="object-contain w-full max-w-sm lg:max-w-md"
                   />
                   {/* Name badge overlay */}
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#080d16] via-[#080d16]/70 to-transparent px-6 py-5">
@@ -403,15 +403,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SECTION 6: PHOTO CTA ─── */}
-      <section className="photo-section relative py-32">
+      {/* ─── SECTION 6: PHOTO CTA — wireframe handshake ─── */}
+      <section className="photo-section relative py-32" style={{ background: '#030b18' }}>
         <Image
-          src="/assets/images/spray-foam-insurance.webp"
-          alt="Spray foam contractor at work"
+          src="/assets/images/wireframe-handshake.webp"
+          alt="Partnership — spray foam insurance support"
           fill
-          className="object-cover"
+          className="object-cover object-left opacity-50"
         />
-        <div className="photo-section-overlay" />
+        <div
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(270deg, #030b18 0%, rgba(3,11,24,0.80) 50%, rgba(3,11,24,0.5) 100%)', zIndex: 1 }}
+        />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
           <span className="label-text text-[#2ea3f2] text-sm mb-4 block">Insurance Excellence</span>
           <h2 className="font-headline font-bold text-4xl sm:text-5xl text-white mb-6">
