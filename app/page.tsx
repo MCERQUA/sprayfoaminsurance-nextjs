@@ -14,7 +14,7 @@ import CoverageMap from '@/components/CoverageMap';
 import { homepageFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Spray Foam Insurance | Specialized SPF Contractor Coverage' },
+  title: { absolute: 'Spray Foam Insurance for Contractors | Get a Fast Quote' },
   description: 'Specialized insurance for spray foam contractors. General liability, workers comp, commercial auto, environmental & surety bonds. Free quotes available.',
 };
 
