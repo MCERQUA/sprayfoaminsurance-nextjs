@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { ShieldCheck, MapPin, Award, BadgeCheck, CheckCircle } from 'lucide-react';
 
 const signals = [
@@ -8,10 +9,12 @@ const signals = [
   { icon: CheckCircle, label: 'Same-Day Certificates',     color: 'text-[#f59e0b]', bg: 'bg-[#f59e0b]/10'  },
 ];
 
-// Honest, non-specific trust markers (A.M. Best financial-strength rating tiers we place with).
-// TODO: when Josh supplies his real carrier list + logos, swap these for the actual
-// carrier logo images (a real logo wall converts better than rating chips).
-const carriers = ['A++ Superior', 'A+ Superior', 'A Excellent', 'A- Excellent', 'Admitted & Surplus'];
+const carrierLogos = [
+  { src: '/assets/images/carriers/client-logo1.png', alt: 'Carrier Partner', w: 172, h: 47 },
+  { src: '/assets/images/carriers/client-logo2.png', alt: 'Carrier Partner', w: 151, h: 54 },
+  { src: '/assets/images/carriers/client-logo3.png', alt: 'Carrier Partner', w: 169, h: 44 },
+  { src: '/assets/images/carriers/client-logo4.png', alt: 'Carrier Partner', w: 144, h: 56 },
+];
 
 export default function TrustBar() {
   return (
@@ -35,17 +38,19 @@ export default function TrustBar() {
 
       {/* Carrier logo strip */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex flex-wrap items-center justify-center gap-3">
+        <div className="flex flex-wrap items-center justify-center gap-6">
           <span className="label-text text-gray-500 text-[10px] tracking-widest mr-2 whitespace-nowrap">
-            Carriers rated by A.M. Best
+            Our Carriers
           </span>
-          {carriers.map((name) => (
-            <span
-              key={name}
-              className="px-3 py-1 rounded border border-white/10 text-gray-500 text-xs font-body grayscale opacity-60 select-none"
-            >
-              {name}
-            </span>
+          {carrierLogos.map((logo, i) => (
+            <Image
+              key={i}
+              src={logo.src}
+              alt={logo.alt}
+              width={logo.w}
+              height={logo.h}
+              className="grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+            />
           ))}
         </div>
       </div>
