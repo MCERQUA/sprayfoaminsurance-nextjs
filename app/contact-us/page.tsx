@@ -45,7 +45,7 @@ export default function ContactUsPage() {
           <div className="space-y-6">
             <GlassCard className="p-6">
               <p className="label-text text-accent text-xs mb-3">CALL US</p>
-              <h3 className="font-headline font-bold text-text text-xl mb-2">Call Our Specialists</h3>
+              <p className="font-headline font-bold text-text text-xl mb-2">Call Our Specialists</p>
               <a
                 href="tel:8449675247"
                 className="text-3xl font-headline font-bold text-primary hover:text-accent transition-colors block mb-2"
@@ -56,7 +56,7 @@ export default function ContactUsPage() {
             </GlassCard>
 
             <GlassCard className="p-6">
-              <h3 className="font-headline font-bold text-text mb-3">Coverages We Handle</h3>
+              <p className="font-headline font-bold text-text mb-3">Coverages We Handle</p>
               {coverages.map((item) => (
                 <div key={item} className="flex items-center gap-2 mb-2">
                   <CheckCircle className="w-4 h-4 text-accent" />
@@ -69,7 +69,7 @@ export default function ContactUsPage() {
               <div className="flex items-start gap-4">
                 <Clock className="w-8 h-8 text-primary shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-headline font-bold text-text mb-2">Response Time</h3>
+                  <p className="font-headline font-bold text-text mb-2">Response Time</p>
                   <p className="text-muted text-sm">Under 24 Hours — typical response</p>
                   <p className="text-muted text-sm">Same Business Day — for new quotes</p>
                 </div>

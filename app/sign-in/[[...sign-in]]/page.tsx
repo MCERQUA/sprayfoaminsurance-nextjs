@@ -4,6 +4,8 @@ import { Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Client Login | Spray Foam Insurance',
+  description: 'Log in to your Spray Foam Insurance client portal to manage policies, request certificates, and view your coverage documents.',
+  robots: { index: false, follow: false },
 };
 
 export default function SignInPage() {

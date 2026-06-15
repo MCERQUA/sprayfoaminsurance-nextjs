@@ -4,6 +4,8 @@ import { Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Create Account | Spray Foam Insurance',
+  description: 'Create your Spray Foam Insurance client account to manage coverage, request certificates, and access policy documents online.',
+  robots: { index: false, follow: false },
 };
 
 export default function SignUpPage() {
