@@ -42,7 +42,7 @@ export default function Page() {
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />
         <div className="ambient-orb w-80 h-80 bg-accent opacity-10 -bottom-10 right-0" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors mb-8">
+          <Link href="/blog/" className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" /> Back to Blog
           </Link>
           <div className="flex items-center gap-3 mb-4">
@@ -90,7 +90,7 @@ export default function Page() {
             <p className="text-muted leading-relaxed mb-5">Taking on large commercial projects as a spray foam contractor can be a rewarding endeavor, but it also comes with significant responsibilities. Understanding and meeting the insurance requirements for these projects is a fundamental part of your success. By working closely with insurance professionals, reviewing contracts diligently, and maintaining appropriate coverage, you can navigate the complexities of large commercial projects with confidence and ensure that your work meets the highest standards of quality and safety.</p>
           </div>
           <div className="mt-8">
-            <Link href="/blog" className="inline-flex items-center gap-2 secondary-btn px-6 py-2.5 rounded-full text-sm font-semibold font-label">
+            <Link href="/blog/" className="inline-flex items-center gap-2 secondary-btn px-6 py-2.5 rounded-full text-sm font-semibold font-label">
               <ArrowLeft className="w-4 h-4" /> Back to Blog
             </Link>
           </div>

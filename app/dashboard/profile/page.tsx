@@ -6,6 +6,7 @@ import { Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Profile | Dashboard',
+  robots: { index: false, follow: false },
 };
 
 export default function ProfilePage() {

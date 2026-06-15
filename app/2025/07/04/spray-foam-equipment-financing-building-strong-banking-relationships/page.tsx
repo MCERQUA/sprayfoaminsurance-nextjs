@@ -42,7 +42,7 @@ export default function Page() {
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />
         <div className="ambient-orb w-80 h-80 bg-accent opacity-10 -bottom-10 right-0" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors mb-8">
+          <Link href="/blog/" className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" /> Back to Blog
           </Link>
           <div className="flex items-center gap-3 mb-4">
@@ -99,7 +99,7 @@ export default function Page() {
             <p className="text-muted leading-relaxed mb-5">Building strong banking relationships is not a one-time task — it's an ongoing investment in your business infrastructure. The contractors who treat their banker as a partner, maintain excellent financial records, and carry proper insurance find that capital becomes progressively easier and cheaper to access as their business matures. Start building that relationship today.</p>
           </div>
           <div className="mt-8">
-            <Link href="/blog" className="inline-flex items-center gap-2 secondary-btn px-6 py-2.5 rounded-full text-sm font-semibold font-label">
+            <Link href="/blog/" className="inline-flex items-center gap-2 secondary-btn px-6 py-2.5 rounded-full text-sm font-semibold font-label">
               <ArrowLeft className="w-4 h-4" /> Back to Blog
             </Link>
           </div>

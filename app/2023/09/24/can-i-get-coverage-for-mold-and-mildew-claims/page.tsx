@@ -42,7 +42,7 @@ export default function Page() {
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />
         <div className="ambient-orb w-80 h-80 bg-accent opacity-10 -bottom-10 right-0" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Link href="/blog" className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors mb-8">
+          <Link href="/blog/" className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" /> Back to Blog
           </Link>
           <div className="flex items-center gap-3 mb-4">
@@ -85,7 +85,7 @@ export default function Page() {
             <p className="text-muted leading-relaxed mb-5">Coverage for mold and mildew claims is a critical consideration for spray foam insulation contractors. With the right insurance coverage in place, you can protect your business from potential liability claims and ensure that your work contributes to healthier, safer, and more resilient buildings. Take the time to understand your insurance options and work with an expert who can tailor coverage to your specific needs, helping you navigate the unique challenges of your industry.</p>
           </div>
           <div className="mt-8">
-            <Link href="/blog" className="inline-flex items-center gap-2 secondary-btn px-6 py-2.5 rounded-full text-sm font-semibold font-label">
+            <Link href="/blog/" className="inline-flex items-center gap-2 secondary-btn px-6 py-2.5 rounded-full text-sm font-semibold font-label">
               <ArrowLeft className="w-4 h-4" /> Back to Blog
             </Link>
           </div>
