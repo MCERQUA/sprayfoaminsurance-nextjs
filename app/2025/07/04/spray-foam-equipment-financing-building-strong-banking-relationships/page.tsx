@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   },
 };
 
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Spray Foam Equipment Financing: Building Strong Banking Relationships',
+  description: 'Guide to financing spray foam equipment through strong banking relationships. Equipment costs $40K-$150K+, loan types, and strategies for SPF contractors.',
+  author: { '@type': 'Person', name: 'Josh Cotner' },
+  publisher: { '@id': 'https://sprayfoaminsurance.com/#organization' },
+  datePublished: '2025-07-04',
+  dateModified: '2025-07-04',
+  url: 'https://sprayfoaminsurance.com/2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/',
+};
+
 const relatedPosts = [
   { href: '/2023/09/24/is-my-equipment-covered', title: 'Is My Spray Foam Equipment Covered?', category: 'Equipment' },
   { href: '/2023/09/24/what-factors-affect-insurance-premiums', title: 'What Factors Affect My Insurance Premiums?', category: 'Pricing' },
@@ -24,6 +36,7 @@ const relatedPosts = [
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-background dot-grid pt-8 pb-16">
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />

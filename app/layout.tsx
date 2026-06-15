@@ -87,9 +87,6 @@ export const metadata: Metadata = {
       'Specialized insurance for spray foam contractors. A-rated carriers, same-day certificates, all 50 states.',
     images: [OG_IMAGE],
   },
-  alternates: {
-    canonical: SITE_URL,
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

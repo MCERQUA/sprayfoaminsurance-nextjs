@@ -26,17 +26,6 @@ const jsonLd = {
       areaServed: 'US',
       serviceType: 'General Liability Insurance',
     },
-    {
-      '@type': 'FAQPage',
-      mainEntity: generalLiabilityFaqs.map((item) => ({
-        '@type': 'Question',
-        name: item.q,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.a,
-        },
-      })),
-    },
   ],
 };
 

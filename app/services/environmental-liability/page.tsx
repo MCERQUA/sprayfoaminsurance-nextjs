@@ -22,17 +22,6 @@ const jsonLd = {
       telephone: '844-967-5247',
       serviceType: 'Environmental Liability Insurance',
     },
-    {
-      '@type': 'FAQPage',
-      mainEntity: environmentalFaqs.map((item) => ({
-        '@type': 'Question',
-        name: item.q,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.a,
-        },
-      })),
-    },
   ],
 };
 

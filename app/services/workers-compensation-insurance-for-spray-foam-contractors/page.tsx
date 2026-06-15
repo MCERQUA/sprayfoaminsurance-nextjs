@@ -26,14 +26,6 @@ const jsonLd = {
       areaServed: 'US',
       serviceType: "Workers Compensation Insurance",
     },
-    {
-      '@type': 'FAQPage',
-      mainEntity: workersCompFaqs.map((f) => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a },
-      })),
-    },
   ],
 };
 

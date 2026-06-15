@@ -24,17 +24,6 @@ const jsonLd = {
       description: 'Commercial auto insurance for spray foam contractors',
       serviceType: 'Commercial Auto Insurance',
     },
-    {
-      '@type': 'FAQPage',
-      mainEntity: commercialAutoFaqs.map((item) => ({
-        '@type': 'Question',
-        name: item.q,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.a,
-        },
-      })),
-    },
   ],
 };
 

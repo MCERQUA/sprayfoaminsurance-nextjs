@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   },
 };
 
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Is Retrofitting Insurance Available for Spray Foam Contractors?',
+  description: 'Retrofitting insurance options for spray foam contractors upgrading existing buildings. Enhanced coverage for retrofit-specific risks.',
+  author: { '@type': 'Person', name: 'Josh Cotner' },
+  publisher: { '@id': 'https://sprayfoaminsurance.com/#organization' },
+  datePublished: '2023-09-24',
+  dateModified: '2023-09-24',
+  url: 'https://sprayfoaminsurance.com/2023/09/24/is-retrofitting-insurance-available-for-spray-foam-contractors/',
+};
+
 const relatedPosts = [
   { href: '/2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects', title: 'Insurance Requirements for Large Commercial Projects', category: 'Commercial' },
   { href: '/2023/09/24/is-my-equipment-covered', title: 'Is My Spray Foam Equipment Covered?', category: 'Equipment' },
@@ -24,6 +36,7 @@ const relatedPosts = [
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-background dot-grid pt-8 pb-16">
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />

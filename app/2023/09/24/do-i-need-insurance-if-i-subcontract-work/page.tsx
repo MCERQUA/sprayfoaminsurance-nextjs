@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   },
 };
 
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Do I Need Insurance If I Subcontract Work?',
+  description: 'Understanding insurance responsibilities when subcontracting spray foam work. Coverage requirements for GCs and subcontractors explained.',
+  author: { '@type': 'Person', name: 'Josh Cotner' },
+  publisher: { '@id': 'https://sprayfoaminsurance.com/#organization' },
+  datePublished: '2023-09-24',
+  dateModified: '2023-09-24',
+  url: 'https://sprayfoaminsurance.com/2023/09/24/do-i-need-insurance-if-i-subcontract-work/',
+};
+
 const relatedPosts = [
   { href: '/2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects', title: 'Insurance Requirements for Large Commercial Projects', category: 'Commercial' },
   { href: '/2023/09/24/how-does-insurance-protect-my-clients', title: 'How Does Insurance Protect My Clients?', category: 'Business' },
@@ -24,6 +36,7 @@ const relatedPosts = [
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-background dot-grid pt-8 pb-16">
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />

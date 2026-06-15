@@ -23,17 +23,6 @@ const jsonLd = {
       telephone: '844-967-5247',
       serviceType: 'Surety Bonds',
     },
-    {
-      '@type': 'FAQPage',
-      mainEntity: suretyBondsFaqs.map((item) => ({
-        '@type': 'Question',
-        name: item.q,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.a,
-        },
-      })),
-    },
   ],
 };
 

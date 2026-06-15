@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   },
 };
 
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Do I Need Special Coverage for Roofing Projects?',
+  description: 'Insurance considerations for spray foam contractors working alongside roofing companies. Special coverage for combined operations and elevated risks.',
+  author: { '@type': 'Person', name: 'Josh Cotner' },
+  publisher: { '@id': 'https://sprayfoaminsurance.com/#organization' },
+  datePublished: '2023-09-24',
+  dateModified: '2023-09-24',
+  url: 'https://sprayfoaminsurance.com/2023/09/24/do-i-need-special-coverage-for-roofing-projects/',
+};
+
 const relatedPosts = [
   { href: '/2023/09/24/does-insurance-cover-overspray-damage', title: 'Does Insurance Cover Overspray Damage?', category: 'Claims' },
   { href: '/2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects', title: 'Insurance Requirements for Large Commercial Projects', category: 'Commercial' },
@@ -24,6 +36,7 @@ const relatedPosts = [
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-background dot-grid pt-8 pb-16">
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />

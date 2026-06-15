@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   },
 };
 
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Is My Spray Foam Equipment Covered?',
+  description: 'Understanding insurance coverage for spray foam equipment including general liability, inland marine, and commercial property policies.',
+  author: { '@type': 'Person', name: 'Josh Cotner' },
+  publisher: { '@id': 'https://sprayfoaminsurance.com/#organization' },
+  datePublished: '2023-09-24',
+  dateModified: '2023-09-24',
+  url: 'https://sprayfoaminsurance.com/2023/09/24/is-my-equipment-covered/',
+};
+
 const relatedPosts = [
   { href: '/2023/09/24/what-factors-affect-insurance-premiums', title: 'What Factors Affect My Insurance Premiums?', category: 'Pricing' },
   { href: '/2023/09/24/is-retrofitting-insurance-available-for-spray-foam-contractors', title: 'Is Retrofitting Insurance Available for Spray Foam Contractors?', category: 'Coverage' },
@@ -24,6 +36,7 @@ const relatedPosts = [
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-background dot-grid pt-8 pb-16">
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />

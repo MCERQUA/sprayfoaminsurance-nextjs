@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   },
 };
 
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Insurance Requirements for Large Commercial Projects',
+  description: 'Essential insurance requirements for spray foam contractors working on large commercial projects. GL, workers comp, professional liability and more.',
+  author: { '@type': 'Person', name: 'Josh Cotner' },
+  publisher: { '@id': 'https://sprayfoaminsurance.com/#organization' },
+  datePublished: '2023-09-24',
+  dateModified: '2023-09-24',
+  url: 'https://sprayfoaminsurance.com/2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects/',
+};
+
 const relatedPosts = [
   { href: '/2023/09/24/do-i-need-insurance-if-i-subcontract-work', title: 'Do I Need Insurance If I Subcontract Work?', category: 'Business' },
   { href: '/2023/09/24/what-factors-affect-insurance-premiums', title: 'What Factors Affect My Insurance Premiums?', category: 'Pricing' },
@@ -24,6 +36,7 @@ const relatedPosts = [
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-background dot-grid pt-8 pb-16">
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />

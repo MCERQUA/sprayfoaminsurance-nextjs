@@ -15,6 +15,18 @@ export const metadata: Metadata = {
   },
 };
 
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Can I Get Coverage for Mold & Mildew Claims?',
+  description: "Learn about insurance coverage for mold and mildew claims as a spray foam insulation contractor. Builder's risk, inland marine, pollution liability options explained.",
+  author: { '@type': 'Person', name: 'Josh Cotner' },
+  publisher: { '@id': 'https://sprayfoaminsurance.com/#organization' },
+  datePublished: '2023-09-24',
+  dateModified: '2023-09-24',
+  url: 'https://sprayfoaminsurance.com/2023/09/24/can-i-get-coverage-for-mold-and-mildew-claims/',
+};
+
 const relatedPosts = [
   { href: '/2023/09/24/does-insurance-cover-overspray-damage', title: 'Does Insurance Cover Overspray Damage?', category: 'Claims' },
   { href: '/2023/09/24/is-retrofitting-insurance-available-for-spray-foam-contractors', title: 'Is Retrofitting Insurance Available for Spray Foam Contractors?', category: 'Coverage' },
@@ -24,6 +36,7 @@ const relatedPosts = [
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       {/* Hero */}
       <section className="relative overflow-hidden bg-background dot-grid pt-8 pb-16">
         <div className="ambient-orb w-96 h-96 bg-primary opacity-10 -top-20 -left-20" />
