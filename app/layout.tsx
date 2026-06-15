@@ -1,8 +1,28 @@
 import type { Metadata } from 'next';
+import { Montserrat, Inter, Public_Sans } from 'next/font/google';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import JsonLd from '@/components/JsonLd';
 import './globals.css';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['600', '700', '800'],
+  display: 'swap',
+  variable: '--font-headline',
+});
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  display: 'swap',
+  variable: '--font-body',
+});
+const publicSans = Public_Sans({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  display: 'swap',
+  variable: '--font-label',
+});
 
 const SITE_URL = 'https://sprayfoaminsurance.com';
 const OG_IMAGE = `${SITE_URL}/og-image.png`;
@@ -74,15 +94,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&family=Public+Sans:wght@500;600;700&display=swap"
-        />
-      </head>
+    <html lang="en" className={`dark ${montserrat.variable} ${inter.variable} ${publicSans.variable}`}>
       <body className="bg-background text-text font-body antialiased">
         <JsonLd />
         <Nav />
