@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 import Link from 'next/link';
 import { FileText, Award, Clock, FolderOpen, ArrowRight, Phone, CheckCircle } from 'lucide-react';
 

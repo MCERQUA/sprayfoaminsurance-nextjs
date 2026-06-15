@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const post2025 = new Date('2025-07-04');
 
   return [
-    { url: base, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
+    { url: `${base}/`, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${base}/quote/`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${base}/contact-us/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/services/`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
