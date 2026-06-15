@@ -108,6 +108,7 @@ export default function Nav() {
                 alt="Spray Foam Insurance"
                 width={52}
                 height={52}
+                priority
                 className="h-[52px] w-auto object-contain"
               />
               <div className="hidden sm:block leading-none">
@@ -146,7 +147,7 @@ export default function Nav() {
                 href="https://www.facebook.com/sprayfoaminsurance"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#2ea3f2] transition-colors"
+                className="p-2 text-gray-400 hover:text-[#2ea3f2] transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
@@ -155,7 +156,7 @@ export default function Nav() {
                 href="https://twitter.com/sprayfoamins"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#2ea3f2] transition-colors"
+                className="p-2 text-gray-400 hover:text-[#2ea3f2] transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-4 h-4" />
@@ -164,7 +165,7 @@ export default function Nav() {
                 href="https://www.instagram.com/sprayfoaminsurance"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#2ea3f2] transition-colors"
+                className="p-2 text-gray-400 hover:text-[#2ea3f2] transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />

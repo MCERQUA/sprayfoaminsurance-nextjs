@@ -39,7 +39,7 @@ export default function TrustBar() {
       {/* Carrier logo strip */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-wrap items-center justify-center gap-6">
-          <span className="label-text text-gray-500 text-[10px] tracking-widest mr-2 whitespace-nowrap">
+          <span className="label-text text-gray-300 text-[10px] tracking-widest mr-2 whitespace-nowrap">
             Our Carriers
           </span>
           {carrierLogos.map((logo, i) => (

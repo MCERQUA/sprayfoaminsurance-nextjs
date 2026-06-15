@@ -182,7 +182,7 @@ export default function QuoteFormSection() {
                 </p>
                 <button
                   onClick={() => { setForm(EMPTY_FORM); setSubmitted(false); }}
-                  className="mt-2 text-xs text-gray-500 hover:text-gray-300 underline transition-colors"
+                  className="mt-2 text-xs text-gray-300 hover:text-white underline transition-colors"
                 >
                   Submit another request
                 </button>
