@@ -237,6 +237,41 @@ export default function AtticInsulationCertificatePage() {
         </GlassCard>
       </section>
 
+      {/* How Certificates Tie Into Code Compliance */}
+      <section className="max-w-4xl mx-auto px-4 py-8">
+        <p className="label-text text-accent font-label font-semibold text-xs tracking-widest uppercase mb-2">
+          CODE COMPLIANCE
+        </p>
+        <h2 className="font-headline font-bold text-3xl text-text mb-6">
+          How This Ties Into Energy Code Compliance
+        </h2>
+        <div className="space-y-4 text-muted leading-relaxed">
+          <p>
+            Most U.S. jurisdictions adopt some version of the International Energy Conservation
+            Code (IECC), which sets minimum required R-values by climate zone for attics,
+            ceilings, walls, and floors. Building departments enforce these minimums at permit
+            inspection — but attic insulation is typically installed late in a job, right before
+            drywall or roof-deck closure, which means the inspector often only has a narrow window
+            to physically verify it before it&apos;s covered for good.
+          </p>
+          <p>
+            A dated, itemized insulation certificate gives the contractor a documented record that
+            the installed R-value met or exceeded the code requirement for that project&apos;s
+            climate zone at the time of installation — useful if a compliance question comes up
+            after the fact, whether that&apos;s a follow-up inspection, a permit closeout, or a
+            dispute months or years down the line. It&apos;s not a substitute for pulling the
+            correct permit or scheduling the required inspection — it&apos;s a supplementary record
+            that backs up what the inspection should already confirm.
+          </p>
+          <p>
+            The same documentation also tends to satisfy the paperwork requirements for utility
+            and state energy-rebate programs, which generally ask for proof of R-value achieved,
+            the product used, and the installation date before issuing a rebate check — exactly
+            the fields captured on the certificate above.
+          </p>
+        </div>
+      </section>
+
       {/* Request Form */}
       <section id="request" className="max-w-3xl mx-auto px-4 py-8">
         <p className="label-text text-accent font-label font-semibold text-xs tracking-widest uppercase mb-2 text-center">
@@ -245,8 +280,13 @@ export default function AtticInsulationCertificatePage() {
         <h2 className="font-headline font-bold text-3xl text-text mb-3 text-center">
           Request a Certificate
         </h2>
-        <p className="text-muted mb-8 text-center">
+        <p className="text-muted mb-4 text-center">
           Fill out the form below and we'll prepare your official certificate within 1 business day.
+        </p>
+        <p className="text-muted text-sm mb-8 text-center max-w-2xl mx-auto">
+          Contractors: submit the job details from your completed installation and we&apos;ll turn
+          around a certificate you can hand directly to your customer. Homeowners: if your
+          contractor hasn&apos;t provided one, call <a href="tel:8449675247" className="text-primary hover:text-accent transition-colors font-semibold">844-967-5247</a> and we can help you get the documentation you need.
         </p>
 
         <FormCard
@@ -406,24 +446,25 @@ export default function AtticInsulationCertificatePage() {
         </FormCard>
       </section>
 
-      {/* Download Example */}
+      {/* Questions before requesting */}
       <section className="max-w-2xl mx-auto px-4 py-8">
         <GlassCard className="p-8 text-center">
           <Download className="w-12 h-12 text-primary mx-auto mb-4" />
           <h3 className="font-headline font-bold text-text text-xl mb-2">
-            Download Example Certificate
+            Not Sure What You&apos;ll Need to Provide?
           </h3>
           <p className="text-muted text-sm mb-6">
-            Preview what your completed certificate looks like before requesting one.
+            The fields above under &ldquo;What the Certificate Documents&rdquo; are exactly what
+            goes on the finished certificate — installation date, material type, R-value,
+            coverage area, thickness, and contractor information. Have those on hand and the
+            request form only takes a couple of minutes.
           </p>
           <a
-            href="#"
+            href="#request"
             className="secondary-btn inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-label font-semibold"
           >
-            <Download className="w-4 h-4" />
-            Download Example (PDF)
+            Jump to the Request Form
           </a>
-          <p className="text-xs text-muted mt-3">PDF format &bull; 1 page &bull; Printable</p>
         </GlassCard>
       </section>
 

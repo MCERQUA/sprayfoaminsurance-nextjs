@@ -64,7 +64,23 @@ export default function Page() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-surface/50 rounded-2xl p-8 lg:p-12 border border-primary/10">
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Introduction</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mb-4">Table of Contents</h2>
+            <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1.5 mb-10 list-decimal list-inside text-muted text-sm">
+              <li><a href="#introduction" className="hover:text-primary transition-colors">Introduction</a></li>
+              <li><a href="#understanding-equipment-costs" className="hover:text-primary transition-colors">Understanding Equipment Costs</a></li>
+              <li><a href="#why-banking-relationships-matter" className="hover:text-primary transition-colors">Why Banking Relationships Matter</a></li>
+              <li><a href="#professional-banking-approach" className="hover:text-primary transition-colors">Professional Banking Approach</a></li>
+              <li><a href="#business-banking-accounts" className="hover:text-primary transition-colors">Business Banking Accounts</a></li>
+              <li><a href="#types-of-financing" className="hover:text-primary transition-colors">Types of Financing</a></li>
+              <li><a href="#building-your-banking-profile" className="hover:text-primary transition-colors">Building Your Banking Profile</a></li>
+              <li><a href="#equipment-financing-strategies" className="hover:text-primary transition-colors">Equipment Financing Strategies</a></li>
+              <li><a href="#long-term-financial-planning" className="hover:text-primary transition-colors">Long-Term Financial Planning</a></li>
+              <li><a href="#common-mistakes-to-avoid" className="hover:text-primary transition-colors">Common Mistakes to Avoid</a></li>
+              <li><a href="#leveraging-technology" className="hover:text-primary transition-colors">Leveraging Technology</a></li>
+              <li><a href="#your-next-steps" className="hover:text-primary transition-colors">Your Next Steps</a></li>
+            </ol>
+
+            <h2 id="introduction" className="text-2xl font-headline font-bold text-text mt-10 mb-4">Introduction</h2>
             <h4 className="text-lg font-headline font-bold text-text mb-3">The Unique Challenge of Spray Foam Contracting</h4>
             <p className="text-muted leading-relaxed mb-5">Unlike traditional trades that can start with minimal investment, spray foam contractors face equipment costs ranging from $40,000 to $150,000+ just to begin operations.</p>
             <p className="text-muted leading-relaxed mb-5">As a spray foam contractor, you face a unique challenge that sets you apart from many other trades: the enormous upfront investment required just to get started. While a traditional handyman might begin with a few thousand dollars in tools, spray foam contractors need sophisticated equipment rigs that can cost anywhere from $40,000 for basic setups to $150,000 or more for fully equipped commercial trailers.</p>
@@ -72,13 +88,13 @@ export default function Page() {
             <h4 className="text-lg font-headline font-bold text-text mb-3">Your Bank as a Business Partner</h4>
             <p className="text-muted leading-relaxed mb-5">Your bank isn't just a place to deposit checks or get a loan. When you approach banking strategically, your financial institution becomes a true business partner that can help you navigate equipment purchases, manage cash flow, expand your operations, and even provide insights into insurance requirements that complement your spray foam business model. In today's competitive spray foam industry, where equipment insurance coverage can make or break your investment, and where factors affecting insurance premiums include your financial stability, building strong banking relationships becomes even more critical.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Understanding Spray Foam Equipment Costs</h2>
+            <h2 id="understanding-equipment-costs" className="text-2xl font-headline font-bold text-text mt-10 mb-4">Understanding Spray Foam Equipment Costs</h2>
             <h3 className="text-xl font-headline font-bold text-text mb-3">The Reality of Spray Foam Equipment Investment</h3>
             <p className="text-muted leading-relaxed mb-5">A complete spray foam rig is essentially a mobile chemical processing plant. Unlike simple construction tools, spray foam equipment must precisely heat, pump, and mix two chemical components at exact ratios while maintaining specific temperatures throughout the entire system. This complexity drives costs significantly higher than typical contractor equipment.</p>
             <p className="text-muted leading-relaxed mb-5">A basic residential/light commercial setup typically runs $40,000–$60,000, covering an entry-level proportioner ($15,000–$25,000), basic trailer ($8,000–$12,000), generator ($5,000–$8,000), heated hose set ($8,000–$10,000), transfer pumps ($3,000–$5,000), safety equipment ($5,000–$8,000), and initial supplies ($2,000–$3,000).</p>
             <p className="text-muted leading-relaxed mb-5">A professional commercial setup ranges from $80,000–$120,000, with a high-output hydraulic proportioner ($35,000–$45,000), custom-built climate-controlled trailer ($15,000–$25,000), commercial generator ($10,000–$15,000), multiple hose sets ($15,000–$20,000), advanced transfer systems ($8,000–$12,000), comprehensive safety systems ($10,000–$15,000), and professional backup equipment ($5,000–$8,000).</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Why Spray Foam Contractors Need Strong Banking Relationships</h2>
+            <h2 id="why-banking-relationships-matter" className="text-2xl font-headline font-bold text-text mt-10 mb-4">Why Spray Foam Contractors Need Strong Banking Relationships</h2>
             <h4 className="text-lg font-headline font-bold text-text mb-3">Professional Credibility</h4>
             <p className="text-muted leading-relaxed mb-5">Present yourself as a serious business owner in a specialized, high-value industry.</p>
             <h4 className="text-lg font-headline font-bold text-text mb-3">Insurance Integration</h4>
@@ -88,13 +104,21 @@ export default function Page() {
             <h4 className="text-lg font-headline font-bold text-text mb-3">Business Services</h4>
             <p className="text-muted leading-relaxed mb-5">Access cash management, payroll services, and strategic financial advisory.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">How to Approach Your Bank Like a Professional</h2>
+            <h2 id="professional-banking-approach" className="text-2xl font-headline font-bold text-text mt-10 mb-4">How to Approach Your Bank Like a Professional</h2>
             <h4 className="text-lg font-headline font-bold text-text mb-3">Essential Documentation Checklist</h4>
             <p className="text-muted leading-relaxed mb-5">Business Formation Documents (LLC/Corp filings), Federal EIN Letter, Business Licenses and Permits, Personal and Business Financial Statements, Tax Returns (2-3 years), Business Plan Executive Summary, Equipment Specifications and Quotes, Insurance Documentation.</p>
             <h4 className="text-lg font-headline font-bold text-text mb-3">Your Elevator Pitch</h4>
             <p className="text-muted leading-relaxed mb-5">"I'm a spray foam insulation contractor. We help property owners reduce energy costs by 20-40% while improving indoor air quality and structural integrity. It's a specialized trade that requires significant equipment investment, but the demand is growing rapidly as energy codes become stricter and property owners focus on efficiency."</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Types of Financing Available</h2>
+            <h2 id="business-banking-accounts" className="text-2xl font-headline font-bold text-text mt-10 mb-4">Business Banking Accounts</h2>
+            <h4 className="text-lg font-headline font-bold text-text mb-3">Why Separate Business Accounts Matter</h4>
+            <p className="text-muted leading-relaxed mb-5">Running your spray foam business through your personal checking account might feel simpler in year one, but it works against you the moment you need financing. Lenders want to see a clean, separate transaction history that shows real business revenue and expenses — not a mix of job deposits, grocery runs, and personal transfers that they have to untangle by hand. Mixing funds also weakens the liability protection an LLC or corporation is supposed to give you, since courts can treat commingled accounts as evidence that the business isn&apos;t really being run as a separate entity.</p>
+            <h4 className="text-lg font-headline font-bold text-text mb-3">The Core Accounts Most Contractors Need</h4>
+            <p className="text-muted leading-relaxed mb-5">A dedicated business checking account is the starting point — every job deposit, material purchase, and payroll run should flow through it. Many contractors also open a separate savings or reserve account for setting aside money for taxes, equipment repairs, and slow-season cash flow, so those funds aren&apos;t accidentally spent as part of day-to-day operating cash. As revenue grows, a merchant services account for accepting card payments on-site becomes worth the processing fees, since it speeds up collections and gives your bank another data point showing consistent, growing revenue.</p>
+            <h4 className="text-lg font-headline font-bold text-text mb-3">What You&apos;ll Need to Open Them</h4>
+            <p className="text-muted leading-relaxed mb-5">Most banks ask for the same core paperwork as an equipment loan application: your LLC or corporate formation documents, EIN letter, business license, and a government-issued ID for each authorized signer. Getting these accounts open and active early — well before you need to apply for equipment financing — gives you months of transaction history to show a lender instead of a brand-new account with no track record.</p>
+
+            <h2 id="types-of-financing" className="text-2xl font-headline font-bold text-text mt-10 mb-4">Types of Financing Available</h2>
             <h4 className="text-lg font-headline font-bold text-text mb-3">Equipment Loans</h4>
             <p className="text-muted leading-relaxed mb-5">Purpose-built for spray foam rigs with the equipment as collateral. Typically 3-7 year terms with competitive rates for qualified borrowers.</p>
             <h4 className="text-lg font-headline font-bold text-text mb-3">SBA Loans</h4>
