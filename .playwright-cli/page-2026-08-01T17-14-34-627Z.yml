@@ -1,0 +1,196 @@
+- generic [active] [ref=f29e1]:
+  - banner [ref=f29e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f29e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f29e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f29e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f29e10]
+        - generic [ref=f29e11]:
+          - generic [ref=f29e12]: Spray Foam
+          - generic [ref=f29e13]: Insurance.com
+      - generic [ref=f29e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f29e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f29e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f29e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f29e24]:
+        - link "Facebook" [ref=f29e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f29e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f29e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f29e37]:
+      - generic [ref=f29e38]:
+        - link "Home" [ref=f29e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f29e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f29e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f29e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f29e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f29e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f29e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f29e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f29e53]:
+    - generic [ref=f29e55]:
+      - link "Back to Blog" [ref=f29e56] [cursor=pointer]:
+        - /url: /blog/
+      - generic [ref=f29e59]: Pricing
+      - heading "Insurance Premium Factors" [level=1] [ref=f29e61]
+      - generic [ref=f29e62]:
+        - generic [ref=f29e63]: September 24, 2023
+        - generic [ref=f29e66]: Josh Cotner
+    - generic [ref=f29e71]:
+      - generic [ref=f29e72]:
+        - paragraph [ref=f29e73]: Insurance is a financial safety net that provides protection and peace of mind when unexpected events occur. Whether you're insuring your car, home, business, or even your life, understanding the factors that influence insurance premiums is crucial. As someone who has worked extensively in the insurance industry, I'm here to shed light on the key factors that play a significant role in determining your insurance premiums.
+        - heading "Type of Insurance:" [level=2] [ref=f29e74]
+        - paragraph [ref=f29e75]: Different types of insurance cover various risks, and the type of coverage you choose greatly influences your premiums. For example, auto insurance premiums will differ from those for homeowner's insurance or health insurance. The specific coverage you need and its associated risks will dictate your premium costs.
+        - heading "Coverage Amount and Deductibles:" [level=2] [ref=f29e76]
+        - paragraph [ref=f29e77]: The level of coverage you select and the deductible you choose significantly impact your insurance premiums. Higher coverage limits and lower deductibles generally result in higher premiums. Conversely, lower coverage limits and higher deductibles tend to lower your premiums. Finding the right balance between coverage and affordability is essential.
+        - heading "Risk Factors:" [level=2] [ref=f29e78]
+        - paragraph [ref=f29e79]: "Insurers assess risk when determining premiums. Risk factors related to the insured person or property play a significant role:"
+        - paragraph [ref=f29e80]: "Age and Gender: For auto and life insurance, age and gender can influence premiums. Younger drivers often face higher auto insurance rates, while life insurance premiums may vary based on age and gender."
+        - paragraph [ref=f29e81]: "Location: Where you live matters. Areas with higher crime rates or natural disaster risks may result in higher premiums for auto, home, or property insurance."
+        - paragraph [ref=f29e82]: "Health: Health insurance premiums are influenced by factors like your age, health history, and lifestyle choices (e.g., smoking). Poor health can lead to higher premiums."
+        - paragraph [ref=f29e83]: "Driving Record: Auto insurance premiums are affected by your driving history. Accidents, traffic violations, and claims can cause rates to increase."
+        - heading "Insurance History:" [level=2] [ref=f29e84]
+        - paragraph [ref=f29e85]: Your past insurance claims and history play a role in determining your premiums. A record of frequent claims or lapses in coverage may result in higher premiums.
+        - heading "Credit Score:" [level=2] [ref=f29e86]
+        - paragraph [ref=f29e87]: In some cases, insurers use credit scores to assess risk. A lower credit score can lead to higher premiums for auto and homeowner's insurance. Maintaining good credit can help keep premiums in check.
+        - heading "Vehicle or Property Details:" [level=2] [ref=f29e88]
+        - paragraph [ref=f29e89]: "For auto and property insurance, the specifics matter:"
+        - paragraph [ref=f29e90]: "Vehicle Type: The make, model, age, and safety features of your car can affect auto insurance rates. Home Details: Home insurance premiums are influenced by factors like the age and condition of your home, the materials used in construction, and security features."
+        - heading "Annual Mileage (Auto Insurance):" [level=2] [ref=f29e91]
+        - paragraph [ref=f29e92]: The number of miles you drive annually can affect auto insurance premiums. Lower mileage often results in lower rates because it reduces the likelihood of accidents.
+        - heading "Policy Discounts:" [level=2] [ref=f29e93]
+        - paragraph [ref=f29e94]: Many insurers offer discounts for various reasons, such as bundling multiple policies (e.g., home and auto), maintaining a good driving record, or installing security systems. Taking advantage of these discounts can help lower your premiums.
+        - paragraph [ref=f29e95]: Understanding the factors that impact insurance premiums is essential for making informed decisions about your coverage. By evaluating your specific needs, managing risk factors, and seeking discounts where applicable, you can strike a balance between comprehensive coverage and affordable premiums. Remember that insurance is a tool for financial protection, and tailoring your policy to your unique circumstances is key to finding the right coverage at the right price.
+      - link "Back to Blog" [ref=f29e97] [cursor=pointer]:
+        - /url: /blog/
+    - generic [ref=f29e101]:
+      - heading "Related Articles" [level=2] [ref=f29e102]
+      - generic [ref=f29e103]:
+        - generic [ref=f29e104]:
+          - generic [ref=f29e105]: Commercial
+          - heading "Insurance Requirements for Large Commercial Projects" [level=3] [ref=f29e106]
+          - link "Read Article" [ref=f29e107] [cursor=pointer]:
+            - /url: /2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects/
+        - generic [ref=f29e110]:
+          - generic [ref=f29e111]: Equipment
+          - heading "Is My Spray Foam Equipment Covered?" [level=3] [ref=f29e112]
+          - link "Read Article" [ref=f29e113] [cursor=pointer]:
+            - /url: /2023/09/24/is-my-equipment-covered/
+        - generic [ref=f29e116]:
+          - generic [ref=f29e117]: Business
+          - heading "Equipment Financing Guide" [level=3] [ref=f29e118]
+          - link "Read Article" [ref=f29e119] [cursor=pointer]:
+            - /url: /2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/
+    - generic [ref=f29e125]:
+      - generic [ref=f29e126]:
+        - heading "Ready to protect your business?" [level=2] [ref=f29e127]
+        - paragraph [ref=f29e128]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f29e129]:
+        - link "Get a Quote" [ref=f29e130] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f29e133] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f29e136]:
+    - generic [ref=f29e137]:
+      - generic [ref=f29e138]:
+        - generic [ref=f29e139]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f29e140]
+          - paragraph [ref=f29e141]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f29e142] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f29e143] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f29e144]:
+          - heading "Navigate" [level=4] [ref=f29e145]
+          - list [ref=f29e146]:
+            - listitem [ref=f29e147]:
+              - link "Home" [ref=f29e148] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f29e149]:
+              - link "Services" [ref=f29e150] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f29e151]:
+              - link "General Liability Insurance" [ref=f29e152] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f29e153]:
+              - link "Inland Marine" [ref=f29e154] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f29e155]:
+              - link "Commercial Auto" [ref=f29e156] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f29e157]:
+              - link "Surety Bonds" [ref=f29e158] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f29e159]:
+              - link "Environmental Liability" [ref=f29e160] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f29e161]:
+              - link "Safety and Compliance" [ref=f29e162] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f29e163]:
+              - link "Workers' Compensation" [ref=f29e164] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f29e165]:
+              - link "Resources" [ref=f29e166] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f29e167]:
+              - link "Attic Insulation Certificate" [ref=f29e168] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f29e169]:
+              - link "Work Record Form" [ref=f29e170] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f29e171]:
+              - link "Blog" [ref=f29e172] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f29e173]:
+              - link "About Us" [ref=f29e174] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f29e175]:
+              - link "Contact Us" [ref=f29e176] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f29e177]:
+              - link "Quote" [ref=f29e178] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f29e179]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f29e180]
+          - list [ref=f29e181]:
+            - listitem [ref=f29e182]:
+              - link "– General Liability Insurance" [ref=f29e183] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f29e184]:
+              - link "– Commercial Auto Insurance" [ref=f29e185] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f29e186]:
+              - link "– Surety Bonds" [ref=f29e187] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f29e188]:
+              - link "– Environmental Liability Insurance" [ref=f29e189] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f29e190]:
+              - link "– Safety and Compliance Support" [ref=f29e191] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f29e192]:
+              - link "– Workers' Compensation Insurance" [ref=f29e193] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f29e194]:
+        - paragraph [ref=f29e195]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f29e196]:
+          - link "Privacy Policy" [ref=f29e197] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f29e198] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f29e199]

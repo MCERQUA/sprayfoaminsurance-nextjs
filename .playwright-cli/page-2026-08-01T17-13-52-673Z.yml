@@ -1,0 +1,205 @@
+- generic [active] [ref=f25e1]:
+  - banner [ref=f25e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f25e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f25e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f25e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f25e10]
+        - generic [ref=f25e11]:
+          - generic [ref=f25e12]: Spray Foam
+          - generic [ref=f25e13]: Insurance.com
+      - generic [ref=f25e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f25e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f25e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f25e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f25e24]:
+        - link "Facebook" [ref=f25e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f25e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f25e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f25e37]:
+      - generic [ref=f25e38]:
+        - link "Home" [ref=f25e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f25e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f25e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f25e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f25e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f25e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f25e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f25e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f25e53]:
+    - generic [ref=f25e55]:
+      - heading "Inland Marine" [level=1] [ref=f25e56]
+      - paragraph [ref=f25e57]: For Spray Foam Contractors
+      - link "Get a Quote" [ref=f25e58] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=f25e62]:
+      - generic [ref=f25e63]:
+        - heading "General liability" [level=2] [ref=f25e64]
+        - paragraph [ref=f25e65]: Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future.
+        - link "More Details>" [ref=f25e66] [cursor=pointer]:
+          - /url: /services/general-liability-insurance/
+      - generic [ref=f25e67]:
+        - heading "Workers compensation" [level=2] [ref=f25e68]
+        - paragraph [ref=f25e69]: Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment.
+        - link "More Details>" [ref=f25e70] [cursor=pointer]:
+          - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f25e71]:
+        - heading "Commercial auto" [level=2] [ref=f25e72]
+        - paragraph [ref=f25e73]: Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage.
+        - link "More Details>" [ref=f25e74] [cursor=pointer]:
+          - /url: /services/commercial-auto/
+    - generic [ref=f25e75]:
+      - heading "Why Spray Foam Contractors Need Properly Documented Inland Marine Coverage" [level=2] [ref=f25e76]
+      - paragraph [ref=f25e77]: In the world of spray foam contracting, precision and attention to detail are not only integral to your craft but also extend to how you safeguard your valuable equipment. Inland Marine Insurance plays a vital role in this process, ensuring that your assets are protected with the same meticulous care that you apply to your work.
+    - generic [ref=f25e79]:
+      - heading "Documentation as a Pillar of Protection" [level=3] [ref=f25e80]
+      - paragraph [ref=f25e81]: Spray foam contractors are intimately familiar with the specialized equipment, tools, and materials required to deliver exceptional results. These assets are not just tools of the trade; they represent the lifeblood of your business. Precise documentation of these assets is more than just a best practice – it's an essential component of comprehensive protection for your business.
+    - generic [ref=f25e82]:
+      - 'heading "Detailed Equipment Documentation: Why It Matters" [level=2] [ref=f25e83]'
+      - generic [ref=f25e84]:
+        - generic [ref=f25e85]:
+          - heading "Asset Valuation:" [level=3] [ref=f25e86]
+          - paragraph [ref=f25e87]: Detailed documentation provides an accurate account of the value of your equipment. This is particularly crucial when it comes to replacement or repair coverage. With precise records, you can ensure that your assets are adequately insured, down to the last proportioner and spray gun.
+        - generic [ref=f25e88]:
+          - heading "Urgency in Case of Loss:" [level=3] [ref=f25e89]
+          - paragraph [ref=f25e90]: In the unfortunate event of theft or damage, every moment counts. Detailed documentation allows for a swift and informed response. You'll know exactly what's missing or damaged and can act urgently to minimize further losses.
+        - generic [ref=f25e91]:
+          - heading "Chemical and Environmental Considerations:" [level=3] [ref=f25e92]
+          - paragraph [ref=f25e93]: The nature of spray foam work means that you may carry hazardous chemicals and materials. Accurate documentation is essential to ensure the safe and effective containment, cleanup, and disposal of these materials in case of an accident or spill.
+        - generic [ref=f25e94]:
+          - heading "Equipment Expertise:" [level=3] [ref=f25e95]
+          - paragraph [ref=f25e96]: In the event of a loss, having a comprehensive inventory not only speeds up the claims process but also ensures that the insurance adjuster understands the unique nature of your equipment. This avoids situations where valuable components go unrecognized or underappreciated.
+    - generic [ref=f25e98]:
+      - heading "Protecting Your Investment" [level=2] [ref=f25e99]
+      - paragraph [ref=f25e100]: "Your spray foam equipment represents a significant financial investment, and its proper protection is an investment in your business's continued success. Inland Marine Insurance, supported by meticulous documentation, offers peace of mind and the following advantages:"
+      - list [ref=f25e101]:
+        - listitem [ref=f25e102]:
+          - generic [ref=f25e106]: "Accurate Valuation: With detailed records, you can be confident that your equipment is insured for its true value."
+        - listitem [ref=f25e107]:
+          - generic [ref=f25e111]: "Rapid Response: In case of loss or damage, you can respond swiftly and effectively, minimizing downtime and further losses."
+        - listitem [ref=f25e112]:
+          - generic [ref=f25e116]: "Environmental Safety: Precise documentation ensures that any environmental concerns are promptly addressed, reducing potential harm and liability."
+        - listitem [ref=f25e117]:
+          - generic [ref=f25e121]: "Full Equipment Recognition: Your unique equipment is fully recognized and appreciated during the claims process, ensuring that you receive the compensation you deserve."
+    - generic [ref=f25e122]:
+      - heading "Choose Spray Foam Insurance for Comprehensive Inland Marine Coverage" [level=3] [ref=f25e123]
+      - paragraph [ref=f25e124]: Spray Foam Insurance specializes in providing Inland Marine Insurance tailored to the specific needs of spray foam contractors. Our team understands the intricacies of your industry, and we're dedicated to ensuring that your equipment and assets are adequately protected.
+    - generic [ref=f25e125]:
+      - heading "Click Below To Fill Our Our Detailed Inland Marine Form For Spray Foam Contractors" [level=2] [ref=f25e126]
+      - link "Fill Our Our Inland Marine Form" [ref=f25e127] [cursor=pointer]:
+        - /url: /inland-marine/spray_foam_rig_insurance/
+      - paragraph [ref=f25e130]: Ready to discuss your insurance needs or have questions about Inland Marine Insurance? Contact Spray Foam Insurance today. We're here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while safeguarding your valuable assets with precision.
+    - generic [ref=f25e134]:
+      - generic [ref=f25e135]:
+        - heading "Ready to protect your business?" [level=2] [ref=f25e136]
+        - paragraph [ref=f25e137]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f25e138]:
+        - link "Get a Quote" [ref=f25e139] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f25e142] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f25e145]:
+    - generic [ref=f25e146]:
+      - generic [ref=f25e147]:
+        - generic [ref=f25e148]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f25e149]
+          - paragraph [ref=f25e150]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f25e151] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f25e152] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f25e153]:
+          - heading "Navigate" [level=4] [ref=f25e154]
+          - list [ref=f25e155]:
+            - listitem [ref=f25e156]:
+              - link "Home" [ref=f25e157] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f25e158]:
+              - link "Services" [ref=f25e159] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f25e160]:
+              - link "General Liability Insurance" [ref=f25e161] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f25e162]:
+              - link "Inland Marine" [ref=f25e163] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f25e164]:
+              - link "Commercial Auto" [ref=f25e165] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f25e166]:
+              - link "Surety Bonds" [ref=f25e167] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f25e168]:
+              - link "Environmental Liability" [ref=f25e169] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f25e170]:
+              - link "Safety and Compliance" [ref=f25e171] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f25e172]:
+              - link "Workers' Compensation" [ref=f25e173] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f25e174]:
+              - link "Resources" [ref=f25e175] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f25e176]:
+              - link "Attic Insulation Certificate" [ref=f25e177] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f25e178]:
+              - link "Work Record Form" [ref=f25e179] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f25e180]:
+              - link "Blog" [ref=f25e181] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f25e182]:
+              - link "About Us" [ref=f25e183] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f25e184]:
+              - link "Contact Us" [ref=f25e185] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f25e186]:
+              - link "Quote" [ref=f25e187] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f25e188]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f25e189]
+          - list [ref=f25e190]:
+            - listitem [ref=f25e191]:
+              - link "– General Liability Insurance" [ref=f25e192] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f25e193]:
+              - link "– Commercial Auto Insurance" [ref=f25e194] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f25e195]:
+              - link "– Surety Bonds" [ref=f25e196] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f25e197]:
+              - link "– Environmental Liability Insurance" [ref=f25e198] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f25e199]:
+              - link "– Safety and Compliance Support" [ref=f25e200] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f25e201]:
+              - link "– Workers' Compensation Insurance" [ref=f25e202] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f25e203]:
+        - paragraph [ref=f25e204]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f25e205]:
+          - link "Privacy Policy" [ref=f25e206] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f25e207] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f25e208]

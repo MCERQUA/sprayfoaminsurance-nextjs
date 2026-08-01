@@ -1,0 +1,186 @@
+- generic [active] [ref=f23e1]:
+  - banner [ref=f23e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f23e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f23e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f23e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f23e10]
+        - generic [ref=f23e11]:
+          - generic [ref=f23e12]: Spray Foam
+          - generic [ref=f23e13]: Insurance.com
+      - generic [ref=f23e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f23e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f23e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f23e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f23e24]:
+        - link "Facebook" [ref=f23e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f23e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f23e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f23e37]:
+      - generic [ref=f23e38]:
+        - link "Home" [ref=f23e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f23e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f23e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f23e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f23e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f23e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f23e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f23e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f23e53]:
+    - generic [ref=f23e55]:
+      - link "Back to Blog" [ref=f23e56] [cursor=pointer]:
+        - /url: /blog/
+      - generic [ref=f23e59]: Business
+      - heading "Protecting Your Clients" [level=1] [ref=f23e61]
+      - generic [ref=f23e62]:
+        - generic [ref=f23e63]: September 24, 2023
+        - generic [ref=f23e66]: Josh Cotner
+    - generic [ref=f23e71]:
+      - generic [ref=f23e72]:
+        - heading "How Does Insurance Protect Construction Clients?" [level=2] [ref=f23e73]
+        - paragraph [ref=f23e74]: "Welcome, everyone! I'm here to delve into an important topic today: how insurance safeguards the interests of clients in the construction industry. As someone deeply involved in the world of construction insurance, I've witnessed firsthand the vital role it plays in ensuring the well-being of clients. Let's explore the ways insurance serves as a crucial shield for construction clients:"
+        - heading "Financial Safeguard:" [level=2] [ref=f23e75]
+        - paragraph [ref=f23e76]: Construction projects often involve substantial investments. Clients hire contractors with the expectation that their project will be completed on time and within budget. Unfortunately, unforeseen events such as accidents, material damage, or project delays can disrupt these plans. This is where insurance steps in. It serves as a financial safeguard, assuring clients that any unexpected costs resulting from project mishaps will be covered. This ensures that the clients' financial interests are protected.
+        - heading "Liability Coverage:" [level=2] [ref=f23e77]
+        - paragraph [ref=f23e78]: In the construction industry, liability is a significant concern. Clients need assurance that they won't be held responsible for accidents or injuries that occur on their property during a construction project. Insurance policies, such as general liability and workers' compensation, provide clients with this peace of mind. In the event of accidents, injuries, or property damage, the insurance covers the associated costs, sparing clients from potential legal disputes or financial liabilities.
+        - heading "Project Completion Guarantee:" [level=2] [ref=f23e79]
+        - paragraph [ref=f23e80]: Clients hire contractors to get their projects completed successfully. However, construction projects are subject to various risks, such as contractor bankruptcy, subcontractor failures, or unforeseen obstacles. Insurance policies, such as surety bonds, offer clients a guarantee that their project will be completed even if unexpected issues arise. This adds another layer of security for clients, assuring them that their investment will yield the desired results.
+        - heading "Quality Assurance:" [level=2] [ref=f23e81]
+        - paragraph [ref=f23e82]: Insurance requirements often serve as a filter for clients when selecting contractors. Contractors who maintain proper insurance demonstrate their commitment to professionalism and responsibility. This indirectly assures clients of the quality of work they can expect. Clients can have confidence that the contractors they hire are not only skilled but also financially prepared to handle any setbacks that may occur during the project.
+        - heading "Contractual Obligations:" [level=2] [ref=f23e83]
+        - paragraph [ref=f23e84]: Many construction contracts require contractors to carry specific insurance coverage as a condition of the agreement. Clients can leverage these contractual obligations to ensure that their interests are protected. By stipulating insurance requirements in the contract, clients can ensure that contractors are adequately insured, reducing the risk of disputes and complications down the road.
+        - paragraph [ref=f23e85]: In the dynamic and often unpredictable world of construction, insurance stands as a formidable shield that safeguards the interests of clients. It provides financial security, shields against legal liabilities, guarantees project completion, and ensures the quality and professionalism of contractors. Clients who recognize the importance of insurance in construction projects can make more informed decisions, ultimately enjoying a smoother and worry-free construction experience.
+      - link "Back to Blog" [ref=f23e87] [cursor=pointer]:
+        - /url: /blog/
+    - generic [ref=f23e91]:
+      - heading "Related Articles" [level=2] [ref=f23e92]
+      - generic [ref=f23e93]:
+        - generic [ref=f23e94]:
+          - generic [ref=f23e95]: Business
+          - heading "Do I Need Insurance If I Subcontract Work?" [level=3] [ref=f23e96]
+          - link "Read Article" [ref=f23e97] [cursor=pointer]:
+            - /url: /2023/09/24/do-i-need-insurance-if-i-subcontract-work/
+        - generic [ref=f23e100]:
+          - generic [ref=f23e101]: Commercial
+          - heading "Insurance Requirements for Large Commercial Projects" [level=3] [ref=f23e102]
+          - link "Read Article" [ref=f23e103] [cursor=pointer]:
+            - /url: /2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects/
+        - generic [ref=f23e106]:
+          - generic [ref=f23e107]: Business
+          - heading "Equipment Financing Guide" [level=3] [ref=f23e108]
+          - link "Read Article" [ref=f23e109] [cursor=pointer]:
+            - /url: /2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/
+    - generic [ref=f23e115]:
+      - generic [ref=f23e116]:
+        - heading "Ready to protect your business?" [level=2] [ref=f23e117]
+        - paragraph [ref=f23e118]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f23e119]:
+        - link "Get a Quote" [ref=f23e120] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f23e123] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f23e126]:
+    - generic [ref=f23e127]:
+      - generic [ref=f23e128]:
+        - generic [ref=f23e129]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f23e130]
+          - paragraph [ref=f23e131]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f23e132] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f23e133] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f23e134]:
+          - heading "Navigate" [level=4] [ref=f23e135]
+          - list [ref=f23e136]:
+            - listitem [ref=f23e137]:
+              - link "Home" [ref=f23e138] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f23e139]:
+              - link "Services" [ref=f23e140] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f23e141]:
+              - link "General Liability Insurance" [ref=f23e142] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f23e143]:
+              - link "Inland Marine" [ref=f23e144] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f23e145]:
+              - link "Commercial Auto" [ref=f23e146] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f23e147]:
+              - link "Surety Bonds" [ref=f23e148] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f23e149]:
+              - link "Environmental Liability" [ref=f23e150] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f23e151]:
+              - link "Safety and Compliance" [ref=f23e152] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f23e153]:
+              - link "Workers' Compensation" [ref=f23e154] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f23e155]:
+              - link "Resources" [ref=f23e156] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f23e157]:
+              - link "Attic Insulation Certificate" [ref=f23e158] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f23e159]:
+              - link "Work Record Form" [ref=f23e160] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f23e161]:
+              - link "Blog" [ref=f23e162] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f23e163]:
+              - link "About Us" [ref=f23e164] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f23e165]:
+              - link "Contact Us" [ref=f23e166] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f23e167]:
+              - link "Quote" [ref=f23e168] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f23e169]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f23e170]
+          - list [ref=f23e171]:
+            - listitem [ref=f23e172]:
+              - link "– General Liability Insurance" [ref=f23e173] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f23e174]:
+              - link "– Commercial Auto Insurance" [ref=f23e175] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f23e176]:
+              - link "– Surety Bonds" [ref=f23e177] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f23e178]:
+              - link "– Environmental Liability Insurance" [ref=f23e179] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f23e180]:
+              - link "– Safety and Compliance Support" [ref=f23e181] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f23e182]:
+              - link "– Workers' Compensation Insurance" [ref=f23e183] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f23e184]:
+        - paragraph [ref=f23e185]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f23e186]:
+          - link "Privacy Policy" [ref=f23e187] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f23e188] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f23e189]

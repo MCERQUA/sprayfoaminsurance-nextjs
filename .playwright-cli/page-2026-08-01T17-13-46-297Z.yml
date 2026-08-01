@@ -1,0 +1,205 @@
+- generic [active] [ref=f24e1]:
+  - banner [ref=f24e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f24e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f24e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f24e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f24e10]
+        - generic [ref=f24e11]:
+          - generic [ref=f24e12]: Spray Foam
+          - generic [ref=f24e13]: Insurance.com
+      - generic [ref=f24e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f24e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f24e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f24e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f24e24]:
+        - link "Facebook" [ref=f24e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f24e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f24e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f24e37]:
+      - generic [ref=f24e38]:
+        - link "Home" [ref=f24e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f24e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f24e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f24e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f24e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f24e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f24e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f24e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f24e53]:
+    - generic [ref=f24e55]:
+      - generic [ref=f24e56]: FREE RESOURCES
+      - heading "Spray Foam Contractor Resources" [level=1] [ref=f24e57]
+      - paragraph [ref=f24e58]: Everything you need to document jobs, stay compliant, and protect your business.
+      - link "Get a Quote" [ref=f24e59] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=f24e62]:
+      - generic [ref=f24e63]:
+        - paragraph [ref=f24e64]: RESOURCE CENTER
+        - heading "Tools & Downloads for SPF Contractors" [level=2] [ref=f24e65]
+        - paragraph [ref=f24e66]: Access free professional forms, compliance guides, and documentation tools built specifically for spray foam insulation contractors.
+      - generic [ref=f24e67]:
+        - generic [ref=f24e68]:
+          - heading "Work Record Form" [level=3] [ref=f24e73]
+          - paragraph [ref=f24e74]: Document every spray foam job with our professional work record form. Essential for warranty claims and insurance documentation.
+          - link "Access Form" [ref=f24e75] [cursor=pointer]:
+            - /url: /spf-resources/work-record-form/
+        - generic [ref=f24e78]:
+          - heading "Attic Insulation Certificate" [level=3] [ref=f24e83]
+          - paragraph [ref=f24e84]: Official certificates documenting R-value, coverage area, and specs.
+          - link "Get Certificate" [ref=f24e85] [cursor=pointer]:
+            - /url: /attic-insulation-certificate/
+        - generic [ref=f24e88]:
+          - heading "Safety & Compliance Guide" [level=3] [ref=f24e92]
+          - paragraph [ref=f24e93]: OSHA requirements, PPE standards, and chemical handling guidelines.
+          - link "View Guide" [ref=f24e94] [cursor=pointer]:
+            - /url: /safety-and-compliance-support/
+        - generic [ref=f24e97]:
+          - heading "Insurance Checklist" [level=3] [ref=f24e102]
+          - paragraph [ref=f24e103]: Coverages every spray foam contractor should carry before any job.
+          - link "View Checklist" [ref=f24e104] [cursor=pointer]:
+            - /url: /quote/
+    - generic [ref=f24e109]:
+      - generic [ref=f24e110]:
+        - generic [ref=f24e111]: 12+
+        - generic [ref=f24e112]: Resources Available
+      - generic [ref=f24e113]:
+        - generic [ref=f24e114]: 2,000+
+        - generic [ref=f24e115]: Contractors Served
+      - generic [ref=f24e116]:
+        - generic [ref=f24e117]: "50"
+        - generic [ref=f24e118]: States Covered
+      - generic [ref=f24e119]:
+        - generic [ref=f24e120]: 15+
+        - generic [ref=f24e121]: Years Experience
+    - generic [ref=f24e122]:
+      - generic [ref=f24e123]:
+        - paragraph [ref=f24e124]: COMMON QUESTIONS
+        - heading "Frequently Asked Questions" [level=2] [ref=f24e125]
+      - generic [ref=f24e126]:
+        - generic [ref=f24e127]:
+          - button "Are these resources free?" [ref=f24e128] [cursor=pointer]
+          - paragraph [ref=f24e131]: Yes — all downloadable forms and guides are completely free for spray foam contractors. No sign-up required for most resources.
+        - generic [ref=f24e132]:
+          - button "Do I need the work record form on every job?" [ref=f24e133] [cursor=pointer]
+          - paragraph [ref=f24e136]: While not legally required in all states, maintaining detailed work records is strongly recommended for warranty documentation, insurance claims, and client trust.
+        - generic [ref=f24e137]:
+          - button "What is an attic insulation certificate?" [ref=f24e138] [cursor=pointer]
+          - paragraph [ref=f24e141]: An official document recording the type, depth, and R-value of insulation installed in an attic. Many energy rebate programs and home sales require them.
+        - generic [ref=f24e142]:
+          - button "How do I stay OSHA compliant as a spray foam contractor?" [ref=f24e143] [cursor=pointer]
+          - paragraph [ref=f24e146]: OSHA requires proper PPE including supplied-air respirators during application, ventilation standards, and chemical handling procedures for isocyanate products. Our safety guide covers all key requirements.
+    - generic [ref=f24e150]:
+      - generic [ref=f24e151]:
+        - heading "Ready to protect your business?" [level=2] [ref=f24e152]
+        - paragraph [ref=f24e153]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f24e154]:
+        - link "Get a Quote" [ref=f24e155] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f24e158] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f24e161]:
+    - generic [ref=f24e162]:
+      - generic [ref=f24e163]:
+        - generic [ref=f24e164]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f24e165]
+          - paragraph [ref=f24e166]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f24e167] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f24e168] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f24e169]:
+          - heading "Navigate" [level=4] [ref=f24e170]
+          - list [ref=f24e171]:
+            - listitem [ref=f24e172]:
+              - link "Home" [ref=f24e173] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f24e174]:
+              - link "Services" [ref=f24e175] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f24e176]:
+              - link "General Liability Insurance" [ref=f24e177] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f24e178]:
+              - link "Inland Marine" [ref=f24e179] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f24e180]:
+              - link "Commercial Auto" [ref=f24e181] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f24e182]:
+              - link "Surety Bonds" [ref=f24e183] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f24e184]:
+              - link "Environmental Liability" [ref=f24e185] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f24e186]:
+              - link "Safety and Compliance" [ref=f24e187] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f24e188]:
+              - link "Workers' Compensation" [ref=f24e189] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f24e190]:
+              - link "Resources" [ref=f24e191] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f24e192]:
+              - link "Attic Insulation Certificate" [ref=f24e193] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f24e194]:
+              - link "Work Record Form" [ref=f24e195] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f24e196]:
+              - link "Blog" [ref=f24e197] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f24e198]:
+              - link "About Us" [ref=f24e199] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f24e200]:
+              - link "Contact Us" [ref=f24e201] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f24e202]:
+              - link "Quote" [ref=f24e203] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f24e204]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f24e205]
+          - list [ref=f24e206]:
+            - listitem [ref=f24e207]:
+              - link "– General Liability Insurance" [ref=f24e208] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f24e209]:
+              - link "– Commercial Auto Insurance" [ref=f24e210] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f24e211]:
+              - link "– Surety Bonds" [ref=f24e212] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f24e213]:
+              - link "– Environmental Liability Insurance" [ref=f24e214] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f24e215]:
+              - link "– Safety and Compliance Support" [ref=f24e216] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f24e217]:
+              - link "– Workers' Compensation Insurance" [ref=f24e218] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f24e219]:
+        - paragraph [ref=f24e220]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f24e221]:
+          - link "Privacy Policy" [ref=f24e222] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f24e223] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f24e224]

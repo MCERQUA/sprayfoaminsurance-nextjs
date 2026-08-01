@@ -1,0 +1,226 @@
+- generic [active] [ref=f27e1]:
+  - banner [ref=f27e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f27e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f27e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f27e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f27e10]
+        - generic [ref=f27e11]:
+          - generic [ref=f27e12]: Spray Foam
+          - generic [ref=f27e13]: Insurance.com
+      - generic [ref=f27e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f27e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f27e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f27e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f27e24]:
+        - link "Facebook" [ref=f27e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f27e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f27e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f27e37]:
+      - generic [ref=f27e38]:
+        - link "Home" [ref=f27e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f27e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f27e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f27e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f27e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f27e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f27e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f27e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f27e53]:
+    - generic [ref=f27e55]:
+      - generic [ref=f27e56]: GL Insurance
+      - heading "General Liability Insurance for Spray Foam Contractors" [level=1] [ref=f27e57]
+      - paragraph [ref=f27e58]: General Liability Insurance, often referred to as GL Insurance, is a fundamental component of any spray foam contracting business.
+      - link "Get a Quote" [ref=f27e59] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=f27e64]:
+      - link [ref=f27e65] [cursor=pointer]:
+        - /url: /services/general-liability-insurance/
+        - generic [ref=f27e66]:
+          - heading "General liability" [level=3] [ref=f27e70]
+          - paragraph [ref=f27e71]: Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future.
+          - generic [ref=f27e72]: Learn More
+      - link [ref=f27e75] [cursor=pointer]:
+        - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+        - generic [ref=f27e76]:
+          - heading "Workers compensation" [level=3] [ref=f27e83]
+          - paragraph [ref=f27e84]: Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment.
+          - generic [ref=f27e85]: Learn More
+      - link [ref=f27e88] [cursor=pointer]:
+        - /url: /services/commercial-auto/
+        - generic [ref=f27e89]:
+          - heading "Commercial auto" [level=3] [ref=f27e96]
+          - paragraph [ref=f27e97]: Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage.
+          - generic [ref=f27e98]: Learn More
+    - generic [ref=f27e102]:
+      - 'heading "Securing Your Spray Foam Business: The Role of General Liability Insurance" [level=2] [ref=f27e103]'
+      - paragraph [ref=f27e104]: "When it comes to the world of spray foam insulation, you're well aware of the incredible benefits it offers: energy efficiency, moisture control, and improved indoor air quality, to name a few. However, like any business, spray foam contractors face their share of risks and uncertainties. That's where General Liability Insurance from Spray Foam Insurance comes into play, offering a protective shield that ensures your business remains strong and resilient, no matter what challenges arise."
+      - generic [ref=f27e105]:
+        - heading "Understanding the Essentials" [level=3] [ref=f27e106]
+        - paragraph [ref=f27e107]: General Liability Insurance, often referred to as GL Insurance, is a fundamental component of any spray foam contracting business. It's designed to provide coverage in situations where your business may be held responsible for bodily injury, property damage, or advertising injury claims made by third parties.
+    - generic [ref=f27e109]:
+      - heading "Why Is It Essential for Spray Foam Contractors?" [level=2] [ref=f27e111]
+      - generic [ref=f27e112]:
+        - generic [ref=f27e113]:
+          - heading "Protection Against Accidents" [level=3] [ref=f27e117]
+          - paragraph [ref=f27e118]: Spray foam application involves equipment, chemicals, and skilled technicians working on clients' properties. Accidents can happen, and when they do, you need to be prepared. General Liability Insurance from Spray Foam Insurance covers medical expenses and property damage costs resulting from accidents that occur during your operations.
+        - generic [ref=f27e119]:
+          - heading "Property Damage" [level=3] [ref=f27e123]
+          - paragraph [ref=f27e124]: Imagine you're working on a project, and due to an unforeseen mishap, property damage occurs. Without insurance, you could be held liable for the costs of repair or replacement. General Liability Insurance from Spray Foam Insurance steps in to cover these expenses, ensuring your business remains financially stable.
+        - generic [ref=f27e125]:
+          - heading "Safeguarding Against Environmental Hazards" [level=3] [ref=f27e129]
+          - paragraph [ref=f27e130]: In the spray foam industry, it's crucial to address the environmental risks associated with hazardous chemicals. Our General Liability Insurance from Spray Foam Insurance goes beyond standard coverage to protect your business from potential environmental liabilities. This includes coverage for claims related to accidental spills, soil contamination, or other environmental damages that may arise during your operations.
+        - generic [ref=f27e131]:
+          - heading "Managing Hazards in the Spray Foam Workplace" [level=3] [ref=f27e135]
+          - paragraph [ref=f27e136]: In the spray foam industry, unique hazards abound, from the necessity of wearing PPE to the potential risks of chemical exposure. Spray foam contractors face these challenges daily. Workers' Compensation Insurance ensures your team receives the necessary care and support if accidents occur due to these industry-specific risks, helping them recover and return to work as quickly as possible.
+    - generic [ref=f27e139]:
+      - heading "Tailored Coverage for Your Business" [level=2] [ref=f27e140]
+      - paragraph [ref=f27e141]: "Every spray foam contracting business is unique, and that's why General Liability Insurance from Spray Foam Insurance can be tailored to your specific needs. Here are some common components of coverage:"
+      - list [ref=f27e142]:
+        - listitem [ref=f27e143]: "Bodily Injury Coverage: This covers medical expenses, legal fees, and damages when someone is injured on your work site or as a result of your business operations."
+        - listitem [ref=f27e144]: "Property Damage Coverage: This aspect of the policy covers the costs associated with damage to a client's property caused by your work."
+        - listitem [ref=f27e145]: "Environmental Risk Mitigation: Spray foam contractors often deal with chemicals that can be hazardous to the environment. This coverage can protect your business from claims related to environmental damage or pollution caused by your operations."
+        - listitem [ref=f27e146]: "Product Liability Coverage: If there's an issue with the spray foam material itself, such as defects or performance problems, this coverage can protect your business from resulting claims."
+    - generic [ref=f27e148]:
+      - generic [ref=f27e149]:
+        - heading "Peace of Mind in Uncertain Times" [level=2] [ref=f27e150]
+        - paragraph [ref=f27e151]: In the dynamic world of construction and contracting, uncertainties are a part of the game. However, with the right General Liability Insurance in place from Spray Foam Insurance, you can face these uncertainties with confidence, knowing that your business is protected, your clients are reassured, and your reputation remains intact.
+      - generic [ref=f27e152]:
+        - heading "Choose Spray Foam Insurance for Your General Liability Needs" [level=2] [ref=f27e153]
+        - paragraph [ref=f27e154]: At Spray Foam Insurance, we specialize in providing General Liability Insurance tailored to the unique requirements of spray foam contractors. Our experienced team understands the intricacies of your industry, and we're committed to ensuring you have the coverage you need to thrive and succeed.
+        - paragraph [ref=f27e155]: Ready to discuss your insurance needs or have questions about General Liability Insurance? Contact Spray Foam Insurance today. We're here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while ensuring the well-being of your team in this challenging and rewarding industry.
+    - generic [ref=f27e157]:
+      - heading "Frequently Asked Questions" [level=2] [ref=f27e158]
+      - generic [ref=f27e159]:
+        - generic [ref=f27e160]:
+          - button "Does standard GL cover spray foam overspray?" [ref=f27e161] [cursor=pointer]
+          - paragraph [ref=f27e164]: Most standard GL policies either exclude or severely limit coverage for overspray incidents. Our SPF-specific GL policies include overspray coverage as standard, protecting you when foam drifts to neighboring properties or vehicles.
+        - generic [ref=f27e165]:
+          - button "What GL limits do I need as a spray foam contractor?" [ref=f27e166] [cursor=pointer]
+          - paragraph [ref=f27e169]: Most general contractors require subcontractors to carry at least $1M per occurrence / $2M aggregate. If you work on large commercial projects, $2M/$4M or higher may be required. We'll help you meet whatever certificate requirements your clients demand.
+        - generic [ref=f27e170]:
+          - button "What is Products & Completed Operations coverage?" [ref=f27e171] [cursor=pointer]
+          - paragraph [ref=f27e174]: This extends your GL coverage after a job is completed. If a client later claims the foam you installed caused property damage or health issues, Products & Completed Ops coverage responds — protecting you from long-tail claims.
+        - generic [ref=f27e175]:
+          - button "Does GL cover damage to my own equipment or property?" [ref=f27e176] [cursor=pointer]
+          - paragraph [ref=f27e179]: No. General Liability covers third-party claims only. Your own equipment, tools, and materials in transit are covered by Inland Marine / Rig Insurance. Property you're working on may be covered under Builder's Risk or Installation Floater.
+        - generic [ref=f27e180]:
+          - button "Can I get GL coverage if I've had claims?" [ref=f27e181] [cursor=pointer]
+          - paragraph [ref=f27e184]: Yes, in most cases. We work with multiple carriers and specialty markets that understand SPF contractors. Prior claims don't automatically disqualify you, though they may affect pricing. Share your claims history with us and we'll find the best available options.
+        - generic [ref=f27e185]:
+          - button "How quickly can I get a certificate of insurance?" [ref=f27e186] [cursor=pointer]
+          - paragraph [ref=f27e189]: Once your policy is bound and payment is processed, we can issue certificates the same day — often within a few hours. We know contractors can't afford to lose jobs over paperwork delays.
+    - generic [ref=f27e193]:
+      - generic [ref=f27e194]:
+        - heading "Ready to protect your business?" [level=2] [ref=f27e195]
+        - paragraph [ref=f27e196]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f27e197]:
+        - link "Get a Quote" [ref=f27e198] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f27e201] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f27e204]:
+    - generic [ref=f27e205]:
+      - generic [ref=f27e206]:
+        - generic [ref=f27e207]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f27e208]
+          - paragraph [ref=f27e209]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f27e210] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f27e211] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f27e212]:
+          - heading "Navigate" [level=4] [ref=f27e213]
+          - list [ref=f27e214]:
+            - listitem [ref=f27e215]:
+              - link "Home" [ref=f27e216] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f27e217]:
+              - link "Services" [ref=f27e218] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f27e219]:
+              - link "General Liability Insurance" [ref=f27e220] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f27e221]:
+              - link "Inland Marine" [ref=f27e222] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f27e223]:
+              - link "Commercial Auto" [ref=f27e224] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f27e225]:
+              - link "Surety Bonds" [ref=f27e226] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f27e227]:
+              - link "Environmental Liability" [ref=f27e228] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f27e229]:
+              - link "Safety and Compliance" [ref=f27e230] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f27e231]:
+              - link "Workers' Compensation" [ref=f27e232] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f27e233]:
+              - link "Resources" [ref=f27e234] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f27e235]:
+              - link "Attic Insulation Certificate" [ref=f27e236] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f27e237]:
+              - link "Work Record Form" [ref=f27e238] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f27e239]:
+              - link "Blog" [ref=f27e240] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f27e241]:
+              - link "About Us" [ref=f27e242] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f27e243]:
+              - link "Contact Us" [ref=f27e244] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f27e245]:
+              - link "Quote" [ref=f27e246] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f27e247]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f27e248]
+          - list [ref=f27e249]:
+            - listitem [ref=f27e250]:
+              - link "– General Liability Insurance" [ref=f27e251] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f27e252]:
+              - link "– Commercial Auto Insurance" [ref=f27e253] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f27e254]:
+              - link "– Surety Bonds" [ref=f27e255] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f27e256]:
+              - link "– Environmental Liability Insurance" [ref=f27e257] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f27e258]:
+              - link "– Safety and Compliance Support" [ref=f27e259] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f27e260]:
+              - link "– Workers' Compensation Insurance" [ref=f27e261] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f27e262]:
+        - paragraph [ref=f27e263]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f27e264]:
+          - link "Privacy Policy" [ref=f27e265] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f27e266] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f27e267]

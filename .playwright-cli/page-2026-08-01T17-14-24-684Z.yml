@@ -1,0 +1,218 @@
+- generic [active] [ref=f28e1]:
+  - banner [ref=f28e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f28e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f28e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f28e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f28e10]
+        - generic [ref=f28e11]:
+          - generic [ref=f28e12]: Spray Foam
+          - generic [ref=f28e13]: Insurance.com
+      - generic [ref=f28e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f28e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f28e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f28e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f28e24]:
+        - link "Facebook" [ref=f28e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f28e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f28e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f28e37]:
+      - generic [ref=f28e38]:
+        - link "Home" [ref=f28e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f28e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f28e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f28e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f28e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f28e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f28e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f28e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f28e53]:
+    - generic [ref=f28e54]:
+      - generic [ref=f28e55]:
+        - article [ref=f28e56]:
+          - heading [level=1] [ref=f28e57]:
+            - 'link "Spray Foam Equipment Financing: Building Strong Banking Relationships" [ref=f28e58] [cursor=pointer]':
+              - /url: /2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/
+          - paragraph [ref=f28e59]: by mike | Jul 4, 2025 | Insurance Insights
+          - paragraph [ref=f28e60]: Spray foam rigs cost $40k–$150k+. Building strong banking relationships is key to financing your equipment and scaling your business.
+          - link "Read More" [ref=f28e61] [cursor=pointer]:
+            - /url: /2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/
+        - article [ref=f28e62]:
+          - heading [level=1] [ref=f28e63]:
+            - link "Can I Get Coverage for Mold & Mildew Claims?" [ref=f28e64] [cursor=pointer]:
+              - /url: /2023/09/24/can-i-get-coverage-for-mold-and-mildew-claims/
+          - paragraph [ref=f28e65]: by Josh Cotner | Sep 24, 2023 | Insurance Insights
+          - paragraph [ref=f28e66]: Mold and mildew pose real risks for spray foam contractors. Learn how specialized insurance coverage protects your business from moisture-related liability claims.
+          - link "Read More" [ref=f28e67] [cursor=pointer]:
+            - /url: /2023/09/24/can-i-get-coverage-for-mold-and-mildew-claims/
+        - article [ref=f28e68]:
+          - heading [level=1] [ref=f28e69]:
+            - link "Do I Need Insurance If I Subcontract Work?" [ref=f28e70] [cursor=pointer]:
+              - /url: /2023/09/24/do-i-need-insurance-if-i-subcontract-work/
+          - paragraph [ref=f28e71]: by Josh Cotner | Sep 24, 2023 | Insurance Insights
+          - paragraph [ref=f28e72]: Subcontracting introduces unique insurance responsibilities for both general contractors and subcontractors. Understand your obligations before your next project.
+          - link "Read More" [ref=f28e73] [cursor=pointer]:
+            - /url: /2023/09/24/do-i-need-insurance-if-i-subcontract-work/
+        - article [ref=f28e74]:
+          - heading [level=1] [ref=f28e75]:
+            - link "Do I Need Special Coverage for Roofing Projects?" [ref=f28e76] [cursor=pointer]:
+              - /url: /2023/09/24/do-i-need-special-coverage-for-roofing-projects/
+          - paragraph [ref=f28e77]: by Josh Cotner | Sep 24, 2023 | Insurance Insights
+          - paragraph [ref=f28e78]: When spray foam contractors work alongside roofers, special insurance considerations come into play. Know your coverage before combined operations.
+          - link "Read More" [ref=f28e79] [cursor=pointer]:
+            - /url: /2023/09/24/do-i-need-special-coverage-for-roofing-projects/
+        - article [ref=f28e80]:
+          - heading [level=1] [ref=f28e81]:
+            - link "Does Insurance Cover Overspray Damage?" [ref=f28e82] [cursor=pointer]:
+              - /url: /2023/09/24/does-insurance-cover-overspray-damage/
+          - paragraph [ref=f28e83]: by Josh Cotner | Sep 24, 2023 | Insurance Insights
+          - paragraph [ref=f28e84]: Overspray is an inherent risk in spray foam applications. Discover how liability and specialized policies protect you from unintended foam dispersion claims.
+          - link "Read More" [ref=f28e85] [cursor=pointer]:
+            - /url: /2023/09/24/does-insurance-cover-overspray-damage/
+        - article [ref=f28e86]:
+          - heading [level=1] [ref=f28e87]:
+            - link "How Does Insurance Protect My Clients?" [ref=f28e88] [cursor=pointer]:
+              - /url: /2023/09/24/how-does-insurance-protect-my-clients/
+          - paragraph [ref=f28e89]: by Josh Cotner | Sep 24, 2023 | Insurance Insights
+          - paragraph [ref=f28e90]: Your insurance coverage does more than protect your business — it gives clients peace of mind and financial protection throughout every project.
+          - link "Read More" [ref=f28e91] [cursor=pointer]:
+            - /url: /2023/09/24/how-does-insurance-protect-my-clients/
+        - article [ref=f28e92]:
+          - heading [level=1] [ref=f28e93]:
+            - link "Is My Spray Foam Equipment Covered?" [ref=f28e94] [cursor=pointer]:
+              - /url: /2023/09/24/is-my-equipment-covered/
+          - paragraph [ref=f28e95]: by Josh Cotner | Sep 24, 2023 | Insurance Insights
+          - paragraph [ref=f28e96]: Your proportioner, hoses, and rig represent a massive investment. Find out which policies actually cover your equipment and how to avoid coverage gaps.
+          - link "Read More" [ref=f28e97] [cursor=pointer]:
+            - /url: /2023/09/24/is-my-equipment-covered/
+        - article [ref=f28e98]:
+          - heading [level=1] [ref=f28e99]:
+            - link "Is Retrofitting Insurance Available for SPF Contractors?" [ref=f28e100] [cursor=pointer]:
+              - /url: /2023/09/24/is-retrofitting-insurance-available-for-spray-foam-contractors/
+          - paragraph [ref=f28e101]: by Josh Cotner | Sep 24, 2023 | Insurance Insights
+          - paragraph [ref=f28e102]: As energy efficiency demands grow, spray foam contractors are doing more retrofit work. Learn how your insurance can adapt to protect these projects.
+          - link "Read More" [ref=f28e103] [cursor=pointer]:
+            - /url: /2023/09/24/is-retrofitting-insurance-available-for-spray-foam-contractors/
+        - article [ref=f28e104]:
+          - heading [level=1] [ref=f28e105]:
+            - link "Insurance Requirements for Large Commercial Projects" [ref=f28e106] [cursor=pointer]:
+              - /url: /2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects/
+          - paragraph [ref=f28e107]: by Josh Cotner | Sep 24, 2023 | Insurance Insights
+          - paragraph [ref=f28e108]: Commercial spray foam projects come with elevated insurance requirements. This guide covers the policies needed to win bids and stay compliant.
+          - link "Read More" [ref=f28e109] [cursor=pointer]:
+            - /url: /2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects/
+        - article [ref=f28e110]:
+          - heading [level=1] [ref=f28e111]:
+            - link "What Factors Affect My Insurance Premiums?" [ref=f28e112] [cursor=pointer]:
+              - /url: /2023/09/24/what-factors-affect-insurance-premiums/
+          - paragraph [ref=f28e113]: by Josh Cotner | Sep 24, 2023 | Insurance Insights
+          - paragraph [ref=f28e114]: From claims history to crew size and revenue, many factors shape your spray foam insurance premiums. Understand what drives costs to manage them.
+          - link "Read More" [ref=f28e115] [cursor=pointer]:
+            - /url: /2023/09/24/what-factors-affect-insurance-premiums/
+      - link "« Older Entries" [ref=f28e117] [cursor=pointer]:
+        - /url: /blog/
+  - contentinfo [ref=f28e118]:
+    - generic [ref=f28e119]:
+      - generic [ref=f28e120]:
+        - generic [ref=f28e121]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f28e122]
+          - paragraph [ref=f28e123]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f28e124] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f28e125] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f28e126]:
+          - heading "Navigate" [level=4] [ref=f28e127]
+          - list [ref=f28e128]:
+            - listitem [ref=f28e129]:
+              - link "Home" [ref=f28e130] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f28e131]:
+              - link "Services" [ref=f28e132] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f28e133]:
+              - link "General Liability Insurance" [ref=f28e134] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f28e135]:
+              - link "Inland Marine" [ref=f28e136] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f28e137]:
+              - link "Commercial Auto" [ref=f28e138] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f28e139]:
+              - link "Surety Bonds" [ref=f28e140] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f28e141]:
+              - link "Environmental Liability" [ref=f28e142] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f28e143]:
+              - link "Safety and Compliance" [ref=f28e144] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f28e145]:
+              - link "Workers' Compensation" [ref=f28e146] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f28e147]:
+              - link "Resources" [ref=f28e148] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f28e149]:
+              - link "Attic Insulation Certificate" [ref=f28e150] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f28e151]:
+              - link "Work Record Form" [ref=f28e152] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f28e153]:
+              - link "Blog" [ref=f28e154] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f28e155]:
+              - link "About Us" [ref=f28e156] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f28e157]:
+              - link "Contact Us" [ref=f28e158] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f28e159]:
+              - link "Quote" [ref=f28e160] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f28e161]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f28e162]
+          - list [ref=f28e163]:
+            - listitem [ref=f28e164]:
+              - link "– General Liability Insurance" [ref=f28e165] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f28e166]:
+              - link "– Commercial Auto Insurance" [ref=f28e167] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f28e168]:
+              - link "– Surety Bonds" [ref=f28e169] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f28e170]:
+              - link "– Environmental Liability Insurance" [ref=f28e171] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f28e172]:
+              - link "– Safety and Compliance Support" [ref=f28e173] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f28e174]:
+              - link "– Workers' Compensation Insurance" [ref=f28e175] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f28e176]:
+        - paragraph [ref=f28e177]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f28e178]:
+          - link "Privacy Policy" [ref=f28e179] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f28e180] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f28e181]
