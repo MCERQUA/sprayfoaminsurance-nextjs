@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { Network, ShieldCheck, Gauge, Headset } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CTABar from '@/components/CTABar';
@@ -13,10 +14,34 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://sprayfoaminsurance.com/about-us' },
 };
 
-const team = [
-  { name: 'Jessica Rabbit', role: 'Consultant Officer', photo: '/assets/images/team/team-01.jpg' },
-  { name: 'Robert Brown', role: 'Product Analyst', photo: '/assets/images/team/team-02.jpg' },
-  { name: 'Elaine Chao', role: 'Service Officer', photo: '/assets/images/team/team-03.jpg' },
+// Agency capabilities — replaces a placeholder "team" section (removed; the
+// live site's team cards were unedited Divi demo data with a stock photo and
+// a cartoon-character name, not real staff — we don't fabricate people).
+const capabilities = [
+  {
+    icon: Network,
+    title: 'Multi-Carrier Marketplace',
+    description:
+      'We shop your business across multiple A-rated carriers instead of tying you to one company’s appetite, so you get real options and competitive pricing.',
+  },
+  {
+    icon: Gauge,
+    title: 'Proprietary Quote Engine',
+    description:
+      'Give us your information once and we shop it to multiple carriers for you — no re-entering the same details on call after call.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Coast-to-Coast Licensing',
+    description:
+      'We write coverage for spray foam contractors nationwide, so your policy travels with your business as you take on jobs in new states.',
+  },
+  {
+    icon: Headset,
+    title: 'Dedicated Claims Support',
+    description:
+      'When something goes wrong on the job, you get a direct line to someone who understands spray foam risk — not a generic call center queue.',
+  },
 ];
 
 export default function AboutUsPage() {
@@ -118,25 +143,24 @@ export default function AboutUsPage() {
         ]}
       />
 
-      {/* Team — replicated verbatim from live site (Divi demo placeholder data, see report) */}
+      {/* Capabilities — what the agency actually brings to a contractor, not a
+          fabricated staff roster */}
       <section className="bg-background py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {team.map((member) => (
-              <div key={member.name} className="glass-card overflow-hidden">
-                <div className="relative w-full h-64">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
+          <div className="text-center mb-12">
+            <span className="label-text">WHAT WE BRING TO THE TABLE</span>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mt-3">
+              Built Around Carrier Relationships, Not Headcount
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {capabilities.map(({ icon: Icon, title, description }) => (
+              <div key={title} className="glass-card p-6">
+                <div className="w-11 h-11 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                  <Icon className="w-5 h-5 text-primary" />
                 </div>
-                <div className="p-5">
-                  <h3 className="font-headline font-bold text-text text-lg">{member.name}</h3>
-                  <p className="text-muted text-sm">{member.role}</p>
-                </div>
+                <h3 className="font-headline font-bold text-text text-base mb-2">{title}</h3>
+                <p className="text-muted text-sm leading-relaxed">{description}</p>
               </div>
             ))}
           </div>

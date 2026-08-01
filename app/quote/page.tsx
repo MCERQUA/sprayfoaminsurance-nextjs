@@ -224,7 +224,7 @@ export default function QuotePage() {
             <p className="text-xs text-muted mb-2">
               Please text a picture of your drivers license, current auto policy info, vin
               number/registration to 480-381-8949 or email
-              josh@contractorschoiceagency.tempurl.host.
+              Josh@sprayfoaminsurance.com.
             </p>
             <div className="space-y-2">
               {['$100,000', '$500,000', '$1,000,000', 'Not Needed'].map((opt) => (

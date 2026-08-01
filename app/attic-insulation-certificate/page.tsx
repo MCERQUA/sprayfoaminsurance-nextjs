@@ -108,6 +108,83 @@ export default function AtticInsulationCertificatePage() {
         ctaHref="#request"
       />
 
+      {/* What Is an Attic Insulation Certificate — narrative intro */}
+      <section className="max-w-4xl mx-auto px-4 py-16">
+        <p className="label-text text-accent font-label font-semibold text-xs tracking-widest uppercase mb-2">
+          THE BASICS
+        </p>
+        <h2 className="font-headline font-bold text-3xl text-text mb-6">
+          What Is an Attic Insulation Certificate?
+        </h2>
+        <div className="space-y-4 text-muted leading-relaxed">
+          <p>
+            An attic insulation certificate is a signed, dated document that records exactly what
+            insulation work was performed in a home or building&apos;s attic: the product installed,
+            the R-value achieved, the coverage area, the installed thickness, and who did the
+            work. Think of it as the paper trail that proves an insulation job actually happened
+            the way it was supposed to — because unlike a new roof or a repainted room, insulation
+            disappears behind drywall and roof decking the moment the job is done. Once the attic
+            hatch closes, there&apos;s no visual way for a homeowner, inspector, appraiser, or
+            insurance adjuster to verify what&apos;s up there without a physical inspection or a
+            document that tells them.
+          </p>
+          <p>
+            For spray foam contractors specifically, a certificate matters even more than it does
+            for batt or blown-in insulation. Spray foam is a chemical, in-place product — its
+            performance depends on the correct product being used, applied at the correct
+            thickness, under the correct conditions. A certificate that documents the exact
+            product, lot information where applicable, thickness, and R-value gives everyone
+            downstream (the homeowner, a future buyer, a rebate administrator, an inspector) a way
+            to confirm the job meets spec without tearing into finished surfaces.
+          </p>
+          <p>
+            In practice, the certificate functions as both a completion record for the contractor
+            and a piece of due-diligence documentation for the property. It&apos;s not a warranty
+            and it&apos;s not an insurance policy — it&apos;s a factual record of what was installed,
+            when, and by whom.
+          </p>
+        </div>
+      </section>
+
+      {/* Who Needs One */}
+      <section className="max-w-4xl mx-auto px-4 pb-16">
+        <p className="label-text text-accent font-label font-semibold text-xs tracking-widest uppercase mb-2">
+          WHO NEEDS ONE
+        </p>
+        <h2 className="font-headline font-bold text-3xl text-text mb-6">
+          Who Actually Needs an Attic Insulation Certificate
+        </h2>
+        <div className="space-y-4 text-muted leading-relaxed">
+          <p>
+            <strong className="text-text">Spray foam contractors</strong> need a standard way to
+            close out every job with a document that protects them if a customer, inspector, or
+            future buyer ever questions what was installed. Handing over a certificate at the end
+            of a job is faster and more professional than trying to reconstruct installation
+            details from memory or old invoices months or years later.
+          </p>
+          <p>
+            <strong className="text-text">Homeowners</strong> need one anytime they&apos;re asked to
+            prove what insulation is in their attic — for a rebate application, a home sale, a
+            refinance appraisal, or simply for their own records. Most homeowners never see their
+            own attic after move-in, so the certificate is often the only documentation they&apos;ll
+            ever have of what&apos;s actually up there.
+          </p>
+          <p>
+            <strong className="text-text">Real estate agents and buyers</strong> in a home sale
+            frequently request insulation documentation during due diligence, particularly for
+            older homes being upgraded or homes marketed with energy-efficiency as a selling
+            point. A certificate answers the "what kind and how much" question without opening
+            the attic hatch.
+          </p>
+          <p>
+            <strong className="text-text">Building departments and code officials</strong> may
+            require proof of installed R-values to close out a permit tied to insulation work,
+            particularly on additions, renovations, or new construction where the insulation gets
+            covered before final inspection.
+          </p>
+        </div>
+      </section>
+
       {/* What the Certificate Documents */}
       <section className="max-w-7xl mx-auto px-4 py-16">
         <p className="label-text text-accent font-label font-semibold text-xs tracking-widest uppercase mb-2">
