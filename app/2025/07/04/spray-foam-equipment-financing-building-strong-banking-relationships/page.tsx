@@ -49,9 +49,10 @@ export default function Page() {
             <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs label-text text-primary">Business</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold leading-tight mb-6">
-            <span className="blue-gradient-text">Spray Foam Equipment Financing: Building Strong Banking Relationships</span>
+            <span className="blue-gradient-text">Spray Foam Equipment Financing</span>
           </h1>
-          <div className="flex items-center gap-6 text-sm text-muted">
+          <p className="text-lg text-muted mt-2">Building Strong Banking Relationships for Contractor Success</p>
+          <div className="flex items-center gap-6 text-sm text-muted mt-4">
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> July 4, 2025</span>
             <span className="flex items-center gap-1.5"><User className="w-4 h-4" /> Josh Cotner</span>
           </div>
@@ -64,6 +65,7 @@ export default function Page() {
           <div className="bg-surface/50 rounded-2xl p-8 lg:p-12 border border-primary/10">
 
             <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Introduction</h2>
+            <h4 className="text-lg font-headline font-bold text-text mb-3">The Unique Challenge of Spray Foam Contracting</h4>
             <p className="text-muted leading-relaxed mb-5">Unlike traditional trades that can start with minimal investment, spray foam contractors face equipment costs ranging from $40,000 to $150,000+ just to begin operations. As a spray foam contractor, you face a unique challenge that sets you apart from many other trades: the enormous upfront investment required just to get started. While a traditional handyman might begin with a few thousand dollars in tools, spray foam contractors need sophisticated equipment rigs that can cost anywhere from $40,000 for basic setups to $150,000 or more for fully equipped commercial trailers.</p>
             <p className="text-muted leading-relaxed mb-5">This substantial equipment investment means that most spray foam contractors will need financing to purchase their rigs, and this financing requirement presents both a challenge and an opportunity. The challenge is obvious: qualifying for loans of this magnitude requires strong business banking relationships and careful financial planning. The opportunity, however, is that by building these relationships correctly from the beginning, you position your business for long-term success and growth opportunities that many contractors never achieve.</p>
 

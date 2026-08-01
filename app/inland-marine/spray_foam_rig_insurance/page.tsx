@@ -1,12 +1,10 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import CTABar from '@/components/CTABar';
-import StatBar from '@/components/StatBar';
-import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
+import FormCard from '@/components/FormCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { CheckCircle } from 'lucide-react';
-import { rigInsuranceFaqs } from '@/lib/faqs';
+import { clsx } from 'clsx';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Rig & Equipment Insurance | Inland Marine',
@@ -26,75 +24,55 @@ export const metadata: Metadata = {
   },
 };
 
-const rigItems = [
+const formSteps = ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5', 'Page 6', 'Finish'];
+
+const coverList = [
   {
-    range: '$15K–$45K',
-    title: 'Proportioner System',
-    description:
-      'Hydraulic and pneumatic proportioners covered against fire, theft, collision, and accidental damage.',
+    label: 'Tools & Equipment:',
+    body: 'Essential for contractors and business that frequently move equipment between job sites.',
   },
   {
-    range: '$8K–$20K',
-    title: 'Heated Hose Sets',
-    description:
-      "200' and 300' heated hose assemblies — damage, theft, and fire covered.",
+    label: 'Goods in Transit:',
+    body: 'For businesses that ship products domestically, covering the transportation of goods via trucks, trains, or other land-based methods.',
   },
   {
-    range: '$5K–$15K',
-    title: 'Generator',
-    description:
-      'Commercial generators (20–60kW) — theft, fire, vandalism, and physical damage.',
+    label: 'Fine Arts & Antiques:',
+    body: 'For collectors and businesses that transport valuable artwork or antiques.',
   },
   {
-    range: '$8K–$25K',
-    title: 'Trailer & Frame',
-    description:
-      'Custom spray foam trailers including mounted equipment and climate control systems.',
+    label: 'Electronics:',
+    body: 'Ideal for technology companies or individuals who transport high-value electronics such as laptops, cameras, or servers.',
   },
   {
-    range: '$3K–$8K',
-    title: 'Transfer Pumps & Accessories',
-    description: 'Drum pumps, agitators, and material handling equipment.',
-  },
-  {
-    range: '$2K–$5K',
-    title: 'Spray Guns & Hand Tools',
-    description: 'Guns, applicators, and portable hand tools covered under your rig policy.',
+    label: 'Construction Materials:',
+    body: 'Covers the raw materials and supplies used for building or infrastructure projects while they are being transported or stored temporarily off-site.',
   },
 ];
 
-const highlights = [
-  'Replacement Cost (no depreciation)',
-  'On-site + in transit',
-  'Theft & vandalism included',
-  'Bundled policy discounts',
+const whyList = [
+  'Mobile or Movable Property',
+  'Property in Transit',
+  'Property Temporarily Stores Off-Site',
 ];
 
-const tiers = [
+const whoNeedsList = [
   {
-    labelClass: 'text-muted',
-    label: 'ENTRY LEVEL',
-    title: 'Basic Rig — $40K–$60K',
-    description: 'Entry-level proportioner, standard trailer, single generator.',
-    price: '~$1,200–$1,800/year',
+    label: 'Contractors:',
+    body: 'Protect valuable equipment as you move from one job site to another.',
   },
   {
-    labelClass: 'text-accent',
-    label: 'MOST POPULAR',
-    title: 'Standard Rig — $60K–$100K',
-    description: 'Hydraulic proportioner, custom trailer, commercial generator.',
-    price: '~$1,800–$2,800/year',
+    label: 'Retailers & Wholesalers:',
+    body: 'Ensure goods are covered while being transported to customers or between business locations.',
   },
   {
-    labelClass: 'text-primary',
-    label: 'FULL COMMERCIAL',
-    title: 'Premium Rig — $100K+',
-    description:
-      'High-output systems, fully equipped commercial trailer, dual generators.',
-    price: '~$2,800–$4,500/year',
+    label: 'Art Collectors & Dealers:',
+    body: 'Secure coverages for high-value pieces while in transit or stored temporarily off-site.',
+  },
+  {
+    label: 'IT Professionals:',
+    body: 'Safeguard servers, computers, and other technology equipment during transport or setup at client locations.',
   },
 ];
-
 
 export default function SprayFoamRigInsurancePage() {
   return (
@@ -109,82 +87,168 @@ export default function SprayFoamRigInsurancePage() {
         />
       </div>
 
-      <PageHero
-        title="Spray Foam Rig & Equipment Insurance"
-        subtitle="Purpose-built coverage for spray foam proportioners, heated hoses, generators, and trailers. Don't let equipment loss shut down your business."
-        badge="RIG COVERAGE"
-        ctaText="Get a Quote"
-        ctaHref="/quote"
-      />
+      <PageHero title="Inland Marine For Spray Foam Contractors" />
 
-      <StatBar
-        stats={[
-          { label: 'Equipment Types', value: '12+' },
-          { label: 'Avg Rig Replacement', value: '$95K' },
-          { label: 'Claims Response', value: '24hr' },
-          { label: 'SPF Contractors', value: '500+' },
-        ]}
-      />
-
-      {/* What's Covered on Your Rig */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-headline font-bold text-text mb-2">
-          What's Covered on Your Rig
-        </h2>
-        <p className="text-muted mb-10 max-w-2xl">
-          Every component of a professional spray foam rig can be scheduled on your inland marine
-          policy. Here are the items we cover most often.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {rigItems.map((item) => (
-            <GlassCard key={item.title} className="p-6">
-              <p className="label-text text-accent text-xs mb-1">{item.range}</p>
-              <h3 className="font-headline font-bold text-text mb-2">{item.title}</h3>
-              <p className="text-muted text-sm">{item.description}</p>
-            </GlassCard>
-          ))}
-        </div>
-      </section>
-
-      {/* Coverage Highlights */}
-      <section className="max-w-5xl mx-auto px-4 py-4">
-        <GlassCard className="p-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {highlights.map((h) => (
-              <div key={h} className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
-                <span className="font-label font-semibold text-sm text-text">{h}</span>
+      {/* Multi-step lead form */}
+      <section className="max-w-3xl mx-auto px-4 pb-12">
+        <FormCard title="Spray Foam Contractors Inland Marine Form">
+          {/* Step indicator */}
+          <div className="flex items-center justify-between mb-8 overflow-x-auto">
+            {formSteps.map((step, i) => (
+              <div key={step} className="flex items-center flex-1 last:flex-none">
+                <div className="flex flex-col items-center gap-1 shrink-0">
+                  <span
+                    className={clsx(
+                      'w-3 h-3 rounded-full',
+                      i === 0 ? 'bg-primary' : 'bg-muted/30'
+                    )}
+                  />
+                  <span
+                    className={clsx(
+                      'text-[10px] font-label whitespace-nowrap',
+                      i === 0 ? 'text-primary font-semibold' : 'text-muted'
+                    )}
+                  >
+                    {step}
+                  </span>
+                </div>
+                {i < formSteps.length - 1 && (
+                  <span className="h-px flex-1 bg-muted/20 mx-1" />
+                )}
               </div>
             ))}
           </div>
+
+          <form className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-label font-semibold text-text mb-1.5">
+                  Company/Account Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Insurance account name"
+                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-label font-semibold text-text mb-1.5">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  placeholder="E.g. +1 300 400 5000"
+                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="block text-sm font-label font-semibold text-text mb-1.5">
+                Email Address
+              </label>
+              <input
+                type="email"
+                placeholder="E.g. john@doe.com"
+                className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
+              />
+            </div>
+            <div className="flex items-center justify-between pt-2">
+              <span className="text-xs text-muted">
+                Click to Save Your Progress and Email Yourself the Link
+              </span>
+              <button
+                type="submit"
+                className="primary-btn px-8 py-2.5 rounded-full font-label font-semibold text-sm shrink-0"
+              >
+                Next
+              </button>
+            </div>
+          </form>
+        </FormCard>
+      </section>
+
+      {/* Educational content */}
+      <section className="max-w-4xl mx-auto px-4 pb-16">
+        <GlassCard className="p-8">
+          <h2 className="font-headline font-bold text-text text-2xl mb-1 text-center">
+            Inland Marine Insurance
+          </h2>
+          <h4 className="font-headline font-semibold text-primary text-sm text-center mb-6">
+            Protect Your Property on the Move
+          </h4>
+
+          <p className="text-muted text-sm mb-4">
+            Inland marine insurance provides coverage for your property that is in transit,
+            movable, or used for specialized purposes. Whether you&apos;re transporting goods,
+            equipment, or valuable materials, inland marine insurance ensures you&apos;re
+            protected against loss or damage while on the go.
+          </p>
+          <p className="text-muted text-sm mb-6">
+            At Spray Foam Insurance, we understand that certain items don&apos;t stay in one
+            place and need coverage that travels with them. Our inland marine policies are
+            designed to safeguard your high-value assets, ensuring peace of mind wherever your
+            business takes you.
+          </p>
+
+          <h3 className="font-headline font-bold text-text mb-2">
+            What Does Inland Marine Insurance Cover?
+          </h3>
+          <p className="text-muted text-sm mb-3">
+            Inland marine insurance covers a broad range of movable property, including:
+          </p>
+          <ul className="space-y-2 mb-6 list-disc list-inside">
+            {coverList.map((item) => (
+              <li key={item.label} className="text-muted text-sm">
+                <span className="font-semibold text-text">{item.label}</span> {item.body}
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="font-headline font-bold text-text mb-2">Why Inland Marine Insurance?</h3>
+          <p className="text-muted text-sm mb-3">
+            Many assume that standard property insurance will cover these items, but property
+            insurance generally protects stationary property. Inland marine insurance provides
+            the extra layer of protection for:
+          </p>
+          <ul className="space-y-1 mb-4 list-disc list-inside">
+            {whyList.map((item) => (
+              <li key={item} className="text-muted text-sm font-semibold text-text">
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-muted text-sm mb-6">
+            If you regularly transport goods or equipment, rely on technology in different
+            locations, or have other valuable assets on the move, inland marine insurance is an
+            essential addition to your coverage plan.
+          </p>
+
+          <h3 className="font-headline font-bold text-text mb-2">Who Needs Inland Insurance?</h3>
+          <ul className="space-y-2 mb-6 list-disc list-inside">
+            {whoNeedsList.map((item) => (
+              <li key={item.label} className="text-muted text-sm">
+                <span className="font-semibold text-text">{item.label}</span> {item.body}
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="font-headline font-bold text-text mb-2">
+            Tailored Solutions For Your Business
+          </h3>
+          <p className="text-muted text-sm mb-6">
+            At Spray Foam Insurance, we provide customized inland marine insurance policies based
+            on your unique needs. Our expert team will work with you to assess your risks and
+            design a policy that covers your property while in motion or storage.
+          </p>
+
+          <h3 className="font-headline font-bold text-text mb-2">Get a Quote Today!</h3>
+          <p className="text-muted text-sm">
+            Don&apos;t leave your property unprotected while it&apos;s on the move. Contact Spray
+            Foam Insurance today to learn more about inland marine insurance and get a
+            personalized quote. Let us help you secure your assets, no matter where your business
+            takes you.
+          </p>
         </GlassCard>
-      </section>
-
-      {/* Coverage Tiers */}
-      <section className="max-w-7xl mx-auto px-4 py-8">
-        <h2 className="text-3xl font-headline font-bold text-text mb-8">Coverage Tiers</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {tiers.map((tier) => (
-            <GlassCard key={tier.title} className="p-6">
-              <p className={`label-text text-xs mb-1 ${tier.labelClass}`}>{tier.label}</p>
-              <h3 className="font-headline font-bold text-text text-xl mb-3">{tier.title}</h3>
-              <p className="text-muted text-sm mb-4">{tier.description}</p>
-              <p className="text-primary font-bold">{tier.price}</p>
-            </GlassCard>
-          ))}
-        </div>
-        <p className="text-xs text-muted text-center italic mt-6">
-          Actual premiums vary based on equipment age, location, claims history, and deductible.
-          Get a custom quote for your specific rig.
-        </p>
-      </section>
-
-      {/* FAQ */}
-      <section className="max-w-4xl mx-auto px-4 py-8">
-        <h2 className="text-3xl font-headline font-bold text-text mb-8">
-          Frequently Asked Questions
-        </h2>
-        <FAQSection items={rigInsuranceFaqs} />
       </section>
 
       <CTABar />

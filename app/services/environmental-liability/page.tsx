@@ -3,7 +3,8 @@ import PageHero from '@/components/PageHero';
 import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
-import { CheckCircle, AlertTriangle } from 'lucide-react';
+import ServiceCard from '@/components/ServiceCard';
+import { AlertTriangle, Shield, Users, Truck } from 'lucide-react';
 import { environmentalFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
@@ -35,146 +36,136 @@ export default function EnvironmentalLiabilityPage() {
 
       <PageHero
         title="Environmental Liability Insurance for Spray Foam Contractors"
-        subtitle="Protection against pollution claims, chemical exposure, off-gassing complaints, and environmental contamination from SPF operations."
+        subtitle="Environmental Liability Insurance is more than just an added layer of protection; it's a testament to your dedication to responsible and sustainable practices."
         ctaText="Get a Quote"
         ctaHref="/quote"
         badge="Environmental Liability"
       />
 
-      <section className="bg-background py-16">
+      <section className="bg-surface py-12 border-b border-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="label-text">ENVIRONMENTAL RISKS</span>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mt-3 mb-4">
-              Why Spray Foam Creates Environmental Liability
-            </h2>
-            <p className="text-muted max-w-2xl mx-auto font-label">
-              SPF involves two reactive chemicals — A-side isocyanates and B-side polyols — that create real environmental and health risks during and after application. Standard insurance policies were not designed to handle these exposures, leaving contractors dangerously uncovered.
-            </p>
-          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
-                <AlertTriangle className="w-5 h-5 text-highlight" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Chemical Off-Gassing</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                During and after installation, SPF releases volatile organic compounds (VOCs) and isocyanate vapors. Occupants may file claims for health impacts, property damage, or the cost of temporary relocation.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
-                <AlertTriangle className="w-5 h-5 text-highlight" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Overspray &amp; Drift Contamination</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Wind-blown foam can contaminate neighboring properties, waterways, soil, or vegetation. Cleanup and remediation costs can be significant.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
-                <AlertTriangle className="w-5 h-5 text-highlight" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Improper Disposal</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Chemical waste, empty drums, and contaminated materials require proper disposal. Improper handling can create regulatory fines and environmental remediation liability.
-              </p>
-            </GlassCard>
+            <ServiceCard
+              icon={Shield}
+              title="General liability"
+              description="Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future."
+              href="/services/general-liability-insurance"
+            />
+            <ServiceCard
+              icon={Users}
+              title="Workers compensation"
+              description="Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment."
+              href="/services/workers-compensation-insurance-for-spray-foam-contractors"
+            />
+            <ServiceCard
+              icon={Truck}
+              title="Commercial auto"
+              description="Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage."
+              href="/services/commercial-auto"
+            />
           </div>
         </div>
       </section>
 
-      <section className="bg-surface border-y border-primary/10 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text">
-              What Environmental Liability Insurance Covers
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Pollution Cleanup Costs</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Pays for remediation of contaminated soil, water, or structures resulting from your operations.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Third-Party Bodily Injury</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Covers medical costs and legal defense if a third party claims illness or injury from chemical exposure.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Property Damage</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Pays for damage to neighboring properties caused by chemical drift, overspray, or contamination.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Legal Defense Costs</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Environmental claims involve complex litigation. Coverage includes attorney fees, expert witnesses, and court costs.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Regulatory Fines &amp; Penalties</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Certain policies can include coverage for government-assessed fines and penalties related to environmental violations.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Transportation Incidents</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Coverage for spills or releases that occur while transporting chemicals to or from job sites.
-              </p>
-            </GlassCard>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-background py-12">
+      <section className="bg-background py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-headline text-3xl font-bold text-text mb-8">
-            Who Needs Environmental Liability Coverage?
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mb-6 text-center">
+            Protecting Your Business and the Environment
           </h2>
-          <GlassCard>
-            <ul className="space-y-4">
-              {[
-                'Any contractor applying SPF in occupied or semi-occupied buildings',
-                'Contractors working near waterways, wetlands, or sensitive ecosystems',
-                'Contractors performing remediation of failed or off-ratio foam',
-                'Any contractor required by GC or project owner to carry pollution coverage',
-                'Contractors operating in states with strict environmental regulations',
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span className="text-muted font-label text-sm leading-relaxed">{item}</span>
-                </li>
-              ))}
-            </ul>
+          <p className="text-muted font-label leading-relaxed mb-8">
+            In the world of spray foam insulation, your commitment extends beyond your clients and projects—it includes safeguarding the environment. Spray foam contractors, by nature of their work with hazardous chemicals, face unique environmental risks. That&apos;s where Environmental Liability Insurance from Spray Foam Insurance comes into play. We provide specialized coverage designed to protect your business from the financial and environmental repercussions of unforeseen incidents.
+          </p>
+          <GlassCard className="p-6 border-l-4 border-primary">
+            <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
+            <p className="text-muted font-label text-sm leading-relaxed">
+              Environmental Liability Insurance is more than just an added layer of protection; it&apos;s a testament to your dedication to responsible and sustainable practices. This coverage is crucial in mitigating the risks associated with handling hazardous materials and protecting the environment from potential harm.
+            </p>
           </GlassCard>
         </div>
       </section>
 
+      <section className="blue-gradient-section py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text">
+              Why Is Environmental Liability Insurance Essential for Spray Foam Contractors?
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
+              </div>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Protection from Environmental Incidents</h3>
+              <p className="text-muted font-label text-sm leading-relaxed">
+                In the event of accidents, spills, or other environmental incidents involving hazardous spray foam chemicals, our insurance steps in to cover the costs of environmental cleanup and restoration.
+              </p>
+            </GlassCard>
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
+              </div>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Legal Compliance</h3>
+              <p className="text-muted font-label text-sm leading-relaxed">
+                Regulatory authorities have strict standards for handling and disposing of hazardous materials. Environmental Liability Insurance ensures you have the resources to meet these standards and avoid legal consequences.
+              </p>
+            </GlassCard>
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
+              </div>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Client Confidence</h3>
+              <p className="text-muted font-label text-sm leading-relaxed">
+                Clients today are environmentally conscious. By having Environmental Liability Insurance, you not only protect your business but also instill confidence in your clients, demonstrating your commitment to ethical and environmentally responsible practices.
+              </p>
+            </GlassCard>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl bg-gradient-to-br from-secondary to-primary p-8 sm:p-10 text-white shadow-xl">
+            <h2 className="font-headline text-2xl sm:text-3xl font-bold mb-4">Key Components of Coverage</h2>
+            <p className="font-label text-sm sm:text-base opacity-90 leading-relaxed mb-6">
+              Our Environmental Liability Insurance can be tailored to meet the specific needs of spray foam contractors. Here are some key components of coverage:
+            </p>
+            <ul className="space-y-3 font-label text-sm sm:text-base">
+              <li>
+                <span className="font-semibold">Environmental Cleanup:</span> Coverage for the costs associated with environmental cleanup, restoration, and remediation in the event of chemical spills or incidents.
+              </li>
+              <li>
+                <span className="font-semibold">Legal Expenses:</span> Protection against legal expenses related to environmental claims and regulatory compliance.
+              </li>
+              <li>
+                <span className="font-semibold">Property Damage:</span> Coverage for property damage caused by environmental incidents, ensuring you can rectify the situation swiftly.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-surface py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div>
+            <h2 className="font-headline text-2xl font-bold text-text mb-3">Preserving Your Reputation and the Environment</h2>
+            <p className="text-muted font-label leading-relaxed">
+              At Spray Foam Insurance, we understand that environmental responsibility is part of your mission. Our Environmental Liability Insurance goes beyond safeguarding your business; it upholds your commitment to protecting the environment. With our support, you can confidently pursue your projects, knowing you have a financial safety net in place should the unexpected occur.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-headline text-2xl font-bold text-text mb-3">Choose Spray Foam Insurance for Your Environmental Liability Needs</h2>
+            <p className="text-muted font-label leading-relaxed mb-4">
+              Our team specializes in providing Environmental Liability Insurance tailored to the unique requirements of spray foam contractors. We&apos;re committed to helping you navigate the world of environmental risk, ensuring that your business thrives while upholding environmental responsibility.
+            </p>
+            <p className="text-muted font-label leading-relaxed">
+              Ready to discuss your insurance needs or have questions about Environmental Liability Insurance? Contact Spray Foam Insurance today. We&apos;re here to help you protect your business, preserve the environment, and demonstrate your commitment to responsible practices in the spray foam industry.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
             Frequently Asked Questions

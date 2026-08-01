@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
-import { CheckCircle, AlertTriangle } from 'lucide-react';
+import ServiceCard from '@/components/ServiceCard';
+import { AlertTriangle, Shield, Users, Truck } from 'lucide-react';
 import { commercialAutoFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
@@ -36,166 +36,128 @@ export default function CommercialAutoPage() {
       />
 
       <PageHero
-        title="Commercial Auto Insurance for Spray Foam Contractors"
-        subtitle="Coverage for your spray rigs, vans, trucks, and the expensive equipment they carry."
+        title="Commercial Auto for Spray Foam Contractors"
+        subtitle="Commercial Auto Insurance is more than just a requirement; it's a smart investment for any business that relies on vehicles for its daily operations."
         ctaText="Get a Quote"
         ctaHref="/quote"
         badge="Commercial Auto"
       />
 
+      <section className="bg-surface py-12 border-b border-primary/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <ServiceCard
+              icon={Shield}
+              title="General liability"
+              description="Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future."
+              href="/services/general-liability-insurance"
+            />
+            <ServiceCard
+              icon={Users}
+              title="Workers compensation"
+              description="Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment."
+              href="/services/workers-compensation-insurance-for-spray-foam-contractors"
+            />
+            <ServiceCard
+              icon={Truck}
+              title="Commercial auto"
+              description="Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage."
+              href="/services/commercial-auto"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="bg-background py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mb-6 text-center">
+            Protecting Your Business on the Move
+          </h2>
+          <p className="text-muted font-label leading-relaxed mb-8">
+            Spray foam contractors are known for their versatility and mobility, ensuring that their insulation expertise reaches clients far and wide. Whether it&apos;s transporting equipment to a job site or delivering finished projects, the road plays a vital role in your business operations. However, this mobility comes with its own set of risks and challenges, not only for your business but also for the environment. That&apos;s where Commercial Auto Insurance from Spray Foam Insurance becomes essential – it provides a protective shield for your business and ensures you can keep moving forward while safeguarding the environment.
+          </p>
+          <GlassCard className="p-6 border-l-4 border-primary">
+            <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
+            <p className="text-muted font-label text-sm leading-relaxed">
+              Commercial Auto Insurance is more than just a requirement; it&apos;s a smart investment for any business that relies on vehicles for its daily operations. This coverage is designed to protect your business in situations where your vehicles or employees are involved in accidents while on the job. It goes beyond protecting your assets; it&apos;s about protecting your reputation as a responsible and environmentally conscious contractor.
+            </p>
+          </GlassCard>
+        </div>
+      </section>
+
+      <section className="blue-gradient-section py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="label-text">VEHICLE COVERAGE</span>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mt-3 mb-4">
-              What Commercial Auto Insurance Covers
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text">
+              Why Is It Essential for Spray Foam Contractors?
             </h2>
-            <p className="text-muted max-w-2xl mx-auto font-label leading-relaxed">
-              Personal auto policies explicitly exclude business use. If your vehicle is registered to your company, hauling equipment, or carrying employees between job sites, you need a commercial auto policy. Without it, a single accident on the way to a job could leave you fully exposed.
-            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="flex flex-col gap-4">
-                <CheckCircle className="w-8 h-8 text-accent" />
-                <h3 className="font-headline font-bold text-text text-lg">Owned Vehicles</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Spray foam rigs, box trucks, vans, and pickups owned by your business. Covers liability, collision, and comprehensive for all named vehicles on your policy.
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
               </div>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Protecting Your Fleet</h3>
+              <p className="text-muted font-label text-sm leading-relaxed">
+                Whether you have a single spray foam rig or a fleet of vehicles, they are vital assets to your business. Commercial Auto Insurance safeguards your investment by covering repairs or replacements in case of accidents, theft, or damage. This not only ensures business continuity but also minimizes the risk of environmental damage from spills during transportation.
+              </p>
             </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="flex flex-col gap-4">
-                <CheckCircle className="w-8 h-8 text-accent" />
-                <h3 className="font-headline font-bold text-text text-lg">Hired &amp; Non-Owned Auto</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Coverage when you or employees drive rented or personal vehicles for business purposes. Fills the gap left by personal auto policies and rental company waivers.
-                </p>
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
               </div>
-            </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="flex flex-col gap-4">
-                <CheckCircle className="w-8 h-8 text-accent" />
-                <h3 className="font-headline font-bold text-text text-lg">Trailer Coverage</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Protection for trailers hauling equipment, generators, and materials to and from job sites. Covers physical damage to the trailer itself as well as attached cargo.
-                </p>
-              </div>
-            </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="flex flex-col gap-4">
-                <CheckCircle className="w-8 h-8 text-accent" />
-                <h3 className="font-headline font-bold text-text text-lg">Loading &amp; Unloading</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Liability coverage for bodily injury or property damage during the loading and unloading of your equipment — a critical exposure point for spray foam rigs.
-                </p>
-              </div>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Environmental Responsibility</h3>
+              <p className="text-muted font-label text-sm leading-relaxed">
+                Spray foam contractors understand the environmental risks associated with their work. Transporting hazardous chemicals to job sites requires careful handling. In the unfortunate event of a spill, Commercial Auto Insurance can cover the costs of environmental cleanup, ensuring that the impact on the environment is minimized.
+              </p>
             </GlassCard>
           </div>
         </div>
       </section>
 
-      <section className="blue-gradient-section py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mb-10 text-center">
-            Why Spray Foam Contractors Need Commercial Auto Coverage
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="prose prose-invert max-w-none">
-              <p className="text-muted font-label leading-relaxed mb-5">
-                Personal auto policies contain explicit business-use exclusions. The moment you drive a vehicle for commercial purposes — hauling equipment, transporting employees, or driving between job sites — your personal insurer can deny a claim. That denial can leave you personally liable for property damage, medical expenses, and legal costs.
-              </p>
-              <p className="text-muted font-label leading-relaxed mb-5">
-                Spray foam rigs carry a unique combination of risk: expensive proportioning equipment, pressurized chemical drums, and potentially hazardous materials including isocyanates and polyol resin. A commercial auto policy written for SPF contractors properly accounts for these exposures where a standard commercial policy may not.
-              </p>
-              <p className="text-muted font-label leading-relaxed">
-                Whether you run a single rig or a multi-vehicle fleet, protecting your vehicles with the right commercial policy keeps your business moving after an accident — and keeps you in compliance with most general contractor requirements.
-              </p>
-            </div>
-            <div className="flex flex-col gap-5">
-              <Image
-                src="/assets/images/spray-rig.png"
-                alt="Spray foam rig truck — commercial auto insurance for spray foam contractors"
-                width={600}
-                height={400}
-                className="rounded-xl object-cover w-full"
-              />
-              <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
-                <div className="flex items-start gap-4">
-                  <AlertTriangle className="w-6 h-6 text-highlight shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-headline font-semibold text-text mb-1">Personal Policies Don&apos;t Apply</h3>
-                    <p className="text-muted font-label text-sm leading-relaxed">
-                      If you use a personal vehicle to haul equipment and get in an accident, your personal auto insurer can deny the claim — leaving you personally responsible for damages and legal costs.
-                    </p>
-                  </div>
-                </div>
-              </GlassCard>
-              <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
-                <div className="flex items-start gap-4">
-                  <AlertTriangle className="w-6 h-6 text-highlight shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-headline font-semibold text-text mb-1">Rig Replacement Costs</h3>
-                    <p className="text-muted font-label text-sm leading-relaxed">
-                      Spray foam rigs can cost $80,000–$200,000+. If your rig is totaled, you need proper coverage to get back to work quickly — without draining your operating capital.
-                    </p>
-                  </div>
-                </div>
-              </GlassCard>
-              <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
-                <div className="flex items-start gap-4">
-                  <AlertTriangle className="w-6 h-6 text-highlight shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-headline font-semibold text-text mb-1">Cargo &amp; Chemical Liability</h3>
-                    <p className="text-muted font-label text-sm leading-relaxed">
-                      Transporting isocyanates and polyol resin creates additional liability exposure that requires commercial-grade coverage. A spill in transit can trigger environmental and property damage claims.
-                    </p>
-                  </div>
-                </div>
-              </GlassCard>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-background py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-8">
-            <h2 className="font-headline text-2xl md:text-3xl font-bold text-text mb-4">
-              Fleet Coverage for Every Size Operation
-            </h2>
-            <p className="text-muted font-label leading-relaxed">
-              We cover fleets of all sizes — from a single spray rig to a fleet of 20+ vehicles. Ask about fleet discounts when you insure multiple vehicles on one policy.
+      <section className="bg-background py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl bg-gradient-to-br from-secondary to-primary p-8 sm:p-10 text-white shadow-xl">
+            <h2 className="font-headline text-2xl sm:text-3xl font-bold mb-4">Key Components of Coverage</h2>
+            <p className="font-label text-sm sm:text-base opacity-90 leading-relaxed mb-6">
+              Commercial Auto Insurance from Spray Foam Insurance can be customized to meet your specific needs. Here are some key components of coverage:
             </p>
-          </div>
-          <div className="max-w-2xl mx-auto">
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <ul className="flex flex-col gap-4">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span className="text-muted font-label text-sm leading-relaxed">
-                    Single rig and sole operators welcome — no minimum vehicle requirements
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span className="text-muted font-label text-sm leading-relaxed">
-                    Fleet policies available for multiple vehicles with bundled pricing and simplified management
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span className="text-muted font-label text-sm leading-relaxed">
-                    Driver scheduling and motor vehicle record (MVR) services available to help manage driver compliance
-                  </span>
-                </li>
-              </ul>
-            </GlassCard>
+            <ul className="space-y-3 font-label text-sm sm:text-base">
+              <li>
+                <span className="font-semibold">Collision Coverage:</span> This covers the costs of repairing or replacing your vehicles if they are damaged in an accident.
+              </li>
+              <li>
+                <span className="font-semibold">Liability Coverage:</span> Protection against claims of bodily injury or property damage that may result from an accident involving your vehicles.
+              </li>
+              <li>
+                <span className="font-semibold">Environmental Cleanup:</span> Coverage for costs associated with environmental cleanup in the event of chemical spills.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section className="bg-surface py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div>
+            <h2 className="font-headline text-2xl font-bold text-text mb-3">Ensuring Your Business Keeps Moving</h2>
+            <p className="text-muted font-label leading-relaxed">
+              In the dynamic world of spray foam contracting, your mobility is a competitive advantage. Commercial Auto Insurance from Spray Foam Insurance ensures that you can keep your business on the move while fulfilling your responsibility to safeguard the environment. It&apos;s the safety net that provides peace of mind on the road and at the job site.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-headline text-2xl font-bold text-text mb-3">Choose Spray Foam Insurance For Your Commercial Auto Needs</h2>
+            <p className="text-muted font-label leading-relaxed mb-4">
+              At Spray Foam Insurance, we specialize in providing Commercial Auto Insurance tailored to the unique requirements of spray foam contractors. Our experienced team understands the intricacies of your industry, and we&apos;re committed to ensuring your vehicles have the coverage they need to keep your business moving forward while preserving the environment.
+            </p>
+            <p className="text-muted font-label leading-relaxed">
+              Ready to discuss your insurance needs or have questions about Commercial Auto Insurance? Contact Spray Foam Insurance today. We&apos;re here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while upholding your environmental responsibilities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
             Frequently Asked Questions

@@ -49,7 +49,7 @@ export default function Page() {
             <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs label-text text-primary">Equipment</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold leading-tight mb-6">
-            <span className="blue-gradient-text">Is My Spray Foam Equipment Covered?</span>
+            <span className="blue-gradient-text">Spray Foam Equipment Coverage</span>
           </h1>
           <div className="flex items-center gap-6 text-sm text-muted">
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> September 24, 2023</span>
@@ -64,28 +64,28 @@ export default function Page() {
           <div className="bg-surface/50 rounded-2xl p-8 lg:p-12 border border-primary/10">
             <p className="text-muted leading-relaxed mb-5">If you're a spray foam insulation contractor, you're well aware of the importance of your equipment. Your machines, tools, and materials are the lifeblood of your business, allowing you to provide efficient and effective insulation services. But have you ever wondered, "Is my equipment covered?" In this article, we'll explore the ins and outs of insurance for spray foam insulation contractors, focusing on how you can protect your valuable equipment.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">General Liability Insurance</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">General Liability Insurance:</h2>
             <p className="text-muted leading-relaxed mb-5">General liability insurance is a fundamental coverage for contractors. While it primarily covers bodily injury and property damage claims, it can indirectly offer some protection for your equipment. For instance, if your equipment were to malfunction and cause damage to a client's property, the liability coverage may come into play.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Inland Marine Insurance</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Inland Marine Insurance:</h2>
             <p className="text-muted leading-relaxed mb-5">Inland marine insurance is a specialized policy designed to cover movable property and equipment. It's often used to protect high-value tools and equipment that are frequently transported to job sites. For spray foam insulation contractors, this coverage can be a lifesaver. It can protect your equipment not only at your business location but also while in transit to various job sites.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Builder's Risk Insurance</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Builder's Risk Insurance:</h2>
             <p className="text-muted leading-relaxed mb-5">If you're working on a new construction project that involves insulation installation, builder's risk insurance can be essential. It covers property and materials on the construction site, including your equipment. If your equipment is damaged or stolen while on the job, this policy can help replace or repair it.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Equipment Breakdown Insurance</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Equipment Breakdown Insurance:</h2>
             <p className="text-muted leading-relaxed mb-5">Spray foam insulation equipment can be sophisticated and prone to breakdowns. Equipment breakdown insurance is tailored to cover the cost of repairs or replacement for your machinery and tools in the event of sudden mechanical or electrical failures.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Commercial Property Insurance</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Commercial Property Insurance:</h2>
             <p className="text-muted leading-relaxed mb-5">If you have a physical location where you store your equipment when not in use, commercial property insurance can be vital. This coverage protects your building and its contents, including equipment, from perils like fire, theft, vandalism, or natural disasters.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Business Owner's Policy (BOP)</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Business Owner's Policy (BOP):</h2>
             <p className="text-muted leading-relaxed mb-5">A BOP is a package policy that combines general liability insurance and commercial property insurance. It can provide a cost-effective way to protect both your liability and your equipment under a single policy.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Equipment Endorsements</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Equipment Endorsements:</h2>
             <p className="text-muted leading-relaxed mb-5">Some insurance policies allow you to add equipment endorsements or riders to your coverage. These endorsements can tailor your policy to include specific equipment and tools, ensuring that they are adequately protected.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Key Considerations</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Key Considerations:</h2>
             <p className="text-muted leading-relaxed mb-5">Assess Your Equipment Value: Before purchasing insurance, take an inventory of your equipment and estimate its value. This will help you determine the appropriate coverage limits.</p>
             <p className="text-muted leading-relaxed mb-5">Review Policy Exclusions: Understand what is covered and what is excluded in your insurance policies. Some policies may exclude coverage for certain types of equipment or specific causes of loss.</p>
             <p className="text-muted leading-relaxed mb-5">Regular Maintenance: Properly maintain your equipment to minimize the risk of breakdowns and ensure that your insurance claims are valid.</p>

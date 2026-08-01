@@ -13,33 +13,45 @@ const labelClass = 'block text-sm font-label font-semibold text-text mb-1.5';
 const fieldClass = 'mb-4';
 
 const initialForm = {
-  // Section A
-  companyName: '',
-  licenseNum: '',
-  applicatorName: '',
-  phone: '',
+  // Contact & job site
+  businessName: '',
+  installerName: '',
   email: '',
-  // Section B
+  phone: '',
   address: '',
-  cityStateZip: '',
-  ownerName: '',
-  jobDate: '',
-  // Section C
-  spfType: '',
-  appArea: '',
-  substrate: '',
-  thickness: '',
-  rValue: '',
-  sqft: '',
-  materialLot: '',
-  // Section D
-  moistureCheck: '',
-  ventilation: '',
-  ppeUsed: '',
+  aptSuite: '',
+  city: '',
+  state: '',
+  zip: '',
+  // Spray area conditions
+  isolatedFromWind: '',
+  signagePosted: '',
+  ventilated: '',
+  // Material
+  spfManufacture: '',
+  isoLot: '',
+  isoExpiry: '',
+  resinLot: '',
+  resinExpiry: '',
+  proportionerType: '',
+  isoTemp: '',
+  isoPressure: '',
+  resinTemp: '',
+  resinPressure: '',
+  hoseHeatTemp: '',
+  strokesUsed: '',
+  ambientTemp: '',
+  substrateTemp: '',
+  relativeHumidity: '',
+  windVelocity: '',
+  substrateHumidity: '',
+  substrateType: '',
+  substrateDry: '',
+  substrateClean: '',
+  substrateFastened: '',
+  primerRequired: '',
+  exteriorCoatingRequired: '',
   notes: '',
-  // Section E
-  sigName: '',
-  sigDate: '',
 };
 
 type FormData = typeof initialForm;
@@ -62,13 +74,73 @@ export default function WorkRecordFormPage() {
 
   return (
     <>
-      <PageHero
-        title="SPF Work Record Form"
-        subtitle="Document every job with accuracy. Keep records on file for insurance, warranty, and compliance."
-        badge="FREE TOOL"
-        ctaText="Get a Quote"
-        ctaHref="/quote"
-      />
+      <PageHero title="Spray Foam Application Work Record" />
+
+      {/* About the form */}
+      <section className="max-w-4xl mx-auto px-4 pt-4">
+        <GlassCard className="p-8">
+          <p className="text-muted text-sm mb-4">
+            Our <span className="font-semibold text-text">Work Record Form</span> is an essential
+            tool for accurately documenting all critical jobsite data during spray foam
+            insulation projects. This form is designed to capture environmental and material
+            conditions to ensure the optimal application of spray foam insulation. By recording
+            atmospheric and substrate information, we guarantee that each project meets industry
+            standards for safety, performance, and quality.
+          </p>
+
+          <h3 className="font-headline font-bold text-text mb-2">What the Form Captures:</h3>
+          <ul className="space-y-2 mb-4 list-disc list-inside text-muted text-sm">
+            <li>
+              <span className="font-semibold text-text">Jobsite:</span> Record the data, time,
+              location, and jobsite conditions to create a comprehensive log for each project.
+            </li>
+            <li>
+              <span className="font-semibold text-text">Atmospheric Conditions:</span> Ambient
+              Temperature: This tracks the air temperature at the jobsite to ensure that the foam
+              is applied under optimal conditions.
+            </li>
+            <li>
+              <span className="font-semibold text-text">Substrate Temperature:</span> Recording
+              the temperature of the surface where spray foam is applied is crucial for adhesion
+              and overall insulation performance.
+            </li>
+            <li>
+              <span className="font-semibold text-text">Moisture Content:</span> Monitoring the
+              moisture levels in the substrate helps prevent foam from absorbing water, which can
+              affect both application and long-term performance.
+            </li>
+            <li>
+              <span className="font-semibold text-text">Spray Foam Application Data:</span>{' '}
+              Starting Temperatures: Measure the initial temperatures of the foam material
+              components before application to ensure the correct chemical reaction during
+              spraying.
+            </li>
+            <li>
+              <span className="font-semibold text-text">Initial Pressures:</span> Document the
+              pressure levels in the spray foam equipment to ensure the proper mix and delivery of
+              materials.
+            </li>
+          </ul>
+
+          <h3 className="font-headline font-bold text-text mb-2">Why It&apos;s Important:</h3>
+          <p className="text-muted text-sm mb-2">
+            Proper documentation of these environmental and material conditions helps to:
+          </p>
+          <ul className="space-y-1 mb-4 list-disc list-inside text-muted text-sm">
+            <li>Ensure the foam is applied in compliance with manufacturer and industry guidelines.</li>
+            <li>Minimize the risk of product failure due to environmental factors.</li>
+            <li>Provide a record for quality control and troubleshooting if issues arise.</li>
+          </ul>
+
+          <h3 className="font-headline font-bold text-text mb-2">How to Use the Form:</h3>
+          <p className="text-muted text-sm">
+            Our form is straightforward and easy to use. Simply enter the required data during the
+            job, and our system will store the information for easy access and review. This
+            documentation helps maintain a professional standard and ensures the best performance
+            for every spray foam insulation project.
+          </p>
+        </GlassCard>
+      </section>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 py-12">
         {/* Left — Form */}

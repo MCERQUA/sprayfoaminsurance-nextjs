@@ -49,7 +49,7 @@ export default function Page() {
             <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs label-text text-primary">Coverage</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold leading-tight mb-6">
-            <span className="blue-gradient-text">Is Retrofitting Insurance Available for Spray Foam Contractors?</span>
+            <span className="blue-gradient-text">Retrofitting Insurance</span>
           </h1>
           <div className="flex items-center gap-6 text-sm text-muted">
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> September 24, 2023</span>
@@ -64,22 +64,23 @@ export default function Page() {
           <div className="bg-surface/50 rounded-2xl p-8 lg:p-12 border border-primary/10">
             <p className="text-muted leading-relaxed mb-5">As spray foam contractors, you're well aware of the dynamic nature of the construction industry. Technology advances, regulations evolve, and your clients' needs change. To stay competitive and meet these shifting demands, you often find yourself adapting and retrofitting existing structures with spray foam insulation. But have you ever wondered if your insurance coverage can adapt in a similar way? In this article, we'll explore the concept of retrofitting coverage for spray foam contractors and how it can provide enhanced protection.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Understanding Retrofitting Coverage</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Understanding Retrofitting Coverage:</h2>
             <p className="text-muted leading-relaxed mb-5">Before we delve into the specifics of retrofitting coverage, let's clarify what retrofitting entails. Retrofitting involves the process of upgrading or modifying existing buildings to improve energy efficiency, structural integrity, or other aspects. Spray foam insulation is often a key component of such projects due to its exceptional insulation properties.</p>
+            <p className="text-muted leading-relaxed mb-5">Now, let's explore how retrofitting coverage can benefit spray foam contractors:</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Why Retrofitting Coverage Matters</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Why Retrofitting Coverage Matters:</h2>
             <p className="text-muted leading-relaxed mb-5">Expanded Services: Retrofitting coverage allows you to expand your service offerings and take on projects that involve the enhancement of existing structures. This flexibility can be a significant asset in diversifying your business and staying competitive.</p>
             <p className="text-muted leading-relaxed mb-5">Adapting to Market Trends: As energy efficiency and sustainability become increasingly important in the construction industry, retrofitting older buildings to meet modern standards is in high demand. Retrofitting coverage enables you to capitalize on this market trend.</p>
             <p className="text-muted leading-relaxed mb-5">Mitigating Risks: Retrofitting projects often involve working on older structures, which can present unique challenges and risks. Having appropriate coverage tailored to retrofitting can help mitigate these risks and protect your business.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Types of Retrofitting Coverage</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Types of Retrofitting Coverage:</h2>
             <p className="text-muted leading-relaxed mb-5">Retrofitting coverage for spray foam contractors can include the following types of insurance:</p>
             <p className="text-muted leading-relaxed mb-5">General Liability Insurance: This coverage extends to retrofitting projects, protecting you from potential third-party claims related to bodily injury, property damage, or personal injury that may occur during the retrofitting process.</p>
             <p className="text-muted leading-relaxed mb-5">Builder's Risk Insurance: When retrofitting existing structures, builder's risk insurance can cover property damage and materials involved in the project. It safeguards your investment in the project, whether it's an upgrade to a commercial building or a residential home.</p>
             <p className="text-muted leading-relaxed mb-5">Professional Liability Insurance: If retrofitting projects involve design elements or require specialized expertise, professional liability insurance (errors and omissions insurance) can protect you from claims of professional negligence or errors in your work.</p>
             <p className="text-muted leading-relaxed mb-5">Contractual Obligations: Always review your contracts carefully to ensure that your retrofitting coverage aligns with any specific insurance requirements outlined in the project agreements.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Benefits of Retrofitting Coverage</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Benefits of Retrofitting Coverage:</h2>
             <p className="text-muted leading-relaxed mb-5">Competitive Advantage: With retrofitting coverage in place, you can confidently bid on retrofitting projects, knowing that you have the necessary protection to meet your contractual obligations.</p>
             <p className="text-muted leading-relaxed mb-5">Risk Mitigation: Retrofitting projects can have unique risks, such as dealing with older building materials or structural challenges. Retrofitting coverage ensures that you are prepared for these risks.</p>
             <p className="text-muted leading-relaxed mb-5">Diversification: The ability to offer retrofitting services expands your business opportunities and diversifies your client base, reducing reliance on a single type of project.</p>

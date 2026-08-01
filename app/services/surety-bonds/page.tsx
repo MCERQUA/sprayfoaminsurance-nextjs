@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import PageHero from '@/components/PageHero';
 import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
-import { CheckCircle, FileText, MapPin } from 'lucide-react';
+import ServiceCard from '@/components/ServiceCard';
+import { AlertTriangle, Shield, Users, Truck } from 'lucide-react';
 import { suretyBondsFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
@@ -36,165 +36,141 @@ export default function SuretyBondsPage() {
 
       <PageHero
         title="Surety Bonds for Spray Foam Contractors"
-        subtitle="Performance bonds, payment bonds, and license bonds to satisfy contract requirements and state licensing."
-        ctaText="Get a Bond Quote"
+        subtitle="Surety bonds are a form of risk management that goes beyond standard insurance coverage. They serve as guarantees that you, as a spray foam contractor, will fulfill your obligations."
+        ctaText="Get a Quote"
         ctaHref="/quote"
         badge="Surety Bonds"
       />
 
-      <section className="bg-background py-16">
+      <section className="bg-surface py-12 border-b border-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 text-center">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mb-4">
-              What Is a Surety Bond?
-            </h2>
-            <p className="text-muted max-w-2xl mx-auto font-label leading-relaxed">
-              A surety bond is a three-party agreement that guarantees you will fulfill your contractual obligations. Unlike insurance — which protects you — a bond protects the party requiring it. If you fail to perform, the surety steps in and the cost is ultimately recovered from you.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <Image
-                src="/images/bond-diagram.png"
-                alt="Surety bond three-party diagram showing principal, obligee, and surety relationships"
-                width={600}
-                height={400}
-                className="rounded-xl border border-primary/20 w-full max-w-md mx-auto"
-              />
-            </div>
-            <div className="flex flex-col gap-6">
-              <p className="text-muted font-label leading-relaxed">
-                Understanding who is involved in a surety bond helps clarify what you&apos;re buying and what is expected of each party:
-              </p>
-              <GlassCard>
-                <h3 className="font-headline font-bold text-text mb-2">Principal (You)</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  The contractor who purchases the bond. You are legally bound to perform the obligation specified — whether completing a project, paying subcontractors, or complying with licensing laws.
-                </p>
-              </GlassCard>
-              <GlassCard>
-                <h3 className="font-headline font-bold text-text mb-2">Obligee (Project Owner / State)</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  The entity requiring the bond as protection — typically a general contractor, government agency, or state licensing board. The bond exists to protect their financial interests.
-                </p>
-              </GlassCard>
-              <GlassCard>
-                <h3 className="font-headline font-bold text-text mb-2">Surety (The Insurance Company)</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Guarantees your performance and pays valid claims to the obligee if you default. The surety then has the right to seek full reimbursement from you — making this a credit product, not a transfer of risk.
-                </p>
-              </GlassCard>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <ServiceCard
+              icon={Shield}
+              title="General liability"
+              description="Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future."
+              href="/services/general-liability-insurance"
+            />
+            <ServiceCard
+              icon={Users}
+              title="Workers compensation"
+              description="Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment."
+              href="/services/workers-compensation-insurance-for-spray-foam-contractors"
+            />
+            <ServiceCard
+              icon={Truck}
+              title="Commercial auto"
+              description="Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage."
+              href="/services/commercial-auto"
+            />
           </div>
         </div>
       </section>
 
-      <section className="bg-surface border-y border-primary/10 py-16">
+      <section className="bg-background py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mb-6 text-center">
+            Building Trust, Meeting Legal Requirements
+          </h2>
+          <p className="text-muted font-label leading-relaxed mb-8">
+            In the dynamic world of spray foam contracting, trust and professionalism are your currency. Clients rely on your expertise to deliver exceptional insulation solutions. However, the industry&apos;s regulatory landscape demands more than just technical prowess—it requires adherence to licenses, permits, and performance standards. That&apos;s where Surety Bonds from Spray Foam Insurance come into play. We offer essential surety bonds tailored to your needs, ensuring compliance, instilling confidence in your clients, and paving the way for your business success.
+          </p>
+          <GlassCard className="p-6 border-l-4 border-primary">
+            <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
+            <p className="text-muted font-label text-sm leading-relaxed">
+              Surety bonds are a form of risk management that goes beyond standard insurance coverage. They serve as guarantees that you, as a spray foam contractor, will fulfill your obligations, whether it&apos;s completing projects, adhering to regulations, or meeting financial commitments. Surety bonds are crucial for maintaining your reputation as a reliable contractor and demonstrating your commitment to ethical and professional practices.
+            </p>
+          </GlassCard>
+        </div>
+      </section>
+
+      <section className="blue-gradient-section py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mb-4">
-              Types of Surety Bonds for SPF Contractors
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text">
+              Why Are Surety Bonds Essential for Spray Foam Contractors?
             </h2>
-            <p className="text-muted max-w-2xl mx-auto font-label leading-relaxed">
-              The type of bond you need depends on the work you do and the requirements set by your state or project owner. Most spray foam contractors encounter at least one of these three bond types.
-            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <GlassCard>
-              <div className="flex flex-col gap-4">
-                <FileText className="w-8 h-8 text-primary" />
-                <h3 className="font-headline font-bold text-text text-lg">Performance Bond</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Guarantees you&apos;ll complete the project according to contract specifications. Required for most public and many commercial projects. Covers the cost of project completion if you default, protecting the project owner from financial loss.
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
               </div>
+              <h3 className="font-headline font-bold text-base text-text mb-2">License and Permit Bonds</h3>
+              <p className="text-muted font-label text-sm leading-relaxed">
+                Many jurisdictions require spray foam contractors to obtain license and permit bonds as a prerequisite for operating legally. These bonds ensure that you adhere to local laws and regulations, providing peace of mind to clients and authorities.
+              </p>
             </GlassCard>
-            <GlassCard>
-              <div className="flex flex-col gap-4">
-                <FileText className="w-8 h-8 text-primary" />
-                <h3 className="font-headline font-bold text-text text-lg">Payment Bond</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Ensures subcontractors, suppliers, and laborers will be paid for their work. Often paired with performance bonds on public contracts under the Miller Act. Prevents mechanics&apos; liens and protects your downstream partners.
-                </p>
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
               </div>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Performance Bonds</h3>
+              <p className="text-muted font-label text-sm leading-relaxed">
+                Performance bonds are a testament to your commitment to delivering on your promises. They reassure clients that you will complete projects as agreed, even in unforeseen circumstances.
+              </p>
             </GlassCard>
-            <GlassCard>
-              <div className="flex flex-col gap-4">
-                <FileText className="w-8 h-8 text-primary" />
-                <h3 className="font-headline font-bold text-text text-lg">License &amp; Permit Bond</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Required by many states for contractor licensing. Protects the public against financial harm from contractors who violate licensing laws or regulations. Often the first bond a new contractor needs to obtain before beginning work legally.
-                </p>
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
               </div>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Financial Responsibility</h3>
+              <p className="text-muted font-label text-sm leading-relaxed">
+                Surety bonds also serve as indicators of your financial stability and responsibility. They demonstrate your ability to meet financial obligations, which can be crucial in securing contracts and clients.
+              </p>
             </GlassCard>
           </div>
         </div>
       </section>
 
-      <section className="bg-background py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-headline text-2xl md:text-3xl font-bold text-text mb-6 text-center">
-              State Licensing &amp; Bond Requirements
-            </h2>
-            <GlassCard className="mb-6">
-              <p className="text-muted font-label leading-relaxed mb-4">
-                Most states require spray foam contractors to be licensed and bonded before performing work. Bond amounts vary — from $5,000 to $100,000+ depending on the state and license type. Failing to maintain required bonds can result in license suspension and project shutdowns.
-              </p>
-              <p className="text-muted font-label leading-relaxed">
-                Below are bond requirements for some of the highest-volume states for spray foam work. These figures are approximate — requirements change frequently based on legislative updates and licensing board rules.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <ul className="flex flex-col gap-4 mb-5">
-                <li className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-text font-label text-sm">
-                    <span className="font-semibold">Arizona</span>
-                    <span className="text-muted"> — $4,000–$15,000 depending on license classification</span>
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-text font-label text-sm">
-                    <span className="font-semibold">Texas</span>
-                    <span className="text-muted"> — $10,000 for general contractor registration</span>
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-text font-label text-sm">
-                    <span className="font-semibold">Florida</span>
-                    <span className="text-muted"> — $10,000–$25,000 based on license type and county</span>
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-text font-label text-sm">
-                    <span className="font-semibold">California</span>
-                    <span className="text-muted"> — $15,000 CSLB contractor license bond</span>
-                  </span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <MapPin className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-text font-label text-sm">
-                    <span className="font-semibold">New York</span>
-                    <span className="text-muted"> — $15,000 for home improvement contractor registration</span>
-                  </span>
-                </li>
-              </ul>
-              <div className="flex items-start gap-3 pt-4 border-t border-primary/10">
-                <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Requirements change frequently. Contact us to verify current bond requirements in your state before applying for or renewing your contractor license.
-                </p>
-              </div>
-            </GlassCard>
+      <section className="bg-background py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-headline text-2xl md:text-3xl font-bold text-text mb-4 text-center">
+            Key Types of Surety Bonds for Spray Foam Contractors
+          </h2>
+          <p className="text-muted font-label leading-relaxed mb-6">
+            In the spray foam contracting industry, maintaining trust and professionalism is paramount. Our Surety Bonds for spray foam contractors offer a comprehensive solution to meet legal requirements, instill confidence in your clients, and safeguard the integrity of your projects. Whether it&apos;s adhering to regulations, completing projects on time, ensuring payments to subcontractors and suppliers, or upholding your commitment to contracts, our tailored Surety Bonds cover your diverse needs, ensuring your reputation as a reliable and responsible contractor remains unblemished.
+          </p>
+          <div className="rounded-3xl bg-gradient-to-br from-secondary to-primary p-8 sm:p-10 text-white shadow-xl">
+            <ul className="space-y-3 font-label text-sm sm:text-base">
+              <li>
+                <span className="font-semibold">License and Permit Bonds:</span> These bonds are typically required by local authorities to ensure that you comply with regulations and standards specific to your industry and location.
+              </li>
+              <li>
+                <span className="font-semibold">Performance Bonds:</span> Performance bonds guarantee that you will complete projects according to contract terms, protecting clients from potential losses.
+              </li>
+              <li>
+                <span className="font-semibold">Payment Bonds:</span> Payment bonds ensure that you will pay subcontractors, laborers, and suppliers, preventing disputes and project disruptions.
+              </li>
+              <li>
+                <span className="font-semibold">Bid Bonds:</span> Bid bonds provide assurance that you will enter into a contract if your bid is accepted, safeguarding the integrity of the bidding process.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section className="bg-surface py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div>
+            <h2 className="font-headline text-2xl font-bold text-text mb-3">Building Confidence and Reputation</h2>
+            <p className="text-muted font-label leading-relaxed">
+              Surety bonds from Spray Foam Insurance are more than legal requirements; they are tools for building trust and enhancing your reputation. Clients appreciate the financial security they provide and the assurance that you will meet your obligations. By obtaining and displaying these bonds, you demonstrate your commitment to professionalism and ethical practices.
+            </p>
+          </div>
+          <div>
+            <h2 className="font-headline text-2xl font-bold text-text mb-3">Choose Spray Foam Insurance for Your Surety Bond Needs</h2>
+            <p className="text-muted font-label leading-relaxed mb-4">
+              At Spray Foam Insurance, we specialize in providing Surety Bonds tailored to the unique requirements of spray foam contractors. Our experienced team understands the intricacies of your industry and the specific bond needs you may encounter. We&apos;re committed to helping you navigate the world of surety bonds, ensuring you have the coverage necessary to instill confidence in your clients and meet legal requirements.
+            </p>
+            <p className="text-muted font-label leading-relaxed">
+              Ready to discuss your insurance and surety bond needs or have questions about Surety Bonds? Contact Spray Foam Insurance today. We&apos;re here to help you build trust, meet legal obligations, and succeed in the competitive world of spray foam contracting.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-headline text-3xl font-bold text-text text-center mb-10">
             Surety Bond FAQ
