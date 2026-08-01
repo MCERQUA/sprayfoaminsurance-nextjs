@@ -1,0 +1,221 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f4e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f4e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f4e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f4e10]
+        - generic [ref=f4e11]:
+          - generic [ref=f4e12]: Spray Foam
+          - generic [ref=f4e13]: Insurance.com
+      - generic [ref=f4e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f4e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f4e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f4e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f4e24]:
+        - link "Facebook" [ref=f4e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f4e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f4e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f4e37]:
+      - generic [ref=f4e38]:
+        - link "Home" [ref=f4e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f4e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f4e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f4e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f4e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f4e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f4e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f4e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f4e53]:
+    - generic [ref=f4e55]:
+      - generic [ref=f4e56]: Workers' Comp
+      - heading "Workers' Compensation for Spray Foam Contractors" [level=1] [ref=f4e57]
+      - paragraph [ref=f4e58]: Workers' Compensation Insurance is more than just a legal requirement; it's a commitment to the people who make your business thrive.
+      - link "Get a Quote" [ref=f4e59] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=f4e64]:
+      - link [ref=f4e65] [cursor=pointer]:
+        - /url: /services/general-liability-insurance/
+        - generic [ref=f4e66]:
+          - heading "General liability" [level=3] [ref=f4e70]
+          - paragraph [ref=f4e71]: Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future.
+          - generic [ref=f4e72]: Learn More
+      - link [ref=f4e75] [cursor=pointer]:
+        - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+        - generic [ref=f4e76]:
+          - heading "Workers compensation" [level=3] [ref=f4e83]
+          - paragraph [ref=f4e84]: Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment.
+          - generic [ref=f4e85]: Learn More
+      - link [ref=f4e88] [cursor=pointer]:
+        - /url: /services/commercial-auto/
+        - generic [ref=f4e89]:
+          - heading "Commercial auto" [level=3] [ref=f4e96]
+          - paragraph [ref=f4e97]: Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage.
+          - generic [ref=f4e98]: Learn More
+    - generic [ref=f4e102]:
+      - heading "Protecting Your Team, Ensuring Your Success" [level=2] [ref=f4e103]
+      - paragraph [ref=f4e104]: Spray foam contractors are the backbone of the construction industry, creating energy-efficient, moisture-resistant, and eco-friendly insulation solutions. The demanding nature of the work, often involving the use of heavy equipment and chemicals, means that ensuring the safety and well-being of your team is paramount. That's where Workers' Compensation Insurance from Spray Foam Insurance steps in – to provide your employees with the protection they need while safeguarding the future of your business.
+      - generic [ref=f4e105]:
+        - heading "Understanding the Essentials" [level=3] [ref=f4e106]
+        - paragraph [ref=f4e107]: Workers' Compensation Insurance is more than just a legal requirement; it's a commitment to the people who make your business thrive. This vital coverage is designed to provide benefits to employees who suffer work-related injuries or illnesses. It not only protects your employees by covering their medical expenses and lost wages but also protects your business from costly lawsuits that can arise from workplace accidents.
+    - generic [ref=f4e109]:
+      - heading "Why Is It Essential for Spray Foam Contractors?" [level=2] [ref=f4e111]
+      - generic [ref=f4e112]:
+        - generic [ref=f4e113]:
+          - heading "Caring for Your Team" [level=3] [ref=f4e117]
+          - paragraph [ref=f4e118]: The health and safety of your employees should always be a top priority. Accidents can happen in any workplace, and the spray foam industry is no exception. Workers' Compensation Insurance ensures that your team receives the care and support they need if they are injured on the job, helping them recover and return to work as quickly as possible.
+        - generic [ref=f4e119]:
+          - heading "Legal Compliance" [level=3] [ref=f4e123]
+          - paragraph [ref=f4e124]: In many jurisdictions, carrying Workers' Compensation Insurance is a legal requirement. Compliance with these regulations is not just about avoiding fines and penalties; it's about fulfilling your responsibility as an employer to provide a safe and supportive work environment.
+        - generic [ref=f4e125]:
+          - heading "Financial Security" [level=3] [ref=f4e129]
+          - paragraph [ref=f4e130]: Workplace injuries can lead to substantial financial costs, including medical bills and lost wages. Without insurance, these expenses could be borne by your business. Workers' Compensation Insurance from Spray Foam Insurance ensures that your business remains financially stable in the face of unexpected accidents.
+    - generic [ref=f4e133]:
+      - heading "Key Components of Coverage" [level=2] [ref=f4e134]
+      - paragraph [ref=f4e135]: "Workers' Compensation Insurance from Spray Foam Insurance can be customized to meet your specific needs. Here are some key components of coverage:"
+      - list [ref=f4e136]:
+        - listitem [ref=f4e137]: "Medical Expenses: Coverage for necessary medical treatment and rehabilitation services to help injured employees recover."
+        - listitem [ref=f4e138]: "Lost Wages: Replacement of a portion of an employee's lost income due to a work-related injury or illness."
+        - listitem [ref=f4e139]: "Disability Benefits: Compensation for permanent or temporary disability resulting from workplace accidents."
+        - listitem [ref=f4e140]: "Death Benefits: Financial support to the family or dependents of an employee who loses their life in a work-related incident."
+        - listitem [ref=f4e141]: "Legal Protection: Coverage for legal expenses in case of lawsuits related to workplace injuries."
+    - generic [ref=f4e143]:
+      - generic [ref=f4e144]:
+        - heading "A Commitment to Safety" [level=2] [ref=f4e145]
+        - paragraph [ref=f4e146]: At Spray Foam Insurance, we understand that prevention is the first step in creating a safe work environment. We provide resources and support to help you implement best practices in workplace safety. By working together, we can reduce the risk of accidents and ensure the well-being of your employees.
+      - generic [ref=f4e147]:
+        - heading "Choose Spray Foam Insurance for Your Workers' Compensation Needs" [level=2] [ref=f4e148]
+        - paragraph [ref=f4e149]: Your employees are your most valuable asset, and protecting them is crucial. At Spray Foam Insurance, we specialize in providing Workers' Compensation Insurance tailored to the unique requirements of spray foam contractors. Our experienced team understands the intricacies of your industry, and we're committed to ensuring your employees have the coverage they need to thrive and succeed.
+        - paragraph [ref=f4e150]: Ready to discuss your insurance needs or have questions about Workers' Compensation Insurance? Contact Spray Foam Insurance today. We're here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while ensuring the well-being of your team.
+    - generic [ref=f4e152]:
+      - heading "Workers' Comp FAQ" [level=2] [ref=f4e153]
+      - generic [ref=f4e154]:
+        - generic [ref=f4e155]:
+          - button "Is workers' comp required for spray foam contractors?" [ref=f4e156] [cursor=pointer]
+          - paragraph [ref=f4e159]: In almost every state, yes. Workers' comp is mandatory as soon as you have one employee. The specific requirements — including whether owners must cover themselves — vary by state. Operating without it can result in fines, stop-work orders, and personal liability for injured workers' medical bills.
+        - generic [ref=f4e160]:
+          - button "How are workers' comp rates calculated for spray foam contractors?" [ref=f4e161] [cursor=pointer]
+          - paragraph [ref=f4e164]: Rates are based on your payroll (per $100 of payroll), the classification codes assigned to your workers (SPF work typically carries higher rates than general construction), your experience modification rate (EMR), and the state you operate in. A lower EMR means lower premiums — and we can help you achieve that with safety programs.
+        - generic [ref=f4e165]:
+          - button "What is an experience modification rate (EMR)?" [ref=f4e166] [cursor=pointer]
+          - paragraph [ref=f4e169]: Your EMR is a factor that adjusts your workers' comp premium based on your actual claims history compared to businesses of similar size and industry. An EMR of 1.0 is average. Below 1.0 means lower premiums; above 1.0 means higher premiums. Maintaining good safety practices directly saves you money.
+        - generic [ref=f4e170]:
+          - button "Do I need workers' comp if I only use subcontractors?" [ref=f4e171] [cursor=pointer]
+          - paragraph [ref=f4e174]: Possibly. If your subcontractors don't have their own workers' comp coverage, many states will hold you responsible as the employer of record. We recommend verifying certificates of insurance from all subs and consulting us about your exposure.
+        - generic [ref=f4e175]:
+          - button "What happens if I have a claim?" [ref=f4e176] [cursor=pointer]
+          - paragraph [ref=f4e179]: Report the injury immediately, provide appropriate medical care, and notify us or your insurer right away. Timely reporting leads to better outcomes — injured workers who get prompt care return to work faster. We'll guide you through the claims process from start to finish.
+    - generic [ref=f4e183]:
+      - generic [ref=f4e184]:
+        - heading "Ready to protect your business?" [level=2] [ref=f4e185]
+        - paragraph [ref=f4e186]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f4e187]:
+        - link "Get a Quote" [ref=f4e188] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f4e191] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f4e194]:
+    - generic [ref=f4e195]:
+      - generic [ref=f4e196]:
+        - generic [ref=f4e197]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f4e198]
+          - paragraph [ref=f4e199]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f4e200] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f4e201] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f4e202]:
+          - heading "Navigate" [level=4] [ref=f4e203]
+          - list [ref=f4e204]:
+            - listitem [ref=f4e205]:
+              - link "Home" [ref=f4e206] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f4e207]:
+              - link "Services" [ref=f4e208] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f4e209]:
+              - link "General Liability Insurance" [ref=f4e210] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f4e211]:
+              - link "Inland Marine" [ref=f4e212] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f4e213]:
+              - link "Commercial Auto" [ref=f4e214] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f4e215]:
+              - link "Surety Bonds" [ref=f4e216] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f4e217]:
+              - link "Environmental Liability" [ref=f4e218] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f4e219]:
+              - link "Safety and Compliance" [ref=f4e220] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f4e221]:
+              - link "Workers' Compensation" [ref=f4e222] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f4e223]:
+              - link "Resources" [ref=f4e224] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f4e225]:
+              - link "Attic Insulation Certificate" [ref=f4e226] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f4e227]:
+              - link "Work Record Form" [ref=f4e228] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f4e229]:
+              - link "Blog" [ref=f4e230] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f4e231]:
+              - link "About Us" [ref=f4e232] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f4e233]:
+              - link "Contact Us" [ref=f4e234] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f4e235]:
+              - link "Quote" [ref=f4e236] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f4e237]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f4e238]
+          - list [ref=f4e239]:
+            - listitem [ref=f4e240]:
+              - link "– General Liability Insurance" [ref=f4e241] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f4e242]:
+              - link "– Commercial Auto Insurance" [ref=f4e243] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f4e244]:
+              - link "– Surety Bonds" [ref=f4e245] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f4e246]:
+              - link "– Environmental Liability Insurance" [ref=f4e247] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f4e248]:
+              - link "– Safety and Compliance Support" [ref=f4e249] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f4e250]:
+              - link "– Workers' Compensation Insurance" [ref=f4e251] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f4e252]:
+        - paragraph [ref=f4e253]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f4e254]:
+          - link "Privacy Policy" [ref=f4e255] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f4e256] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f4e257]

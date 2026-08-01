@@ -1,0 +1,272 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f1e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f1e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f1e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f1e10]
+        - generic [ref=f1e11]:
+          - generic [ref=f1e12]: Spray Foam
+          - generic [ref=f1e13]: Insurance.com
+      - generic [ref=f1e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f1e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f1e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f1e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f1e24]:
+        - link "Facebook" [ref=f1e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f1e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f1e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f1e37]:
+      - generic [ref=f1e38]:
+        - link "Home" [ref=f1e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f1e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f1e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f1e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f1e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f1e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f1e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f1e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f1e53]:
+    - generic [ref=f1e55]:
+      - generic [ref=f1e56]: OFFICIAL DOCUMENTATION
+      - heading "Attic Insulation Certificate" [level=1] [ref=f1e57]
+      - paragraph [ref=f1e58]: Official documentation of your spray foam installation for homeowners, inspectors, and rebate programs.
+      - link "Request Certificate" [ref=f1e59] [cursor=pointer]:
+        - /url: "#request"
+    - generic [ref=f1e62]:
+      - paragraph [ref=f1e63]: CERTIFICATE CONTENTS
+      - heading "What the Certificate Documents" [level=2] [ref=f1e64]
+      - paragraph [ref=f1e65]: Every attic insulation certificate we issue captures the complete picture of your spray foam installation in a single verifiable document.
+      - generic [ref=f1e66]:
+        - generic [ref=f1e67]:
+          - heading "Installation Date" [level=3] [ref=f1e71]
+          - paragraph [ref=f1e72]: The exact date insulation was installed, establishing the warranty timeline and work history.
+        - generic [ref=f1e73]:
+          - heading "Material Type" [level=3] [ref=f1e79]
+          - paragraph [ref=f1e80]: Specific spray foam product, manufacturer name, and whether open-cell or closed-cell type.
+        - generic [ref=f1e81]:
+          - heading "R-Value Achieved" [level=3] [ref=f1e85]
+          - paragraph [ref=f1e86]: Documented R-value per inch and total R-value achieved for the installed depth.
+        - generic [ref=f1e87]:
+          - heading "Coverage Area" [level=3] [ref=f1e91]
+          - paragraph [ref=f1e92]: Square footage covered, including areas treated and any exclusions noted.
+        - generic [ref=f1e93]:
+          - heading "Installed Thickness" [level=3] [ref=f1e101]
+          - paragraph [ref=f1e102]: Measured depth of spray foam applied in inches at multiple measurement points.
+        - generic [ref=f1e103]:
+          - heading "Contractor Information" [level=3] [ref=f1e108]
+          - paragraph [ref=f1e109]: Licensed contractor name, license number, and contact information for verification.
+    - generic [ref=f1e110]:
+      - paragraph [ref=f1e111]: USE CASES
+      - heading "When You Need a Certificate" [level=2] [ref=f1e112]
+      - paragraph [ref=f1e113]: A documented installation certificate protects contractors and homeowners alike across a range of situations.
+      - generic [ref=f1e114]:
+        - generic [ref=f1e115]:
+          - generic [ref=f1e116]: "1"
+          - generic [ref=f1e117]:
+            - paragraph [ref=f1e118]: Energy Rebate Programs
+            - paragraph [ref=f1e119]: Utility companies and government programs require documentation of insulation type and R-value.
+        - generic [ref=f1e120]:
+          - generic [ref=f1e121]: "2"
+          - generic [ref=f1e122]:
+            - paragraph [ref=f1e123]: Home Sale / Transfer
+            - paragraph [ref=f1e124]: Buyers and inspectors often request proof of insulation work during due diligence.
+        - generic [ref=f1e125]:
+          - generic [ref=f1e126]: "3"
+          - generic [ref=f1e127]:
+            - paragraph [ref=f1e128]: Building Permits
+            - paragraph [ref=f1e129]: Some jurisdictions require certificates of installation for energy code compliance.
+        - generic [ref=f1e130]:
+          - generic [ref=f1e131]: "4"
+          - generic [ref=f1e132]:
+            - paragraph [ref=f1e133]: Insurance Claims
+            - paragraph [ref=f1e134]: Documented proof of installation protects you if you file a claim related to insulation.
+        - generic [ref=f1e135]:
+          - generic [ref=f1e136]: "5"
+          - generic [ref=f1e137]:
+            - paragraph [ref=f1e138]: Warranty Claims
+            - paragraph [ref=f1e139]: Manufacturer warranties often require a completion certificate for coverage.
+    - generic [ref=f1e140]:
+      - paragraph [ref=f1e141]: GET YOUR CERTIFICATE
+      - heading "Request a Certificate" [level=2] [ref=f1e142]
+      - paragraph [ref=f1e143]: Fill out the form below and we'll prepare your official certificate within 1 business day.
+      - generic [ref=f1e144]:
+        - generic [ref=f1e145]:
+          - heading "Certificate Request Form" [level=2] [ref=f1e146]
+          - paragraph [ref=f1e147]: Submit your job details and we'll prepare your certificate within 1 business day.
+        - generic [ref=f1e148]:
+          - generic [ref=f1e149]:
+            - generic [ref=f1e150]: Contractor Company Name
+            - textbox "ABC Spray Foam LLC" [ref=f1e151]
+          - generic [ref=f1e152]:
+            - generic [ref=f1e153]: License Number
+            - textbox "LIC-123456" [ref=f1e154]
+          - generic [ref=f1e155]:
+            - generic [ref=f1e156]: Installation Date
+            - textbox [ref=f1e157]
+          - generic [ref=f1e158]:
+            - generic [ref=f1e159]: Property Address
+            - textbox "123 Main St" [ref=f1e160]
+          - generic [ref=f1e161]:
+            - generic [ref=f1e162]: City / State / ZIP
+            - textbox "Phoenix, AZ 85001" [ref=f1e163]
+          - generic [ref=f1e164]:
+            - generic [ref=f1e165]: Contact Email
+            - textbox "you@company.com" [ref=f1e166]
+          - generic [ref=f1e167]:
+            - generic [ref=f1e168]: SPF Type
+            - combobox [ref=f1e169]:
+              - option "Select SPF type…" [selected]
+              - option "Open-Cell 0.5lb"
+              - option "Closed-Cell 2lb"
+              - option "Closed-Cell High-Density 3lb"
+          - generic [ref=f1e170]:
+            - generic [ref=f1e171]: Thickness Installed (inches)
+            - spinbutton "e.g. 6" [ref=f1e172]
+          - generic [ref=f1e173]:
+            - generic [ref=f1e174]: R-Value Achieved
+            - spinbutton "e.g. 38" [ref=f1e175]
+          - generic [ref=f1e176]:
+            - generic [ref=f1e177]: Square Footage
+            - spinbutton "e.g. 1200" [ref=f1e178]
+          - generic [ref=f1e180]:
+            - generic [ref=f1e181]: Notes / Special Instructions
+            - textbox "Any additional details about the installation…" [ref=f1e182]
+        - button "Request Certificate" [ref=f1e183] [cursor=pointer]
+        - paragraph [ref=f1e184]: We prepare your certificate within 1 business day and send it to your email at no charge.
+    - generic [ref=f1e186]:
+      - heading "Download Example Certificate" [level=3] [ref=f1e190]
+      - paragraph [ref=f1e191]: Preview what your completed certificate looks like before requesting one.
+      - link "Download Example (PDF)" [ref=f1e192] [cursor=pointer]:
+        - /url: "#"
+      - paragraph [ref=f1e196]: PDF format • 1 page • Printable
+    - generic [ref=f1e197]:
+      - paragraph [ref=f1e198]: COMMON QUESTIONS
+      - heading "Certificate FAQs" [level=2] [ref=f1e199]
+      - generic [ref=f1e200]:
+        - generic [ref=f1e201]:
+          - button "How long does it take to receive my certificate?" [ref=f1e202] [cursor=pointer]
+          - paragraph [ref=f1e205]: Certificates are typically prepared within 1 business day. Urgent requests can often be processed same-day — call 844-967-5247.
+        - generic [ref=f1e206]:
+          - button "Is this certificate accepted for energy rebate programs?" [ref=f1e207] [cursor=pointer]
+          - paragraph [ref=f1e210]: Our certificates meet the documentation requirements for most state and utility energy efficiency programs. Some programs have specific format requirements — check with your rebate program first.
+        - generic [ref=f1e211]:
+          - button "Can I get a certificate for work done years ago?" [ref=f1e212] [cursor=pointer]
+          - paragraph [ref=f1e215]: Yes, if you have records of the installation (date, product, thickness), we can prepare a certificate based on your documentation. Older jobs may require additional verification.
+        - generic [ref=f1e216]:
+          - button "Does the homeowner get a copy?" [ref=f1e217] [cursor=pointer]
+          - paragraph [ref=f1e220]: Yes — certificates are provided to both the contractor and the property owner. We recommend keeping copies on file for at least 10 years.
+    - generic [ref=f1e224]:
+      - generic [ref=f1e225]:
+        - heading "Ready to protect your business?" [level=2] [ref=f1e226]
+        - paragraph [ref=f1e227]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f1e228]:
+        - link "Get a Quote" [ref=f1e229] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f1e232] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f1e235]:
+    - generic [ref=f1e236]:
+      - generic [ref=f1e237]:
+        - generic [ref=f1e238]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f1e239]
+          - paragraph [ref=f1e240]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f1e241] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f1e242] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f1e243]:
+          - heading "Navigate" [level=4] [ref=f1e244]
+          - list [ref=f1e245]:
+            - listitem [ref=f1e246]:
+              - link "Home" [ref=f1e247] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f1e248]:
+              - link "Services" [ref=f1e249] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f1e250]:
+              - link "General Liability Insurance" [ref=f1e251] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f1e252]:
+              - link "Inland Marine" [ref=f1e253] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f1e254]:
+              - link "Commercial Auto" [ref=f1e255] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f1e256]:
+              - link "Surety Bonds" [ref=f1e257] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f1e258]:
+              - link "Environmental Liability" [ref=f1e259] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f1e260]:
+              - link "Safety and Compliance" [ref=f1e261] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f1e262]:
+              - link "Workers' Compensation" [ref=f1e263] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f1e264]:
+              - link "Resources" [ref=f1e265] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f1e266]:
+              - link "Attic Insulation Certificate" [ref=f1e267] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f1e268]:
+              - link "Work Record Form" [ref=f1e269] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f1e270]:
+              - link "Blog" [ref=f1e271] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f1e272]:
+              - link "About Us" [ref=f1e273] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f1e274]:
+              - link "Contact Us" [ref=f1e275] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f1e276]:
+              - link "Quote" [ref=f1e277] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f1e278]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f1e279]
+          - list [ref=f1e280]:
+            - listitem [ref=f1e281]:
+              - link "– General Liability Insurance" [ref=f1e282] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f1e283]:
+              - link "– Commercial Auto Insurance" [ref=f1e284] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f1e285]:
+              - link "– Surety Bonds" [ref=f1e286] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f1e287]:
+              - link "– Environmental Liability Insurance" [ref=f1e288] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f1e289]:
+              - link "– Safety and Compliance Support" [ref=f1e290] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f1e291]:
+              - link "– Workers' Compensation Insurance" [ref=f1e292] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f1e293]:
+        - paragraph [ref=f1e294]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f1e295]:
+          - link "Privacy Policy" [ref=f1e296] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f1e297] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f1e298]
