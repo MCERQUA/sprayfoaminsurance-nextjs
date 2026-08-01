@@ -1,0 +1,160 @@
+- generic [active] [ref=f40e1]:
+  - banner [ref=f40e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f40e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f40e8]:
+      - link [ref=f40e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f40e10]
+      - button "Toggle menu" [ref=f40e11] [cursor=pointer]
+  - main [ref=f40e13]:
+    - generic [ref=f40e15]:
+      - link "Back to Blog" [ref=f40e16] [cursor=pointer]:
+        - /url: /blog/
+      - generic [ref=f40e19]: Equipment
+      - heading "Spray Foam Equipment Coverage" [level=1] [ref=f40e21]
+      - generic [ref=f40e22]:
+        - generic [ref=f40e23]: September 24, 2023
+        - generic [ref=f40e26]: Josh Cotner
+    - generic [ref=f40e31]:
+      - generic [ref=f40e32]:
+        - paragraph [ref=f40e33]: If you're a spray foam insulation contractor, you're well aware of the importance of your equipment. Your machines, tools, and materials are the lifeblood of your business, allowing you to provide efficient and effective insulation services. But have you ever wondered, "Is my equipment covered?" In this article, we'll explore the ins and outs of insurance for spray foam insulation contractors, focusing on how you can protect your valuable equipment.
+        - heading "General Liability Insurance:" [level=2] [ref=f40e34]
+        - paragraph [ref=f40e35]: General liability insurance is a fundamental coverage for contractors. While it primarily covers bodily injury and property damage claims, it can indirectly offer some protection for your equipment. For instance, if your equipment were to malfunction and cause damage to a client's property, the liability coverage may come into play.
+        - heading "Inland Marine Insurance:" [level=2] [ref=f40e36]
+        - paragraph [ref=f40e37]: Inland marine insurance is a specialized policy designed to cover movable property and equipment. It's often used to protect high-value tools and equipment that are frequently transported to job sites. For spray foam insulation contractors, this coverage can be a lifesaver. It can protect your equipment not only at your business location but also while in transit to various job sites.
+        - heading "Builder's Risk Insurance:" [level=2] [ref=f40e38]
+        - paragraph [ref=f40e39]: If you're working on a new construction project that involves insulation installation, builder's risk insurance can be essential. It covers property and materials on the construction site, including your equipment. If your equipment is damaged or stolen while on the job, this policy can help replace or repair it.
+        - heading "Equipment Breakdown Insurance:" [level=2] [ref=f40e40]
+        - paragraph [ref=f40e41]: Spray foam insulation equipment can be sophisticated and prone to breakdowns. Equipment breakdown insurance is tailored to cover the cost of repairs or replacement for your machinery and tools in the event of sudden mechanical or electrical failures.
+        - heading "Commercial Property Insurance:" [level=2] [ref=f40e42]
+        - paragraph [ref=f40e43]: If you have a physical location where you store your equipment when not in use, commercial property insurance can be vital. This coverage protects your building and its contents, including equipment, from perils like fire, theft, vandalism, or natural disasters.
+        - heading "Business Owner's Policy (BOP):" [level=2] [ref=f40e44]
+        - paragraph [ref=f40e45]: A BOP is a package policy that combines general liability insurance and commercial property insurance. It can provide a cost-effective way to protect both your liability and your equipment under a single policy.
+        - heading "Equipment Endorsements:" [level=2] [ref=f40e46]
+        - paragraph [ref=f40e47]: Some insurance policies allow you to add equipment endorsements or riders to your coverage. These endorsements can tailor your policy to include specific equipment and tools, ensuring that they are adequately protected.
+        - heading "Key Considerations:" [level=2] [ref=f40e48]
+        - paragraph [ref=f40e49]: "Assess Your Equipment Value: Before purchasing insurance, take an inventory of your equipment and estimate its value. This will help you determine the appropriate coverage limits."
+        - paragraph [ref=f40e50]: "Review Policy Exclusions: Understand what is covered and what is excluded in your insurance policies. Some policies may exclude coverage for certain types of equipment or specific causes of loss."
+        - paragraph [ref=f40e51]: "Regular Maintenance: Properly maintain your equipment to minimize the risk of breakdowns and ensure that your insurance claims are valid."
+        - paragraph [ref=f40e52]: "Work with an Insurance Professional: Consulting with an insurance agent or broker who specializes in construction and contractor insurance can help you tailor your coverage to your specific needs."
+        - paragraph [ref=f40e53]: As a spray foam insulation contractor, your equipment is a significant investment, and its protection should be a top priority. By understanding the types of insurance available and how they can safeguard your equipment, you can ensure that your business remains resilient in the face of unexpected challenges. Don't wait until it's too late – explore your insurance options today to secure the future of your spray foam insulation contracting business.
+      - link "Back to Blog" [ref=f40e55] [cursor=pointer]:
+        - /url: /blog/
+    - generic [ref=f40e59]:
+      - heading "Related Articles" [level=2] [ref=f40e60]
+      - generic [ref=f40e61]:
+        - generic [ref=f40e62]:
+          - generic [ref=f40e63]: Pricing
+          - heading "What Factors Affect My Insurance Premiums?" [level=3] [ref=f40e64]
+          - link "Read Article" [ref=f40e65] [cursor=pointer]:
+            - /url: /2023/09/24/what-factors-affect-insurance-premiums/
+        - generic [ref=f40e68]:
+          - generic [ref=f40e69]: Coverage
+          - heading "Is Retrofitting Insurance Available for Spray Foam Contractors?" [level=3] [ref=f40e70]
+          - link "Read Article" [ref=f40e71] [cursor=pointer]:
+            - /url: /2023/09/24/is-retrofitting-insurance-available-for-spray-foam-contractors/
+        - generic [ref=f40e74]:
+          - generic [ref=f40e75]: Business
+          - heading "Equipment Financing Guide" [level=3] [ref=f40e76]
+          - link "Read Article" [ref=f40e77] [cursor=pointer]:
+            - /url: /2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/
+    - generic [ref=f40e83]:
+      - generic [ref=f40e84]:
+        - heading "Ready to protect your business?" [level=2] [ref=f40e85]
+        - paragraph [ref=f40e86]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f40e87]:
+        - link "Get a Quote" [ref=f40e88] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f40e91] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f40e94]:
+    - generic [ref=f40e95]:
+      - generic [ref=f40e96]:
+        - generic [ref=f40e97]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f40e98]
+          - paragraph [ref=f40e99]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f40e100] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f40e101] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f40e102]:
+          - heading "Navigate" [level=4] [ref=f40e103]
+          - list [ref=f40e104]:
+            - listitem [ref=f40e105]:
+              - link "Home" [ref=f40e106] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f40e107]:
+              - link "Services" [ref=f40e108] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f40e109]:
+              - link "General Liability Insurance" [ref=f40e110] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f40e111]:
+              - link "Inland Marine" [ref=f40e112] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f40e113]:
+              - link "Commercial Auto" [ref=f40e114] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f40e115]:
+              - link "Surety Bonds" [ref=f40e116] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f40e117]:
+              - link "Environmental Liability" [ref=f40e118] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f40e119]:
+              - link "Safety and Compliance" [ref=f40e120] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f40e121]:
+              - link "Workers' Compensation" [ref=f40e122] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f40e123]:
+              - link "Resources" [ref=f40e124] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f40e125]:
+              - link "Attic Insulation Certificate" [ref=f40e126] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f40e127]:
+              - link "Work Record Form" [ref=f40e128] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f40e129]:
+              - link "Blog" [ref=f40e130] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f40e131]:
+              - link "About Us" [ref=f40e132] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f40e133]:
+              - link "Contact Us" [ref=f40e134] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f40e135]:
+              - link "Quote" [ref=f40e136] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f40e137]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f40e138]
+          - list [ref=f40e139]:
+            - listitem [ref=f40e140]:
+              - link "– General Liability Insurance" [ref=f40e141] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f40e142]:
+              - link "– Commercial Auto Insurance" [ref=f40e143] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f40e144]:
+              - link "– Surety Bonds" [ref=f40e145] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f40e146]:
+              - link "– Environmental Liability Insurance" [ref=f40e147] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f40e148]:
+              - link "– Safety and Compliance Support" [ref=f40e149] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f40e150]:
+              - link "– Workers' Compensation Insurance" [ref=f40e151] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f40e152]:
+        - paragraph [ref=f40e153]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f40e154]:
+          - link "Privacy Policy" [ref=f40e155] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f40e156] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f40e157]

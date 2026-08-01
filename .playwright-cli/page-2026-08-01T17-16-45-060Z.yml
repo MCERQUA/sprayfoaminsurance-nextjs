@@ -1,0 +1,174 @@
+- generic [active] [ref=f39e1]:
+  - banner [ref=f39e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f39e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f39e8]:
+      - link [ref=f39e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f39e10]
+      - button "Toggle menu" [ref=f39e11] [cursor=pointer]
+  - main [ref=f39e13]:
+    - heading "Contact Us" [level=1] [ref=f39e16]
+    - navigation "Breadcrumb" [ref=f39e18]:
+      - link "Home" [ref=f39e20] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f39e21]: Contact US
+    - paragraph [ref=f39e27]: At The Contractor's Choice Agency Inc., we're here to provide you with the best insurance solutions tailored to your needs. Whether you're looking for auto, home, life, or business insurance, our team of dedicated professionals is ready to assist you.
+    - generic [ref=f39e29]:
+      - generic [ref=f39e30]:
+        - heading "Send Us A Message" [level=2] [ref=f39e31]
+        - paragraph [ref=f39e32]: Have questions or need assistance? We're here to help. Feel free to send us a message using the form below, and one of our experienced team members will get back to you promptly. Your inquiries are important to us, and we look forward to assisting you with any insurance-related needs or inquiries you may have.
+        - generic [ref=f39e33]:
+          - generic [ref=f39e34]:
+            - generic [ref=f39e35]: Name
+            - textbox "Your name" [ref=f39e36]
+          - generic [ref=f39e37]:
+            - generic [ref=f39e38]: Email Address
+            - textbox "you@company.com" [ref=f39e39]
+          - generic [ref=f39e40]:
+            - generic [ref=f39e41]: Message
+            - textbox "Tell us about your coverage needs..." [ref=f39e42]
+          - button "Submit" [ref=f39e43] [cursor=pointer]
+      - generic [ref=f39e44]:
+        - heading "Office Location" [level=2] [ref=f39e45]
+        - generic [ref=f39e46]:
+          - generic [ref=f39e51]:
+            - paragraph [ref=f39e52]: Address
+            - paragraph [ref=f39e53]: 2270 E Augusta Ave, Chandler, AZ 85249, United States
+          - generic [ref=f39e57]:
+            - paragraph [ref=f39e58]: Call Us Today
+            - 'link "Tel.: +1 844-967-5247" [ref=f39e59] [cursor=pointer]':
+              - /url: tel:8449675247
+          - generic [ref=f39e64]:
+            - paragraph [ref=f39e65]: Email Us
+            - link "Josh@sprayfoaminsurance.com" [ref=f39e66] [cursor=pointer]:
+              - /url: mailto:Josh@sprayfoaminsurance.com
+            - link "info@sprayfoaminsurance.com" [ref=f39e67] [cursor=pointer]:
+              - /url: mailto:info@sprayfoaminsurance.com
+          - generic [ref=f39e72]:
+            - paragraph [ref=f39e73]: Office Hours
+            - paragraph [ref=f39e74]: "Monday: 9:00 AM – 5:00 PM"
+            - paragraph [ref=f39e75]: "Tuesday: 9:00 AM – 5:00 PM"
+            - paragraph [ref=f39e76]: "Wednesday: 9:00 AM – 5:00 PM"
+            - paragraph [ref=f39e77]: "Thursday: 9:00 AM – 5:00 PM"
+            - paragraph [ref=f39e78]: "Friday: 9:00 AM – 5:00 PM"
+    - generic [ref=f39e80]:
+      - paragraph [ref=f39e81]: You're always welcome to stop by our office during business hours, or if it's more convenient, feel free to give us a call or send us an email. We're happy to schedule a time that works best for you!
+      - paragraph [ref=f39e82]: Your protection is our priority. We're committed to offering you the guidance and support you need to make informed decisions about your insurance coverage. Let us help you find peace of mind.
+    - generic [ref=f39e83]:
+      - heading "Frequently Asked Questions" [level=2] [ref=f39e84]
+      - generic [ref=f39e85]:
+        - generic [ref=f39e86]:
+          - button "How quickly can I get a quote?" [ref=f39e87] [cursor=pointer]
+          - paragraph [ref=f39e90]: Most spray foam contractors receive a quote within 1 business day. Call 844-967-5247 for same-day quotes on straightforward risks.
+        - generic [ref=f39e91]:
+          - button "Do you work in all 50 states?" [ref=f39e92] [cursor=pointer]
+          - paragraph [ref=f39e95]: Yes — we provide spray foam insurance across all 50 states. Contact us to confirm availability of specialty coverages in your area.
+        - generic [ref=f39e96]:
+          - button "Can I get a certificate of insurance same day?" [ref=f39e97] [cursor=pointer]
+          - paragraph [ref=f39e100]: Certificates for existing policies are typically issued within 1–2 hours during business hours. New policy certificates may take 1 business day.
+        - generic [ref=f39e101]:
+          - button "Do you insure new contractors with no prior coverage?" [ref=f39e102] [cursor=pointer]
+          - paragraph [ref=f39e105]: Yes — we work with contractors at all stages. New contractors may face slightly higher initial premiums but we'll find the best available rate.
+        - generic [ref=f39e106]:
+          - button "What information do I need to get a quote?" [ref=f39e107] [cursor=pointer]
+          - paragraph [ref=f39e110]: "Basic info needed: years in business, number of employees, annual revenue, states where you operate, and any prior claims history."
+    - generic [ref=f39e114]:
+      - generic [ref=f39e115]:
+        - heading "Ready to protect your business?" [level=2] [ref=f39e116]
+        - paragraph [ref=f39e117]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f39e118]:
+        - link "Get a Quote" [ref=f39e119] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f39e122] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f39e125]:
+    - generic [ref=f39e126]:
+      - generic [ref=f39e127]:
+        - generic [ref=f39e128]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f39e129]
+          - paragraph [ref=f39e130]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f39e131] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f39e132] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f39e133]:
+          - heading "Navigate" [level=4] [ref=f39e134]
+          - list [ref=f39e135]:
+            - listitem [ref=f39e136]:
+              - link "Home" [ref=f39e137] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f39e138]:
+              - link "Services" [ref=f39e139] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f39e140]:
+              - link "General Liability Insurance" [ref=f39e141] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f39e142]:
+              - link "Inland Marine" [ref=f39e143] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f39e144]:
+              - link "Commercial Auto" [ref=f39e145] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f39e146]:
+              - link "Surety Bonds" [ref=f39e147] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f39e148]:
+              - link "Environmental Liability" [ref=f39e149] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f39e150]:
+              - link "Safety and Compliance" [ref=f39e151] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f39e152]:
+              - link "Workers' Compensation" [ref=f39e153] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f39e154]:
+              - link "Resources" [ref=f39e155] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f39e156]:
+              - link "Attic Insulation Certificate" [ref=f39e157] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f39e158]:
+              - link "Work Record Form" [ref=f39e159] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f39e160]:
+              - link "Blog" [ref=f39e161] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f39e162]:
+              - link "About Us" [ref=f39e163] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f39e164]:
+              - link "Contact Us" [ref=f39e165] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f39e166]:
+              - link "Quote" [ref=f39e167] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f39e168]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f39e169]
+          - list [ref=f39e170]:
+            - listitem [ref=f39e171]:
+              - link "– General Liability Insurance" [ref=f39e172] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f39e173]:
+              - link "– Commercial Auto Insurance" [ref=f39e174] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f39e175]:
+              - link "– Surety Bonds" [ref=f39e176] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f39e177]:
+              - link "– Environmental Liability Insurance" [ref=f39e178] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f39e179]:
+              - link "– Safety and Compliance Support" [ref=f39e180] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f39e181]:
+              - link "– Workers' Compensation Insurance" [ref=f39e182] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f39e183]:
+        - paragraph [ref=f39e184]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f39e185]:
+          - link "Privacy Policy" [ref=f39e186] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f39e187] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f39e188]

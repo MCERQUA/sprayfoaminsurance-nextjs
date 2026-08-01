@@ -1,0 +1,157 @@
+- generic [active] [ref=f37e1]:
+  - banner [ref=f37e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f37e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f37e8]:
+      - link [ref=f37e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f37e10]
+      - button "Toggle menu" [ref=f37e11] [cursor=pointer]
+  - main [ref=f37e13]:
+    - generic [ref=f37e15]:
+      - link "Back to Blog" [ref=f37e16] [cursor=pointer]:
+        - /url: /blog/
+      - generic [ref=f37e19]: Commercial
+      - heading "Insurance Requirements" [level=1] [ref=f37e21]
+      - generic [ref=f37e22]:
+        - generic [ref=f37e23]: September 24, 2023
+        - generic [ref=f37e26]: Josh Cotner
+    - generic [ref=f37e31]:
+      - generic [ref=f37e32]:
+        - paragraph [ref=f37e33]: As a spray foam contractor, taking on large commercial projects can be both a significant opportunity and a complex undertaking. These projects often come with heightened responsibilities and specific requirements, including insurance. In this article, we'll explore the essential insurance requirements for spray foam contractors working on large commercial projects, helping you navigate this challenging but rewarding sector of the construction industry.
+        - heading "General Liability Insurance:" [level=2] [ref=f37e34]
+        - paragraph [ref=f37e35]: General liability insurance is typically the foundation of any contractor's insurance coverage. For large commercial projects, substantial liability coverage is crucial. This policy can protect you from third-party claims related to bodily injury, property damage, or personal injury that may occur during the course of your work. Commercial projects often have more stakeholders and higher potential risks, making robust general liability coverage essential.
+        - heading "Worker's Compensation Insurance:" [level=2] [ref=f37e36]
+        - paragraph [ref=f37e37]: Large commercial projects often involve a significant workforce. Worker's compensation insurance is typically mandatory in most states when you have employees. It provides coverage for medical expenses and lost wages in case a worker is injured on the job. Compliance with workers' compensation regulations is vital on large projects to ensure the well-being of your employees and legal compliance.
+        - heading "Commercial Auto Insurance:" [level=2] [ref=f37e38]
+        - paragraph [ref=f37e39]: If your business involves vehicles, such as trucks or vans used for transporting equipment and materials to the project site, commercial auto insurance is essential. It covers accidents, injuries, and property damage involving your company vehicles. For large commercial projects that may span a wide geographic area, this coverage is especially important.
+        - heading "Umbrella or Excess Liability Insurance:" [level=2] [ref=f37e40]
+        - paragraph [ref=f37e41]: For large commercial projects, it's wise to consider umbrella or excess liability insurance. This type of coverage provides an additional layer of protection beyond your primary liability policies. It's valuable when dealing with high-value projects and potential catastrophic events that could exhaust your primary policy limits.
+        - heading "Professional Liability Insurance:" [level=2] [ref=f37e42]
+        - paragraph [ref=f37e43]: Professional liability insurance, often referred to as errors and omissions (E&O) insurance, may be required for certain commercial projects. It provides protection against claims of professional negligence, mistakes, or errors in your work. Large commercial clients may expect this coverage to ensure the quality and integrity of the project.
+        - heading "Contractor's Pollution Liability Insurance:" [level=2] [ref=f37e44]
+        - paragraph [ref=f37e45]: If your spray foam insulation work involves chemicals or materials that could be considered pollutants, contractor's pollution liability insurance is essential. It covers claims related to pollution events, such as chemical spills or contamination, which could be particularly relevant in large commercial projects.
+        - heading "Builder's Risk Insurance:" [level=2] [ref=f37e46]
+        - paragraph [ref=f37e47]: Builder's risk insurance can be necessary for large construction projects, including those involving substantial renovations or new builds. It protects the project itself, including the materials and equipment used during construction. As a spray foam contractor, your work may be covered under this policy if it's considered part of the overall project.
+        - heading "Contractual Obligations:" [level=2] [ref=f37e48]
+        - paragraph [ref=f37e49]: It's crucial to review your contract with the project owner or general contractor carefully. Commercial projects often have specific insurance requirements outlined in contracts, and you must ensure that your coverage aligns with these contractual obligations.
+        - paragraph [ref=f37e50]: Taking on large commercial projects as a spray foam contractor can be a rewarding endeavor, but it also comes with significant responsibilities. Understanding and meeting the insurance requirements for these projects is a fundamental part of your success. By working closely with insurance professionals, reviewing contracts diligently, and maintaining appropriate coverage, you can navigate the complexities of large commercial projects with confidence and ensure that your work meets the highest standards of quality and safety.
+      - link "Back to Blog" [ref=f37e52] [cursor=pointer]:
+        - /url: /blog/
+    - generic [ref=f37e56]:
+      - heading "Related Articles" [level=2] [ref=f37e57]
+      - generic [ref=f37e58]:
+        - generic [ref=f37e59]:
+          - generic [ref=f37e60]: Business
+          - heading "Do I Need Insurance If I Subcontract Work?" [level=3] [ref=f37e61]
+          - link "Read Article" [ref=f37e62] [cursor=pointer]:
+            - /url: /2023/09/24/do-i-need-insurance-if-i-subcontract-work/
+        - generic [ref=f37e65]:
+          - generic [ref=f37e66]: Pricing
+          - heading "What Factors Affect My Insurance Premiums?" [level=3] [ref=f37e67]
+          - link "Read Article" [ref=f37e68] [cursor=pointer]:
+            - /url: /2023/09/24/what-factors-affect-insurance-premiums/
+        - generic [ref=f37e71]:
+          - generic [ref=f37e72]: Business
+          - heading "Equipment Financing Guide" [level=3] [ref=f37e73]
+          - link "Read Article" [ref=f37e74] [cursor=pointer]:
+            - /url: /2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/
+    - generic [ref=f37e80]:
+      - generic [ref=f37e81]:
+        - heading "Ready to protect your business?" [level=2] [ref=f37e82]
+        - paragraph [ref=f37e83]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f37e84]:
+        - link "Get a Quote" [ref=f37e85] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f37e88] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f37e91]:
+    - generic [ref=f37e92]:
+      - generic [ref=f37e93]:
+        - generic [ref=f37e94]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f37e95]
+          - paragraph [ref=f37e96]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f37e97] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f37e98] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f37e99]:
+          - heading "Navigate" [level=4] [ref=f37e100]
+          - list [ref=f37e101]:
+            - listitem [ref=f37e102]:
+              - link "Home" [ref=f37e103] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f37e104]:
+              - link "Services" [ref=f37e105] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f37e106]:
+              - link "General Liability Insurance" [ref=f37e107] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f37e108]:
+              - link "Inland Marine" [ref=f37e109] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f37e110]:
+              - link "Commercial Auto" [ref=f37e111] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f37e112]:
+              - link "Surety Bonds" [ref=f37e113] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f37e114]:
+              - link "Environmental Liability" [ref=f37e115] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f37e116]:
+              - link "Safety and Compliance" [ref=f37e117] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f37e118]:
+              - link "Workers' Compensation" [ref=f37e119] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f37e120]:
+              - link "Resources" [ref=f37e121] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f37e122]:
+              - link "Attic Insulation Certificate" [ref=f37e123] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f37e124]:
+              - link "Work Record Form" [ref=f37e125] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f37e126]:
+              - link "Blog" [ref=f37e127] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f37e128]:
+              - link "About Us" [ref=f37e129] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f37e130]:
+              - link "Contact Us" [ref=f37e131] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f37e132]:
+              - link "Quote" [ref=f37e133] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f37e134]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f37e135]
+          - list [ref=f37e136]:
+            - listitem [ref=f37e137]:
+              - link "– General Liability Insurance" [ref=f37e138] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f37e139]:
+              - link "– Commercial Auto Insurance" [ref=f37e140] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f37e141]:
+              - link "– Surety Bonds" [ref=f37e142] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f37e143]:
+              - link "– Environmental Liability Insurance" [ref=f37e144] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f37e145]:
+              - link "– Safety and Compliance Support" [ref=f37e146] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f37e147]:
+              - link "– Workers' Compensation Insurance" [ref=f37e148] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f37e149]:
+        - paragraph [ref=f37e150]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f37e151]:
+          - link "Privacy Policy" [ref=f37e152] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f37e153] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f37e154]

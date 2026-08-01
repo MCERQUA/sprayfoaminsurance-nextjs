@@ -1,0 +1,185 @@
+- generic [active] [ref=f38e1]:
+  - banner [ref=f38e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f38e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f38e8]:
+      - link [ref=f38e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f38e10]
+      - button "Toggle menu" [ref=f38e11] [cursor=pointer]
+  - main [ref=f38e13]:
+    - generic [ref=f38e15]:
+      - generic [ref=f38e16]: Environmental Liability
+      - heading "Environmental Liability Insurance for Spray Foam Contractors" [level=1] [ref=f38e17]
+      - paragraph [ref=f38e18]: Environmental Liability Insurance is more than just an added layer of protection; it's a testament to your dedication to responsible and sustainable practices.
+      - link "Get a Quote" [ref=f38e19] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=f38e24]:
+      - link [ref=f38e25] [cursor=pointer]:
+        - /url: /services/general-liability-insurance/
+        - generic [ref=f38e26]:
+          - heading "General liability" [level=3] [ref=f38e30]
+          - paragraph [ref=f38e31]: Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future.
+          - generic [ref=f38e32]: Learn More
+      - link [ref=f38e35] [cursor=pointer]:
+        - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+        - generic [ref=f38e36]:
+          - heading "Workers compensation" [level=3] [ref=f38e43]
+          - paragraph [ref=f38e44]: Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment.
+          - generic [ref=f38e45]: Learn More
+      - link [ref=f38e48] [cursor=pointer]:
+        - /url: /services/commercial-auto/
+        - generic [ref=f38e49]:
+          - heading "Commercial auto" [level=3] [ref=f38e56]
+          - paragraph [ref=f38e57]: Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage.
+          - generic [ref=f38e58]: Learn More
+    - generic [ref=f38e62]:
+      - heading "Protecting Your Business and the Environment" [level=2] [ref=f38e63]
+      - paragraph [ref=f38e64]: In the world of spray foam insulation, your commitment extends beyond your clients and projects—it includes safeguarding the environment. Spray foam contractors, by nature of their work with hazardous chemicals, face unique environmental risks. That's where Environmental Liability Insurance from Spray Foam Insurance comes into play. We provide specialized coverage designed to protect your business from the financial and environmental repercussions of unforeseen incidents.
+      - generic [ref=f38e65]:
+        - heading "Understanding the Essentials" [level=3] [ref=f38e66]
+        - paragraph [ref=f38e67]: Environmental Liability Insurance is more than just an added layer of protection; it's a testament to your dedication to responsible and sustainable practices. This coverage is crucial in mitigating the risks associated with handling hazardous materials and protecting the environment from potential harm.
+    - generic [ref=f38e69]:
+      - heading "Why Is Environmental Liability Insurance Essential for Spray Foam Contractors?" [level=2] [ref=f38e71]
+      - generic [ref=f38e72]:
+        - generic [ref=f38e73]:
+          - heading "Protection from Environmental Incidents" [level=3] [ref=f38e77]
+          - paragraph [ref=f38e78]: In the event of accidents, spills, or other environmental incidents involving hazardous spray foam chemicals, our insurance steps in to cover the costs of environmental cleanup and restoration.
+        - generic [ref=f38e79]:
+          - heading "Legal Compliance" [level=3] [ref=f38e83]
+          - paragraph [ref=f38e84]: Regulatory authorities have strict standards for handling and disposing of hazardous materials. Environmental Liability Insurance ensures you have the resources to meet these standards and avoid legal consequences.
+        - generic [ref=f38e85]:
+          - heading "Client Confidence" [level=3] [ref=f38e89]
+          - paragraph [ref=f38e90]: Clients today are environmentally conscious. By having Environmental Liability Insurance, you not only protect your business but also instill confidence in your clients, demonstrating your commitment to ethical and environmentally responsible practices.
+    - generic [ref=f38e93]:
+      - heading "Key Components of Coverage" [level=2] [ref=f38e94]
+      - paragraph [ref=f38e95]: "Our Environmental Liability Insurance can be tailored to meet the specific needs of spray foam contractors. Here are some key components of coverage:"
+      - list [ref=f38e96]:
+        - listitem [ref=f38e97]: "Environmental Cleanup: Coverage for the costs associated with environmental cleanup, restoration, and remediation in the event of chemical spills or incidents."
+        - listitem [ref=f38e98]: "Legal Expenses: Protection against legal expenses related to environmental claims and regulatory compliance."
+        - listitem [ref=f38e99]: "Property Damage: Coverage for property damage caused by environmental incidents, ensuring you can rectify the situation swiftly."
+    - generic [ref=f38e101]:
+      - generic [ref=f38e102]:
+        - heading "Preserving Your Reputation and the Environment" [level=2] [ref=f38e103]
+        - paragraph [ref=f38e104]: At Spray Foam Insurance, we understand that environmental responsibility is part of your mission. Our Environmental Liability Insurance goes beyond safeguarding your business; it upholds your commitment to protecting the environment. With our support, you can confidently pursue your projects, knowing you have a financial safety net in place should the unexpected occur.
+      - generic [ref=f38e105]:
+        - heading "Choose Spray Foam Insurance for Your Environmental Liability Needs" [level=2] [ref=f38e106]
+        - paragraph [ref=f38e107]: Our team specializes in providing Environmental Liability Insurance tailored to the unique requirements of spray foam contractors. We're committed to helping you navigate the world of environmental risk, ensuring that your business thrives while upholding environmental responsibility.
+        - paragraph [ref=f38e108]: Ready to discuss your insurance needs or have questions about Environmental Liability Insurance? Contact Spray Foam Insurance today. We're here to help you protect your business, preserve the environment, and demonstrate your commitment to responsible practices in the spray foam industry.
+    - generic [ref=f38e110]:
+      - heading "Frequently Asked Questions" [level=2] [ref=f38e111]
+      - generic [ref=f38e112]:
+        - generic [ref=f38e113]:
+          - button "Doesn't my general liability cover pollution?" [ref=f38e114] [cursor=pointer]
+          - paragraph [ref=f38e117]: Standard GL policies contain a 'pollution exclusion' that can bar coverage for chemical-related claims. Environmental Liability Insurance fills this gap. For spray foam contractors who work with reactive chemicals daily, this exclusion is a significant exposure. We recommend all SPF contractors carry both GL and environmental liability.
+        - generic [ref=f38e118]:
+          - button "What are isocyanates and why do they matter for insurance?" [ref=f38e119] [cursor=pointer]
+          - paragraph [ref=f38e122]: Isocyanates (the A-side of SPF) are among the leading causes of occupational asthma. They're classified as potential carcinogens and are tightly regulated by OSHA and EPA. A single claim from a building occupant or worker alleging isocyanate-related illness can result in six-figure legal costs — exactly what environmental liability insurance is designed to cover.
+        - generic [ref=f38e123]:
+          - button "Does environmental liability cover off-ratio foam?" [ref=f38e124] [cursor=pointer]
+          - paragraph [ref=f38e127]: Off-ratio foam (where the A and B components aren't properly mixed) can off-gas excessively and fail structurally. Environmental liability can cover third-party claims arising from off-ratio installations, including relocation costs, remediation, and property damage.
+        - generic [ref=f38e128]:
+          - button "How much environmental liability coverage do I need?" [ref=f38e129] [cursor=pointer]
+          - paragraph [ref=f38e132]: Coverage needs vary by project type and location. A minimum of $1M per occurrence is common, with $2M+ for commercial projects or work near sensitive environments. Some project owners and GCs require $5M or more for large commercial work.
+        - generic [ref=f38e133]:
+          - button "Can I bundle environmental liability with my GL policy?" [ref=f38e134] [cursor=pointer]
+          - paragraph [ref=f38e137]: In many cases, yes. Depending on the carrier, we can add pollution liability as an endorsement to your GL policy or as a separate standalone policy. We'll evaluate your operations and recommend the most cost-effective approach.
+    - generic [ref=f38e141]:
+      - generic [ref=f38e142]:
+        - heading "Ready to protect your business?" [level=2] [ref=f38e143]
+        - paragraph [ref=f38e144]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f38e145]:
+        - link "Get a Quote" [ref=f38e146] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f38e149] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f38e152]:
+    - generic [ref=f38e153]:
+      - generic [ref=f38e154]:
+        - generic [ref=f38e155]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f38e156]
+          - paragraph [ref=f38e157]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f38e158] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f38e159] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f38e160]:
+          - heading "Navigate" [level=4] [ref=f38e161]
+          - list [ref=f38e162]:
+            - listitem [ref=f38e163]:
+              - link "Home" [ref=f38e164] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f38e165]:
+              - link "Services" [ref=f38e166] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f38e167]:
+              - link "General Liability Insurance" [ref=f38e168] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f38e169]:
+              - link "Inland Marine" [ref=f38e170] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f38e171]:
+              - link "Commercial Auto" [ref=f38e172] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f38e173]:
+              - link "Surety Bonds" [ref=f38e174] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f38e175]:
+              - link "Environmental Liability" [ref=f38e176] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f38e177]:
+              - link "Safety and Compliance" [ref=f38e178] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f38e179]:
+              - link "Workers' Compensation" [ref=f38e180] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f38e181]:
+              - link "Resources" [ref=f38e182] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f38e183]:
+              - link "Attic Insulation Certificate" [ref=f38e184] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f38e185]:
+              - link "Work Record Form" [ref=f38e186] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f38e187]:
+              - link "Blog" [ref=f38e188] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f38e189]:
+              - link "About Us" [ref=f38e190] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f38e191]:
+              - link "Contact Us" [ref=f38e192] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f38e193]:
+              - link "Quote" [ref=f38e194] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f38e195]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f38e196]
+          - list [ref=f38e197]:
+            - listitem [ref=f38e198]:
+              - link "– General Liability Insurance" [ref=f38e199] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f38e200]:
+              - link "– Commercial Auto Insurance" [ref=f38e201] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f38e202]:
+              - link "– Surety Bonds" [ref=f38e203] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f38e204]:
+              - link "– Environmental Liability Insurance" [ref=f38e205] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f38e206]:
+              - link "– Safety and Compliance Support" [ref=f38e207] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f38e208]:
+              - link "– Workers' Compensation Insurance" [ref=f38e209] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f38e210]:
+        - paragraph [ref=f38e211]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f38e212]:
+          - link "Privacy Policy" [ref=f38e213] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f38e214] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f38e215]
