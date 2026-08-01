@@ -39,7 +39,9 @@ export default function VegasPage() {
         <div className="max-w-3xl mx-auto glass-card p-6 sm:p-8">
           <h2 className="font-headline text-xl font-bold text-white mb-6">Request Quote</h2>
           <form
-            onSubmit={(e) => e.preventDefault()}
+            name="vegas-quote-request"
+            method="POST"
+            data-netlify="true"
             className="space-y-4"
           >
             <div className="grid sm:grid-cols-3 gap-4">
