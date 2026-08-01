@@ -3540,3 +3540,22 @@ link: <https://sprayfoaminsurance.com/?p=775>; rel=shortlink
 x-cache-enabled: true
 x-cache: MISS
 
+
+=== /services/Safety-and-Compliance-Support/ (capitalized, no -L follow to respect throttle) ===
+HTTP/2 301 
+server: nginx
+date: Sat, 01 Aug 2026 16:22:07 GMT
+content-type: text/html; charset=UTF-8
+location: https://sprayfoaminsurance.com/safety-and-compliance-support/
+expires: Wed, 11 Jan 1984 05:00:00 GMT
+cache-control: no-cache, must-revalidate, max-age=0, no-store, private
+x-frame-options: sameorigin
+x-xss-protection: 1
+x-content-type-options: nosniff
+strict-transport-security: max-age=2592000
+referrer-policy: origin-when-cross-origin
+permissions-policy: accelerometer=(self), autoplay=(self), camera=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), magnetometer=(self), microphone=(self), midi=(self), payment=(self), usb=(self)
+x-redirect-by: WordPress
+x-cache-enabled: true
+x-cache: MISS
+
