@@ -1,0 +1,385 @@
+- generic [active] [ref=f18e1]:
+  - banner [ref=f18e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f18e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f18e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f18e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f18e10]
+        - generic [ref=f18e11]:
+          - generic [ref=f18e12]: Spray Foam
+          - generic [ref=f18e13]: Insurance.com
+      - generic [ref=f18e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f18e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f18e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f18e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f18e24]:
+        - link "Facebook" [ref=f18e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f18e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f18e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f18e37]:
+      - generic [ref=f18e38]:
+        - link "Home" [ref=f18e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f18e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f18e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f18e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f18e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f18e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f18e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f18e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f18e53]:
+    - heading "Spray Foam Application Work Record" [level=1] [ref=f18e56]
+    - generic [ref=f18e58]:
+      - paragraph [ref=f18e59]: Our Work Record Form is an essential tool for accurately documenting all critical jobsite data during spray foam insulation projects. This form is designed to capture environmental and material conditions to ensure the optimal application of spray foam insulation. By recording atmospheric and substrate information, we guarantee that each project meets industry standards for safety, performance, and quality.
+      - heading "What the Form Captures:" [level=3] [ref=f18e60]
+      - list [ref=f18e61]:
+        - listitem [ref=f18e62]: "Jobsite: Record the data, time, location, and jobsite conditions to create a comprehensive log for each project."
+        - listitem [ref=f18e63]: "Atmospheric Conditions: Ambient Temperature: This tracks the air temperature at the jobsite to ensure that the foam is applied under optimal conditions."
+        - listitem [ref=f18e64]: "Substrate Temperature: Recording the temperature of the surface where spray foam is applied is crucial for adhesion and overall insulation performance."
+        - listitem [ref=f18e65]: "Moisture Content: Monitoring the moisture levels in the substrate helps prevent foam from absorbing water, which can affect both application and long-term performance."
+        - listitem [ref=f18e66]: "Spray Foam Application Data: Starting Temperatures: Measure the initial temperatures of the foam material components before application to ensure the correct chemical reaction during spraying."
+        - listitem [ref=f18e67]: "Initial Pressures: Document the pressure levels in the spray foam equipment to ensure the proper mix and delivery of materials."
+      - heading "Why It's Important:" [level=3] [ref=f18e68]
+      - paragraph [ref=f18e69]: "Proper documentation of these environmental and material conditions helps to:"
+      - list [ref=f18e70]:
+        - listitem [ref=f18e71]: Ensure the foam is applied in compliance with manufacturer and industry guidelines.
+        - listitem [ref=f18e72]: Minimize the risk of product failure due to environmental factors.
+        - listitem [ref=f18e73]: Provide a record for quality control and troubleshooting if issues arise.
+      - heading "How to Use the Form:" [level=3] [ref=f18e74]
+      - paragraph [ref=f18e75]: Our form is straightforward and easy to use. Simply enter the required data during the job, and our system will store the information for easy access and review. This documentation helps maintain a professional standard and ensures the best performance for every spray foam insulation project.
+    - generic [ref=f18e76]:
+      - generic [ref=f18e78]:
+        - generic [ref=f18e79]:
+          - heading "Job Documentation Form" [level=2] [ref=f18e80]
+          - paragraph [ref=f18e81]: Complete all sections for accurate records
+        - generic [ref=f18e82]:
+          - generic [ref=f18e83]:
+            - generic [ref=f18e84]: Business Name
+            - textbox "Business Name" [ref=f18e85]:
+              - /placeholder: E.g. text placeholder
+          - generic [ref=f18e86]:
+            - generic [ref=f18e87]: Installer Name *
+            - textbox "Installer Name *" [ref=f18e88]:
+              - /placeholder: E.g. John Doe
+          - generic [ref=f18e89]:
+            - generic [ref=f18e90]:
+              - generic [ref=f18e91]: Email Address *
+              - textbox "Email Address *" [ref=f18e92]:
+                - /placeholder: E.g. john@doe.com
+            - generic [ref=f18e93]:
+              - generic [ref=f18e94]: Phone Number *
+              - textbox "Phone Number *" [ref=f18e95]:
+                - /placeholder: E.g. +1 300 400 5000
+          - generic [ref=f18e96]:
+            - generic [ref=f18e97]: Job Site Street Address *
+            - textbox "Job Site Street Address *" [ref=f18e98]:
+              - /placeholder: E.g. 42 Wallaby Way
+          - generic [ref=f18e99]:
+            - generic [ref=f18e100]: Apartment, suite, etc
+            - textbox "Apartment, suite, etc" [ref=f18e101]
+          - generic [ref=f18e102]:
+            - generic [ref=f18e103]:
+              - generic [ref=f18e104]: City *
+              - textbox "City *" [ref=f18e105]:
+                - /placeholder: E.g. Sydney
+            - generic [ref=f18e106]:
+              - generic [ref=f18e107]: State/Province *
+              - textbox "State/Province *" [ref=f18e108]:
+                - /placeholder: E.g. New South Wales
+          - generic [ref=f18e109]:
+            - generic [ref=f18e110]: ZIP / Postal Code *
+            - textbox "ZIP / Postal Code *" [ref=f18e111]:
+              - /placeholder: E.g. 2000
+          - generic [ref=f18e113]:
+            - generic [ref=f18e114]:
+              - generic [ref=f18e115]: Spray Area Isolated From Wind?
+              - generic [ref=f18e116]:
+                - generic [ref=f18e117] [cursor=pointer]:
+                  - radio "Yes" [ref=f18e118]
+                  - text: "Yes"
+                - generic [ref=f18e119] [cursor=pointer]:
+                  - radio "No" [ref=f18e120]
+                  - text: "No"
+            - generic [ref=f18e121]:
+              - generic [ref=f18e122]: Spray Area Signage Posted?
+              - generic [ref=f18e123]:
+                - generic [ref=f18e124] [cursor=pointer]:
+                  - radio "Yes" [ref=f18e125]
+                  - text: "Yes"
+                - generic [ref=f18e126] [cursor=pointer]:
+                  - radio "No" [ref=f18e127]
+                  - text: "No"
+            - generic [ref=f18e128]:
+              - generic [ref=f18e129]: Spray Area Ventilated?
+              - generic [ref=f18e130]:
+                - generic [ref=f18e131] [cursor=pointer]:
+                  - radio "Yes" [ref=f18e132]
+                  - text: "Yes"
+                - generic [ref=f18e133] [cursor=pointer]:
+                  - radio "No" [ref=f18e134]
+                  - text: "No"
+          - generic [ref=f18e135]:
+            - generic [ref=f18e136]:
+              - generic [ref=f18e137]: SPF Manufacture
+              - textbox "SPF Manufacture" [ref=f18e138]:
+                - /placeholder: Brand/Type
+            - generic [ref=f18e139]:
+              - generic [ref=f18e140]:
+                - generic [ref=f18e141]: (A) Iso LOT#
+                - textbox "(A) Iso LOT#" [ref=f18e142]
+              - generic [ref=f18e143]:
+                - generic [ref=f18e144]: (A) ISO Expiry Date
+                - textbox "(A) ISO Expiry Date" [ref=f18e145]
+              - generic [ref=f18e146]:
+                - generic [ref=f18e147]: (B) Resin LOT#
+                - textbox "(B) Resin LOT#" [ref=f18e148]:
+                  - /placeholder: Resin (B) LOT#
+              - generic [ref=f18e149]:
+                - generic [ref=f18e150]: (B) Resin Expiry Date
+                - textbox "(B) Resin Expiry Date" [ref=f18e151]
+            - generic [ref=f18e152]:
+              - generic [ref=f18e153]: Proportioner Type
+              - textbox "Proportioner Type" [ref=f18e154]:
+                - /placeholder: Brand/Type
+            - generic [ref=f18e155]:
+              - generic [ref=f18e156]:
+                - generic [ref=f18e157]: (A) Iso Temperature
+                - textbox "(A) Iso Temperature" [ref=f18e158]
+              - generic [ref=f18e159]:
+                - generic [ref=f18e160]: (A) ISO Pressure
+                - textbox "(A) ISO Pressure" [ref=f18e161]:
+                  - /placeholder: (B) Resin Pressure
+              - generic [ref=f18e162]:
+                - generic [ref=f18e163]: (B) Resin Temperature
+                - textbox "(B) Resin Temperature" [ref=f18e164]
+              - generic [ref=f18e165]:
+                - generic [ref=f18e166]: (B) Resin Pressure
+                - textbox "(B) Resin Pressure" [ref=f18e167]
+            - generic [ref=f18e168]:
+              - generic [ref=f18e169]:
+                - generic [ref=f18e170]: Hose Heat Temperature
+                - textbox "Hose Heat Temperature" [ref=f18e171]
+              - generic [ref=f18e172]:
+                - generic [ref=f18e173]: Strokes Used
+                - textbox "Strokes Used" [ref=f18e174]:
+                  - /placeholder: Enter Number Of Strokes Used
+            - generic [ref=f18e175]:
+              - generic [ref=f18e176]:
+                - generic [ref=f18e177]: Ambient Temperature
+                - textbox "Ambient Temperature" [ref=f18e178]
+              - generic [ref=f18e179]:
+                - generic [ref=f18e180]: Substrate Temperature
+                - textbox "Substrate Temperature" [ref=f18e181]
+            - generic [ref=f18e182]:
+              - generic [ref=f18e183]:
+                - generic [ref=f18e184]: Relative Humidity
+                - textbox "Relative Humidity" [ref=f18e185]
+              - generic [ref=f18e186]:
+                - generic [ref=f18e187]: Wind Velocity
+                - textbox "Wind Velocity" [ref=f18e188]:
+                  - /placeholder: Substrate
+              - generic [ref=f18e189]:
+                - generic [ref=f18e190]: Substrate Humidity
+                - textbox "Substrate Humidity" [ref=f18e191]
+            - generic [ref=f18e192]:
+              - generic [ref=f18e193]: Substrate Type
+              - textbox "Substrate Type" [ref=f18e194]:
+                - /placeholder: Substrate Type/Description
+            - generic [ref=f18e195]:
+              - generic [ref=f18e196]:
+                - generic [ref=f18e197]: Substrate Dry?
+                - generic [ref=f18e198]:
+                  - generic [ref=f18e199] [cursor=pointer]:
+                    - radio "Yes" [ref=f18e200]
+                    - text: "Yes"
+                  - generic [ref=f18e201] [cursor=pointer]:
+                    - radio "No" [ref=f18e202]
+                    - text: "No"
+              - generic [ref=f18e203]:
+                - generic [ref=f18e204]: Substrate Clean?
+                - generic [ref=f18e205]:
+                  - generic [ref=f18e206] [cursor=pointer]:
+                    - radio "Yes" [ref=f18e207]
+                    - text: "Yes"
+                  - generic [ref=f18e208] [cursor=pointer]:
+                    - radio "No" [ref=f18e209]
+                    - text: "No"
+              - generic [ref=f18e210]:
+                - generic [ref=f18e211]: Substrate Fastend/Secure?
+                - generic [ref=f18e212]:
+                  - generic [ref=f18e213] [cursor=pointer]:
+                    - radio "Yes" [ref=f18e214]
+                    - text: "Yes"
+                  - generic [ref=f18e215] [cursor=pointer]:
+                    - radio "No" [ref=f18e216]
+                    - text: "No"
+            - generic [ref=f18e217]:
+              - generic [ref=f18e218]:
+                - generic [ref=f18e219]: Primer Required?
+                - generic [ref=f18e220]:
+                  - generic [ref=f18e221] [cursor=pointer]:
+                    - radio "Yes" [ref=f18e222]
+                    - text: "Yes"
+                  - generic [ref=f18e223] [cursor=pointer]:
+                    - radio "No" [ref=f18e224]
+                    - text: "No"
+              - generic [ref=f18e225]:
+                - generic [ref=f18e226]: Exterior Coating Required?
+                - generic [ref=f18e227]:
+                  - generic [ref=f18e228] [cursor=pointer]:
+                    - radio "Yes" [ref=f18e229]
+                    - text: "Yes"
+                  - generic [ref=f18e230] [cursor=pointer]:
+                    - radio "No" [ref=f18e231]
+                    - text: "No"
+            - generic [ref=f18e232]:
+              - generic [ref=f18e233]: Job Notes
+              - textbox "Job Notes" [ref=f18e234]:
+                - /placeholder: Add any Notes about the job or the substrate
+          - generic [ref=f18e235]:
+            - button "Print Form" [ref=f18e236] [cursor=pointer]
+            - button "Send Message" [ref=f18e241] [cursor=pointer]
+      - generic [ref=f18e242]:
+        - generic [ref=f18e243]:
+          - heading "Why Use This Form?" [level=3] [ref=f18e244]
+          - list [ref=f18e245]:
+            - listitem [ref=f18e246]:
+              - generic [ref=f18e250]: After every spray foam application job
+            - listitem [ref=f18e251]:
+              - generic [ref=f18e255]: Insurance claim documentation
+            - listitem [ref=f18e256]:
+              - generic [ref=f18e260]: Warranty validation
+            - listitem [ref=f18e261]:
+              - generic [ref=f18e265]: Client transparency
+            - listitem [ref=f18e266]:
+              - generic [ref=f18e270]: Regulatory compliance
+          - paragraph [ref=f18e271]: Keep records for a minimum of 7 years.
+        - generic [ref=f18e272]:
+          - heading "Quick Tips" [level=3] [ref=f18e273]
+          - list [ref=f18e274]:
+            - listitem [ref=f18e275]:
+              - generic [ref=f18e276]: Record lot numbers
+              - text: Always note the material batch number in case of product recalls or warranty disputes.
+            - listitem [ref=f18e277]:
+              - generic [ref=f18e278]: Fill out on-site
+              - text: Complete the form at the job location while details are fresh — don't rely on memory.
+            - listitem [ref=f18e279]:
+              - generic [ref=f18e280]: Leave a copy with the client
+              - text: A signed copy builds trust and gives homeowners documentation for energy rebates or resale.
+        - generic [ref=f18e281]:
+          - heading "Need Coverage?" [level=3] [ref=f18e282]
+          - paragraph [ref=f18e283]: Proper documentation starts with proper insurance. Get a quote tailored to spray foam contractors today.
+          - link "Get a Free Quote" [ref=f18e284] [cursor=pointer]:
+            - /url: /quote
+    - generic [ref=f18e288]:
+      - generic [ref=f18e289]:
+        - heading "Ready to protect your business?" [level=2] [ref=f18e290]
+        - paragraph [ref=f18e291]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f18e292]:
+        - link "Get a Quote" [ref=f18e293] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f18e296] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f18e299]:
+    - generic [ref=f18e300]:
+      - generic [ref=f18e301]:
+        - generic [ref=f18e302]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f18e303]
+          - paragraph [ref=f18e304]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f18e305] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f18e306] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f18e307]:
+          - heading "Navigate" [level=4] [ref=f18e308]
+          - list [ref=f18e309]:
+            - listitem [ref=f18e310]:
+              - link "Home" [ref=f18e311] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f18e312]:
+              - link "Services" [ref=f18e313] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f18e314]:
+              - link "General Liability Insurance" [ref=f18e315] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f18e316]:
+              - link "Inland Marine" [ref=f18e317] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f18e318]:
+              - link "Commercial Auto" [ref=f18e319] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f18e320]:
+              - link "Surety Bonds" [ref=f18e321] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f18e322]:
+              - link "Environmental Liability" [ref=f18e323] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f18e324]:
+              - link "Safety and Compliance" [ref=f18e325] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f18e326]:
+              - link "Workers' Compensation" [ref=f18e327] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f18e328]:
+              - link "Resources" [ref=f18e329] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f18e330]:
+              - link "Attic Insulation Certificate" [ref=f18e331] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f18e332]:
+              - link "Work Record Form" [ref=f18e333] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f18e334]:
+              - link "Blog" [ref=f18e335] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f18e336]:
+              - link "About Us" [ref=f18e337] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f18e338]:
+              - link "Contact Us" [ref=f18e339] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f18e340]:
+              - link "Quote" [ref=f18e341] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f18e342]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f18e343]
+          - list [ref=f18e344]:
+            - listitem [ref=f18e345]:
+              - link "– General Liability Insurance" [ref=f18e346] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f18e347]:
+              - link "– Commercial Auto Insurance" [ref=f18e348] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f18e349]:
+              - link "– Surety Bonds" [ref=f18e350] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f18e351]:
+              - link "– Environmental Liability Insurance" [ref=f18e352] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f18e353]:
+              - link "– Safety and Compliance Support" [ref=f18e354] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f18e355]:
+              - link "– Workers' Compensation Insurance" [ref=f18e356] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f18e357]:
+        - paragraph [ref=f18e358]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f18e359]:
+          - link "Privacy Policy" [ref=f18e360] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f18e361] [cursor=pointer]:
+            - /url: /terms/

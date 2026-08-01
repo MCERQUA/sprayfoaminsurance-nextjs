@@ -1,0 +1,282 @@
+- generic [active] [ref=f19e1]:
+  - banner [ref=f19e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f19e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f19e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f19e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f19e10]
+        - generic [ref=f19e11]:
+          - generic [ref=f19e12]: Spray Foam
+          - generic [ref=f19e13]: Insurance.com
+      - generic [ref=f19e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f19e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f19e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f19e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f19e24]:
+        - link "Facebook" [ref=f19e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f19e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f19e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f19e37]:
+      - generic [ref=f19e38]:
+        - link "Home" [ref=f19e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f19e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f19e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f19e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f19e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f19e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f19e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f19e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f19e53]:
+    - generic [ref=f19e55]:
+      - heading "Join The Spray Foam Insurance Family" [level=1] [ref=f19e56]
+      - generic [ref=f19e57]:
+        - paragraph [ref=f19e58]: Your journey with Spray Foam Insurance is more than just obtaining an insurance quote; it's an invitation to an exclusive community. By signing up, you're gaining entry into a close-knit circle of professionals who share your passion and dedication. Welcome to a space where support, expertise, and a sense of belonging come together. Let's start protecting your business together.
+        - paragraph [ref=f19e59]: At Spray Foam Insurance, we make it easy to get the insurance coverage you need. Whether you're looking for auto, home, life, business, or any specialized insurance, our team is here to provide you with a personalized quote that fits your needs and budget.
+      - heading "How It Works" [level=2] [ref=f19e60]
+      - list [ref=f19e61]:
+        - listitem [ref=f19e62]: "Submit Your Information: Fill out the simple form below with your details and the type of insurance coverage you're looking for."
+        - listitem [ref=f19e63]: "Receive Your Quote: One of our experienced agents will review your information and provide you with a customized quote."
+        - listitem [ref=f19e64]: "Review & Decide: We'll walk you through the options and help you choose the best coverage to protect what matters most."
+      - heading "Why Choose Us?" [level=2] [ref=f19e65]
+      - list [ref=f19e66]:
+        - listitem [ref=f19e67]: "Expert Guidance: Our knowledgeable agents are here to help you find the right coverage."
+        - listitem [ref=f19e68]: "Customized Plans: We tailor each policy to meet your specific needs."
+        - listitem [ref=f19e69]: "Competitive Rates: Get affordable coverage without compromising on protection."
+        - listitem [ref=f19e70]: "Fast & Easy Process: We make getting a quote simple and stress-free."
+      - heading "Get Your Quote Today!" [level=2] [ref=f19e71]
+      - paragraph [ref=f19e72]:
+        - text: To receive your free, no-obligation quote, please complete the form below or contact us directly at
+        - link "844-967-5247" [ref=f19e73] [cursor=pointer]:
+          - /url: tel:8449675247
+        - text: to speak with one of our agents. Our team will get back to you within 24 hours with your personalized insurance quote. We're here to help you every step of the way!
+    - generic [ref=f19e75]:
+      - heading "Sign Up Form" [level=2] [ref=f19e77]
+      - generic [ref=f19e78]:
+        - generic [ref=f19e79]: Business Name
+        - textbox "E.g. text placeholder" [ref=f19e80]
+      - generic [ref=f19e81]:
+        - generic [ref=f19e82]:
+          - generic [ref=f19e83]: First Name *
+          - textbox "E.g. John" [ref=f19e84]
+        - generic [ref=f19e85]:
+          - generic [ref=f19e86]: Last Name
+          - textbox "E.g. Doe" [ref=f19e87]
+      - generic [ref=f19e88]:
+        - generic [ref=f19e89]:
+          - generic [ref=f19e90]: Email Address *
+          - textbox "E.g. john@doe.com" [ref=f19e91]
+        - generic [ref=f19e92]:
+          - generic [ref=f19e93]: Phone Number *
+          - textbox "E.g. +1 3004005000" [ref=f19e94]
+      - generic [ref=f19e95]:
+        - generic [ref=f19e96]: Street Address *
+        - textbox "E.g. 42 Wallaby Way" [ref=f19e97]
+      - generic [ref=f19e98]:
+        - generic [ref=f19e99]:
+          - generic [ref=f19e100]: City *
+          - textbox "E.g. Sydney" [ref=f19e101]
+        - generic [ref=f19e102]:
+          - generic [ref=f19e103]: State/Province *
+          - textbox "E.g. New South Wales" [ref=f19e104]
+        - generic [ref=f19e105]:
+          - generic [ref=f19e106]: ZIP / Postal Code *
+          - textbox "E.g. 2000" [ref=f19e107]
+      - generic [ref=f19e108]:
+        - generic [ref=f19e109]: Message
+        - textbox "Please let us know how we can help you best. Tell us about your business-are you only doing spray foam insulation, roofing, slab jacking? What percent new versus remodel? What percent commercial versus residential? What price do we need to beat?" [ref=f19e110]
+      - generic [ref=f19e111]:
+        - generic [ref=f19e112]: FEIN
+        - textbox "Helps us shop more carriers. Required for Workers Compensation Insurance quotes." [ref=f19e113]
+      - generic [ref=f19e114]:
+        - generic [ref=f19e115]:
+          - generic [ref=f19e116]: Gross Sales
+          - textbox "Estimate Next 12 Months" [ref=f19e117]
+        - generic [ref=f19e118]:
+          - generic [ref=f19e119]: Employee count
+          - textbox "E.g. 10" [ref=f19e120]
+      - generic [ref=f19e121]:
+        - generic [ref=f19e122]:
+          - generic [ref=f19e123]: Employee Payroll
+          - textbox "Estimate Next 12 Months" [ref=f19e124]
+        - generic [ref=f19e125]:
+          - generic [ref=f19e126]: Subcontractor expenses
+          - textbox "Estimate Next 12 Months" [ref=f19e127]
+      - generic [ref=f19e128]:
+        - generic [ref=f19e129]: Material Costs
+        - textbox "Estimate Next 12 Months" [ref=f19e130]
+      - generic [ref=f19e131]:
+        - paragraph [ref=f19e132]: How much Spray Foam General Liability Insurance coverage?
+        - paragraph [ref=f19e133]: Select the amount of spray foam insurance coverage you are looking for.
+        - generic [ref=f19e134]:
+          - generic [ref=f19e135] [cursor=pointer]:
+            - radio "$500,000/$1,000,000" [ref=f19e136]
+            - text: $500,000/$1,000,000
+          - generic [ref=f19e137] [cursor=pointer]:
+            - radio "$1,000,000/$1,000,000" [ref=f19e138]
+            - text: $1,000,000/$1,000,000
+          - generic [ref=f19e139] [cursor=pointer]:
+            - radio "$1,000,000/$2,000,000" [ref=f19e140]
+            - text: $1,000,000/$2,000,000
+          - generic [ref=f19e141] [cursor=pointer]:
+            - radio "Not Needed" [ref=f19e142]
+            - text: Not Needed
+      - generic [ref=f19e143]:
+        - paragraph [ref=f19e144]: Workers Compensation Insurance for Your Spray Foam Installers and Other Employees
+        - paragraph [ref=f19e145]: Select the amount of spray foam workers comp coverage you would like quoted.
+        - generic [ref=f19e146]:
+          - generic [ref=f19e147] [cursor=pointer]:
+            - radio "$100,000" [ref=f19e148]
+            - text: $100,000
+          - generic [ref=f19e149] [cursor=pointer]:
+            - radio "$500,000" [ref=f19e150]
+            - text: $500,000
+          - generic [ref=f19e151] [cursor=pointer]:
+            - radio "$1,000,000" [ref=f19e152]
+            - text: $1,000,000
+          - generic [ref=f19e153] [cursor=pointer]:
+            - radio "Not Needed" [ref=f19e154]
+            - text: Not Needed
+      - generic [ref=f19e155]:
+        - paragraph [ref=f19e156]: Commercial Auto Insurance for Your Spray Rig
+        - paragraph [ref=f19e157]: Please text a picture of your drivers license, current auto policy info, vin number/registration to 480-381-8949 or email josh@contractorschoiceagency.tempurl.host.
+        - generic [ref=f19e158]:
+          - generic [ref=f19e159] [cursor=pointer]:
+            - radio "$100,000" [ref=f19e160]
+            - text: $100,000
+          - generic [ref=f19e161] [cursor=pointer]:
+            - radio "$500,000" [ref=f19e162]
+            - text: $500,000
+          - generic [ref=f19e163] [cursor=pointer]:
+            - radio "$1,000,000" [ref=f19e164]
+            - text: $1,000,000
+          - generic [ref=f19e165] [cursor=pointer]:
+            - radio "Not Needed" [ref=f19e166]
+            - text: Not Needed
+      - generic [ref=f19e167]:
+        - paragraph [ref=f19e168]: Spray Foam Surety Bond
+        - paragraph [ref=f19e169]: There are many different surety amounts if you don't see what you need call or email.
+        - generic [ref=f19e170]:
+          - generic [ref=f19e171] [cursor=pointer]:
+            - radio "$5,000" [ref=f19e172]
+            - text: $5,000
+          - generic [ref=f19e173] [cursor=pointer]:
+            - radio "$10,000" [ref=f19e174]
+            - text: $10,000
+          - generic [ref=f19e175] [cursor=pointer]:
+            - radio "$100,000" [ref=f19e176]
+            - text: $100,000
+      - button "Send Message" [ref=f19e177] [cursor=pointer]
+    - generic [ref=f19e183]:
+      - generic [ref=f19e184]:
+        - heading "Ready to protect your business?" [level=2] [ref=f19e185]
+        - paragraph [ref=f19e186]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f19e187]:
+        - link "Get a Quote" [ref=f19e188] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f19e191] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f19e194]:
+    - generic [ref=f19e195]:
+      - generic [ref=f19e196]:
+        - generic [ref=f19e197]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f19e198]
+          - paragraph [ref=f19e199]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f19e200] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f19e201] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f19e202]:
+          - heading "Navigate" [level=4] [ref=f19e203]
+          - list [ref=f19e204]:
+            - listitem [ref=f19e205]:
+              - link "Home" [ref=f19e206] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f19e207]:
+              - link "Services" [ref=f19e208] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f19e209]:
+              - link "General Liability Insurance" [ref=f19e210] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f19e211]:
+              - link "Inland Marine" [ref=f19e212] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f19e213]:
+              - link "Commercial Auto" [ref=f19e214] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f19e215]:
+              - link "Surety Bonds" [ref=f19e216] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f19e217]:
+              - link "Environmental Liability" [ref=f19e218] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f19e219]:
+              - link "Safety and Compliance" [ref=f19e220] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f19e221]:
+              - link "Workers' Compensation" [ref=f19e222] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f19e223]:
+              - link "Resources" [ref=f19e224] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f19e225]:
+              - link "Attic Insulation Certificate" [ref=f19e226] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f19e227]:
+              - link "Work Record Form" [ref=f19e228] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f19e229]:
+              - link "Blog" [ref=f19e230] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f19e231]:
+              - link "About Us" [ref=f19e232] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f19e233]:
+              - link "Contact Us" [ref=f19e234] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f19e235]:
+              - link "Quote" [ref=f19e236] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f19e237]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f19e238]
+          - list [ref=f19e239]:
+            - listitem [ref=f19e240]:
+              - link "– General Liability Insurance" [ref=f19e241] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f19e242]:
+              - link "– Commercial Auto Insurance" [ref=f19e243] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f19e244]:
+              - link "– Surety Bonds" [ref=f19e245] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f19e246]:
+              - link "– Environmental Liability Insurance" [ref=f19e247] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f19e248]:
+              - link "– Safety and Compliance Support" [ref=f19e249] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f19e250]:
+              - link "– Workers' Compensation Insurance" [ref=f19e251] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f19e252]:
+        - paragraph [ref=f19e253]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f19e254]:
+          - link "Privacy Policy" [ref=f19e255] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f19e256] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f19e257]

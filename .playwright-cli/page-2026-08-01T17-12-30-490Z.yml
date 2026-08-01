@@ -1,0 +1,192 @@
+- generic [active] [ref=f15e1]:
+  - banner [ref=f15e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f15e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f15e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f15e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f15e10]
+        - generic [ref=f15e11]:
+          - generic [ref=f15e12]: Spray Foam
+          - generic [ref=f15e13]: Insurance.com
+      - generic [ref=f15e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f15e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f15e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f15e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f15e24]:
+        - link "Facebook" [ref=f15e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f15e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f15e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f15e37]:
+      - generic [ref=f15e38]:
+        - link "Home" [ref=f15e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f15e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f15e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f15e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f15e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f15e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f15e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f15e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f15e53]:
+    - generic [ref=f15e55]:
+      - link "Back to Blog" [ref=f15e56] [cursor=pointer]:
+        - /url: /blog/
+      - generic [ref=f15e59]: Coverage
+      - heading "Coverage for Roofing Projects" [level=1] [ref=f15e61]
+      - generic [ref=f15e62]:
+        - generic [ref=f15e63]: September 24, 2023
+        - generic [ref=f15e66]: Josh Cotner
+    - generic [ref=f15e71]:
+      - generic [ref=f15e72]:
+        - paragraph [ref=f15e73]: "Spray foam insulation contractors often find themselves working in collaboration with roofing companies, Spray Foam insulation solutions. These collaborative efforts are essential for ensuring a well-insulated, energy-efficient building. But as a spray foam insulation contractor, you might wonder: \"Do I need special coverage for roofing projects?\" In this article, we'll explore the unique insurance considerations that come into play when working alongside roofers and how you can protect your interests."
+        - heading "Understanding the Roofing Collaboration:" [level=2] [ref=f15e74]
+        - paragraph [ref=f15e75]: Collaborating with roofing companies is a common practice for spray foam insulation contractors, particularly in projects that involve flat roofs or roof renovations. Your role often comes into play when the roof has been demoed and opened up to provide access for insulation installation before the new roofing materials are applied. This partnership is vital for delivering effective insulation solutions, but it also introduces specific risks and insurance considerations.
+        - heading "Why Special Coverage May Be Necessary:" [level=2] [ref=f15e76]
+        - paragraph [ref=f15e77]: "Specialized Equipment and Skills: Installing spray foam insulation requires specialized, expensive equipment and skilled applicators/operators. Unlike traditional insulation materials like fiberglass batts, spray foam application demands expertise. This means that your work carries its unique set of risks and requirements."
+        - paragraph [ref=f15e78]: "Potential for Property Damage: The process of installing spray foam insulation involves the use of chemicals and equipment that, if not handled correctly, can lead to property damage. For instance, overspray or improper application can result in damage to the roofing structure or other building components."
+        - paragraph [ref=f15e79]: "Liability Concerns: Collaborating with roofers means that you may be working on structures where the risk of accidents is higher due to the nature of roofing projects. Liability concerns come into play, and it's crucial to have adequate coverage in case of accidents, injuries, or property damage."
+        - heading "Insurance Coverage to Consider:" [level=2] [ref=f15e80]
+        - paragraph [ref=f15e81]: "When working on roofing projects as a spray foam insulation contractor, it's important to consider the following types of insurance coverage:"
+        - paragraph [ref=f15e82]: "General Liability Insurance: General liability insurance is a foundational coverage that protects against bodily injury, property damage, and personal injury claims. It's essential for addressing potential liability claims that may arise while working on roofing projects."
+        - paragraph [ref=f15e83]: "Contractor's Equipment Insurance: This coverage protects your specialized equipment, such as spray foam machines and tools, against damage or theft. Given the high cost of this equipment, it's crucial to ensure it is adequately insured."
+        - paragraph [ref=f15e84]: "Professional Liability Insurance: If a mistake in insulation application results in performance issues or damage to the building, professional liability insurance can provide coverage. It's often referred to as errors and omissions (E&O) insurance."
+        - paragraph [ref=f15e85]: "Workers' Compensation Insurance: If you have employees, workers' compensation insurance is typically mandatory. It covers medical expenses and lost wages for employees injured on the job."
+        - paragraph [ref=f15e86]: "Inland Marine Insurance: This coverage can protect your equipment while in transit to job sites, particularly when you're collaborating with roofing companies at different locations."
+        - heading "Key Considerations:" [level=2] [ref=f15e87]
+        - paragraph [ref=f15e88]: "Contractual Agreements: Review any contracts or agreements with roofing companies to ensure that insurance requirements are clear and met."
+        - paragraph [ref=f15e89]: "Documentation: Keep thorough records of your work, including the insulation application process, to assist in case of claims or disputes."
+        - paragraph [ref=f15e90]: "Consult an Insurance Professional: Work with an insurance expert who understands the construction industry and can help tailor your coverage to the specific risks associated with spray foam insulation projects in roofing."
+        - paragraph [ref=f15e91]: Collaborating with roofing companies as a spray foam insulation contractor can be a rewarding endeavor, but it also comes with its own set of insurance considerations. By assessing your unique needs, maintaining appropriate coverage, and working closely with roofing partners and insurance experts, you can ensure that you're adequately protected while delivering high-quality insulation solutions in the roofing industry.
+      - link "Back to Blog" [ref=f15e93] [cursor=pointer]:
+        - /url: /blog/
+    - generic [ref=f15e97]:
+      - heading "Related Articles" [level=2] [ref=f15e98]
+      - generic [ref=f15e99]:
+        - generic [ref=f15e100]:
+          - generic [ref=f15e101]: Claims
+          - heading "Does Insurance Cover Overspray Damage?" [level=3] [ref=f15e102]
+          - link "Read Article" [ref=f15e103] [cursor=pointer]:
+            - /url: /2023/09/24/does-insurance-cover-overspray-damage/
+        - generic [ref=f15e106]:
+          - generic [ref=f15e107]: Commercial
+          - heading "Insurance Requirements for Large Commercial Projects" [level=3] [ref=f15e108]
+          - link "Read Article" [ref=f15e109] [cursor=pointer]:
+            - /url: /2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects/
+        - generic [ref=f15e112]:
+          - generic [ref=f15e113]: Business
+          - heading "Equipment Financing Guide" [level=3] [ref=f15e114]
+          - link "Read Article" [ref=f15e115] [cursor=pointer]:
+            - /url: /2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/
+    - generic [ref=f15e121]:
+      - generic [ref=f15e122]:
+        - heading "Ready to protect your business?" [level=2] [ref=f15e123]
+        - paragraph [ref=f15e124]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f15e125]:
+        - link "Get a Quote" [ref=f15e126] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f15e129] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f15e132]:
+    - generic [ref=f15e133]:
+      - generic [ref=f15e134]:
+        - generic [ref=f15e135]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f15e136]
+          - paragraph [ref=f15e137]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f15e138] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f15e139] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f15e140]:
+          - heading "Navigate" [level=4] [ref=f15e141]
+          - list [ref=f15e142]:
+            - listitem [ref=f15e143]:
+              - link "Home" [ref=f15e144] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f15e145]:
+              - link "Services" [ref=f15e146] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f15e147]:
+              - link "General Liability Insurance" [ref=f15e148] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f15e149]:
+              - link "Inland Marine" [ref=f15e150] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f15e151]:
+              - link "Commercial Auto" [ref=f15e152] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f15e153]:
+              - link "Surety Bonds" [ref=f15e154] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f15e155]:
+              - link "Environmental Liability" [ref=f15e156] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f15e157]:
+              - link "Safety and Compliance" [ref=f15e158] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f15e159]:
+              - link "Workers' Compensation" [ref=f15e160] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f15e161]:
+              - link "Resources" [ref=f15e162] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f15e163]:
+              - link "Attic Insulation Certificate" [ref=f15e164] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f15e165]:
+              - link "Work Record Form" [ref=f15e166] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f15e167]:
+              - link "Blog" [ref=f15e168] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f15e169]:
+              - link "About Us" [ref=f15e170] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f15e171]:
+              - link "Contact Us" [ref=f15e172] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f15e173]:
+              - link "Quote" [ref=f15e174] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f15e175]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f15e176]
+          - list [ref=f15e177]:
+            - listitem [ref=f15e178]:
+              - link "– General Liability Insurance" [ref=f15e179] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f15e180]:
+              - link "– Commercial Auto Insurance" [ref=f15e181] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f15e182]:
+              - link "– Surety Bonds" [ref=f15e183] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f15e184]:
+              - link "– Environmental Liability Insurance" [ref=f15e185] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f15e186]:
+              - link "– Safety and Compliance Support" [ref=f15e187] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f15e188]:
+              - link "– Workers' Compensation Insurance" [ref=f15e189] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f15e190]:
+        - paragraph [ref=f15e191]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f15e192]:
+          - link "Privacy Policy" [ref=f15e193] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f15e194] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f15e195]
