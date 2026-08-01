@@ -1,0 +1,154 @@
+- generic [active] [ref=f55e1]:
+  - banner [ref=f55e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f55e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f55e8]:
+      - link [ref=f55e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f55e10]
+      - button "Toggle menu" [ref=f55e11] [cursor=pointer]
+  - main [ref=f55e13]:
+    - generic [ref=f55e15]:
+      - heading "Insurance Services" [level=1] [ref=f55e16]
+      - paragraph [ref=f55e17]: For Spray Foam Contractors
+    - generic [ref=f55e20]:
+      - generic [ref=f55e21]:
+        - heading "General Liability" [level=3] [ref=f55e22]
+        - paragraph [ref=f55e23]: Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future.
+        - link "More Details>" [ref=f55e24] [cursor=pointer]:
+          - /url: /services/general-liability-insurance/
+      - generic [ref=f55e25]:
+        - heading "Workers Compensation" [level=3] [ref=f55e26]
+        - paragraph [ref=f55e27]: Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment.
+        - link "More Details>" [ref=f55e28] [cursor=pointer]:
+          - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f55e29]:
+        - heading "Commercial Auto" [level=3] [ref=f55e30]
+        - paragraph [ref=f55e31]: Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage.
+        - link "More Details>" [ref=f55e32] [cursor=pointer]:
+          - /url: /services/commercial-auto/
+    - generic [ref=f55e34]:
+      - heading "Our Comprehensive Insurance Services for Spray Foam Contractors" [level=2] [ref=f55e35]
+      - generic [ref=f55e36]:
+        - generic [ref=f55e37]:
+          - button "Expertise in Spray Foam Insurance" [ref=f55e38] [cursor=pointer]
+          - paragraph [ref=f55e41]: With many years of dedicated focus on the spray foam industry, we've honed our expertise to understand the unique risks and needs of spray foam contractors. Our specialized knowledge allows us to provide tailored insurance solutions that truly protect your business.
+        - generic [ref=f55e42]:
+          - button "Personalized Service" [ref=f55e43] [cursor=pointer]
+          - paragraph [ref=f55e46]: We pride ourselves on delivering personalized service. We work closely with each client, taking the time to understand your specific requirements. This ensures you receive insurance solutions that match your business goals and preferences, with a personal touch you can trust.
+        - generic [ref=f55e47]:
+          - button "Industry Partnerships" [ref=f55e48] [cursor=pointer]
+          - paragraph [ref=f55e51]: We've cultivated strong partnerships within the spray foam industry. These connections enable us to stay updated on industry trends, regulations, and emerging risks, so you can benefit from the latest insights and solutions when you choose us as your insurance partner.
+    - heading "We're Here To Help Any-Time Any-Day" [level=2] [ref=f55e53]
+    - generic [ref=f55e56]:
+      - generic [ref=f55e57]:
+        - generic [ref=f55e58]: "24"
+        - generic [ref=f55e59]: Hours a Day
+      - generic [ref=f55e60]:
+        - generic [ref=f55e61]: "365"
+        - generic [ref=f55e62]: Days A Year
+      - generic [ref=f55e63]:
+        - generic [ref=f55e64]: 8,760
+        - generic [ref=f55e65]: Hours Per Year
+      - generic [ref=f55e66]:
+        - generic [ref=f55e67]: 2,500+
+        - generic [ref=f55e68]: Happy Clients
+    - generic [ref=f55e72]:
+      - generic [ref=f55e73]:
+        - heading "Ready to protect your business?" [level=2] [ref=f55e74]
+        - paragraph [ref=f55e75]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f55e76]:
+        - link "Get a Quote" [ref=f55e77] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f55e80] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f55e83]:
+    - generic [ref=f55e84]:
+      - generic [ref=f55e85]:
+        - generic [ref=f55e86]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f55e87]
+          - paragraph [ref=f55e88]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f55e89] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f55e90] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f55e91]:
+          - heading "Navigate" [level=4] [ref=f55e92]
+          - list [ref=f55e93]:
+            - listitem [ref=f55e94]:
+              - link "Home" [ref=f55e95] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f55e96]:
+              - link "Services" [ref=f55e97] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f55e98]:
+              - link "General Liability Insurance" [ref=f55e99] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f55e100]:
+              - link "Inland Marine" [ref=f55e101] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f55e102]:
+              - link "Commercial Auto" [ref=f55e103] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f55e104]:
+              - link "Surety Bonds" [ref=f55e105] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f55e106]:
+              - link "Environmental Liability" [ref=f55e107] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f55e108]:
+              - link "Safety and Compliance" [ref=f55e109] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f55e110]:
+              - link "Workers' Compensation" [ref=f55e111] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f55e112]:
+              - link "Resources" [ref=f55e113] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f55e114]:
+              - link "Attic Insulation Certificate" [ref=f55e115] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f55e116]:
+              - link "Work Record Form" [ref=f55e117] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f55e118]:
+              - link "Blog" [ref=f55e119] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f55e120]:
+              - link "About Us" [ref=f55e121] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f55e122]:
+              - link "Contact Us" [ref=f55e123] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f55e124]:
+              - link "Quote" [ref=f55e125] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f55e126]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f55e127]
+          - list [ref=f55e128]:
+            - listitem [ref=f55e129]:
+              - link "– General Liability Insurance" [ref=f55e130] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f55e131]:
+              - link "– Commercial Auto Insurance" [ref=f55e132] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f55e133]:
+              - link "– Surety Bonds" [ref=f55e134] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f55e135]:
+              - link "– Environmental Liability Insurance" [ref=f55e136] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f55e137]:
+              - link "– Safety and Compliance Support" [ref=f55e138] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f55e139]:
+              - link "– Workers' Compensation Insurance" [ref=f55e140] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f55e141]:
+        - paragraph [ref=f55e142]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f55e143]:
+          - link "Privacy Policy" [ref=f55e144] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f55e145] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f55e146]
