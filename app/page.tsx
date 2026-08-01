@@ -440,7 +440,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
           <span className="label-text text-[#2ea3f2] text-sm mb-4 block">Insurance Excellence</span>
           <h2 className="font-headline font-bold text-4xl sm:text-5xl text-white mb-6">
-            Tailored Solutions And Piece Of Mind,<br />
+            Tailored Solutions And Peace Of Mind,<br />
             For Your Spray Foam Business
           </h2>
           <Link

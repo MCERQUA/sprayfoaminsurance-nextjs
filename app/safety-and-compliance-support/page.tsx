@@ -153,7 +153,7 @@ export default function SafetyAndCompliancePage() {
               Our team specializes in providing Safety and Compliance Support tailored to the unique requirements of spray foam contractors. We&apos;re committed to helping you maintain safety, uphold compliance, and build a reputation for excellence in the spray foam industry.
             </p>
             <p className="text-muted font-label leading-relaxed">
-              Ready to discuss your insurance needs or have questions about Workers&apos; Compensation Insurance? Contact Spray Foam Insurance today. We&apos;re here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while ensuring the well-being of your team.
+              Ready to discuss your safety program or have questions about Safety and Compliance Support? Contact Spray Foam Insurance today. We&apos;re here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while ensuring the well-being of your team.
             </p>
           </div>
         </div>
