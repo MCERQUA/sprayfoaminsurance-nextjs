@@ -1,0 +1,12 @@
+https://fonts.googleapis.com/css?family=Open%20Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Playfair%20Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic|Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic&subset=latin%2Clatin-ext,latin%2Clatin-ext,latin%2Clatin-ext,latin%2Clatin-ext&display=swap
+https://hb.wpmucdn.com/contractorschoiceagency.tempurl.host/1472f22c-2cc0-4b76-9bbe-d048ff0449ba.css
+https://hb.wpmucdn.com/contractorschoiceagency.tempurl.host/65d573c1-981f-49ec-855b-9c8873a8a3b1.css
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+https://fonts.googleapis.com/css?family=Open%20Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin%2Clatin-ext,latin%2Clatin-ext,latin%2Clatin-ext,latin%2Clatin-ext&display=swap
+https://fonts.googleapis.com/css?family=Open%20Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Abhaya%20Libre:regular,500,600,700,800|Tajawal:200,300,regular,500,700,800,900&subset=latin%2Clatin-ext,latin%2Clatin-ext,latin%2Clatin-ext,latin%2Clatin-ext&display=swap
+https://hb.wpmucdn.com/contractorschoiceagency.tempurl.host/5dd2497b-9a68-4cc4-a62a-44d384c3bb7e.css
+https://hb.wpmucdn.com/contractorschoiceagency.tempurl.host/f643c214-0fbe-4668-a555-7a4fc58a3e12.css
+https://hb.wpmucdn.com/contractorschoiceagency.tempurl.host/c0561ae6-37db-4762-a63a-c6e42d342e04.css
+https://hb.wpmucdn.com/contractorschoiceagency.tempurl.host/1a841a7f-65d9-4a93-8d81-ae9cf48ab913.css
+https://fonts.googleapis.com/css?family=Open%20Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Abril%20Fatface:regular&subset=latin%2Clatin-ext,latin%2Clatin-ext,latin%2Clatin-ext,latin%2Clatin-ext&display=swap
+https://hb.wpmucdn.com/contractorschoiceagency.tempurl.host/90072f9d-d8de-4c2a-8240-6087cba9d75b.css
