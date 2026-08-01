@@ -53,16 +53,12 @@ export default function HomePage() {
 
             <h1 className="hero-headline font-headline font-bold leading-tight mb-6">
               <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white">
-                Protecting Your Business,
-              </span>
-              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl blue-gradient-text">
-                One Spray at a Time
+                Spray Foam Insurance
               </span>
             </h1>
 
             <p className="hero-sub text-gray-300 font-body text-lg sm:text-xl mb-10 max-w-2xl leading-relaxed">
-              Professional insurance coverage tailored specifically for spray foam insulation contractors.
-              From general liability to rig &amp; equipment — we have you covered in all 50 states.
+              Supporting Your Success, Beyond the Policy
             </p>
 
             <div className="hero-ctas flex flex-wrap gap-4 mb-14">
@@ -115,8 +111,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: 'General Liability',
-                description: 'Protection against third-party bodily injury, property damage, and overspray incidents specific to SPF operations.',
+                title: 'General Liability Insurance',
+                description: 'Protect your business from unexpected accidents and claims with comprehensive general liability insurance.',
                 href: '/services/general-liability-insurance',
                 icon: Shield,
                 color: 'text-[#2ea3f2]',
@@ -124,26 +120,8 @@ export default function HomePage() {
                 border: 'border-t-[#2ea3f2]',
               },
               {
-                title: "Workers' Compensation",
-                description: 'Coverage for your crew in case of on-the-job injuries including chemical exposure from isocyanates and other SPF chemicals.',
-                href: '/services/workers-compensation-insurance-for-spray-foam-contractors',
-                icon: Users,
-                color: 'text-[#29c4a9]',
-                bg: 'bg-[#29c4a9]/10',
-                border: 'border-t-[#29c4a9]',
-              },
-              {
-                title: 'Commercial Auto',
-                description: 'Vehicle coverage for your spray foam rigs, box trucks, and company vehicles against accidents, theft, and liability.',
-                href: '/services/commercial-auto',
-                icon: Truck,
-                color: 'text-[#2ea3f2]',
-                bg: 'bg-[#2ea3f2]/10',
-                border: 'border-t-[#2ea3f2]',
-              },
-              {
-                title: 'Environmental Liability',
-                description: 'Pollution coverage for chemical spills, overspray contamination, off-gassing claims, and environmental remediation costs.',
+                title: 'Environmental Liability Insurance',
+                description: "You care about the environment, and so do we. Our Environmental Liability Insurance covers the risks tied to hazardous chemicals. This way, you're not only protecting your business but also safeguarding the world around you.",
                 href: '/services/environmental-liability',
                 icon: Leaf,
                 color: 'text-[#29c4a9]',
@@ -151,22 +129,40 @@ export default function HomePage() {
                 border: 'border-t-[#29c4a9]',
               },
               {
-                title: 'Surety Bonds',
-                description: 'Performance, payment, and license bonds required to bid on public contracts and meet state licensing requirements.',
-                href: '/services/surety-bonds',
+                title: 'Commercial Auto Insurance',
+                description: 'Ensure your vehicles are adequately insured for your spray foam business operations.',
+                href: '/services/commercial-auto',
+                icon: Truck,
+                color: 'text-[#2ea3f2]',
+                bg: 'bg-[#2ea3f2]/10',
+                border: 'border-t-[#2ea3f2]',
+              },
+              {
+                title: 'Safety and Compliance Support',
+                description: "Safety is paramount, and compliance can be tricky. Our Safety and Compliance Support isn't just a service; it's your path to excellence. We offer the resources and guidance you need to maintain industry standards and ensure the safety of your operations.",
+                href: '/safety-and-compliance-support',
                 icon: FileText,
                 color: 'text-[#f59e0b]',
                 bg: 'bg-[#f59e0b]/10',
                 border: 'border-t-[#f59e0b]',
               },
               {
-                title: 'Rig & Equipment Insurance',
-                description: 'Specialized inland marine coverage for your proportioner, generator, spray rig, and mobile equipment on-site and in transit.',
-                href: '/inland-marine',
+                title: 'Surety Bonds',
+                description: 'Obtain essential surety bonds for licenses, permits, and performance to instill confidence in your clients.',
+                href: '/services/surety-bonds',
                 icon: Wrench,
-                color: 'text-[#2ea3f2]',
-                bg: 'bg-[#2ea3f2]/10',
-                border: 'border-t-[#2ea3f2]',
+                color: 'text-[#f59e0b]',
+                bg: 'bg-[#f59e0b]/10',
+                border: 'border-t-[#f59e0b]',
+              },
+              {
+                title: "Workers' Compensation Insurance",
+                description: "Your team is your backbone. Our Workers' Compensation Insurance shows them you've got their backs. In case of workplace mishaps, we ensure they receive the care and support they deserve, so they can bounce back quickly.",
+                href: '/services/workers-compensation-insurance-for-spray-foam-contractors',
+                icon: Users,
+                color: 'text-[#29c4a9]',
+                bg: 'bg-[#29c4a9]/10',
+                border: 'border-t-[#29c4a9]',
               },
             ].map(({ title, description, href, icon: Icon, color, bg, border }) => (
               <Link
@@ -426,14 +422,14 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
           <span className="label-text text-[#2ea3f2] text-sm mb-4 block">Insurance Excellence</span>
           <h2 className="font-headline font-bold text-4xl sm:text-5xl text-white mb-6">
-            Tailored Solutions And Peace Of Mind,<br />
+            Tailored Solutions And Piece Of Mind,<br />
             For Your Spray Foam Business
           </h2>
           <Link
             href="/services/"
             className="inline-flex items-center gap-2 bg-[#2ea3f2] hover:bg-[#1a8fd4] text-white font-bold px-8 py-4 rounded text-lg transition-all hover:shadow-[0_0_24px_rgba(46,163,242,0.5)]"
           >
-            View More Services
+            View More Services!
           </Link>
         </div>
       </section>
