@@ -1,9 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
-import PageHero from '@/components/PageHero';
-import GlassCard from '@/components/GlassCard';
-import Breadcrumbs from '@/components/Breadcrumbs';
 import { blogPosts } from '@/lib/blog-posts';
 
 export const metadata: Metadata = {
@@ -21,53 +17,49 @@ export const metadata: Metadata = {
   },
 };
 
+// Author attribution matches the live site's category archive (WordPress "by" byline).
+const authorByHref: Record<string, string> = {
+  '/2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships': 'mike',
+};
+
+// Sorted newest-first to match the live category archive order.
+const sortedPosts = [...blogPosts].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+
 export default function InsuranceInsightsPage() {
   return (
     <>
-      <PageHero
-        title="Insurance Insights"
-        subtitle="Expert guidance for spray foam contractors — coverage tips, compliance answers, and industry news."
-        badge="Insurance Insights"
-      />
-
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <Breadcrumbs
-          items={[
-            { label: 'Home', href: '/' },
-            { label: 'Blog', href: '/blog' },
-            { label: 'Insurance Insights' },
-          ]}
-        />
-      </section>
-
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="flex items-center justify-between mb-8">
-          <p className="text-muted text-sm">
-            {blogPosts.length} articles
-          </p>
-          <Link
-            href="/blog"
-            className="text-sm text-primary hover:text-accent transition-colors font-semibold"
-          >
-            View all categories →
-          </Link>
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16">
+        <div className="divide-y divide-primary/10">
+          {sortedPosts.map((post) => (
+            <article key={post.href} className="py-8 first:pt-0">
+              <h1 className="font-headline font-bold text-text text-2xl sm:text-3xl mb-2">
+                <Link href={post.href} className="hover:text-primary transition-colors">
+                  {post.title}
+                </Link>
+              </h1>
+              <p className="text-xs text-muted mb-3">
+                by {authorByHref[post.href] ?? 'Josh Cotner'} | {post.date} | Insurance Insights
+              </p>
+              <p className="text-muted text-sm leading-relaxed">{post.excerpt}</p>
+              <Link
+                href={post.href}
+                className="inline-block text-primary text-sm font-semibold hover:text-accent transition-colors mt-3"
+              >
+                Read More
+              </Link>
+            </article>
+          ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogPosts.map((article) => (
-            <GlassCard key={article.href} className="flex flex-col h-full p-6">
-              <span className="text-xs label-text text-accent mb-3 block">{article.category}</span>
-              <h3 className="font-headline font-bold text-text text-lg mb-2">{article.title}</h3>
-              <p className="text-xs text-muted mb-3">{article.date}</p>
-              <p className="text-muted text-sm leading-relaxed flex-1 mb-4">{article.excerpt}</p>
-              <Link
-                href={article.href}
-                className="inline-flex items-center gap-2 text-primary text-sm font-semibold hover:text-accent transition-colors mt-auto"
-              >
-                Read Article <ArrowRight className="w-4 h-4" />
-              </Link>
-            </GlassCard>
-          ))}
+        <div className="pt-4">
+          <Link
+            href="/blog"
+            className="text-primary text-sm font-semibold hover:text-accent transition-colors"
+          >
+            « Older Entries
+          </Link>
         </div>
       </section>
     </>

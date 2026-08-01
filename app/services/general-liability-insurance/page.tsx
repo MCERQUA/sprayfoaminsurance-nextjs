@@ -136,7 +136,7 @@ export default function GeneralLiabilityPage() {
 
       <section className="bg-background py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl bg-gradient-to-br from-secondary to-primary p-8 sm:p-10 text-white shadow-xl">
+          <div className="rounded-3xl bg-gradient-to-br from-primary to-[#06216b] p-8 sm:p-10 text-white shadow-xl">
             <h2 className="font-headline text-2xl sm:text-3xl font-bold mb-4">Tailored Coverage for Your Business</h2>
             <p className="font-label text-sm sm:text-base opacity-90 leading-relaxed mb-6">
               Every spray foam contracting business is unique, and that&apos;s why General Liability Insurance from Spray Foam Insurance can be tailored to your specific needs. Here are some common components of coverage:

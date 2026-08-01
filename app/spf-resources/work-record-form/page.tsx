@@ -171,392 +171,531 @@ export default function WorkRecordFormPage() {
               </GlassCard>
             ) : (
               <form onSubmit={handleSubmit}>
-                {/* Section A — Contractor Information */}
-                <h3 className="font-headline font-semibold text-text mb-4">
-                  A. Contractor Information
-                </h3>
+                {/* Contact & Job Site */}
+                <div className={fieldClass}>
+                  <label className={labelClass} htmlFor="businessName">
+                    Business Name
+                  </label>
+                  <input
+                    id="businessName"
+                    name="businessName"
+                    type="text"
+                    className={inputClass}
+                    placeholder="E.g. text placeholder"
+                    value={formData.businessName}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className={fieldClass}>
+                  <label className={labelClass} htmlFor="installerName">
+                    Installer Name *
+                  </label>
+                  <input
+                    id="installerName"
+                    name="installerName"
+                    type="text"
+                    className={inputClass}
+                    placeholder="E.g. John Doe"
+                    value={formData.installerName}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
                   <div className={fieldClass}>
-                    <label className={labelClass} htmlFor="companyName">
-                      Company Name
-                    </label>
-                    <input
-                      id="companyName"
-                      name="companyName"
-                      type="text"
-                      className={inputClass}
-                      placeholder="Acme Spray Foam LLC"
-                      value={formData.companyName}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className={fieldClass}>
-                    <label className={labelClass} htmlFor="licenseNum">
-                      License Number
-                    </label>
-                    <input
-                      id="licenseNum"
-                      name="licenseNum"
-                      type="text"
-                      className={inputClass}
-                      placeholder="LIC-000000"
-                      value={formData.licenseNum}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className={fieldClass}>
-                    <label className={labelClass} htmlFor="applicatorName">
-                      Applicator Name
-                    </label>
-                    <input
-                      id="applicatorName"
-                      name="applicatorName"
-                      type="text"
-                      className={inputClass}
-                      placeholder="John Smith"
-                      value={formData.applicatorName}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className={fieldClass}>
-                    <label className={labelClass} htmlFor="phone">
-                      Phone
-                    </label>
-                    <input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      className={inputClass}
-                      placeholder="(555) 000-0000"
-                      value={formData.phone}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className={`${fieldClass} sm:col-span-2`}>
                     <label className={labelClass} htmlFor="email">
-                      Email
+                      Email Address *
                     </label>
                     <input
                       id="email"
                       name="email"
                       type="email"
                       className={inputClass}
-                      placeholder="contractor@example.com"
+                      placeholder="E.g. john@doe.com"
                       value={formData.email}
                       onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <div className={fieldClass}>
+                    <label className={labelClass} htmlFor="phone">
+                      Phone Number *
+                    </label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      className={inputClass}
+                      placeholder="E.g. +1 300 400 5000"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
 
-                {/* Section B — Job Site Details */}
-                <div className="border-t border-primary/10 pt-6 mt-2">
-                  <h3 className="font-headline font-semibold text-text mb-4">
-                    B. Job Site Details
-                  </h3>
+                <div className={fieldClass}>
+                  <label className={labelClass} htmlFor="address">
+                    Job Site Street Address *
+                  </label>
+                  <input
+                    id="address"
+                    name="address"
+                    type="text"
+                    className={inputClass}
+                    placeholder="E.g. 42 Wallaby Way"
+                    value={formData.address}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div className={fieldClass}>
+                  <label className={labelClass} htmlFor="aptSuite">
+                    Apartment, suite, etc
+                  </label>
+                  <input
+                    id="aptSuite"
+                    name="aptSuite"
+                    type="text"
+                    className={inputClass}
+                    value={formData.aptSuite}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
                   <div className={fieldClass}>
-                    <label className={labelClass} htmlFor="address">
-                      Street Address
+                    <label className={labelClass} htmlFor="city">
+                      City *
                     </label>
                     <input
-                      id="address"
-                      name="address"
+                      id="city"
+                      name="city"
                       type="text"
                       className={inputClass}
-                      placeholder="123 Main Street"
-                      value={formData.address}
+                      placeholder="E.g. Sydney"
+                      value={formData.city}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                  <div className={fieldClass}>
+                    <label className={labelClass} htmlFor="state">
+                      State/Province *
+                    </label>
+                    <input
+                      id="state"
+                      name="state"
+                      type="text"
+                      className={inputClass}
+                      placeholder="E.g. New South Wales"
+                      value={formData.state}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className={fieldClass}>
+                  <label className={labelClass} htmlFor="zip">
+                    ZIP / Postal Code *
+                  </label>
+                  <input
+                    id="zip"
+                    name="zip"
+                    type="text"
+                    className={inputClass}
+                    placeholder="E.g. 2000"
+                    value={formData.zip}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                {/* Spray Area Conditions */}
+                <div className="border-t border-primary/10 pt-6 mt-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4">
+                    {(
+                      [
+                        ['isolatedFromWind', 'Spray Area Isolated From Wind?'],
+                        ['signagePosted', 'Spray Area Signage Posted?'],
+                        ['ventilated', 'Spray Area Ventilated?'],
+                      ] as const
+                    ).map(([name, label]) => (
+                      <div key={name} className={fieldClass}>
+                        <span className={labelClass}>{label}</span>
+                        <div className="flex gap-4 mt-1">
+                          {['Yes', 'No'].map((opt) => (
+                            <label
+                              key={opt}
+                              className="flex items-center gap-2 text-sm text-text cursor-pointer"
+                            >
+                              <input
+                                type="radio"
+                                name={name}
+                                value={opt}
+                                checked={formData[name] === opt}
+                                onChange={handleChange}
+                                className="accent-primary w-4 h-4"
+                              />
+                              {opt}
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Material & Application Data */}
+                <div className="border-t border-primary/10 pt-6 mt-2">
+                  <div className={fieldClass}>
+                    <label className={labelClass} htmlFor="spfManufacture">
+                      SPF Manufacture
+                    </label>
+                    <input
+                      id="spfManufacture"
+                      name="spfManufacture"
+                      type="text"
+                      className={inputClass}
+                      placeholder="Brand/Type"
+                      value={formData.spfManufacture}
                       onChange={handleChange}
                     />
                   </div>
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
                     <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="cityStateZip">
-                        City, State, ZIP
+                      <label className={labelClass} htmlFor="isoLot">
+                        (A) Iso LOT#
                       </label>
                       <input
-                        id="cityStateZip"
-                        name="cityStateZip"
+                        id="isoLot"
+                        name="isoLot"
                         type="text"
                         className={inputClass}
-                        placeholder="Austin, TX 78701"
-                        value={formData.cityStateZip}
+                        placeholder="(A) Iso LOT#"
+                        value={formData.isoLot}
                         onChange={handleChange}
                       />
                     </div>
                     <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="ownerName">
-                        Property Owner Name
+                      <label className={labelClass} htmlFor="isoExpiry">
+                        (A) ISO Expiry Date
                       </label>
                       <input
-                        id="ownerName"
-                        name="ownerName"
-                        type="text"
-                        className={inputClass}
-                        placeholder="Jane Doe"
-                        value={formData.ownerName}
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="jobDate">
-                        Job Date
-                      </label>
-                      <input
-                        id="jobDate"
-                        name="jobDate"
+                        id="isoExpiry"
+                        name="isoExpiry"
                         type="date"
                         className={inputClass}
-                        value={formData.jobDate}
-                        onChange={handleChange}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Section C — SPF Application Details */}
-                <div className="border-t border-primary/10 pt-6 mt-2">
-                  <h3 className="font-headline font-semibold text-text mb-4">
-                    C. SPF Application Details
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
-                    <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="spfType">
-                        SPF Type
-                      </label>
-                      <select
-                        id="spfType"
-                        name="spfType"
-                        className={inputClass}
-                        value={formData.spfType}
-                        onChange={handleChange}
-                      >
-                        <option value="">Select type...</option>
-                        <option value="open-cell">Open-Cell (0.5 lb)</option>
-                        <option value="closed-cell-2">Closed-Cell (2 lb)</option>
-                        <option value="closed-cell-3">Closed-Cell High-Density (3 lb)</option>
-                      </select>
-                    </div>
-                    <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="appArea">
-                        Application Area
-                      </label>
-                      <select
-                        id="appArea"
-                        name="appArea"
-                        className={inputClass}
-                        value={formData.appArea}
-                        onChange={handleChange}
-                      >
-                        <option value="">Select area...</option>
-                        <option value="attic">Attic</option>
-                        <option value="crawl-space">Crawl Space</option>
-                        <option value="walls">Walls</option>
-                        <option value="roof-deck">Roof Deck</option>
-                        <option value="basement">Basement</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="substrate">
-                        Substrate
-                      </label>
-                      <select
-                        id="substrate"
-                        name="substrate"
-                        className={inputClass}
-                        value={formData.substrate}
-                        onChange={handleChange}
-                      >
-                        <option value="">Select substrate...</option>
-                        <option value="wood">Wood</option>
-                        <option value="concrete">Concrete</option>
-                        <option value="metal">Metal</option>
-                        <option value="existing-insulation">Existing Insulation</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="thickness">
-                        Thickness (inches)
-                      </label>
-                      <input
-                        id="thickness"
-                        name="thickness"
-                        type="number"
-                        min="0"
-                        step="0.25"
-                        className={inputClass}
-                        placeholder="e.g. 3.5"
-                        value={formData.thickness}
+                        value={formData.isoExpiry}
                         onChange={handleChange}
                       />
                     </div>
                     <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="rValue">
-                        R-Value
+                      <label className={labelClass} htmlFor="resinLot">
+                        (B) Resin LOT#
                       </label>
                       <input
-                        id="rValue"
-                        name="rValue"
-                        type="number"
-                        min="0"
-                        className={inputClass}
-                        placeholder="e.g. 20"
-                        value={formData.rValue}
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="sqft">
-                        Square Footage
-                      </label>
-                      <input
-                        id="sqft"
-                        name="sqft"
-                        type="number"
-                        min="0"
-                        className={inputClass}
-                        placeholder="e.g. 1200"
-                        value={formData.sqft}
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className={`${fieldClass} sm:col-span-2`}>
-                      <label className={labelClass} htmlFor="materialLot">
-                        Material Lot / Batch Number
-                      </label>
-                      <input
-                        id="materialLot"
-                        name="materialLot"
+                        id="resinLot"
+                        name="resinLot"
                         type="text"
                         className={inputClass}
-                        placeholder="LOT-XXXXXXXX"
-                        value={formData.materialLot}
+                        placeholder="Resin (B) LOT#"
+                        value={formData.resinLot}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="resinExpiry">
+                        (B) Resin Expiry Date
+                      </label>
+                      <input
+                        id="resinExpiry"
+                        name="resinExpiry"
+                        type="date"
+                        className={inputClass}
+                        value={formData.resinExpiry}
                         onChange={handleChange}
                       />
                     </div>
                   </div>
-                </div>
-
-                {/* Section D — Quality & Safety */}
-                <div className="border-t border-primary/10 pt-6 mt-2">
-                  <h3 className="font-headline font-semibold text-text mb-4">
-                    D. Quality &amp; Safety
-                  </h3>
 
                   <div className={fieldClass}>
-                    <span className={labelClass}>Moisture Check Completed?</span>
-                    <div className="flex gap-4 mt-1">
-                      {['Yes', 'No'].map((opt) => (
-                        <label
-                          key={opt}
-                          className="flex items-center gap-2 text-sm text-text cursor-pointer"
-                        >
-                          <input
-                            type="radio"
-                            name="moistureCheck"
-                            value={opt}
-                            checked={formData.moistureCheck === opt}
-                            onChange={handleChange}
-                            className="accent-primary w-4 h-4"
-                          />
-                          {opt}
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className={fieldClass}>
-                    <span className={labelClass}>Adequate Ventilation Confirmed?</span>
-                    <div className="flex gap-4 mt-1">
-                      {['Yes', 'No'].map((opt) => (
-                        <label
-                          key={opt}
-                          className="flex items-center gap-2 text-sm text-text cursor-pointer"
-                        >
-                          <input
-                            type="radio"
-                            name="ventilation"
-                            value={opt}
-                            checked={formData.ventilation === opt}
-                            onChange={handleChange}
-                            className="accent-primary w-4 h-4"
-                          />
-                          {opt}
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className={fieldClass}>
-                    <label className={labelClass} htmlFor="ppeUsed">
-                      PPE Used
+                    <label className={labelClass} htmlFor="proportionerType">
+                      Proportioner Type
                     </label>
                     <input
-                      id="ppeUsed"
-                      name="ppeUsed"
+                      id="proportionerType"
+                      name="proportionerType"
                       type="text"
                       className={inputClass}
-                      placeholder="e.g. Supplied-air respirator, Tyvek suit, gloves, goggles"
-                      value={formData.ppeUsed}
+                      placeholder="Brand/Type"
+                      value={formData.proportionerType}
                       onChange={handleChange}
                     />
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="isoTemp">
+                        (A) Iso Temperature
+                      </label>
+                      <input
+                        id="isoTemp"
+                        name="isoTemp"
+                        type="text"
+                        className={inputClass}
+                        placeholder="(A) Iso Temperature"
+                        value={formData.isoTemp}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="isoPressure">
+                        (A) ISO Pressure
+                      </label>
+                      <input
+                        id="isoPressure"
+                        name="isoPressure"
+                        type="text"
+                        className={inputClass}
+                        placeholder="(B) Resin Pressure"
+                        value={formData.isoPressure}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="resinTemp">
+                        (B) Resin Temperature
+                      </label>
+                      <input
+                        id="resinTemp"
+                        name="resinTemp"
+                        type="text"
+                        className={inputClass}
+                        placeholder="(B) Resin Temperature"
+                        value={formData.resinTemp}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="resinPressure">
+                        (B) Resin Pressure
+                      </label>
+                      <input
+                        id="resinPressure"
+                        name="resinPressure"
+                        type="text"
+                        className={inputClass}
+                        placeholder="(B) Resin Pressure"
+                        value={formData.resinPressure}
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="hoseHeatTemp">
+                        Hose Heat Temperature
+                      </label>
+                      <input
+                        id="hoseHeatTemp"
+                        name="hoseHeatTemp"
+                        type="text"
+                        className={inputClass}
+                        placeholder="Hose Heat Temperature"
+                        value={formData.hoseHeatTemp}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="strokesUsed">
+                        Strokes Used
+                      </label>
+                      <input
+                        id="strokesUsed"
+                        name="strokesUsed"
+                        type="text"
+                        className={inputClass}
+                        placeholder="Enter Number Of Strokes Used"
+                        value={formData.strokesUsed}
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="ambientTemp">
+                        Ambient Temperature
+                      </label>
+                      <input
+                        id="ambientTemp"
+                        name="ambientTemp"
+                        type="text"
+                        className={inputClass}
+                        placeholder="Ambient Temperature"
+                        value={formData.ambientTemp}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="substrateTemp">
+                        Substrate Temperature
+                      </label>
+                      <input
+                        id="substrateTemp"
+                        name="substrateTemp"
+                        type="text"
+                        className={inputClass}
+                        placeholder="Substrate Temperature"
+                        value={formData.substrateTemp}
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4">
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="relativeHumidity">
+                        Relative Humidity
+                      </label>
+                      <input
+                        id="relativeHumidity"
+                        name="relativeHumidity"
+                        type="text"
+                        className={inputClass}
+                        placeholder="Relative Humidity"
+                        value={formData.relativeHumidity}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="windVelocity">
+                        Wind Velocity
+                      </label>
+                      <input
+                        id="windVelocity"
+                        name="windVelocity"
+                        type="text"
+                        className={inputClass}
+                        placeholder="Substrate"
+                        value={formData.windVelocity}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className={fieldClass}>
+                      <label className={labelClass} htmlFor="substrateHumidity">
+                        Substrate Humidity
+                      </label>
+                      <input
+                        id="substrateHumidity"
+                        name="substrateHumidity"
+                        type="text"
+                        className={inputClass}
+                        placeholder="Substrate Humidity"
+                        value={formData.substrateHumidity}
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </div>
+
+                  <div className={fieldClass}>
+                    <label className={labelClass} htmlFor="substrateType">
+                      Substrate Type
+                    </label>
+                    <input
+                      id="substrateType"
+                      name="substrateType"
+                      type="text"
+                      className={inputClass}
+                      placeholder="Substrate Type/Description"
+                      value={formData.substrateType}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4">
+                    {(
+                      [
+                        ['substrateDry', 'Substrate Dry?'],
+                        ['substrateClean', 'Substrate Clean?'],
+                        ['substrateFastened', 'Substrate Fastend/Secure?'],
+                      ] as const
+                    ).map(([name, label]) => (
+                      <div key={name} className={fieldClass}>
+                        <span className={labelClass}>{label}</span>
+                        <div className="flex gap-4 mt-1">
+                          {['Yes', 'No'].map((opt) => (
+                            <label
+                              key={opt}
+                              className="flex items-center gap-2 text-sm text-text cursor-pointer"
+                            >
+                              <input
+                                type="radio"
+                                name={name}
+                                value={opt}
+                                checked={formData[name] === opt}
+                                onChange={handleChange}
+                                className="accent-primary w-4 h-4"
+                              />
+                              {opt}
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+                    {(
+                      [
+                        ['primerRequired', 'Primer Required?'],
+                        ['exteriorCoatingRequired', 'Exterior Coating Required?'],
+                      ] as const
+                    ).map(([name, label]) => (
+                      <div key={name} className={fieldClass}>
+                        <span className={labelClass}>{label}</span>
+                        <div className="flex gap-4 mt-1">
+                          {['Yes', 'No'].map((opt) => (
+                            <label
+                              key={opt}
+                              className="flex items-center gap-2 text-sm text-text cursor-pointer"
+                            >
+                              <input
+                                type="radio"
+                                name={name}
+                                value={opt}
+                                checked={formData[name] === opt}
+                                onChange={handleChange}
+                                className="accent-primary w-4 h-4"
+                              />
+                              {opt}
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
                   </div>
 
                   <div className={fieldClass}>
                     <label className={labelClass} htmlFor="notes">
-                      Additional Notes
+                      Job Notes
                     </label>
                     <textarea
                       id="notes"
                       name="notes"
                       rows={3}
                       className={inputClass}
-                      placeholder="Any special conditions, observations, or client instructions..."
+                      placeholder="Add any Notes about the job or the substrate"
                       value={formData.notes}
                       onChange={handleChange}
                     />
-                  </div>
-                </div>
-
-                {/* Section E — Certification */}
-                <div className="border-t border-primary/10 pt-6 mt-2">
-                  <h3 className="font-headline font-semibold text-text mb-4">
-                    E. Certification
-                  </h3>
-                  <p className="text-muted text-sm mb-4">
-                    By completing this form, the applicator certifies that the information above is
-                    accurate and that all work was performed in accordance with manufacturer
-                    specifications and applicable regulations.
-                  </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
-                    <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="sigName">
-                        Contractor Name
-                      </label>
-                      <input
-                        id="sigName"
-                        name="sigName"
-                        type="text"
-                        className={inputClass}
-                        placeholder="Print full name"
-                        value={formData.sigName}
-                        onChange={handleChange}
-                      />
-                    </div>
-                    <div className={fieldClass}>
-                      <label className={labelClass} htmlFor="sigDate">
-                        Date Completed
-                      </label>
-                      <input
-                        id="sigDate"
-                        name="sigDate"
-                        type="date"
-                        className={inputClass}
-                        value={formData.sigDate}
-                        onChange={handleChange}
-                      />
-                    </div>
                   </div>
                 </div>
 
@@ -574,7 +713,7 @@ export default function WorkRecordFormPage() {
                     type="submit"
                     className="primary-btn inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-label font-semibold text-sm"
                   >
-                    Save Record
+                    Send Message
                   </button>
                 </div>
               </form>

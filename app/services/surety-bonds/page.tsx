@@ -131,7 +131,7 @@ export default function SuretyBondsPage() {
           <p className="text-muted font-label leading-relaxed mb-6">
             In the spray foam contracting industry, maintaining trust and professionalism is paramount. Our Surety Bonds for spray foam contractors offer a comprehensive solution to meet legal requirements, instill confidence in your clients, and safeguard the integrity of your projects. Whether it&apos;s adhering to regulations, completing projects on time, ensuring payments to subcontractors and suppliers, or upholding your commitment to contracts, our tailored Surety Bonds cover your diverse needs, ensuring your reputation as a reliable and responsible contractor remains unblemished.
           </p>
-          <div className="rounded-3xl bg-gradient-to-br from-secondary to-primary p-8 sm:p-10 text-white shadow-xl">
+          <div className="rounded-3xl bg-gradient-to-br from-primary to-[#06216b] p-8 sm:p-10 text-white shadow-xl">
             <ul className="space-y-3 font-label text-sm sm:text-base">
               <li>
                 <span className="font-semibold">License and Permit Bonds:</span> These bonds are typically required by local authorities to ensure that you comply with regulations and standards specific to your industry and location.
