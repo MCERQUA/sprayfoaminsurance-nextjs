@@ -1,174 +1,144 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHero from '@/components/PageHero';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import CTABar from '@/components/CTABar';
-import GlassCard from '@/components/GlassCard';
 import StatBar from '@/components/StatBar';
 import FAQSection from '@/components/FAQSection';
-import { CheckCircle, Award, Users, Shield, Zap } from 'lucide-react';
 import { aboutFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: 'About Spray Foam Insurance | SPF Coverage Specialists',
+  title: 'About Us | Spray Foam Insurance Call 844-967-5247',
   description: 'Spray Foam Insurance — SPF contractor coverage specialists since 2009. Serving contractors in all 50 states with tailored GL, workers comp, and specialty programs.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/about-us' },
 };
 
+const team = [
+  { name: 'Jessica Rabbit', role: 'Consultant Officer', photo: '/assets/images/team/team-01.jpg' },
+  { name: 'Robert Brown', role: 'Product Analyst', photo: '/assets/images/team/team-02.jpg' },
+  { name: 'Elaine Chao', role: 'Service Officer', photo: '/assets/images/team/team-03.jpg' },
+];
+
 export default function AboutUsPage() {
   return (
     <>
-      <PageHero
-        title="About Spray Foam Insurance"
-        subtitle="We built the first insurance program designed exclusively for spray polyurethane foam contractors — because generic coverage wasn't enough."
-        ctaText="Get a Quote"
-        ctaHref="/quote"
-        badge="Our Story"
-      />
+      <PageHero title="About Us" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About US' }]} />
+      </div>
+
+      {/* Intro — "We Listen And Work Together..." */}
+      <section className="bg-background py-12">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="label-text">ABOUT US</span>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mt-3 mb-6">
+            We Listen And Work Together To Provide You The Best Coverage.
+          </h2>
+          <p className="font-label text-muted leading-relaxed">
+            We like to listen to our customers because they know their business very well. Most
+            of our clients have a lifetime of construction experience and they have tons of
+            safety knowledge like work site safety training and applicator training. As much as
+            you know about spray foam we know about spray foam contractors insurance. We try to
+            ask only the questions we need in order to keep our time short on the phone. Once we
+            have gathered your information we shop around for you. Our proprietary quote engine
+            allows us to gather your information once and then shop your company with multiple
+            carriers. We write thousands of contractors coast to coast every year.
+          </p>
+        </div>
+      </section>
+
+      {/* My Story */}
+      <section className="bg-surface border-y border-primary/10 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <Image
+              src="/assets/images/josh-cotner.webp"
+              alt="Josh Cotner - Spray Foam Insurance Specialist"
+              width={500}
+              height={600}
+              className="rounded-xl object-cover w-full"
+            />
+            <div>
+              <span className="label-text">ABOUT US</span>
+              <h3 className="font-headline text-2xl md:text-3xl font-bold text-text mt-2 mb-6 border-l-4 border-primary pl-4">
+                MY STORY
+              </h3>
+              <div className="space-y-4 font-label text-muted leading-relaxed">
+                <p>
+                  My name is Josh Cotner and I used to work in construction. I fell through a
+                  roof in 2005 and had a nightmare workers compensation claim. I needed to
+                  support my family and I learned a lot about liability and insurance during my
+                  recovery time. I had to fight the workers compensation company to get the
+                  results I was entitled to.
+                </p>
+                <p>
+                  After my injury I learned a lot about insurance and the law and I started
+                  selling insurance with a National Contractors Insurance Company, RRG which was
+                  started by ABC Supply.
+                </p>
+                <p>
+                  I worked with them for several years until the depression took its toll on the
+                  insurance carriers reserves. NCIC was shut down but all my roofers still needed
+                  coverage, so I worked and found other insurance companies to work with that
+                  liked writing roofing insurance.
+                </p>
+                <p>
+                  I have sold a lot of insurance to contractors over the years and I have seen it
+                  all. I have helped thousands of spray foam contractors find affordable
+                  insurance, cover the construction risks, keep money in their pockets, and fight
+                  for coverage to pay claims for my clients.
+                </p>
+              </div>
+
+              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-primary/10">
+                <Image
+                  src="/assets/images/josh-cotner.webp"
+                  alt="Josh Cotner"
+                  width={64}
+                  height={64}
+                  className="rounded-full object-cover w-16 h-16"
+                />
+                <div>
+                  <p className="font-headline font-bold text-text">Josh Cotner</p>
+                  <p className="text-muted text-sm italic">(CEO / Founder)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <StatBar
         stats={[
-          { value: '500+', label: 'Contractors Insured' },
-          { value: '15+', label: 'Years SPF Focus' },
-          { value: '50', label: 'States Covered' },
-          { value: 'A+', label: 'Carrier Ratings' },
+          { value: '2,500+', label: 'Happy Customer' },
+          { value: '12', label: 'Staff Members' },
+          { value: '20,000+', label: 'Work Hours' },
+          { value: '5', label: 'Win Awarded' },
         ]}
       />
 
+      {/* Team — replicated verbatim from live site (Divi demo placeholder data, see report) */}
       <section className="bg-background py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="label-text">OUR MISSION</span>
-              <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mt-3 mb-6">
-                Spray Foam Insurance Was Built For You
-              </h2>
-              <div className="space-y-4 font-label text-muted leading-relaxed">
-                <p>
-                  Spray Foam Insurance was founded with a single mission: to make specialized, reliable insurance accessible to every spray polyurethane foam contractor in America. We saw too many SPF professionals being underserved by generic policies that excluded their most common risks.
-                </p>
-                <p>
-                  Our founder, Josh Cotner, spent years working alongside contractors and insurance carriers to understand exactly where standard policies fell short. From overspray exclusions to workers&apos; comp misclassifications, the gaps were real — and costly.
-                </p>
-                <p>
-                  Today we serve hundreds of spray foam contractors across all 50 states, from owner-operators running a single rig to multi-crew commercial operations. Every client gets the same dedicated service: custom quotes, fast certificates, and an advocate in their corner at claim time.
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {team.map((member) => (
+              <div key={member.name} className="glass-card overflow-hidden">
+                <div className="relative w-full h-64">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-headline font-bold text-text text-lg">{member.name}</h3>
+                  <p className="text-muted text-sm">{member.role}</p>
+                </div>
               </div>
-            </div>
-            <div>
-              <Image
-                src="/assets/images/josh-cotner.webp"
-                alt="Josh Cotner - Spray Foam Insurance Specialist"
-                width={400}
-                height={500}
-                className="rounded-xl object-cover w-full"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-surface border-y border-primary/10 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text">
-              Why We Focus Exclusively on Spray Foam
-            </h2>
-          </div>
-          <div className="max-w-3xl mx-auto mb-12">
-            <GlassCard>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Most insurance agents sell dozens of different types of coverage across many industries. We don&apos;t. We focus exclusively on spray polyurethane foam contractors because we believe specialization leads to better outcomes. We know the SPFA standards, the OSHA regulations, the common exclusions that catch contractors off guard, and the carriers that price SPF risk fairly.
-              </p>
-            </GlassCard>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
-                <Award className="w-6 h-6 text-accent" />
-              </div>
-              <div>
-                <h3 className="font-headline font-bold text-text mb-2">Industry Expertise</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  We speak SPF. We know A-side from B-side, proportioner ratios, and the difference between open-cell and closed-cell risk profiles.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
-                <Shield className="w-6 h-6 text-accent" />
-              </div>
-              <div>
-                <h3 className="font-headline font-bold text-text mb-2">No Coverage Gaps</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  We&apos;ve mapped every common exclusion in standard policies and built programs that close them. You&apos;re covered where it matters most.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
-                <Users className="w-6 h-6 text-accent" />
-              </div>
-              <div>
-                <h3 className="font-headline font-bold text-text mb-2">Contractor Advocates</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  When you have a claim, we go to bat for you. We don&apos;t just hand you a policy and disappear.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
-                <Zap className="w-6 h-6 text-accent" />
-              </div>
-              <div>
-                <h3 className="font-headline font-bold text-text mb-2">Fast Service</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Quotes within 24 hours. Certificates same day. We know contractors move fast and we match that speed.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-background py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">SPFA Member</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Active member of the Spray Polyurethane Foam Alliance.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">A-Rated Carriers</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                We only place coverage with financially stable, A-rated carriers.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Licensed Nationwide</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Licensed to place insurance in all 50 states.
-              </p>
-            </GlassCard>
-            <GlassCard>
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">5-Star Service</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Dedicated account management for every client.
-              </p>
-            </GlassCard>
+            ))}
           </div>
         </div>
       </section>
