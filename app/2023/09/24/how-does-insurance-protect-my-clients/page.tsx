@@ -49,7 +49,7 @@ export default function Page() {
             <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs label-text text-primary">Business</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold leading-tight mb-6">
-            <span className="blue-gradient-text">How Does Insurance Protect My Clients?</span>
+            <span className="blue-gradient-text">Protecting Your Clients</span>
           </h1>
           <div className="flex items-center gap-6 text-sm text-muted">
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> September 24, 2023</span>
@@ -62,15 +62,16 @@ export default function Page() {
       <section className="py-12 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-surface/50 rounded-2xl p-8 lg:p-12 border border-primary/10">
+            <h2 className="text-2xl font-headline font-bold text-text mb-4">How Does Insurance Protect Construction Clients?</h2>
             <p className="text-muted leading-relaxed mb-5">Welcome, everyone! I'm here to delve into an important topic today: how insurance safeguards the interests of clients in the construction industry. As someone deeply involved in the world of construction insurance, I've witnessed firsthand the vital role it plays in ensuring the well-being of clients. Let's explore the ways insurance serves as a crucial shield for construction clients:</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Financial Safeguard</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Financial Safeguard:</h2>
             <p className="text-muted leading-relaxed mb-5">Construction projects often involve substantial investments. Clients hire contractors with the expectation that their project will be completed on time and within budget. Unfortunately, unforeseen events such as accidents, material damage, or project delays can disrupt these plans. This is where insurance steps in. It serves as a financial safeguard, assuring clients that any unexpected costs resulting from project mishaps will be covered. This ensures that the clients' financial interests are protected.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Liability Coverage</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Liability Coverage:</h2>
             <p className="text-muted leading-relaxed mb-5">In the construction industry, liability is a significant concern. Clients need assurance that they won't be held responsible for accidents or injuries that occur on their property during a construction project. Insurance policies, such as general liability and workers' compensation, provide clients with this peace of mind. In the event of accidents, injuries, or property damage, the insurance covers the associated costs, sparing clients from potential legal disputes or financial liabilities.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Project Completion Guarantee</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Project Completion Guarantee:</h2>
             <p className="text-muted leading-relaxed mb-5">Clients hire contractors to get their projects completed successfully. However, construction projects are subject to various risks, such as contractor bankruptcy, subcontractor failures, or unforeseen obstacles. Insurance policies, such as surety bonds, offer clients a guarantee that their project will be completed even if unexpected issues arise. This adds another layer of security for clients, assuring them that their investment will yield the desired results.</p>
 
             <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Quality Assurance</h2>

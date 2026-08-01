@@ -49,7 +49,7 @@ export default function Page() {
             <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs label-text text-primary">Coverage</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold leading-tight mb-6">
-            <span className="blue-gradient-text">Do I Need Special Coverage for Roofing Projects?</span>
+            <span className="blue-gradient-text">Coverage for Roofing Projects</span>
           </h1>
           <div className="flex items-center gap-6 text-sm text-muted">
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> September 24, 2023</span>
@@ -62,17 +62,17 @@ export default function Page() {
       <section className="py-12 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-surface/50 rounded-2xl p-8 lg:p-12 border border-primary/10">
-            <p className="text-muted leading-relaxed mb-5">Spray foam insulation contractors often find themselves working in collaboration with roofing companies on spray foam insulation solutions. These collaborative efforts are essential for ensuring a well-insulated, energy-efficient building. But as a spray foam insulation contractor, you might wonder: "Do I need special coverage for roofing projects?" In this article, we'll explore the unique insurance considerations that come into play when working alongside roofers and how you can protect your interests.</p>
+            <p className="text-muted leading-relaxed mb-5">Spray foam insulation contractors often find themselves working in collaboration with roofing companies, Spray Foam insulation solutions. These collaborative efforts are essential for ensuring a well-insulated, energy-efficient building. But as a spray foam insulation contractor, you might wonder: "Do I need special coverage for roofing projects?" In this article, we'll explore the unique insurance considerations that come into play when working alongside roofers and how you can protect your interests.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Understanding the Roofing Collaboration</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Understanding the Roofing Collaboration:</h2>
             <p className="text-muted leading-relaxed mb-5">Collaborating with roofing companies is a common practice for spray foam insulation contractors, particularly in projects that involve flat roofs or roof renovations. Your role often comes into play when the roof has been demoed and opened up to provide access for insulation installation before the new roofing materials are applied. This partnership is vital for delivering effective insulation solutions, but it also introduces specific risks and insurance considerations.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Why Special Coverage May Be Necessary</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Why Special Coverage May Be Necessary:</h2>
             <p className="text-muted leading-relaxed mb-5">Specialized Equipment and Skills: Installing spray foam insulation requires specialized, expensive equipment and skilled applicators/operators. Unlike traditional insulation materials like fiberglass batts, spray foam application demands expertise. This means that your work carries its unique set of risks and requirements.</p>
             <p className="text-muted leading-relaxed mb-5">Potential for Property Damage: The process of installing spray foam insulation involves the use of chemicals and equipment that, if not handled correctly, can lead to property damage. For instance, overspray or improper application can result in damage to the roofing structure or other building components.</p>
             <p className="text-muted leading-relaxed mb-5">Liability Concerns: Collaborating with roofers means that you may be working on structures where the risk of accidents is higher due to the nature of roofing projects. Liability concerns come into play, and it's crucial to have adequate coverage in case of accidents, injuries, or property damage.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Insurance Coverage to Consider</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Insurance Coverage to Consider:</h2>
             <p className="text-muted leading-relaxed mb-5">When working on roofing projects as a spray foam insulation contractor, it's important to consider the following types of insurance coverage:</p>
             <p className="text-muted leading-relaxed mb-5">General Liability Insurance: General liability insurance is a foundational coverage that protects against bodily injury, property damage, and personal injury claims. It's essential for addressing potential liability claims that may arise while working on roofing projects.</p>
             <p className="text-muted leading-relaxed mb-5">Contractor's Equipment Insurance: This coverage protects your specialized equipment, such as spray foam machines and tools, against damage or theft. Given the high cost of this equipment, it's crucial to ensure it is adequately insured.</p>
@@ -80,7 +80,7 @@ export default function Page() {
             <p className="text-muted leading-relaxed mb-5">Workers' Compensation Insurance: If you have employees, workers' compensation insurance is typically mandatory. It covers medical expenses and lost wages for employees injured on the job.</p>
             <p className="text-muted leading-relaxed mb-5">Inland Marine Insurance: This coverage can protect your equipment while in transit to job sites, particularly when you're collaborating with roofing companies at different locations.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Key Considerations</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Key Considerations:</h2>
             <p className="text-muted leading-relaxed mb-5">Contractual Agreements: Review any contracts or agreements with roofing companies to ensure that insurance requirements are clear and met.</p>
             <p className="text-muted leading-relaxed mb-5">Documentation: Keep thorough records of your work, including the insulation application process, to assist in case of claims or disputes.</p>
             <p className="text-muted leading-relaxed mb-5">Consult an Insurance Professional: Work with an insurance expert who understands the construction industry and can help tailor your coverage to the specific risks associated with spray foam insulation projects in roofing.</p>

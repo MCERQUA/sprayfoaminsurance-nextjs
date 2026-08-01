@@ -49,7 +49,7 @@ export default function Page() {
             <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs label-text text-primary">Claims</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold leading-tight mb-6">
-            <span className="blue-gradient-text">Does Insurance Cover Overspray Damage?</span>
+            <span className="blue-gradient-text">Insurance for Overspray</span>
           </h1>
           <div className="flex items-center gap-6 text-sm text-muted">
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> September 24, 2023</span>
@@ -62,6 +62,7 @@ export default function Page() {
       <section className="py-12 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-surface/50 rounded-2xl p-8 lg:p-12 border border-primary/10">
+            <h2 className="text-2xl font-headline font-bold text-text mb-4">Protecting Your Business from Unintended Consequences</h2>
             <p className="text-muted leading-relaxed mb-5">In the dynamic world of spray foam insulation, where precision meets innovation, overspray—unintentional dispersion of foam material—can sometimes become an unintended challenge. Overspray can affect neighboring properties, vehicles, and even architectural features of the project site. It's a concern that spray foam contractors take seriously, and one question frequently asked is whether insurance covers overspray damage.</p>
 
             <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Understanding Overspray Damage</h2>

@@ -3,8 +3,8 @@ import PageHero from '@/components/PageHero';
 import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
-import StatBar from '@/components/StatBar';
-import { CheckCircle, AlertTriangle } from 'lucide-react';
+import ServiceCard from '@/components/ServiceCard';
+import { AlertTriangle, Shield, Users, Truck } from 'lucide-react';
 import { workersCompFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
@@ -34,71 +34,52 @@ export default function WorkersCompPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <PageHero
-        title="Workers' Compensation Insurance for Spray Foam Contractors"
-        subtitle="Protecting your most valuable asset — your crew. Coverage for injuries, chemical exposure, and occupational illness from SPF operations."
+        title="Workers' Compensation for Spray Foam Contractors"
+        subtitle="Workers' Compensation Insurance is more than just a legal requirement; it's a commitment to the people who make your business thrive."
         ctaText="Get a Quote"
         ctaHref="/quote"
         badge="Workers' Comp"
       />
 
-      <StatBar
-        stats={[
-          { value: '#1', label: 'Cause of Occupational Asthma' },
-          { value: '40%', label: 'Higher Injury Rate vs Avg' },
-          { value: '$50K+', label: 'Avg Claim Cost' },
-          { value: '50', label: 'States We Cover' },
-        ]}
-      />
+      <section className="bg-surface py-12 border-b border-primary/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <ServiceCard
+              icon={Shield}
+              title="General liability"
+              description="Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future."
+              href="/services/general-liability-insurance"
+            />
+            <ServiceCard
+              icon={Users}
+              title="Workers compensation"
+              description="Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment."
+              href="/services/workers-compensation-insurance-for-spray-foam-contractors"
+            />
+            <ServiceCard
+              icon={Truck}
+              title="Commercial auto"
+              description="Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage."
+              href="/services/commercial-auto"
+            />
+          </div>
+        </div>
+      </section>
 
       <section className="bg-background py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="label-text">HIGH-RISK INDUSTRY</span>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mt-3 mb-4">
-              Why Spray Foam Work Carries Elevated Risk
-            </h2>
-            <p className="text-muted max-w-2xl mx-auto font-label">
-              Spray foam contracting combines chemical hazards, physical demands, and high-risk environments that place SPF workers among the most exposed in the construction industry. Standard workers&apos; comp programs often misclassify this work — costing contractors coverage and money.
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-text mb-6 text-center">
+            Protecting Your Team, Ensuring Your Success
+          </h2>
+          <p className="text-muted font-label leading-relaxed mb-8">
+            Spray foam contractors are the backbone of the construction industry, creating energy-efficient, moisture-resistant, and eco-friendly insulation solutions. The demanding nature of the work, often involving the use of heavy equipment and chemicals, means that ensuring the safety and well-being of your team is paramount. That&apos;s where Workers&apos; Compensation Insurance from Spray Foam Insurance steps in – to provide your employees with the protection they need while safeguarding the future of your business.
+          </p>
+          <GlassCard className="p-6 border-l-4 border-primary">
+            <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
+            <p className="text-muted font-label text-sm leading-relaxed">
+              Workers&apos; Compensation Insurance is more than just a legal requirement; it&apos;s a commitment to the people who make your business thrive. This vital coverage is designed to provide benefits to employees who suffer work-related injuries or illnesses. It not only protects your employees by covering their medical expenses and lost wages but also protects your business from costly lawsuits that can arise from workplace accidents.
             </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
-              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
-                <AlertTriangle className="w-5 h-5 text-highlight" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Chemical Exposure</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Isocyanates are a leading cause of occupational asthma and sensitization. Once sensitized, a worker may never be able to work around isocyanates again — ending careers.
-              </p>
-            </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
-              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
-                <AlertTriangle className="w-5 h-5 text-highlight" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Working at Heights</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Crawlspaces, attics, rooftops, and elevated platforms create fall risk. Falls are the leading cause of construction fatalities.
-              </p>
-            </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
-              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
-                <AlertTriangle className="w-5 h-5 text-highlight" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Heat &amp; Equipment</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Proportioners, heated hoses, and hot foam create burn risks. Machinery malfunctions can cause serious injuries.
-              </p>
-            </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors border-l-4 border-l-primary">
-              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
-                <AlertTriangle className="w-5 h-5 text-highlight" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Repetitive Stress</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Carrying heavy equipment, working in confined spaces, and repetitive motion create musculoskeletal injury risks over time.
-              </p>
-            </GlassCard>
-          </div>
+          </GlassCard>
         </div>
       </section>
 
@@ -106,119 +87,85 @@ export default function WorkersCompPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-text">
-              What Workers&apos; Compensation Insurance Covers
+              Why Is It Essential for Spray Foam Contractors?
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
               </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Medical Expenses</h3>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Caring for Your Team</h3>
               <p className="text-muted font-label text-sm leading-relaxed">
-                All reasonable medical costs for work-related injuries or illnesses, including emergency care, surgery, hospitalization, and follow-up treatment.
+                The health and safety of your employees should always be a top priority. Accidents can happen in any workplace, and the spray foam industry is no exception. Workers&apos; Compensation Insurance ensures that your team receives the care and support they need if they are injured on the job, helping them recover and return to work as quickly as possible.
               </p>
             </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
               </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Lost Wages</h3>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Legal Compliance</h3>
               <p className="text-muted font-label text-sm leading-relaxed">
-                Replaces a portion of income (typically 66–75%) when an employee can&apos;t work due to a covered injury or illness.
+                In many jurisdictions, carrying Workers&apos; Compensation Insurance is a legal requirement. Compliance with these regulations is not just about avoiding fines and penalties; it&apos;s about fulfilling your responsibility as an employer to provide a safe and supportive work environment.
               </p>
             </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
+            <GlassCard className="p-6 border-l-4 border-primary">
+              <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
+                <AlertTriangle className="w-5 h-5 text-yellow-400" />
               </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Rehabilitation Costs</h3>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Financial Security</h3>
               <p className="text-muted font-label text-sm leading-relaxed">
-                Physical therapy, occupational therapy, and vocational rehabilitation to help injured workers return to the job.
-              </p>
-            </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Permanent Disability</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Compensation for workers who suffer permanent impairment from a work-related injury or illness.
-              </p>
-            </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Death Benefits</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Pays benefits to dependents of workers killed in work-related accidents or from occupational diseases.
-              </p>
-            </GlassCard>
-            <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-accent" />
-              </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Employer Liability</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Protects your business from lawsuits filed by injured employees, including claims that go beyond standard comp benefits.
+                Workplace injuries can lead to substantial financial costs, including medical bills and lost wages. Without insurance, these expenses could be borne by your business. Workers&apos; Compensation Insurance from Spray Foam Insurance ensures that your business remains financially stable in the face of unexpected accidents.
               </p>
             </GlassCard>
           </div>
         </div>
       </section>
 
-      <section className="bg-background py-12">
+      <section className="bg-background py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <GlassCard className="border border-primary/20 hover:border-primary/50 transition-colors">
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                <CheckCircle className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <h3 className="font-headline font-bold text-text mb-2">State Requirements</h3>
-                <p className="text-muted font-label text-sm leading-relaxed">
-                  Workers&apos; comp is required by law in virtually all states as soon as you have one or more employees. Even sole proprietors are encouraged to carry it — you can be injured too. Requirements vary by state for owner coverage. Operating without mandatory coverage exposes you to fines, stop-work orders, and direct liability for injured workers&apos; medical expenses and lost wages.
-                </p>
-              </div>
-            </div>
-          </GlassCard>
+          <div className="rounded-3xl bg-gradient-to-br from-secondary to-primary p-8 sm:p-10 text-white shadow-xl">
+            <h2 className="font-headline text-2xl sm:text-3xl font-bold mb-4">Key Components of Coverage</h2>
+            <p className="font-label text-sm sm:text-base opacity-90 leading-relaxed mb-6">
+              Workers&apos; Compensation Insurance from Spray Foam Insurance can be customized to meet your specific needs. Here are some key components of coverage:
+            </p>
+            <ul className="space-y-3 font-label text-sm sm:text-base">
+              <li>
+                <span className="font-semibold">Medical Expenses:</span> Coverage for necessary medical treatment and rehabilitation services to help injured employees recover.
+              </li>
+              <li>
+                <span className="font-semibold">Lost Wages:</span> Replacement of a portion of an employee&apos;s lost income due to a work-related injury or illness.
+              </li>
+              <li>
+                <span className="font-semibold">Disability Benefits:</span> Compensation for permanent or temporary disability resulting from workplace accidents.
+              </li>
+              <li>
+                <span className="font-semibold">Death Benefits:</span> Financial support to the family or dependents of an employee who loses their life in a work-related incident.
+              </li>
+              <li>
+                <span className="font-semibold">Legal Protection:</span> Coverage for legal expenses in case of lawsuits related to workplace injuries.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section className="bg-surface py-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h2 className="font-headline text-3xl font-bold text-text">How to Get Workers&apos; Comp Coverage</h2>
+      <section className="bg-surface py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          <div>
+            <h2 className="font-headline text-2xl font-bold text-text mb-3">A Commitment to Safety</h2>
+            <p className="text-muted font-label leading-relaxed">
+              At Spray Foam Insurance, we understand that prevention is the first step in creating a safe work environment. We provide resources and support to help you implement best practices in workplace safety. By working together, we can reduce the risk of accidents and ensure the well-being of your employees.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center mb-4">
-                <span className="font-headline font-bold text-primary text-lg">1</span>
-              </div>
-              <h3 className="font-headline font-bold text-text mb-2">Tell Us About Your Team</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Number of employees, job classifications, and estimated annual payroll.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="w-12 h-12 rounded-full border-2 border-accent flex items-center justify-center mb-4">
-                <span className="font-headline font-bold text-accent text-lg">2</span>
-              </div>
-              <h3 className="font-headline font-bold text-text mb-2">We Shop the Market</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                We compare workers&apos; comp rates across multiple carriers that specialize in construction and SPF work.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="w-12 h-12 rounded-full border-2 border-primary flex items-center justify-center mb-4">
-                <span className="font-headline font-bold text-primary text-lg">3</span>
-              </div>
-              <h3 className="font-headline font-bold text-text mb-2">Get Covered &amp; Stay Compliant</h3>
-              <p className="text-muted font-label text-sm leading-relaxed">
-                Policies come with audit support and access to our safety resources to keep your mod rate low.
-              </p>
-            </div>
+          <div>
+            <h2 className="font-headline text-2xl font-bold text-text mb-3">Choose Spray Foam Insurance for Your Workers&apos; Compensation Needs</h2>
+            <p className="text-muted font-label leading-relaxed mb-4">
+              Your employees are your most valuable asset, and protecting them is crucial. At Spray Foam Insurance, we specialize in providing Workers&apos; Compensation Insurance tailored to the unique requirements of spray foam contractors. Our experienced team understands the intricacies of your industry, and we&apos;re committed to ensuring your employees have the coverage they need to thrive and succeed.
+            </p>
+            <p className="text-muted font-label leading-relaxed">
+              Ready to discuss your insurance needs or have questions about Workers&apos; Compensation Insurance? Contact Spray Foam Insurance today. We&apos;re here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while ensuring the well-being of your team.
+            </p>
           </div>
         </div>
       </section>

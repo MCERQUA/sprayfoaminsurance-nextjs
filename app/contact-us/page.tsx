@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import CTABar from '@/components/CTABar';
 import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
-import FormCard from '@/components/FormCard';
-import { Clock, CheckCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { contactFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: 'Contact Spray Foam Insurance | 844-967-5247',
+  title: 'Contact Us | Spray Foam Insurance Call 844-967-5247',
   description: 'Contact our spray foam insurance specialists. Call 844-967-5247 or send us a message. GL, workers comp, and equipment coverage quotes available.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/contact-us' },
   keywords: ['contact spray foam insurance', '844-967-5247', 'spray foam insurance agent', 'SPF insurance quote'],
@@ -19,143 +19,142 @@ export const metadata: Metadata = {
   },
 };
 
-const coverages = [
-  'General Liability',
-  'Workers Compensation',
-  'Commercial Auto',
-  'Inland Marine / Rig Insurance',
-  'Environmental Liability',
-  'Surety Bonds',
+const officeHours = [
+  'Monday: 9:00 AM – 5:00 PM',
+  'Tuesday: 9:00 AM – 5:00 PM',
+  'Wednesday: 9:00 AM – 5:00 PM',
+  'Thursday: 9:00 AM – 5:00 PM',
+  'Friday: 9:00 AM – 5:00 PM',
 ];
 
 export default function ContactUsPage() {
   return (
     <>
-      <PageHero
-        title="Contact Spray Foam Insurance"
-        subtitle="Our specialists are ready to help you find the right coverage. Most quotes delivered within 24 hours."
-        badge="GET IN TOUCH"
-        ctaText="Call 844-967-5247"
-        ctaHref="tel:8449675247"
-      />
+      <PageHero title="Contact Us" />
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Contact US' }]} />
+      </div>
+
+      <section className="bg-background pb-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-muted font-label leading-relaxed">
+            At The Contractor&apos;s Choice Agency Inc., we&apos;re here to provide you with the
+            best insurance solutions tailored to your needs. Whether you&apos;re looking for
+            auto, home, life, or business insurance, our team of dedicated professionals is ready
+            to assist you.
+          </p>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          {/* Left column */}
-          <div className="space-y-6">
-            <GlassCard className="p-6">
-              <p className="label-text text-accent text-xs mb-3">CALL US</p>
-              <p className="font-headline font-bold text-text text-xl mb-2">Call Our Specialists</p>
-              <a
-                href="tel:8449675247"
-                className="text-3xl font-headline font-bold text-primary hover:text-accent transition-colors block mb-2"
-              >
-                844-967-5247
-              </a>
-              <p className="text-muted text-sm">Mon–Fri 8am–6pm CST</p>
-            </GlassCard>
+          {/* Left — Send Us A Message */}
+          <div>
+            <h2 className="font-headline text-2xl md:text-3xl font-bold text-text mb-3">
+              Send Us A Message
+            </h2>
+            <p className="text-muted text-sm leading-relaxed mb-6">
+              Have questions or need assistance? We&apos;re here to help. Feel free to send us a
+              message using the form below, and one of our experienced team members will get back
+              to you promptly. Your inquiries are important to us, and we look forward to
+              assisting you with any insurance-related needs or inquiries you may have.
+            </p>
 
-            <GlassCard className="p-6">
-              <p className="font-headline font-bold text-text mb-3">Coverages We Handle</p>
-              {coverages.map((item) => (
-                <div key={item} className="flex items-center gap-2 mb-2">
-                  <CheckCircle className="w-4 h-4 text-accent" />
-                  <span className="text-muted text-sm">{item}</span>
-                </div>
-              ))}
-            </GlassCard>
-
-            <GlassCard className="p-6">
-              <div className="flex items-start gap-4">
-                <Clock className="w-8 h-8 text-primary shrink-0 mt-1" />
-                <div>
-                  <p className="font-headline font-bold text-text mb-2">Response Time</p>
-                  <p className="text-muted text-sm">Under 24 Hours — typical response</p>
-                  <p className="text-muted text-sm">Same Business Day — for new quotes</p>
-                </div>
+            <form className="glass-card p-6 sm:p-8">
+              <div className="mb-4">
+                <label className="block text-sm font-label font-semibold text-text mb-1.5">Name</label>
+                <input
+                  type="text"
+                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
+                  placeholder="Your name"
+                />
               </div>
-            </GlassCard>
+              <div className="mb-4">
+                <label className="block text-sm font-label font-semibold text-text mb-1.5">Email Address</label>
+                <input
+                  type="email"
+                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
+                  placeholder="you@company.com"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-sm font-label font-semibold text-text mb-1.5">Message</label>
+                <textarea
+                  rows={5}
+                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
+                  placeholder="Tell us about your coverage needs..."
+                />
+              </div>
+              <button type="submit" className="primary-btn w-full py-3 rounded-full font-label font-semibold text-base">
+                Submit
+              </button>
+            </form>
           </div>
 
-          {/* Right column */}
-          <FormCard title="Send Us a Message" subtitle="We'll respond within 1 business day.">
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Name</label>
-              <input
-                type="text"
-                className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                placeholder="Your name"
-              />
-            </div>
+          {/* Right — Office Location */}
+          <div>
+            <h2 className="font-headline text-2xl md:text-3xl font-bold text-text mb-6">
+              Office Location
+            </h2>
+            <div className="space-y-4">
+              <GlassCard className="p-6 flex items-start gap-4">
+                <MapPin className="w-6 h-6 text-primary shrink-0 mt-1" />
+                <div>
+                  <p className="font-headline font-bold text-text mb-1">Address</p>
+                  <p className="text-muted text-sm">2270 E Augusta Ave, Chandler, AZ 85249, United States</p>
+                </div>
+              </GlassCard>
 
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Company Name</label>
-              <input
-                type="text"
-                className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                placeholder="Your company name"
-              />
-            </div>
+              <GlassCard className="p-6 flex items-start gap-4">
+                <Phone className="w-6 h-6 text-primary shrink-0 mt-1" />
+                <div>
+                  <p className="font-headline font-bold text-text mb-1">Call Us Today</p>
+                  <a href="tel:8449675247" className="text-primary text-sm hover:text-accent transition-colors">
+                    Tel.: +1 844-967-5247
+                  </a>
+                </div>
+              </GlassCard>
 
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Phone</label>
-              <input
-                type="tel"
-                className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                placeholder="(555) 000-0000"
-              />
-            </div>
+              <GlassCard className="p-6 flex items-start gap-4">
+                <Mail className="w-6 h-6 text-primary shrink-0 mt-1" />
+                <div>
+                  <p className="font-headline font-bold text-text mb-1">Email Us</p>
+                  <a href="mailto:Josh@sprayfoaminsurance.com" className="text-primary text-sm hover:text-accent transition-colors block">
+                    Josh@sprayfoaminsurance.com
+                  </a>
+                  <a href="mailto:info@sprayfoaminsurance.com" className="text-primary text-sm hover:text-accent transition-colors block">
+                    info@sprayfoaminsurance.com
+                  </a>
+                </div>
+              </GlassCard>
 
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Email</label>
-              <input
-                type="email"
-                className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                placeholder="you@company.com"
-              />
+              <GlassCard className="p-6 flex items-start gap-4">
+                <Clock className="w-6 h-6 text-primary shrink-0 mt-1" />
+                <div>
+                  <p className="font-headline font-bold text-text mb-1">Office Hours</p>
+                  {officeHours.map((line) => (
+                    <p key={line} className="text-muted text-sm">{line}</p>
+                  ))}
+                </div>
+              </GlassCard>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Coverage Type</label>
-              <select className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50">
-                <option value="">Select coverage type...</option>
-                <option value="gl">General Liability</option>
-                <option value="wc">Workers Comp</option>
-                <option value="auto">Commercial Auto</option>
-                <option value="inland">Inland Marine / Rig Insurance</option>
-                <option value="env">Environmental Liability</option>
-                <option value="surety">Surety Bonds</option>
-                <option value="multiple">Multiple Coverages</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Years in Business</label>
-              <select className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50">
-                <option value="">Select years in business...</option>
-                <option value="lt1">Less than 1 year</option>
-                <option value="1-3">1–3 years</option>
-                <option value="3-5">3–5 years</option>
-                <option value="5-10">5–10 years</option>
-                <option value="10plus">10+ years</option>
-              </select>
-            </div>
-
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Message</label>
-              <textarea
-                rows={5}
-                className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                placeholder="Tell us about your coverage needs..."
-              />
-            </div>
-
-            <button type="submit" className="primary-btn w-full py-3 rounded-full font-label font-semibold text-base">
-              Send Message
-            </button>
-            <p className="text-xs text-muted text-center mt-3">Or call us directly: 844-967-5247</p>
-          </FormCard>
+      <section className="bg-background py-8">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-text font-label leading-relaxed mb-4">
+            You&apos;re always welcome to stop by our office during business hours, or if it&apos;s
+            more convenient, feel free to give us a call or send us an email. We&apos;re happy to
+            schedule a time that works best for you!
+          </p>
+          <p className="text-muted text-sm leading-relaxed">
+            Your protection is our priority. We&apos;re committed to offering you the guidance and
+            support you need to make informed decisions about your insurance coverage. Let us
+            help you find peace of mind.
+          </p>
         </div>
       </section>
 

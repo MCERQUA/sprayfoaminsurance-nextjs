@@ -7,7 +7,7 @@ const pillars = [
     icon: Phone,
     title: 'Insurance with a Personal Touch',
     description:
-      'You get a dedicated spray foam specialist — not a call center, not a bot. Every question answered by someone who knows your industry, your risks, and your operation by name.',
+      "We don't just offer insurance; we understand the spray foam industry inside out. With years of experience, we've gained a competitive edge in serving your specific needs.",
     tag: 'Dedicated Specialist',
     color: 'text-[#2ea3f2]',
     bg: 'bg-[#2ea3f2]/15',
@@ -16,9 +16,9 @@ const pillars = [
   },
   {
     icon: Award,
-    title: 'Decades of Combined Expertise',
+    title: 'Decades of Expertise',
     description:
-      'SPF-only from day one. Our team has spent over 15 years focused exclusively on spray foam contractors — we understand overspray claims, isocyanate exposures, and rig coverage in a way generalist brokers simply don\'t.',
+      'Experience matters. Our seasoned team specializes in spray foam contractor insurance, ensuring your business is always in good hands.',
     tag: 'SPF-Only Focus',
     color: 'text-[#29c4a9]',
     bg: 'bg-[#29c4a9]/15',
@@ -27,9 +27,9 @@ const pillars = [
   },
   {
     icon: Clock,
-    title: '24/7 Support Anytime',
+    title: 'Work 24/7 Support Anytime',
     description:
-      'Contractors don\'t work 9-to-5, and neither do we. Claims, certificates, policy questions — we\'re available around the clock so a Sunday-night job start never gets derailed by a missing COI.',
+      "It's not just a tagline; it's a commitment that's even in our phone number. Whether it's the middle of the night, a weekend, or a holiday, we're here to support you whenever you need us. Our 24/7 availability ensures that you have the peace of mind you deserve, knowing that we've got your back around the clock.",
     tag: 'Always Available',
     color: 'text-[#2ea3f2]',
     bg: 'bg-[#2ea3f2]/15',
@@ -86,10 +86,10 @@ export default function WhyChooseUs() {
         {/* Header */}
         <div className="text-center mb-14">
           <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">
-            Why Choose Us?
+            The Spray Foam Specialist Difference
           </span>
           <h2 className="font-headline font-bold text-3xl sm:text-4xl text-white mb-4">
-            The Spray Foam Specialist Difference
+            Why Choose Us?
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-base leading-relaxed">
             Any broker can sell you a policy. We built our entire practice around one industry —

@@ -190,6 +190,24 @@ export default function HomePage() {
       {/* ─── WHY CHOOSE US — personal touch / expertise / 24-7 ─── */}
       <WhyChooseUs />
 
+      {/* ─── JOSH'S PERSONAL PULL-QUOTE — verbatim from live homepage ─── */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Quote className="w-10 h-10 text-[#2ea3f2] mx-auto mb-5" />
+          <p className="text-gray-700 text-base sm:text-lg leading-relaxed italic">
+            &ldquo;I know it is hard to find insurance for your spray foam business but I want to make it
+            easier and cheaper. Of course, I know you have many options when choosing insurance coverage.
+            I like to make myself available for any questions or concerns you have along the way. If you
+            have any information or recommendations please share those with me. I&apos;m here for you.
+            Finding you a better quote motivates me. Hundreds of clients are already enjoying the
+            benefits. It doesn&apos;t matter if you are a small, part timer, or a $5,000,000 company I
+            treat each and every customer with respect. Let me show you how I&apos;ll go to bat for
+            you.&rdquo;
+          </p>
+          <p className="font-headline font-bold text-gray-900 mt-5">Josh Cotner</p>
+        </div>
+      </section>
+
       {/* ─── WHO WE SERVE — applicator/operation types ─── */}
       <WhoWeServe />
 

@@ -2,11 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import CTABar from '@/components/CTABar';
-import StatBar from '@/components/StatBar';
-import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
-import { Wrench, Zap, Truck, ArrowRight, CheckCircle, Settings, Package } from 'lucide-react';
-import { inlandMarineFaqs } from '@/lib/faqs';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Inland Marine Insurance for Spray Foam Contractors',
@@ -27,216 +24,191 @@ export const metadata: Metadata = {
   },
 };
 
-const coverageItems = [
+const relatedServices = [
   {
-    icon: <Settings className="w-6 h-6" />,
-    title: 'Spray Foam Proportioners',
-    description:
-      'Your proportioner is the heart of your operation. Covers hydraulic systems against mechanical breakdown, theft, and physical damage.',
+    title: 'General liability',
+    body: 'Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future.',
+    href: '/services/general-liability-insurance',
   },
   {
-    icon: <Zap className="w-6 h-6" />,
-    title: 'Heated Hose Systems',
-    description:
-      "200’ and 300’ heated hose sets covered against fire, theft, and accidental damage during transport and on-site use.",
+    title: 'Workers compensation',
+    body: "Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment.",
+    href: '/services/workers-compensation-insurance-for-spray-foam-contractors',
   },
   {
-    icon: <Zap className="w-5 h-5" />,
-    title: 'Generators & Power Equipment',
-    description:
-      'Commercial generators (20–60kW) covered against theft, vandalism, fire, and collision damage.',
-  },
-  {
-    icon: <Truck className="w-6 h-6" />,
-    title: 'Trailers & Transport',
-    description:
-      'Custom spray foam trailers covered against collision, overturn, and physical damage.',
-  },
-  {
-    icon: <Wrench className="w-6 h-6" />,
-    title: 'Hand Tools & Small Equipment',
-    description:
-      'Transfer pumps, spray guns, heated hose accessories, and portable equipment under a blanket tools policy.',
-  },
-  {
-    icon: <Package className="w-6 h-6" />,
-    title: 'Rented & Leased Equipment',
-    description:
-      'Extend your inland marine coverage to protect rented equipment under your policy.',
+    title: 'Commercial auto',
+    body: 'Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage.',
+    href: '/services/commercial-auto',
   },
 ];
 
-const rcvItems = [
-  'No depreciation deducted',
-  'Buy new equipment after a loss',
-  'Best for rigs under 5 years old',
-  'Higher annual premium — worth it',
-];
-
-const acvItems = [
-  'Market value at time of loss',
-  'May leave a gap for older equipment',
-  'Lower annual premium',
-  'Better for fully depreciated rigs',
-];
-
-const steps = [
+const documentationItems = [
   {
-    num: '1',
-    title: 'Inventory Your Equipment',
-    body: 'List every piece with make, model, serial number, and current value.',
+    title: 'Asset Valuation:',
+    body: 'Detailed documentation provides an accurate account of the value of your equipment. This is particularly crucial when it comes to replacement or repair coverage. With precise records, you can ensure that your assets are adequately insured, down to the last proportioner and spray gun.',
   },
   {
-    num: '2',
-    title: 'Choose Coverage Amounts',
-    body: 'We recommend insuring at full replacement cost to avoid out-of-pocket gaps after a loss.',
+    title: 'Urgency in Case of Loss:',
+    body: "In the unfortunate event of theft or damage, every moment counts. Detailed documentation allows for a swift and informed response. You'll know exactly what's missing or damaged and can act urgently to minimize further losses.",
   },
   {
-    num: '3',
-    title: 'Select Your Deductible',
-    body: 'Higher deductibles lower your premium. $1,000–$2,500 is common for spray foam contractors.',
+    title: 'Chemical and Environmental Considerations:',
+    body: 'The nature of spray foam work means that you may carry hazardous chemicals and materials. Accurate documentation is essential to ensure the safe and effective containment, cleanup, and disposal of these materials in case of an accident or spill.',
   },
   {
-    num: '4',
-    title: 'Bundle with Your Other Policies',
-    body: "Inland marine pairs well with GL, workers’ comp, and commercial auto for a complete protection package.",
+    title: 'Equipment Expertise:',
+    body: 'In the event of a loss, having a comprehensive inventory not only speeds up the claims process but also ensures that the insurance adjuster understands the unique nature of your equipment. This avoids situations where valuable components go unrecognized or underappreciated.',
   },
 ];
 
+const investmentItems = [
+  {
+    label: 'Accurate Valuation:',
+    body: 'With detailed records, you can be confident that your equipment is insured for its true value.',
+  },
+  {
+    label: 'Rapid Response:',
+    body: 'In case of loss or damage, you can respond swiftly and effectively, minimizing downtime and further losses.',
+  },
+  {
+    label: 'Environmental Safety:',
+    body: 'Precise documentation ensures that any environmental concerns are promptly addressed, reducing potential harm and liability.',
+  },
+  {
+    label: 'Full Equipment Recognition:',
+    body: 'Your unique equipment is fully recognized and appreciated during the claims process, ensuring that you receive the compensation you deserve.',
+  },
+];
 
 export default function InlandMarinePage() {
   return (
     <>
       <PageHero
-        title="Inland Marine Insurance"
-        subtitle="Comprehensive coverage for your spray foam equipment wherever the job takes you — proportioners, hoses, generators, and trailers."
-        badge="EQUIPMENT COVERAGE"
+        title="Inland Marine"
+        subtitle="For Spray Foam Contractors"
         ctaText="Get a Quote"
         ctaHref="/quote"
       />
 
-      <StatBar
-        stats={[
-          { label: 'Average Rig Value', value: '$85K+' },
-          { label: 'Claims Paid', value: '99%' },
-          { label: 'Coverage Types', value: '6+' },
-          { label: 'Coverage Starts', value: 'Day 1' },
-        ]}
-      />
-
-      {/* What Inland Marine Covers */}
+      {/* Related Coverage Cards */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-headline font-bold text-text mb-2">
-          What Inland Marine Covers
-        </h2>
-        <p className="text-muted mb-10 max-w-2xl">
-          Inland marine insurance travels with your equipment — on the road, at the job site, and
-          in storage. Here&apos;s what&apos;s protected.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {coverageItems.map((item) => (
-            <GlassCard key={item.title} className="p-6">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
-                {item.icon}
-              </div>
-              <h3 className="font-headline font-bold text-text mb-2">{item.title}</h3>
-              <p className="text-muted text-sm">{item.description}</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {relatedServices.map((item) => (
+            <GlassCard key={item.title} className="p-6 flex flex-col">
+              <h2 className="font-headline font-bold text-text text-xl mb-3 text-center">
+                {item.title}
+              </h2>
+              <p className="text-muted text-sm mb-6 flex-1">{item.body}</p>
+              <Link
+                href={item.href}
+                className="text-primary text-sm font-semibold hover:text-accent transition-colors text-center"
+              >
+                More Details&gt;
+              </Link>
             </GlassCard>
           ))}
         </div>
       </section>
 
-      {/* Replacement Cost vs. Actual Cash Value */}
-      <section className="max-w-5xl mx-auto px-4 py-8">
-        <h2 className="text-3xl font-headline font-bold text-text mb-2">
-          Replacement Cost vs. Actual Cash Value
+      {/* Why Documented Coverage Matters */}
+      <section className="max-w-5xl mx-auto px-4 py-8 text-center">
+        <h2 className="text-3xl font-headline font-bold text-text mb-6">
+          Why Spray Foam Contractors Need Properly Documented Inland Marine Coverage
         </h2>
-        <p className="text-muted mb-8 max-w-2xl">
-          The valuation method you choose has a major impact on your payout after a loss.
+        <p className="text-muted max-w-3xl mx-auto">
+          In the world of spray foam contracting, precision and attention to detail are not only
+          integral to your craft but also extend to how you safeguard your valuable equipment.
+          Inland Marine Insurance plays a vital role in this process, ensuring that your assets
+          are protected with the same meticulous care that you apply to your work.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <GlassCard className="border border-accent/30">
-            <p className="label-text text-accent text-xs mb-2">RECOMMENDED</p>
-            <h3 className="font-headline font-bold text-text text-xl mb-3">
-              Replacement Cost (Recommended)
-            </h3>
-            <ul className="space-y-2">
-              {rcvItems.map((item) => (
-                <li key={item} className="flex items-center gap-2">
-                  <CheckCircle className="text-accent w-4 h-4 shrink-0" />
-                  <span className="text-muted text-sm">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </GlassCard>
+      </section>
 
-          <GlassCard>
-            <h3 className="font-headline font-bold text-text text-xl mb-3">
-              Actual Cash Value
-            </h3>
-            <ul className="space-y-2">
-              {acvItems.map((item) => (
-                <li key={item} className="flex items-center gap-2">
-                  <CheckCircle className="text-muted w-4 h-4 shrink-0" />
-                  <span className="text-muted text-sm">{item}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-muted text-xs mt-4 italic">
-              We typically recommend Replacement Cost coverage for spray foam rigs due to the high
-              cost of proportioners and heated hose systems.
-            </p>
-          </GlassCard>
+      {/* Documentation as a Pillar of Protection */}
+      <section className="max-w-5xl mx-auto px-4 py-8">
+        <GlassCard className="p-8">
+          <h3 className="font-headline font-bold text-text text-xl mb-3">
+            Documentation as a Pillar of Protection
+          </h3>
+          <p className="text-muted text-sm">
+            Spray foam contractors are intimately familiar with the specialized equipment, tools,
+            and materials required to deliver exceptional results. These assets are not just
+            tools of the trade; they represent the lifeblood of your business. Precise
+            documentation of these assets is more than just a best practice – it&apos;s an
+            essential component of comprehensive protection for your business.
+          </p>
+        </GlassCard>
+      </section>
+
+      {/* Detailed Equipment Documentation: Why It Matters */}
+      <section className="max-w-5xl mx-auto px-4 py-8">
+        <h2 className="text-3xl font-headline font-bold text-text mb-8 text-center">
+          Detailed Equipment Documentation: Why It Matters
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
+          {documentationItems.map((item) => (
+            <div key={item.title}>
+              <h3 className="font-headline font-bold text-text mb-2">{item.title}</h3>
+              <p className="text-muted text-sm">{item.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* How to Insure Your Rig */}
-      <section className="max-w-4xl mx-auto px-4 py-8">
-        <h2 className="text-3xl font-headline font-bold text-text mb-8">
-          How to Insure Your Rig
-        </h2>
-        {steps.map((step) => (
-          <div key={step.num} className="flex items-start gap-4 mb-6">
-            <span className="w-8 h-8 rounded-full bg-primary/10 border border-primary/30 text-primary text-sm font-bold flex items-center justify-center shrink-0 font-label">
-              {step.num}
-            </span>
-            <div>
-              <h4 className="font-headline font-semibold text-text mb-1">{step.title}</h4>
-              <p className="text-muted text-sm">{step.body}</p>
-            </div>
-          </div>
-        ))}
+      {/* Protecting Your Investment */}
+      <section className="max-w-5xl mx-auto px-4 py-8">
+        <div className="rounded-2xl bg-primary-gradient p-8 text-white">
+          <h2 className="font-headline font-bold text-2xl mb-3">Protecting Your Investment</h2>
+          <p className="text-white/90 text-sm mb-5">
+            Your spray foam equipment represents a significant financial investment, and its
+            proper protection is an investment in your business&apos;s continued success. Inland
+            Marine Insurance, supported by meticulous documentation, offers peace of mind and the
+            following advantages:
+          </p>
+          <ul className="space-y-3">
+            {investmentItems.map((item) => (
+              <li key={item.label} className="flex items-start gap-2">
+                <CheckCircle className="w-4 h-4 shrink-0 mt-0.5" />
+                <span className="text-sm text-white/90">
+                  <span className="font-semibold text-white">{item.label}</span> {item.body}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
-      {/* FAQ */}
-      <section className="max-w-4xl mx-auto px-4 py-8">
-        <h2 className="text-3xl font-headline font-bold text-text mb-8">
-          Frequently Asked Questions
-        </h2>
-        <FAQSection items={inlandMarineFaqs} />
+      {/* Choose Spray Foam Insurance */}
+      <section className="max-w-5xl mx-auto px-4 py-8">
+        <h3 className="font-headline font-bold text-text text-2xl mb-3">
+          Choose Spray Foam Insurance for Comprehensive Inland Marine Coverage
+        </h3>
+        <p className="text-muted text-sm max-w-3xl">
+          Spray Foam Insurance specializes in providing Inland Marine Insurance tailored to the
+          specific needs of spray foam contractors. Our team understands the intricacies of your
+          industry, and we&apos;re dedicated to ensuring that your equipment and assets are
+          adequately protected.
+        </p>
       </section>
 
-      {/* Link to rig detail page */}
-      <div className="max-w-4xl mx-auto px-4 mb-8">
-        <GlassCard className="flex items-center justify-between gap-6">
-          <div>
-            <p className="label-text text-accent text-xs mb-1">SPECIALIZED COVERAGE</p>
-            <h3 className="font-headline font-bold text-text">
-              Spray Foam Rig &amp; Equipment Insurance
-            </h3>
-            <p className="text-muted text-sm">
-              Detailed coverage guide for spray foam rigs and proportioners.
-            </p>
-          </div>
-          <Link
-            href="/inland-marine/spray_foam_rig_insurance"
-            className="primary-btn inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-label font-semibold text-sm shrink-0"
-          >
-            View Details
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </GlassCard>
-      </div>
+      {/* Form CTA */}
+      <section className="max-w-4xl mx-auto px-4 py-12 text-center">
+        <h2 className="text-2xl font-headline font-bold text-text mb-6">
+          Click Below To Fill Our Our Detailed Inland Marine Form For Spray Foam Contractors
+        </h2>
+        <Link
+          href="/inland-marine/spray_foam_rig_insurance"
+          className="primary-btn inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-label font-semibold text-sm"
+        >
+          Fill Our Our Inland Marine Form
+          <ArrowRight className="w-4 h-4" />
+        </Link>
+        <p className="text-muted text-sm max-w-2xl mx-auto mt-6">
+          Ready to discuss your insurance needs or have questions about Inland Marine Insurance?
+          Contact Spray Foam Insurance today. We&apos;re here to help you navigate the world of
+          insurance, so you can focus on what you do best – delivering exceptional spray foam
+          solutions to your clients while safeguarding your valuable assets with precision.
+        </p>
+      </section>
 
       <CTABar />
     </>

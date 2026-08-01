@@ -49,7 +49,7 @@ export default function Page() {
             <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs label-text text-primary">Business</span>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold leading-tight mb-6">
-            <span className="blue-gradient-text">Do I Need Insurance If I Subcontract Work?</span>
+            <span className="blue-gradient-text">Subcontracting &amp; Insurance</span>
           </h1>
           <div className="flex items-center gap-6 text-sm text-muted">
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> September 24, 2023</span>
@@ -64,21 +64,21 @@ export default function Page() {
           <div className="bg-surface/50 rounded-2xl p-8 lg:p-12 border border-primary/10">
             <p className="text-muted leading-relaxed mb-5">Today, we're going to address a common question in the world of contracting: Do I need insurance if I subcontract work? Whether you're a general contractor considering subcontracting some aspects of your project or a subcontractor seeking clarity on your insurance responsibilities, it's crucial to understand the role of insurance in subcontracting relationships. Let's dive in:</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">The Role of Insurance in Subcontracting</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">The Role of Insurance in Subcontracting:</h2>
             <p className="text-muted leading-relaxed mb-5">Subcontracting is a common practice in the construction industry, and it offers several benefits, such as specialization and cost-effectiveness. However, it also introduces certain risks and insurance considerations that all parties involved should be aware of.</p>
             <p className="text-muted leading-relaxed mb-5">General Contractor's Insurance: As a general contractor, when you subcontract work to other contractors or individuals, you remain responsible for the overall project. This means you need to maintain insurance coverage that not only protects your interests but also addresses potential risks associated with subcontracted work.</p>
             <p className="text-muted leading-relaxed mb-5">General Liability Insurance is essential for general contractors. It covers bodily injury, property damage, and personal injury claims that may arise during the project, regardless of whether the claim is related to the work you subcontracted.</p>
             <p className="text-muted leading-relaxed mb-5">Completed Operations Insurance covers claims that may arise after your subcontractors have completed their work. It's crucial because defects or issues with subcontracted work could surface later, and you want to ensure coverage for such situations.</p>
             <p className="text-muted leading-relaxed mb-5">Additional Insured Endorsement: Consider requiring your subcontractors to name you as an additional insured on their liability insurance policies. This provides you with an added layer of protection.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Subcontractor's Insurance</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Subcontractor's Insurance:</h2>
             <p className="text-muted leading-relaxed mb-5">If you're a subcontractor, it's essential to have your insurance in place. This not only protects your interests but also demonstrates professionalism and reliability to the general contractor and clients. Here are some insurance types subcontractors should consider:</p>
             <p className="text-muted leading-relaxed mb-5">General Liability Insurance: Similar to general contractors, subcontractors should carry this coverage to protect against claims related to their work, such as accidents, injuries, or property damage.</p>
             <p className="text-muted leading-relaxed mb-5">Workers' Compensation Insurance: If you have employees, workers' compensation insurance is often mandatory. It covers medical expenses and lost wages for employees injured on the job.</p>
             <p className="text-muted leading-relaxed mb-5">Contractor's Equipment Insurance: If you use specialized equipment or tools in your subcontracted work, this insurance can cover damage or loss of equipment.</p>
             <p className="text-muted leading-relaxed mb-5">Professional Liability Insurance: Subcontractors in specialized fields (e.g., engineers or architects) may need professional liability insurance to cover errors or omissions in their work.</p>
 
-            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Key Considerations</h2>
+            <h2 className="text-2xl font-headline font-bold text-text mt-10 mb-4">Key Considerations:</h2>
             <p className="text-muted leading-relaxed mb-5">Review Contracts Thoroughly: Before entering into any subcontracting agreement, carefully review the contract terms and insurance requirements. Ensure that you understand your insurance obligations and those of the other parties involved.</p>
             <p className="text-muted leading-relaxed mb-5">Consult an Insurance Professional: Insurance requirements can vary widely depending on the project, location, and industry. Consulting with an insurance expert can help you tailor your coverage to your specific needs.</p>
             <p className="text-muted leading-relaxed mb-5">Communication Is Key: Open and transparent communication between general contractors and subcontractors is crucial. Discuss insurance requirements, expectations, and any potential risks upfront to avoid surprises down the road.</p>
