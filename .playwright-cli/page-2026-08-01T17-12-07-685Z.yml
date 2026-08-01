@@ -1,0 +1,216 @@
+- generic [active] [ref=f12e1]:
+  - banner [ref=f12e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f12e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f12e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=f12e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f12e10]
+        - generic [ref=f12e11]:
+          - generic [ref=f12e12]: Spray Foam
+          - generic [ref=f12e13]: Insurance.com
+      - generic [ref=f12e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=f12e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=f12e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=f12e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=f12e24]:
+        - link "Facebook" [ref=f12e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=f12e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=f12e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=f12e37]:
+      - generic [ref=f12e38]:
+        - link "Home" [ref=f12e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=f12e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=f12e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=f12e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=f12e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=f12e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=f12e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=f12e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=f12e53]:
+    - generic [ref=f12e55]:
+      - generic [ref=f12e56]: Commercial Auto
+      - heading "Commercial Auto for Spray Foam Contractors" [level=1] [ref=f12e57]
+      - paragraph [ref=f12e58]: Commercial Auto Insurance is more than just a requirement; it's a smart investment for any business that relies on vehicles for its daily operations.
+      - link "Get a Quote" [ref=f12e59] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=f12e64]:
+      - link [ref=f12e65] [cursor=pointer]:
+        - /url: /services/general-liability-insurance/
+        - generic [ref=f12e66]:
+          - heading "General liability" [level=3] [ref=f12e70]
+          - paragraph [ref=f12e71]: Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future.
+          - generic [ref=f12e72]: Learn More
+      - link [ref=f12e75] [cursor=pointer]:
+        - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+        - generic [ref=f12e76]:
+          - heading "Workers compensation" [level=3] [ref=f12e83]
+          - paragraph [ref=f12e84]: Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment.
+          - generic [ref=f12e85]: Learn More
+      - link [ref=f12e88] [cursor=pointer]:
+        - /url: /services/commercial-auto/
+        - generic [ref=f12e89]:
+          - heading "Commercial auto" [level=3] [ref=f12e96]
+          - paragraph [ref=f12e97]: Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage.
+          - generic [ref=f12e98]: Learn More
+    - generic [ref=f12e102]:
+      - heading "Protecting Your Business on the Move" [level=2] [ref=f12e103]
+      - paragraph [ref=f12e104]: Spray foam contractors are known for their versatility and mobility, ensuring that their insulation expertise reaches clients far and wide. Whether it's transporting equipment to a job site or delivering finished projects, the road plays a vital role in your business operations. However, this mobility comes with its own set of risks and challenges, not only for your business but also for the environment. That's where Commercial Auto Insurance from Spray Foam Insurance becomes essential – it provides a protective shield for your business and ensures you can keep moving forward while safeguarding the environment.
+      - generic [ref=f12e105]:
+        - heading "Understanding the Essentials" [level=3] [ref=f12e106]
+        - paragraph [ref=f12e107]: Commercial Auto Insurance is more than just a requirement; it's a smart investment for any business that relies on vehicles for its daily operations. This coverage is designed to protect your business in situations where your vehicles or employees are involved in accidents while on the job. It goes beyond protecting your assets; it's about protecting your reputation as a responsible and environmentally conscious contractor.
+    - generic [ref=f12e109]:
+      - heading "Why Is It Essential for Spray Foam Contractors?" [level=2] [ref=f12e111]
+      - generic [ref=f12e112]:
+        - generic [ref=f12e113]:
+          - heading "Protecting Your Fleet" [level=3] [ref=f12e117]
+          - paragraph [ref=f12e118]: Whether you have a single spray foam rig or a fleet of vehicles, they are vital assets to your business. Commercial Auto Insurance safeguards your investment by covering repairs or replacements in case of accidents, theft, or damage. This not only ensures business continuity but also minimizes the risk of environmental damage from spills during transportation.
+        - generic [ref=f12e119]:
+          - heading "Environmental Responsibility" [level=3] [ref=f12e123]
+          - paragraph [ref=f12e124]: Spray foam contractors understand the environmental risks associated with their work. Transporting hazardous chemicals to job sites requires careful handling. In the unfortunate event of a spill, Commercial Auto Insurance can cover the costs of environmental cleanup, ensuring that the impact on the environment is minimized.
+    - generic [ref=f12e127]:
+      - heading "Key Components of Coverage" [level=2] [ref=f12e128]
+      - paragraph [ref=f12e129]: "Commercial Auto Insurance from Spray Foam Insurance can be customized to meet your specific needs. Here are some key components of coverage:"
+      - list [ref=f12e130]:
+        - listitem [ref=f12e131]: "Collision Coverage: This covers the costs of repairing or replacing your vehicles if they are damaged in an accident."
+        - listitem [ref=f12e132]: "Liability Coverage: Protection against claims of bodily injury or property damage that may result from an accident involving your vehicles."
+        - listitem [ref=f12e133]: "Environmental Cleanup: Coverage for costs associated with environmental cleanup in the event of chemical spills."
+    - generic [ref=f12e135]:
+      - generic [ref=f12e136]:
+        - heading "Ensuring Your Business Keeps Moving" [level=2] [ref=f12e137]
+        - paragraph [ref=f12e138]: In the dynamic world of spray foam contracting, your mobility is a competitive advantage. Commercial Auto Insurance from Spray Foam Insurance ensures that you can keep your business on the move while fulfilling your responsibility to safeguard the environment. It's the safety net that provides peace of mind on the road and at the job site.
+      - generic [ref=f12e139]:
+        - heading "Choose Spray Foam Insurance For Your Commercial Auto Needs" [level=2] [ref=f12e140]
+        - paragraph [ref=f12e141]: At Spray Foam Insurance, we specialize in providing Commercial Auto Insurance tailored to the unique requirements of spray foam contractors. Our experienced team understands the intricacies of your industry, and we're committed to ensuring your vehicles have the coverage they need to keep your business moving forward while preserving the environment.
+        - paragraph [ref=f12e142]: Ready to discuss your insurance needs or have questions about Commercial Auto Insurance? Contact Spray Foam Insurance today. We're here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while upholding your environmental responsibilities.
+    - generic [ref=f12e144]:
+      - heading "Frequently Asked Questions" [level=2] [ref=f12e145]
+      - generic [ref=f12e146]:
+        - generic [ref=f12e147]:
+          - button "Do I need commercial auto if I only use my personal truck?" [ref=f12e148] [cursor=pointer]
+          - paragraph [ref=f12e151]: Yes, if you use your personal vehicle for business purposes — like hauling equipment or driving between job sites — you need commercial auto coverage. Personal auto policies typically exclude business use, meaning a claim could be denied if you're driving for work.
+        - generic [ref=f12e152]:
+          - button "What is hired and non-owned auto coverage?" [ref=f12e153] [cursor=pointer]
+          - paragraph [ref=f12e156]: Hired auto covers vehicles your business rents or leases. Non-owned auto covers vehicles owned personally by your employees when used for business purposes. Both are important for spray foam contractors who may use rental trucks or have employees running business errands in their personal vehicles.
+        - generic [ref=f12e157]:
+          - button "Does commercial auto cover my spray foam equipment inside the rig?" [ref=f12e158] [cursor=pointer]
+          - paragraph [ref=f12e161]: The vehicle itself is covered, but the spray equipment inside it — proportioners, generators, hoses — is typically covered under a separate Inland Marine / Rig Insurance policy. We can bundle both coverages together for comprehensive protection.
+        - generic [ref=f12e162]:
+          - button "How are commercial auto rates calculated?" [ref=f12e163] [cursor=pointer]
+          - paragraph [ref=f12e166]: Rates depend on the number and type of vehicles, drivers' MVR records, annual mileage, radius of operations, and your claims history. Spray foam rigs are rated differently than regular commercial trucks due to the hazardous materials they carry.
+        - generic [ref=f12e167]:
+          - button "Can I add drivers mid-policy?" [ref=f12e168] [cursor=pointer]
+          - paragraph [ref=f12e171]: Yes. We can add or remove drivers from your policy as your team changes. New drivers are typically subject to an MVR check. It's important to list all regular drivers on the policy — unlisted drivers may not be covered in an accident.
+    - generic [ref=f12e175]:
+      - generic [ref=f12e176]:
+        - heading "Ready to protect your business?" [level=2] [ref=f12e177]
+        - paragraph [ref=f12e178]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f12e179]:
+        - link "Get a Quote" [ref=f12e180] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f12e183] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f12e186]:
+    - generic [ref=f12e187]:
+      - generic [ref=f12e188]:
+        - generic [ref=f12e189]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f12e190]
+          - paragraph [ref=f12e191]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f12e192] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f12e193] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f12e194]:
+          - heading "Navigate" [level=4] [ref=f12e195]
+          - list [ref=f12e196]:
+            - listitem [ref=f12e197]:
+              - link "Home" [ref=f12e198] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f12e199]:
+              - link "Services" [ref=f12e200] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f12e201]:
+              - link "General Liability Insurance" [ref=f12e202] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f12e203]:
+              - link "Inland Marine" [ref=f12e204] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f12e205]:
+              - link "Commercial Auto" [ref=f12e206] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f12e207]:
+              - link "Surety Bonds" [ref=f12e208] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f12e209]:
+              - link "Environmental Liability" [ref=f12e210] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f12e211]:
+              - link "Safety and Compliance" [ref=f12e212] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f12e213]:
+              - link "Workers' Compensation" [ref=f12e214] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f12e215]:
+              - link "Resources" [ref=f12e216] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f12e217]:
+              - link "Attic Insulation Certificate" [ref=f12e218] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f12e219]:
+              - link "Work Record Form" [ref=f12e220] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f12e221]:
+              - link "Blog" [ref=f12e222] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f12e223]:
+              - link "About Us" [ref=f12e224] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f12e225]:
+              - link "Contact Us" [ref=f12e226] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f12e227]:
+              - link "Quote" [ref=f12e228] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f12e229]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f12e230]
+          - list [ref=f12e231]:
+            - listitem [ref=f12e232]:
+              - link "– General Liability Insurance" [ref=f12e233] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f12e234]:
+              - link "– Commercial Auto Insurance" [ref=f12e235] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f12e236]:
+              - link "– Surety Bonds" [ref=f12e237] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f12e238]:
+              - link "– Environmental Liability Insurance" [ref=f12e239] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f12e240]:
+              - link "– Safety and Compliance Support" [ref=f12e241] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f12e242]:
+              - link "– Workers' Compensation Insurance" [ref=f12e243] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f12e244]:
+        - paragraph [ref=f12e245]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f12e246]:
+          - link "Privacy Policy" [ref=f12e247] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f12e248] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f12e249]
