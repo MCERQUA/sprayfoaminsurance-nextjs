@@ -1,0 +1,180 @@
+- generic [active] [ref=f43e1]:
+  - banner [ref=f43e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f43e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f43e8]:
+      - link [ref=f43e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f43e10]
+      - button "Toggle menu" [ref=f43e11] [cursor=pointer]
+  - main [ref=f43e13]:
+    - heading "About Us" [level=1] [ref=f43e16]
+    - navigation "Breadcrumb" [ref=f43e18]:
+      - link "Home" [ref=f43e20] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f43e21]: About US
+    - generic [ref=f43e26]:
+      - text: ABOUT US
+      - heading "We Listen And Work Together To Provide You The Best Coverage." [level=2] [ref=f43e27]
+      - paragraph [ref=f43e28]: We like to listen to our customers because they know their business very well. Most of our clients have a lifetime of construction experience and they have tons of safety knowledge like work site safety training and applicator training. As much as you know about spray foam we know about spray foam contractors insurance. We try to ask only the questions we need in order to keep our time short on the phone. Once we have gathered your information we shop around for you. Our proprietary quote engine allows us to gather your information once and then shop your company with multiple carriers. We write thousands of contractors coast to coast every year.
+    - generic [ref=f43e31]:
+      - img "Josh Cotner - Spray Foam Insurance Specialist" [ref=f43e32]
+      - generic [ref=f43e33]:
+        - text: ABOUT US
+        - heading "MY STORY" [level=3] [ref=f43e34]
+        - generic [ref=f43e35]:
+          - paragraph [ref=f43e36]: My name is Josh Cotner and I used to work in construction. I fell through a roof in 2005 and had a nightmare workers compensation claim. I needed to support my family and I learned a lot about liability and insurance during my recovery time. I had to fight the workers compensation company to get the results I was entitled to.
+          - paragraph [ref=f43e37]: After my injury I learned a lot about insurance and the law and I started selling insurance with a National Contractors Insurance Company, RRG which was started by ABC Supply.
+          - paragraph [ref=f43e38]: I worked with them for several years until the depression took its toll on the insurance carriers reserves. NCIC was shut down but all my roofers still needed coverage, so I worked and found other insurance companies to work with that liked writing roofing insurance.
+          - paragraph [ref=f43e39]: I have sold a lot of insurance to contractors over the years and I have seen it all. I have helped thousands of spray foam contractors find affordable insurance, cover the construction risks, keep money in their pockets, and fight for coverage to pay claims for my clients.
+        - generic [ref=f43e40]:
+          - img "Josh Cotner" [ref=f43e41]
+          - generic [ref=f43e42]:
+            - paragraph [ref=f43e43]: Josh Cotner
+            - paragraph [ref=f43e44]: (CEO / Founder)
+    - generic [ref=f43e47]:
+      - generic [ref=f43e48]:
+        - generic [ref=f43e49]: 2,500+
+        - generic [ref=f43e50]: Happy Customer
+      - generic [ref=f43e51]:
+        - generic [ref=f43e52]: "12"
+        - generic [ref=f43e53]: Staff Members
+      - generic [ref=f43e54]:
+        - generic [ref=f43e55]: 20,000+
+        - generic [ref=f43e56]: Work Hours
+      - generic [ref=f43e57]:
+        - generic [ref=f43e58]: "5"
+        - generic [ref=f43e59]: Win Awarded
+    - generic [ref=f43e62]:
+      - generic [ref=f43e63]:
+        - img "Jessica Rabbit" [ref=f43e65]
+        - generic [ref=f43e66]:
+          - heading "Jessica Rabbit" [level=3] [ref=f43e67]
+          - paragraph [ref=f43e68]: Consultant Officer
+      - generic [ref=f43e69]:
+        - img "Robert Brown" [ref=f43e71]
+        - generic [ref=f43e72]:
+          - heading "Robert Brown" [level=3] [ref=f43e73]
+          - paragraph [ref=f43e74]: Product Analyst
+      - generic [ref=f43e75]:
+        - img "Elaine Chao" [ref=f43e77]
+        - generic [ref=f43e78]:
+          - heading "Elaine Chao" [level=3] [ref=f43e79]
+          - paragraph [ref=f43e80]: Service Officer
+    - generic [ref=f43e82]:
+      - heading "Frequently Asked Questions" [level=2] [ref=f43e83]
+      - generic [ref=f43e84]:
+        - generic [ref=f43e85]:
+          - button "What makes Spray Foam Insurance different from a general agent?" [ref=f43e86] [cursor=pointer]
+          - paragraph [ref=f43e89]: We focus exclusively on spray polyurethane foam contractors. That means we know the specific exclusions that trip up SPF contractors in standard policies, the carriers that price this risk fairly, and the coverage structures that actually protect you — not just check a box.
+        - generic [ref=f43e90]:
+          - button "Are you licensed to write coverage in my state?" [ref=f43e91] [cursor=pointer]
+          - paragraph [ref=f43e94]: Yes. We place coverage for spray foam contractors in all 50 states. State licensing requirements, workers' comp rules, and bond requirements vary — we handle that complexity so you don't have to.
+        - generic [ref=f43e95]:
+          - button "How quickly can I get a quote?" [ref=f43e96] [cursor=pointer]
+          - paragraph [ref=f43e99]: Most contractors receive quote options within 24 hours of submitting their application. For straightforward GL or auto policies, same-day quotes are often possible. Complex bundled programs may take an extra day for underwriting.
+        - generic [ref=f43e100]:
+          - button "What carriers do you work with?" [ref=f43e101] [cursor=pointer]
+          - paragraph [ref=f43e104]: We work with multiple A-rated carriers who specialize in contractor and specialty trade insurance. We shop your risk across several markets to find you the best combination of coverage and price — and we're not captive to any single carrier.
+        - generic [ref=f43e105]:
+          - button "What if I already have insurance — can you review my existing coverage?" [ref=f43e106] [cursor=pointer]
+          - paragraph [ref=f43e109]: Absolutely. We offer free policy reviews for spray foam contractors who want a second opinion. We'll identify any coverage gaps, exclusions, or misclassifications in your current program and let you know if we can do better.
+    - generic [ref=f43e113]:
+      - generic [ref=f43e114]:
+        - heading "Ready to protect your business?" [level=2] [ref=f43e115]
+        - paragraph [ref=f43e116]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f43e117]:
+        - link "Get a Quote" [ref=f43e118] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f43e121] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f43e124]:
+    - generic [ref=f43e125]:
+      - generic [ref=f43e126]:
+        - generic [ref=f43e127]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f43e128]
+          - paragraph [ref=f43e129]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f43e130] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f43e131] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f43e132]:
+          - heading "Navigate" [level=4] [ref=f43e133]
+          - list [ref=f43e134]:
+            - listitem [ref=f43e135]:
+              - link "Home" [ref=f43e136] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f43e137]:
+              - link "Services" [ref=f43e138] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f43e139]:
+              - link "General Liability Insurance" [ref=f43e140] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f43e141]:
+              - link "Inland Marine" [ref=f43e142] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f43e143]:
+              - link "Commercial Auto" [ref=f43e144] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f43e145]:
+              - link "Surety Bonds" [ref=f43e146] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f43e147]:
+              - link "Environmental Liability" [ref=f43e148] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f43e149]:
+              - link "Safety and Compliance" [ref=f43e150] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f43e151]:
+              - link "Workers' Compensation" [ref=f43e152] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f43e153]:
+              - link "Resources" [ref=f43e154] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f43e155]:
+              - link "Attic Insulation Certificate" [ref=f43e156] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f43e157]:
+              - link "Work Record Form" [ref=f43e158] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f43e159]:
+              - link "Blog" [ref=f43e160] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f43e161]:
+              - link "About Us" [ref=f43e162] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f43e163]:
+              - link "Contact Us" [ref=f43e164] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f43e165]:
+              - link "Quote" [ref=f43e166] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f43e167]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f43e168]
+          - list [ref=f43e169]:
+            - listitem [ref=f43e170]:
+              - link "– General Liability Insurance" [ref=f43e171] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f43e172]:
+              - link "– Commercial Auto Insurance" [ref=f43e173] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f43e174]:
+              - link "– Surety Bonds" [ref=f43e175] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f43e176]:
+              - link "– Environmental Liability Insurance" [ref=f43e177] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f43e178]:
+              - link "– Safety and Compliance Support" [ref=f43e179] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f43e180]:
+              - link "– Workers' Compensation Insurance" [ref=f43e181] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f43e182]:
+        - paragraph [ref=f43e183]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f43e184]:
+          - link "Privacy Policy" [ref=f43e185] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f43e186] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f43e187]

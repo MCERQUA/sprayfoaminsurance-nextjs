@@ -1,0 +1,170 @@
+- generic [active] [ref=f46e1]:
+  - banner [ref=f46e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f46e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f46e8]:
+      - link [ref=f46e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f46e10]
+      - button "Toggle menu" [ref=f46e11] [cursor=pointer]
+  - main [ref=f46e13]:
+    - navigation "Breadcrumb" [ref=f46e15]:
+      - link "Home" [ref=f46e17] [cursor=pointer]:
+        - /url: /
+      - link "Inland Marine" [ref=f46e21] [cursor=pointer]:
+        - /url: /inland-marine/
+      - generic [ref=f46e22]: Spray Foam Rig Insurance
+    - heading "Inland Marine For Spray Foam Contractors" [level=1] [ref=f46e28]
+    - generic [ref=f46e30]:
+      - heading "Spray Foam Contractors Inland Marine Form" [level=2] [ref=f46e32]
+      - generic [ref=f46e33]:
+        - generic [ref=f46e34]: Page 1
+        - generic [ref=f46e39]: Page 2
+        - generic [ref=f46e44]: Page 3
+        - generic [ref=f46e49]: Page 4
+        - generic [ref=f46e54]: Page 5
+        - generic [ref=f46e59]: Page 6
+        - generic [ref=f46e64]: Finish
+      - generic [ref=f46e68]:
+        - generic [ref=f46e69]:
+          - generic [ref=f46e70]:
+            - generic [ref=f46e71]: Company/Account Name
+            - textbox "Insurance account name" [ref=f46e72]
+          - generic [ref=f46e73]:
+            - generic [ref=f46e74]: Phone
+            - textbox "E.g. +1 300 400 5000" [ref=f46e75]
+        - generic [ref=f46e76]:
+          - generic [ref=f46e77]: Email Address
+          - textbox "E.g. john@doe.com" [ref=f46e78]
+        - generic [ref=f46e79]:
+          - generic [ref=f46e80]: Click to Save Your Progress and Email Yourself the Link
+          - button "Next" [ref=f46e81] [cursor=pointer]
+    - generic [ref=f46e83]:
+      - heading "Inland Marine Insurance" [level=2] [ref=f46e84]
+      - heading "Protect Your Property on the Move" [level=4] [ref=f46e85]
+      - paragraph [ref=f46e86]: Inland marine insurance provides coverage for your property that is in transit, movable, or used for specialized purposes. Whether you're transporting goods, equipment, or valuable materials, inland marine insurance ensures you're protected against loss or damage while on the go.
+      - paragraph [ref=f46e87]: At Spray Foam Insurance, we understand that certain items don't stay in one place and need coverage that travels with them. Our inland marine policies are designed to safeguard your high-value assets, ensuring peace of mind wherever your business takes you.
+      - heading "What Does Inland Marine Insurance Cover?" [level=3] [ref=f46e88]
+      - paragraph [ref=f46e89]: "Inland marine insurance covers a broad range of movable property, including:"
+      - list [ref=f46e90]:
+        - listitem [ref=f46e91]: "Tools & Equipment: Essential for contractors and business that frequently move equipment between job sites."
+        - listitem [ref=f46e92]: "Goods in Transit: For businesses that ship products domestically, covering the transportation of goods via trucks, trains, or other land-based methods."
+        - listitem [ref=f46e93]: "Fine Arts & Antiques: For collectors and businesses that transport valuable artwork or antiques."
+        - listitem [ref=f46e94]: "Electronics: Ideal for technology companies or individuals who transport high-value electronics such as laptops, cameras, or servers."
+        - listitem [ref=f46e95]: "Construction Materials: Covers the raw materials and supplies used for building or infrastructure projects while they are being transported or stored temporarily off-site."
+      - heading "Why Inland Marine Insurance?" [level=3] [ref=f46e96]
+      - paragraph [ref=f46e97]: "Many assume that standard property insurance will cover these items, but property insurance generally protects stationary property. Inland marine insurance provides the extra layer of protection for:"
+      - list [ref=f46e98]:
+        - listitem [ref=f46e99]: Mobile or Movable Property
+        - listitem [ref=f46e100]: Property in Transit
+        - listitem [ref=f46e101]: Property Temporarily Stores Off-Site
+      - paragraph [ref=f46e102]: If you regularly transport goods or equipment, rely on technology in different locations, or have other valuable assets on the move, inland marine insurance is an essential addition to your coverage plan.
+      - heading "Who Needs Inland Insurance?" [level=3] [ref=f46e103]
+      - list [ref=f46e104]:
+        - listitem [ref=f46e105]: "Contractors: Protect valuable equipment as you move from one job site to another."
+        - listitem [ref=f46e106]: "Retailers & Wholesalers: Ensure goods are covered while being transported to customers or between business locations."
+        - listitem [ref=f46e107]: "Art Collectors & Dealers: Secure coverages for high-value pieces while in transit or stored temporarily off-site."
+        - listitem [ref=f46e108]: "IT Professionals: Safeguard servers, computers, and other technology equipment during transport or setup at client locations."
+      - heading "Tailored Solutions For Your Business" [level=3] [ref=f46e109]
+      - paragraph [ref=f46e110]: At Spray Foam Insurance, we provide customized inland marine insurance policies based on your unique needs. Our expert team will work with you to assess your risks and design a policy that covers your property while in motion or storage.
+      - heading "Get a Quote Today!" [level=3] [ref=f46e111]
+      - paragraph [ref=f46e112]: Don't leave your property unprotected while it's on the move. Contact Spray Foam Insurance today to learn more about inland marine insurance and get a personalized quote. Let us help you secure your assets, no matter where your business takes you.
+    - generic [ref=f46e116]:
+      - generic [ref=f46e117]:
+        - heading "Ready to protect your business?" [level=2] [ref=f46e118]
+        - paragraph [ref=f46e119]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f46e120]:
+        - link "Get a Quote" [ref=f46e121] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f46e124] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f46e127]:
+    - generic [ref=f46e128]:
+      - generic [ref=f46e129]:
+        - generic [ref=f46e130]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f46e131]
+          - paragraph [ref=f46e132]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f46e133] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f46e134] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f46e135]:
+          - heading "Navigate" [level=4] [ref=f46e136]
+          - list [ref=f46e137]:
+            - listitem [ref=f46e138]:
+              - link "Home" [ref=f46e139] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f46e140]:
+              - link "Services" [ref=f46e141] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f46e142]:
+              - link "General Liability Insurance" [ref=f46e143] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f46e144]:
+              - link "Inland Marine" [ref=f46e145] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f46e146]:
+              - link "Commercial Auto" [ref=f46e147] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f46e148]:
+              - link "Surety Bonds" [ref=f46e149] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f46e150]:
+              - link "Environmental Liability" [ref=f46e151] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f46e152]:
+              - link "Safety and Compliance" [ref=f46e153] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f46e154]:
+              - link "Workers' Compensation" [ref=f46e155] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f46e156]:
+              - link "Resources" [ref=f46e157] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f46e158]:
+              - link "Attic Insulation Certificate" [ref=f46e159] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f46e160]:
+              - link "Work Record Form" [ref=f46e161] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f46e162]:
+              - link "Blog" [ref=f46e163] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f46e164]:
+              - link "About Us" [ref=f46e165] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f46e166]:
+              - link "Contact Us" [ref=f46e167] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f46e168]:
+              - link "Quote" [ref=f46e169] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f46e170]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f46e171]
+          - list [ref=f46e172]:
+            - listitem [ref=f46e173]:
+              - link "– General Liability Insurance" [ref=f46e174] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f46e175]:
+              - link "– Commercial Auto Insurance" [ref=f46e176] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f46e177]:
+              - link "– Surety Bonds" [ref=f46e178] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f46e179]:
+              - link "– Environmental Liability Insurance" [ref=f46e180] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f46e181]:
+              - link "– Safety and Compliance Support" [ref=f46e182] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f46e183]:
+              - link "– Workers' Compensation Insurance" [ref=f46e184] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f46e185]:
+        - paragraph [ref=f46e186]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f46e187]:
+          - link "Privacy Policy" [ref=f46e188] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f46e189] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f46e190]
