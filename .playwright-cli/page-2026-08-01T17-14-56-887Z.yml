@@ -1,0 +1,189 @@
+- generic [active] [ref=f31e1]:
+  - banner [ref=f31e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f31e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f31e8]:
+      - link [ref=f31e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f31e10]
+      - button "Toggle menu" [ref=f31e11] [cursor=pointer]
+  - main [ref=f31e13]:
+    - generic [ref=f31e15]:
+      - generic [ref=f31e16]: Surety Bonds
+      - heading "Surety Bonds for Spray Foam Contractors" [level=1] [ref=f31e17]
+      - paragraph [ref=f31e18]: Surety bonds are a form of risk management that goes beyond standard insurance coverage. They serve as guarantees that you, as a spray foam contractor, will fulfill your obligations.
+      - link "Get a Quote" [ref=f31e19] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=f31e24]:
+      - link [ref=f31e25] [cursor=pointer]:
+        - /url: /services/general-liability-insurance/
+        - generic [ref=f31e26]:
+          - heading "General liability" [level=3] [ref=f31e30]
+          - paragraph [ref=f31e31]: Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future.
+          - generic [ref=f31e32]: Learn More
+      - link [ref=f31e35] [cursor=pointer]:
+        - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+        - generic [ref=f31e36]:
+          - heading "Workers compensation" [level=3] [ref=f31e43]
+          - paragraph [ref=f31e44]: Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment.
+          - generic [ref=f31e45]: Learn More
+      - link [ref=f31e48] [cursor=pointer]:
+        - /url: /services/commercial-auto/
+        - generic [ref=f31e49]:
+          - heading "Commercial auto" [level=3] [ref=f31e56]
+          - paragraph [ref=f31e57]: Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage.
+          - generic [ref=f31e58]: Learn More
+    - generic [ref=f31e62]:
+      - heading "Building Trust, Meeting Legal Requirements" [level=2] [ref=f31e63]
+      - paragraph [ref=f31e64]: In the dynamic world of spray foam contracting, trust and professionalism are your currency. Clients rely on your expertise to deliver exceptional insulation solutions. However, the industry's regulatory landscape demands more than just technical prowess—it requires adherence to licenses, permits, and performance standards. That's where Surety Bonds from Spray Foam Insurance come into play. We offer essential surety bonds tailored to your needs, ensuring compliance, instilling confidence in your clients, and paving the way for your business success.
+      - generic [ref=f31e65]:
+        - heading "Understanding the Essentials" [level=3] [ref=f31e66]
+        - paragraph [ref=f31e67]: Surety bonds are a form of risk management that goes beyond standard insurance coverage. They serve as guarantees that you, as a spray foam contractor, will fulfill your obligations, whether it's completing projects, adhering to regulations, or meeting financial commitments. Surety bonds are crucial for maintaining your reputation as a reliable contractor and demonstrating your commitment to ethical and professional practices.
+    - generic [ref=f31e69]:
+      - heading "Why Are Surety Bonds Essential for Spray Foam Contractors?" [level=2] [ref=f31e71]
+      - generic [ref=f31e72]:
+        - generic [ref=f31e73]:
+          - heading "License and Permit Bonds" [level=3] [ref=f31e77]
+          - paragraph [ref=f31e78]: Many jurisdictions require spray foam contractors to obtain license and permit bonds as a prerequisite for operating legally. These bonds ensure that you adhere to local laws and regulations, providing peace of mind to clients and authorities.
+        - generic [ref=f31e79]:
+          - heading "Performance Bonds" [level=3] [ref=f31e83]
+          - paragraph [ref=f31e84]: Performance bonds are a testament to your commitment to delivering on your promises. They reassure clients that you will complete projects as agreed, even in unforeseen circumstances.
+        - generic [ref=f31e85]:
+          - heading "Financial Responsibility" [level=3] [ref=f31e89]
+          - paragraph [ref=f31e90]: Surety bonds also serve as indicators of your financial stability and responsibility. They demonstrate your ability to meet financial obligations, which can be crucial in securing contracts and clients.
+    - generic [ref=f31e92]:
+      - heading "Key Types of Surety Bonds for Spray Foam Contractors" [level=2] [ref=f31e93]
+      - paragraph [ref=f31e94]: In the spray foam contracting industry, maintaining trust and professionalism is paramount. Our Surety Bonds for spray foam contractors offer a comprehensive solution to meet legal requirements, instill confidence in your clients, and safeguard the integrity of your projects. Whether it's adhering to regulations, completing projects on time, ensuring payments to subcontractors and suppliers, or upholding your commitment to contracts, our tailored Surety Bonds cover your diverse needs, ensuring your reputation as a reliable and responsible contractor remains unblemished.
+      - list [ref=f31e96]:
+        - listitem [ref=f31e97]: "License and Permit Bonds: These bonds are typically required by local authorities to ensure that you comply with regulations and standards specific to your industry and location."
+        - listitem [ref=f31e98]: "Performance Bonds: Performance bonds guarantee that you will complete projects according to contract terms, protecting clients from potential losses."
+        - listitem [ref=f31e99]: "Payment Bonds: Payment bonds ensure that you will pay subcontractors, laborers, and suppliers, preventing disputes and project disruptions."
+        - listitem [ref=f31e100]: "Bid Bonds: Bid bonds provide assurance that you will enter into a contract if your bid is accepted, safeguarding the integrity of the bidding process."
+    - generic [ref=f31e102]:
+      - generic [ref=f31e103]:
+        - heading "Building Confidence and Reputation" [level=2] [ref=f31e104]
+        - paragraph [ref=f31e105]: Surety bonds from Spray Foam Insurance are more than legal requirements; they are tools for building trust and enhancing your reputation. Clients appreciate the financial security they provide and the assurance that you will meet your obligations. By obtaining and displaying these bonds, you demonstrate your commitment to professionalism and ethical practices.
+      - generic [ref=f31e106]:
+        - heading "Choose Spray Foam Insurance for Your Surety Bond Needs" [level=2] [ref=f31e107]
+        - paragraph [ref=f31e108]: At Spray Foam Insurance, we specialize in providing Surety Bonds tailored to the unique requirements of spray foam contractors. Our experienced team understands the intricacies of your industry and the specific bond needs you may encounter. We're committed to helping you navigate the world of surety bonds, ensuring you have the coverage necessary to instill confidence in your clients and meet legal requirements.
+        - paragraph [ref=f31e109]: Ready to discuss your insurance and surety bond needs or have questions about Surety Bonds? Contact Spray Foam Insurance today. We're here to help you build trust, meet legal obligations, and succeed in the competitive world of spray foam contracting.
+    - generic [ref=f31e111]:
+      - heading "Surety Bond FAQ" [level=2] [ref=f31e112]
+      - generic [ref=f31e113]:
+        - generic [ref=f31e114]:
+          - button "Is a surety bond the same as insurance?" [ref=f31e115] [cursor=pointer]
+          - paragraph [ref=f31e118]: No. Insurance protects you from losses. A surety bond protects the project owner or the public — and if a claim is paid, the surety has the right to seek reimbursement from you (the principal). Think of a bond as a credit product that guarantees your performance.
+        - generic [ref=f31e119]:
+          - button "How much does a surety bond cost?" [ref=f31e120] [cursor=pointer]
+          - paragraph [ref=f31e123]: Bond premiums are typically 1–5% of the bond amount, depending on your credit score, financial history, and the type of bond. A $10,000 license bond might cost $75–$200/year. Performance bonds on large contracts are priced differently based on project risk.
+        - generic [ref=f31e124]:
+          - button "Do I need good credit to get bonded?" [ref=f31e125] [cursor=pointer]
+          - paragraph [ref=f31e128]: Good credit makes bonding easier and cheaper, but many contractors with less-than-perfect credit can still get bonded through specialty markets. We work with multiple surety companies to find options for all credit profiles.
+        - generic [ref=f31e129]:
+          - button "How long does it take to get a surety bond?" [ref=f31e130] [cursor=pointer]
+          - paragraph [ref=f31e133]: Small license and permit bonds can often be issued same-day or next-day. Larger contract bonds (performance and payment) may take a few days to a week, depending on the underwriting requirements and bond amount.
+        - generic [ref=f31e134]:
+          - button "What happens if a bond claim is filed against me?" [ref=f31e135] [cursor=pointer]
+          - paragraph [ref=f31e138]: The surety will investigate the claim. If valid, the surety may pay the obligee and then seek reimbursement from you. This is why it's critical to fulfill your contractual obligations — bond claims can be very costly and affect your ability to get bonded in the future.
+        - generic [ref=f31e139]:
+          - button "Do I need a surety bond and general liability insurance?" [ref=f31e140] [cursor=pointer]
+          - paragraph [ref=f31e143]: Yes — they serve different purposes. GL insurance protects you from accident claims. A surety bond guarantees your contractual performance. Most contractors need both. We can help you get both in a coordinated package.
+    - generic [ref=f31e147]:
+      - generic [ref=f31e148]:
+        - heading "Ready to protect your business?" [level=2] [ref=f31e149]
+        - paragraph [ref=f31e150]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f31e151]:
+        - link "Get a Quote" [ref=f31e152] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f31e155] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f31e158]:
+    - generic [ref=f31e159]:
+      - generic [ref=f31e160]:
+        - generic [ref=f31e161]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f31e162]
+          - paragraph [ref=f31e163]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f31e164] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f31e165] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f31e166]:
+          - heading "Navigate" [level=4] [ref=f31e167]
+          - list [ref=f31e168]:
+            - listitem [ref=f31e169]:
+              - link "Home" [ref=f31e170] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f31e171]:
+              - link "Services" [ref=f31e172] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f31e173]:
+              - link "General Liability Insurance" [ref=f31e174] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f31e175]:
+              - link "Inland Marine" [ref=f31e176] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f31e177]:
+              - link "Commercial Auto" [ref=f31e178] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f31e179]:
+              - link "Surety Bonds" [ref=f31e180] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f31e181]:
+              - link "Environmental Liability" [ref=f31e182] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f31e183]:
+              - link "Safety and Compliance" [ref=f31e184] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f31e185]:
+              - link "Workers' Compensation" [ref=f31e186] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f31e187]:
+              - link "Resources" [ref=f31e188] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f31e189]:
+              - link "Attic Insulation Certificate" [ref=f31e190] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f31e191]:
+              - link "Work Record Form" [ref=f31e192] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f31e193]:
+              - link "Blog" [ref=f31e194] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f31e195]:
+              - link "About Us" [ref=f31e196] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f31e197]:
+              - link "Contact Us" [ref=f31e198] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f31e199]:
+              - link "Quote" [ref=f31e200] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f31e201]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f31e202]
+          - list [ref=f31e203]:
+            - listitem [ref=f31e204]:
+              - link "– General Liability Insurance" [ref=f31e205] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f31e206]:
+              - link "– Commercial Auto Insurance" [ref=f31e207] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f31e208]:
+              - link "– Surety Bonds" [ref=f31e209] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f31e210]:
+              - link "– Environmental Liability Insurance" [ref=f31e211] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f31e212]:
+              - link "– Safety and Compliance Support" [ref=f31e213] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f31e214]:
+              - link "– Workers' Compensation Insurance" [ref=f31e215] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f31e216]:
+        - paragraph [ref=f31e217]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f31e218]:
+          - link "Privacy Policy" [ref=f31e219] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f31e220] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f31e221]

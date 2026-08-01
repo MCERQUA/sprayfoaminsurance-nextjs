@@ -1,0 +1,154 @@
+- generic [active] [ref=f36e1]:
+  - banner [ref=f36e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f36e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f36e8]:
+      - link [ref=f36e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f36e10]
+      - button "Toggle menu" [ref=f36e11] [cursor=pointer]
+  - main [ref=f36e13]:
+    - generic [ref=f36e15]:
+      - link "Back to Blog" [ref=f36e16] [cursor=pointer]:
+        - /url: /blog/
+      - generic [ref=f36e19]: Claims
+      - heading "Insurance for Overspray" [level=1] [ref=f36e21]
+      - generic [ref=f36e22]:
+        - generic [ref=f36e23]: September 24, 2023
+        - generic [ref=f36e26]: Josh Cotner
+    - generic [ref=f36e31]:
+      - generic [ref=f36e32]:
+        - heading "Protecting Your Business from Unintended Consequences" [level=2] [ref=f36e33]
+        - paragraph [ref=f36e34]: In the dynamic world of spray foam insulation, where precision meets innovation, overspray—unintentional dispersion of foam material—can sometimes become an unintended challenge. Overspray can affect neighboring properties, vehicles, and even architectural features of the project site. It's a concern that spray foam contractors take seriously, and one question frequently asked is whether insurance covers overspray damage.
+        - heading "Understanding Overspray Damage" [level=2] [ref=f36e35]
+        - paragraph [ref=f36e36]: Overspray is an inherent risk in spray foam applications. Despite meticulous planning and skilled execution, unforeseen circumstances can lead to foam material drifting or adhering to unintended surfaces. This can result in paint damage, surface alterations, or even more substantial consequences, such as damage to vehicles or expensive construction materials.
+        - heading "Does Insurance Provide Coverage?" [level=2] [ref=f36e37]
+        - paragraph [ref=f36e38]: "The coverage for overspray damage largely depends on the specific insurance policies you have in place. Here are some key considerations:"
+        - paragraph [ref=f36e39]: "General Liability Insurance: Typically, General Liability Insurance provides coverage for third-party property damage, including overspray damage. If overspray from your project affects a neighbor's property or a nearby vehicle, your General Liability Insurance may help cover the associated costs of repairs or replacement."
+        - paragraph [ref=f36e40]: "Environmental Liability Insurance: In cases where overspray damage could lead to environmental concerns, such as soil or water contamination, Environmental Liability Insurance may come into play. This specialized coverage can help address the environmental impact and cleanup costs."
+        - paragraph [ref=f36e41]: "Policy Terms and Exclusions: It's essential to review your insurance policies carefully, as some may have specific terms and conditions related to overspray damage. Additionally, certain exclusions may apply, so understanding the scope of coverage is crucial."
+        - paragraph [ref=f36e42]: "Contractual Obligations: If you are subcontracting or working as a subcontractor, the terms of your contract may specify insurance requirements and responsibilities for overspray damage. Ensure that your insurance aligns with these contractual obligations."
+        - heading "Preventing Overspray Damage" [level=2] [ref=f36e43]
+        - paragraph [ref=f36e44]: "While insurance can provide a safety net, prevention is always the first line of defense. Here are some proactive measures to minimize overspray:"
+        - paragraph [ref=f36e45]: Invest in proper containment and protective measures during spray foam applications. Conduct regular site inspections to identify potential overspray risks. Provide thorough training to your team members to ensure precise application techniques. Communicate with neighboring property owners or construction site supervisors to mitigate risks and coordinate efforts.
+        - heading "Consult with Your Insurance Provider" [level=2] [ref=f36e46]
+        - paragraph [ref=f36e47]: To fully understand how your insurance coverage addresses overspray damage, it's advisable to consult with your insurance provider or agent. They can provide specific details about your policy, including any endorsements or additional coverage options that may be available.
+        - paragraph [ref=f36e48]: In the complex world of spray foam insulation, overspray challenges are not uncommon. However, with the right insurance coverage and proactive risk management, you can protect your business and reputation while delivering quality spray foam solutions to your clients.
+      - link "Back to Blog" [ref=f36e50] [cursor=pointer]:
+        - /url: /blog/
+    - generic [ref=f36e54]:
+      - heading "Related Articles" [level=2] [ref=f36e55]
+      - generic [ref=f36e56]:
+        - generic [ref=f36e57]:
+          - generic [ref=f36e58]: Coverage
+          - heading "Can I Get Coverage for Mold & Mildew Claims?" [level=3] [ref=f36e59]
+          - link "Read Article" [ref=f36e60] [cursor=pointer]:
+            - /url: /2023/09/24/can-i-get-coverage-for-mold-and-mildew-claims/
+        - generic [ref=f36e63]:
+          - generic [ref=f36e64]: Coverage
+          - heading "Do I Need Special Coverage for Roofing Projects?" [level=3] [ref=f36e65]
+          - link "Read Article" [ref=f36e66] [cursor=pointer]:
+            - /url: /2023/09/24/do-i-need-special-coverage-for-roofing-projects/
+        - generic [ref=f36e69]:
+          - generic [ref=f36e70]: Business
+          - heading "Equipment Financing Guide" [level=3] [ref=f36e71]
+          - link "Read Article" [ref=f36e72] [cursor=pointer]:
+            - /url: /2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/
+    - generic [ref=f36e78]:
+      - generic [ref=f36e79]:
+        - heading "Ready to protect your business?" [level=2] [ref=f36e80]
+        - paragraph [ref=f36e81]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f36e82]:
+        - link "Get a Quote" [ref=f36e83] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f36e86] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f36e89]:
+    - generic [ref=f36e90]:
+      - generic [ref=f36e91]:
+        - generic [ref=f36e92]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f36e93]
+          - paragraph [ref=f36e94]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f36e95] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f36e96] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f36e97]:
+          - heading "Navigate" [level=4] [ref=f36e98]
+          - list [ref=f36e99]:
+            - listitem [ref=f36e100]:
+              - link "Home" [ref=f36e101] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f36e102]:
+              - link "Services" [ref=f36e103] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f36e104]:
+              - link "General Liability Insurance" [ref=f36e105] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f36e106]:
+              - link "Inland Marine" [ref=f36e107] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f36e108]:
+              - link "Commercial Auto" [ref=f36e109] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f36e110]:
+              - link "Surety Bonds" [ref=f36e111] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f36e112]:
+              - link "Environmental Liability" [ref=f36e113] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f36e114]:
+              - link "Safety and Compliance" [ref=f36e115] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f36e116]:
+              - link "Workers' Compensation" [ref=f36e117] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f36e118]:
+              - link "Resources" [ref=f36e119] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f36e120]:
+              - link "Attic Insulation Certificate" [ref=f36e121] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f36e122]:
+              - link "Work Record Form" [ref=f36e123] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f36e124]:
+              - link "Blog" [ref=f36e125] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f36e126]:
+              - link "About Us" [ref=f36e127] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f36e128]:
+              - link "Contact Us" [ref=f36e129] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f36e130]:
+              - link "Quote" [ref=f36e131] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f36e132]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f36e133]
+          - list [ref=f36e134]:
+            - listitem [ref=f36e135]:
+              - link "– General Liability Insurance" [ref=f36e136] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f36e137]:
+              - link "– Commercial Auto Insurance" [ref=f36e138] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f36e139]:
+              - link "– Surety Bonds" [ref=f36e140] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f36e141]:
+              - link "– Environmental Liability Insurance" [ref=f36e142] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f36e143]:
+              - link "– Safety and Compliance Support" [ref=f36e144] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f36e145]:
+              - link "– Workers' Compensation Insurance" [ref=f36e146] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f36e147]:
+        - paragraph [ref=f36e148]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f36e149]:
+          - link "Privacy Policy" [ref=f36e150] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f36e151] [cursor=pointer]:
+            - /url: /terms/

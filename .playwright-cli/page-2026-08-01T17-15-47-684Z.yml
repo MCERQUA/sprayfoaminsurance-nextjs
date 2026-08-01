@@ -1,0 +1,187 @@
+- generic [active] [ref=f35e1]:
+  - banner [ref=f35e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=f35e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=f35e8]:
+      - link [ref=f35e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=f35e10]
+      - button "Toggle menu" [ref=f35e11] [cursor=pointer]
+  - main [ref=f35e13]:
+    - generic [ref=f35e15]:
+      - generic [ref=f35e16]: OSHA Compliant
+      - heading "Safety and Compliance Support for Spray Foam Contractors" [level=1] [ref=f35e17]
+      - paragraph [ref=f35e18]: Safety and Compliance Support is more than just a service; it's a partnership in your journey towards excellence.
+      - link "Get a Quote" [ref=f35e19] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=f35e24]:
+      - link [ref=f35e25] [cursor=pointer]:
+        - /url: /services/general-liability-insurance/
+        - generic [ref=f35e26]:
+          - heading "General liability" [level=3] [ref=f35e30]
+          - paragraph [ref=f35e31]: Discover the comprehensive coverage you need to safeguard your spray foam contracting business. Our General Liability insurance is designed to shield you from unforeseen risks and give you the confidence to build a brighter future.
+          - generic [ref=f35e32]: Learn More
+      - link [ref=f35e35] [cursor=pointer]:
+        - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+        - generic [ref=f35e36]:
+          - heading "Workers compensation" [level=3] [ref=f35e43]
+          - paragraph [ref=f35e44]: Prioritize your team's well-being with our Workers' Compensation coverage. We're here to ensure your employees are protected, and your business remains secure in the face of workplace injuries. Explore how we can help you create a safer work environment.
+          - generic [ref=f35e45]: Learn More
+      - link [ref=f35e48] [cursor=pointer]:
+        - /url: /services/commercial-auto/
+        - generic [ref=f35e49]:
+          - heading "Commercial auto" [level=3] [ref=f35e56]
+          - paragraph [ref=f35e57]: Your business relies on wheels, and so do we. Our Commercial Auto Insurance ensures your vehicles stay on the road, so you can focus on what matters most—serving your clients. Explore how we can drive your success with tailored coverage.
+          - generic [ref=f35e58]: Learn More
+    - generic [ref=f35e62]:
+      - heading "Guiding Your Path to Excellence and Responsibility" [level=2] [ref=f35e63]
+      - paragraph [ref=f35e64]: In the intricate world of spray foam insulation, safety and compliance are not just buzzwords – they are the cornerstones of your success. Spray foam contractors operate in an environment where adherence to safety standards and regulatory compliance is paramount. That's why Spray Foam Insurance offers dedicated Safety and Compliance Support services to guide you on the path to excellence, ensuring your operations are not only efficient but also safe and responsible.
+      - generic [ref=f35e65]:
+        - heading "Understanding the Essentials" [level=3] [ref=f35e66]
+        - paragraph [ref=f35e67]: Safety and Compliance Support is more than just a service; it's a partnership in your journey towards excellence. It's about providing you with the resources, guidance, and expertise you need to navigate the complex landscape of safety protocols and industry regulations.
+    - generic [ref=f35e69]:
+      - heading "Why Is Safety and Compliance Support Essential for Spray Foam Contractors?" [level=2] [ref=f35e71]
+      - generic [ref=f35e72]:
+        - generic [ref=f35e73]:
+          - heading "Safety First" [level=3] [ref=f35e77]
+          - paragraph [ref=f35e78]: Your team's well-being is your top priority. Our support helps you establish robust safety protocols, creating a secure work environment that minimizes accidents and hazards.
+        - generic [ref=f35e79]:
+          - heading "Regulatory Adherence" [level=3] [ref=f35e83]
+          - paragraph [ref=f35e84]: Navigating the myriad of industry regulations, permits, and compliance requirements can be daunting. Our experts are here to simplify the process, ensuring you meet all legal obligations.
+        - generic [ref=f35e85]:
+          - heading "Client Confidence" [level=3] [ref=f35e89]
+          - paragraph [ref=f35e90]: Clients and partners seek professionals who prioritize safety and compliance. By demonstrating your commitment to these principles, you gain the trust of your clients and build a stellar reputation.
+    - generic [ref=f35e93]:
+      - heading "Services We Offer" [level=2] [ref=f35e94]
+      - paragraph [ref=f35e95]: "Workers' Compensation Insurance from Spray Foam Insurance can be customized to meet your specific needs. Here are some key components of coverage:"
+      - list [ref=f35e96]:
+        - listitem [ref=f35e97]: "Medical Expenses: Coverage for necessary medical treatment and rehabilitation services to help injured employees recover."
+        - listitem [ref=f35e98]: "Lost Wages: Replacement of a portion of an employee's lost income due to a work-related injury or illness."
+        - listitem [ref=f35e99]: "Disability Benefits: Compensation for permanent or temporary disability resulting from workplace accidents."
+        - listitem [ref=f35e100]: "Death Benefits: Financial support to the family or dependents of an employee who loses their life in a work-related incident."
+        - listitem [ref=f35e101]: "Legal Protection: Coverage for legal expenses in case of lawsuits related to workplace injuries."
+    - generic [ref=f35e103]:
+      - generic [ref=f35e104]:
+        - heading "Enhancing Your Reputation and Ensuring Compliance" [level=2] [ref=f35e105]
+        - paragraph [ref=f35e106]: At Spray Foam Insurance, we understand that your business thrives when it operates safely and responsibly. Our Safety and Compliance Support services are designed to empower you with the knowledge and tools you need to excel in your industry while minimizing risks.
+      - generic [ref=f35e107]:
+        - heading "Choose Spray Foam Insurance for Your Safety and Compliance Needs" [level=2] [ref=f35e108]
+        - paragraph [ref=f35e109]: Our team specializes in providing Safety and Compliance Support tailored to the unique requirements of spray foam contractors. We're committed to helping you maintain safety, uphold compliance, and build a reputation for excellence in the spray foam industry.
+        - paragraph [ref=f35e110]: Ready to discuss your insurance needs or have questions about Workers' Compensation Insurance? Contact Spray Foam Insurance today. We're here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while ensuring the well-being of your team.
+    - generic [ref=f35e112]:
+      - heading "Safety & Compliance FAQs" [level=2] [ref=f35e113]
+      - generic [ref=f35e114]:
+        - generic [ref=f35e115]:
+          - button "What respirator does OSHA require for spray foam application?" [ref=f35e116] [cursor=pointer]
+          - paragraph [ref=f35e119]: OSHA requires at minimum a supplied-air respirator (SAR) type CE with full-face piece during spray application. Standard N95 masks are NOT sufficient for isocyanate exposure. After the resin cures (typically 24 hours), workers may re-enter with appropriate half-mask respirators with organic vapor/P100 cartridges.
+        - generic [ref=f35e120]:
+          - button "Do I need OSHA training certificates for my crew?" [ref=f35e121] [cursor=pointer]
+          - paragraph [ref=f35e124]: OSHA HazCom training is required for all workers handling isocyanate chemicals. Manufacturer application certification is typically required for product warranties. Document all training for every crew member.
+        - generic [ref=f35e125]:
+          - button "Is spray foam considered hazardous by OSHA?" [ref=f35e126] [cursor=pointer]
+          - paragraph [ref=f35e129]: The isocyanate component (B-side) is regulated as a hazardous chemical under OSHA HazCom. It can cause occupational asthma with repeated exposure. Proper PPE, ventilation, and training are non-negotiable.
+        - generic [ref=f35e130]:
+          - button "What insurance covers OSHA fines?" [ref=f35e131] [cursor=pointer]
+          - paragraph [ref=f35e134]: Standard liability insurance does not cover OSHA fines, which are civil penalties. However, proper safety protocols reduce accident risk, keeping your Workers' Compensation and GL premiums lower and helping avoid claims.
+        - generic [ref=f35e135]:
+          - button "How does safety compliance affect my premiums?" [ref=f35e136] [cursor=pointer]
+          - paragraph [ref=f35e139]: Insurers review your safety record, OSHA violation history, and training documentation when pricing policies. Contractors with documented safety programs and clean records typically receive better rates.
+    - generic [ref=f35e143]:
+      - generic [ref=f35e144]:
+        - heading "Ready to protect your business?" [level=2] [ref=f35e145]
+        - paragraph [ref=f35e146]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=f35e147]:
+        - link "Get a Quote" [ref=f35e148] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=f35e151] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=f35e154]:
+    - generic [ref=f35e155]:
+      - generic [ref=f35e156]:
+        - generic [ref=f35e157]:
+          - heading "Spray Foam Insurance" [level=3] [ref=f35e158]
+          - paragraph [ref=f35e159]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=f35e160] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=f35e161] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=f35e162]:
+          - heading "Navigate" [level=4] [ref=f35e163]
+          - list [ref=f35e164]:
+            - listitem [ref=f35e165]:
+              - link "Home" [ref=f35e166] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f35e167]:
+              - link "Services" [ref=f35e168] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=f35e169]:
+              - link "General Liability Insurance" [ref=f35e170] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f35e171]:
+              - link "Inland Marine" [ref=f35e172] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=f35e173]:
+              - link "Commercial Auto" [ref=f35e174] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f35e175]:
+              - link "Surety Bonds" [ref=f35e176] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f35e177]:
+              - link "Environmental Liability" [ref=f35e178] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f35e179]:
+              - link "Safety and Compliance" [ref=f35e180] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f35e181]:
+              - link "Workers' Compensation" [ref=f35e182] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=f35e183]:
+              - link "Resources" [ref=f35e184] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=f35e185]:
+              - link "Attic Insulation Certificate" [ref=f35e186] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=f35e187]:
+              - link "Work Record Form" [ref=f35e188] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=f35e189]:
+              - link "Blog" [ref=f35e190] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=f35e191]:
+              - link "About Us" [ref=f35e192] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=f35e193]:
+              - link "Contact Us" [ref=f35e194] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=f35e195]:
+              - link "Quote" [ref=f35e196] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=f35e197]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=f35e198]
+          - list [ref=f35e199]:
+            - listitem [ref=f35e200]:
+              - link "– General Liability Insurance" [ref=f35e201] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=f35e202]:
+              - link "– Commercial Auto Insurance" [ref=f35e203] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=f35e204]:
+              - link "– Surety Bonds" [ref=f35e205] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=f35e206]:
+              - link "– Environmental Liability Insurance" [ref=f35e207] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=f35e208]:
+              - link "– Safety and Compliance Support" [ref=f35e209] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=f35e210]:
+              - link "– Workers' Compensation Insurance" [ref=f35e211] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=f35e212]:
+        - paragraph [ref=f35e213]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=f35e214]:
+          - link "Privacy Policy" [ref=f35e215] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=f35e216] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=f35e217]
