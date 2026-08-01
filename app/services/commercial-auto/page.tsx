@@ -79,7 +79,7 @@ export default function CommercialAutoPage() {
           <GlassCard className="p-6 border-l-4 border-primary">
             <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
             <p className="text-muted font-label text-sm leading-relaxed">
-              Commercial Auto Insurance is more than just a requirement; it&apos;s a smart investment for any business that relies on vehicles for its daily operations. This coverage is designed to protect your business in situations where your vehicles or employees are involved in accidents while on the job. It goes beyond protecting your assets; it&apos;s about protecting your reputation as a responsible and environmentally conscious contractor.
+              Commercial Auto Insurance is more than just a requirement; it&apos;s a smart investment for any business that relies on vehicles for its daily operations. This coverage is designed to protect your business in situations where your vehicles or employees are involved in accidents while on the job. It goes beyond protecting your assets; it&apos;s about protecting your reputation as a reliable contractor your clients can count on to show up.
             </p>
           </GlassCard>
         </div>
@@ -142,16 +142,16 @@ export default function CommercialAutoPage() {
           <div>
             <h2 className="font-headline text-2xl font-bold text-text mb-3">Ensuring Your Business Keeps Moving</h2>
             <p className="text-muted font-label leading-relaxed">
-              In the dynamic world of spray foam contracting, your mobility is a competitive advantage. Commercial Auto Insurance from Spray Foam Insurance ensures that you can keep your business on the move while fulfilling your responsibility to safeguard the environment. It&apos;s the safety net that provides peace of mind on the road and at the job site.
+              In the dynamic world of spray foam contracting, your mobility is a competitive advantage. Commercial Auto Insurance from Spray Foam Insurance ensures that your rigs, trailers, and drivers are protected wherever the next job takes them. It&apos;s the safety net that provides peace of mind on the road and at the job site.
             </p>
           </div>
           <div>
             <h2 className="font-headline text-2xl font-bold text-text mb-3">Choose Spray Foam Insurance For Your Commercial Auto Needs</h2>
             <p className="text-muted font-label leading-relaxed mb-4">
-              At Spray Foam Insurance, we specialize in providing Commercial Auto Insurance tailored to the unique requirements of spray foam contractors. Our experienced team understands the intricacies of your industry, and we&apos;re committed to ensuring your vehicles have the coverage they need to keep your business moving forward while preserving the environment.
+              At Spray Foam Insurance, we specialize in providing Commercial Auto Insurance tailored to the unique requirements of spray foam contractors. Our experienced team understands the intricacies of your industry, and we&apos;re committed to ensuring your vehicles have the coverage they need to keep your business moving forward.
             </p>
             <p className="text-muted font-label leading-relaxed">
-              Ready to discuss your insurance needs or have questions about Commercial Auto Insurance? Contact Spray Foam Insurance today. We&apos;re here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while upholding your environmental responsibilities.
+              Ready to discuss your insurance needs or have questions about Commercial Auto Insurance? Contact Spray Foam Insurance today. We&apos;re here to help you navigate the world of insurance, so you can focus on what you do best – delivering exceptional spray foam solutions to your clients while keeping your fleet on the road.
             </p>
           </div>
         </div>
