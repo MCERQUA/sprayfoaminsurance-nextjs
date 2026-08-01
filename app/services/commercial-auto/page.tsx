@@ -74,7 +74,7 @@ export default function CommercialAutoPage() {
             Protecting Your Business on the Move
           </h2>
           <p className="text-muted font-label leading-relaxed mb-8">
-            Spray foam contractors are known for their versatility and mobility, ensuring that their insulation expertise reaches clients far and wide. Whether it&apos;s transporting equipment to a job site or delivering finished projects, the road plays a vital role in your business operations. However, this mobility comes with its own set of risks and challenges, not only for your business but also for the environment. That&apos;s where Commercial Auto Insurance from Spray Foam Insurance becomes essential – it provides a protective shield for your business and ensures you can keep moving forward while safeguarding the environment.
+            Spray foam contractors are known for their versatility and mobility, ensuring that their insulation expertise reaches clients far and wide. Whether it&apos;s transporting equipment to a job site or delivering finished projects, the road plays a vital role in your business operations. However, this mobility comes with its own set of risks and challenges — accidents, theft, and liability claims among them. That&apos;s where Commercial Auto Insurance from Spray Foam Insurance becomes essential – it provides a protective shield for your business and ensures you can keep moving forward.
           </p>
           <GlassCard className="p-6 border-l-4 border-primary">
             <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
@@ -99,16 +99,16 @@ export default function CommercialAutoPage() {
               </div>
               <h3 className="font-headline font-bold text-base text-text mb-2">Protecting Your Fleet</h3>
               <p className="text-muted font-label text-sm leading-relaxed">
-                Whether you have a single spray foam rig or a fleet of vehicles, they are vital assets to your business. Commercial Auto Insurance safeguards your investment by covering repairs or replacements in case of accidents, theft, or damage. This not only ensures business continuity but also minimizes the risk of environmental damage from spills during transportation.
+                Whether you have a single spray foam rig or a fleet of vehicles, they are vital assets to your business. Commercial Auto Insurance safeguards your investment by covering repairs or replacements in case of accidents, theft, or damage — so a fender-bender or break-in doesn&apos;t take a rig out of service for weeks.
               </p>
             </GlassCard>
             <GlassCard className="p-6 border-l-4 border-primary">
               <div className="w-10 h-10 rounded-lg bg-highlight/10 flex items-center justify-center mb-4">
                 <AlertTriangle className="w-5 h-5 text-yellow-400" />
               </div>
-              <h3 className="font-headline font-bold text-base text-text mb-2">Environmental Responsibility</h3>
+              <h3 className="font-headline font-bold text-base text-text mb-2">Protecting Your Drivers</h3>
               <p className="text-muted font-label text-sm leading-relaxed">
-                Spray foam contractors understand the environmental risks associated with their work. Transporting hazardous chemicals to job sites requires careful handling. In the unfortunate event of a spill, Commercial Auto Insurance can cover the costs of environmental cleanup, ensuring that the impact on the environment is minimized.
+                Your crew is on the road as much as they&apos;re on the job site. Commercial Auto liability coverage protects your business if an employee is involved in an at-fault accident while driving to or from a job, including bodily injury and property damage claims from the other party.
               </p>
             </GlassCard>
           </div>
@@ -130,7 +130,7 @@ export default function CommercialAutoPage() {
                 <span className="font-semibold">Liability Coverage:</span> Protection against claims of bodily injury or property damage that may result from an accident involving your vehicles.
               </li>
               <li>
-                <span className="font-semibold">Environmental Cleanup:</span> Coverage for costs associated with environmental cleanup in the event of chemical spills.
+                <span className="font-semibold">Uninsured/Underinsured Motorist Coverage:</span> Protection if your driver or vehicle is hit by someone with little or no insurance of their own.
               </li>
             </ul>
           </div>
