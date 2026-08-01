@@ -7,11 +7,11 @@ import { ChevronDown, Menu, X, Phone, Mail, Facebook, Twitter, Instagram } from 
 
 const serviceLinks = [
   { label: 'General Liability Insurance', href: '/services/general-liability-insurance/' },
-  { label: 'Inland Marine (Rig)', href: '/inland-marine/spray_foam_rig_insurance/' },
+  { label: 'Inland Marine', href: '/inland-marine/spray_foam_rig_insurance/' },
   { label: 'Commercial Auto', href: '/services/commercial-auto/' },
   { label: 'Surety Bonds', href: '/services/surety-bonds/' },
   { label: 'Environmental Liability', href: '/services/environmental-liability/' },
-  { label: 'Safety & Compliance', href: '/safety-and-compliance-support/' },
+  { label: 'Safety and Compliance', href: '/safety-and-compliance-support/' },
   { label: "Workers' Compensation", href: '/services/workers-compensation-insurance-for-spray-foam-contractors/' },
 ];
 
@@ -20,17 +20,14 @@ const resourceLinks = [
   { label: 'Work Record Form', href: '/spf-resources/work-record-form/' },
 ];
 
-const contactLinks = [
-  { label: 'Get a Quote', href: '/quote/' },
-];
-
 const mainNav = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services/', children: serviceLinks },
   { label: 'Resources', href: '/spf-resources/', children: resourceLinks },
   { label: 'Blog', href: '/blog/' },
   { label: 'About Us', href: '/about-us/' },
-  { label: 'Contact Us', href: '/contact-us/', children: contactLinks },
+  { label: 'Contact Us', href: '/contact-us/' },
+  { label: 'Quote', href: '/quote/' },
 ];
 
 function DropdownItem({ item }: { item: typeof mainNav[0] }) {
@@ -120,11 +117,11 @@ export default function Nav() {
             {/* Contact info + CTAs */}
             <div className="hidden md:flex items-center gap-5">
               <a
-                href="mailto:josh@sprayfoaminsurance.com"
+                href="mailto:Josh@sprayfoaminsurance.com"
                 className="flex items-center gap-2 text-gray-300 hover:text-[#2ea3f2] transition-colors text-sm"
               >
                 <Mail className="w-4 h-4 text-[#2ea3f2]" />
-                <span>josh@sprayfoaminsurance.com</span>
+                <span>Josh@sprayfoaminsurance.com</span>
               </a>
               <a
                 href="tel:844-967-5247"
