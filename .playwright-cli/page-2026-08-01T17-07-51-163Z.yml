@@ -1,0 +1,610 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE" [ref=e5] [cursor=pointer]:
+      - /url: tel:844-967-5247
+    - generic [ref=e8]:
+      - link "Spray Foam Insurance Spray Foam Insurance.com" [ref=e9] [cursor=pointer]:
+        - /url: /
+        - img "Spray Foam Insurance" [ref=e10]
+        - generic [ref=e11]:
+          - generic [ref=e12]: Spray Foam
+          - generic [ref=e13]: Insurance.com
+      - generic [ref=e14]:
+        - link "Josh@sprayfoaminsurance.com" [ref=e15] [cursor=pointer]:
+          - /url: mailto:Josh@sprayfoaminsurance.com
+        - link "Call Us Now" [ref=e20] [cursor=pointer]:
+          - /url: tel:844-967-5247
+        - link "Get Quote" [ref=e23] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=e24]:
+        - link "Facebook" [ref=e25] [cursor=pointer]:
+          - /url: https://www.facebook.com/sprayfoaminsurance
+        - link "Twitter" [ref=e28] [cursor=pointer]:
+          - /url: https://twitter.com/sprayfoamins
+        - link "Instagram" [ref=e31] [cursor=pointer]:
+          - /url: https://www.instagram.com/sprayfoaminsurance
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - link "Home" [ref=e39] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e41] [cursor=pointer]:
+          - /url: /services/
+        - link "Resources" [ref=e45] [cursor=pointer]:
+          - /url: /spf-resources/
+        - link "Blog" [ref=e48] [cursor=pointer]:
+          - /url: /blog/
+        - link "About Us" [ref=e49] [cursor=pointer]:
+          - /url: /about-us/
+        - link "Contact Us" [ref=e50] [cursor=pointer]:
+          - /url: /contact-us/
+        - link "Quote" [ref=e51] [cursor=pointer]:
+          - /url: /quote/
+      - link "Sign Up Now" [ref=e52] [cursor=pointer]:
+        - /url: /quote/
+  - main [ref=e53]:
+    - generic [ref=e58]:
+      - generic [ref=e59]: SPECIALIZED INSURANCE FOR SPRAY FOAM CONTRACTORS
+      - heading "Spray Foam Insurance" [level=1] [ref=e61]
+      - paragraph [ref=e63]: Supporting Your Success, Beyond the Policy
+      - generic [ref=e64]:
+        - link "Get a Free Quote" [ref=e65] [cursor=pointer]:
+          - /url: /quote/
+        - link "Call 844-967-5247" [ref=e68] [cursor=pointer]:
+          - /url: tel:844-967-5247
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: 15+
+          - generic [ref=e74]: Years Experience
+        - generic [ref=e75]:
+          - generic [ref=e76]: 500+
+          - generic [ref=e77]: Contractors Insured
+        - generic [ref=e78]:
+          - generic [ref=e79]: "50"
+          - generic [ref=e80]: States Covered
+        - generic [ref=e81]:
+          - generic [ref=e82]: A-Rated
+          - generic [ref=e83]: Carrier Partners
+    - generic [ref=e84]:
+      - generic [ref=e86]:
+        - generic [ref=e87]: A-Rated Carrier Partners
+        - generic [ref=e93]: Licensed in All 50 States
+        - generic [ref=e99]: 15+ Years SPF-Only Focus
+        - generic [ref=e105]: 500+ Contractors Insured
+        - generic [ref=e111]: Same-Day Certificates
+      - generic [ref=e119]:
+        - generic [ref=e120]: Our Carriers
+        - img "Carrier Partner" [ref=e121]
+        - img "Carrier Partner" [ref=e122]
+        - img "Carrier Partner" [ref=e123]
+        - img "Carrier Partner" [ref=e124]
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]: Comprehensive Protection
+        - heading "Core Coverages" [level=2] [ref=e129]
+        - paragraph [ref=e130]: Every policy is built around the unique risks of the spray foam industry.
+      - generic [ref=e131]:
+        - link [ref=e132] [cursor=pointer]:
+          - /url: /services/general-liability-insurance/
+          - heading "General Liability Insurance" [level=3] [ref=e136]
+          - paragraph [ref=e137]: Protect your business from unexpected accidents and claims with comprehensive general liability insurance.
+          - generic [ref=e138]: Learn more
+        - link [ref=e141] [cursor=pointer]:
+          - /url: /services/environmental-liability/
+          - heading "Environmental Liability Insurance" [level=3] [ref=e146]
+          - paragraph [ref=e147]: You care about the environment, and so do we. Our Environmental Liability Insurance covers the risks tied to hazardous chemicals. This way, you're not only protecting your business but also safeguarding the world around you.
+          - generic [ref=e148]: Learn more
+        - link [ref=e151] [cursor=pointer]:
+          - /url: /services/commercial-auto/
+          - heading "Commercial Auto Insurance" [level=3] [ref=e158]
+          - paragraph [ref=e159]: Ensure your vehicles are adequately insured for your spray foam business operations.
+          - generic [ref=e160]: Learn more
+        - link [ref=e163] [cursor=pointer]:
+          - /url: /safety-and-compliance-support/
+          - heading "Safety and Compliance Support" [level=3] [ref=e168]
+          - paragraph [ref=e169]: Safety is paramount, and compliance can be tricky. Our Safety and Compliance Support isn't just a service; it's your path to excellence. We offer the resources and guidance you need to maintain industry standards and ensure the safety of your operations.
+          - generic [ref=e170]: Learn more
+        - link [ref=e173] [cursor=pointer]:
+          - /url: /services/surety-bonds/
+          - heading "Surety Bonds" [level=3] [ref=e177]
+          - paragraph [ref=e178]: Obtain essential surety bonds for licenses, permits, and performance to instill confidence in your clients.
+          - generic [ref=e179]: Learn more
+        - link [ref=e182] [cursor=pointer]:
+          - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+          - heading "Workers' Compensation Insurance" [level=3] [ref=e189]
+          - paragraph [ref=e190]: Your team is your backbone. Our Workers' Compensation Insurance shows them you've got their backs. In case of workplace mishaps, we ensure they receive the care and support they deserve, so they can bounce back quickly.
+          - generic [ref=e191]: Learn more
+    - generic [ref=e195]:
+      - generic [ref=e196]:
+        - generic [ref=e197]: Getting Covered Is Simple
+        - heading "Insured in 3 Easy Steps" [level=2] [ref=e198]
+        - paragraph [ref=e199]: From your first call to holding your COI — most contractors are fully covered the same day.
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - generic [ref=e202]: "01"
+          - heading "Tell Us About Your Operation" [level=3] [ref=e208]
+          - paragraph [ref=e209]: Share details about your business — crew size, spray rig, chemicals used, and the states you work in. Takes just a few minutes.
+        - generic [ref=e213]:
+          - generic [ref=e214]: "02"
+          - heading "We Shop A-Rated Carriers" [level=3] [ref=e220]
+          - paragraph [ref=e221]: We match your operation to specialized SPF coverage across multiple A-rated carriers, finding competitive rates with no coverage gaps.
+        - generic [ref=e225]:
+          - generic [ref=e226]: "03"
+          - heading "Get Covered — Same Day" [level=3] [ref=e231]
+          - paragraph [ref=e232]: Bind your policy and receive your Certificate of Insurance the same day. Never miss a job start over missing proof of insurance.
+      - link "Start Your Free Quote" [ref=e234] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=e238]:
+      - generic [ref=e239]:
+        - generic [ref=e240]: The Spray Foam Specialist Difference
+        - heading "Why Choose Us?" [level=2] [ref=e241]
+        - paragraph [ref=e242]: Any broker can sell you a policy. We built our entire practice around one industry — so your coverage actually works when it matters.
+      - generic [ref=e243]:
+        - generic [ref=e244]:
+          - generic [ref=e245]: Dedicated Specialist
+          - heading "Insurance with a Personal Touch" [level=3] [ref=e250]
+          - paragraph [ref=e251]: We don't just offer insurance; we understand the spray foam industry inside out. With years of experience, we've gained a competitive edge in serving your specific needs.
+        - generic [ref=e252]:
+          - generic [ref=e253]: SPF-Only Focus
+          - heading "Decades of Expertise" [level=3] [ref=e259]
+          - paragraph [ref=e260]: Experience matters. Our seasoned team specializes in spray foam contractor insurance, ensuring your business is always in good hands.
+        - generic [ref=e261]:
+          - generic [ref=e262]: Always Available
+          - heading "Work 24/7 Support Anytime" [level=3] [ref=e268]
+          - paragraph [ref=e269]: It's not just a tagline; it's a commitment that's even in our phone number. Whether it's the middle of the night, a weekend, or a holiday, we're here to support you whenever you need us. Our 24/7 availability ensures that you have the peace of mind you deserve, knowing that we've got your back around the clock.
+      - generic [ref=e270]:
+        - generic [ref=e271]:
+          - generic [ref=e272]: No Coverage Gaps
+          - heading "Specialized, Not Generic" [level=3] [ref=e279]
+          - paragraph [ref=e280]: Standard contractor policies carry exclusions that gut coverage the moment a spray foam claim comes in. Every policy we write is designed around SPF-specific exposures — overspray, off-gassing, chemical burns, adhesion failures.
+        - generic [ref=e281]:
+          - generic [ref=e282]: Instant Turnaround
+          - heading "Same-Day COIs" [level=3] [ref=e287]
+          - paragraph [ref=e288]: Once your policy is bound, certificates of insurance go out the same day — often within hours. Multi-state COIs, GC-specific endorsements, additional insured requests. Fast, accurate, and never a reason to miss a job.
+      - link "Work with a Real Specialist" [ref=e290] [cursor=pointer]:
+        - /url: /quote/
+    - generic [ref=e294]:
+      - paragraph [ref=e298]: “I know it is hard to find insurance for your spray foam business but I want to make it easier and cheaper. Of course, I know you have many options when choosing insurance coverage. I like to make myself available for any questions or concerns you have along the way. If you have any information or recommendations please share those with me. I'm here for you. Finding you a better quote motivates me. Hundreds of clients are already enjoying the benefits. It doesn't matter if you are a small, part timer, or a $5,000,000 company I treat each and every customer with respect. Let me show you how I'll go to bat for you.”
+      - paragraph [ref=e299]: Josh Cotner
+    - generic [ref=e301]:
+      - generic [ref=e302]:
+        - generic [ref=e303]: Who We Serve
+        - heading "Built for Every Spray Foam Operation" [level=2] [ref=e304]
+        - paragraph [ref=e305]: From a one-rig residential crew to a multi-state commercial operation — we write coverage that fits your specific work, not a generic contractor template.
+      - generic [ref=e306]:
+        - generic [ref=e307]:
+          - heading "Open-Cell Foam Applicators" [level=3] [ref=e313]
+          - paragraph [ref=e314]: Soft-cell SPF presents off-gassing and improper-cure liability that standard GL policies exclude. Our open-cell coverage is written to close those gaps.
+        - generic [ref=e315]:
+          - heading "Closed-Cell Foam Applicators" [level=3] [ref=e321]
+          - paragraph [ref=e322]: High-density SPF brings elevated risks — vapor barrier disputes, adhesion failures, and moisture claims. Policies built for closed-cell work, not generic construction.
+        - generic [ref=e323]:
+          - heading "SPF Roofing Contractors" [level=3] [ref=e328]
+          - paragraph [ref=e329]: Roofing foam requires coverage for overspray drift, UV coating liability, and substrate adhesion claims. We understand SPF roof systems inside and out.
+        - generic [ref=e330]:
+          - heading "Residential Applicators" [level=3] [ref=e335]
+          - paragraph [ref=e336]: Owner-occupied job sites demand extra diligence. Coverage for property damage, odor complaints, and accidental overspray on residential insulation projects.
+        - generic [ref=e337]:
+          - heading "Commercial & Industrial Contractors" [level=3] [ref=e343]
+          - paragraph [ref=e344]: Warehouses, cold storage, and industrial facilities require higher limits and GC-specific endorsements. We place the coverage large-project owners demand.
+        - generic [ref=e345]:
+          - heading "New Construction & Retrofit" [level=3] [ref=e351]
+          - paragraph [ref=e352]: Whether you're spraying a new build or retrofitting existing structures, your policy adapts to project type, timeline, and subcontractor insurance requirements.
+    - generic [ref=e355]:
+      - generic [ref=e356]:
+        - generic [ref=e357]: Your Industry Expert
+        - heading "Your Industry's Trusted Ally" [level=2] [ref=e358]: Your Industry'sTrusted Ally
+        - paragraph [ref=e359]: We don't just offer insurance — we understand the spray foam industry inside out. With 15+ years of experience, we've gained a distinct advantage in serving your needs.
+        - list [ref=e360]:
+          - listitem [ref=e361]:
+            - generic [ref=e366]: Specialist knowledge of SPF risks, exclusions, and underwriting nuances
+          - listitem [ref=e367]:
+            - generic [ref=e372]: Access to A-rated carriers with competitive rates for foam contractors
+          - listitem [ref=e373]:
+            - generic [ref=e378]: Same-day certificates of insurance — never miss a job start
+          - listitem [ref=e379]:
+            - generic [ref=e384]: 24/7 support and dedicated claims advocacy when it matters most
+        - link "Get Your Free Quote" [ref=e386] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=e392]:
+        - img "Josh Cotner — Spray Foam Insurance specialist"
+        - generic [ref=e393]:
+          - paragraph: Josh Cotner
+          - paragraph: Founder & Lead Specialist
+    - generic [ref=e394]:
+      - img "Spray foam contractor — wireframe illustration"
+      - generic [ref=e395]:
+        - generic [ref=e396]:
+          - generic [ref=e397]: We're Here For You
+          - heading "Beyond Policies:" [level=2] [ref=e398]
+          - heading "Your Industry's True Support" [level=2] [ref=e399]
+        - generic [ref=e400]:
+          - generic [ref=e401]:
+            - heading "Tailored Coverage Plans" [level=3] [ref=e405]
+            - paragraph [ref=e406]: Every policy is built around your specific operation — rig size, crew, chemicals used, and states you work in.
+          - generic [ref=e407]:
+            - heading "Risk Management Resources" [level=3] [ref=e412]
+            - paragraph [ref=e413]: Access guides, checklists, and safety materials designed specifically for spray foam operations.
+          - generic [ref=e414]:
+            - heading "Claims Assistance" [level=3] [ref=e418]
+            - paragraph [ref=e419]: We advocate for your settlement and walk you through every step of the claims process.
+          - generic [ref=e420]:
+            - heading "Industry Expertise" [level=3] [ref=e425]
+            - paragraph [ref=e426]: 15+ years working exclusively with spray foam contractors means we speak your language and know your risks.
+    - generic [ref=e429]:
+      - generic [ref=e430]:
+        - generic [ref=e431]: Same-Day COI
+        - heading "Need a COI to Start a Job? Get One the Same Day." [level=2] [ref=e436]
+        - paragraph [ref=e437]: A missing Certificate of Insurance shouldn't cost you a contract. Once your policy is bound, we issue your COI the same day — keeping you on-site and on schedule.
+        - link "Request a Certificate" [ref=e438] [cursor=pointer]:
+          - /url: /quote/
+      - generic [ref=e441]:
+        - generic [ref=e447]:
+          - heading "Most COIs issued within hours" [level=3] [ref=e448]
+          - paragraph [ref=e449]: After binding your policy, certificates are typically ready the same business day — often within just a few hours of your request.
+        - generic [ref=e455]:
+          - heading "Never miss a job start" [level=3] [ref=e456]
+          - paragraph [ref=e457]: GC requiring proof of insurance before you set foot on site? We send COIs directly to your general contractor or project owner.
+        - generic [ref=e463]:
+          - heading "50-state multi-state certificates" [level=3] [ref=e464]
+          - paragraph [ref=e465]: Work across multiple states? We handle multi-state COIs and GC-specific endorsements with zero hassle.
+    - generic [ref=e467]:
+      - generic [ref=e468]:
+        - generic [ref=e469]: Nationwide Coverage
+        - heading "Coverage in All 50 States" [level=2] [ref=e470]
+        - paragraph [ref=e471]: Licensed to write spray foam contractor insurance in all 50 states. Whether you operate in one state or cross borders for every job, we handle multi-state certificates, state-specific licensing requirements, and GC endorsements without the runaround.
+      - generic [ref=e472]:
+        - generic [ref=e473]:
+          - generic [ref=e478]: "50"
+          - generic [ref=e479]: States
+        - generic [ref=e480]:
+          - generic [ref=e485]: "0"
+          - generic [ref=e486]: Coverage Gaps
+        - generic [ref=e487]:
+          - generic [ref=e492]: "1"
+          - generic [ref=e493]: Specialist Team
+        - generic [ref=e494]:
+          - generic [ref=e499]: A-Rated
+          - generic [ref=e500]: Carrier Partners
+      - paragraph [ref=e503]: Authorized to write spray foam insurance in every U.S. state — no exceptions.
+      - generic [ref=e504]:
+        - generic [ref=e505]: AL
+        - generic [ref=e506]: AK
+        - generic [ref=e507]: AZ
+        - generic [ref=e508]: AR
+        - generic [ref=e509]: CA
+        - generic [ref=e510]: CO
+        - generic [ref=e511]: CT
+        - generic [ref=e512]: DE
+        - generic [ref=e513]: FL
+        - generic [ref=e514]: GA
+        - generic [ref=e515]: HI
+        - generic [ref=e516]: ID
+        - generic [ref=e517]: IL
+        - generic [ref=e518]: IN
+        - generic [ref=e519]: IA
+        - generic [ref=e520]: KS
+        - generic [ref=e521]: KY
+        - generic [ref=e522]: LA
+        - generic [ref=e523]: ME
+        - generic [ref=e524]: MD
+        - generic [ref=e525]: MA
+        - generic [ref=e526]: MI
+        - generic [ref=e527]: MN
+        - generic [ref=e528]: MS
+        - generic [ref=e529]: MO
+        - generic [ref=e530]: MT
+        - generic [ref=e531]: NE
+        - generic [ref=e532]: NV
+        - generic [ref=e533]: NH
+        - generic [ref=e534]: NJ
+        - generic [ref=e535]: NM
+        - generic [ref=e536]: NY
+        - generic [ref=e537]: NC
+        - generic [ref=e538]: ND
+        - generic [ref=e539]: OH
+        - generic [ref=e540]: OK
+        - generic [ref=e541]: OR
+        - generic [ref=e542]: PA
+        - generic [ref=e543]: RI
+        - generic [ref=e544]: SC
+        - generic [ref=e545]: SD
+        - generic [ref=e546]: TN
+        - generic [ref=e547]: TX
+        - generic [ref=e548]: UT
+        - generic [ref=e549]: VT
+        - generic [ref=e550]: VA
+        - generic [ref=e551]: WA
+        - generic [ref=e552]: WV
+        - generic [ref=e553]: WI
+        - generic [ref=e554]: WY
+      - generic [ref=e556]:
+        - generic [ref=e557]:
+          - paragraph [ref=e558]: Working in multiple states?
+          - paragraph [ref=e559]: We issue multi-state COIs and handle licensing requirements across all jurisdictions — one call, one policy, zero gaps.
+        - link "Get a Free Quote" [ref=e560] [cursor=pointer]:
+          - /url: /quote/
+    - generic [ref=e564]:
+      - generic [ref=e565]:
+        - paragraph [ref=e569]: “Josh is knowledgeable about what needs there are for us as spray foam contractors, and super helpful in taking care of anything we need in a timely manner. I would definitely recommend Josh and Spray Foam Insurance to any foam contractor out there!”
+        - generic [ref=e570]:
+          - img "Integrity Plus Insulation" [ref=e571]
+          - generic [ref=e572]:
+            - paragraph [ref=e573]: Eric Gladson
+            - paragraph [ref=e574]: O/O – Integrity Plus Insulation LLC
+      - generic [ref=e575]:
+        - generic [ref=e576]:
+          - paragraph [ref=e588]: “Same-day COIs every single time. Saved us from losing a major contract. Josh is the best.”
+          - generic [ref=e589]:
+            - paragraph [ref=e590]: Marcus T.
+            - paragraph [ref=e591]: Owner, Summit Spray Foam
+        - generic [ref=e592]:
+          - paragraph [ref=e604]: “Finally found someone who actually understands spray foam insurance. No generic policies — real coverage for real risks.”
+          - generic [ref=e605]:
+            - paragraph [ref=e606]: Danielle R.
+            - paragraph [ref=e607]: Operations Manager, ProFoam LLC
+        - generic [ref=e608]:
+          - paragraph [ref=e620]: “When we had a claim, Josh was on the phone with us immediately. The whole process was smooth and professional.”
+          - generic [ref=e621]:
+            - paragraph [ref=e622]: Brian K.
+            - paragraph [ref=e623]: Owner, Glacier Insulation Co.
+    - generic [ref=e624]:
+      - img "Partnership — spray foam insurance support" [ref=e625]
+      - generic [ref=e626]:
+        - generic [ref=e627]: Insurance Excellence
+        - heading "Tailored Solutions And Piece Of Mind, For Your Spray Foam Business" [level=2] [ref=e628]: Tailored Solutions And Piece Of Mind,For Your Spray Foam Business
+        - link "View More Services!" [ref=e629] [cursor=pointer]:
+          - /url: /services/
+    - generic [ref=e631]:
+      - paragraph [ref=e632]: Free Quote
+      - generic [ref=e633]:
+        - generic [ref=e634]:
+          - heading "Get Coverage Built for Spray Foam Pros" [level=2] [ref=e635]
+          - paragraph [ref=e636]: Fill out the form and a spray-foam insurance specialist will reach out within one business day — no pushy sales calls, just straight answers.
+          - list [ref=e637]:
+            - listitem [ref=e638]:
+              - generic [ref=e642]: A-rated carriers — real financial strength
+            - listitem [ref=e643]:
+              - generic [ref=e648]: Same-day COIs issued within hours
+            - listitem [ref=e649]:
+              - generic [ref=e654]: Licensed in all 50 states
+            - listitem [ref=e655]:
+              - generic [ref=e659]: 15+ years SPF-only expertise
+        - generic [ref=e661]:
+          - heading "Request Your Free Quote" [level=3] [ref=e662]
+          - generic [ref=e663]:
+            - generic [ref=e664]:
+              - generic [ref=e665]: Full Name *
+              - textbox "Full Name *" [ref=e666]:
+                - /placeholder: Jane Smith
+            - generic [ref=e667]:
+              - generic [ref=e668]: Business Name *
+              - textbox "Business Name *" [ref=e669]:
+                - /placeholder: Smith Spray Foam LLC
+            - generic [ref=e670]:
+              - generic [ref=e671]: Email *
+              - textbox "Email *" [ref=e672]:
+                - /placeholder: jane@smithfoam.com
+            - generic [ref=e673]:
+              - generic [ref=e674]: Phone *
+              - textbox "Phone *" [ref=e675]:
+                - /placeholder: (555) 000-0000
+          - generic [ref=e676]:
+            - generic [ref=e677]: State *
+            - combobox "State *" [ref=e678] [cursor=pointer]:
+              - option "Select your state…" [disabled] [selected]
+              - option "Alabama"
+              - option "Alaska"
+              - option "Arizona"
+              - option "Arkansas"
+              - option "California"
+              - option "Colorado"
+              - option "Connecticut"
+              - option "Delaware"
+              - option "Florida"
+              - option "Georgia"
+              - option "Hawaii"
+              - option "Idaho"
+              - option "Illinois"
+              - option "Indiana"
+              - option "Iowa"
+              - option "Kansas"
+              - option "Kentucky"
+              - option "Louisiana"
+              - option "Maine"
+              - option "Maryland"
+              - option "Massachusetts"
+              - option "Michigan"
+              - option "Minnesota"
+              - option "Mississippi"
+              - option "Missouri"
+              - option "Montana"
+              - option "Nebraska"
+              - option "Nevada"
+              - option "New Hampshire"
+              - option "New Jersey"
+              - option "New Mexico"
+              - option "New York"
+              - option "North Carolina"
+              - option "North Dakota"
+              - option "Ohio"
+              - option "Oklahoma"
+              - option "Oregon"
+              - option "Pennsylvania"
+              - option "Rhode Island"
+              - option "South Carolina"
+              - option "South Dakota"
+              - option "Tennessee"
+              - option "Texas"
+              - option "Utah"
+              - option "Vermont"
+              - option "Virginia"
+              - option "Washington"
+              - option "West Virginia"
+              - option "Wisconsin"
+              - option "Wyoming"
+          - group "Coverage Needed *" [ref=e679]:
+            - generic [ref=e681]:
+              - generic [ref=e682] [cursor=pointer]:
+                - checkbox "General Liability" [ref=e683]
+                - generic [ref=e684]: General Liability
+              - generic [ref=e685] [cursor=pointer]:
+                - checkbox "Workers' Comp" [ref=e686]
+                - generic [ref=e687]: Workers' Comp
+              - generic [ref=e688] [cursor=pointer]:
+                - checkbox "Commercial Auto" [ref=e689]
+                - generic [ref=e690]: Commercial Auto
+              - generic [ref=e691] [cursor=pointer]:
+                - checkbox "Surety Bonds" [ref=e692]
+                - generic [ref=e693]: Surety Bonds
+              - generic [ref=e694] [cursor=pointer]:
+                - checkbox "Environmental" [ref=e695]
+                - generic [ref=e696]: Environmental
+              - generic [ref=e697] [cursor=pointer]:
+                - checkbox "Rig / Equipment" [ref=e698]
+                - generic [ref=e699]: Rig / Equipment
+          - generic [ref=e700]:
+            - generic [ref=e701]: Additional Details (optional)
+            - textbox "Additional Details (optional)" [ref=e702]:
+              - /placeholder: Rig count, annual revenue, current carrier, anything helpful…
+          - button "Get My Free Quote" [ref=e703] [cursor=pointer]
+          - paragraph [ref=e704]: No spam. No obligation. SPF specialists only.
+    - generic [ref=e706]:
+      - generic [ref=e707]:
+        - generic [ref=e708]: Got Questions?
+        - heading "Frequently Asked Questions" [level=2] [ref=e709]
+      - generic [ref=e710]:
+        - generic [ref=e711]:
+          - button "How much does spray foam insurance cost?" [ref=e712] [cursor=pointer]
+          - paragraph [ref=e715]: Most spray foam contractors pay $2,500–$8,000 per year for a basic GL + workers' comp package. Rates depend on annual revenue, crew size, states of operation, claims history, and the specific coverages you carry. Larger commercial operations or those with prior claims may pay more.
+        - generic [ref=e716]:
+          - button "What insurance does a spray foam contractor need?" [ref=e717] [cursor=pointer]
+          - paragraph [ref=e720]: At minimum, every SPF contractor needs General Liability Insurance (covering overspray, property damage, and bodily injury) and Workers' Compensation if you have employees. Most contractors also need Commercial Auto, Inland Marine / Rig Insurance, and Environmental Liability. Surety bonds are required for licensed contractor work in many states.
+        - generic [ref=e721]:
+          - button "Does standard GL cover spray foam overspray incidents?" [ref=e722] [cursor=pointer]
+          - paragraph [ref=e725]: Most standard General Liability policies either exclude overspray damage or severely sub-limit it. Our SPF-specific GL policies include overspray coverage as standard, protecting you when wind-borne foam particles damage neighboring vehicles, siding, or landscaping.
+        - generic [ref=e726]:
+          - button "How fast can I get a certificate of insurance (COI)?" [ref=e727] [cursor=pointer]
+          - paragraph [ref=e730]: Once your policy is bound and payment is processed, we typically issue certificates the same day — often within a few hours. We know contractors lose work waiting on paperwork, so fast COI service is a core part of what we do.
+        - generic [ref=e731]:
+          - button "Is workers' compensation required for spray foam contractors in every state?" [ref=e732] [cursor=pointer]
+          - paragraph [ref=e735]: Workers' comp is mandatory in virtually every state as soon as you have one employee. The specific rules — including whether sole proprietors must cover themselves — vary by state. Operating without it can result in fines, stop-work orders, and direct personal liability for injured workers' medical bills and lost wages.
+        - generic [ref=e736]:
+          - button "Does my general liability policy cover pollution and chemical exposure claims?" [ref=e737] [cursor=pointer]
+          - paragraph [ref=e740]: Standard GL policies contain a "pollution exclusion" that can bar coverage for chemical-related claims involving isocyanates and off-gassing. Environmental Liability Insurance fills this critical gap for SPF contractors. We recommend all spray foam contractors carry both GL and a pollution/environmental liability policy.
+        - generic [ref=e741]:
+          - button "How is my spray foam rig and equipment covered?" [ref=e742] [cursor=pointer]
+          - paragraph [ref=e745]: Your spray foam rig — proportioner, heated hoses, generator, trailer, and tools — is covered under Inland Marine (also called Rig & Equipment Insurance). This coverage follows your equipment on the road, at job sites, and in storage. Commercial auto covers the vehicle itself but not the equipment inside.
+        - generic [ref=e746]:
+          - button "Do spray foam contractors need a surety bond?" [ref=e747] [cursor=pointer]
+          - paragraph [ref=e750]: Many states require a contractor license bond as part of the licensing process. Commercial projects and general contractors may also require performance or payment bonds. Bonds guarantee your contractual performance — they are not insurance but work alongside it.
+        - generic [ref=e751]:
+          - button "Do my subcontractors need their own insurance?" [ref=e752] [cursor=pointer]
+          - paragraph [ref=e755]: Yes. If your subcontractors lack their own GL or workers' comp coverage, you may be held liable as the statutory employer for their claims. Always verify current certificates of insurance from every subcontractor before work begins.
+        - generic [ref=e756]:
+          - button "Am I covered if I work in multiple states?" [ref=e757] [cursor=pointer]
+          - paragraph [ref=e760]: Yes — we place coverage for spray foam contractors operating across all 50 states. Workers' comp must be endorsed for each state where you have employees, and we handle that coordination. Your GL and inland marine coverage typically follows you nationwide under a single policy.
+        - generic [ref=e761]:
+          - button "How quickly can I get insured?" [ref=e762] [cursor=pointer]
+          - paragraph [ref=e765]: Most contractors can be quoted within 1 business day and fully bound within 2–3 business days. For straightforward GL or commercial auto risks, same-day binding is often possible. Call 844-967-5247 to start the process.
+        - generic [ref=e766]:
+          - button "What coverage protects against isocyanate exposure claims?" [ref=e767] [cursor=pointer]
+          - paragraph [ref=e770]: Isocyanate-related claims — occupational asthma, sensitization, chemical exposure from MDI or TDI — are covered under a combination of Workers' Compensation (for employees), Environmental Liability (for third-party bodily injury and property damage), and General Liability (for bodily injury claims from building occupants).
+    - generic [ref=e774]:
+      - generic [ref=e775]:
+        - heading "Ready to protect your business?" [level=2] [ref=e776]
+        - paragraph [ref=e777]: Get specialized coverage built for spray foam contractors — fast, flexible, competitive.
+      - generic [ref=e778]:
+        - link "Get a Quote" [ref=e779] [cursor=pointer]:
+          - /url: /quote/
+        - link "844-967-5247" [ref=e782] [cursor=pointer]:
+          - /url: tel:8449675247
+  - contentinfo [ref=e785]:
+    - generic [ref=e786]:
+      - generic [ref=e787]:
+        - generic [ref=e788]:
+          - heading "Spray Foam Insurance" [level=3] [ref=e789]
+          - paragraph [ref=e790]: Specialized insurance solutions designed exclusively for spray polyurethane foam contractors.
+          - link "844-967-5247" [ref=e791] [cursor=pointer]:
+            - /url: tel:8449675247
+          - link "Josh@sprayfoaminsurance.com" [ref=e792] [cursor=pointer]:
+            - /url: mailto:Josh@sprayfoaminsurance.com
+        - generic [ref=e793]:
+          - heading "Navigate" [level=4] [ref=e794]
+          - list [ref=e795]:
+            - listitem [ref=e796]:
+              - link "Home" [ref=e797] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e798]:
+              - link "Services" [ref=e799] [cursor=pointer]:
+                - /url: /services/
+            - listitem [ref=e800]:
+              - link "General Liability Insurance" [ref=e801] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=e802]:
+              - link "Inland Marine" [ref=e803] [cursor=pointer]:
+                - /url: /inland-marine/spray_foam_rig_insurance/
+            - listitem [ref=e804]:
+              - link "Commercial Auto" [ref=e805] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=e806]:
+              - link "Surety Bonds" [ref=e807] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=e808]:
+              - link "Environmental Liability" [ref=e809] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=e810]:
+              - link "Safety and Compliance" [ref=e811] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=e812]:
+              - link "Workers' Compensation" [ref=e813] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+            - listitem [ref=e814]:
+              - link "Resources" [ref=e815] [cursor=pointer]:
+                - /url: /spf-resources/
+            - listitem [ref=e816]:
+              - link "Attic Insulation Certificate" [ref=e817] [cursor=pointer]:
+                - /url: /attic-insulation-certificate/
+            - listitem [ref=e818]:
+              - link "Work Record Form" [ref=e819] [cursor=pointer]:
+                - /url: /spf-resources/work-record-form/
+            - listitem [ref=e820]:
+              - link "Blog" [ref=e821] [cursor=pointer]:
+                - /url: /blog/
+            - listitem [ref=e822]:
+              - link "About Us" [ref=e823] [cursor=pointer]:
+                - /url: /about-us/
+            - listitem [ref=e824]:
+              - link "Contact Us" [ref=e825] [cursor=pointer]:
+                - /url: /contact-us/
+            - listitem [ref=e826]:
+              - link "Quote" [ref=e827] [cursor=pointer]:
+                - /url: /quote/
+        - generic [ref=e828]:
+          - heading "Spray Foam Insurance Service Pages" [level=4] [ref=e829]
+          - list [ref=e830]:
+            - listitem [ref=e831]:
+              - link "– General Liability Insurance" [ref=e832] [cursor=pointer]:
+                - /url: /services/general-liability-insurance/
+            - listitem [ref=e833]:
+              - link "– Commercial Auto Insurance" [ref=e834] [cursor=pointer]:
+                - /url: /services/commercial-auto/
+            - listitem [ref=e835]:
+              - link "– Surety Bonds" [ref=e836] [cursor=pointer]:
+                - /url: /services/surety-bonds/
+            - listitem [ref=e837]:
+              - link "– Environmental Liability Insurance" [ref=e838] [cursor=pointer]:
+                - /url: /services/environmental-liability/
+            - listitem [ref=e839]:
+              - link "– Safety and Compliance Support" [ref=e840] [cursor=pointer]:
+                - /url: /safety-and-compliance-support/
+            - listitem [ref=e841]:
+              - link "– Workers' Compensation Insurance" [ref=e842] [cursor=pointer]:
+                - /url: /services/workers-compensation-insurance-for-spray-foam-contractors/
+      - generic [ref=e843]:
+        - paragraph [ref=e844]: © 2026 Spray Foam Insurance. All rights reserved.
+        - generic [ref=e845]:
+          - link "Privacy Policy" [ref=e846] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - link "Terms of Service" [ref=e847] [cursor=pointer]:
+            - /url: /terms/
+  - alert [ref=e848]
