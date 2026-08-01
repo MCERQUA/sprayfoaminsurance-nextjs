@@ -21,10 +21,10 @@ module.exports = {
         muted: '#94a3b8',
       },
       fontFamily: {
-        headline: ['Montserrat', 'sans-serif'],
-        display: ['Montserrat', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
-        label: ['Public Sans', 'sans-serif'],
+        headline: ['var(--font-headline)', 'Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+        display: ['var(--font-headline)', 'Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+        body: ['var(--font-body)', "'Open Sans'", 'sans-serif'],
+        label: ['var(--font-label)', "'Open Sans'", 'sans-serif'],
       },
       letterSpacing: {
         tighter: '-0.02em',

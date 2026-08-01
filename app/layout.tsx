@@ -1,23 +1,26 @@
 import type { Metadata } from 'next';
-import { Montserrat, Inter, Public_Sans } from 'next/font/google';
+import { Poppins, Open_Sans } from 'next/font/google';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import JsonLd from '@/components/JsonLd';
 import './globals.css';
 
-const montserrat = Montserrat({
+// Live site (sprayfoaminsurance.com) uses Poppins for headings and Open Sans
+// for body/labels — see ai/live-capture/DESIGN-TOKENS.md. Swapped in for
+// design-token parity (previously Montserrat/Inter/Public Sans).
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['600', '700', '800'],
   display: 'swap',
   variable: '--font-headline',
 });
-const inter = Inter({
+const openSans = Open_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
   display: 'swap',
   variable: '--font-body',
 });
-const publicSans = Public_Sans({
+const openSansLabel = Open_Sans({
   subsets: ['latin'],
   weight: ['500', '600', '700'],
   display: 'swap',
@@ -91,7 +94,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`dark ${montserrat.variable} ${inter.variable} ${publicSans.variable}`}>
+    <html lang="en" className={`dark ${poppins.variable} ${openSans.variable} ${openSansLabel.variable}`}>
       <body className="bg-background text-text font-body antialiased">
         <JsonLd />
         <Nav />
