@@ -181,7 +181,7 @@ export default function WorkRecordFormPage() {
                     name="businessName"
                     type="text"
                     className={inputClass}
-                    placeholder="E.g. text placeholder"
+                    placeholder="E.g. Smith Spray Foam LLC"
                     value={formData.businessName}
                     onChange={handleChange}
                   />
@@ -228,7 +228,7 @@ export default function WorkRecordFormPage() {
                       name="phone"
                       type="tel"
                       className={inputClass}
-                      placeholder="E.g. +1 300 400 5000"
+                      placeholder="E.g. (480) 555-0142"
                       value={formData.phone}
                       onChange={handleChange}
                       required
@@ -245,7 +245,7 @@ export default function WorkRecordFormPage() {
                     name="address"
                     type="text"
                     className={inputClass}
-                    placeholder="E.g. 42 Wallaby Way"
+                    placeholder="E.g. 1200 W Chandler Blvd"
                     value={formData.address}
                     onChange={handleChange}
                     required
@@ -276,7 +276,7 @@ export default function WorkRecordFormPage() {
                       name="city"
                       type="text"
                       className={inputClass}
-                      placeholder="E.g. Sydney"
+                      placeholder="E.g. Chandler"
                       value={formData.city}
                       onChange={handleChange}
                       required
@@ -291,7 +291,7 @@ export default function WorkRecordFormPage() {
                       name="state"
                       type="text"
                       className={inputClass}
-                      placeholder="E.g. New South Wales"
+                      placeholder="E.g. Arizona"
                       value={formData.state}
                       onChange={handleChange}
                       required
@@ -308,7 +308,7 @@ export default function WorkRecordFormPage() {
                     name="zip"
                     type="text"
                     className={inputClass}
-                    placeholder="E.g. 2000"
+                    placeholder="E.g. 85249"
                     value={formData.zip}
                     onChange={handleChange}
                     required
