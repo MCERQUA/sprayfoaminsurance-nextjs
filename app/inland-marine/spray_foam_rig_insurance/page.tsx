@@ -137,7 +137,7 @@ export default function SprayFoamRigInsurancePage() {
                 </label>
                 <input
                   type="tel"
-                  placeholder="E.g. +1 300 400 5000"
+                  placeholder="E.g. (480) 555-0142"
                   className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
                 />
               </div>
