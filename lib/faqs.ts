@@ -8,7 +8,7 @@ export interface FAQItem {
 export const homepageFaqs: FAQItem[] = [
   {
     q: 'How much does spray foam insurance cost?',
-    a: 'Most spray foam contractors pay $2,500–$8,000 per year for a basic GL + workers\' comp package. Rates depend on annual revenue, crew size, states of operation, claims history, and the specific coverages you carry. Larger commercial operations or those with prior claims may pay more.',
+    a: 'Premiums for a basic GL + workers\' comp package depend on annual revenue, crew size, states of operation, claims history, and the specific coverages you carry. Larger commercial operations or those with prior claims may pay more. Call us for a quote on your operation.',
   },
   {
     q: 'What insurance does a spray foam contractor need?',
@@ -184,11 +184,11 @@ export const environmentalFaqs: FAQItem[] = [
 export const rigEquipmentFaqs: FAQItem[] = [
   {
     q: 'Does my policy follow my rig to different states?',
-    a: 'Yes — inland marine/rig insurance follows your equipment anywhere in the continental US. If you work in multiple states, your coverage travels with you.',
+    a: 'Yes — inland marine/rig insurance typically follows your equipment anywhere in the continental US. If you work in multiple states, your coverage travels with you.',
   },
   {
     q: 'What if my rig is stolen overnight on a job site?',
-    a: 'Theft is a covered peril. File a police report immediately, document serial numbers and photos, and contact us. Most theft claims are processed within 24–48 hours.',
+    a: 'Theft is a covered peril under most inland marine policies. File a police report immediately, document serial numbers and photos, and contact us.',
   },
   {
     q: 'Is my rig covered while being transported on a trailer?',
@@ -309,11 +309,11 @@ export const inlandMarineFaqs: FAQItem[] = [
   },
   {
     q: 'What if my equipment is stolen from a job site?',
-    a: 'Theft is a covered peril under most inland marine policies. File a police report immediately and document serial numbers. Most theft claims are processed within 24–48 hours.',
+    a: 'Theft is a covered peril under most inland marine policies. File a police report immediately and document serial numbers.',
   },
   {
     q: 'How much does inland marine insurance cost for a spray foam contractor?',
-    a: 'Most spray foam contractors pay between $1,200 and $4,000 annually for a comprehensive inland marine policy, depending on total equipment value, deductible, and claims history.',
+    a: 'Premiums for a comprehensive inland marine policy depend on total equipment value, deductible, and claims history. Call us for a quote on your equipment schedule.',
   },
 ];
 
@@ -324,7 +324,7 @@ export const rigInsuranceFaqs: FAQItem[] = [
   },
   {
     q: 'What deductible should I choose for my rig?',
-    a: 'Most spray foam contractors choose $1,000–$2,500 deductibles. Higher deductibles reduce your annual premium but mean more out-of-pocket costs if you file a claim.',
+    a: 'Higher deductibles reduce your annual premium but mean more out-of-pocket costs if you file a claim. We can quote a few deductible levels side by side so you can see the tradeoff.',
   },
   {
     q: 'Does inland marine cover breakdowns from normal wear and tear?',

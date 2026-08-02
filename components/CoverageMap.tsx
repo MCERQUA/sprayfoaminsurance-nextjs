@@ -1,4 +1,4 @@
-import { MapPin, CheckCircle, Globe, FileText } from 'lucide-react';
+import { MapPin, Globe, FileText } from 'lucide-react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
@@ -18,14 +18,6 @@ const stats = [
     color: 'text-[#2ea3f2]',
     bg: 'bg-[#2ea3f2]/15',
     border: 'border-[#2ea3f2]/30',
-  },
-  {
-    value: '0',
-    label: 'Coverage Gaps',
-    icon: CheckCircle,
-    color: 'text-[#29c4a9]',
-    bg: 'bg-[#29c4a9]/15',
-    border: 'border-[#29c4a9]/30',
   },
   {
     value: '1',
@@ -75,7 +67,7 @@ export default function CoverageMap() {
         </div>
 
         {/* Stat boxes */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
           {stats.map(({ value, label, icon: Icon, color, bg, border }) => (
             <div
               key={label}
