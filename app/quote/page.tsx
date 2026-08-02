@@ -222,9 +222,8 @@ export default function QuotePage() {
           <div className="mb-6">
             <p className="text-sm font-label font-semibold text-text mb-1">Commercial Auto Insurance for Your Spray Rig</p>
             <p className="text-xs text-muted mb-2">
-              Please text a picture of your drivers license, current auto policy info, vin
-              number/registration to 480-381-8949 or email
-              Josh@sprayfoaminsurance.com.
+              Please email a picture of your drivers license, current auto policy info, and vin
+              number/registration to Josh@sprayfoaminsurance.com, or call 844-967-5247.
             </p>
             <div className="space-y-2">
               {['$100,000', '$500,000', '$1,000,000', 'Not Needed'].map((opt) => (
