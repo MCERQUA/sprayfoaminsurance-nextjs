@@ -32,7 +32,7 @@ const TRUST_BULLETS = [
   { icon: Shield,  text: 'A-rated carriers — real financial strength' },
   { icon: Clock,   text: 'Same-day COIs issued within hours' },
   { icon: MapPin,  text: 'Licensed in all 50 states' },
-  { icon: Star,    text: '15+ years SPF-only expertise' },
+  { icon: Star,    text: 'SPF-only expertise' },
 ];
 
 interface FormState {

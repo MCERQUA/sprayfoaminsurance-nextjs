@@ -66,7 +66,6 @@ const stats = [
   { label: 'Resources Available', value: '12+' },
   { label: 'Contractors Served', value: '2,000+' },
   { label: 'States Covered', value: '50' },
-  { label: 'Years Experience', value: '15+' },
 ];
 
 export default function SPFResourcesPage() {

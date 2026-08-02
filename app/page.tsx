@@ -78,9 +78,8 @@ export default function HomePage() {
               </a>
             </div>
 
-            <div className="hero-stats grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-white/10 pt-8">
+            <div className="hero-stats grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-white/10 pt-8">
               {[
-                { value: '15+', label: 'Years Experience' },
                 { value: '500+', label: 'Contractors Insured' },
                 { value: '50', label: 'States Covered' },
                 { value: 'A-Rated', label: 'Carrier Partners' },
@@ -231,7 +230,7 @@ export default function HomePage() {
                 <span className="blue-gradient-text">Trusted Ally</span>
               </h2>
               <p className="text-gray-400 text-base leading-relaxed mb-8">
-                We don&apos;t just offer insurance — we understand the spray foam industry inside out. With 15+ years of experience, we&apos;ve gained a distinct advantage in serving your needs.
+                We don&apos;t just offer insurance — we understand the spray foam industry inside out. With years of experience, we&apos;ve gained a distinct advantage in serving your needs.
               </p>
               <ul className="space-y-4">
                 {[
@@ -339,7 +338,7 @@ export default function HomePage() {
               {
                 icon: Award,
                 title: 'Industry Expertise',
-                desc: '15+ years working exclusively with spray foam contractors means we speak your language and know your risks.',
+                desc: 'Working exclusively with spray foam contractors means we speak your language and know your risks.',
                 color: 'text-[#2ea3f2]',
                 bg: 'bg-[#2ea3f2]/15',
               },

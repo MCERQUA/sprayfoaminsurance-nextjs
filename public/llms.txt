@@ -1,6 +1,6 @@
 # Spray Foam Insurance
 
-> Specialized insurance agency serving spray foam insulation contractors across all 50 US states. Founded by Josh Cotner with 15+ years of SPF-only focus. Offers general liability, workers' compensation, commercial auto, environmental liability, surety bonds, and rig & equipment coverage tailored to the unique risks of the spray polyurethane foam industry.
+> Specialized insurance agency serving spray foam insulation contractors across all 50 US states. Founded by Josh Cotner with an SPF-only focus. Offers general liability, workers' compensation, commercial auto, environmental liability, surety bonds, and rig & equipment coverage tailored to the unique risks of the spray polyurethane foam industry.
 
 ## Site
 
@@ -43,7 +43,7 @@
 ## Business Details
 
 - **Agency:** Spray Foam Insurance (Contractors Choice Agency)
-- **Founder:** Josh Cotner, 15+ years SPF-only insurance focus
+- **Founder:** Josh Cotner, SPF-only insurance focus
 - **Phone:** 844-967-5247
 - **Email:** josh@sprayfoaminsurance.com
 - **Service Area:** All 50 United States
