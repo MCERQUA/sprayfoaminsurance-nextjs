@@ -1,12 +1,23 @@
 <!--
   Netlify Forms detection file.
   Next.js App Router renders dynamically, so Netlify cannot scan rendered output
-  for forms. This static file declares the form + all field names so Netlify's
-  build registers it. The React form (components/QuoteFormSection.tsx) POSTs
-  url-encoded data here with form-name=quote.
-  Leads appear in: Netlify dashboard → Forms → quote (+ email notifications once
-  configured in Netlify UI). To change delivery, set up a notification or
-  outbound webhook in Netlify → Site settings → Forms.
+  for forms. This static file declares every form + all field names so Netlify's
+  build registers them. The React forms POST url-encoded data here with the
+  matching form-name:
+
+    quote               → components/QuoteFormSection.tsx  (homepage)
+    quote-detailed      → components/QuotePageForm.tsx     (/quote/)
+    vegas-quote-request → components/VegasQuoteForm.tsx    (/vegas/)
+
+  Delivery is Netlify Forms → netlify/functions/submission-created.js → the lead
+  pipeline. There is deliberately NO client-side webhook fetch in any form; a
+  second fire-and-forget POST duplicated every lead and swallowed its own errors.
+
+  Field names match the lead pipeline (docs/WEBHOOK-DATAPOINTS.md) so leads flow
+  Netlify → Social Dashboard → Zapier → AgencyZoom → AMS360 automatically.
+  The person's name is ALWAYS a single field called `name` — never firstName /
+  lastName / contact_name. Split name fields do not map to the pipeline's `name`
+  and land as nameless leads.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,8 +26,6 @@
     <title>Spray Foam Insurance — Form Registration</title>
   </head>
   <body>
-    <!-- Field names match the lead pipeline (docs/WEBHOOK-DATAPOINTS.md) so leads
-         flow Netlify → Social Dashboard → Zapier → AgencyZoom → AMS360 automatically. -->
     <form name="quote" data-netlify="true" netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="text" name="businessName" />
@@ -27,6 +36,42 @@
       <input type="text" name="form_type" />
       <input type="text" name="source_site" />
       <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+
+    <form name="quote-detailed" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="businessName" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="address" />
+      <input type="text" name="city" />
+      <input type="text" name="state" />
+      <input type="text" name="zip" />
+      <textarea name="message"></textarea>
+      <input type="text" name="fein" />
+      <input type="text" name="grossSales" />
+      <input type="text" name="employeeCount" />
+      <input type="text" name="employeePayroll" />
+      <input type="text" name="subcontractorExpenses" />
+      <input type="text" name="materialCosts" />
+      <input type="text" name="gl_amount" />
+      <input type="text" name="wc_amount" />
+      <input type="text" name="auto_amount" />
+      <input type="text" name="surety_amount" />
+      <input type="text" name="form_type" />
+      <input type="text" name="source_site" />
+      <input type="text" name="bot-field" />
+    </form>
+
+    <form name="vegas-quote-request" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="businessName" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+      <input type="text" name="form_type" />
+      <input type="text" name="source_site" />
       <input type="text" name="bot-field" />
     </form>
   </body>

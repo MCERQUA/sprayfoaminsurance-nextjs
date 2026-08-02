@@ -88,7 +88,7 @@ export default function ServicesPage() {
           { value: '24', label: 'Hours a Day' },
           { value: '365', label: 'Days A Year' },
           { value: '8,760', label: 'Hours Per Year' },
-          { value: '2,500+', label: 'Happy Clients' },
+          { value: '298', label: 'Active Contractor Clients' },
         ]}
       />
 

@@ -102,7 +102,7 @@ export default function ContactUsPage() {
                 <MapPin className="w-6 h-6 text-primary shrink-0 mt-1" />
                 <div>
                   <p className="font-headline font-bold text-text mb-1">Address</p>
-                  <p className="text-muted text-sm">2270 E Augusta Ave, Chandler, AZ 85249, United States</p>
+                  <p className="text-muted text-sm">12220 E Riggs Road, Suite #105, Chandler, AZ 85249, United States</p>
                 </div>
               </GlassCard>
 

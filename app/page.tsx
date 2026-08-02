@@ -80,7 +80,7 @@ export default function HomePage() {
 
             <div className="hero-stats grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-white/10 pt-8">
               {[
-                { value: '500+', label: 'Contractors Insured' },
+                { value: '298', label: 'Active Contractor Clients' },
                 { value: '50', label: 'States Covered' },
                 { value: 'A-Rated', label: 'Carrier Partners' },
               ].map(({ value, label }) => (

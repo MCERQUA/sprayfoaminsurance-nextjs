@@ -64,7 +64,7 @@ const resources = [
 
 const stats = [
   { label: 'Resources Available', value: '12+' },
-  { label: 'Contractors Served', value: '2,000+' },
+  { label: 'Active Contractor Clients', value: '298' },
   { label: 'States Covered', value: '50' },
 ];
 
