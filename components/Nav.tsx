@@ -267,7 +267,7 @@ export default function Nav() {
                 Sign Up Now
               </Link>
               <Link
-                href="/dashboard/"
+                href="/sign-in/"
                 className="flex items-center justify-center border border-[#2ea3f2] text-[#2ea3f2] text-sm font-semibold py-3 rounded"
                 onClick={() => setMobileOpen(false)}
               >
