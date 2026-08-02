@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import FormCard from '@/components/FormCard';
 import CTABar from '@/components/CTABar';
-import { ArrowRight } from 'lucide-react';
+import QuotePageForm from '@/components/QuotePageForm';
 
 export const metadata: Metadata = {
   title: 'Get a Spray Foam Insurance Quote | Fast, Free, Specialized',
@@ -19,9 +18,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-
-const inputBase =
-  'w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted';
 
 export default function QuotePage() {
   return (
@@ -101,161 +97,7 @@ export default function QuotePage() {
 
       {/* Sign Up Form */}
       <div className="max-w-3xl mx-auto my-12 px-4">
-        <FormCard title="Sign Up Form">
-          <div className="mb-4">
-            <label className="block text-sm font-label font-semibold text-text mb-1.5">Business Name</label>
-            <input type="text" placeholder="E.g. text placeholder" className={inputBase} />
-          </div>
-
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">First Name *</label>
-              <input type="text" required placeholder="E.g. John" className={inputBase} />
-            </div>
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Last Name</label>
-              <input type="text" placeholder="E.g. Doe" className={inputBase} />
-            </div>
-          </div>
-
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Email Address *</label>
-              <input type="email" required placeholder="E.g. john@doe.com" className={inputBase} />
-            </div>
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Phone Number *</label>
-              <input type="tel" required placeholder="E.g. +1 3004005000" className={inputBase} />
-            </div>
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-sm font-label font-semibold text-text mb-1.5">Street Address *</label>
-            <input type="text" required placeholder="E.g. 42 Wallaby Way" className={inputBase} />
-          </div>
-
-          <div className="grid sm:grid-cols-3 gap-4">
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">City *</label>
-              <input type="text" required placeholder="E.g. Sydney" className={inputBase} />
-            </div>
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">State/Province *</label>
-              <input type="text" required placeholder="E.g. New South Wales" className={inputBase} />
-            </div>
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">ZIP / Postal Code *</label>
-              <input type="text" required placeholder="E.g. 2000" className={inputBase} />
-            </div>
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-sm font-label font-semibold text-text mb-1.5">Message</label>
-            <textarea
-              rows={3}
-              maxLength={180}
-              placeholder="Please let us know how we can help you best. Tell us about your business-are you only doing spray foam insulation, roofing, slab jacking? What percent new versus remodel? What percent commercial versus residential? What price do we need to beat?"
-              className={inputBase + ' resize-none'}
-            />
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-sm font-label font-semibold text-text mb-1.5">FEIN</label>
-            <input type="text" placeholder="Helps us shop more carriers. Required for Workers Compensation Insurance quotes." className={inputBase} />
-          </div>
-
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Gross Sales</label>
-              <input type="text" placeholder="Estimate Next 12 Months" className={inputBase} />
-            </div>
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Employee count</label>
-              <input type="text" placeholder="E.g. 10" className={inputBase} />
-            </div>
-          </div>
-
-          <div className="grid sm:grid-cols-2 gap-4">
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Employee Payroll</label>
-              <input type="text" placeholder="Estimate Next 12 Months" className={inputBase} />
-            </div>
-            <div className="mb-4">
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">Subcontractor expenses</label>
-              <input type="text" placeholder="Estimate Next 12 Months" className={inputBase} />
-            </div>
-          </div>
-
-          <div className="mb-6">
-            <label className="block text-sm font-label font-semibold text-text mb-1.5">Material Costs</label>
-            <input type="text" placeholder="Estimate Next 12 Months" className={inputBase} />
-          </div>
-
-          <div className="mb-6">
-            <p className="text-sm font-label font-semibold text-text mb-1">How much Spray Foam General Liability Insurance coverage?</p>
-            <p className="text-xs text-muted mb-2">Select the amount of spray foam insurance coverage you are looking for.</p>
-            <div className="space-y-2">
-              {['$500,000/$1,000,000', '$1,000,000/$1,000,000', '$1,000,000/$2,000,000', 'Not Needed'].map((opt) => (
-                <label key={opt} className="flex items-center gap-2 text-sm text-muted cursor-pointer">
-                  <input type="radio" name="gl_amount" className="accent-primary" />
-                  {opt}
-                </label>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-6">
-            <p className="text-sm font-label font-semibold text-text mb-1">
-              Workers Compensation Insurance for Your Spray Foam Installers and Other Employees
-            </p>
-            <p className="text-xs text-muted mb-2">Select the amount of spray foam workers comp coverage you would like quoted.</p>
-            <div className="space-y-2">
-              {['$100,000', '$500,000', '$1,000,000', 'Not Needed'].map((opt) => (
-                <label key={opt} className="flex items-center gap-2 text-sm text-muted cursor-pointer">
-                  <input type="radio" name="wc_amount" className="accent-primary" />
-                  {opt}
-                </label>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-6">
-            <p className="text-sm font-label font-semibold text-text mb-1">Commercial Auto Insurance for Your Spray Rig</p>
-            <p className="text-xs text-muted mb-2">
-              Please email a picture of your drivers license, current auto policy info, and vin
-              number/registration to Josh@sprayfoaminsurance.com, or call 844-967-5247.
-            </p>
-            <div className="space-y-2">
-              {['$100,000', '$500,000', '$1,000,000', 'Not Needed'].map((opt) => (
-                <label key={opt} className="flex items-center gap-2 text-sm text-muted cursor-pointer">
-                  <input type="radio" name="auto_amount" className="accent-primary" />
-                  {opt}
-                </label>
-              ))}
-            </div>
-          </div>
-
-          <div className="mb-6">
-            <p className="text-sm font-label font-semibold text-text mb-1">Spray Foam Surety Bond</p>
-            <p className="text-xs text-muted mb-2">There are many different surety amounts if you don&apos;t see what you need call or email.</p>
-            <div className="space-y-2">
-              {['$5,000', '$10,000', '$100,000'].map((opt) => (
-                <label key={opt} className="flex items-center gap-2 text-sm text-muted cursor-pointer">
-                  <input type="radio" name="surety_amount" className="accent-primary" />
-                  {opt}
-                </label>
-              ))}
-            </div>
-          </div>
-
-          <button
-            type="submit"
-            className="amber-cta w-full py-4 rounded-full font-label font-bold text-lg flex items-center justify-center gap-2"
-          >
-            Send Message
-            <ArrowRight className="w-5 h-5" />
-          </button>
-        </FormCard>
+        <QuotePageForm />
       </div>
 
       <CTABar />
