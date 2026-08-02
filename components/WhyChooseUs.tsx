@@ -41,7 +41,7 @@ const pillars = [
     title: 'Specialized, Not Generic',
     description:
       'Standard contractor policies carry exclusions that gut coverage the moment a spray foam claim comes in. Every policy we write is designed around SPF-specific exposures — overspray, off-gassing, chemical burns, adhesion failures.',
-    tag: 'No Coverage Gaps',
+    tag: 'SPF-Specific Coverage',
     color: 'text-[#f59e0b]',
     bg: 'bg-[#f59e0b]/15',
     border: 'border-[#f59e0b]/30',
