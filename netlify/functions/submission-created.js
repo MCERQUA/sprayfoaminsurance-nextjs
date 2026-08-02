@@ -35,6 +35,13 @@ exports.handler = async (event) => {
   };
   delete body['bot-field'];
 
+  // The lead API promotes only a fixed set of keys to first-class columns:
+  // name, email, phone, message, company (-> business_name). Everything else is
+  // retained in extra_fields. Verified 2026-08-02 by probing the endpoint.
+  // `businessName` alone therefore leaves business_name empty, so mirror it into
+  // `company` — downstream (AgencyZoom/AMS360) reads the column, not extra_fields.
+  if (!body.company && body.businessName) body.company = body.businessName;
+
   try {
     const res = await fetch(WEBHOOK, {
       method: 'POST',
