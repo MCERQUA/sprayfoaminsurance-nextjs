@@ -5,7 +5,6 @@ import RigQuoteForm from '@/components/RigQuoteForm';
 import GlassCard from '@/components/GlassCard';
 import FormCard from '@/components/FormCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { clsx } from 'clsx';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Rig & Equipment Insurance | Inland Marine',
@@ -24,8 +23,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-
-const formSteps = ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5', 'Page 6', 'Finish'];
 
 const coverList = [
   {
@@ -90,36 +87,9 @@ export default function SprayFoamRigInsurancePage() {
 
       <PageHero title="Inland Marine For Spray Foam Contractors" />
 
-      {/* Multi-step lead form */}
+      {/* Lead form */}
       <section className="max-w-3xl mx-auto px-4 pb-12">
         <FormCard title="Spray Foam Contractors Inland Marine Form">
-          {/* Step indicator */}
-          <div className="flex items-center justify-between mb-8 overflow-x-auto">
-            {formSteps.map((step, i) => (
-              <div key={step} className="flex items-center flex-1 last:flex-none">
-                <div className="flex flex-col items-center gap-1 shrink-0">
-                  <span
-                    className={clsx(
-                      'w-3 h-3 rounded-full',
-                      i === 0 ? 'bg-primary' : 'bg-muted/30'
-                    )}
-                  />
-                  <span
-                    className={clsx(
-                      'text-[10px] font-label whitespace-nowrap',
-                      i === 0 ? 'text-primary font-semibold' : 'text-muted'
-                    )}
-                  >
-                    {step}
-                  </span>
-                </div>
-                {i < formSteps.length - 1 && (
-                  <span className="h-px flex-1 bg-muted/20 mx-1" />
-                )}
-              </div>
-            ))}
-          </div>
-
           <RigQuoteForm />
         </FormCard>
       </section>
