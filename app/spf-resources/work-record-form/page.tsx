@@ -15,7 +15,7 @@ const fieldClass = 'mb-4';
 const initialForm = {
   // Contact & job site
   businessName: '',
-  installerName: '',
+  name: '',
   email: '',
   phone: '',
   address: '',
@@ -59,6 +59,8 @@ type FormData = typeof initialForm;
 export default function WorkRecordFormPage() {
   const [formData, setFormData] = useState<FormData>(initialForm);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -67,9 +69,36 @@ export default function WorkRecordFormPage() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(false);
+
+    // Delivered via Netlify Forms (registered in public/__forms.html as
+    // "work-record") -> netlify/functions/submission-created.js -> lead pipeline.
+    // This handler previously did preventDefault(); setSubmitted(true) and
+    // transmitted nothing: the installer saw "saved" and no record existed.
+    const body = new URLSearchParams();
+    body.append('form-name', 'work-record');
+    (Object.keys(formData) as (keyof FormData)[]).forEach((k) =>
+      body.append(k, formData[k]),
+    );
+    body.append('form_type', 'work-record');
+    body.append('source_site', 'sprayfoaminsurance');
+
+    try {
+      const res = await fetch('/__forms.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
+      });
+      if (!res.ok) throw new Error(`Submit failed: ${res.status}`);
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -170,7 +199,19 @@ export default function WorkRecordFormPage() {
                 </button>
               </GlassCard>
             ) : (
-              <form onSubmit={handleSubmit}>
+              <form
+                onSubmit={handleSubmit}
+                name="work-record"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                noValidate
+              >
+                <input type="hidden" name="form-name" value="work-record" />
+                <p className="hidden">
+                  <label>
+                    Don&apos;t fill this out: <input name="bot-field" onChange={handleChange} />
+                  </label>
+                </p>
                 {/* Contact & Job Site */}
                 <div className={fieldClass}>
                   <label className={labelClass} htmlFor="businessName">
@@ -188,16 +229,16 @@ export default function WorkRecordFormPage() {
                 </div>
 
                 <div className={fieldClass}>
-                  <label className={labelClass} htmlFor="installerName">
+                  <label className={labelClass} htmlFor="wr-name">
                     Installer Name *
                   </label>
                   <input
-                    id="installerName"
-                    name="installerName"
+                    id="wr-name"
+                    name="name"
                     type="text"
                     className={inputClass}
                     placeholder="E.g. John Doe"
-                    value={formData.installerName}
+                    value={formData.name}
                     onChange={handleChange}
                     required
                   />
@@ -711,11 +752,20 @@ export default function WorkRecordFormPage() {
                   </button>
                   <button
                     type="submit"
-                    className="primary-btn inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-label font-semibold text-sm"
+                    disabled={submitting}
+                    className="primary-btn inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-label font-semibold text-sm disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Send Message
+                    {submitting ? 'Sending…' : 'Send Message'}
                   </button>
                 </div>
+
+                {error && (
+                  <p className="text-xs text-red-400 mt-3">
+                    Something went wrong saving your work record. Please call{' '}
+                    <a href="tel:844-967-5247" className="underline">844-967-5247</a> or email{' '}
+                    <a href="mailto:josh@sprayfoaminsurance.com" className="underline">josh@sprayfoaminsurance.com</a>.
+                  </p>
+                )}
               </form>
             )}
           </FormCard>
