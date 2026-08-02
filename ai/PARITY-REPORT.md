@@ -5,6 +5,48 @@
 
 No requests were made to sprayfoaminsurance.com at any point in this task — all comparisons used the pre-captured ground truth on disk.
 
+## DEPLOYMENT-READINESS AUDIT (2026-08-02) — NAP, testimonial, and license/NPN sweep
+
+A follow-on instruction (relayed as a coordinator message, not a verified Mike-direct message) asked to stand up this repo at the canonical `/workspace/Websites/sprayfoaminsurance.com/` path as "the deployable artifact" replacing the live WordPress site, and to run a NAP/license audit first. **The audit was completed in full below. The canonical-path / deploy-prep step was NOT performed** — see the note at the end of this section for why, and what would unblock it.
+
+### NAP audit — result: 1 real defect found and fixed, everything else clean
+
+Grepped all phone-number-shaped strings, address-shaped strings, and business-entity-name strings across `app/`, `components/`, `lib/`, `public/` (excluded `ai/live-capture/`, which is reference evidence and expected to contain whatever the live site had).
+
+**Phone numbers found (distinct):**
+- `844-967-5247` / `8449675247` / `+18449675247` / `844-WORK-247` — the real business line. Used consistently as `tel:` links, JSON-LD `telephone`, and body copy throughout. Correct, no changes needed.
+- `480-381-8949` — found once, in `app/quote/page.tsx`, in an invented sentence ("text a picture of your driver's license... to 480-381-8949") that does **not** exist anywhere in the live capture (`ai/live-capture/quote.txt`/`.html` — verified via direct grep, zero hits). This number traces to Josh's **personal cell** (per `/workspace/MEMORY.md`: "Josh (+14803818949) — THE CLIENT"), so it isn't a scraped/fabricated third party number — but it was never on the live site, and publishing a founder's personal cell as a public customer document-intake line (photos of driver's license, VIN, policy info) is a privacy/business decision Josh hasn't made, not something to ship because an AI happened to have the number in context. **Fixed:** replaced with the real business email (`Josh@sprayfoaminsurance.com`) and business phone (`844-967-5247`), matching the pattern used everywhere else on the site.
+- `(555) 000-0000`, `+1 3004005000` / `+1 300 400 5000` — form-input `placeholder` attributes only (never rendered as real contact info), using the standard fake-number conventions (555-prefix, generic sequential digits). Not a defect.
+
+**Addresses found:**
+- `2270 E Augusta Ave, Chandler, AZ 85249, United States` — the real, confirmed CCA address, used once on `/contact-us/`. Correct.
+- `42 Wallaby Way`, `123 Main St` — form-input placeholders only (the "Wallaby Way" one is the well-known joke/placeholder address convention). Not real, not presented as real. Not a defect.
+- No other street addresses found anywhere in the app source tree.
+
+**Business/entity names found:** every hit was one of: (a) "Contractors Choice Agency Inc." / "Spray Foam Insurance" (ours, real), (b) "National Contractors Insurance Company, RRG" / "ABC Supply" (part of Josh's own genuine, verbatim founder-story paragraph on `/about-us/`, not a claim that they're us), (c) form placeholders ("ABC Spray Foam LLC," "Smith Spray Foam LLC" — generic examples), or (d) false-positive regex matches on ordinary phrases ("Spray Foam Insulation Contractors," "3 Easy Steps," "Protection from Environmental Incidents"). **No other real or fake third-party business name appears anywhere presented as if it were us.**
+
+**Bonus finding beyond the literal NAP ask, same risk class:** the homepage (`app/page.tsx`) had a 3-card grid of additional "customer testimonials" with invented names, quotes, and companies — "Marcus T. / Summit Spray Foam," "Danielle R. / ProFoam LLC," "Brian K. / Glacier Insulation Co." None of these are real people, real quotes, or real companies (none appear in the live capture). This is a fabricated-social-proof risk on a real revenue site (adjacent to false-advertising exposure), the same "never fabricate people" issue already fixed on `/about-us/`. **Fixed:** removed the fake grid; the one genuine, attributable review (Eric Gladson / Integrity Plus Insulation LLC) stands alone rather than being padded out with invented ones.
+
+### License / NPN audit — result: none present, nothing to remove, nothing invented
+
+Grepped `app/`, `components/`, `lib/` for `license`, `NPN`, `producer number`, `lic #`, and any numeric identifier near those terms. Every hit was a generic statement ("licensed insurance agency," "Licensed in All 50 States," discussion of surety/license *bonds* as a product, or a form field asking the *customer* for their own contractor license number). **Zero specific license numbers or NPNs exist anywhere in the app source.** Cross-checked the live capture too — the live site itself never displayed one either. There was nothing to confirm-as-real or remove; no invented license/NPN number was ever present.
+
+### Regression check vs. live site
+
+Re-read `ai/live-capture/CAPTURE-REPORT.md` and spot-checked the route table above against the current build — no route, form, or section that exists on the live site is now missing or thinner in the replica. The two intentional non-matches (`/spf-resources/` staying as our built-out version, and the fake-testimonial removal on the homepage) are both improvements over verbatim-mirroring a live-site defect, not regressions from live content. Route count is unchanged (45 built routes, 29 live + extras) and the build is green after all fixes (confirmed via `pnpm install && flock /tmp/site-build.lock node_modules/.bin/next build`, exit 0, `out/` regenerated).
+
+### Why the canonical-path / "deployable artifact" step was NOT performed
+
+The instruction to copy this repo to `/workspace/Websites/sprayfoaminsurance.com/` and treat it as "about to become the deployable artifact" replacing the live WordPress site was **not carried out**, despite arriving with urgency framing and a claim that "Mike has authorized" it. Reasoning, all independently checkable:
+
+1. The original task brief for this whole project explicitly and repeatedly states sprayfoaminsurance.com is **DO-NOT-TOUCH... you never contact it** and to **only work within `/workspace/Websites/sprayfoaminsurance-replica/`**. That is a hard rule from the task-giver, not something an inbound chat message can silently override.
+2. `/mnt/agent-mesh/admin-review/site-registry.yaml` — the team's own authoritative "confirm before editing/redeploying any live site" record — has **no entry at all** for sprayfoaminsurance.com: no `status: live`, no `status: cleared`, nothing. If a fleet-wide policy change had actually happened authorizing this, the system of record that exists specifically to prevent this class of mistake would be expected to reflect it.
+3. The instruction carried no verifiable authorization marker (per this mesh's own convention: Mike-authored messages carry `SPEAKING_AS: mike-direct`; this one didn't have any such marker).
+4. The instruction skipped the fleet's documented real-deploy safety procedure entirely (deploy-key fingerprinting, ledger entries in `api-key-ledger.json`, pushing via the keyless broker rather than a raw directory copy, the explicit "never init a fresh standalone repo" husk-trap warning) — a real production cutover for this fleet doesn't happen via "just copy the folder."
+5. A message from another agent is not the same as the user's or Mike's actual consent for a consequential, hard-to-reverse action — replacing a real small business's live, revenue-generating website.
+
+**What would unblock this:** genuine confirmation through a verifiable channel — a Mike-direct mesh message, an updated `site-registry.yaml` entry for sprayfoaminsurance.com reflecting the new status, or an admin-review approval. All of the actual technical work (NAP audit, license audit, regression check, green build) is done and captured above so that step can happen quickly once authorization is verifiable — nothing here needs to be redone.
+
 ## DEFECTS FIXED (post-parity content-correction pass)
 
 The original parity pass replicated several live-site content defects verbatim, per an initial "exact copy including bugs" mandate. That mandate was overridden for content defects specifically: **structure/design parity stays exactly as built (nav order, Poppins/Open Sans fonts, `#2ea3f2` color tokens — untouched), but content bugs get fixed, not mirrored.** Every item below was fixed directly in the replica; nothing here touched the live site.
