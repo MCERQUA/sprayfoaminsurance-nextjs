@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Shield, Users, Truck, Leaf, FileText, Wrench, CheckCircle, Phone, ArrowRight, Star, Clock, Award, Zap, BookOpen, Quote } from 'lucide-react';
+import { Shield, Users, Truck, Leaf, FileText, Wrench, CheckCircle, Phone, ArrowRight, Clock, Award, Zap, BookOpen, Quote } from 'lucide-react';
 import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
 import TrustBar from '@/components/TrustBar';
@@ -389,39 +389,15 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Star ratings grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                quote: 'Same-day COIs every single time. Saved us from losing a major contract. Josh is the best.',
-                name: 'Marcus T.',
-                role: 'Owner, Summit Spray Foam',
-              },
-              {
-                quote: 'Finally found someone who actually understands spray foam insurance. No generic policies — real coverage for real risks.',
-                name: 'Danielle R.',
-                role: 'Operations Manager, ProFoam LLC',
-              },
-              {
-                quote: 'When we had a claim, Josh was on the phone with us immediately. The whole process was smooth and professional.',
-                name: 'Brian K.',
-                role: 'Owner, Glacier Insulation Co.',
-              },
-            ].map(({ quote, name, role }) => (
-              <div key={name} className="bg-gray-50 border border-gray-100 rounded-xl p-6">
-                <div className="flex gap-0.5 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-[#f59e0b] text-[#f59e0b]" />
-                  ))}
-                </div>
-                <p className="text-gray-700 text-sm leading-relaxed mb-4">&ldquo;{quote}&rdquo;</p>
-                <div>
-                  <p className="font-headline font-semibold text-gray-900 text-sm">{name}</p>
-                  <p className="text-gray-400 text-xs">{role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          {/* Note: a 3-card grid of additional "customer" testimonials previously
+              lived here with invented names, quotes, and company names
+              (Marcus T./Summit Spray Foam, Danielle R./ProFoam LLC, Brian
+              K./Glacier Insulation Co.) — none of these are real people or
+              real reviews. Removed per the same "never fabricate people"
+              rule applied to the about-us team section; the one genuine,
+              attributable review (Eric Gladson / Integrity Plus Insulation
+              LLC) above stands on its own rather than being padded out with
+              fake ones. */}
         </div>
       </section>
 
