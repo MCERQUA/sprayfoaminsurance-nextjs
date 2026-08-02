@@ -8,6 +8,9 @@
     quote               → components/QuoteFormSection.tsx  (homepage)
     quote-detailed      → components/QuotePageForm.tsx     (/quote/)
     vegas-quote-request → components/VegasQuoteForm.tsx    (/vegas/)
+    contact             → components/ContactForm.tsx       (/contact-us/)
+    rig-quote           → components/RigQuoteForm.tsx      (/inland-marine/spray_foam_rig_insurance/)
+    work-record         → app/spf-resources/work-record-form/page.tsx
 
   Delivery is Netlify Forms → netlify/functions/submission-created.js → the lead
   pipeline. There is deliberately NO client-side webhook fetch in any form; a
@@ -70,6 +73,70 @@
       <input type="email" name="email" />
       <input type="tel" name="phone" />
       <textarea name="message"></textarea>
+      <input type="text" name="form_type" />
+      <input type="text" name="source_site" />
+      <input type="text" name="bot-field" />
+    </form>
+
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+      <input type="text" name="form_type" />
+      <input type="text" name="source_site" />
+      <input type="text" name="bot-field" />
+    </form>
+
+    <form name="rig-quote" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="businessName" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+      <input type="text" name="service_type" />
+      <input type="text" name="form_type" />
+      <input type="text" name="source_site" />
+      <input type="text" name="bot-field" />
+    </form>
+
+    <form name="work-record" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="businessName" />
+      <input type="text" name="name" />
+      <input type="text" name="email" />
+      <input type="text" name="phone" />
+      <input type="text" name="address" />
+      <input type="text" name="aptSuite" />
+      <input type="text" name="city" />
+      <input type="text" name="state" />
+      <input type="text" name="zip" />
+      <input type="text" name="isolatedFromWind" />
+      <input type="text" name="signagePosted" />
+      <input type="text" name="ventilated" />
+      <input type="text" name="spfManufacture" />
+      <input type="text" name="isoLot" />
+      <input type="text" name="isoExpiry" />
+      <input type="text" name="resinLot" />
+      <input type="text" name="resinExpiry" />
+      <input type="text" name="proportionerType" />
+      <input type="text" name="isoTemp" />
+      <input type="text" name="isoPressure" />
+      <input type="text" name="resinTemp" />
+      <input type="text" name="resinPressure" />
+      <input type="text" name="hoseHeatTemp" />
+      <input type="text" name="strokesUsed" />
+      <input type="text" name="ambientTemp" />
+      <input type="text" name="substrateTemp" />
+      <input type="text" name="relativeHumidity" />
+      <input type="text" name="windVelocity" />
+      <input type="text" name="substrateHumidity" />
+      <input type="text" name="substrateType" />
+      <input type="text" name="substrateDry" />
+      <input type="text" name="substrateClean" />
+      <input type="text" name="substrateFastened" />
+      <input type="text" name="primerRequired" />
+      <input type="text" name="exteriorCoatingRequired" />
+      <textarea name="notes"></textarea>
       <input type="text" name="form_type" />
       <input type="text" name="source_site" />
       <input type="text" name="bot-field" />

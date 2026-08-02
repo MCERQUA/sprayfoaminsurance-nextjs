@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import CTABar from '@/components/CTABar';
+import RigQuoteForm from '@/components/RigQuoteForm';
 import GlassCard from '@/components/GlassCard';
 import FormCard from '@/components/FormCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -119,51 +120,7 @@ export default function SprayFoamRigInsurancePage() {
             ))}
           </div>
 
-          <form className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-label font-semibold text-text mb-1.5">
-                  Company/Account Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Insurance account name"
-                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-label font-semibold text-text mb-1.5">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  placeholder="E.g. (480) 555-0142"
-                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                />
-              </div>
-            </div>
-            <div>
-              <label className="block text-sm font-label font-semibold text-text mb-1.5">
-                Email Address
-              </label>
-              <input
-                type="email"
-                placeholder="E.g. john@doe.com"
-                className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-              />
-            </div>
-            <div className="flex items-center justify-between pt-2">
-              <span className="text-xs text-muted">
-                Click to Save Your Progress and Email Yourself the Link
-              </span>
-              <button
-                type="submit"
-                className="primary-btn px-8 py-2.5 rounded-full font-label font-semibold text-sm shrink-0"
-              >
-                Next
-              </button>
-            </div>
-          </form>
+          <RigQuoteForm />
         </FormCard>
       </section>
 

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import PageHero from '@/components/PageHero';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CTABar from '@/components/CTABar';
+import ContactForm from '@/components/ContactForm';
 import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
@@ -61,35 +62,7 @@ export default function ContactUsPage() {
               assisting you with any insurance-related needs or inquiries you may have.
             </p>
 
-            <form className="glass-card p-6 sm:p-8">
-              <div className="mb-4">
-                <label className="block text-sm font-label font-semibold text-text mb-1.5">Name</label>
-                <input
-                  type="text"
-                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                  placeholder="Your name"
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-sm font-label font-semibold text-text mb-1.5">Email Address</label>
-                <input
-                  type="email"
-                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                  placeholder="you@company.com"
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block text-sm font-label font-semibold text-text mb-1.5">Message</label>
-                <textarea
-                  rows={5}
-                  className="w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted"
-                  placeholder="Tell us about your coverage needs..."
-                />
-              </div>
-              <button type="submit" className="primary-btn w-full py-3 rounded-full font-label font-semibold text-base">
-                Submit
-              </button>
-            </form>
+            <ContactForm />
           </div>
 
           {/* Right — Office Location */}
