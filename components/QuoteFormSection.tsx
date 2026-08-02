@@ -3,10 +3,11 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
 import { CheckCircle, Shield, Clock, MapPin, Star } from 'lucide-react';
 
-// Josh's lead-tracker webhook (Neon → Zapier → AgencyZoom → AMS360).
-// Canonical pattern: /config/KNOWLEDGE.md + /workspace/business/leads.json
-const LEAD_WEBHOOK_URL =
-  'https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=sprayfoaminsurance';
+// Delivery is Netlify Forms → netlify/functions/submission-created.js → Josh's
+// lead pipeline (Neon → Zapier → AgencyZoom → AMS360). The client-side
+// fire-and-forget POST that used to live here was removed: it duplicated every
+// lead (the function posts the same submission) and its .catch(() => {})
+// swallowed every CORS/network failure silently.
 
 const US_STATES = [
   'Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut',
@@ -105,26 +106,6 @@ export default function QuoteFormSection() {
         body: body.toString(),
       });
       if (!res.ok) throw new Error(`Submit failed: ${res.status}`);
-
-      // Fire-and-forget into Josh's lead-tracker pipeline (Neon → Zapier → AgencyZoom →
-      // AMS360). Same client-side pattern as the sprayfoaminsurance-ca sister-site.
-      // Canonical webhook: /config/KNOWLEDGE.md + /workspace/business/leads.json
-      fetch(LEAD_WEBHOOK_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: form.name,
-          businessName: form.businessName,
-          email: form.email,
-          phone: form.phone,
-          state: form.state,
-          service_type: form.coverage.join(', '),
-          message: form.message,
-          form_type: 'quote-request',
-          source_site: 'sprayfoaminsurance',
-        }),
-      }).catch(() => {});
-
       setSubmitted(true);
     } catch {
       setError(true);

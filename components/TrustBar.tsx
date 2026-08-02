@@ -4,7 +4,7 @@ const signals = [
   { icon: ShieldCheck, label: 'A-Rated Carrier Partners', color: 'text-[#2ea3f2]', bg: 'bg-[#2ea3f2]/10' },
   { icon: MapPin,      label: 'Licensed in All 50 States', color: 'text-[#29c4a9]', bg: 'bg-[#29c4a9]/10' },
   { icon: Award,       label: 'SPF-Only Focus',            color: 'text-[#2ea3f2]', bg: 'bg-[#2ea3f2]/10' },
-  { icon: BadgeCheck,  label: '500+ Contractors Insured',  color: 'text-[#29c4a9]', bg: 'bg-[#29c4a9]/10' },
+  { icon: BadgeCheck,  label: '298 Active Contractor Clients', color: 'text-[#29c4a9]', bg: 'bg-[#29c4a9]/10' },
   { icon: CheckCircle, label: 'Same-Day Certificates',     color: 'text-[#f59e0b]', bg: 'bg-[#f59e0b]/10'  },
 ];
 

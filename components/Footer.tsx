@@ -103,7 +103,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary/10 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
+        {/* Producer disclosure — fleet-standard string. NPN 8608479 and AZ
+            License 3001409680 are the only license numbers cleared for use. */}
+        <div className="border-t border-primary/10 mt-12 pt-6">
+          <p className="text-muted text-xs text-center sm:text-left">
+            Contractors Choice Agency &middot; 12220 E Riggs Road, Suite #105, Chandler, AZ 85249
+            &middot; AZ License #3001409680 &middot; NPN #8608479
+          </p>
+        </div>
+
+        <div className="mt-4 pt-2 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-muted text-xs">
             &copy; {new Date().getFullYear()} Spray Foam Insurance. All rights reserved.
           </p>
