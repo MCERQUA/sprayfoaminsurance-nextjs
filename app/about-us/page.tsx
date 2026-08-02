@@ -137,9 +137,6 @@ export default function AboutUsPage() {
       <StatBar
         stats={[
           { value: '298', label: 'Active Contractor Clients' },
-          { value: '12', label: 'Staff Members' },
-          { value: '20,000+', label: 'Work Hours' },
-          { value: '5', label: 'Win Awarded' },
         ]}
       />
 
