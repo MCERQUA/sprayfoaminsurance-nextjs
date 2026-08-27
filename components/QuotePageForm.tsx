@@ -77,6 +77,14 @@ export default function QuotePageForm() {
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    // 2026-08-27: these forms carry `noValidate`, and nothing replaced the native
+    // checks — a submission with no name, email or phone could be sent, producing a
+    // lead nobody can contact back. Run the browser's own constraint validation
+    // before building the payload.
+    if (!e.currentTarget.checkValidity()) {
+      e.currentTarget.reportValidity();
+      return;
+    }
     setSubmitting(true);
     setError(false);
 
@@ -162,12 +170,13 @@ export default function QuotePageForm() {
         </p>
 
         <div className="mb-4">
-          <label htmlFor="qp-businessName" className={labelBase}>Business Name</label>
+          <label htmlFor="qp-businessName" className={labelBase}>Business Name *</label>
           <input
             id="qp-businessName" name="businessName" type="text"
             autoComplete="organization"
             placeholder="E.g. Smith Spray Foam LLC"
             value={form.businessName} onChange={handleField} className={inputBase}
+            required
           />
         </div>
 

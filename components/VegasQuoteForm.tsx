@@ -41,6 +41,14 @@ export default function VegasQuoteForm() {
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    // 2026-08-27: these forms carry `noValidate`, and nothing replaced the native
+    // checks — a submission with no name, email or phone could be sent, producing a
+    // lead nobody can contact back. Run the browser's own constraint validation
+    // before building the payload.
+    if (!e.currentTarget.checkValidity()) {
+      e.currentTarget.reportValidity();
+      return;
+    }
     setSubmitting(true);
     setError(false);
 

@@ -12,6 +12,17 @@ const insuranceAgencySchema = {
   description:
     'Specialized insurance for spray foam contractors — general liability, workers comp, commercial auto, environmental liability, surety bonds, and rig & equipment coverage in all 50 US states.',
   priceRange: '$$',
+  // Added 2026-08-27: the schema declares LocalBusiness/InsuranceAgency but carried no
+  // address, which suppresses local rich results. Values match the footer and /contact-us
+  // exactly — the only address published on the site.
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '12220 E Riggs Road, Suite #105',
+    addressLocality: 'Chandler',
+    addressRegion: 'AZ',
+    postalCode: '85249',
+    addressCountry: 'US',
+  },
   areaServed: {
     '@type': 'Country',
     name: 'United States',

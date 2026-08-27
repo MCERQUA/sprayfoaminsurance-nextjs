@@ -1,0 +1,15 @@
+404	/wp-admin
+404	/wp-login.php
+404	/feed
+404	/rss
+200	/sitemap.xml
+404	/sitemap_index.xml
+404	/author/admin
+200	/?p=1
+404	/home
+404	/index.php
+200	/services/
+200	/blog/
+200	/contact-us/
+200	/about-us/
+200	/quote/

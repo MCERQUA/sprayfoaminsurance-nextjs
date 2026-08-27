@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 // Author attribution matches the live site's category archive (WordPress "by" byline).
 const authorByHref: Record<string, string> = {
-  '/2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships': 'mike',
+  '/2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships': 'Josh Cotner',
 };
 
 // Sorted newest-first to match the live category archive order.

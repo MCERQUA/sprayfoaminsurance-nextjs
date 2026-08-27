@@ -38,6 +38,14 @@ export default function RigQuoteForm() {
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    // 2026-08-27: these forms carry `noValidate`, and nothing replaced the native
+    // checks — a submission with no name, email or phone could be sent, producing a
+    // lead nobody can contact back. Run the browser's own constraint validation
+    // before building the payload.
+    if (!e.currentTarget.checkValidity()) {
+      e.currentTarget.reportValidity();
+      return;
+    }
     setSubmitting(true);
     setError(false);
 
@@ -111,13 +119,14 @@ export default function RigQuoteForm() {
           />
         </div>
         <div>
-          <label htmlFor="rq-businessName" className={labelClass}>Company/Account Name</label>
+          <label htmlFor="rq-businessName" className={labelClass}>Company/Account Name *</label>
           <input
             id="rq-businessName" name="businessName" type="text"
             autoComplete="organization"
             placeholder="Insurance account name"
             className={inputClass}
             value={form.businessName} onChange={handleField}
+            required
           />
         </div>
       </div>

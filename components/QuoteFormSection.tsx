@@ -61,6 +61,9 @@ export default function QuoteFormSection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(false);
+  // Separate from `error` (which means "the send failed"): this is a validation
+  // message shown before anything is sent. Added 2026-08-27 with the coverage check.
+  const [validationMsg, setValidationMsg] = useState<string | null>(null);
 
   function handleField(e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     const { name, value } = e.target;
@@ -79,8 +82,24 @@ export default function QuoteFormSection() {
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    // 2026-08-27: these forms carry `noValidate`, and nothing replaced the native
+    // checks — a submission with no name, email or phone could be sent, producing a
+    // lead nobody can contact back. Run the browser's own constraint validation
+    // before building the payload.
+    if (!e.currentTarget.checkValidity()) {
+      e.currentTarget.reportValidity();
+      return;
+    }
+    // The coverage legend is marked required, but HTML `required` on a checkbox only
+    // requires THAT box — it cannot express "at least one of the group", so the
+    // asterisk was unenforceable. Check it explicitly (2026-08-27).
+    if (form.coverage.length === 0) {
+      setValidationMsg('Please select at least one coverage you are interested in.');
+      return;
+    }
     setSubmitting(true);
     setError(false);
+    setValidationMsg(null);
 
     // Delivered via Netlify Forms (form registered in public/__forms.html).
     // Leads land in Netlify dashboard → Forms → "quote" + email notifications.
@@ -333,6 +352,9 @@ export default function QuoteFormSection() {
                   {submitting ? 'Sending…' : 'Get My Free Quote'}
                 </button>
 
+                {validationMsg && (
+                  <p className="text-center text-xs text-amber-400 mt-3">{validationMsg}</p>
+                )}
                 {error && (
                   <p className="text-center text-xs text-red-400 mt-3">
                     Something went wrong sending your request. Please call{' '}

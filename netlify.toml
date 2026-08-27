@@ -29,45 +29,10 @@
   status = 301
   force = true
 
-# ── LEAD DELIVERY (added 2026-08-27 by host, at Mike's direction) ──────────────
-# Form DETECTION was off on this site (processing_settings.ignore_html_forms=true, the
-# documented #1 lead-killer) — every submission would have been silently dropped. The flag
-# is now false and a rebuild registered all six forms. These blocks are the other half:
-# detection without delivery still loses the lead. In-repo because a git build RE-READS
-# site config and drops API-added notifications (josh-site-deploy skill, 2026-06-20).
-
-[[notifications]]
-  form_name = "contact"
-  [notifications.webhook]
-    url = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=sprayfoaminsurance.com"
-    events = ["submission_created"]
-
-[[notifications]]
-  form_name = "quote"
-  [notifications.webhook]
-    url = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=sprayfoaminsurance.com"
-    events = ["submission_created"]
-
-[[notifications]]
-  form_name = "quote-detailed"
-  [notifications.webhook]
-    url = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=sprayfoaminsurance.com"
-    events = ["submission_created"]
-
-[[notifications]]
-  form_name = "rig-quote"
-  [notifications.webhook]
-    url = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=sprayfoaminsurance.com"
-    events = ["submission_created"]
-
-[[notifications]]
-  form_name = "vegas-quote-request"
-  [notifications.webhook]
-    url = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=sprayfoaminsurance.com"
-    events = ["submission_created"]
-
-[[notifications]]
-  form_name = "work-record"
-  [notifications.webhook]
-    url = "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=sprayfoaminsurance.com"
-    events = ["submission_created"]
+# LEAD DELIVERY (2026-08-27): handled by netlify/functions/submission-created.js, which is
+# the path that actually fires — it flattens Netlify's {payload:{...}} wrapper into the flat
+# body the lead pipeline expects. The six [[notifications]] webhook blocks briefly added here
+# were inert (a raw wrapper posted straight to the pipeline arrives with no top-level `name`
+# and is rejected as an empty submission), and if Netlify ever started honouring them they
+# would have produced TWO lead records per submission. Removed deliberately — do not re-add
+# without first retiring the function.
