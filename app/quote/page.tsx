@@ -24,73 +24,72 @@ export default function QuotePage() {
     <>
       <section className="bg-background pt-24 pb-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">
+            Free &amp; No Obligation
+          </span>
           <h1 className="font-headline text-4xl font-bold text-text mb-6">
-            Join The Spray Foam Insurance Family
+            Get Your Spray Foam Insurance Quote
           </h1>
           <div className="space-y-4 font-label text-muted leading-relaxed">
             <p>
-              Your journey with Spray Foam Insurance is more than just obtaining an insurance
-              quote; it&apos;s an invitation to an exclusive community. By signing up, you&apos;re
-              gaining entry into a close-knit circle of professionals who share your passion and
-              dedication. Welcome to a space where support, expertise, and a sense of belonging
-              come together. Let&apos;s start protecting your business together.
+              Tell us how your operation actually runs — crew size, rigs, the chemicals you
+              spray, and the states you work in — and we will match it to coverage built for
+              spray foam contractors. No generic small-business policy with exclusions you find
+              out about after a claim.
             </p>
             <p>
-              At Spray Foam Insurance, we make it easy to get the insurance coverage you need.
-              Whether you&apos;re looking for auto, home, life, business, or any specialized
-              insurance, our team is here to provide you with a personalized quote that fits your
-              needs and budget.
+              Spray foam is all we write. That means we already know the underwriting questions
+              your carrier will ask, which exclusions matter on an SPF job, and how to get a
+              certificate issued the same day so a general contractor never holds up your start.
             </p>
           </div>
 
-          <h2 className="font-headline text-xl font-bold text-text mt-8 mb-3">How It Works</h2>
+          <h2 className="font-headline text-xl font-bold text-text mt-8 mb-3">What Happens Next</h2>
           <ol className="list-decimal list-inside space-y-2 text-muted font-label">
             <li>
-              <span className="font-semibold text-text">Submit Your Information:</span> Fill out
-              the simple form below with your details and the type of insurance coverage
-              you&apos;re looking for.
+              <span className="font-semibold text-text">You send the details:</span> the form
+              below takes a few minutes — no account, no obligation.
             </li>
             <li>
-              <span className="font-semibold text-text">Receive Your Quote:</span> One of our
-              experienced agents will review your information and provide you with a customized
-              quote.
+              <span className="font-semibold text-text">We shop A-rated carriers:</span> a
+              specialist reviews your operation and quotes it across multiple carriers rather
+              than one appetite.
             </li>
             <li>
-              <span className="font-semibold text-text">Review &amp; Decide:</span> We&apos;ll
-              walk you through the options and help you choose the best coverage to protect what
-              matters most.
+              <span className="font-semibold text-text">You review the options:</span> we walk
+              through what is covered, what is excluded, and what it costs — then you decide.
             </li>
           </ol>
 
-          <h2 className="font-headline text-xl font-bold text-text mt-8 mb-3">Why Choose Us?</h2>
+          <h2 className="font-headline text-xl font-bold text-text mt-8 mb-3">
+            Why Contractors Come To Us
+          </h2>
           <ul className="list-disc list-inside space-y-2 text-muted font-label">
             <li>
-              <span className="font-semibold text-text">Expert Guidance:</span> Our knowledgeable
-              agents are here to help you find the right coverage.
+              <span className="font-semibold text-text">SPF-only focus:</span> we are not
+              learning your trade on your policy.
             </li>
             <li>
-              <span className="font-semibold text-text">Customized Plans:</span> We tailor each
-              policy to meet your specific needs.
+              <span className="font-semibold text-text">A-rated carrier access:</span> multiple
+              markets competing for your business instead of a single quote.
             </li>
             <li>
-              <span className="font-semibold text-text">Competitive Rates:</span> Get affordable
-              coverage without compromising on protection.
+              <span className="font-semibold text-text">Same-day certificates:</span> COIs issued
+              the day you bind, so a missing certificate never costs you a job start.
             </li>
             <li>
-              <span className="font-semibold text-text">Fast &amp; Easy Process:</span> We make
-              getting a quote simple and stress-free.
+              <span className="font-semibold text-text">Licensed in all 50 states:</span> your
+              coverage travels with your crews.
             </li>
           </ul>
 
-          <h2 className="font-headline text-xl font-bold text-text mt-8 mb-3">Get Your Quote Today!</h2>
+          <h2 className="font-headline text-xl font-bold text-text mt-8 mb-3">Start Below</h2>
           <p className="text-muted font-label leading-relaxed">
-            To receive your free, no-obligation quote, please complete the form below or contact
-            us directly at{' '}
+            Complete the form for a free, no-obligation quote, or call{' '}
             <a href="tel:8449675247" className="text-primary font-semibold hover:text-accent">
               844-967-5247
             </a>{' '}
-            to speak with one of our agents. Our team will get back to you within 24 hours with
-            your personalized insurance quote. We&apos;re here to help you every step of the way!
+            to talk it through with a specialist. We respond within one business day.
           </p>
         </div>
       </section>
