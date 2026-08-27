@@ -35,7 +35,7 @@ export default function WorkersCompPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <PageHero
         title="Workers' Compensation for Spray Foam Contractors"
-        subtitle="Workers' Compensation Insurance is more than just a legal requirement; it's a commitment to the people who make your business thrive."
+        subtitle="Covers medical costs and lost wages when a crew member is hurt on the job — and it is rated on your payroll and class code, which is where most spray foam accounts are quoted wrong."
         ctaText="Get a Quote"
         ctaHref="/quote"
         badge="Workers' Comp"
@@ -77,7 +77,7 @@ export default function WorkersCompPage() {
           <GlassCard className="p-6 border-l-4 border-primary">
             <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
             <p className="text-muted font-label text-sm leading-relaxed">
-              Workers&apos; Compensation Insurance is more than just a legal requirement; it&apos;s a commitment to the people who make your business thrive. This vital coverage is designed to provide benefits to employees who suffer work-related injuries or illnesses. It not only protects your employees by covering their medical expenses and lost wages but also protects your business from costly lawsuits that can arise from workplace accidents.
+              Covers medical costs and lost wages when a crew member is hurt on the job — and it is rated on your payroll and class code, which is where most spray foam accounts are quoted wrong. This vital coverage is designed to provide benefits to employees who suffer work-related injuries or illnesses. It not only protects your employees by covering their medical expenses and lost wages but also protects your business from costly lawsuits that can arise from workplace accidents.
             </p>
           </GlassCard>
         </div>

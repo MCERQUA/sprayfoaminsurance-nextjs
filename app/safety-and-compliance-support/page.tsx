@@ -24,7 +24,7 @@ export default function SafetyAndCompliancePage() {
     <>
       <PageHero
         title="Safety and Compliance Support for Spray Foam Contractors"
-        subtitle="Safety and Compliance Support is more than just a service; it's a partnership in your journey towards excellence."
+        subtitle="Most SPF claims trace back to something a written procedure would have caught — ventilation, re-entry times, or a job record nobody kept."
         badge="OSHA Compliant"
         ctaText="Get a Quote"
         ctaHref="/quote"
@@ -66,7 +66,7 @@ export default function SafetyAndCompliancePage() {
           <GlassCard className="p-6 border-l-4 border-primary">
             <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
             <p className="text-muted font-label text-sm leading-relaxed">
-              Safety and Compliance Support is more than just a service; it&apos;s a partnership in your journey towards excellence. It&apos;s about providing you with the resources, guidance, and expertise you need to navigate the complex landscape of safety protocols and industry regulations.
+              Most SPF claims trace back to something a written procedure would have caught — ventilation, re-entry times, or a job record nobody kept. It&apos;s about providing you with the resources, guidance, and expertise you need to navigate the complex landscape of safety protocols and industry regulations.
             </p>
           </GlassCard>
         </div>

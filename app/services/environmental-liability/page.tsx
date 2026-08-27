@@ -36,7 +36,7 @@ export default function EnvironmentalLiabilityPage() {
 
       <PageHero
         title="Environmental Liability Insurance for Spray Foam Contractors"
-        subtitle="Environmental Liability Insurance is more than just an added layer of protection; it's a testament to your dedication to responsible and sustainable practices."
+        subtitle="Covers the overspray, fumes and off-gassing exposures a standard general liability policy typically excludes — the losses spray foam actually generates."
         ctaText="Get a Quote"
         ctaHref="/quote"
         badge="Environmental Liability"
@@ -78,7 +78,7 @@ export default function EnvironmentalLiabilityPage() {
           <GlassCard className="p-6 border-l-4 border-primary">
             <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
             <p className="text-muted font-label text-sm leading-relaxed">
-              Environmental Liability Insurance is more than just an added layer of protection; it&apos;s a testament to your dedication to responsible and sustainable practices. This coverage is crucial in mitigating the risks associated with handling hazardous materials and protecting the environment from potential harm.
+              Covers the overspray, fumes and off-gassing exposures a standard general liability policy typically excludes — the losses spray foam actually generates. This coverage is crucial in mitigating the risks associated with handling hazardous materials and protecting the environment from potential harm.
             </p>
           </GlassCard>
         </div>

@@ -138,7 +138,7 @@ export default function HomePage() {
               },
               {
                 title: 'Safety and Compliance Support',
-                description: "Safety is paramount, and compliance can be tricky. Our Safety and Compliance Support isn't just a service; it's your path to excellence. We offer the resources and guidance you need to maintain industry standards and ensure the safety of your operations.",
+                description: "Safety is paramount, and compliance can be tricky. Written procedures and job records — the documentation underwriters and adjusters ask for after a loss. We offer the resources and guidance you need to maintain industry standards and ensure the safety of your operations.",
                 href: '/safety-and-compliance-support',
                 icon: FileText,
                 color: 'text-[#f59e0b]',

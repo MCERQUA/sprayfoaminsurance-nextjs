@@ -37,7 +37,7 @@ export default function CommercialAutoPage() {
 
       <PageHero
         title="Commercial Auto for Spray Foam Contractors"
-        subtitle="Commercial Auto Insurance is more than just a requirement; it's a smart investment for any business that relies on vehicles for its daily operations."
+        subtitle="Your rig is a work vehicle carrying chemicals and equipment; a personal auto policy will not respond when it is in use for the business."
         ctaText="Get a Quote"
         ctaHref="/quote"
         badge="Commercial Auto"
@@ -79,7 +79,7 @@ export default function CommercialAutoPage() {
           <GlassCard className="p-6 border-l-4 border-primary">
             <h3 className="font-headline font-bold text-text mb-2">Understanding the Essentials</h3>
             <p className="text-muted font-label text-sm leading-relaxed">
-              Commercial Auto Insurance is more than just a requirement; it&apos;s a smart investment for any business that relies on vehicles for its daily operations. This coverage is designed to protect your business in situations where your vehicles or employees are involved in accidents while on the job. It goes beyond protecting your assets; it&apos;s about protecting your reputation as a reliable contractor your clients can count on to show up.
+              Your rig is a work vehicle carrying chemicals and equipment; a personal auto policy will not respond when it is in use for the business. This coverage is designed to protect your business in situations where your vehicles or employees are involved in accidents while on the job. It goes beyond protecting your assets; it&apos;s about protecting your reputation as a reliable contractor your clients can count on to show up.
             </p>
           </GlassCard>
         </div>

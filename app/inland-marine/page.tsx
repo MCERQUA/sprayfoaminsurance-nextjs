@@ -130,9 +130,11 @@ export default function InlandMarinePage() {
             Documentation as a Pillar of Protection
           </h3>
           <p className="text-muted text-sm">
-            Spray foam contractors are intimately familiar with the specialized equipment, tools,
-            and materials required to deliver exceptional results. These assets are not just
-            tools of the trade; they represent the lifeblood of your business. Precise
+            Inland marine is rated on what is actually on the truck &mdash; the proportioner,
+            hoses, generator, compressor and the rig itself. Schedule them at accurate
+            replacement values: undervaluing invites a coinsurance shortfall at claim time,
+            and carrying stale values on equipment you no longer own means paying for
+            coverage you cannot use. Precise
             documentation of these assets is more than just a best practice – it&apos;s an
             essential component of comprehensive protection for your business.
           </p>
