@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
   return (
     <section
       className="relative py-24 overflow-hidden"
-      style={{ background: '#080d16' }}
+      style={{ background: '#f4f7fb' }}
     >
       {/* Ambient orbs */}
       <div
@@ -88,7 +88,7 @@ export default function WhyChooseUs() {
           <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">
             The Spray Foam Specialist Difference
           </span>
-          <h2 className="font-headline font-bold text-3xl sm:text-4xl text-white mb-4">
+          <h2 className="font-headline font-bold text-3xl sm:text-4xl text-text mb-4">
             Why Choose Us?
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-base leading-relaxed">
@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
           {pillars.slice(0, 3).map(({ icon: Icon, title, description, tag, color, bg, border, glowColor }) => (
             <div
               key={title}
-              className={`group relative bg-[#0d1421] border ${border} rounded-2xl p-7 hover:bg-[#111827] transition-all hover:-translate-y-1 flex flex-col`}
+              className={`group relative bg-[#ffffff] border ${border} rounded-2xl p-7 hover:bg-[#e9f0f8] transition-all hover:-translate-y-1 flex flex-col`}
             >
               {/* Subtle hover glow — CSS-only via box-shadow on hover handled via Tailwind */}
               <div
@@ -117,7 +117,7 @@ export default function WhyChooseUs() {
               <div className={`w-12 h-12 rounded-xl ${bg} flex items-center justify-center mb-5`}>
                 <Icon className={`w-6 h-6 ${color}`} />
               </div>
-              <h3 className="font-headline font-semibold text-white text-lg mb-3 group-hover:text-[#2ea3f2] transition-colors">
+              <h3 className="font-headline font-semibold text-text text-lg mb-3 group-hover:text-[#2ea3f2] transition-colors">
                 {title}
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed flex-1">{description}</p>
@@ -130,7 +130,7 @@ export default function WhyChooseUs() {
           {pillars.slice(3).map(({ icon: Icon, title, description, tag, color, bg, border, glowColor }) => (
             <div
               key={title}
-              className={`group relative bg-[#0d1421] border ${border} rounded-2xl p-7 hover:bg-[#111827] transition-all hover:-translate-y-1 flex flex-col`}
+              className={`group relative bg-[#ffffff] border ${border} rounded-2xl p-7 hover:bg-[#e9f0f8] transition-all hover:-translate-y-1 flex flex-col`}
             >
               <div
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
@@ -142,7 +142,7 @@ export default function WhyChooseUs() {
               <div className={`w-12 h-12 rounded-xl ${bg} flex items-center justify-center mb-5`}>
                 <Icon className={`w-6 h-6 ${color}`} />
               </div>
-              <h3 className="font-headline font-semibold text-white text-lg mb-3 group-hover:text-[#2ea3f2] transition-colors">
+              <h3 className="font-headline font-semibold text-text text-lg mb-3 group-hover:text-[#2ea3f2] transition-colors">
                 {title}
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed flex-1">{description}</p>

@@ -160,7 +160,7 @@ export default function InlandMarinePage() {
       <section className="max-w-5xl mx-auto px-4 py-8">
         <div className="rounded-2xl bg-primary-gradient p-8 text-white">
           <h2 className="font-headline font-bold text-2xl mb-3">Protecting Your Investment</h2>
-          <p className="text-white/90 text-sm mb-5">
+          <p className="text-text/90 text-sm mb-5">
             Your spray foam equipment represents a significant financial investment, and its
             proper protection is an investment in your business&apos;s continued success. Inland
             Marine Insurance, supported by meticulous documentation, offers peace of mind and the
@@ -170,8 +170,8 @@ export default function InlandMarinePage() {
             {investmentItems.map((item) => (
               <li key={item.label} className="flex items-start gap-2">
                 <CheckCircle className="w-4 h-4 shrink-0 mt-0.5" />
-                <span className="text-sm text-white/90">
-                  <span className="font-semibold text-white">{item.label}</span> {item.body}
+                <span className="text-sm text-text/90">
+                  <span className="font-semibold text-text">{item.label}</span> {item.body}
                 </span>
               </li>
             ))}

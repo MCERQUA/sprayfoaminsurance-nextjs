@@ -24,7 +24,7 @@ export default function SameDayCOI() {
     <section
       className="relative py-20 overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #0d0a00 0%, #1a1200 50%, #0d0a00 100%)',
+        background: 'linear-gradient(135deg, #fff8ec 0%, #fdf1d8 50%, #fff8ec 100%)',
         borderTop: '1px solid rgba(245,158,11,0.2)',
         borderBottom: '1px solid rgba(245,158,11,0.2)',
       }}
@@ -47,12 +47,12 @@ export default function SameDayCOI() {
               <span className="label-text text-[#f59e0b] text-xs">Same-Day COI</span>
             </div>
 
-            <h2 className="font-headline font-bold text-3xl sm:text-4xl lg:text-5xl text-white mb-5 leading-tight">
+            <h2 className="font-headline font-bold text-3xl sm:text-4xl lg:text-5xl text-text mb-5 leading-tight">
               Need a COI to Start a Job?{' '}
               <span className="text-[#f59e0b]">Get One the Same Day.</span>
             </h2>
 
-            <p className="text-gray-300 text-base leading-relaxed mb-8 max-w-lg">
+            <p className="text-muted text-base leading-relaxed mb-8 max-w-lg">
               A missing Certificate of Insurance shouldn&apos;t cost you a contract. Once your policy
               is bound, we issue your COI the same day — keeping you on-site and on schedule.
             </p>
@@ -74,7 +74,7 @@ export default function SameDayCOI() {
                   <Icon className="w-5 h-5 text-[#f59e0b]" />
                 </div>
                 <div>
-                  <h3 className="font-headline font-semibold text-white text-base mb-1">
+                  <h3 className="font-headline font-semibold text-text text-base mb-1">
                     {headline}
                   </h3>
                   <p className="text-gray-400 text-sm leading-relaxed">{body}</p>

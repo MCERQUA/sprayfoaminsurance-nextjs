@@ -66,7 +66,7 @@ export default function WhoWeServe() {
           <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">
             Who We Serve
           </span>
-          <h2 className="font-headline font-bold text-3xl sm:text-4xl text-white mb-4">
+          <h2 className="font-headline font-bold text-3xl sm:text-4xl text-text mb-4">
             Built for Every Spray Foam Operation
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-base leading-relaxed">
@@ -80,14 +80,14 @@ export default function WhoWeServe() {
           {operations.map(({ icon: Icon, title, description, color, bg, border }) => (
             <div
               key={title}
-              className={`group bg-[#0a1628]/80 border-t-2 ${border} border-x border-b border-white/10 rounded-2xl p-7 hover:bg-[#0e2040]/90 transition-all hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(46,163,242,0.12)] flex flex-col`}
+              className={`group bg-[#ffffff]/80 border-t-2 ${border} border-x border-b border-black/6 rounded-2xl p-7 hover:bg-[#eaf1f8]/90 transition-all hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(46,163,242,0.12)] flex flex-col`}
             >
               <div
                 className={`w-12 h-12 rounded-xl ${bg} flex items-center justify-center mb-5 flex-shrink-0`}
               >
                 <Icon className={`w-6 h-6 ${color}`} />
               </div>
-              <h3 className="font-headline font-semibold text-white text-lg mb-3 group-hover:text-[#2ea3f2] transition-colors">
+              <h3 className="font-headline font-semibold text-text text-lg mb-3 group-hover:text-[#2ea3f2] transition-colors">
                 {title}
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed flex-1">{description}</p>

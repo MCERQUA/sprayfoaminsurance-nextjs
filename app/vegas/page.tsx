@@ -34,7 +34,7 @@ export default function VegasPage() {
       </section>
 
       {/* Quote request form — mirrors the live Vegas landing-page form fields */}
-      <section className="bg-[#080d16] py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#f4f7fb] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto glass-card p-6 sm:p-8">
           <VegasQuoteForm />
         </div>

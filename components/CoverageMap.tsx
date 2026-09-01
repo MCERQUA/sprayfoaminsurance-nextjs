@@ -55,7 +55,7 @@ export default function CoverageMap() {
           <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">
             Nationwide Coverage
           </span>
-          <h2 className="font-headline font-bold text-3xl sm:text-5xl text-white mb-4 leading-tight">
+          <h2 className="font-headline font-bold text-3xl sm:text-5xl text-text mb-4 leading-tight">
             Coverage in{' '}
             <span className="blue-gradient-text">All 50 States</span>
           </h2>
@@ -71,7 +71,7 @@ export default function CoverageMap() {
           {stats.map(({ value, label, icon: Icon, color, bg, border }) => (
             <div
               key={label}
-              className={`bg-[#0a1628]/80 border ${border} rounded-2xl p-6 flex flex-col items-center text-center hover:bg-[#0e2040]/90 transition-all hover:-translate-y-0.5`}
+              className={`bg-[#ffffff]/80 border ${border} rounded-2xl p-6 flex flex-col items-center text-center hover:bg-[#eaf1f8]/90 transition-all hover:-translate-y-0.5`}
             >
               <div className={`w-11 h-11 rounded-full ${bg} flex items-center justify-center mb-3`}>
                 <Icon className={`w-5 h-5 ${color}`} />
@@ -107,12 +107,12 @@ export default function CoverageMap() {
 
         {/* Bottom CTA strip */}
         <div
-          className="rounded-2xl border border-[#2ea3f2]/20 bg-[#0a1628]/80 p-8 text-center"
+          className="rounded-2xl border border-[#2ea3f2]/20 bg-[#ffffff]/80 p-8 text-center"
           style={{ boxShadow: '0 0 40px rgba(46,163,242,0.06)' }}
         >
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <div className="text-left">
-              <p className="font-headline font-bold text-white text-xl mb-1">
+              <p className="font-headline font-bold text-text text-xl mb-1">
                 Working in multiple states?
               </p>
               <p className="text-gray-400 text-sm">

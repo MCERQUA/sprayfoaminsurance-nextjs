@@ -37,7 +37,7 @@ function DropdownItem({ item }: { item: typeof mainNav[0] }) {
     return (
       <Link
         href={item.href}
-        className="text-white text-sm font-medium px-3 py-2 hover:text-[#2ea3f2] transition-colors whitespace-nowrap"
+        className="text-text text-sm font-medium px-3 py-2 hover:text-[#2ea3f2] transition-colors whitespace-nowrap"
       >
         {item.label}
       </Link>
@@ -52,19 +52,19 @@ function DropdownItem({ item }: { item: typeof mainNav[0] }) {
     >
       <Link
         href={item.href}
-        className="flex items-center gap-1 text-white text-sm font-medium px-3 py-2 hover:text-[#2ea3f2] transition-colors whitespace-nowrap"
+        className="flex items-center gap-1 text-text text-sm font-medium px-3 py-2 hover:text-[#2ea3f2] transition-colors whitespace-nowrap"
       >
         {item.label}
         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${open ? 'rotate-180' : ''}`} />
       </Link>
       {open && (
         <div className="absolute top-full left-0 pt-1 z-50 min-w-[220px]">
-          <div className="bg-[#0d1421] border border-[#2ea3f2]/20 rounded shadow-xl py-1">
+          <div className="bg-[#ffffff] border border-[#2ea3f2]/20 rounded shadow-xl py-1">
             {item.children.map((child) => (
               <Link
                 key={child.href}
                 href={child.href}
-                className="block px-4 py-2 text-sm text-gray-300 hover:bg-[#2ea3f2]/10 hover:text-[#2ea3f2] transition-colors"
+                className="block px-4 py-2 text-sm text-muted hover:bg-[#2ea3f2]/10 hover:text-[#2ea3f2] transition-colors"
               >
                 {child.label}
               </Link>
@@ -87,7 +87,7 @@ export default function Nav() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <a
             href="tel:844-967-5247"
-            className="block text-center text-white text-sm font-semibold py-2 hover:text-white/90 transition-colors tracking-wide"
+            className="block text-center text-text text-sm font-semibold py-2 hover:text-text/90 transition-colors tracking-wide"
           >
             CALL 844-967-5247 (844-WORK-247) FOR A QUICK QUOTE
           </a>
@@ -95,7 +95,7 @@ export default function Nav() {
       </div>
 
       {/* Layer 2 — Logo bar */}
-      <div className="bg-[#080d16] border-b border-white/5">
+      <div className="bg-[#f4f7fb] border-b border-black/6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-3 gap-4">
             {/* Logo */}
@@ -109,7 +109,7 @@ export default function Nav() {
                 className="h-[52px] w-auto object-contain"
               />
               <div className="hidden sm:block leading-none">
-                <span className="font-headline font-bold text-sm text-gray-100 tracking-wide block">Spray Foam</span>
+                <span className="font-headline font-bold text-sm text-text tracking-wide block">Spray Foam</span>
                 <span className="font-headline font-semibold text-sm text-[#2ea3f2] tracking-wide block">Insurance.com</span>
               </div>
             </Link>
@@ -118,7 +118,7 @@ export default function Nav() {
             <div className="hidden md:flex items-center gap-5">
               <a
                 href="mailto:Josh@sprayfoaminsurance.com"
-                className="flex items-center gap-2 text-gray-300 hover:text-[#2ea3f2] transition-colors text-sm"
+                className="flex items-center gap-2 text-muted hover:text-[#2ea3f2] transition-colors text-sm"
               >
                 <Mail className="w-4 h-4 text-[#2ea3f2]" />
                 <span>Josh@sprayfoaminsurance.com</span>
@@ -171,7 +171,7 @@ export default function Nav() {
 
             {/* Mobile hamburger */}
             <button
-              className="md:hidden text-gray-300 hover:text-white p-2"
+              className="md:hidden text-muted hover:text-text p-2"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
             >
@@ -182,7 +182,7 @@ export default function Nav() {
       </div>
 
       {/* Layer 3 — Main nav bar */}
-      <div className="hidden md:block bg-[#0d1421] border-b border-white/5">
+      <div className="hidden md:block bg-[#ffffff] border-b border-black/6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Nav links */}
@@ -204,7 +204,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#080d16] border-t border-white/10 max-h-[80vh] overflow-y-auto">
+        <div className="md:hidden bg-[#f4f7fb] border-t border-black/6 max-h-[80vh] overflow-y-auto">
           <div className="px-4 py-4 space-y-1">
             {mainNav.map((item) => (
               <div key={item.href}>
@@ -216,7 +216,7 @@ export default function Nav() {
                           openMobileSection === item.label ? null : item.label
                         )
                       }
-                      className="flex items-center justify-between w-full py-2.5 text-white text-sm font-medium border-b border-white/10"
+                      className="flex items-center justify-between w-full py-2.5 text-text text-sm font-medium border-b border-black/6"
                     >
                       {item.label}
                       <ChevronDown
@@ -243,7 +243,7 @@ export default function Nav() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="block py-2.5 text-white text-sm font-medium border-b border-white/10 hover:text-[#2ea3f2] transition-colors"
+                    className="block py-2.5 text-text text-sm font-medium border-b border-black/6 hover:text-[#2ea3f2] transition-colors"
                     onClick={() => setMobileOpen(false)}
                   >
                     {item.label}

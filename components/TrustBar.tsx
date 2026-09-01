@@ -10,7 +10,7 @@ const signals = [
 
 export default function TrustBar() {
   return (
-    <div className="border-y border-white/5 bg-[#080d16]">
+    <div className="border-y border-black/6 bg-[#f4f7fb]">
       {/* Credibility signals row */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -19,7 +19,7 @@ export default function TrustBar() {
               <div className={`flex-shrink-0 w-8 h-8 rounded-full ${bg} flex items-center justify-center`}>
                 <Icon className={`w-4 h-4 ${color}`} />
               </div>
-              <span className="text-gray-300 text-xs font-body leading-snug">{label}</span>
+              <span className="text-muted text-xs font-body leading-snug">{label}</span>
             </div>
           ))}
         </div>

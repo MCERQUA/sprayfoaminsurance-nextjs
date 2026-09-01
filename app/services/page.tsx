@@ -78,7 +78,7 @@ export default function ServicesPage() {
       </section>
 
       <section className="blue-gradient-section py-16 text-center">
-        <h2 className="font-headline text-3xl md:text-4xl font-bold text-white">
+        <h2 className="font-headline text-3xl md:text-4xl font-bold text-text">
           We&apos;re Here To Help Any-Time Any-Day
         </h2>
       </section>

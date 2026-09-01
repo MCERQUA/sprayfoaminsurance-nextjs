@@ -62,15 +62,15 @@ export default function BlogIndexPage() {
           <div>
             <GlassCard className="p-0 overflow-hidden h-full">
               <div className="bg-primary p-6">
-                <h2 className="font-headline font-bold text-white text-xl mb-4">Subscribe</h2>
+                <h2 className="font-headline font-bold text-text text-xl mb-4">Subscribe</h2>
                 <input
                   type="email"
                   placeholder="EMAIL"
-                  className="w-full bg-white border border-white/40 rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted mb-3 focus:outline-none"
+                  className="w-full bg-white border border-black/20 rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted mb-3 focus:outline-none"
                 />
                 <button
                   type="button"
-                  className="w-full bg-[#080d16] text-white text-xs font-bold uppercase tracking-widest py-3 rounded-lg"
+                  className="w-full bg-[#f4f7fb] text-text text-xs font-bold uppercase tracking-widest py-3 rounded-lg"
                 >
                   Subscribe
                 </button>

@@ -134,8 +134,8 @@ export default function QuoteFormSection() {
   }
 
   const inputBase =
-    'w-full bg-[#080d16] border border-[#2ea3f2]/20 rounded-lg px-4 py-2.5 text-sm text-gray-100 ' +
-    'placeholder-gray-500 focus:outline-none focus:border-[#2ea3f2]/60 focus:ring-1 focus:ring-[#2ea3f2]/30 transition-colors';
+    'w-full bg-[#f4f7fb] border border-[#2ea3f2]/20 rounded-lg px-4 py-2.5 text-sm text-text ' +
+    'placeholder-muted focus:outline-none focus:border-[#2ea3f2]/60 focus:ring-1 focus:ring-[#2ea3f2]/30 transition-colors';
 
   return (
     <section className="blue-gradient-section py-20 px-4 sm:px-6 lg:px-8">
@@ -147,7 +147,7 @@ export default function QuoteFormSection() {
 
           {/* ── LEFT: headline + trust bullets ── */}
           <div className="lg:pt-4">
-            <h2 className="font-headline text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
+            <h2 className="font-headline text-3xl sm:text-4xl font-bold text-text leading-tight mb-4">
               Get Coverage Built for{' '}
               <span className="blue-gradient-text">Spray Foam Pros</span>
             </h2>
@@ -162,7 +162,7 @@ export default function QuoteFormSection() {
                   <span className="flex-shrink-0 w-10 h-10 rounded-lg bg-[#2ea3f2]/10 border border-[#2ea3f2]/20 flex items-center justify-center">
                     <Icon className="w-5 h-5 text-[#2ea3f2]" />
                   </span>
-                  <span className="text-gray-300 text-sm leading-relaxed pt-2.5">{text}</span>
+                  <span className="text-muted text-sm leading-relaxed pt-2.5">{text}</span>
                 </li>
               ))}
             </ul>
@@ -175,14 +175,14 @@ export default function QuoteFormSection() {
               /* ── Success state ── */
               <div className="flex flex-col items-center text-center py-8 gap-4">
                 <CheckCircle className="w-14 h-14 text-[#29c4a9]" />
-                <h3 className="font-headline text-xl font-bold text-white">You&apos;re all set!</h3>
+                <h3 className="font-headline text-xl font-bold text-text">You&apos;re all set!</h3>
                 <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                   Thanks — we&apos;ll review your request and reach out within{' '}
                   <span className="text-[#2ea3f2] font-semibold">1 business day</span>.
                 </p>
                 <button
                   onClick={() => { setForm(EMPTY_FORM); setSubmitted(false); }}
-                  className="mt-2 text-xs text-gray-300 hover:text-white underline transition-colors"
+                  className="mt-2 text-xs text-muted hover:text-text underline transition-colors"
                 >
                   Submit another request
                 </button>
@@ -204,7 +204,7 @@ export default function QuoteFormSection() {
                   </label>
                 </p>
 
-                <h3 className="font-headline text-lg font-bold text-white mb-6">
+                <h3 className="font-headline text-lg font-bold text-text mb-6">
                   Request Your Free Quote
                 </h3>
 
@@ -317,7 +317,7 @@ export default function QuoteFormSection() {
                           value={id}
                           checked={form.coverage.includes(id)}
                           onChange={handleCoverage}
-                          className="w-4 h-4 rounded border-[#2ea3f2]/30 bg-[#080d16] accent-[#2ea3f2] cursor-pointer"
+                          className="w-4 h-4 rounded border-[#2ea3f2]/30 bg-[#f4f7fb] accent-[#2ea3f2] cursor-pointer"
                         />
                         <span className="text-xs text-gray-400 group-hover:text-gray-200 transition-colors">
                           {label}

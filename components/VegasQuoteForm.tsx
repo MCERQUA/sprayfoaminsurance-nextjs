@@ -22,7 +22,7 @@ const EMPTY_FORM: FormState = {
 };
 
 const fieldBase =
-  'w-full bg-[#080d16] border border-[#2ea3f2]/20 rounded-lg px-4 py-2.5 text-sm text-gray-100 placeholder-gray-500 focus:outline-none focus:border-[#2ea3f2]/60';
+  'w-full bg-[#f4f7fb] border border-[#2ea3f2]/20 rounded-lg px-4 py-2.5 text-sm text-text placeholder-muted focus:outline-none focus:border-[#2ea3f2]/60';
 
 const labelBase = 'block text-xs font-medium text-gray-400 mb-1.5';
 
@@ -77,13 +77,13 @@ export default function VegasQuoteForm() {
     return (
       <div className="flex flex-col items-center text-center py-8 gap-4">
         <CheckCircle className="w-14 h-14 text-[#29c4a9]" />
-        <h2 className="font-headline text-xl font-bold text-white">Request received</h2>
+        <h2 className="font-headline text-xl font-bold text-text">Request received</h2>
         <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
           Thanks — a spray-foam insurance specialist will reach out within one business day.
         </p>
         <button
           onClick={() => { setForm(EMPTY_FORM); setSubmitted(false); }}
-          className="mt-2 text-xs text-gray-300 hover:text-white underline transition-colors"
+          className="mt-2 text-xs text-muted hover:text-text underline transition-colors"
         >
           Submit another request
         </button>
@@ -93,7 +93,7 @@ export default function VegasQuoteForm() {
 
   return (
     <>
-      <h2 className="font-headline text-xl font-bold text-white mb-6">Request Quote</h2>
+      <h2 className="font-headline text-xl font-bold text-text mb-6">Request Quote</h2>
       <form
         onSubmit={handleSubmit}
         name="vegas-quote-request"

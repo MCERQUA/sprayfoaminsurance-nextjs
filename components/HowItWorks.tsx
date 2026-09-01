@@ -53,7 +53,7 @@ export default function HowItWorks() {
           <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">
             Getting Covered Is Simple
           </span>
-          <h2 className="font-headline font-bold text-3xl sm:text-4xl text-white">
+          <h2 className="font-headline font-bold text-3xl sm:text-4xl text-text">
             Insured in 3 Easy Steps
           </h2>
           <p className="text-gray-400 mt-4 text-base leading-relaxed">
@@ -75,7 +75,7 @@ export default function HowItWorks() {
               {/* Number marker — the only graphic. Opaque ground so the rail passes behind it. */}
               <div className="flex-shrink-0 lg:mb-7">
                 <span
-                  className={`relative flex h-14 w-14 items-center justify-center rounded-full bg-[#0a1628] font-headline text-lg font-bold ring-1 ${
+                  className={`relative flex h-14 w-14 items-center justify-center rounded-full bg-[#ffffff] font-headline text-lg font-bold ring-1 ${
                     step.payoff
                       ? 'text-[#f59e0b] ring-[#f59e0b]/45'
                       : 'text-[#2ea3f2] ring-[#2ea3f2]/40'
@@ -93,7 +93,7 @@ export default function HowItWorks() {
                 >
                   {step.meta}
                 </div>
-                <h3 className="font-headline font-semibold text-white text-xl mb-3">
+                <h3 className="font-headline font-semibold text-text text-xl mb-3">
                   {step.title}
                 </h3>
                 <p className="text-gray-400 text-[15px] leading-relaxed">{step.description}</p>
@@ -102,7 +102,7 @@ export default function HowItWorks() {
           ))}
         </ol>
 
-        <div className="mt-16 flex flex-col items-start gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-16 flex flex-col items-start gap-4 border-t border-black/6 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-gray-400 text-sm">
             Most contractors finish step one in under five minutes.
           </p>

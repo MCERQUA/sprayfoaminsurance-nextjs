@@ -40,7 +40,7 @@ export default function HomePage() {
 
         <div
           className="absolute inset-0"
-          style={{ background: 'linear-gradient(135deg, rgba(8,13,22,0.88) 0%, rgba(8,13,22,0.65) 50%, rgba(8,13,22,0.78) 100%)' }}
+          style={{ background: 'linear-gradient(135deg, rgba(244,247,251,0.94) 0%, rgba(244,247,251,0.80) 50%, rgba(244,247,251,0.90) 100%)' }}
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
@@ -52,12 +52,12 @@ export default function HomePage() {
             </div>
 
             <h1 className="hero-headline font-headline font-bold leading-tight mb-6">
-              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white">
+              <span className="block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-text">
                 Spray Foam Insurance
               </span>
             </h1>
 
-            <p className="hero-sub text-gray-300 font-body text-lg sm:text-xl mb-10 max-w-2xl leading-relaxed">
+            <p className="hero-sub text-muted font-body text-lg sm:text-xl mb-10 max-w-2xl leading-relaxed">
               Supporting Your Success, Beyond the Policy
             </p>
 
@@ -71,14 +71,14 @@ export default function HomePage() {
               </Link>
               <a
                 href="tel:844-967-5247"
-                className="inline-flex items-center gap-2 border-2 border-white/40 hover:border-white text-white font-headline font-bold px-8 py-3.5 rounded text-base transition-all hover:bg-white/10"
+                className="inline-flex items-center gap-2 border-2 border-black/20 hover:border-primary text-text font-headline font-bold px-8 py-3.5 rounded text-base transition-all hover:bg-primary/10"
               >
                 <Phone className="w-5 h-5" />
                 Call 844-967-5247
               </a>
             </div>
 
-            <div className="hero-stats grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-white/10 pt-8">
+            <div className="hero-stats grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-black/6 pt-8">
               {[
                 { value: '298', label: 'Active Contractor Clients' },
                 { value: '50', label: 'States Covered' },
@@ -104,7 +104,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">Comprehensive Protection</span>
-            <h2 className="font-headline font-bold text-3xl sm:text-4xl text-white">Core Coverages</h2>
+            <h2 className="font-headline font-bold text-3xl sm:text-4xl text-text">Core Coverages</h2>
             <p className="text-gray-400 mt-3 max-w-xl mx-auto">Every policy is built around the unique risks of the spray foam industry.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -167,12 +167,12 @@ export default function HomePage() {
               <Link
                 key={title}
                 href={href}
-                className={`group block bg-[#0a1628]/80 border-t-2 ${border} rounded-xl p-6 hover:bg-[#0e2040]/90 transition-all hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(46,163,242,0.15)]`}
+                className={`group block bg-[#ffffff]/80 border-t-2 ${border} rounded-xl p-6 hover:bg-[#eaf1f8]/90 transition-all hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(46,163,242,0.15)]`}
               >
                 <div className={`w-11 h-11 rounded-full ${bg} flex items-center justify-center mb-4`}>
                   <Icon className={`w-5 h-5 ${color}`} />
                 </div>
-                <h3 className="font-headline font-semibold text-white text-lg mb-2 group-hover:text-[#2ea3f2] transition-colors">{title}</h3>
+                <h3 className="font-headline font-semibold text-text text-lg mb-2 group-hover:text-[#2ea3f2] transition-colors">{title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
                 <div className={`mt-4 flex items-center gap-1 text-sm font-semibold ${color} opacity-0 group-hover:opacity-100 transition-opacity`}>
                   Learn more <ArrowRight className="w-4 h-4" />
@@ -213,7 +213,7 @@ export default function HomePage() {
       {/* ─── SECTION 3: TRUSTED ALLY — dark with Josh photo ─── */}
       <section
         className="py-24 relative overflow-hidden"
-        style={{ background: '#080d16' }}
+        style={{ background: '#f4f7fb' }}
       >
         {/* Subtle blue left-side glow */}
         <div
@@ -225,7 +225,7 @@ export default function HomePage() {
             {/* Left: text */}
             <div className="relative z-10">
               <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">Your Industry Expert</span>
-              <h2 className="font-headline font-bold text-3xl sm:text-4xl text-white mb-5">
+              <h2 className="font-headline font-bold text-3xl sm:text-4xl text-text mb-5">
                 Your Industry&apos;s<br />
                 <span className="blue-gradient-text">Trusted Ally</span>
               </h2>
@@ -243,7 +243,7 @@ export default function HomePage() {
                     <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2ea3f2]/15 flex items-center justify-center mt-0.5">
                       <CheckCircle className="w-4 h-4 text-[#2ea3f2]" />
                     </span>
-                    <span className="text-gray-300 text-sm leading-relaxed">{text}</span>
+                    <span className="text-muted text-sm leading-relaxed">{text}</span>
                   </li>
                 ))}
               </ul>
@@ -269,7 +269,7 @@ export default function HomePage() {
                     transform: 'scale(1.08)',
                   }}
                 />
-                <div className="relative rounded-2xl overflow-hidden border-2 border-[#2ea3f2]/30 shadow-[0_0_40px_rgba(46,163,242,0.2)] bg-gradient-to-b from-[#0d1421] to-[#080d16]">
+                <div className="relative rounded-2xl overflow-hidden border-2 border-[#2ea3f2]/30 shadow-[0_0_40px_rgba(46,163,242,0.2)] bg-gradient-to-b from-[#ffffff] to-[#f4f7fb]">
                   <Image
                     src="/assets/images/josh-clean.webp"
                     alt="Josh Cotner — Spray Foam Insurance specialist"
@@ -278,8 +278,8 @@ export default function HomePage() {
                     className="object-contain w-full max-w-sm lg:max-w-md"
                   />
                   {/* Name badge overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#080d16] via-[#080d16]/70 to-transparent px-6 py-5">
-                    <p className="font-headline font-bold text-white text-lg">Josh Cotner</p>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#f4f7fb] via-[#f4f7fb]/70 to-transparent px-6 py-5">
+                    <p className="font-headline font-bold text-text text-lg">Josh Cotner</p>
                     <p className="text-[#2ea3f2] text-sm font-label label-text">Founder &amp; Lead Specialist</p>
                   </div>
                 </div>
@@ -300,12 +300,12 @@ export default function HomePage() {
         />
         <div
           className="absolute inset-0 pointer-events-none"
-          style={{ background: 'linear-gradient(90deg, #030b18 0%, rgba(3,11,24,0.85) 45%, rgba(3,11,24,0.55) 100%)' }}
+          style={{ background: 'linear-gradient(90deg, #f4f7fb 0%, rgba(244,247,251,0.90) 45%, rgba(244,247,251,0.72) 100%)' }}
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-14">
             <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">We&apos;re Here For You</span>
-            <h2 className="font-headline font-bold text-3xl sm:text-5xl text-white mb-3">
+            <h2 className="font-headline font-bold text-3xl sm:text-5xl text-text mb-3">
               Beyond Policies:
             </h2>
             <h2 className="font-headline font-bold text-3xl sm:text-5xl blue-gradient-text">
@@ -345,12 +345,12 @@ export default function HomePage() {
             ].map(({ icon: Icon, title, desc, color, bg }) => (
               <div
                 key={title}
-                className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/20 transition-all hover:-translate-y-1"
+                className="bg-white/5 backdrop-blur border border-black/6 rounded-2xl p-6 hover:bg-primary/10 hover:border-black/10 transition-all hover:-translate-y-1"
               >
                 <div className={`w-12 h-12 rounded-full ${bg} flex items-center justify-center mb-5`}>
                   <Icon className={`w-6 h-6 ${color}`} />
                 </div>
-                <h3 className="font-headline font-semibold text-white text-lg mb-3">{title}</h3>
+                <h3 className="font-headline font-semibold text-text text-lg mb-3">{title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
@@ -401,7 +401,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── SECTION 6: PHOTO CTA — wireframe handshake ─── */}
-      <section className="photo-section relative py-32" style={{ background: '#030b18' }}>
+      <section className="photo-section relative py-32" style={{ background: '#f4f7fb' }}>
         <Image
           src="/assets/images/wireframe-handshake.webp"
           alt="Partnership — spray foam insurance support"
@@ -410,11 +410,11 @@ export default function HomePage() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: 'linear-gradient(270deg, #030b18 0%, rgba(3,11,24,0.80) 50%, rgba(3,11,24,0.5) 100%)', zIndex: 1 }}
+          style={{ background: 'linear-gradient(270deg, #f4f7fb 0%, rgba(244,247,251,0.88) 50%, rgba(244,247,251,0.70) 100%)', zIndex: 1 }}
         />
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
           <span className="label-text text-[#2ea3f2] text-sm mb-4 block">Insurance Excellence</span>
-          <h2 className="font-headline font-bold text-4xl sm:text-5xl text-white mb-6">
+          <h2 className="font-headline font-bold text-4xl sm:text-5xl text-text mb-6">
             Tailored Solutions And Peace Of Mind,<br />
             For Your Spray Foam Business
           </h2>
@@ -431,11 +431,11 @@ export default function HomePage() {
       <QuoteFormSection />
 
       {/* ─── SECTION 7: FAQ — dark background ─── */}
-      <section className="py-24" style={{ background: '#080d16' }}>
+      <section className="py-24" style={{ background: '#f4f7fb' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="label-text text-[#29c4a9] font-label text-sm block mb-3">Got Questions?</span>
-            <h2 className="font-headline font-bold text-3xl sm:text-4xl text-white">Frequently Asked Questions</h2>
+            <h2 className="font-headline font-bold text-3xl sm:text-4xl text-text">Frequently Asked Questions</h2>
           </div>
           <FAQSection items={homepageFaqs} />
         </div>

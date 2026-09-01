@@ -11,14 +11,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#080d16',
-        surface: '#0d1421',
-        card: '#111827',
+        background: '#f4f7fb',
+        surface: '#ffffff',
+        card: '#e9f0f8',
         primary: '#2ea3f2',
         accent: '#29c4a9',
         highlight: '#f59e0b',
-        text: '#f0f4f8',
-        muted: '#94a3b8',
+        text: '#0e1a27',
+        muted: '#3f5064',
       },
       fontFamily: {
         headline: ['var(--font-headline)', 'Poppins', 'Helvetica', 'Arial', 'sans-serif'],
@@ -38,7 +38,7 @@ module.exports = {
       },
       backgroundImage: {
         'primary-gradient': 'linear-gradient(135deg, #2ea3f2, #29c4a9)',
-        'hero-gradient': 'linear-gradient(to bottom right, #080d16, #0d1421)',
+        'hero-gradient': 'linear-gradient(to bottom right, #f4f7fb, #ffffff)',
       },
       boxShadow: {
         'glow-primary': '0 0 20px rgba(46, 163, 242, 0.4)',
