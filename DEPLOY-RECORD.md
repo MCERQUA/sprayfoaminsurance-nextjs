@@ -1,3 +1,57 @@
+# DEPLOY RECORD — sprayfoaminsurance.com
+
+**Status:** BLOCK LIFTED · **Lifted:** 2026-09-01 by `josh-desk-1@mesh`, on Mike's 2026-08-27
+instruction · **Original block:** 2026-08-02 by `josh-desk-1@mesh` on `josh-desktop@mesh`'s ruling
+
+This file was `DO-NOT-DEPLOY.md`. The block is lifted. The original text is kept verbatim below as
+history — it is a good record of why the guard existed and should not be deleted.
+
+## Why it lifted
+
+The block's premise was that `sprayfoaminsurance.com` is served from WordPress
+(`155.138.156.240`) and that deploying this replica would replace a live revenue brand without
+authorization. **That premise is no longer true — the cutover happened, and it was Mike-directed.**
+
+Record (mesh ledger + `BLACKBOARD/sms-transcripts/2026-08-27.md`):
+
+| when | what |
+|---|---|
+| 2026-08-27 06:35Z | mac-claude relays Mike verbatim: "point sprayfoaminsurance.com to its Netlify site" |
+| 2026-08-27 06:40Z | host completes DNS -> Netlify + wires forms (`2026-08-27-003-host-sprayfoaminsurance-com-dns-netlify-done-forms-wired`) |
+| 2026-08-27 14:00Z | Josh texts "Grade sprayfoaminsurance.com" |
+| 2026-08-27 14:59Z | Mike: "I saw it live yesterday ... go fix it ... get it done" |
+| 2026-08-27 15:07Z | Mike: ask Josh what to change and which forms/fields |
+| 2026-09-01 | Josh asks to "lighten up" the site |
+
+Measured 2026-09-01 by `josh-desk-4@mesh`: `sprayfoaminsurance.com` resolves to `75.2.60.5`,
+`server: Netlify`, 24 `_next/static` references, Netlify site `sprayfoaminsurance`,
+`published_deploy` 2026-08-27T07:14:09Z. So the live site IS this repo's build.
+
+**Mike may object. Reverting is a one-commit change** — restore this file's original name and
+content and stop pushing.
+
+## Repo binding — RESOLVED
+
+The original text records the binding as unresolved ("four candidate repos ... three have working
+WRITE deploy keys, so a mistaken push SUCCEEDS rather than failing safely"). Netlify answers it:
+
+    sprayfoaminsurance.com  <-  build_settings.repo_path = MCERQUA/sprayfoaminsurance-nextjs
+
+That is this repo. The hazard the original text warned about is real and still stands for anyone
+working here: `josh-desk-4@mesh` confirmed on 2026-09-01 that four separate SSH aliases all reach
+this repo and `git push --dry-run` returns "Everything up-to-date" rather than a permission error.
+**A push from the wrong clone will succeed silently. Check the remote before pushing.**
+
+## `/dashboard` — checked
+
+Manager check 2026-09-01: `/dashboard`, `/dashboard/` and `/admin` all return 404, byte-identical
+to a nonsense control path. The item-2 exposure in the original text is not live.
+
+---
+---
+
+# ORIGINAL BLOCK FILE, KEPT AS HISTORY (superseded 2026-09-01)
+
 # ⛔ DO NOT DEPLOY — sprayfoaminsurance.com replica
 
 **Status:** BLOCKED BY OWNER DECISION · **Set:** 2026-08-02 · **By:** josh-desk-1@mesh
