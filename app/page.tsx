@@ -367,42 +367,6 @@ export default function HomePage() {
       {/* ─── COVERAGE MAP — all 50 states ─── */}
       <CoverageMap />
 
-      {/* ─── SECTION 5: TESTIMONIALS — WHITE background (contrast break) ─── */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Hero testimonial */}
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <Quote className="w-12 h-12 text-[#29c4a9] mx-auto mb-6" />
-            <p className="text-gray-800 text-xl sm:text-2xl font-body leading-relaxed mb-8">
-              &ldquo;Josh is knowledgeable about what needs there are for us as spray foam contractors, and super helpful in taking care of anything we need in a timely manner. I would definitely recommend Josh and Spray Foam Insurance to any foam contractor out there!&rdquo;
-            </p>
-            <div className="flex items-center justify-center gap-3">
-              <Image
-                src="/assets/images/integrity-plus.webp"
-                alt="Integrity Plus Insulation"
-                width={60}
-                height={60}
-                className="rounded-full object-cover border-2 border-[#29c4a9]/30"
-              />
-              <div className="text-left">
-                <p className="font-headline font-bold text-gray-900">Eric Gladson</p>
-                <p className="text-gray-500 text-sm">O/O – Integrity Plus Insulation LLC</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Note: a 3-card grid of additional "customer" testimonials previously
-              lived here with invented names, quotes, and company names
-              (Marcus T./Summit Spray Foam, Danielle R./ProFoam LLC, Brian
-              K./Glacier Insulation Co.) — none of these are real people or
-              real reviews. Removed per the same "never fabricate people"
-              rule applied to the about-us team section; the one genuine,
-              attributable review (Eric Gladson / Integrity Plus Insulation
-              LLC) above stands on its own rather than being padded out with
-              fake ones. */}
-        </div>
-      </section>
-
       {/* ─── SECTION 6: PHOTO CTA — wireframe handshake ─── */}
       <section className="photo-section relative py-32" style={{ background: '#f4f7fb' }}>
         <Image
