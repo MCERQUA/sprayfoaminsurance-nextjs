@@ -25,7 +25,10 @@ export default function HomePage() {
           The homepage FAQ emits its own FAQPage schema via FAQSection. */}
 
       {/* ─── SECTION 1: VIDEO HERO (untouched) ─── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section
+          className="relative min-h-screen flex items-center overflow-hidden"
+          style={{ background: 'linear-gradient(135deg, #f4f7fb 0%, #ffffff 55%, #eaf4fd 100%)' }}
+        >
         <video
           autoPlay
           muted
