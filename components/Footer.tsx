@@ -103,12 +103,12 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Producer disclosure — fleet-standard string. NPN 8608479 and AZ
-            License 3001409680 are the only license numbers cleared for use. */}
+        {/* Producer disclosure — fleet-standard string. AZ License #3001409680 was
+            fabricated/unverifiable and has been removed fleet-wide; NPN 8608479 is real. */}
         <div className="border-t border-primary/10 mt-12 pt-6">
           <p className="text-muted text-xs text-center sm:text-left">
             Contractors Choice Agency &middot; 12220 E Riggs Road, Suite #105, Chandler, AZ 85249
-            &middot; AZ License #3001409680 &middot; NPN #8608479
+            &middot; NPN #8608479
           </p>
         </div>
 
