@@ -67,7 +67,7 @@ export default function HowItWorks() {
               numbers on desktop. Sits behind the markers, hence -z-0 / relative markers. */}
           <span
             aria-hidden="true"
-            className="absolute left-[27px] top-2 bottom-2 w-px bg-gradient-to-b from-[#2ea3f2]/50 via-[#2ea3f2]/20 to-[#f59e0b]/40 lg:left-0 lg:right-0 lg:top-[27px] lg:bottom-auto lg:h-px lg:w-auto lg:bg-gradient-to-r"
+            className="absolute left-[27px] top-2 bottom-2 w-px bg-[#2ea3f2]/30 lg:left-0 lg:right-0 lg:top-[27px] lg:bottom-auto lg:h-px lg:w-auto"
           />
 
           {steps.map((step) => (

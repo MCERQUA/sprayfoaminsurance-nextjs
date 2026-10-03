@@ -7,6 +7,7 @@ import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import { FileText, Award, Shield, CheckSquare, ArrowRight } from 'lucide-react';
 import { resourcesFaqs } from '@/lib/faqs';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Contractor Resources | Forms, Guides & Tools',
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     title: 'Spray Foam Contractor Resources',
     description: 'Free forms, guides, and tools for spray foam insulation contractors.',
     type: 'website',
+    images: OG_IMAGES,
   },
 };
 

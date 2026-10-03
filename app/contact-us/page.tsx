@@ -7,6 +7,7 @@ import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { contactFaqs } from '@/lib/faqs';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Spray Foam Insurance Call 844-967-5247',
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     title: 'Contact Spray Foam Insurance | 844-967-5247',
     description: 'Get in touch with our spray foam insurance specialists. Fast response guaranteed.',
     type: 'website',
+    images: OG_IMAGES,
   },
 };
 
@@ -75,7 +77,7 @@ export default function ContactUsPage() {
                 <MapPin className="w-6 h-6 text-primary shrink-0 mt-1" />
                 <div>
                   <p className="font-headline font-bold text-text mb-1">Address</p>
-                  <p className="text-muted text-sm">12220 E Riggs Road, Suite #105, Chandler, AZ 85249, United States</p>
+                  <p className="text-muted text-sm">12220 E Riggs Road, Suite #104, Chandler, AZ 85249, United States</p>
                 </div>
               </GlassCard>
 

@@ -6,6 +6,7 @@ import GlassCard from '@/components/GlassCard';
 import ServiceCard from '@/components/ServiceCard';
 import { AlertTriangle, Shield, Users, Truck } from 'lucide-react';
 import { safetyComplianceFaqs } from '@/lib/faqs';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Safety & Compliance Support for Spray Foam Contractors',
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
     title: 'Safety & Compliance Support for Spray Foam Contractors',
     description: 'OSHA requirements, PPE standards and compliance checklists for SPF contractors.',
     type: 'website',
+    images: OG_IMAGES,
   },
 };
 
@@ -113,7 +115,7 @@ export default function SafetyAndCompliancePage() {
 
       <section className="bg-background py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl bg-gradient-to-br from-primary to-[#06216b] p-8 sm:p-10 text-white shadow-xl">
+          <div className="rounded-3xl bg-[#06216b] p-8 sm:p-10 text-white shadow-xl">
             <h2 className="font-headline text-2xl sm:text-3xl font-bold mb-4">Services We Offer</h2>
             <p className="font-label text-sm sm:text-base opacity-90 leading-relaxed mb-6">
               Workers&apos; Compensation Insurance from Spray Foam Insurance can be customized to meet your specific needs. Here are some key components of coverage:

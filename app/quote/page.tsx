@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import CTABar from '@/components/CTABar';
 import QuotePageForm from '@/components/QuotePageForm';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Get a Spray Foam Insurance Quote | Fast, Free, Specialized',
@@ -16,7 +17,9 @@ export const metadata: Metadata = {
     title: 'Get a Spray Foam Insurance Quote',
     description: 'Free, fast spray foam contractor insurance quotes from specialists.',
     type: 'website',
+    images: OG_IMAGES,
   },
+  alternates: { canonical: 'https://sprayfoaminsurance.com/quote/' },
 };
 
 export default function QuotePage() {

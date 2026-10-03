@@ -5,7 +5,7 @@ export default function CTABar() {
   return (
     <section className="relative overflow-hidden bg-surface border-y border-primary/20">
       {/* Accent stripe */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5" />
+      <div className="absolute inset-0 bg-primary/5" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">

@@ -5,6 +5,7 @@ import FAQSection from '@/components/FAQSection';
 import GlassCard from '@/components/GlassCard';
 import FormCard from '@/components/FormCard';
 import { Calendar, Package, Thermometer, Layout, Ruler, User, Download } from 'lucide-react';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Attic Insulation Certificate for Spray Foam Contractors',
@@ -14,7 +15,9 @@ export const metadata: Metadata = {
     title: 'Attic Insulation Certificate',
     description: 'Official attic insulation certificates for spray foam contractors.',
     type: 'website',
+    images: OG_IMAGES,
   },
+  alternates: { canonical: 'https://sprayfoaminsurance.com/attic-insulation-certificate/' },
 };
 
 const documentCards = [

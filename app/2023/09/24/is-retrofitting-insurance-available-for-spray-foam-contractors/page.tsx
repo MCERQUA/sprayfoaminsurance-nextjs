@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, User, ArrowRight } from 'lucide-react';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import type { Metadata } from 'next';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Is Retrofitting Insurance Available for Spray Foam Contractors?',
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     title: 'Is Retrofitting Insurance Available for Spray Foam Contractors?',
     description: 'Retrofitting insurance options for spray foam contractors upgrading existing buildings. Enhanced coverage for retrofit-specific risks.',
     type: 'article',
+    images: OG_IMAGES,
   },
+  alternates: { canonical: 'https://sprayfoaminsurance.com/2023/09/24/is-retrofitting-insurance-available-for-spray-foam-contractors/' },
 };
 
 const blogSchema = {

@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, User, ArrowRight } from 'lucide-react';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import type { Metadata } from 'next';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Insurance Requirements for Large Commercial Projects',
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     title: 'Insurance Requirements for Large Commercial Projects',
     description: 'Essential insurance requirements for spray foam contractors working on large commercial projects. GL, workers comp, professional liability and more.',
     type: 'article',
+    images: OG_IMAGES,
   },
+  alternates: { canonical: 'https://sprayfoaminsurance.com/2023/09/24/what-are-the-insurance-requirements-for-large-commercial-projects/' },
 };
 
 const blogSchema = {

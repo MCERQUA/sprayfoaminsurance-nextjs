@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, User, ArrowRight } from 'lucide-react';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import type { Metadata } from 'next';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Equipment Financing: Building Strong Banking Relationships',
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     title: 'Spray Foam Equipment Financing: Building Strong Banking Relationships',
     description: 'Guide to financing spray foam equipment through strong banking relationships. Equipment costs $40K-$150K+, loan types, and strategies for SPF contractors.',
     type: 'article',
+    images: OG_IMAGES,
   },
+  alternates: { canonical: 'https://sprayfoaminsurance.com/2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/' },
 };
 
 const blogSchema = {

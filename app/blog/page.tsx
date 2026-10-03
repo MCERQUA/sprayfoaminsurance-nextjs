@@ -8,6 +8,7 @@ import FAQSection from '@/components/FAQSection';
 import CTABar from '@/components/CTABar';
 import { blogPosts as articles } from '@/lib/blog-posts';
 import { blogFaqs } from '@/lib/faqs';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Insurance Blog | Spray Foam Insurance Call 844-967-5247',
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     title: 'Spray Foam Insurance Blog',
     description: 'Expert coverage guides and industry news for spray foam contractors.',
     type: 'website',
+    images: OG_IMAGES,
   },
 };
 

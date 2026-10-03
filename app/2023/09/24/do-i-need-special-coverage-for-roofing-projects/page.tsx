@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, User, ArrowRight } from 'lucide-react';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import type { Metadata } from 'next';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Do I Need Special Coverage for Roofing Projects?',
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     title: 'Do I Need Special Coverage for Roofing Projects?',
     description: 'Insurance considerations for spray foam contractors working alongside roofing companies. Special coverage for combined operations and elevated risks.',
     type: 'article',
+    images: OG_IMAGES,
   },
+  alternates: { canonical: 'https://sprayfoaminsurance.com/2023/09/24/do-i-need-special-coverage-for-roofing-projects/' },
 };
 
 const blogSchema = {

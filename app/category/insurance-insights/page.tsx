@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { blogPosts } from '@/lib/blog-posts';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Insurance Insights | Spray Foam Insurance Blog',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     title: 'Insurance Insights | Spray Foam Insurance Blog',
     description: 'Expert insurance guidance for spray foam contractors.',
     type: 'website',
+    images: OG_IMAGES,
   },
   alternates: {
     canonical: 'https://sprayfoaminsurance.com/category/insurance-insights/',

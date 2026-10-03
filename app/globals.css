@@ -52,14 +52,11 @@
   }
 
   .blue-gradient-text {
-    background: linear-gradient(135deg, #2ea3f2, #29c4a9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #2ea3f2;
   }
 
   .primary-btn {
-    background: linear-gradient(135deg, #2ea3f2, #1a7ebf);
+    background: #1a7ebf;
     color: white;
     transition: all 0.3s ease;
   }
@@ -249,11 +246,11 @@
 
 /* Blue gradient section */
 .blue-gradient-section {
-  background: linear-gradient(160deg, #eef4fb 0%, #e3edf8 50%, #eef4fb 100%);
+  background: #eef4fb;
 }
 
 /* Subtle separator */
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(46,163,242,0.3), transparent);
+  background: rgba(46,163,242,0.3);
 }

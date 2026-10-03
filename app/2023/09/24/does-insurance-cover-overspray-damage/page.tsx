@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, User, ArrowRight } from 'lucide-react';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import type { Metadata } from 'next';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Does Insurance Cover Overspray Damage?',
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     title: 'Does Insurance Cover Overspray Damage?',
     description: 'How general liability and specialized spray foam insurance covers overspray damage to neighboring properties, vehicles, and surfaces.',
     type: 'article',
+    images: OG_IMAGES,
   },
+  alternates: { canonical: 'https://sprayfoaminsurance.com/2023/09/24/does-insurance-cover-overspray-damage/' },
 };
 
 const blogSchema = {

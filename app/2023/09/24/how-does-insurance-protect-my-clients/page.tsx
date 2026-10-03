@@ -3,6 +3,7 @@ import { ArrowLeft, Calendar, User, ArrowRight } from 'lucide-react';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import type { Metadata } from 'next';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'How Does Insurance Protect My Clients?',
@@ -12,7 +13,9 @@ export const metadata: Metadata = {
     title: 'How Does Insurance Protect My Clients?',
     description: 'How spray foam contractor insurance protects construction clients through financial safeguards, liability protection, and quality assurance.',
     type: 'article',
+    images: OG_IMAGES,
   },
+  alternates: { canonical: 'https://sprayfoaminsurance.com/2023/09/24/how-does-insurance-protect-my-clients/' },
 };
 
 const blogSchema = {

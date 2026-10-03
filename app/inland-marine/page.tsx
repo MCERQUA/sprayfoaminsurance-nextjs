@@ -4,6 +4,7 @@ import PageHero from '@/components/PageHero';
 import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 import { ArrowRight, CheckCircle } from 'lucide-react';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Inland Marine Insurance for Spray Foam Contractors',
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     description:
       'Equipment coverage for spray foam proportioners, hoses, generators, and trailers.',
     type: 'website',
+    images: OG_IMAGES,
   },
 };
 

@@ -5,6 +5,7 @@ import RigQuoteForm from '@/components/RigQuoteForm';
 import GlassCard from '@/components/GlassCard';
 import FormCard from '@/components/FormCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Spray Foam Rig & Equipment Insurance | Inland Marine',
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     title: 'Spray Foam Rig & Equipment Insurance',
     description: 'Purpose-built inland marine coverage for spray foam rigs and equipment.',
     type: 'website',
+    images: OG_IMAGES,
   },
 };
 

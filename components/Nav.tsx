@@ -83,7 +83,7 @@ export default function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* Layer 1 — Top bar */}
-      <div className="bg-gradient-to-r from-[#1a6faa] via-[#2ea3f2] to-[#1a6faa]">
+      <div className="bg-[#2ea3f2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <a
             href="tel:844-967-5247"

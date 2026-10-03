@@ -1,6 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Home, ArrowRight, Phone, FileText } from 'lucide-react';
 import CTABar from '@/components/CTABar';
+
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  description:
+    'The page you were looking for could not be found. Browse spray foam contractor insurance coverage or request a free quote.',
+};
 
 const navCards = [
   { href: '/', icon: Home, label: 'Home', desc: 'Go to homepage', color: 'text-primary' },

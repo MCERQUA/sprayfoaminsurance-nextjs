@@ -16,6 +16,7 @@ import { homepageFaqs } from '@/lib/faqs';
 export const metadata: Metadata = {
   title: { absolute: 'Spray Foam Insurance for Contractors | Get a Fast Quote' },
   description: 'Specialized insurance for spray foam contractors. General liability, workers comp, commercial auto, environmental & surety bonds. Free quotes available.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/' },
 };
 
 export default function HomePage() {

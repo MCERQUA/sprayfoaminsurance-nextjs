@@ -9,6 +9,7 @@ import StatBar from '@/components/StatBar';
 export const metadata: Metadata = {
   title: 'Spray Foam Services | Spray Foam Insurance Call 844-967-5247',
   description: 'Explore all insurance coverage options for spray foam contractors — GL, workers comp, commercial auto, environmental, surety bonds, and rig insurance.',
+  alternates: { canonical: 'https://sprayfoaminsurance.com/services/' },
 };
 
 const topServices = [
