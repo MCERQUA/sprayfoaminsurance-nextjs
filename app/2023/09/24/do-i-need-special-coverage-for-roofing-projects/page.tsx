@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Do I Need Special Coverage for Roofing Projects?',
+  title: 'Coverage for Roofing Projects',
   description: 'Insurance considerations for spray foam contractors working alongside roofing companies. Special coverage for combined operations and elevated risks.',
   keywords: ['spray foam insurance', 'roofing project coverage', 'contractor equipment insurance', 'inland marine insurance'],
   openGraph: {

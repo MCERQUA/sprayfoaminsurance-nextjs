@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Can I Get Coverage for Mold & Mildew Claims?',
+  title: 'Mold & Mildew Claim Coverage',
   description: 'Learn about insurance coverage for mold and mildew claims as a spray foam insulation contractor. Builder\'s risk, inland marine, pollution liability options explained.',
   keywords: ['spray foam insurance', 'mold and mildew claims', 'pollution liability', 'builder\'s risk insurance'],
   openGraph: {

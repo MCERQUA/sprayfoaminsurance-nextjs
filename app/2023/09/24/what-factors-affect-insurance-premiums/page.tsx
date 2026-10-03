@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'What Factors Affect My Insurance Premiums?',
+  title: 'What Affects Your Insurance Premiums',
   description: 'Key factors that determine spray foam contractor insurance premiums: coverage type, claims history, revenue, employee count, and more.',
   keywords: ['spray foam insurance', 'insurance premiums', 'premium factors', 'contractor insurance cost'],
   openGraph: {

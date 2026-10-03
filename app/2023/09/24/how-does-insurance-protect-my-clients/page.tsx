@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'How Does Insurance Protect My Clients?',
+  title: 'How Insurance Protects Your Clients',
   description: 'How spray foam contractor insurance protects construction clients through financial safeguards, liability protection, and quality assurance.',
   keywords: ['spray foam insurance', 'client protection', 'contractor liability', 'construction insurance'],
   openGraph: {

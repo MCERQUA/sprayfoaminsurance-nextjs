@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Insurance Requirements for Large Commercial Projects',
+  title: 'Large Commercial Project Requirements',
   description: 'Essential insurance requirements for spray foam contractors working on large commercial projects. GL, workers comp, professional liability and more.',
   keywords: ['spray foam insurance', 'commercial project insurance', 'contractor liability', 'workers compensation'],
   openGraph: {

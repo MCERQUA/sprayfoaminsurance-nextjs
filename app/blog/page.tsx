@@ -11,7 +11,7 @@ import { blogFaqs } from '@/lib/faqs';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Spray Foam Insurance Blog | Spray Foam Insurance Call 844-967-5247',
+  title: 'Coverage Guides & Blog',
   description:
     'Expert coverage guides, safety tips, and industry news for spray foam insulation contractors. Free resources from SPF insurance specialists.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/blog' },

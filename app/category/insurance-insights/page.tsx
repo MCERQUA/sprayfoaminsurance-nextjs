@@ -4,7 +4,7 @@ import { blogPosts } from '@/lib/blog-posts';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Insurance Insights | Spray Foam Insurance Blog',
+  title: 'Insurance Insights',
   description:
     'Expert insurance guidance for spray foam contractors — coverage tips, compliance guides, and industry news from SPF insurance specialists.',
   keywords: ['spray foam insurance insights', 'SPF contractor insurance tips', 'spray foam coverage guidance'],

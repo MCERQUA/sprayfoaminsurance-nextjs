@@ -8,7 +8,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Spray Foam Rig & Equipment Insurance | Inland Marine',
+  title: 'Spray Foam Rig & Equipment Coverage',
   description:
     'Specialized insurance for spray foam rigs: proportioners, hoses, generators, trailers. Replacement cost coverage. Fast quotes for SPF contractors.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/inland-marine/spray_foam_rig_insurance' },

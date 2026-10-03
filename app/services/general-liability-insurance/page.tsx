@@ -8,7 +8,7 @@ import { AlertTriangle, Shield, Users, Truck } from 'lucide-react';
 import { generalLiabilityFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: 'General Liability Insurance for Spray Foam Contractors',
+  title: 'General Liability for SPF Contractors',
   description: 'Specialized GL insurance for spray foam contractors. Covers overspray, property damage, bodily injury, and completed operations. Get a free quote.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/services/general-liability-insurance' },
 };

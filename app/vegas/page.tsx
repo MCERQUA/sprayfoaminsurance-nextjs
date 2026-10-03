@@ -4,7 +4,7 @@ import CTABar from '@/components/CTABar';
 import VegasQuoteForm from '@/components/VegasQuoteForm';
 
 export const metadata: Metadata = {
-  title: 'Spray Foam Insurance Las Vegas & Nevada | 844-967-5247',
+  title: { absolute: 'Spray Foam Insurance Las Vegas & Nevada' },
   description:
     'Spray foam contractor insurance in Las Vegas and throughout Nevada. General liability, workers comp, equipment coverage. Local specialists. Call 844-967-5247.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/vegas/' },

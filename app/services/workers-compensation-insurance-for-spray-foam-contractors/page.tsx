@@ -8,7 +8,7 @@ import { AlertTriangle, Shield, Users, Truck } from 'lucide-react';
 import { workersCompFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: "Workers' Compensation Insurance for Spray Foam Contractors",
+  title: "Workers' Comp for SPF Contractors",
   description:
     "Workers' comp insurance built for the unique risks of spray foam work — chemical exposure, falls, burns, and occupational illness. Get a free quote today.",
   alternates: { canonical: 'https://sprayfoaminsurance.com/services/workers-compensation-insurance-for-spray-foam-contractors' },

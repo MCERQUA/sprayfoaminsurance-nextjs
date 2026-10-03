@@ -9,7 +9,7 @@ import FAQSection from '@/components/FAQSection';
 import { aboutFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: 'About Us | Spray Foam Insurance Call 844-967-5247',
+  title: 'About Us',
   description: 'Spray Foam Insurance — SPF contractor coverage specialists. Serving contractors in all 50 states with tailored GL, workers comp, and specialty programs.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/about-us' },
 };

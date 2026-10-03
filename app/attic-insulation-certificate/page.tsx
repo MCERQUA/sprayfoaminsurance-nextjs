@@ -8,7 +8,7 @@ import { Calendar, Package, Thermometer, Layout, Ruler, User, Download } from 'l
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Attic Insulation Certificate for Spray Foam Contractors',
+  title: 'Attic Insulation Certificate',
   description: 'Request or download an attic insulation certificate documenting R-value, coverage area, and material specs. Required for energy rebates and home sales.',
   keywords: ['attic insulation certificate', 'spray foam R-value certificate', 'insulation documentation', 'energy rebate certificate'],
   openGraph: {

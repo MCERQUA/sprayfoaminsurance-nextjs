@@ -10,7 +10,7 @@ import { contactFaqs } from '@/lib/faqs';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Spray Foam Insurance Call 844-967-5247',
+  title: 'Contact Us',
   description: 'Contact our spray foam insurance specialists. Call 844-967-5247 or send us a message. GL, workers comp, and equipment coverage quotes available.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/contact-us' },
   keywords: ['contact spray foam insurance', '844-967-5247', 'spray foam insurance agent', 'SPF insurance quote'],

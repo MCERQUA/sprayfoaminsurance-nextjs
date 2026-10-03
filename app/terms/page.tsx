@@ -4,7 +4,7 @@ import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Spray Foam Insurance',
+  title: 'Terms of Service',
   description: 'Terms of service for Spray Foam Insurance. Information about using our website, quote requests, and the limitations of the content provided.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/terms/' },
 };

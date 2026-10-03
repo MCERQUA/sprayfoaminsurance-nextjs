@@ -4,7 +4,7 @@ import CTABar from '@/components/CTABar';
 import GlassCard from '@/components/GlassCard';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Spray Foam Insurance',
+  title: 'Privacy Policy',
   description: 'Spray Foam Insurance privacy policy. Learn how we collect, use, and protect your personal information when you request an insurance quote.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/privacy-policy/' },
 };

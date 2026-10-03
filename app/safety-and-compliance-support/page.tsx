@@ -9,7 +9,7 @@ import { safetyComplianceFaqs } from '@/lib/faqs';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Safety & Compliance Support for Spray Foam Contractors',
+  title: 'Safety & Compliance Support',
   description: 'OSHA requirements, PPE standards, chemical handling guidelines, and compliance checklists for spray foam insulation contractors. Stay safe and legal.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/safety-and-compliance-support' },
   keywords: ['spray foam OSHA', 'SPF safety guidelines', 'spray foam PPE', 'isocyanate safety', 'spray foam compliance'],

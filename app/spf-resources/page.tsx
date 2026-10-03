@@ -10,7 +10,7 @@ import { resourcesFaqs } from '@/lib/faqs';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Spray Foam Contractor Resources | Forms, Guides & Tools',
+  title: 'Spray Foam Contractor Resources',
   description:
     'Download essential resources for spray foam contractors — work record forms, attic certificates, safety guides, OSHA compliance docs. All free.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/spf-resources' },

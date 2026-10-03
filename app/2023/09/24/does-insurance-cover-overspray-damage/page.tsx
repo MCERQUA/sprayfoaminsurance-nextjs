@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Does Insurance Cover Overspray Damage?',
+  title: 'Does Insurance Cover Overspray?',
   description: 'How general liability and specialized spray foam insurance covers overspray damage to neighboring properties, vehicles, and surfaces.',
   keywords: ['spray foam insurance', 'overspray damage', 'general liability insurance', 'environmental liability'],
   openGraph: {

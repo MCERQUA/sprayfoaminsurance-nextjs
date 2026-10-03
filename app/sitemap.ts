@@ -21,7 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/inland-marine/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/inland-marine/spray_foam_rig_insurance/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/spf-resources/`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/spf-resources/work-record-form/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/attic-insulation-certificate/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/safety-and-compliance-support/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/blog/`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },

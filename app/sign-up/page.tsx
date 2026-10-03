@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Create Account | Spray Foam Insurance',
+  title: 'Create Account',
   description: 'Create your Spray Foam Insurance client account to manage coverage, request certificates, and access policy documents online.',
   robots: { index: false, follow: false },
   alternates: { canonical: 'https://sprayfoaminsurance.com/sign-up/' },

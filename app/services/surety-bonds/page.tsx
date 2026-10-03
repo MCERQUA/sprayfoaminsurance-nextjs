@@ -8,7 +8,7 @@ import { AlertTriangle, Shield, Users, Truck } from 'lucide-react';
 import { suretyBondsFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: 'Surety Bonds for Spray Foam Contractors',
+  title: 'Surety Bonds for SPF Contractors',
   description: 'Performance bonds, payment bonds, and license bonds for spray foam contractors. Meet contract requirements and state licensing. Fast quotes available.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/services/surety-bonds' },
 };

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Phone } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Client Login | Spray Foam Insurance',
+  title: 'Client Login',
   description: 'Log in to your Spray Foam Insurance client portal to manage policies, request certificates, and view your coverage documents.',
   robots: { index: false, follow: false },
   alternates: { canonical: 'https://sprayfoaminsurance.com/sign-in/' },

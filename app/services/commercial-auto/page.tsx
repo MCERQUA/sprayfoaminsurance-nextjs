@@ -8,7 +8,7 @@ import { AlertTriangle, Shield, Users, Truck } from 'lucide-react';
 import { commercialAutoFaqs } from '@/lib/faqs';
 
 export const metadata: Metadata = {
-  title: 'Commercial Auto Insurance for Spray Foam Contractors',
+  title: 'Commercial Auto for SPF Contractors',
   description: 'Commercial auto insurance for spray foam rigs, vans, and trucks. Covers hired/non-owned auto, trailer coverage, and cargo liability. Free quotes available.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/services/commercial-auto' },
 };

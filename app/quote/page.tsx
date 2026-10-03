@@ -4,7 +4,7 @@ import QuotePageForm from '@/components/QuotePageForm';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Get a Spray Foam Insurance Quote | Fast, Free, Specialized',
+  title: 'Get a Free Quote',
   description:
     'Get your free spray foam insurance quote in minutes. General liability, workers comp, commercial auto, rig coverage. Specialists in SPF contractor insurance.',
   keywords: [

@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Is Retrofitting Insurance Available for Spray Foam Contractors?',
+  title: 'Retrofit Coverage for SPF Contractors',
   description: 'Retrofitting insurance options for spray foam contractors upgrading existing buildings. Enhanced coverage for retrofit-specific risks.',
   keywords: ['spray foam insurance', 'retrofitting insurance', 'builder\'s risk insurance', 'professional liability insurance'],
   openGraph: {

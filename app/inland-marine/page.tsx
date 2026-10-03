@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Inland Marine Insurance for Spray Foam Contractors',
+  title: 'Inland Marine Insurance',
   description:
     'Protect your spray foam rig and equipment with inland marine insurance. Coverage for proportioners, hoses, generators, and trailers wherever the job takes you.',
   alternates: { canonical: 'https://sprayfoaminsurance.com/inland-marine' },

@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Do I Need Insurance If I Subcontract Work?',
+  title: 'Insurance When You Subcontract Work',
   description: 'Understanding insurance responsibilities when subcontracting spray foam work. Coverage requirements for GCs and subcontractors explained.',
   keywords: ['spray foam insurance', 'subcontracting insurance', 'general contractor coverage', 'subcontractor liability'],
   openGraph: {

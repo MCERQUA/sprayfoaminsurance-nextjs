@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import { OG_IMAGES } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Spray Foam Equipment Financing: Building Strong Banking Relationships',
+  title: 'Spray Foam Equipment Financing Guide',
   description: 'Guide to financing spray foam equipment through strong banking relationships. Equipment costs $40K-$150K+, loan types, and strategies for SPF contractors.',
   keywords: ['spray foam equipment financing', 'banking relationships', 'equipment loans', 'SBA loans', 'spray foam business'],
   openGraph: {
