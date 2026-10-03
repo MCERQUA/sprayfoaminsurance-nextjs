@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
       <div
         className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(circle, rgba(46,163,242,0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(41,196,169,0.08) 0%, transparent 70%)',
           filter: 'blur(60px)',
         }}
       />

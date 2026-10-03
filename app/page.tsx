@@ -222,7 +222,7 @@ export default function HomePage() {
         {/* Subtle blue left-side glow */}
         <div
           className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full pointer-events-none"
-          style={{ background: 'radial-gradient(circle, rgba(46,163,242,0.12) 0%, transparent 70%)', filter: 'blur(40px)' }}
+          style={{ background: 'radial-gradient(circle, rgba(41,196,169,0.12) 0%, transparent 70%)', filter: 'blur(40px)' }}
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -268,7 +268,7 @@ export default function HomePage() {
                 <div
                   className="absolute inset-0 rounded-2xl"
                   style={{
-                    background: 'radial-gradient(ellipse at center, rgba(46,163,242,0.25) 0%, transparent 70%)',
+                    background: 'radial-gradient(ellipse at center, rgba(41,196,169,0.25) 0%, transparent 70%)',
                     filter: 'blur(20px)',
                     transform: 'scale(1.08)',
                   }}

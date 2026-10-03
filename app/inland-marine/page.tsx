@@ -160,7 +160,7 @@ export default function InlandMarinePage() {
 
       {/* Protecting Your Investment */}
       <section className="max-w-5xl mx-auto px-4 py-8">
-        <div className="rounded-2xl bg-primary-gradient p-8 text-white">
+        <div className="rounded-2xl bg-primary p-8 text-white">
           <h2 className="font-headline font-bold text-2xl mb-3">Protecting Your Investment</h2>
           <p className="text-text/90 text-sm mb-5">
             Your spray foam equipment represents a significant financial investment, and its

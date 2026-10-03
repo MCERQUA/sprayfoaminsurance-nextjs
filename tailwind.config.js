@@ -37,7 +37,6 @@ module.exports = {
         full: '9999px',
       },
       backgroundImage: {
-        'primary-gradient': 'linear-gradient(135deg, #2ea3f2, #29c4a9)',
         'hero-gradient': 'linear-gradient(to bottom right, #f4f7fb, #ffffff)',
       },
       boxShadow: {
@@ -64,13 +63,10 @@ module.exports = {
           },
         },
         '.blue-gradient-text': {
-          background: 'linear-gradient(135deg, #2ea3f2, #29c4a9)',
-          '-webkit-background-clip': 'text',
-          '-webkit-text-fill-color': 'transparent',
-          backgroundClip: 'text',
+          color: '#2ea3f2',
         },
         '.primary-btn': {
-          background: 'linear-gradient(135deg, #2ea3f2, #1a7ebf)',
+          background: '#1a7ebf',
           color: 'white',
           transition: 'all 0.3s ease',
           '&:hover': {
