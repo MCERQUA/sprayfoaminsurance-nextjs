@@ -44,6 +44,13 @@ interface FormState {
   state: string;
   coverage: string[];
   message: string;
+  effective_date: string;
+  limits_requested: string;
+  years_in_business: string;
+  gross_revenue: string;
+  current_carrier: string;
+  losses_3yr_count: string;
+  losses_3yr_details: string;
 }
 
 const EMPTY_FORM: FormState = {
@@ -54,6 +61,13 @@ const EMPTY_FORM: FormState = {
   state: '',
   coverage: [],
   message: '',
+  effective_date: '',
+  limits_requested: '',
+  years_in_business: '',
+  gross_revenue: '',
+  current_carrier: '',
+  losses_3yr_count: '',
+  losses_3yr_details: '',
 };
 
 export default function QuoteFormSection() {
@@ -117,6 +131,13 @@ export default function QuoteFormSection() {
     body.append('form_type', 'quote-request');
     body.append('source_site', 'sprayfoaminsurance');
     body.append('message', form.message);
+    body.append('effective_date', form.effective_date);
+    body.append('limits_requested', form.limits_requested);
+    body.append('years_in_business', form.years_in_business);
+    body.append('gross_revenue', form.gross_revenue);
+    body.append('current_carrier', form.current_carrier);
+    body.append('losses_3yr_count', form.losses_3yr_count);
+    body.append('losses_3yr_details', form.losses_3yr_details);
 
     try {
       const res = await fetch('/__forms.html', {
@@ -338,6 +359,107 @@ export default function QuoteFormSection() {
                     rows={3}
                     placeholder="Rig count, annual revenue, current carrier, anything helpful…"
                     value={form.message}
+                    onChange={handleField}
+                    className={inputBase + ' resize-none'}
+                  />
+                </div>
+
+                {/* Coverage-block fields (optional) */}
+                <div className="grid sm:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label htmlFor="qf-effective_date" className="block text-xs font-medium text-gray-400 mb-1.5">
+                      Requested Coverage Start Date
+                    </label>
+                    <input
+                      id="qf-effective_date"
+                      name="effective_date"
+                      type="date"
+                      value={form.effective_date}
+                      onChange={handleField}
+                      className={inputBase}
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="qf-limits_requested" className="block text-xs font-medium text-gray-400 mb-1.5">
+                      Liability Limits Wanted
+                    </label>
+                    <select
+                      id="qf-limits_requested"
+                      name="limits_requested"
+                      value={form.limits_requested}
+                      onChange={handleField}
+                      className={inputBase + ' appearance-none cursor-pointer'}
+                    >
+                      <option value="">Select...</option>
+                      <option value="1M/2M">1M/2M</option>
+                      <option value="1M/3M">1M/3M</option>
+                      <option value="2M/4M">2M/4M</option>
+                      <option value="Not sure">Not sure</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="qf-years_in_business" className="block text-xs font-medium text-gray-400 mb-1.5">
+                      Years in Business
+                    </label>
+                    <input
+                      id="qf-years_in_business"
+                      name="years_in_business"
+                      type="number"
+                      value={form.years_in_business}
+                      onChange={handleField}
+                      className={inputBase}
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="qf-gross_revenue" className="block text-xs font-medium text-gray-400 mb-1.5">
+                      Annual Gross Revenue
+                    </label>
+                    <input
+                      id="qf-gross_revenue"
+                      name="gross_revenue"
+                      type="text"
+                      placeholder="e.g. $250,000 or a range"
+                      value={form.gross_revenue}
+                      onChange={handleField}
+                      className={inputBase}
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="qf-current_carrier" className="block text-xs font-medium text-gray-400 mb-1.5">
+                      Current or Most Recent Insurance Carrier
+                    </label>
+                    <input
+                      id="qf-current_carrier"
+                      name="current_carrier"
+                      type="text"
+                      value={form.current_carrier}
+                      onChange={handleField}
+                      className={inputBase}
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="qf-losses_3yr_count" className="block text-xs font-medium text-gray-400 mb-1.5">
+                      Claims in the Last 3 Years
+                    </label>
+                    <input
+                      id="qf-losses_3yr_count"
+                      name="losses_3yr_count"
+                      type="number"
+                      value={form.losses_3yr_count}
+                      onChange={handleField}
+                      className={inputBase}
+                    />
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <label htmlFor="qf-losses_3yr_details" className="block text-xs font-medium text-gray-400 mb-1.5">
+                    Claim Details: Dates, What Happened, Amounts
+                  </label>
+                  <textarea
+                    id="qf-losses_3yr_details"
+                    name="losses_3yr_details"
+                    rows={3}
+                    value={form.losses_3yr_details}
                     onChange={handleField}
                     className={inputBase + ' resize-none'}
                   />

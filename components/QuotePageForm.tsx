@@ -47,6 +47,11 @@ interface FormState {
   wc_amount: string;
   auto_amount: string;
   surety_amount: string;
+  effective_date: string;
+  years_in_business: string;
+  current_carrier: string;
+  losses_3yr_count: string;
+  losses_3yr_details: string;
 }
 
 const EMPTY_FORM: FormState = {
@@ -55,6 +60,8 @@ const EMPTY_FORM: FormState = {
   message: '', fein: '', grossSales: '', employeeCount: '',
   employeePayroll: '', subcontractorExpenses: '', materialCosts: '',
   gl_amount: '', wc_amount: '', auto_amount: '', surety_amount: '',
+  effective_date: '', years_in_business: '', current_carrier: '',
+  losses_3yr_count: '', losses_3yr_details: '',
 };
 
 const inputBase =
@@ -316,6 +323,50 @@ export default function QuotePageForm() {
             id="qp-materialCosts" name="materialCosts" type="text"
             placeholder="Estimate Next 12 Months"
             value={form.materialCosts} onChange={handleField} className={inputBase}
+          />
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="mb-4">
+            <label htmlFor="qp-effective_date" className={labelBase}>Requested Coverage Start Date</label>
+            <input
+              id="qp-effective_date" name="effective_date" type="date"
+              value={form.effective_date} onChange={handleField} className={inputBase}
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="qp-years_in_business" className={labelBase}>Years in Business</label>
+            <input
+              id="qp-years_in_business" name="years_in_business" type="number"
+              value={form.years_in_business} onChange={handleField} className={inputBase}
+            />
+          </div>
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="qp-current_carrier" className={labelBase}>Current or Most Recent Insurance Carrier</label>
+          <input
+            id="qp-current_carrier" name="current_carrier" type="text"
+            value={form.current_carrier} onChange={handleField} className={inputBase}
+          />
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="mb-4">
+            <label htmlFor="qp-losses_3yr_count" className={labelBase}>Claims in the Last 3 Years</label>
+            <input
+              id="qp-losses_3yr_count" name="losses_3yr_count" type="number"
+              value={form.losses_3yr_count} onChange={handleField} className={inputBase}
+            />
+          </div>
+        </div>
+
+        <div className="mb-6">
+          <label htmlFor="qp-losses_3yr_details" className={labelBase}>Claim Details: Dates, What Happened, Amounts</label>
+          <textarea
+            id="qp-losses_3yr_details" name="losses_3yr_details" rows={3}
+            value={form.losses_3yr_details} onChange={handleField}
+            className={inputBase + ' resize-none'}
           />
         </div>
 
