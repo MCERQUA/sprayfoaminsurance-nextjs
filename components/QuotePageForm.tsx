@@ -52,6 +52,20 @@ interface FormState {
   current_carrier: string;
   losses_3yr_count: string;
   losses_3yr_details: string;
+  // ACORD-core-gap additions (2026-11-13, joshdesk-2 audit — see gap table in
+  // the mesh report). All optional, matching this form's existing low-friction
+  // pattern. No #1301 fields (DL/DOB/SSN/policy-number) — none added, none
+  // pre-existing.
+  entityType: string;
+  businessDescription: string;
+  statesOfOperation: string;
+  usesSubcontractors: string;
+  largestProjectValue: string;
+  currentlyInsured: string;
+  currentPolicyExpiration: string;
+  currentLimits: string;
+  lossesLast3Years: string;
+  additionalInsuredNeeded: string;
 }
 
 const EMPTY_FORM: FormState = {
@@ -62,7 +76,13 @@ const EMPTY_FORM: FormState = {
   gl_amount: '', wc_amount: '', auto_amount: '', surety_amount: '',
   effective_date: '', years_in_business: '', current_carrier: '',
   losses_3yr_count: '', losses_3yr_details: '',
+  entityType: '', businessDescription: '', statesOfOperation: '',
+  usesSubcontractors: '', largestProjectValue: '', currentlyInsured: '',
+  currentPolicyExpiration: '', currentLimits: '', lossesLast3Years: '',
+  additionalInsuredNeeded: '',
 };
+
+const YES_NO = ['Yes', 'No'];
 
 const inputBase =
   'w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted';
@@ -137,7 +157,7 @@ export default function QuotePageForm() {
   }
 
   function radioGroup(
-    field: 'gl_amount' | 'wc_amount' | 'auto_amount' | 'surety_amount',
+    field: keyof FormState,
     options: string[],
   ) {
     return (
@@ -185,6 +205,23 @@ export default function QuotePageForm() {
             value={form.businessName} onChange={handleField} className={inputBase}
             required
           />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="qp-entityType" className={labelBase}>Business Entity Type</label>
+          <select
+            id="qp-entityType" name="entityType"
+            value={form.entityType} onChange={handleField}
+            className={inputBase + ' appearance-none cursor-pointer'}
+          >
+            <option value="">Select…</option>
+            <option value="Individual/Sole Proprietor">Individual / Sole Proprietor</option>
+            <option value="Partnership">Partnership</option>
+            <option value="Corporation">Corporation</option>
+            <option value="LLC">LLC</option>
+            <option value="Joint Venture">Joint Venture</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
 
         <div className="mb-4">
@@ -271,6 +308,25 @@ export default function QuotePageForm() {
         </div>
 
         <div className="mb-4">
+          <label htmlFor="qp-businessDescription" className={labelBase}>Business Description</label>
+          <textarea
+            id="qp-businessDescription" name="businessDescription" rows={2}
+            placeholder="What does your business do day to day? (e.g. new construction spray foam insulation, foam concrete lifting, SPF roofing)"
+            value={form.businessDescription} onChange={handleField}
+            className={inputBase + ' resize-none'}
+          />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="qp-statesOfOperation" className={labelBase}>States Where You Perform Work</label>
+          <input
+            id="qp-statesOfOperation" name="statesOfOperation" type="text"
+            placeholder="E.g. AZ, NV, CA (if different from your business address state)"
+            value={form.statesOfOperation} onChange={handleField} className={inputBase}
+          />
+        </div>
+
+        <div className="mb-4">
           <label htmlFor="qp-fein" className={labelBase}>FEIN</label>
           <input
             id="qp-fein" name="fein" type="text"
@@ -317,12 +373,26 @@ export default function QuotePageForm() {
           </div>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-4">
           <label htmlFor="qp-materialCosts" className={labelBase}>Material Costs</label>
           <input
             id="qp-materialCosts" name="materialCosts" type="text"
             placeholder="Estimate Next 12 Months"
             value={form.materialCosts} onChange={handleField} className={inputBase}
+          />
+        </div>
+
+        <div className="mb-4">
+          <p className={labelBase}>Do you use subcontractors?</p>
+          {radioGroup('usesSubcontractors', YES_NO)}
+        </div>
+
+        <div className="mb-6">
+          <label htmlFor="qp-largestProjectValue" className={labelBase}>Largest Single Project Value</label>
+          <input
+            id="qp-largestProjectValue" name="largestProjectValue" type="text"
+            placeholder="E.g. $250,000"
+            value={form.largestProjectValue} onChange={handleField} className={inputBase}
           />
         </div>
 
@@ -344,11 +414,39 @@ export default function QuotePageForm() {
         </div>
 
         <div className="mb-4">
+          <p className={labelBase}>Are you currently insured?</p>
+          {radioGroup('currentlyInsured', YES_NO)}
+        </div>
+
+        <div className="mb-4">
           <label htmlFor="qp-current_carrier" className={labelBase}>Current or Most Recent Insurance Carrier</label>
           <input
             id="qp-current_carrier" name="current_carrier" type="text"
             value={form.current_carrier} onChange={handleField} className={inputBase}
           />
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+          <div className="mb-4">
+            <label htmlFor="qp-currentPolicyExpiration" className={labelBase}>Current Policy Expiration Date</label>
+            <input
+              id="qp-currentPolicyExpiration" name="currentPolicyExpiration" type="date"
+              value={form.currentPolicyExpiration} onChange={handleField} className={inputBase}
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="qp-currentLimits" className={labelBase}>Current Limits Held</label>
+            <input
+              id="qp-currentLimits" name="currentLimits" type="text"
+              placeholder="E.g. $1M/$2M"
+              value={form.currentLimits} onChange={handleField} className={inputBase}
+            />
+          </div>
+        </div>
+
+        <div className="mb-4">
+          <p className={labelBase}>Any claims/losses in the last 3 years?</p>
+          {radioGroup('lossesLast3Years', YES_NO)}
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
@@ -368,6 +466,11 @@ export default function QuotePageForm() {
             value={form.losses_3yr_details} onChange={handleField}
             className={inputBase + ' resize-none'}
           />
+        </div>
+
+        <div className="mb-6">
+          <p className={labelBase}>Do you need an Additional Insured added to your policy?</p>
+          {radioGroup('additionalInsuredNeeded', YES_NO)}
         </div>
 
         <div className="mb-6">
