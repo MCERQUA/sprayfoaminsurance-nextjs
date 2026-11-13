@@ -98,6 +98,15 @@ export const blogPosts: BlogPost[] = [
       'Spray foam rigs cost $40k–$150k+. Building strong banking relationships is key to financing your equipment and scaling your business.',
     image: '/assets/images/wireframe-handshake.webp',
   },
+  {
+    href: '/2026/11/13/insulation-certificates-for-spray-foam-contractors',
+    title: 'Insulation Certificates for Spray Foam Contractors',
+    date: 'Nov 13, 2026',
+    category: 'Claims',
+    excerpt:
+      'Warranty and insurance claims get denied without job documentation. What an insulation certificate records, the 10-category checklist behind it, and how to generate one.',
+    image: '/assets/images/post-img.jpg',
+  },
 ];
 
 export const blogCategories = ['All', 'Coverage', 'Business', 'Equipment', 'Claims', 'Commercial', 'Pricing'];
