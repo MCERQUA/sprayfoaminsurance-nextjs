@@ -21,6 +21,13 @@
   The person's name is ALWAYS a single field called `name` — never firstName /
   lastName / contact_name. Split name fields do not map to the pipeline's `name`
   and land as nameless leads.
+
+  2026-11-14 (joshmac/desk-1): quote-detailed gained the full ACORD 125/126/140
+  gap-fill (~34 required + 6 selections + 57 Yes/No + 35 conditional explain
+  boxes + loss history + 15 strongly-recommended fields — see
+  components/QuotePageForm.tsx for the YES_NO_QUESTIONS / FOLLOWUP_MAP source
+  of truth). yn_* and ynExplain_* names are hand-registered here to match;
+  regenerate this block from QuotePageForm.tsx's own arrays if either drifts.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -87,6 +94,136 @@
       <input type="text" name="additionalInsuredNeeded" />
       <input type="text" name="form_type" />
       <input type="text" name="source_site" />
+      <input type="text" name="yn_buildingLeasedToOthers" />
+      <input type="text" name="yn_applicantSubsidiary" />
+      <input type="text" name="yn_applicantHasSubsidiaries" />
+      <input type="text" name="yn_safetyProgramsExist" />
+      <input type="text" name="yn_exposureFlammables" />
+      <input type="text" name="yn_otherInsurance" />
+      <input type="text" name="yn_coverageTerminated" />
+      <input type="text" name="yn_pastAllegations" />
+      <input type="text" name="yn_indictedOrConvicted" />
+      <input type="text" name="yn_safetyViolations" />
+      <input type="text" name="yn_negativeFinancialAction" />
+      <input type="text" name="yn_judgementOrLien" />
+      <input type="text" name="yn_businessInTrust" />
+      <input type="text" name="yn_foreignOperations" />
+      <input type="text" name="yn_otherVentures" />
+      <input type="text" name="yn_possessDrones" />
+      <input type="text" name="yn_hireDroneOperators" />
+      <input type="text" name="yn_priorExclusionUninsured" />
+      <input type="text" name="yn_tailCoveragePurchased" />
+      <input type="text" name="yn_drawsPlansForOthers" />
+      <input type="text" name="yn_blastingOrExplosives" />
+      <input type="text" name="yn_excavationOrEarthMoving" />
+      <input type="text" name="yn_subsRequireLowerLimits" />
+      <input type="text" name="yn_subsWorkWithoutCOI" />
+      <input type="text" name="yn_leaseEquipmentToOthers" />
+      <input type="text" name="yn_installServiceDemoProducts" />
+      <input type="text" name="yn_foreignProducts" />
+      <input type="text" name="yn_researchAndDevelopment" />
+      <input type="text" name="yn_guaranteesWarranties" />
+      <input type="text" name="yn_aircraftSpaceProducts" />
+      <input type="text" name="yn_productsRecalled" />
+      <input type="text" name="yn_productsRepackagedUnderLabel" />
+      <input type="text" name="yn_productsUnderOthersLabel" />
+      <input type="text" name="yn_vendorsCoverageRequired" />
+      <input type="text" name="yn_sellsToOtherNamedInsured" />
+      <input type="text" name="yn_medicalFacilities" />
+      <input type="text" name="yn_radioactiveExposure" />
+      <input type="text" name="yn_hazardousMaterialOps" />
+      <input type="text" name="yn_operationsSoldAcquired" />
+      <input type="text" name="yn_rentOrLoanEquipment" />
+      <input type="text" name="yn_watercraftDocksFloats" />
+      <input type="text" name="yn_parkingFacilities" />
+      <input type="text" name="yn_parkingFeeCharged" />
+      <input type="text" name="yn_recreationFacilities" />
+      <input type="text" name="yn_lodgingOperations" />
+      <input type="text" name="yn_swimmingPool" />
+      <input type="text" name="yn_socialEvents" />
+      <input type="text" name="yn_athleticTeams" />
+      <input type="text" name="yn_structuralAlterations" />
+      <input type="text" name="yn_demolitionExposure" />
+      <input type="text" name="yn_activeJointVentures" />
+      <input type="text" name="yn_leaseEmployees" />
+      <input type="text" name="yn_laborInterchange" />
+      <input type="text" name="yn_dayCareFacilities" />
+      <input type="text" name="yn_crimesOnPremises" />
+      <input type="text" name="yn_formalSafetyPolicy" />
+      <input type="text" name="yn_promotionalSafetyClaims" />
+      <textarea name="ynExplain_priorExclusionUninsured"></textarea>
+      <textarea name="ynExplain_tailCoveragePurchased"></textarea>
+      <textarea name="ynExplain_drawsPlansForOthers"></textarea>
+      <textarea name="ynExplain_blastingOrExplosives"></textarea>
+      <textarea name="ynExplain_excavationOrEarthMoving"></textarea>
+      <textarea name="ynExplain_subsRequireLowerLimits"></textarea>
+      <textarea name="ynExplain_subsWorkWithoutCOI"></textarea>
+      <textarea name="ynExplain_leaseEquipmentToOthers"></textarea>
+      <textarea name="ynExplain_watercraftDocksFloats"></textarea>
+      <textarea name="ynExplain_formalSafetyPolicy"></textarea>
+      <textarea name="ynExplain_installServiceDemoProducts"></textarea>
+      <textarea name="ynExplain_researchAndDevelopment"></textarea>
+      <textarea name="ynExplain_guaranteesWarranties"></textarea>
+      <textarea name="ynExplain_aircraftSpaceProducts"></textarea>
+      <textarea name="ynExplain_productsRecalled"></textarea>
+      <textarea name="ynExplain_productsRepackagedUnderLabel"></textarea>
+      <textarea name="ynExplain_productsUnderOthersLabel"></textarea>
+      <textarea name="ynExplain_vendorsCoverageRequired"></textarea>
+      <textarea name="ynExplain_sellsToOtherNamedInsured"></textarea>
+      <textarea name="ynExplain_medicalFacilities"></textarea>
+      <textarea name="ynExplain_radioactiveExposure"></textarea>
+      <textarea name="ynExplain_hazardousMaterialOps"></textarea>
+      <textarea name="ynExplain_operationsSoldAcquired"></textarea>
+      <textarea name="ynExplain_rentOrLoanEquipment"></textarea>
+      <textarea name="ynExplain_parkingFacilities"></textarea>
+      <textarea name="ynExplain_parkingFeeCharged"></textarea>
+      <textarea name="ynExplain_recreationFacilities"></textarea>
+      <textarea name="ynExplain_socialEvents"></textarea>
+      <textarea name="ynExplain_structuralAlterations"></textarea>
+      <textarea name="ynExplain_demolitionExposure"></textarea>
+      <textarea name="ynExplain_activeJointVentures"></textarea>
+      <textarea name="ynExplain_laborInterchange"></textarea>
+      <textarea name="ynExplain_dayCareFacilities"></textarea>
+      <textarea name="ynExplain_crimesOnPremises"></textarea>
+      <textarea name="ynExplain_promotionalSafetyClaims"></textarea>
+      <input type="text" name="sic" />
+      <input type="text" name="naics" />
+      <input type="date" name="expirationDate" />
+      <input type="text" name="county" />
+      <input type="number" name="fullTimeEmployees" />
+      <input type="number" name="partTimeEmployees" />
+      <input type="text" name="locationDescription" />
+      <input type="date" name="businessStartDate" />
+      <input type="text" name="workSubcontractedPercent" />
+      <input type="text" name="glTrigger" />
+      <input type="text" name="glAggregateAppliesTo" />
+      <input type="text" name="premisesCityLimits" />
+      <input type="text" name="premisesInterest" />
+      <input type="text" name="billingPlan" />
+      <input type="text" name="athleticTeamAgeGroup" />
+      <input type="text" name="poolConstruction" />
+      <input type="text" name="lossHistoryStatus" />
+      <input type="date" name="lossDate" />
+      <input type="text" name="lossDescription" />
+      <input type="text" name="lossAmountPaid" />
+      <input type="text" name="lossAmountReserved" />
+      <input type="text" name="paymentPlan" />
+      <input type="text" name="paymentMethod" />
+      <input type="text" name="auditRequired" />
+      <input type="text" name="publicAreaSqFt" />
+      <input type="text" name="installationServiceRepairPercent" />
+      <input type="text" name="retailPercent" />
+      <input type="text" name="glCode" />
+      <input type="number" name="numberOfMembers" />
+      <input type="text" name="isContractor" />
+      <input type="text" name="offPremisesInstallPercent" />
+      <input type="number" name="buildingAreaSqFt" />
+      <input type="number" name="occupiedAreaSqFt" />
+      <input type="text" name="namedInsuredWebsite" />
+      <textarea name="workSubcontractedDescription"></textarea>
+      <textarea name="generalRemarks"></textarea>
+      <input type="text" name="safetyProgramElements" />
+      <input type="text" name="poolSafetyFeatures" />
       <input type="text" name="bot-field" />
     </form>
 
