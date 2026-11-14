@@ -18,6 +18,7 @@ const serviceLinks = [
 const resourceLinks = [
   { label: 'Attic Insulation Certificate', href: '/attic-insulation-certificate/' },
   { label: 'Work Record Form', href: '/spf-resources/work-record-form/' },
+  { label: 'InsulationCertificate.com', href: 'https://insulationcertificate.com' },
 ];
 
 const mainNav = [
@@ -60,15 +61,19 @@ function DropdownItem({ item }: { item: typeof mainNav[0] }) {
       {open && (
         <div className="absolute top-full left-0 pt-1 z-50 min-w-[220px]">
           <div className="bg-[#ffffff] border border-[#2ea3f2]/20 rounded shadow-xl py-1">
-            {item.children.map((child) => (
-              <Link
-                key={child.href}
-                href={child.href}
-                className="block px-4 py-2 text-sm text-muted hover:bg-[#2ea3f2]/10 hover:text-[#2ea3f2] transition-colors"
-              >
-                {child.label}
-              </Link>
-            ))}
+            {item.children.map((child) => {
+              const isExternal = child.href.startsWith('http');
+              return (
+                <Link
+                  key={child.href}
+                  href={child.href}
+                  className="block px-4 py-2 text-sm text-muted hover:bg-[#2ea3f2]/10 hover:text-[#2ea3f2] transition-colors"
+                  {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                >
+                  {child.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}
@@ -227,16 +232,20 @@ export default function Nav() {
                     </button>
                     {openMobileSection === item.label && (
                       <div className="pl-4 py-1 space-y-1">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            className="block py-2 text-sm text-gray-400 hover:text-[#2ea3f2] transition-colors"
-                            onClick={() => setMobileOpen(false)}
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
+                        {item.children.map((child) => {
+                          const isExternal = child.href.startsWith('http');
+                          return (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className="block py-2 text-sm text-gray-400 hover:text-[#2ea3f2] transition-colors"
+                              onClick={() => setMobileOpen(false)}
+                              {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                            >
+                              {child.label}
+                            </Link>
+                          );
+                        })}
                       </div>
                     )}
                   </div>

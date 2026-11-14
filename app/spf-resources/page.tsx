@@ -61,6 +61,14 @@ const resources = [
     href: '/quote',
     cta: 'View Checklist',
   },
+  {
+    icon: Award,
+    title: 'InsulationCertificate.com',
+    description:
+      'Generate job-level insulation certificates and documentation with the Contractors Choice Agency tool built for SPF contractors.',
+    href: 'https://insulationcertificate.com',
+    cta: 'Visit InsulationCertificate.com',
+  },
 ];
 
 
@@ -95,21 +103,25 @@ export default function SPFResourcesPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-          {resources.map(({ icon: Icon, title, description, href, cta }) => (
-            <GlassCard key={title} className="flex flex-col p-6 h-full">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
-                <Icon className="w-6 h-6" />
-              </div>
-              <h3 className="font-headline font-bold text-text text-lg mb-2">{title}</h3>
-              <p className="text-muted text-sm mb-4 flex-1">{description}</p>
-              <Link
-                href={href}
-                className="primary-btn inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-label font-semibold mt-auto"
-              >
-                {cta} <ArrowRight className="w-4 h-4" />
-              </Link>
-            </GlassCard>
-          ))}
+          {resources.map(({ icon: Icon, title, description, href, cta }) => {
+            const isExternal = href.startsWith('http');
+            return (
+              <GlassCard key={title} className="flex flex-col p-6 h-full">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+                  <Icon className="w-6 h-6" />
+                </div>
+                <h3 className="font-headline font-bold text-text text-lg mb-2">{title}</h3>
+                <p className="text-muted text-sm mb-4 flex-1">{description}</p>
+                <Link
+                  href={href}
+                  className="primary-btn inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-label font-semibold mt-auto"
+                  {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                >
+                  {cta} <ArrowRight className="w-4 h-4" />
+                </Link>
+              </GlassCard>
+            );
+          })}
         </div>
       </section>
 
