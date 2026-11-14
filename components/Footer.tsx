@@ -15,6 +15,7 @@ const navigate = [
   { label: 'Resources', href: '/spf-resources' },
   { label: 'Attic Insulation Certificate', href: '/attic-insulation-certificate' },
   { label: 'Work Record Form', href: '/spf-resources/work-record-form' },
+  { label: 'InsulationCertificate.com', href: 'https://insulationcertificate.com' },
   { label: 'Blog', href: '/blog' },
   { label: 'About Us', href: '/about-us' },
   { label: 'Contact Us', href: '/contact-us' },
@@ -70,16 +71,20 @@ export default function Footer() {
           <div>
             <h4 className="font-label font-semibold text-xs label-text text-muted mb-4">Navigate</h4>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2">
-              {navigate.map((l) => (
-                <li key={l.href + l.label}>
-                  <Link
-                    href={l.href}
-                    className="text-sm text-muted hover:text-primary transition-colors"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
+              {navigate.map((l) => {
+                const isExternal = l.href.startsWith('http');
+                return (
+                  <li key={l.href + l.label}>
+                    <Link
+                      href={l.href}
+                      className="text-sm text-muted hover:text-primary transition-colors"
+                      {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
