@@ -25,28 +25,11 @@ export default function HomePage() {
       {/* Global Organization/WebSite JSON-LD lives in layout (components/JsonLd.tsx).
           The homepage FAQ emits its own FAQPage schema via FAQSection. */}
 
-      {/* ─── SECTION 1: VIDEO HERO (untouched) ─── */}
+      {/* ─── SECTION 1: HERO (background video removed 2026-11-14 — now a small embed below, josh-sms request) ─── */}
       <section
           className="relative min-h-screen flex items-center overflow-hidden"
           style={{ background: 'linear-gradient(135deg, #f4f7fb 0%, #ffffff 55%, #eaf4fd 100%)' }}
         >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/assets/images/hero-poster.webp"
-          className="hero-video absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/assets/videos/hero.webm" type="video/webm" />
-          <source src="/assets/videos/hero.mp4" type="video/mp4" />
-        </video>
-
-        <div
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(135deg, rgba(244,247,251,0.94) 0%, rgba(244,247,251,0.80) 50%, rgba(244,247,251,0.90) 100%)' }}
-        />
-
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
           <div className="max-w-3xl">
             <div className="hero-badge inline-flex items-center gap-2 border border-primary/40 bg-primary/10 rounded-full px-4 py-1.5 mb-7">
@@ -96,6 +79,27 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Hero video — small contained embed, moved out of the hero background per
+            Josh's request (josh-sms, 2026-11-13): no longer a full-bleed background,
+            now a small box below the hero / Sign Up Now area ─── */}
+      <section className="py-10 bg-[#f4f7fb]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center sm:justify-start">
+          <div className="w-full max-w-xs sm:max-w-sm rounded-xl overflow-hidden shadow-lg border border-black/10">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="/assets/images/hero-poster.webp"
+              className="w-full h-auto block"
+            >
+              <source src="/assets/videos/hero.webm" type="video/webm" />
+              <source src="/assets/videos/hero.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
