@@ -28,6 +28,15 @@
   components/QuotePageForm.tsx for the YES_NO_QUESTIONS / FOLLOWUP_MAP source
   of truth). yn_* and ynExplain_* names are hand-registered here to match;
   regenerate this block from QuotePageForm.tsx's own arrays if either drifts.
+
+  2026-11-14 (desk-1 follow-up patch): added general_* fields — real named
+  detail-capture fields for the 14 "General" Yes/No checkboxes (subsidiary,
+  parent, other insurance, negative financial action, judgement/lien,
+  exposure, coverage terminated, past allegations, indicted/convicted,
+  safety violations, trust, other ventures, drones x2) whose FIELDS.md spec
+  previously gave only field COUNTS with no names. See GENERAL_DETAIL_MAP in
+  components/QuotePageForm.tsx for the source of truth. Composite flat
+  names: general_<ynQuestionKey>__<detailFieldKey>.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -186,6 +195,39 @@
       <textarea name="ynExplain_dayCareFacilities"></textarea>
       <textarea name="ynExplain_crimesOnPremises"></textarea>
       <textarea name="ynExplain_promotionalSafetyClaims"></textarea>
+      <input type="text" name="general_applicantSubsidiary__parentName" />
+      <input type="text" name="general_applicantSubsidiary__relationship" />
+      <input type="text" name="general_applicantSubsidiary__ownershipPercentage" />
+      <input type="text" name="general_applicantHasSubsidiaries__subsidiaryName" />
+      <input type="text" name="general_applicantHasSubsidiaries__relationship" />
+      <input type="text" name="general_applicantHasSubsidiaries__ownershipPercentage" />
+      <input type="text" name="general_otherInsurance__lineOfBusiness" />
+      <input type="text" name="general_otherInsurance__policyNumber" />
+      <input type="text" name="general_negativeFinancialAction__occurenceDate" />
+      <input type="text" name="general_negativeFinancialAction__explanation" />
+      <input type="text" name="general_negativeFinancialAction__resolution" />
+      <input type="text" name="general_negativeFinancialAction__resolutionDate" />
+      <input type="text" name="general_judgementOrLien__occurenceDate" />
+      <input type="text" name="general_judgementOrLien__explanation" />
+      <input type="text" name="general_judgementOrLien__resolution" />
+      <input type="text" name="general_judgementOrLien__resolutionDate" />
+      <input type="text" name="general_exposureFlammables__description" />
+      <input type="text" name="general_coverageTerminated__nonPayment" />
+      <input type="text" name="general_coverageTerminated__nonRenewal" />
+      <input type="text" name="general_coverageTerminated__agentStopRepresenting" />
+      <input type="text" name="general_coverageTerminated__underwriting" />
+      <input type="text" name="general_coverageTerminated__conditionCorrected" />
+      <input type="text" name="general_coverageTerminated__conditionCorrectedDescription" />
+      <input type="text" name="general_pastAllegations__description" />
+      <input type="text" name="general_indictedOrConvicted__description" />
+      <input type="text" name="general_safetyViolations__occurenceDate" />
+      <input type="text" name="general_safetyViolations__explanation" />
+      <input type="text" name="general_safetyViolations__resolution" />
+      <input type="text" name="general_safetyViolations__resolutionDate" />
+      <input type="text" name="general_businessInTrust__name" />
+      <input type="text" name="general_otherVentures__description" />
+      <input type="text" name="general_possessDrones__description" />
+      <input type="text" name="general_hireDroneOperators__description" />
       <input type="text" name="sic" />
       <input type="text" name="naics" />
       <input type="date" name="expirationDate" />

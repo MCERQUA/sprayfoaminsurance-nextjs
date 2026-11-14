@@ -101,6 +101,15 @@ interface FormState {
   // 35 "explain if Yes" follow-ups — see FOLLOWUP_MAP below.
   ynExplain: Record<string, string>;
 
+  // 2026-11-14 (desk-1 follow-up patch): real named detail fields for the 14
+  // "General" Yes/No checkboxes whose FIELDS.md spec previously gave only a
+  // field COUNT (e.g. "3 fields") with no names — see GENERAL_DETAIL_MAP
+  // below, sourced from the 2026-11-14 josh-sms reissue of
+  // ACORD-125-126-140-FIELDS.md's "Conditional" section. Keyed by
+  // `${yesNoQuestionKey}__${detailFieldKey}` (composite flat key — Netlify
+  // Forms needs one flat field name, same convention as yn/ynExplain above).
+  generalDetails: Record<string, string>;
+
   // Conditional selections (only meaningful when their trigger question is Yes)
   safetyProgramElements: string[];
   athleticTeamAgeGroup: string;
@@ -156,6 +165,7 @@ const EMPTY_FORM: FormState = {
 
   yn: {},
   ynExplain: {},
+  generalDetails: {},
 
   safetyProgramElements: [], athleticTeamAgeGroup: '',
   poolConstruction: '', poolSafetyFeatures: [],
@@ -288,6 +298,88 @@ const FOLLOWUP_MAP: Record<string, { label: string; maxLength: number }> = {
   promotionalSafetyClaims: { label: 'Please explain', maxLength: 136 },
 };
 
+// ── 14 "General" conditional detail groups (ACORD-125-126-140-FIELDS.md
+// "Conditional — only when its trigger applies", reissued 2026-11-14 by
+// josh-sms with real field names — the counts-only version this replaces
+// could not be built without inventing names). Each entry is keyed by its
+// YES_NO_QUESTIONS trigger key above; when that question is Yes/checked,
+// every field in its array renders and is required to actually capture the
+// named ACORD field, not a generic "please explain" box. `maxLength` is set
+// only where FIELDS.md gives a real limit (not "auto"). ACORD_General_Safety
+// (safetyProgramsExist) and ACORD_General_Foreign (foreignOperations) are
+// NOT in this map — they were not part of this patch's 14-checkbox scope
+// (ACORD 140 property section is separately confirmed N/A for this form).
+interface GeneralDetailField {
+  key: string;
+  label: string;
+  type?: 'text' | 'checkbox';
+  maxLength?: number;
+}
+
+const GENERAL_DETAIL_MAP: Record<string, GeneralDetailField[]> = {
+  applicantSubsidiary: [
+    { key: 'parentName', label: 'Parent Company Name' },
+    { key: 'relationship', label: 'Relationship Description', maxLength: 39 },
+    { key: 'ownershipPercentage', label: 'Ownership Percentage' },
+  ],
+  applicantHasSubsidiaries: [
+    { key: 'subsidiaryName', label: 'Subsidiary Company Name' },
+    { key: 'relationship', label: 'Relationship Description' },
+    { key: 'ownershipPercentage', label: 'Ownership Percentage' },
+  ],
+  otherInsurance: [
+    { key: 'lineOfBusiness', label: 'Line of Business' },
+    { key: 'policyNumber', label: 'Policy Number' },
+  ],
+  negativeFinancialAction: [
+    { key: 'occurenceDate', label: 'Occurrence Date' },
+    { key: 'explanation', label: 'Explanation' },
+    { key: 'resolution', label: 'Resolution' },
+    { key: 'resolutionDate', label: 'Resolution Date' },
+  ],
+  judgementOrLien: [
+    { key: 'occurenceDate', label: 'Occurrence Date' },
+    { key: 'explanation', label: 'Explanation' },
+    { key: 'resolution', label: 'Resolution' },
+    { key: 'resolutionDate', label: 'Resolution Date' },
+  ],
+  exposureFlammables: [
+    { key: 'description', label: 'Exposure Description' },
+  ],
+  coverageTerminated: [
+    { key: 'nonPayment', label: 'Non-Payment', type: 'checkbox' },
+    { key: 'nonRenewal', label: 'Non-Renewal', type: 'checkbox' },
+    { key: 'agentStopRepresenting', label: 'Agent No Longer Represents Carrier', type: 'checkbox' },
+    { key: 'underwriting', label: 'Underwriting', type: 'checkbox' },
+    { key: 'conditionCorrected', label: 'Condition Corrected', type: 'checkbox' },
+    { key: 'conditionCorrectedDescription', label: 'Coverage Corrected Description' },
+  ],
+  pastAllegations: [
+    { key: 'description', label: 'Past Allegations Description' },
+  ],
+  indictedOrConvicted: [
+    { key: 'description', label: 'Indicted or Convicted Description' },
+  ],
+  safetyViolations: [
+    { key: 'occurenceDate', label: 'Occurrence Date' },
+    { key: 'explanation', label: 'Explanation' },
+    { key: 'resolution', label: 'Resolution' },
+    { key: 'resolutionDate', label: 'Resolution Date' },
+  ],
+  businessInTrust: [
+    { key: 'name', label: 'Trust Name' },
+  ],
+  otherVentures: [
+    { key: 'description', label: 'Description of Other Ventures' },
+  ],
+  possessDrones: [
+    { key: 'description', label: 'Description of Drone Possession' },
+  ],
+  hireDroneOperators: [
+    { key: 'description', label: 'Description of Drone Hiring' },
+  ],
+};
+
 const inputBase =
   'w-full bg-background border border-primary/20 rounded-lg px-4 py-2.5 text-text text-sm focus:outline-none focus:border-primary/50 placeholder:text-muted';
 
@@ -314,6 +406,16 @@ export default function QuotePageForm() {
 
   function handleYnExplain(key: string, value: string) {
     setForm((prev) => ({ ...prev, ynExplain: { ...prev.ynExplain, [key]: value } }));
+  }
+
+  // One detail field inside a GENERAL_DETAIL_MAP group — composite key
+  // matches the flat name submitted (`general_${questionKey}__${fieldKey}`).
+  function handleGeneralDetail(questionKey: string, fieldKey: string, value: string) {
+    const compositeKey = `${questionKey}__${fieldKey}`;
+    setForm((prev) => ({
+      ...prev,
+      generalDetails: { ...prev.generalDetails, [compositeKey]: value },
+    }));
   }
 
   // Multi-select checkbox groups (safetyProgramElements, poolSafetyFeatures) —
@@ -350,7 +452,7 @@ export default function QuotePageForm() {
     // which are flattened separately below with their own flat field names
     // (Netlify Forms — and public/__forms.html's static detection — need one
     // flat name per field, not a nested object).
-    const NESTED_KEYS = new Set(['yn', 'ynExplain', 'safetyProgramElements', 'poolSafetyFeatures']);
+    const NESTED_KEYS = new Set(['yn', 'ynExplain', 'generalDetails', 'safetyProgramElements', 'poolSafetyFeatures']);
     (Object.keys(form) as (keyof FormState)[])
       .filter((k) => !NESTED_KEYS.has(k as string))
       .forEach((k) => body.append(k, form[k] as string));
@@ -359,6 +461,12 @@ export default function QuotePageForm() {
     Object.keys(FOLLOWUP_MAP).forEach((key) =>
       body.append(`ynExplain_${key}`, form.ynExplain[key] ?? ''),
     );
+    Object.entries(GENERAL_DETAIL_MAP).forEach(([qKey, fields]) => {
+      fields.forEach((f) => {
+        const compositeKey = `${qKey}__${f.key}`;
+        body.append(`general_${compositeKey}`, form.generalDetails[compositeKey] ?? '');
+      });
+    });
     body.append('safetyProgramElements', form.safetyProgramElements.join(', '));
     body.append('poolSafetyFeatures', form.poolSafetyFeatures.join(', '));
 
@@ -428,6 +536,7 @@ export default function QuotePageForm() {
   // answer is actually Yes/checked.
   function ynQuestion(q: YnQuestion) {
     const follow = FOLLOWUP_MAP[q.key];
+    const details = GENERAL_DETAIL_MAP[q.key];
     const answer = form.yn[q.key] ?? '';
     const isYes = q.kind === 'checkbox' ? answer === 'Yes' : answer === 'Yes';
 
@@ -476,6 +585,48 @@ export default function QuotePageForm() {
               onChange={(e) => handleYnExplain(q.key, e.target.value)}
               className={inputBase + ' resize-none'}
             />
+          </div>
+        )}
+
+        {details && isYes && (
+          <div className="mt-2 space-y-2 pl-4 border-l-2 border-primary/20">
+            {details.map((d) => {
+              const compositeKey = `${q.key}__${d.key}`;
+              const value = form.generalDetails[compositeKey] ?? '';
+              if (d.type === 'checkbox') {
+                return (
+                  <label
+                    key={d.key}
+                    className="flex items-center gap-2 text-sm text-muted cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name={`general_${compositeKey}`}
+                      checked={value === 'Yes'}
+                      onChange={(e) =>
+                        handleGeneralDetail(q.key, d.key, e.target.checked ? 'Yes' : '')
+                      }
+                      className="w-4 h-4 accent-primary"
+                    />
+                    {d.label}
+                  </label>
+                );
+              }
+              return (
+                <div key={d.key}>
+                  <label className="block text-xs text-muted mb-1">{d.label}</label>
+                  <input
+                    type="text"
+                    name={`general_${compositeKey}`}
+                    maxLength={d.maxLength}
+                    placeholder={d.label}
+                    value={value}
+                    onChange={(e) => handleGeneralDetail(q.key, d.key, e.target.value)}
+                    className={inputBase}
+                  />
+                </div>
+              );
+            })}
           </div>
         )}
       </div>
