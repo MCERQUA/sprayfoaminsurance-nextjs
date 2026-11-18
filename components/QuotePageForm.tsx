@@ -809,11 +809,19 @@ export default function QuotePageForm() {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="qp-fein" className={labelBase}>FEIN</label>
+          <label htmlFor="qp-fein" className={labelBase}>FEIN *</label>
           <input
-            id="qp-fein" name="fein" type="text"
-            placeholder="Helps us shop more carriers. Required for Workers Compensation Insurance quotes."
-            value={form.fein} onChange={handleField} className={inputBase}
+            id="qp-fein" name="fein" type="text" required
+            pattern="\d{2}-?\d{7}"
+            title="FEIN must be 9 digits (XX-XXXXXXX)"
+            placeholder="XX-XXXXXXX"
+            value={form.fein}
+            onChange={(e) => { e.currentTarget.setCustomValidity(''); handleField(e); }}
+            onInvalid={(e) => {
+              const el = e.currentTarget;
+              el.setCustomValidity(el.validity.valueMissing ? 'FEIN is required' : 'FEIN must be 9 digits (XX-XXXXXXX)');
+            }}
+            className={inputBase}
           />
         </div>
 
