@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins, Open_Sans } from 'next/font/google';
+import localFont from 'next/font/local';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import JsonLd from '@/components/JsonLd';
@@ -8,21 +8,26 @@ import './globals.css';
 // Live site (sprayfoaminsurance.com) uses Poppins for headings and Open Sans
 // for body/labels — see ai/live-capture/DESIGN-TOKENS.md. Swapped in for
 // design-token parity (previously Montserrat/Inter/Public Sans).
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['600', '700', '800'],
+// Self-hosted (latin subset woff2 in app/fonts) — next/font/google intermittently
+// crashed the build (loader.js TypeError, exit 2) when Google served a font URL
+// without a .woff/.woff2 extension. Same families, weights, variables, display.
+const poppins = localFont({
+  src: [
+    { path: './fonts/Poppins-600.woff2', weight: '600', style: 'normal' },
+    { path: './fonts/Poppins-700.woff2', weight: '700', style: 'normal' },
+    { path: './fonts/Poppins-800.woff2', weight: '800', style: 'normal' },
+  ],
   display: 'swap',
   variable: '--font-headline',
 });
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
+// Open Sans ships as one variable file covering 400-700.
+const openSans = localFont({
+  src: [{ path: './fonts/OpenSans-400-700.woff2', weight: '400 700', style: 'normal' }],
   display: 'swap',
   variable: '--font-body',
 });
-const openSansLabel = Open_Sans({
-  subsets: ['latin'],
-  weight: ['500', '600', '700'],
+const openSansLabel = localFont({
+  src: [{ path: './fonts/OpenSans-400-700.woff2', weight: '400 700', style: 'normal' }],
   display: 'swap',
   variable: '--font-label',
 });
