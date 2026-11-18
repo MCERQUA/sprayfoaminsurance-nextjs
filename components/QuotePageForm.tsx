@@ -77,6 +77,11 @@ interface FormState {
 
   // Required-from-client gaps (9)
   sic: string;
+  tradeType: string;
+  glProductsCompOpsAggregate: string;
+  glPersonalAdvertisingInjury: string;
+  glDamageToRentedPremises: string;
+  glMedicalExpense: string;
   naics: string;
   expirationDate: string;
   county: string;
@@ -156,7 +161,8 @@ const EMPTY_FORM: FormState = {
   currentPolicyExpiration: '', currentLimits: '', lossesLast3Years: '',
   additionalInsuredNeeded: '',
 
-  sic: '', naics: '', expirationDate: '', county: '',
+  sic: '', tradeType: '', glProductsCompOpsAggregate: '', glPersonalAdvertisingInjury: '',
+  glDamageToRentedPremises: '', glMedicalExpense: '', naics: '', expirationDate: '', county: '',
   fullTimeEmployees: '', partTimeEmployees: '', locationDescription: '',
   businessStartDate: '', workSubcontractedPercent: '',
 
@@ -182,6 +188,17 @@ const EMPTY_FORM: FormState = {
 };
 
 const YES_NO = ['Yes', 'No'];
+
+// Trade values match the acord-forms mapper's TRADE_CODES keys exactly (it derives SIC/NAICS from them).
+const TRADE_TYPES = [
+  'Spray Foam / Insulation', 'General Contractor', 'Remodeling / Handyman', 'Roofing',
+  'Concrete / Masonry', 'Carpentry / Framing', 'Drywall / Painting', 'Electrical', 'Plumbing',
+  'HVAC', 'Flooring / Tile', 'Excavation / Grading', 'Landscaping',
+];
+const GL_PRODUCTS_AGG = ['$1,000,000', '$2,000,000', '$3,000,000'];
+const GL_PERSONAL_ADV = ['$500,000', '$1,000,000', '$2,000,000'];
+const GL_FIRE_DAMAGE = ['$50,000', '$100,000', '$300,000'];
+const GL_MED_EXP = ['$5,000', '$10,000', '$15,000'];
 
 // ── 57 Yes/No underwriting questions (ACORD-125-126-140-FIELDS.md "Yes/No
 // questions the client must answer"). `kind: 'checkbox'` = tick for Yes,
@@ -390,6 +407,7 @@ export default function QuotePageForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(false);
+  const [clientError, setClientError] = useState('');
 
   function handleField(
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
@@ -443,6 +461,16 @@ export default function QuotePageForm() {
       e.currentTarget.reportValidity();
       return;
     }
+    const needsArr: [boolean, string[], string][] = [
+      [form.yn.safetyProgramsExist === 'Yes', form.safetyProgramElements, 'Select at least one safety program element.'],
+      [form.yn.swimmingPool === 'Yes', form.poolSafetyFeatures, 'Select at least one pool safety feature (or tell us in a call if none).'],
+    ];
+    const bad = needsArr.find(([on, arr]) => on && arr.length === 0);
+    if (bad) {
+      setClientError(bad[2]);
+      return;
+    }
+    setClientError('');
     setSubmitting(true);
     setError(false);
 
@@ -522,6 +550,7 @@ export default function QuotePageForm() {
               value={opt}
               checked={form[field] === opt}
               onChange={handleField}
+              required
               className="accent-primary"
             />
             {opt}
@@ -542,43 +571,32 @@ export default function QuotePageForm() {
 
     return (
       <div key={q.key} className="mb-4">
-        {q.kind === 'checkbox' ? (
-          <label className="flex items-center gap-2 text-sm text-muted cursor-pointer">
-            <input
-              type="checkbox"
-              name={`yn_${q.key}`}
-              checked={isYes}
-              onChange={(e) => handleYn(q.key, e.target.checked ? 'Yes' : '')}
-              className="w-4 h-4 accent-primary"
-            />
-            {q.label}
-          </label>
-        ) : (
-          <>
-            <p className="text-sm text-muted mb-1.5">{q.label}</p>
-            <div className="flex gap-5">
-              {YES_NO.map((opt) => (
-                <label key={opt} className="flex items-center gap-2 text-sm text-muted cursor-pointer">
-                  <input
-                    type="radio"
-                    name={`yn_${q.key}`}
-                    value={opt}
-                    checked={answer === opt}
-                    onChange={() => handleYn(q.key, opt)}
-                    className="accent-primary"
-                  />
-                  {opt}
-                </label>
-              ))}
-            </div>
-          </>
-        )}
+        <>
+          <p className="text-sm text-muted mb-1.5">{q.label} *</p>
+          <div className="flex gap-5">
+            {YES_NO.map((opt) => (
+              <label key={opt} className="flex items-center gap-2 text-sm text-muted cursor-pointer">
+                <input
+                  type="radio"
+                  name={`yn_${q.key}`}
+                  value={opt}
+                  checked={answer === opt}
+                  onChange={() => handleYn(q.key, opt)}
+                  required
+                  className="accent-primary"
+                />
+                {opt}
+              </label>
+            ))}
+          </div>
+        </>
 
         {follow && isYes && (
           <div className="mt-2">
             <textarea
               name={`ynExplain_${q.key}`}
               rows={2}
+              required
               maxLength={follow.maxLength}
               placeholder={follow.label}
               value={form.ynExplain[q.key] ?? ''}
@@ -618,6 +636,7 @@ export default function QuotePageForm() {
                   <input
                     type="text"
                     name={`general_${compositeKey}`}
+                    required
                     maxLength={d.maxLength}
                     placeholder={d.label}
                     value={value}
@@ -673,21 +692,24 @@ export default function QuotePageForm() {
           </label>
         </p>
 
+        <p className="mb-5 text-sm text-text font-semibold">
+          This is a complete, end-to-end quote request. We need all of the information below to prepare your quote. Please complete every field.
+        </p>
+
         <div className="mb-4">
           <label htmlFor="qp-businessName" className={labelBase}>Business Name *</label>
           <input
-            id="qp-businessName" name="businessName" type="text"
+            id="qp-businessName" name="businessName" required type="text"
             autoComplete="organization"
             placeholder="E.g. Smith Spray Foam LLC"
             value={form.businessName} onChange={handleField} className={inputBase}
-            required
           />
         </div>
 
         <div className="mb-4">
           <label htmlFor="qp-entityType" className={labelBase}>Business Entity Type</label>
           <select
-            id="qp-entityType" name="entityType"
+            id="qp-entityType" name="entityType" required
             value={form.entityType} onChange={handleField}
             className={inputBase + ' appearance-none cursor-pointer'}
           >
@@ -709,7 +731,7 @@ export default function QuotePageForm() {
         <div className="mb-4">
           <label htmlFor="qp-name" className={labelBase}>Full Name *</label>
           <input
-            id="qp-name" name="name" type="text" required
+            id="qp-name" name="name" required type="text"
             autoComplete="name"
             placeholder="E.g. Jane Smith"
             value={form.name} onChange={handleField} className={inputBase}
@@ -720,7 +742,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-email" className={labelBase}>Email Address *</label>
             <input
-              id="qp-email" name="email" type="email" required
+              id="qp-email" name="email" required type="email"
               autoComplete="email"
               placeholder="E.g. jane@smithfoam.com"
               value={form.email} onChange={handleField} className={inputBase}
@@ -729,7 +751,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-phone" className={labelBase}>Phone Number *</label>
             <input
-              id="qp-phone" name="phone" type="tel" required
+              id="qp-phone" name="phone" required type="tel"
               autoComplete="tel"
               placeholder="E.g. (480) 555-0142"
               value={form.phone} onChange={handleField} className={inputBase}
@@ -740,7 +762,7 @@ export default function QuotePageForm() {
         <div className="mb-4">
           <label htmlFor="qp-address" className={labelBase}>Street Address *</label>
           <input
-            id="qp-address" name="address" type="text" required
+            id="qp-address" name="address" required type="text"
             autoComplete="street-address"
             placeholder="E.g. 1200 W Chandler Blvd"
             value={form.address} onChange={handleField} className={inputBase}
@@ -751,7 +773,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-city" className={labelBase}>City *</label>
             <input
-              id="qp-city" name="city" type="text" required
+              id="qp-city" name="city" required type="text"
               autoComplete="address-level2"
               placeholder="E.g. Chandler"
               value={form.city} onChange={handleField} className={inputBase}
@@ -771,7 +793,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-zip" className={labelBase}>ZIP Code *</label>
             <input
-              id="qp-zip" name="zip" type="text" required
+              id="qp-zip" name="zip" required type="text"
               autoComplete="postal-code"
               placeholder="E.g. 85249"
               value={form.zip} onChange={handleField} className={inputBase}
@@ -792,7 +814,7 @@ export default function QuotePageForm() {
         <div className="mb-4">
           <label htmlFor="qp-businessDescription" className={labelBase}>Business Description</label>
           <textarea
-            id="qp-businessDescription" name="businessDescription" rows={2}
+            id="qp-businessDescription" name="businessDescription" required rows={2}
             placeholder="What does your business do day to day? (e.g. new construction spray foam insulation, foam concrete lifting, SPF roofing)"
             value={form.businessDescription} onChange={handleField}
             className={inputBase + ' resize-none'}
@@ -802,7 +824,7 @@ export default function QuotePageForm() {
         <div className="mb-4">
           <label htmlFor="qp-statesOfOperation" className={labelBase}>States Where You Perform Work</label>
           <input
-            id="qp-statesOfOperation" name="statesOfOperation" type="text"
+            id="qp-statesOfOperation" name="statesOfOperation" required type="text"
             placeholder="E.g. AZ, NV, CA (if different from your business address state)"
             value={form.statesOfOperation} onChange={handleField} className={inputBase}
           />
@@ -811,7 +833,7 @@ export default function QuotePageForm() {
         <div className="mb-4">
           <label htmlFor="qp-fein" className={labelBase}>FEIN *</label>
           <input
-            id="qp-fein" name="fein" type="text" required
+            id="qp-fein" name="fein" required type="text"
             pattern="\d{2}-?\d{7}"
             title="FEIN must be 9 digits (XX-XXXXXXX)"
             placeholder="XX-XXXXXXX"
@@ -829,7 +851,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-grossSales" className={labelBase}>Gross Sales</label>
             <input
-              id="qp-grossSales" name="grossSales" type="text"
+              id="qp-grossSales" name="grossSales" required type="text"
               placeholder="Estimate Next 12 Months"
               value={form.grossSales} onChange={handleField} className={inputBase}
             />
@@ -837,7 +859,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-employeeCount" className={labelBase}>Employee count</label>
             <input
-              id="qp-employeeCount" name="employeeCount" type="text"
+              id="qp-employeeCount" name="employeeCount" required type="text"
               placeholder="E.g. 10"
               value={form.employeeCount} onChange={handleField} className={inputBase}
             />
@@ -848,7 +870,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-employeePayroll" className={labelBase}>Employee Payroll</label>
             <input
-              id="qp-employeePayroll" name="employeePayroll" type="text"
+              id="qp-employeePayroll" name="employeePayroll" required type="text"
               placeholder="Estimate Next 12 Months"
               value={form.employeePayroll} onChange={handleField} className={inputBase}
             />
@@ -856,7 +878,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-subcontractorExpenses" className={labelBase}>Subcontractor expenses</label>
             <input
-              id="qp-subcontractorExpenses" name="subcontractorExpenses" type="text"
+              id="qp-subcontractorExpenses" name="subcontractorExpenses" required type="text"
               placeholder="Estimate Next 12 Months"
               value={form.subcontractorExpenses} onChange={handleField} className={inputBase}
             />
@@ -866,7 +888,7 @@ export default function QuotePageForm() {
         <div className="mb-4">
           <label htmlFor="qp-materialCosts" className={labelBase}>Material Costs</label>
           <input
-            id="qp-materialCosts" name="materialCosts" type="text"
+            id="qp-materialCosts" name="materialCosts" required type="text"
             placeholder="Estimate Next 12 Months"
             value={form.materialCosts} onChange={handleField} className={inputBase}
           />
@@ -880,7 +902,7 @@ export default function QuotePageForm() {
         <div className="mb-6">
           <label htmlFor="qp-largestProjectValue" className={labelBase}>Largest Single Project Value</label>
           <input
-            id="qp-largestProjectValue" name="largestProjectValue" type="text"
+            id="qp-largestProjectValue" name="largestProjectValue" required type="text"
             placeholder="E.g. $250,000"
             value={form.largestProjectValue} onChange={handleField} className={inputBase}
           />
@@ -890,14 +912,14 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-effective_date" className={labelBase}>Requested Coverage Start Date</label>
             <input
-              id="qp-effective_date" name="effective_date" type="date"
+              id="qp-effective_date" name="effective_date" required type="date"
               value={form.effective_date} onChange={handleField} className={inputBase}
             />
           </div>
           <div className="mb-4">
             <label htmlFor="qp-years_in_business" className={labelBase}>Years in Business</label>
             <input
-              id="qp-years_in_business" name="years_in_business" type="number"
+              id="qp-years_in_business" name="years_in_business" required type="number"
               value={form.years_in_business} onChange={handleField} className={inputBase}
             />
           </div>
@@ -911,7 +933,7 @@ export default function QuotePageForm() {
         <div className="mb-4">
           <label htmlFor="qp-current_carrier" className={labelBase}>Current or Most Recent Insurance Carrier</label>
           <input
-            id="qp-current_carrier" name="current_carrier" type="text"
+            id="qp-current_carrier" name="current_carrier" required={form.currentlyInsured === 'Yes'} type="text"
             value={form.current_carrier} onChange={handleField} className={inputBase}
           />
         </div>
@@ -920,14 +942,14 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-currentPolicyExpiration" className={labelBase}>Current Policy Expiration Date</label>
             <input
-              id="qp-currentPolicyExpiration" name="currentPolicyExpiration" type="date"
+              id="qp-currentPolicyExpiration" name="currentPolicyExpiration" required={form.currentlyInsured === 'Yes'} type="date"
               value={form.currentPolicyExpiration} onChange={handleField} className={inputBase}
             />
           </div>
           <div className="mb-4">
             <label htmlFor="qp-currentLimits" className={labelBase}>Current Limits Held</label>
             <input
-              id="qp-currentLimits" name="currentLimits" type="text"
+              id="qp-currentLimits" name="currentLimits" required={form.currentlyInsured === 'Yes'} type="text"
               placeholder="E.g. $1M/$2M"
               value={form.currentLimits} onChange={handleField} className={inputBase}
             />
@@ -943,7 +965,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-losses_3yr_count" className={labelBase}>Claims in the Last 3 Years</label>
             <input
-              id="qp-losses_3yr_count" name="losses_3yr_count" type="number"
+              id="qp-losses_3yr_count" name="losses_3yr_count" required type="number"
               value={form.losses_3yr_count} onChange={handleField} className={inputBase}
             />
           </div>
@@ -1002,6 +1024,59 @@ export default function QuotePageForm() {
           {radioGroup('surety_amount', SURETY_AMOUNTS)}
         </div>
 
+        <div className="mb-4 pt-4 border-t border-black/10">
+          <p className="text-sm font-label font-semibold text-text mb-3">
+            Additional General Liability Limits
+          </p>
+        </div>
+        <div className="mb-4">
+          <label htmlFor="qp-glProductsCompOpsAggregate" className={labelBase}>Products-Completed Operations Aggregate *</label>
+          <select
+            id="qp-glProductsCompOpsAggregate" name="glProductsCompOpsAggregate" required
+            value={form.glProductsCompOpsAggregate} onChange={handleField}
+            className={inputBase + ' appearance-none cursor-pointer'}
+          >
+            <option value="">Select…</option>
+            {GL_PRODUCTS_AGG.map((o) => <option key={o} value={o}>{o}</option>)}
+          </select>
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="qp-glPersonalAdvertisingInjury" className={labelBase}>Personal and Advertising Injury Limit *</label>
+          <select
+            id="qp-glPersonalAdvertisingInjury" name="glPersonalAdvertisingInjury" required
+            value={form.glPersonalAdvertisingInjury} onChange={handleField}
+            className={inputBase + ' appearance-none cursor-pointer'}
+          >
+            <option value="">Select…</option>
+            {GL_PERSONAL_ADV.map((o) => <option key={o} value={o}>{o}</option>)}
+          </select>
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="qp-glDamageToRentedPremises" className={labelBase}>Fire Damage to Rented Premises Limit *</label>
+          <select
+            id="qp-glDamageToRentedPremises" name="glDamageToRentedPremises" required
+            value={form.glDamageToRentedPremises} onChange={handleField}
+            className={inputBase + ' appearance-none cursor-pointer'}
+          >
+            <option value="">Select…</option>
+            {GL_FIRE_DAMAGE.map((o) => <option key={o} value={o}>{o}</option>)}
+          </select>
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="qp-glMedicalExpense" className={labelBase}>Medical Expense Limit (any one person) *</label>
+          <select
+            id="qp-glMedicalExpense" name="glMedicalExpense" required
+            value={form.glMedicalExpense} onChange={handleField}
+            className={inputBase + ' appearance-none cursor-pointer'}
+          >
+            <option value="">Select…</option>
+            {GL_MED_EXP.map((o) => <option key={o} value={o}>{o}</option>)}
+          </select>
+        </div>
+
         {/* ══════════════════════════════════════════════════════════════
             ACORD 125/126/140 FULL GAP-FILL (2026-11-14, joshmac/desk-1)
             Everything below is additional to the form above — nothing
@@ -1014,8 +1089,7 @@ export default function QuotePageForm() {
             A Few More Underwriting Details
           </p>
           <p className="text-xs text-muted">
-            Everything below is optional, but the more you fill in now, the fewer follow-up
-            calls we need before we can get your application to carriers.
+            Every field below is required so we can prepare your complete application.
           </p>
         </div>
 
@@ -1024,14 +1098,14 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-county" className={labelBase}>County</label>
             <input
-              id="qp-county" name="county" type="text" maxLength={19}
+              id="qp-county" name="county" required type="text" maxLength={19}
               value={form.county} onChange={handleField} className={inputBase}
             />
           </div>
           <div className="mb-4">
             <label htmlFor="qp-businessStartDate" className={labelBase}>Date Business Started</label>
             <input
-              id="qp-businessStartDate" name="businessStartDate" type="date"
+              id="qp-businessStartDate" name="businessStartDate" required type="date"
               value={form.businessStartDate} onChange={handleField} className={inputBase}
             />
           </div>
@@ -1042,7 +1116,7 @@ export default function QuotePageForm() {
             Description of Operations at This Location
           </label>
           <input
-            id="qp-locationDescription" name="locationDescription" type="text" maxLength={54}
+            id="qp-locationDescription" name="locationDescription" required type="text" maxLength={54}
             placeholder="Brief — e.g. office + foam storage, no on-site mixing"
             value={form.locationDescription} onChange={handleField} className={inputBase}
           />
@@ -1052,7 +1126,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-expirationDate" className={labelBase}>Requested Coverage Expiration Date</label>
             <input
-              id="qp-expirationDate" name="expirationDate" type="date"
+              id="qp-expirationDate" name="expirationDate" required type="date"
               value={form.expirationDate} onChange={handleField} className={inputBase}
             />
           </div>
@@ -1061,7 +1135,7 @@ export default function QuotePageForm() {
               % of Work Subcontracted Out
             </label>
             <input
-              id="qp-workSubcontractedPercent" name="workSubcontractedPercent" type="text"
+              id="qp-workSubcontractedPercent" name="workSubcontractedPercent" required type="text"
               placeholder="E.g. 20%"
               value={form.workSubcontractedPercent} onChange={handleField} className={inputBase}
             />
@@ -1072,17 +1146,29 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-fullTimeEmployees" className={labelBase}>Full-Time Employees</label>
             <input
-              id="qp-fullTimeEmployees" name="fullTimeEmployees" type="number"
+              id="qp-fullTimeEmployees" name="fullTimeEmployees" required type="number"
               value={form.fullTimeEmployees} onChange={handleField} className={inputBase}
             />
           </div>
           <div className="mb-4">
             <label htmlFor="qp-partTimeEmployees" className={labelBase}>Part-Time Employees</label>
             <input
-              id="qp-partTimeEmployees" name="partTimeEmployees" type="number"
+              id="qp-partTimeEmployees" name="partTimeEmployees" required type="number"
               value={form.partTimeEmployees} onChange={handleField} className={inputBase}
             />
           </div>
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="qp-tradeType" className={labelBase}>Trade / Class of Business *</label>
+          <select
+            id="qp-tradeType" name="tradeType" required
+            value={form.tradeType} onChange={handleField}
+            className={inputBase + ' appearance-none cursor-pointer'}
+          >
+            <option value="">Select…</option>
+            {TRADE_TYPES.map((o) => <option key={o} value={o}>{o}</option>)}
+          </select>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
@@ -1186,28 +1272,28 @@ export default function QuotePageForm() {
             <div className="mb-4">
               <label htmlFor="qp-lossDate" className={labelBase}>Date of Occurrence</label>
               <input
-                id="qp-lossDate" name="lossDate" type="date"
+                id="qp-lossDate" name="lossDate" required type="date"
                 value={form.lossDate} onChange={handleField} className={inputBase}
               />
             </div>
             <div className="mb-4">
               <label htmlFor="qp-lossDescription" className={labelBase}>Description</label>
               <input
-                id="qp-lossDescription" name="lossDescription" type="text"
+                id="qp-lossDescription" name="lossDescription" required type="text"
                 value={form.lossDescription} onChange={handleField} className={inputBase}
               />
             </div>
             <div className="mb-4">
               <label htmlFor="qp-lossAmountPaid" className={labelBase}>Amount Paid</label>
               <input
-                id="qp-lossAmountPaid" name="lossAmountPaid" type="text"
+                id="qp-lossAmountPaid" name="lossAmountPaid" required type="text"
                 value={form.lossAmountPaid} onChange={handleField} className={inputBase}
               />
             </div>
             <div className="mb-4">
               <label htmlFor="qp-lossAmountReserved" className={labelBase}>Amount Reserved</label>
               <input
-                id="qp-lossAmountReserved" name="lossAmountReserved" type="text"
+                id="qp-lossAmountReserved" name="lossAmountReserved" required type="text"
                 value={form.lossAmountReserved} onChange={handleField} className={inputBase}
               />
             </div>
@@ -1226,7 +1312,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-paymentPlan" className={labelBase}>Payment Plan</label>
             <select
-              id="qp-paymentPlan" name="paymentPlan"
+              id="qp-paymentPlan" name="paymentPlan" required
               value={form.paymentPlan} onChange={handleField}
               className={inputBase + ' appearance-none cursor-pointer'}
             >
@@ -1240,7 +1326,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-paymentMethod" className={labelBase}>Method of Payment</label>
             <select
-              id="qp-paymentMethod" name="paymentMethod"
+              id="qp-paymentMethod" name="paymentMethod" required
               value={form.paymentMethod} onChange={handleField}
               className={inputBase + ' appearance-none cursor-pointer'}
             >
@@ -1263,7 +1349,7 @@ export default function QuotePageForm() {
             Describe the Type of Work Subcontracted
           </label>
           <textarea
-            id="qp-workSubcontractedDescription" name="workSubcontractedDescription" rows={2}
+            id="qp-workSubcontractedDescription" name="workSubcontractedDescription" required={form.usesSubcontractors === 'Yes'} rows={2}
             value={form.workSubcontractedDescription} onChange={handleField}
             className={inputBase + ' resize-none'}
           />
@@ -1273,7 +1359,7 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-publicAreaSqFt" className={labelBase}>Area Open to Public (sq ft)</label>
             <input
-              id="qp-publicAreaSqFt" name="publicAreaSqFt" type="number"
+              id="qp-publicAreaSqFt" name="publicAreaSqFt" required type="number"
               value={form.publicAreaSqFt} onChange={handleField} className={inputBase}
             />
           </div>
@@ -1292,7 +1378,7 @@ export default function QuotePageForm() {
               Installation / Service / Repair Work %
             </label>
             <input
-              id="qp-installationServiceRepairPercent" name="installationServiceRepairPercent" type="text"
+              id="qp-installationServiceRepairPercent" name="installationServiceRepairPercent" required type="text"
               placeholder="E.g. 30%"
               value={form.installationServiceRepairPercent} onChange={handleField} className={inputBase}
             />
@@ -1302,7 +1388,7 @@ export default function QuotePageForm() {
               Off-Premises Installation / Service / Repair %
             </label>
             <input
-              id="qp-offPremisesInstallPercent" name="offPremisesInstallPercent" type="text"
+              id="qp-offPremisesInstallPercent" name="offPremisesInstallPercent" required type="text"
               placeholder="E.g. 70%"
               value={form.offPremisesInstallPercent} onChange={handleField} className={inputBase}
             />
@@ -1315,7 +1401,7 @@ export default function QuotePageForm() {
               Retail / Service Operations % of Total Sales
             </label>
             <input
-              id="qp-retailPercent" name="retailPercent" type="text"
+              id="qp-retailPercent" name="retailPercent" required type="text"
               placeholder="E.g. 5%"
               value={form.retailPercent} onChange={handleField} className={inputBase}
             />
@@ -1325,7 +1411,7 @@ export default function QuotePageForm() {
               Number of Members (LLC / Joint Venture)
             </label>
             <input
-              id="qp-numberOfMembers" name="numberOfMembers" type="number"
+              id="qp-numberOfMembers" name="numberOfMembers" required={form.entityType === 'LLC' || form.entityType === 'Joint Venture'} type="number"
               value={form.numberOfMembers} onChange={handleField} className={inputBase}
             />
           </div>
@@ -1340,14 +1426,14 @@ export default function QuotePageForm() {
           <div className="mb-4">
             <label htmlFor="qp-buildingAreaSqFt" className={labelBase}>Total Building Area (sq ft)</label>
             <input
-              id="qp-buildingAreaSqFt" name="buildingAreaSqFt" type="number"
+              id="qp-buildingAreaSqFt" name="buildingAreaSqFt" required type="number"
               value={form.buildingAreaSqFt} onChange={handleField} className={inputBase}
             />
           </div>
           <div className="mb-4">
             <label htmlFor="qp-occupiedAreaSqFt" className={labelBase}>Occupied Area (sq ft)</label>
             <input
-              id="qp-occupiedAreaSqFt" name="occupiedAreaSqFt" type="number"
+              id="qp-occupiedAreaSqFt" name="occupiedAreaSqFt" required type="number"
               value={form.occupiedAreaSqFt} onChange={handleField} className={inputBase}
             />
           </div>
@@ -1379,6 +1465,10 @@ export default function QuotePageForm() {
           {submitting ? 'Sending…' : 'Send Message'}
           {!submitting && <ArrowRight className="w-5 h-5" />}
         </button>
+
+        {clientError && (
+          <p role="alert" className="text-center text-xs text-red-400 mt-3">{clientError}</p>
+        )}
 
         {error && (
           <p className="text-center text-xs text-red-400 mt-3">
