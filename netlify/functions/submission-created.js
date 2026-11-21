@@ -60,6 +60,17 @@ exports.handler = async (event) => {
       );
       return { statusCode: 502, body: `webhook rejected: ${res.status}` };
     }
+
+    // The webhook can answer 200 {ok:true,stored:false} when it dropped the body:
+    // a bare 2xx is not acceptance. No `stored` key (the normal success shape) passes.
+    const ack = await res.json().catch(() => null);
+    if (ack && (ack.ok === false || ack.stored === false)) {
+      console.error(
+        `submission-created: webhook did not store lead (form=${payload.form_name}, ` +
+        `submission=${payload.id}) ${JSON.stringify(ack)}`,
+      );
+      return { statusCode: 502, body: 'webhook did not store lead' };
+    }
   } catch (e) {
     console.error(
       `submission-created: webhook unreachable (form=${payload.form_name}, ` +
