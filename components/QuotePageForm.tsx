@@ -11,15 +11,58 @@ import FormCard from '@/components/FormCard';
 // a second fire-and-forget POST duplicated every lead and swallowed its own
 // failures. Netlify Forms + the function is the single supported path.
 
-const US_STATES = [
-  'Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut',
-  'Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa',
-  'Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan',
-  'Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire',
-  'New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio',
-  'Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota',
-  'Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia',
-  'Wisconsin','Wyoming',
+// value = 2-letter postal code (ACORD convention), label = full name.
+const US_STATES: [string, string][] = [
+  ['AL', 'Alabama'],
+  ['AK', 'Alaska'],
+  ['AZ', 'Arizona'],
+  ['AR', 'Arkansas'],
+  ['CA', 'California'],
+  ['CO', 'Colorado'],
+  ['CT', 'Connecticut'],
+  ['DE', 'Delaware'],
+  ['FL', 'Florida'],
+  ['GA', 'Georgia'],
+  ['HI', 'Hawaii'],
+  ['ID', 'Idaho'],
+  ['IL', 'Illinois'],
+  ['IN', 'Indiana'],
+  ['IA', 'Iowa'],
+  ['KS', 'Kansas'],
+  ['KY', 'Kentucky'],
+  ['LA', 'Louisiana'],
+  ['ME', 'Maine'],
+  ['MD', 'Maryland'],
+  ['MA', 'Massachusetts'],
+  ['MI', 'Michigan'],
+  ['MN', 'Minnesota'],
+  ['MS', 'Mississippi'],
+  ['MO', 'Missouri'],
+  ['MT', 'Montana'],
+  ['NE', 'Nebraska'],
+  ['NV', 'Nevada'],
+  ['NH', 'New Hampshire'],
+  ['NJ', 'New Jersey'],
+  ['NM', 'New Mexico'],
+  ['NY', 'New York'],
+  ['NC', 'North Carolina'],
+  ['ND', 'North Dakota'],
+  ['OH', 'Ohio'],
+  ['OK', 'Oklahoma'],
+  ['OR', 'Oregon'],
+  ['PA', 'Pennsylvania'],
+  ['RI', 'Rhode Island'],
+  ['SC', 'South Carolina'],
+  ['SD', 'South Dakota'],
+  ['TN', 'Tennessee'],
+  ['TX', 'Texas'],
+  ['UT', 'Utah'],
+  ['VT', 'Vermont'],
+  ['VA', 'Virginia'],
+  ['WA', 'Washington'],
+  ['WV', 'West Virginia'],
+  ['WI', 'Wisconsin'],
+  ['WY', 'Wyoming'],
 ];
 
 const GL_AMOUNTS = ['$500,000/$1,000,000', '$1,000,000/$1,000,000', '$1,000,000/$2,000,000', 'Not Needed'];
@@ -146,6 +189,14 @@ interface FormState {
   occupiedAreaSqFt: string;
   namedInsuredWebsite: string;
   generalRemarks: string;
+  // 2026-11-22 ACORD completeness: mailing block + explicit GL limits
+  mailingSameAsPhysical: string;
+  mailingAddress: string;
+  mailingCity: string;
+  mailingState: string;
+  mailingZip: string;
+  glEachOccurrence: string;
+  glGeneralAggregate: string;
 }
 
 const EMPTY_FORM: FormState = {
@@ -185,6 +236,8 @@ const EMPTY_FORM: FormState = {
   numberOfMembers: '', isContractor: '', offPremisesInstallPercent: '',
   buildingAreaSqFt: '', occupiedAreaSqFt: '', namedInsuredWebsite: '',
   generalRemarks: '',
+  mailingSameAsPhysical: '', mailingAddress: '', mailingCity: '', mailingState: '', mailingZip: '',
+  glEachOccurrence: '', glGeneralAggregate: '',
 };
 
 const YES_NO = ['Yes', 'No'];
@@ -195,6 +248,8 @@ const TRADE_TYPES = [
   'Concrete / Masonry', 'Carpentry / Framing', 'Drywall / Painting', 'Electrical', 'Plumbing',
   'HVAC', 'Flooring / Tile', 'Excavation / Grading', 'Landscaping',
 ];
+const GL_EACH_OCC = ['$300,000', '$500,000', '$1,000,000', '$2,000,000'];
+const GL_GEN_AGG = ['$1,000,000', '$2,000,000', '$3,000,000', '$4,000,000'];
 const GL_PRODUCTS_AGG = ['$1,000,000', '$2,000,000', '$3,000,000'];
 const GL_PERSONAL_ADV = ['$500,000', '$1,000,000', '$2,000,000'];
 const GL_FIRE_DAMAGE = ['$50,000', '$100,000', '$300,000'];
@@ -346,7 +401,6 @@ const GENERAL_DETAIL_MAP: Record<string, GeneralDetailField[]> = {
   ],
   otherInsurance: [
     { key: 'lineOfBusiness', label: 'Line of Business' },
-    { key: 'policyNumber', label: 'Policy Number' },
   ],
   negativeFinancialAction: [
     { key: 'occurenceDate', label: 'Occurrence Date' },
@@ -484,6 +538,13 @@ export default function QuotePageForm() {
     (Object.keys(form) as (keyof FormState)[])
       .filter((k) => !NESTED_KEYS.has(k as string))
       .forEach((k) => body.append(k, form[k] as string));
+
+    if (form.mailingSameAsPhysical === 'Yes') {
+      body.set('mailingAddress', form.address);
+      body.set('mailingCity', form.city);
+      body.set('mailingState', form.state);
+      body.set('mailingZip', form.zip);
+    }
 
     YES_NO_QUESTIONS.forEach((q) => body.append(`yn_${q.key}`, form.yn[q.key] ?? ''));
     Object.keys(FOLLOWUP_MAP).forEach((key) =>
@@ -787,7 +848,7 @@ export default function QuotePageForm() {
               className={inputBase + ' appearance-none cursor-pointer'}
             >
               <option value="" disabled>Select…</option>
-              {US_STATES.map((s) => <option key={s} value={s}>{s}</option>)}
+              {US_STATES.map(([code, nm]) => <option key={code} value={code}>{nm}</option>)}
             </select>
           </div>
           <div className="mb-4">
@@ -800,6 +861,50 @@ export default function QuotePageForm() {
             />
           </div>
         </div>
+
+        <div className="mb-4">
+          <p className={labelBase}>Is your mailing address the same as the business address above? *</p>
+          {radioGroup('mailingSameAsPhysical', YES_NO)}
+        </div>
+
+        {form.mailingSameAsPhysical === 'No' && (
+          <>
+            <div className="mb-4">
+              <label htmlFor="qp-mailingAddress" className={labelBase}>Mailing Street Address *</label>
+              <input
+                id="qp-mailingAddress" name="mailingAddress" required type="text"
+                value={form.mailingAddress} onChange={handleField} className={inputBase}
+              />
+            </div>
+            <div className="grid sm:grid-cols-3 gap-4">
+              <div className="mb-4">
+                <label htmlFor="qp-mailingCity" className={labelBase}>Mailing City *</label>
+                <input
+                  id="qp-mailingCity" name="mailingCity" required type="text"
+                  value={form.mailingCity} onChange={handleField} className={inputBase}
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="qp-mailingState" className={labelBase}>Mailing State *</label>
+                <select
+                  id="qp-mailingState" name="mailingState" required
+                  value={form.mailingState} onChange={handleField}
+                  className={inputBase + ' appearance-none cursor-pointer'}
+                >
+                  <option value="" disabled>Select…</option>
+                  {US_STATES.map(([code, nm]) => <option key={code} value={code}>{nm}</option>)}
+                </select>
+              </div>
+              <div className="mb-4">
+                <label htmlFor="qp-mailingZip" className={labelBase}>Mailing ZIP *</label>
+                <input
+                  id="qp-mailingZip" name="mailingZip" required type="text"
+                  value={form.mailingZip} onChange={handleField} className={inputBase}
+                />
+              </div>
+            </div>
+          </>
+        )}
 
         <div className="mb-4">
           <label htmlFor="qp-message" className={labelBase}>Message</label>
@@ -831,9 +936,9 @@ export default function QuotePageForm() {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="qp-fein" className={labelBase}>FEIN *</label>
+          <label htmlFor="qp-fein" className={labelBase}>FEIN (optional, leave blank for a new business)</label>
           <input
-            id="qp-fein" name="fein" required type="text"
+            id="qp-fein" name="fein" type="text"
             pattern="\d{2}-?\d{7}"
             title="FEIN must be 9 digits (XX-XXXXXXX)"
             placeholder="XX-XXXXXXX"
@@ -841,7 +946,7 @@ export default function QuotePageForm() {
             onChange={(e) => { e.currentTarget.setCustomValidity(''); handleField(e); }}
             onInvalid={(e) => {
               const el = e.currentTarget;
-              el.setCustomValidity(el.validity.valueMissing ? 'FEIN is required' : 'FEIN must be 9 digits (XX-XXXXXXX)');
+              el.setCustomValidity('FEIN must be 9 digits (XX-XXXXXXX)');
             }}
             className={inputBase}
           />
@@ -1029,6 +1134,30 @@ export default function QuotePageForm() {
             Additional General Liability Limits
           </p>
         </div>
+        <div className="mb-4">
+          <label htmlFor="qp-glEachOccurrence" className={labelBase}>Each Occurrence Limit *</label>
+          <select
+            id="qp-glEachOccurrence" name="glEachOccurrence" required
+            value={form.glEachOccurrence} onChange={handleField}
+            className={inputBase + ' appearance-none cursor-pointer'}
+          >
+            <option value="">Select…</option>
+            {GL_EACH_OCC.map((o) => <option key={o} value={o}>{o}</option>)}
+          </select>
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="qp-glGeneralAggregate" className={labelBase}>General Aggregate Limit *</label>
+          <select
+            id="qp-glGeneralAggregate" name="glGeneralAggregate" required
+            value={form.glGeneralAggregate} onChange={handleField}
+            className={inputBase + ' appearance-none cursor-pointer'}
+          >
+            <option value="">Select…</option>
+            {GL_GEN_AGG.map((o) => <option key={o} value={o}>{o}</option>)}
+          </select>
+        </div>
+
         <div className="mb-4">
           <label htmlFor="qp-glProductsCompOpsAggregate" className={labelBase}>Products-Completed Operations Aggregate *</label>
           <select
