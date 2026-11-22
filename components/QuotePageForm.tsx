@@ -161,6 +161,13 @@ interface FormState {
   // Conditional selections (only meaningful when their trigger question is Yes)
   safetyProgramElements: string[];
   athleticTeamAgeGroup: string;
+  safetyOtherText: string;
+  athleticSportDescription: string;
+  athleticContactSport: string;
+  athleticSponsorshipExtent: string;
+  rentEquipmentTypes: string[];
+  rentEquipmentInstructionGiven: string;
+  leaseEmployeesWorkersCompCarried: string;
   poolConstruction: string;
   poolSafetyFeatures: string[];
 
@@ -225,6 +232,9 @@ const EMPTY_FORM: FormState = {
   generalDetails: {},
 
   safetyProgramElements: [], athleticTeamAgeGroup: '',
+  safetyOtherText: '', athleticSportDescription: '', athleticContactSport: '',
+  athleticSponsorshipExtent: '', rentEquipmentTypes: [],
+  rentEquipmentInstructionGiven: '', leaseEmployeesWorkersCompCarried: '',
   poolConstruction: '', poolSafetyFeatures: [],
 
   lossHistoryStatus: '', lossDate: '', lossDescription: '',
@@ -467,7 +477,18 @@ export default function QuotePageForm() {
     e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
   ) {
     const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
+    setForm((prev) => {
+      const next = { ...prev, [name]: value };
+      // The two loss questions must never contradict each other.
+      if (name === 'lossesLast3Years') {
+        if (value === 'Yes') next.lossHistoryStatus = 'Report a Loss';
+        else if (value === 'No') next.lossHistoryStatus = 'No Losses to Report';
+      } else if (name === 'lossHistoryStatus') {
+        if (value === 'Report a Loss') next.lossesLast3Years = 'Yes';
+        else if (value === 'No Losses to Report') next.lossesLast3Years = 'No';
+      }
+      return next;
+    });
   }
 
   // Answer to one of the 57 Yes/No questions — 'Yes'/'No' for radio-kind,
@@ -493,7 +514,7 @@ export default function QuotePageForm() {
   // Multi-select checkbox groups (safetyProgramElements, poolSafetyFeatures) —
   // only ever string[] fields on FormState.
   function handleCheckboxArray(
-    field: 'safetyProgramElements' | 'poolSafetyFeatures',
+    field: 'safetyProgramElements' | 'poolSafetyFeatures' | 'rentEquipmentTypes',
     value: string,
     checked: boolean,
   ) {
@@ -517,6 +538,7 @@ export default function QuotePageForm() {
     }
     const needsArr: [boolean, string[], string][] = [
       [form.yn.safetyProgramsExist === 'Yes', form.safetyProgramElements, 'Select at least one safety program element.'],
+      [form.yn.rentOrLoanEquipment === 'Yes', form.rentEquipmentTypes, 'Select the type of equipment rented or loaned.'],
       [form.yn.swimmingPool === 'Yes', form.poolSafetyFeatures, 'Select at least one pool safety feature (or tell us in a call if none).'],
     ];
     const bad = needsArr.find(([on, arr]) => on && arr.length === 0);
@@ -534,7 +556,7 @@ export default function QuotePageForm() {
     // which are flattened separately below with their own flat field names
     // (Netlify Forms — and public/__forms.html's static detection — need one
     // flat name per field, not a nested object).
-    const NESTED_KEYS = new Set(['yn', 'ynExplain', 'generalDetails', 'safetyProgramElements', 'poolSafetyFeatures']);
+    const NESTED_KEYS = new Set(['yn', 'ynExplain', 'generalDetails', 'safetyProgramElements', 'poolSafetyFeatures', 'rentEquipmentTypes']);
     (Object.keys(form) as (keyof FormState)[])
       .filter((k) => !NESTED_KEYS.has(k as string))
       .forEach((k) => body.append(k, form[k] as string));
@@ -558,6 +580,7 @@ export default function QuotePageForm() {
     });
     body.append('safetyProgramElements', form.safetyProgramElements.join(', '));
     body.append('poolSafetyFeatures', form.poolSafetyFeatures.join(', '));
+    body.append('rentEquipmentTypes', form.rentEquipmentTypes.join(', '));
 
     body.append('form_type', 'quote-request');
     body.append('source_site', 'sprayfoaminsurance');
@@ -714,7 +737,7 @@ export default function QuotePageForm() {
   }
 
   function checkboxArrayGroup(
-    field: 'safetyProgramElements' | 'poolSafetyFeatures',
+    field: 'safetyProgramElements' | 'poolSafetyFeatures' | 'rentEquipmentTypes',
     options: string[],
   ) {
     return (
@@ -1366,10 +1389,63 @@ export default function QuotePageForm() {
           </div>
         )}
 
+        {form.yn.safetyProgramsExist === 'Yes' && form.safetyProgramElements.includes('Other') && (
+          <div className="mb-4">
+            <label htmlFor="qp-safetyOtherText" className={labelBase}>Other Safety Program (describe)</label>
+            <input
+              id="qp-safetyOtherText" name="safetyOtherText" required type="text"
+              maxLength={72} value={form.safetyOtherText} onChange={handleField} className={inputBase}
+            />
+          </div>
+        )}
+
         {form.yn.athleticTeams === 'Yes' && (
           <div className="mb-4">
             <p className={labelBase}>Sponsored Athletic Team Age Group</p>
             {radioGroup('athleticTeamAgeGroup', ['12 and Under', '13 Through 18', 'Over 18'])}
+          </div>
+        )}
+
+        {form.yn.athleticTeams === 'Yes' && (
+          <div className="mb-4 space-y-4">
+            <div>
+              <label htmlFor="qp-athleticSportDescription" className={labelBase}>Sport of Sponsored Team</label>
+              <input
+                id="qp-athleticSportDescription" name="athleticSportDescription" required type="text"
+                maxLength={24} value={form.athleticSportDescription} onChange={handleField} className={inputBase}
+              />
+            </div>
+            <div>
+              <p className={labelBase}>Is it a contact sport?</p>
+              {radioGroup('athleticContactSport', ['Yes', 'No'])}
+            </div>
+            <div>
+              <label htmlFor="qp-athleticSponsorshipExtent" className={labelBase}>Extent of Sponsorship</label>
+              <input
+                id="qp-athleticSponsorshipExtent" name="athleticSponsorshipExtent" required type="text"
+                maxLength={41} value={form.athleticSponsorshipExtent} onChange={handleField} className={inputBase}
+              />
+            </div>
+          </div>
+        )}
+
+        {form.yn.rentOrLoanEquipment === 'Yes' && (
+          <div className="mb-4 space-y-4">
+            <div>
+              <p className={labelBase}>Type of Equipment Rented or Loaned (check all that apply)</p>
+              {checkboxArrayGroup('rentEquipmentTypes', ['Small Tools', 'Large Equipment'])}
+            </div>
+            <div>
+              <p className={labelBase}>Is instruction given to renters?</p>
+              {radioGroup('rentEquipmentInstructionGiven', ['Yes', 'No'])}
+            </div>
+          </div>
+        )}
+
+        {form.yn.leaseEmployees === 'Yes' && (
+          <div className="mb-4">
+            <p className={labelBase}>Workers compensation carried for leased employees?</p>
+            {radioGroup('leaseEmployeesWorkersCompCarried', ['Yes', 'No'])}
           </div>
         )}
 
