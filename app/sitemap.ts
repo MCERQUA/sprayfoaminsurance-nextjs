@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/2023/09/24/what-factors-affect-insurance-premiums/`, lastModified: post2023, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${base}/2025/07/04/spray-foam-equipment-financing-building-strong-banking-relationships/`, lastModified: post2025, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${base}/2026/11/13/insulation-certificates-for-spray-foam-contractors/`, lastModified: post2026, changeFrequency: 'yearly', priority: 0.5 },
+    { url: `${base}/about/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/about-us/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/vegas/`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
   ];

@@ -17,7 +17,7 @@ const navigate = [
   { label: 'Work Record Form', href: '/spf-resources/work-record-form' },
   { label: 'InsulationCertificate.com', href: 'https://insulationcertificate.com' },
   { label: 'Blog', href: '/blog' },
-  { label: 'About Us', href: '/about-us' },
+  { label: 'About', href: '/about' },
   { label: 'Contact Us', href: '/contact-us' },
   { label: 'Quote', href: '/quote' },
 ];

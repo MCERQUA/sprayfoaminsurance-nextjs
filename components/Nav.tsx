@@ -26,7 +26,7 @@ const mainNav = [
   { label: 'Services', href: '/services/', children: serviceLinks },
   { label: 'Resources', href: '/spf-resources/', children: resourceLinks },
   { label: 'Blog', href: '/blog/' },
-  { label: 'About Us', href: '/about-us/' },
+  { label: 'About', href: '/about/' },
   { label: 'Contact Us', href: '/contact-us/' },
   { label: 'Quote', href: '/quote/' },
 ];
