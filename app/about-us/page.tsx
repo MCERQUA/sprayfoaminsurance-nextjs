@@ -68,7 +68,7 @@ export default function AboutUsPage() {
             ask only the questions we need in order to keep our time short on the phone. Once we
             have gathered your information we shop around for you. Our proprietary quote engine
             allows us to gather your information once and then shop your company with multiple
-            carriers. We write thousands of contractors coast to coast every year.
+            carriers. We write spray foam contractors coast to coast.
           </p>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function AboutUsPage() {
                 </p>
                 <p>
                   I have sold a lot of insurance to contractors over the years and I have seen it
-                  all. I have helped thousands of spray foam contractors find affordable
+                  all. I have helped spray foam contractors find affordable
                   insurance, cover the construction risks, keep money in their pockets, and fight
                   for coverage to pay claims for my clients.
                 </p>

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   keywords: ['contact spray foam insurance', '844-967-5247', 'spray foam insurance agent', 'SPF insurance quote'],
   openGraph: {
     title: 'Contact Spray Foam Insurance | 844-967-5247',
-    description: 'Get in touch with our spray foam insurance specialists. Fast response guaranteed.',
+    description: 'Get in touch with our spray foam insurance specialists.',
     type: 'website',
     images: OG_IMAGES,
   },

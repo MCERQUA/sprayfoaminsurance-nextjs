@@ -206,8 +206,7 @@ export default function HomePage() {
             easier and cheaper. Of course, I know you have many options when choosing insurance coverage.
             I like to make myself available for any questions or concerns you have along the way. If you
             have any information or recommendations please share those with me. I&apos;m here for you.
-            Finding you a better quote motivates me. Hundreds of clients are already enjoying the
-            benefits. It doesn&apos;t matter if you are a small, part timer, or a $5,000,000 company I
+            Finding you a better quote motivates me. It doesn&apos;t matter if you are a small, part timer, or a $5,000,000 company I
             treat each and every customer with respect. Let me show you how I&apos;ll go to bat for
             you.&rdquo;
           </p>

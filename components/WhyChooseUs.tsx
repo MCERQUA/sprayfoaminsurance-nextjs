@@ -16,7 +16,7 @@ const pillars = [
   },
   {
     icon: Award,
-    title: 'Decades of Expertise',
+    title: 'Specialist Expertise',
     description:
       'Experience matters. Our seasoned team specializes in spray foam contractor insurance, ensuring your business is always in good hands.',
     tag: 'SPF-Only Focus',
